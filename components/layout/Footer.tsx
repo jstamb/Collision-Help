@@ -39,7 +39,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <Shield className="w-7 h-7 text-brand-400" />
-              <span className="text-xl font-bold text-white">Accident Pic</span>
+              <span className="text-xl font-bold text-white">Collision Help</span>
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed">
               AI-powered damage analysis and expert guidance to help you navigate insurance claims and get back on the road.
@@ -107,7 +107,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-slate-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-slate-500">
-              &copy; {new Date().getFullYear()} Accident Pic. All rights reserved.
+              &copy; {new Date().getFullYear()} Collision Help. All rights reserved.
             </p>
             <p className="text-xs text-slate-500 max-w-xl text-center md:text-right">
               Disclaimer: This website provides general information only and is not legal or medical advice.

@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: { pillar: string } 
   if (!pillar) return {}
 
   return {
-    title: `${pillar.title} | Accident Pic`,
+    title: `${pillar.title} | Collision Help`,
     description: pillar.description,
   }
 }

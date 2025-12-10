@@ -10,7 +10,7 @@ import GuideCard from '@/components/guides/GuideCard'
 import CTABanner from '@/components/shared/CTABanner'
 
 export const metadata: Metadata = {
-  title: 'Car Accident Guides & Resources | Accident Pic',
+  title: 'Car Accident Guides & Resources | Collision Help',
   description: 'Comprehensive guides on insurance claims, total loss disputes, repair rights, fault determination, and more. Expert information to help you after a car accident.',
 }
 

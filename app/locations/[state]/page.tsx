@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: { state: string } }
   if (!state) return {}
   
   return {
-    title: `Car Accident Help in ${state.name} | Accident Pic`,
+    title: `Car Accident Help in ${state.name} | Collision Help`,
     description: state.metaDescription,
   }
 }
@@ -34,7 +34,7 @@ export default function StatePage({ params }: { params: { state: string } }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": `Accident Pic - ${stateData.name}`,
+    "name": `Collision Help - ${stateData.name}`,
     "areaServed": {
       "@type": "State",
       "name": stateData.name

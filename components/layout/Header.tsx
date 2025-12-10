@@ -42,7 +42,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Shield className="w-7 h-7 text-brand-600" />
-            <span className="text-xl font-bold text-slate-900 tracking-tight">Accident Pic</span>
+            <span className="text-xl font-bold text-slate-900 tracking-tight">Collision Help</span>
           </Link>
 
           {/* Desktop Navigation */}

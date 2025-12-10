@@ -8,8 +8,8 @@ import Breadcrumbs from '@/components/layout/Breadcrumbs'
 import { Button } from '@/components/ui/Button'
 
 export const metadata: Metadata = {
-  title: 'About Accident Pic | AI-Powered Car Accident Damage Analysis',
-  description: 'Learn how Accident Pic uses AI technology to help drivers document damage, understand insurance claims, and protect their rights after a car accident.',
+  title: 'About Collision Help | AI-Powered Car Accident Damage Analysis',
+  description: 'Learn how Collision Help uses AI technology to help drivers document damage, understand insurance claims, and protect their rights after a car accident.',
 }
 
 const features = [
@@ -73,7 +73,7 @@ export default function AboutPage() {
 
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-                About Accident Pic
+                About Collision Help
               </h1>
               <p className="text-xl text-slate-600 leading-relaxed">
                 We help drivers navigate the aftermath of car accidents with AI-powered damage analysis
@@ -101,7 +101,7 @@ export default function AboutPage() {
                   designed to minimize payouts, and a system that often feels stacked against them.
                 </p>
                 <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                  Accident Pic was built to level the playing field. We combine cutting-edge AI technology
+                  Collision Help was built to level the playing field. We combine cutting-edge AI technology
                   with comprehensive educational resources to give drivers the tools they need to document
                   damage properly, understand their rights, and navigate insurance claims with confidence.
                 </p>
@@ -208,7 +208,7 @@ export default function AboutPage() {
                 How It Works
               </h2>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Get started with Accident Pic in three simple steps.
+                Get started with Collision Help in three simple steps.
               </p>
             </div>
 
@@ -260,7 +260,7 @@ export default function AboutPage() {
                 Important Disclaimer
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">
-                The information provided on Accident Pic is for general informational purposes only and should not
+                The information provided on Collision Help is for general informational purposes only and should not
                 be construed as legal, medical, or professional advice. Every accident situation is unique, and
                 the information here may not apply to your specific circumstances. We strongly encourage you to
                 consult with qualified attorneys, medical professionals, and insurance experts for advice tailored

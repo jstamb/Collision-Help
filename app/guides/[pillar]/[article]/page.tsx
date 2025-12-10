@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: { pillar: string; a
   if (!pillar || !article) return {}
 
   return {
-    title: `${article.title} | ${pillar.shortTitle} | Accident Pic`,
+    title: `${article.title} | ${pillar.shortTitle} | Collision Help`,
     description: article.description,
   }
 }
@@ -113,19 +113,19 @@ Consider seeking additional assistance if:
     "description": article.description,
     "author": {
       "@type": "Organization",
-      "name": "Accident Pic"
+      "name": "Collision Help"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Accident Pic",
+      "name": "Collision Help",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://accidentpic.com/logo.png"
+        "url": "https://collisionhelp.org/logo.png"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://accidentpic.com/guides/${pillar.slug}/${article.slug}`
+      "@id": `https://collisionhelp.org/guides/${pillar.slug}/${article.slug}`
     }
   }
 
