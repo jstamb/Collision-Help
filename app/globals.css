@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900;
+  }
+}
+
+/* Custom form styles if needed */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.5);
+}

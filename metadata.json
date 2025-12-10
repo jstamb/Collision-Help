@@ -1,0 +1,7 @@
+{
+  "name": "MVA Assist",
+  "description": "A conversion-optimized lead generation application for motor vehicle accident assistance, featuring multi-step forms, photo uploads via Supabase, and static location pages.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -1,0 +1,74 @@
+import { NextRequest, NextResponse } from 'next/server'
+import { createClient } from '@supabase/supabase-js'
+import { v4 as uuidv4 } from 'uuid'
+import { Buffer } from 'buffer'
+
+// Initialize Supabase Service Client
+// Note: In production, ensure these ENV vars are set in Cloud Run
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!
+
+export async function POST(request: NextRequest) {
+  try {
+    // 1. Validate Environment
+    if (!supabaseUrl || !supabaseServiceKey) {
+      console.error('Missing Supabase Environment Variables')
+      return NextResponse.json({ error: 'Server misconfiguration' }, { status: 500 })
+    }
+
+    const supabase = createClient(supabaseUrl, supabaseServiceKey, {
+      auth: { persistSession: false }
+    })
+
+    // 2. Parse Form Data
+    const formData = await request.formData()
+    const files = formData.getAll('photos') as File[]
+    const leadId = formData.get('leadId') as string
+
+    if (!files.length || !leadId) {
+      return NextResponse.json({ error: 'Missing files or lead ID' }, { status: 400 })
+    }
+
+    const uploadedPhotos = []
+
+    // 3. Process Uploads
+    for (const file of files) {
+      const buffer = Buffer.from(await file.arrayBuffer())
+      const fileExt = file.name.split('.').pop() || 'jpg'
+      const fileName = `${leadId}/${uuidv4()}.${fileExt}`
+      
+      const { data, error } = await supabase.storage
+        .from('accident-photos')
+        .upload(fileName, buffer, {
+          contentType: file.type,
+          upsert: false
+        })
+
+      if (error) {
+        console.error('Supabase Upload Error:', error)
+        continue // Skip failed, log it, allow others
+      }
+
+      // Generate Signed URL for 7 days access (for admins/webhook consumption)
+      const { data: signedData } = await supabase.storage
+        .from('accident-photos')
+        .createSignedUrl(fileName, 60 * 60 * 24 * 7)
+
+      if (data && signedData) {
+        uploadedPhotos.push({
+          id: uuidv4(),
+          path: data.path,
+          url: signedData.signedUrl,
+          filename: file.name,
+          size: file.size
+        })
+      }
+    }
+
+    return NextResponse.json({ success: true, photos: uploadedPhotos })
+
+  } catch (error) {
+    console.error('Upload handler error:', error)
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
+  }
+}
