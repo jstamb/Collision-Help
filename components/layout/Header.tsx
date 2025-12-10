@@ -28,6 +28,8 @@ const navigation = [
       { name: 'Total Loss Calculator', href: '/tools/total-loss-calculator' },
     ]
   },
+  { name: 'Locations', href: '/locations' },
+  { name: 'Blog', href: '/blog' },
   { name: 'About', href: '/about' },
 ]
 

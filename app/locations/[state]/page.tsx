@@ -3,11 +3,12 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { states, StateData, getFaultSystemExplanation, getComparativeNegligenceExplanation } from '@/content/locations/states'
+import { getCitiesForState } from '@/content/locations/cities'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import LeadForm from '@/components/LeadForm'
 import CallbackButton from '@/components/CallbackButton'
-import { Shield, MapPin, Info, Clock, Car, FileText, AlertTriangle, Scale, DollarSign, Phone, CheckCircle, ChevronRight } from 'lucide-react'
+import { Shield, MapPin, Info, Clock, Car, FileText, AlertTriangle, Scale, DollarSign, Phone, CheckCircle, ChevronRight, Building2 } from 'lucide-react'
 
 // Static Generation Params
 export async function generateStaticParams() {
@@ -130,6 +131,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
   const faqs = generateFAQs(stateData)
   const faultExplanation = getFaultSystemExplanation(stateData)
   const negligenceExplanation = getComparativeNegligenceExplanation(stateData)
+  const cityPages = getCitiesForState(stateSlug)
 
   // Schema.org Data
   const jsonLd = {
@@ -510,7 +512,49 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
                 </section>
               )}
 
-              {/* Section 9: Major Cities Served */}
+              {/* Section 9: City-Specific Guides (if available) */}
+              {cityPages.length > 0 && (
+                <section className="prose prose-slate max-w-none">
+                  <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-3">
+                    <div className="w-10 h-10 bg-brand-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Building2 className="w-5 h-5 text-brand-600" />
+                    </div>
+                    City-Specific Accident Guides for {stateData.name}
+                  </h2>
+                  <p className="text-lg text-slate-700 leading-relaxed">
+                    Get detailed accident guidance for your specific city, including local highways, dangerous intersections, traffic patterns, and neighborhood-specific considerations.
+                  </p>
+
+                  <div className="not-prose my-6">
+                    <div className="grid sm:grid-cols-2 gap-4">
+                      {cityPages.map(city => (
+                        <Link
+                          key={city.slug}
+                          href={`/locations/${stateSlug}/${city.slug}`}
+                          className="group flex items-start gap-4 bg-white p-4 rounded-lg border border-slate-200 hover:border-brand-300 hover:shadow-md transition-all"
+                        >
+                          <div className="w-10 h-10 bg-brand-100 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-brand-200 transition-colors">
+                            <MapPin className="w-5 h-5 text-brand-600" />
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <h3 className="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors">
+                              {city.name}
+                            </h3>
+                            <p className="text-sm text-slate-500 mt-1">
+                              {city.highways.length} major highways covered
+                            </p>
+                            <div className="flex items-center gap-1 text-xs text-brand-600 mt-2 group-hover:text-brand-700">
+                              View city guide <ChevronRight className="w-3 h-3" />
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </section>
+              )}
+
+              {/* Section 10: Major Cities Served */}
               <section className="prose prose-slate max-w-none">
                 <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-3">
                   <div className="w-10 h-10 bg-brand-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -524,17 +568,33 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
 
                 <div className="not-prose my-6">
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                    {stateData.majorCities.map(city => (
-                      <div key={city} className="flex items-center gap-2 bg-white p-3 rounded-lg border border-slate-200">
-                        <MapPin className="w-4 h-4 text-brand-600 flex-shrink-0" />
-                        <span className="text-slate-700">{city}, {stateData.abbreviation}</span>
-                      </div>
-                    ))}
+                    {stateData.majorCities.map(city => {
+                      const cityPage = cityPages.find(c => c.name === city)
+                      if (cityPage) {
+                        return (
+                          <Link
+                            key={city}
+                            href={`/locations/${stateSlug}/${cityPage.slug}`}
+                            className="flex items-center gap-2 bg-white p-3 rounded-lg border border-slate-200 hover:border-brand-300 hover:bg-brand-50 transition-colors group"
+                          >
+                            <MapPin className="w-4 h-4 text-brand-600 flex-shrink-0" />
+                            <span className="text-slate-700 group-hover:text-brand-600">{city}, {stateData.abbreviation}</span>
+                            <ChevronRight className="w-3 h-3 text-slate-400 ml-auto group-hover:text-brand-600" />
+                          </Link>
+                        )
+                      }
+                      return (
+                        <div key={city} className="flex items-center gap-2 bg-white p-3 rounded-lg border border-slate-200">
+                          <MapPin className="w-4 h-4 text-brand-600 flex-shrink-0" />
+                          <span className="text-slate-700">{city}, {stateData.abbreviation}</span>
+                        </div>
+                      )
+                    })}
                   </div>
                 </div>
               </section>
 
-              {/* Section 10: FAQs */}
+              {/* Section 11: FAQs */}
               <section className="prose prose-slate max-w-none">
                 <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-3">
                   <div className="w-10 h-10 bg-brand-100 rounded-lg flex items-center justify-center flex-shrink-0">
