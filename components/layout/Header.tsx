@@ -24,7 +24,7 @@ const navigation = [
     name: 'Tools',
     href: '/tools',
     children: [
-      { name: 'AI Damage Analyzer', href: '/' },
+      { name: 'AI Damage Analyzer', href: '/ai-damage-analyzer' },
       { name: 'Total Loss Calculator', href: '/tools/total-loss-calculator' },
     ]
   },

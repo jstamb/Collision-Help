@@ -42,7 +42,7 @@ const Step4Schema = z.object({
   phone: z.string().min(10, 'Please enter a valid phone number'),
   email: z.string().email('Please enter a valid email'),
   state: z.string().min(2, 'State is required'),
-  zip: z.string().optional(),
+  zip: z.string().min(5, 'Zip code is required'),
   bestTime: z.string().optional(),
   consent: z.literal(true, { errorMap: () => ({ message: "You must agree to continue" }) }),
 })
@@ -472,6 +472,11 @@ export default function LeadForm({ defaultState }: { defaultState?: string }) {
                       ))}
                     </select>
                     {errors.state && <p className="text-red-500 text-xs">{errors.state.message}</p>}
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-slate-700">Zip Code</label>
+                    <Input {...register('zip')} placeholder="12345" maxLength={10} />
+                    {errors.zip && <p className="text-red-500 text-xs">{errors.zip.message}</p>}
                   </div>
                 </div>
 

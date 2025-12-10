@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Shield background -->
+  <path d="M16 2L4 7v8c0 7.73 5.12 14.95 12 17 6.88-2.05 12-9.27 12-17V7L16 2z" fill="#0ea5e9"/>
+  <!-- Car silhouette -->
+  <path d="M10 18h12v3H10v-3z" fill="#ffffff"/>
+  <path d="M11 15l1.5-3h7l1.5 3H11z" fill="#ffffff"/>
+  <circle cx="12" cy="21" r="1.5" fill="#0ea5e9"/>
+  <circle cx="20" cy="21" r="1.5" fill="#0ea5e9"/>
+  <!-- Checkmark -->
+  <path d="M14 12l2 2 4-4" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

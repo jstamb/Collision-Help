@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <!-- Background -->
+  <rect width="180" height="180" rx="40" fill="#0ea5e9"/>
+  <!-- Shield -->
+  <path d="M90 25L35 45v40c0 38.65 25.6 74.75 55 82 29.4-7.25 55-43.35 55-82V45L90 25z" fill="#ffffff" fill-opacity="0.2"/>
+  <!-- Car silhouette -->
+  <path d="M55 105h70v18H55v-18z" fill="#ffffff"/>
+  <path d="M62 90l9-18h38l9 18H62z" fill="#ffffff"/>
+  <circle cx="70" cy="123" r="8" fill="#0ea5e9"/>
+  <circle cx="110" cy="123" r="8" fill="#0ea5e9"/>
+  <!-- Checkmark -->
+  <path d="M75 65l15 15 25-25" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

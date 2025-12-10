@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
 import { analyzeVehicleDamage } from '@/lib/ai-analysis'
-import { sendLeadNotificationEmail } from '@/lib/email'
+import { sendLeadNotificationEmail, sendUserAnalysisEmail } from '@/lib/email'
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!
@@ -14,6 +14,9 @@ export async function POST(request: NextRequest) {
     if (!body.leadId || !body.contact?.email) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
     }
+
+    // Check if this is from the AI analyzer form
+    const isAnalyzerForm = body.formType === 'analyzer'
 
     // Initialize Supabase
     if (!supabaseUrl || !supabaseServiceKey) {
@@ -43,6 +46,7 @@ export async function POST(request: NextRequest) {
       accident_date_range: body.accident_details?.date_range,
       concerns: body.accident_details?.concerns || [],
       landing_page: body.landingPage,
+      form_type: isAnalyzerForm ? 'analyzer' : 'standard',
 
       photo_paths: body.photos?.map((p: { path: string }) => p.path) || [],
       photo_urls: photoUrls,
@@ -69,10 +73,14 @@ export async function POST(request: NextRequest) {
           .update({
             ai_analysis: analysis.rawAnalysis,
             ai_analysis_summary: analysis.summary,
-            ai_damage_severity: analysis.severity,
-            ai_estimated_cost_low: analysis.estimatedCostLow,
-            ai_estimated_cost_high: analysis.estimatedCostHigh,
-            ai_recommended_actions: analysis.recommendedActions,
+            ai_damage_severity: analysis.propertyDamage.severity,
+            ai_estimated_cost_low: analysis.propertyDamage.estimatedRepairLow,
+            ai_estimated_cost_high: analysis.propertyDamage.estimatedRepairHigh,
+            ai_liability_assessment: analysis.liability.assessment,
+            ai_injury_potential: analysis.injuryPotential.likelihood,
+            ai_lead_grade: analysis.leadScore.overall,
+            ai_case_value_low: analysis.leadScore.estimatedCaseValueLow,
+            ai_case_value_high: analysis.leadScore.estimatedCaseValueHigh,
             analysis_status: 'completed'
           })
           .eq('id', body.leadId)
@@ -89,49 +97,57 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    // 3. Send notification email
-    const emailSent = await sendLeadNotificationEmail(
-      {
-        id: body.leadId,
-        fullName: body.contact.name,
-        email: body.contact.email,
-        phone: body.contact.phone,
-        state: body.contact.state,
-        zipCode: body.contact.zip,
-        vehicleType: body.accident_details?.vehicle_type,
-        rearEnded: body.accident_details?.rear_ended,
-        accidentDateRange: body.accident_details?.date_range,
-        concerns: body.accident_details?.concerns || [],
-        photoUrls,
-        landingPage: body.landingPage || '/',
-        createdAt: new Date().toISOString()
-      },
-      analysis
-    )
+    // 3. Prepare lead data for emails
+    const leadData = {
+      id: body.leadId,
+      fullName: body.contact.name,
+      email: body.contact.email,
+      phone: body.contact.phone,
+      state: body.contact.state,
+      zipCode: body.contact.zip || '',
+      vehicleType: body.accident_details?.vehicle_type,
+      rearEnded: body.accident_details?.rear_ended,
+      accidentDateRange: body.accident_details?.date_range,
+      concerns: body.accident_details?.concerns || [],
+      photoUrls,
+      landingPage: body.landingPage || '/',
+      createdAt: new Date().toISOString()
+    }
+
+    // 4. Send notification email to admin (always)
+    const adminEmailSent = await sendLeadNotificationEmail(leadData, analysis)
+
+    // 5. Send user report email (only for analyzer form submissions)
+    let userEmailSent = false
+    if (isAnalyzerForm) {
+      console.log('Sending user analysis email...')
+      userEmailSent = await sendUserAnalysisEmail(leadData, analysis)
+    }
 
     // Update email status
-    if (emailSent) {
-      await supabase
-        .from('leads')
-        .update({
-          email_sent: true,
-          email_sent_at: new Date().toISOString()
-        })
-        .eq('id', body.leadId)
-    }
+    await supabase
+      .from('leads')
+      .update({
+        email_sent: adminEmailSent,
+        email_sent_at: adminEmailSent ? new Date().toISOString() : null,
+        user_email_sent: userEmailSent,
+        user_email_sent_at: userEmailSent ? new Date().toISOString() : null
+      })
+      .eq('id', body.leadId)
 
     // Return success with analysis summary for user
     return NextResponse.json({
       success: true,
       analysis: analysis ? {
         summary: analysis.summary,
-        severity: analysis.severity,
-        estimatedCost: {
-          low: analysis.estimatedCostLow,
-          high: analysis.estimatedCostHigh
-        },
-        recommendedActions: analysis.recommendedActions.slice(0, 3)
-      } : null
+        severity: analysis.propertyDamage.severity,
+        liability: analysis.liability.assessment,
+        estimatedRepairCost: {
+          low: analysis.propertyDamage.estimatedRepairLow,
+          high: analysis.propertyDamage.estimatedRepairHigh
+        }
+      } : null,
+      userEmailSent
     })
 
   } catch (error) {

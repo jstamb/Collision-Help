@@ -5,42 +5,135 @@ const openai = new OpenAI({
 })
 
 export interface DamageAnalysis {
+  // Vehicle Identification
+  clientVehicle: {
+    identified: boolean
+    description: string
+    position: string // "left", "right", "center", "unknown"
+    color: string
+    make_model_guess: string
+  }
+  otherVehicles: {
+    description: string
+    position: string
+    color: string
+  }[]
+
+  // Liability Assessment
+  liability: {
+    assessment: 'client_not_at_fault' | 'client_likely_at_fault' | 'shared_fault' | 'unclear'
+    confidence: 'low' | 'medium' | 'high'
+    reasoning: string
+    faultIndicators: string[]
+  }
+
+  // Property Damage
+  propertyDamage: {
+    severity: 'minor' | 'moderate' | 'severe' | 'total_loss'
+    estimatedRepairLow: number
+    estimatedRepairHigh: number
+    damageAreas: string[]
+    visibleDamage: string[]
+    impactType: string // "rear-end", "side-impact", "front-end", "rollover", etc.
+  }
+
+  // Injury Potential (for attorney value)
+  injuryPotential: {
+    likelihood: 'low' | 'moderate' | 'high' | 'very_high'
+    reasoning: string
+    commonInjuries: string[]
+    airbagDeployed: boolean | null
+    vehicleIntrusion: boolean
+  }
+
+  // Lead Scoring for Attorneys
+  leadScore: {
+    overall: 'A' | 'B' | 'C' | 'D' // A = high value, D = low value
+    estimatedCaseValueLow: number
+    estimatedCaseValueHigh: number
+    qualityFactors: string[]
+    concerns: string[]
+  }
+
+  // Summary
   summary: string
-  severity: 'minor' | 'moderate' | 'severe' | 'total_loss'
-  estimatedCostLow: number
-  estimatedCostHigh: number
-  damageAreas: string[]
-  visibleDamage: string[]
-  recommendedActions: string[]
-  safetyNotes: string[]
-  insuranceNotes: string
   confidence: 'low' | 'medium' | 'high'
   rawAnalysis: object
 }
 
-const ANALYSIS_PROMPT = `You are an expert auto damage assessor and insurance claims specialist. Analyze this car accident damage photo and provide a detailed assessment.
+const ANALYSIS_PROMPT = `You are an expert MVA (Motor Vehicle Accident) case analyst working for a legal lead generation company. Your job is to analyze accident photos to help qualify leads for personal injury attorneys.
 
-Respond in JSON format with the following structure:
+CRITICAL: The person submitting this photo is our CLIENT (the potential plaintiff). You need to:
+1. Identify which vehicle belongs to our client (they're submitting photos of THEIR damage)
+2. Assess liability - is our client likely NOT at fault? (This is crucial for case value)
+3. Estimate property damage value
+4. Assess injury potential based on impact severity
+5. Score the lead quality for attorneys
+
+Respond in JSON format:
 {
-  "summary": "Brief 2-3 sentence summary of the damage",
-  "severity": "minor|moderate|severe|total_loss",
-  "estimatedCostLow": number (USD estimate low end),
-  "estimatedCostHigh": number (USD estimate high end),
-  "damageAreas": ["list", "of", "damaged", "areas"],
-  "visibleDamage": ["specific damage 1", "specific damage 2"],
-  "recommendedActions": ["action 1", "action 2"],
-  "safetyNotes": ["any safety concerns"],
-  "insuranceNotes": "Brief note about what to tell insurance",
+  "clientVehicle": {
+    "identified": true/false,
+    "description": "Description of client's vehicle",
+    "position": "left|right|center|unknown",
+    "color": "color of vehicle",
+    "make_model_guess": "Best guess at make/model"
+  },
+  "otherVehicles": [
+    {
+      "description": "Description of other vehicle(s)",
+      "position": "position in photo",
+      "color": "color"
+    }
+  ],
+  "liability": {
+    "assessment": "client_not_at_fault|client_likely_at_fault|shared_fault|unclear",
+    "confidence": "low|medium|high",
+    "reasoning": "Explain why based on damage patterns, impact location, etc.",
+    "faultIndicators": ["indicator 1", "indicator 2"]
+  },
+  "propertyDamage": {
+    "severity": "minor|moderate|severe|total_loss",
+    "estimatedRepairLow": number,
+    "estimatedRepairHigh": number,
+    "damageAreas": ["area1", "area2"],
+    "visibleDamage": ["specific damage"],
+    "impactType": "rear-end|side-impact|front-end|t-bone|rollover|unknown"
+  },
+  "injuryPotential": {
+    "likelihood": "low|moderate|high|very_high",
+    "reasoning": "Based on impact severity, airbag deployment, intrusion",
+    "commonInjuries": ["whiplash", "soft tissue", etc.],
+    "airbagDeployed": true/false/null,
+    "vehicleIntrusion": true/false
+  },
+  "leadScore": {
+    "overall": "A|B|C|D",
+    "estimatedCaseValueLow": number,
+    "estimatedCaseValueHigh": number,
+    "qualityFactors": ["Clear liability", "Significant damage", etc.],
+    "concerns": ["Any red flags for attorneys"]
+  },
+  "summary": "2-3 sentence summary for the attorney",
   "confidence": "low|medium|high"
 }
 
-Severity guidelines:
-- minor: Cosmetic damage, under $2,500 repair
-- moderate: Structural or mechanical components affected, $2,500-$10,000
-- severe: Major structural damage, airbag deployment, $10,000+
-- total_loss: Damage exceeds 70% of vehicle value or unsafe to repair
+LEAD SCORING GUIDE:
+- A Lead ($50k-$500k+ case value): Clear liability (client not at fault), severe damage, high injury potential, rear-end or t-bone collision
+- B Lead ($25k-$100k case value): Likely favorable liability, moderate-severe damage, moderate injury potential
+- C Lead ($10k-$50k case value): Unclear liability or moderate damage, some injury potential
+- D Lead (<$10k case value): Client likely at fault, minor damage, low injury potential
 
-Be conservative with estimates. If image quality is poor or damage is unclear, indicate low confidence.`
+CASE VALUE ESTIMATION:
+- Property damage: Use repair estimates
+- Pain & suffering multiplier: 1.5x-5x medical bills depending on severity
+- Assume medical bills correlate with injury severity:
+  - Low injury: $2k-$10k medical
+  - Moderate: $10k-$30k medical
+  - High: $30k-$100k medical
+  - Very high: $100k+ medical
+
+Remember: The photo is from our CLIENT's perspective - they are showing damage to THEIR vehicle.`
 
 export async function analyzeVehicleDamage(photoUrls: string[]): Promise<DamageAnalysis | null> {
   if (!process.env.OPENAI_API_KEY) {
@@ -54,7 +147,6 @@ export async function analyzeVehicleDamage(photoUrls: string[]): Promise<DamageA
   }
 
   try {
-    // Build content array with all images
     const content: OpenAI.Chat.Completions.ChatCompletionContentPart[] = [
       { type: 'text', text: ANALYSIS_PROMPT },
       ...photoUrls.map(url => ({
@@ -71,7 +163,7 @@ export async function analyzeVehicleDamage(photoUrls: string[]): Promise<DamageA
           content
         }
       ],
-      max_tokens: 1500,
+      max_tokens: 2000,
       response_format: { type: 'json_object' }
     })
 
@@ -81,20 +173,48 @@ export async function analyzeVehicleDamage(photoUrls: string[]): Promise<DamageA
       return null
     }
 
-    const rawAnalysis = JSON.parse(analysisText)
+    const raw = JSON.parse(analysisText)
 
     return {
-      summary: rawAnalysis.summary || 'Unable to generate summary',
-      severity: rawAnalysis.severity || 'moderate',
-      estimatedCostLow: rawAnalysis.estimatedCostLow || 0,
-      estimatedCostHigh: rawAnalysis.estimatedCostHigh || 0,
-      damageAreas: rawAnalysis.damageAreas || [],
-      visibleDamage: rawAnalysis.visibleDamage || [],
-      recommendedActions: rawAnalysis.recommendedActions || [],
-      safetyNotes: rawAnalysis.safetyNotes || [],
-      insuranceNotes: rawAnalysis.insuranceNotes || '',
-      confidence: rawAnalysis.confidence || 'medium',
-      rawAnalysis
+      clientVehicle: {
+        identified: raw.clientVehicle?.identified ?? false,
+        description: raw.clientVehicle?.description || 'Unknown',
+        position: raw.clientVehicle?.position || 'unknown',
+        color: raw.clientVehicle?.color || 'Unknown',
+        make_model_guess: raw.clientVehicle?.make_model_guess || 'Unknown'
+      },
+      otherVehicles: raw.otherVehicles || [],
+      liability: {
+        assessment: raw.liability?.assessment || 'unclear',
+        confidence: raw.liability?.confidence || 'low',
+        reasoning: raw.liability?.reasoning || '',
+        faultIndicators: raw.liability?.faultIndicators || []
+      },
+      propertyDamage: {
+        severity: raw.propertyDamage?.severity || 'moderate',
+        estimatedRepairLow: raw.propertyDamage?.estimatedRepairLow || 0,
+        estimatedRepairHigh: raw.propertyDamage?.estimatedRepairHigh || 0,
+        damageAreas: raw.propertyDamage?.damageAreas || [],
+        visibleDamage: raw.propertyDamage?.visibleDamage || [],
+        impactType: raw.propertyDamage?.impactType || 'unknown'
+      },
+      injuryPotential: {
+        likelihood: raw.injuryPotential?.likelihood || 'low',
+        reasoning: raw.injuryPotential?.reasoning || '',
+        commonInjuries: raw.injuryPotential?.commonInjuries || [],
+        airbagDeployed: raw.injuryPotential?.airbagDeployed ?? null,
+        vehicleIntrusion: raw.injuryPotential?.vehicleIntrusion || false
+      },
+      leadScore: {
+        overall: raw.leadScore?.overall || 'C',
+        estimatedCaseValueLow: raw.leadScore?.estimatedCaseValueLow || 0,
+        estimatedCaseValueHigh: raw.leadScore?.estimatedCaseValueHigh || 0,
+        qualityFactors: raw.leadScore?.qualityFactors || [],
+        concerns: raw.leadScore?.concerns || []
+      },
+      summary: raw.summary || 'Unable to generate summary',
+      confidence: raw.confidence || 'medium',
+      rawAnalysis: raw
     }
   } catch (error) {
     console.error('AI analysis error:', error)
