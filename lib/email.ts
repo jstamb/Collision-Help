@@ -1,7 +1,15 @@
 import { Resend } from 'resend'
 import { DamageAnalysis } from './ai-analysis'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+// Lazy-load the Resend client to avoid build-time errors
+let resendClient: Resend | null = null
+
+function getResendClient(): Resend {
+  if (!resendClient) {
+    resendClient = new Resend(process.env.RESEND_API_KEY)
+  }
+  return resendClient
+}
 
 interface LeadData {
   id: string
@@ -432,7 +440,7 @@ export async function sendLeadNotificationEmail(
     : `New Lead: ${lead.fullName} - ${lead.state} ${lead.zipCode}`
 
   try {
-    const { data, error } = await resend.emails.send({
+    const { data, error } = await getResendClient().emails.send({
       from: 'Collision Help <notifications@collisionhelp.org>',
       to: ['hello+collisionhelp@stambaughdesigns.co'],
       subject: subjectLine,
@@ -745,7 +753,7 @@ export async function sendUserAnalysisEmail(
 `
 
   try {
-    const { data, error } = await resend.emails.send({
+    const { data, error } = await getResendClient().emails.send({
       from: 'Collision Help <reports@collisionhelp.org>',
       to: [lead.email],
       subject: `Your Accident Damage Analysis Report - Collision Help`,
