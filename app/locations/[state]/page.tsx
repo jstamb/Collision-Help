@@ -631,12 +631,13 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
               >
                 Use AI Damage Analyzer
               </Link>
-              <a
-                href="#lead-form"
+              <CallbackButton
+                state={stateData.abbreviation}
+                stateName={stateData.name}
                 className="inline-flex items-center justify-center gap-2 bg-brand-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-brand-800 transition-colors border border-brand-500"
               >
                 Get Free Case Review
-              </a>
+              </CallbackButton>
             </div>
           </div>
         </section>
