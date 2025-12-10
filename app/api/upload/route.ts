@@ -1,24 +1,35 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient } from '@supabase/supabase-js'
+import { createClient, SupabaseClient } from '@supabase/supabase-js'
 import { v4 as uuidv4 } from 'uuid'
 import { Buffer } from 'buffer'
 
-// Initialize Supabase Service Client
-// Note: In production, ensure these ENV vars are set in Cloud Run
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!
+// Lazy-load the Supabase client to avoid build-time errors
+let supabaseClient: SupabaseClient | null = null
+
+function getSupabaseClient(): SupabaseClient | null {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+
+  if (!supabaseUrl || !supabaseServiceKey) {
+    return null
+  }
+
+  if (!supabaseClient) {
+    supabaseClient = createClient(supabaseUrl, supabaseServiceKey, {
+      auth: { persistSession: false }
+    })
+  }
+  return supabaseClient
+}
 
 export async function POST(request: NextRequest) {
   try {
-    // 1. Validate Environment
-    if (!supabaseUrl || !supabaseServiceKey) {
+    // 1. Validate Environment and get client
+    const supabase = getSupabaseClient()
+    if (!supabase) {
       console.error('Missing Supabase Environment Variables')
       return NextResponse.json({ error: 'Server misconfiguration' }, { status: 500 })
     }
-
-    const supabase = createClient(supabaseUrl, supabaseServiceKey, {
-      auth: { persistSession: false }
-    })
 
     // 2. Parse Form Data
     const formData = await request.formData()
