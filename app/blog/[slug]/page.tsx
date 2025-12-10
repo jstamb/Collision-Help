@@ -12,7 +12,7 @@ interface PageProps {
   params: Promise<{ slug: string }>
 }
 
-async function getArticle(slug: string) {
+async function getArticle(slug: string): Promise<any | null> {
   const apiKey = process.env.SEOBOT_API_KEY
   if (!apiKey) {
     console.error('SEOBOT_API_KEY is not configured')
@@ -22,7 +22,7 @@ async function getArticle(slug: string) {
   try {
     const client = new BlogClient(apiKey)
     const article = await client.getArticle(slug)
-    return article
+    return article as any
   } catch (error) {
     console.error('Error fetching article:', error)
     return null
