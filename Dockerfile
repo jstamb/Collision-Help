@@ -6,7 +6,7 @@ RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-RUN npm ci --only=production
+RUN npm ci
 
 # Stage 2: Build the application
 FROM node:20-alpine AS builder
@@ -16,7 +16,6 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED=1
-ENV NODE_ENV=production
 
 RUN npm run build
 
