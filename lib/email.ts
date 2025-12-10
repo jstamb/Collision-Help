@@ -772,3 +772,235 @@ export async function sendUserAnalysisEmail(
     return false
   }
 }
+
+// Callback Form Types
+interface CallbackData {
+  id: string
+  name: string
+  phone: string
+  email: string
+  accidentDetails: string
+  state: string
+  stateName: string
+  source: string
+  timestamp: string
+  matchingLead: MatchingLead | null
+}
+
+interface MatchingLead {
+  id: string
+  name: string
+  email: string
+  phone: string
+  state: string
+  createdAt: string
+  hasAnalysis: boolean
+  leadGrade?: string
+}
+
+// Simple in-memory store for recent leads (in production, use a database)
+// This is a placeholder - you should implement actual database lookup
+const recentLeads: Map<string, MatchingLead> = new Map()
+
+export function storeLeadForMatching(lead: MatchingLead) {
+  // Store by phone (normalized) and email
+  const normalizedPhone = lead.phone.replace(/\D/g, '')
+  recentLeads.set(`phone:${normalizedPhone}`, lead)
+  if (lead.email) {
+    recentLeads.set(`email:${lead.email.toLowerCase()}`, lead)
+  }
+}
+
+export async function findMatchingLead(phone: string, email?: string): Promise<MatchingLead | null> {
+  // Normalize phone for lookup
+  const normalizedPhone = phone.replace(/\D/g, '')
+
+  // Check phone first
+  const phoneMatch = recentLeads.get(`phone:${normalizedPhone}`)
+  if (phoneMatch) return phoneMatch
+
+  // Check email
+  if (email) {
+    const emailMatch = recentLeads.get(`email:${email.toLowerCase()}`)
+    if (emailMatch) return emailMatch
+  }
+
+  return null
+}
+
+export async function sendCallbackNotificationEmail(data: CallbackData): Promise<boolean> {
+  if (!process.env.RESEND_API_KEY) {
+    console.error('Missing RESEND_API_KEY')
+    return false
+  }
+
+  const hasMatch = data.matchingLead !== null
+
+  const html = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Callback Request - Collision Help</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f1f5f9;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f1f5f9; padding: 40px 20px;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+
+          <!-- Header -->
+          <tr>
+            <td style="background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); padding: 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <h1 style="margin: 0; color: #ffffff; font-size: 22px; font-weight: 700;">
+                      Callback Request
+                    </h1>
+                    <p style="margin: 4px 0 0 0; color: #e0f2fe; font-size: 14px;">
+                      ${new Date(data.timestamp).toLocaleString('en-US', {
+                        weekday: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit'
+                      })}
+                    </p>
+                  </td>
+                  ${hasMatch ? `
+                  <td align="right" valign="top">
+                    <div style="background-color: #22c55e; color: white; font-size: 11px; font-weight: 700; padding: 6px 12px; border-radius: 20px; text-transform: uppercase;">
+                      Existing Lead
+                    </div>
+                  </td>
+                  ` : ''}
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          ${hasMatch && data.matchingLead ? `
+          <!-- Matching Lead Alert -->
+          <tr>
+            <td style="padding: 20px 40px; background-color: #ecfdf5; border-bottom: 1px solid #d1fae5;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <p style="margin: 0 0 8px 0; color: #166534; font-size: 14px; font-weight: 600;">
+                      This person has an existing AI Damage Analyzer submission!
+                    </p>
+                    <p style="margin: 0; color: #15803d; font-size: 13px;">
+                      Lead ID: ${data.matchingLead.id}<br>
+                      Submitted: ${new Date(data.matchingLead.createdAt).toLocaleDateString()}<br>
+                      ${data.matchingLead.leadGrade ? `Lead Grade: <strong>${data.matchingLead.leadGrade}</strong>` : ''}
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          ` : ''}
+
+          <!-- Contact Info -->
+          <tr>
+            <td style="padding: 30px 40px 20px;">
+              <h2 style="margin: 0 0 16px 0; color: #1e293b; font-size: 16px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+                Contact Information
+              </h2>
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="padding: 12px 0; border-bottom: 1px solid #e2e8f0;">
+                    <span style="color: #64748b; font-size: 12px; text-transform: uppercase;">Name</span><br>
+                    <strong style="color: #1e293b; font-size: 18px;">${data.name}</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 12px 0; border-bottom: 1px solid #e2e8f0;">
+                    <span style="color: #64748b; font-size: 12px; text-transform: uppercase;">Phone</span><br>
+                    <a href="tel:${data.phone}" style="color: #0ea5e9; font-size: 18px; font-weight: 600; text-decoration: none;">${data.phone}</a>
+                  </td>
+                </tr>
+                ${data.email ? `
+                <tr>
+                  <td style="padding: 12px 0; border-bottom: 1px solid #e2e8f0;">
+                    <span style="color: #64748b; font-size: 12px; text-transform: uppercase;">Email</span><br>
+                    <a href="mailto:${data.email}" style="color: #0ea5e9; font-size: 16px; text-decoration: none;">${data.email}</a>
+                  </td>
+                </tr>
+                ` : ''}
+                ${data.stateName ? `
+                <tr>
+                  <td style="padding: 12px 0; border-bottom: 1px solid #e2e8f0;">
+                    <span style="color: #64748b; font-size: 12px; text-transform: uppercase;">State</span><br>
+                    <strong style="color: #1e293b; font-size: 16px;">${data.stateName} (${data.state})</strong>
+                  </td>
+                </tr>
+                ` : ''}
+              </table>
+            </td>
+          </tr>
+
+          <!-- Accident Details -->
+          <tr>
+            <td style="padding: 0 40px 30px;">
+              <h2 style="margin: 0 0 12px 0; color: #1e293b; font-size: 16px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+                Accident Details
+              </h2>
+              <div style="background-color: #f8fafc; border-radius: 8px; padding: 16px; border-left: 4px solid #0ea5e9;">
+                <p style="margin: 0; color: #334155; font-size: 15px; line-height: 1.6; white-space: pre-wrap;">${data.accidentDetails}</p>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color: #1e293b; padding: 20px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <span style="color: #94a3b8; font-size: 12px;">Callback ID: ${data.id}</span><br>
+                    <span style="color: #94a3b8; font-size: 12px;">Source: ${data.source}</span>
+                  </td>
+                  <td align="right">
+                    <a href="https://collisionhelp.org" style="color: #0ea5e9; font-size: 12px; text-decoration: none;">Collision Help</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+`
+
+  const subjectLine = hasMatch
+    ? `[EXISTING LEAD] Callback: ${data.name} - ${data.stateName || 'Unknown State'}`
+    : `Callback Request: ${data.name} - ${data.stateName || 'Unknown State'}`
+
+  try {
+    const { data: emailData, error } = await getResendClient().emails.send({
+      from: 'Collision Help <notifications@collisionhelp.org>',
+      to: ['hello+collisionhelp@stambaughdesigns.co'],
+      subject: subjectLine,
+      html
+    })
+
+    if (error) {
+      console.error('Callback email error:', error)
+      return false
+    }
+
+    console.log('Callback email sent:', emailData?.id)
+    return true
+  } catch (error) {
+    console.error('Callback email send error:', error)
+    return false
+  }
+}

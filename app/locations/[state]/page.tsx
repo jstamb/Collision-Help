@@ -6,6 +6,7 @@ import { states, StateData, getFaultSystemExplanation, getComparativeNegligenceE
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import LeadForm from '@/components/LeadForm'
+import CallbackButton from '@/components/CallbackButton'
 import { Shield, MapPin, Info, Clock, Car, FileText, AlertTriangle, Scale, DollarSign, Phone, CheckCircle, ChevronRight } from 'lucide-react'
 
 // Static Generation Params
@@ -600,12 +601,13 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
                   <p className="text-slate-600 text-sm mb-4">
                     Get connected with experienced {stateData.name} accident professionals who can help with your claim.
                   </p>
-                  <a
-                    href="#lead-form"
+                  <CallbackButton
+                    state={stateData.abbreviation}
+                    stateName={stateData.name}
                     className="block text-center w-full bg-brand-600 text-white font-semibold py-3 rounded-lg hover:bg-brand-700 transition-colors"
                   >
                     Request a Call Back
-                  </a>
+                  </CallbackButton>
                 </div>
               </div>
             </div>
