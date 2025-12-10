@@ -1,29 +1,15 @@
 import React from 'react'
-import Link from 'next/link'
-import { Shield, Clock, FileText, CheckCircle2 } from 'lucide-react'
+import { Clock, FileText, Shield, CheckCircle2 } from 'lucide-react'
 import LeadForm from '@/components/LeadForm'
-import { Button } from '@/components/ui/Button'
+import Header from '@/components/layout/Header'
+import Footer from '@/components/layout/Footer'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-50">
-      {/* Header */}
-      <header className="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Shield className="w-6 h-6 text-brand-600" />
-            <span className="text-xl font-bold text-slate-900 tracking-tight">Accident Pic</span>
-          </div>
-          <nav className="hidden md:flex gap-6 text-sm font-medium text-slate-600">
-            <Link href="#how-it-works" className="hover:text-brand-600">How It Works</Link>
-            <Link href="/locations" className="hover:text-brand-600">Locations</Link>
-            <Link href="/about" className="hover:text-brand-600">About</Link>
-          </nav>
-          <Button size="sm" variant="outline">Check Status</Button>
-        </div>
-      </header>
-
-      {/* Hero Section */}
+    <>
+      <Header />
+      <main className="min-h-screen bg-slate-50">
+        {/* Hero Section */}
       <section className="pt-32 pb-20 md:pt-40 md:pb-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -97,20 +83,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-white border-t border-slate-200 py-12">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center gap-2">
-              <Shield className="w-6 h-6 text-brand-600" />
-              <span className="font-bold text-slate-900">Accident Pic</span>
-            </div>
-            <p className="text-slate-500 text-sm">
-              © {new Date().getFullYear()} Accident Pic. Not legal advice.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
+    </>
   )
 }
