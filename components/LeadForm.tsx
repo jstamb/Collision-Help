@@ -483,7 +483,7 @@ export default function LeadForm({ defaultState }: { defaultState?: string }) {
                         className="mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500"
                       />
                       <span className="text-xs text-slate-500">
-                        By checking this box, I verify that I am over 18 and agree to the Terms of Service and Privacy Policy. I consent to receive emails, calls, and text messages from MVA Assist and its network of partners at the number provided.
+                        By checking this box, I verify that I am over 18 and agree to the Terms of Service and Privacy Policy. I consent to receive emails, calls, and text messages from Accident Pic and its network of partners at the number provided.
                       </span>
                    </label>
                    {errors.consent && <p className="text-red-500 text-xs">{errors.consent.message}</p>}

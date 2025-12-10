@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'MVA Assist | Nationwide Accident Help',
+  title: 'Accident Pic | Nationwide Accident Help',
   description: 'Guidance for motor vehicle accident victims. Navigate insurance claims, repairs, and total loss disputes.',
 }
 

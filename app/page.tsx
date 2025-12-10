@@ -12,7 +12,7 @@ export default function Home() {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Shield className="w-6 h-6 text-brand-600" />
-            <span className="text-xl font-bold text-slate-900 tracking-tight">MVA Assist</span>
+            <span className="text-xl font-bold text-slate-900 tracking-tight">Accident Pic</span>
           </div>
           <nav className="hidden md:flex gap-6 text-sm font-medium text-slate-600">
             <Link href="#how-it-works" className="hover:text-brand-600">How It Works</Link>
@@ -103,10 +103,10 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-2">
               <Shield className="w-6 h-6 text-brand-600" />
-              <span className="font-bold text-slate-900">MVA Assist</span>
+              <span className="font-bold text-slate-900">Accident Pic</span>
             </div>
             <p className="text-slate-500 text-sm">
-              © {new Date().getFullYear()} MVA Assist. Not legal advice.
+              © {new Date().getFullYear()} Accident Pic. Not legal advice.
             </p>
           </div>
         </div>

@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
       const fileName = `${leadId}/${uuidv4()}.${fileExt}`
       
       const { data, error } = await supabase.storage
-        .from('accident-photos')
+        .from('pics')
         .upload(fileName, buffer, {
           contentType: file.type,
           upsert: false
@@ -51,7 +51,7 @@ export async function POST(request: NextRequest) {
 
       // Generate Signed URL for 7 days access (for admins/webhook consumption)
       const { data: signedData } = await supabase.storage
-        .from('accident-photos')
+        .from('pics')
         .createSignedUrl(fileName, 60 * 60 * 24 * 7)
 
       if (data && signedData) {

@@ -1,5 +1,5 @@
 {
-  "name": "MVA Assist",
+  "name": "Accident Pic",
   "description": "A conversion-optimized lead generation application for motor vehicle accident assistance, featuring multi-step forms, photo uploads via Supabase, and static location pages.",
   "requestFramePermissions": [
     "camera"
