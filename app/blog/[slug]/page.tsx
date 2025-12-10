@@ -3,16 +3,16 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import { BlogClient } from 'seobot'
+import { BlogClient, IArticle } from 'seobot'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
-import { Calendar, Clock, ChevronRight, Tag, User, ArrowLeft, Share2 } from 'lucide-react'
+import { Calendar, Clock, ChevronRight, Tag, User, ArrowLeft } from 'lucide-react'
 
 interface PageProps {
   params: Promise<{ slug: string }>
 }
 
-async function getArticle(slug: string): Promise<any | null> {
+async function getArticle(slug: string): Promise<IArticle | null> {
   const apiKey = process.env.SEOBOT_API_KEY
   if (!apiKey) {
     console.error('SEOBOT_API_KEY is not configured')
@@ -22,7 +22,7 @@ async function getArticle(slug: string): Promise<any | null> {
   try {
     const client = new BlogClient(apiKey)
     const article = await client.getArticle(slug)
-    return article as any
+    return article
   } catch (error) {
     console.error('Error fetching article:', error)
     return null
@@ -38,12 +38,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${article.metaTitle || article.headline || article.title} | Collision Help`,
-    description: article.metaDescription || article.excerpt,
+    title: `${article.headline} | Collision Help`,
+    description: article.metaDescription,
     keywords: article.metaKeywords,
     openGraph: {
-      title: article.headline || article.title,
-      description: article.metaDescription || article.excerpt,
+      title: article.headline,
+      description: article.metaDescription,
       url: `https://collisionhelp.org/blog/${slug}`,
       type: 'article',
       publishedTime: article.publishedAt,
@@ -68,8 +68,8 @@ export default async function ArticlePage({ params }: PageProps) {
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: article.headline || article.title,
-    description: article.metaDescription || article.excerpt,
+    headline: article.headline,
+    description: article.metaDescription,
     image: article.image,
     datePublished: article.publishedAt,
     dateModified: article.updatedAt || article.publishedAt,
@@ -112,7 +112,7 @@ export default async function ArticlePage({ params }: PageProps) {
       {
         '@type': 'ListItem',
         position: 3,
-        name: article.headline || article.title,
+        name: article.headline,
         item: `https://collisionhelp.org/blog/${slug}`
       }
     ]
@@ -140,7 +140,7 @@ export default async function ArticlePage({ params }: PageProps) {
               <ChevronRight className="w-4 h-4" />
               <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
               <ChevronRight className="w-4 h-4" />
-              <span className="text-white line-clamp-1">{article.headline || article.title}</span>
+              <span className="text-white line-clamp-1">{article.headline}</span>
             </nav>
 
             <div className="max-w-4xl">
@@ -155,7 +155,7 @@ export default async function ArticlePage({ params }: PageProps) {
               )}
 
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                {article.headline || article.title}
+                {article.headline}
               </h1>
 
               <div className="flex flex-wrap items-center gap-4 text-sm text-slate-400">
@@ -193,7 +193,7 @@ export default async function ArticlePage({ params }: PageProps) {
                 <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden mb-8 shadow-lg">
                   <Image
                     src={article.image}
-                    alt={article.headline || article.title}
+                    alt={article.headline}
                     fill
                     className="object-cover"
                     priority
@@ -212,7 +212,7 @@ export default async function ArticlePage({ params }: PageProps) {
                   prose-strong:text-slate-900
                   prose-ul:my-4 prose-li:text-slate-700
                   prose-img:rounded-xl prose-img:shadow-md"
-                dangerouslySetInnerHTML={{ __html: article.html || article.content }}
+                dangerouslySetInnerHTML={{ __html: article.html }}
               />
 
               {/* Tags */}
@@ -220,9 +220,9 @@ export default async function ArticlePage({ params }: PageProps) {
                 <div className="mt-12 pt-8 border-t border-slate-200">
                   <h3 className="text-sm font-semibold text-slate-500 mb-3">Tags</h3>
                   <div className="flex flex-wrap gap-2">
-                    {article.tags.map((tag: any) => (
+                    {article.tags.map((tag) => (
                       <Link
-                        key={tag.id || tag.slug}
+                        key={tag.id}
                         href={`/blog/tag/${tag.slug}`}
                         className="inline-flex items-center gap-1 text-sm text-slate-600 bg-slate-100 hover:bg-slate-200 px-3 py-1 rounded-full transition-colors"
                       >
@@ -239,20 +239,15 @@ export default async function ArticlePage({ params }: PageProps) {
                 <div className="mt-12 pt-8 border-t border-slate-200">
                   <h3 className="text-xl font-bold text-slate-900 mb-6">Related Articles</h3>
                   <div className="grid md:grid-cols-2 gap-6">
-                    {article.relatedPosts.slice(0, 2).map((related: any) => (
+                    {article.relatedPosts.slice(0, 2).map((related) => (
                       <Link
                         key={related.id}
                         href={`/blog/${related.slug}`}
                         className="group bg-slate-50 rounded-xl p-4 hover:bg-slate-100 transition-colors"
                       >
                         <h4 className="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
-                          {related.headline || related.title}
+                          {related.headline}
                         </h4>
-                        {related.metaDescription && (
-                          <p className="text-sm text-slate-600 mt-2 line-clamp-2">
-                            {related.metaDescription}
-                          </p>
-                        )}
                       </Link>
                     ))}
                   </div>

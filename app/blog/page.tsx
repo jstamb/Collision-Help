@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import type { Metadata } from 'next'
-import { BlogClient } from 'seobot'
+import { BlogClient, IArticle } from 'seobot'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { Calendar, Clock, ChevronRight, ChevronLeft, Tag, BookOpen } from 'lucide-react'
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const POSTS_PER_PAGE = 12
 
-async function getBlogPosts(page: number = 0) {
+async function getBlogPosts(page: number = 0): Promise<{ posts: IArticle[], total: number }> {
   const apiKey = process.env.SEOBOT_API_KEY
   if (!apiKey) {
     console.error('SEOBOT_API_KEY is not configured')
@@ -26,10 +26,10 @@ async function getBlogPosts(page: number = 0) {
 
   try {
     const client = new BlogClient(apiKey)
-    const articles = await client.getArticles(page, POSTS_PER_PAGE)
+    const response = await client.getArticles(page, POSTS_PER_PAGE)
     return {
-      posts: articles.data || [],
-      total: articles.total || 0
+      posts: response.articles || [],
+      total: response.total || 0
     }
   } catch (error) {
     console.error('Error fetching blog posts:', error)
@@ -91,7 +91,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
             ) : (
               <>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {posts.map((post: any) => (
+                  {posts.map((post: IArticle) => (
                     <article
                       key={post.id}
                       className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow group"
@@ -101,7 +101,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
                           <div className="relative h-48 overflow-hidden">
                             <Image
                               src={post.image}
-                              alt={post.headline || post.title}
+                              alt={post.headline}
                               fill
                               className="object-cover group-hover:scale-105 transition-transform duration-300"
                             />
@@ -121,11 +121,11 @@ export default async function BlogPage({ searchParams }: PageProps) {
                           )}
 
                           <h2 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition-colors line-clamp-2">
-                            {post.headline || post.title}
+                            {post.headline}
                           </h2>
 
                           <p className="text-slate-600 text-sm mb-4 line-clamp-3">
-                            {post.metaDescription || post.excerpt}
+                            {post.metaDescription}
                           </p>
 
                           <div className="flex items-center gap-4 text-xs text-slate-500">
