@@ -1,4 +1,5 @@
-import { BlogClient, IArticle } from 'seobot'
+import { BlogClient } from 'seobot'
+import type { IArticle } from '@/types/seobot'
 
 export async function GET() {
   const apiKey = process.env.SEOBOT_API_KEY
