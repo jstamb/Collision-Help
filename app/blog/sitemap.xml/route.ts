@@ -1,5 +1,4 @@
 import { BlogClient } from 'seobot'
-import type { IArticleIndex } from '@/types/seobot'
 
 export async function GET() {
   const apiKey = process.env.SEOBOT_API_KEY
@@ -12,7 +11,7 @@ export async function GET() {
     const client = new BlogClient(apiKey)
 
     // Fetch all articles (paginate through all pages)
-    const allArticles: IArticleIndex[] = []
+    const allArticles: any[] = []
     let page = 0
     const limit = 100 // Max per page
     let hasMore = true

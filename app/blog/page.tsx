@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type { Metadata } from 'next'
 import { BlogClient } from 'seobot'
-import type { IArticleIndex } from '@/types/seobot'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { Calendar, Clock, ChevronRight, ChevronLeft, Tag, BookOpen } from 'lucide-react'
@@ -18,7 +17,7 @@ export const metadata: Metadata = {
 
 const POSTS_PER_PAGE = 12
 
-async function getBlogPosts(page: number = 0): Promise<{ posts: IArticleIndex[], total: number }> {
+async function getBlogPosts(page: number = 0): Promise<{ posts: any[], total: number }> {
   const apiKey = process.env.SEOBOT_API_KEY
   if (!apiKey) {
     console.error('SEOBOT_API_KEY is not configured')
@@ -92,7 +91,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
             ) : (
               <>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {posts.map((post: IArticleIndex) => (
+                  {posts.map((post: any) => (
                     <article
                       key={post.id}
                       className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow group"

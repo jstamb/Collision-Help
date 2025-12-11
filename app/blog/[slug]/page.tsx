@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { BlogClient } from 'seobot'
-import type { IArticle } from '@/types/seobot'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { Calendar, Clock, ChevronRight, Tag, User, ArrowLeft } from 'lucide-react'
@@ -13,7 +12,7 @@ interface PageProps {
   params: Promise<{ slug: string }>
 }
 
-async function getArticle(slug: string): Promise<IArticle | null> {
+async function getArticle(slug: string): Promise<any | null> {
   const apiKey = process.env.SEOBOT_API_KEY
   if (!apiKey) {
     console.error('SEOBOT_API_KEY is not configured')
