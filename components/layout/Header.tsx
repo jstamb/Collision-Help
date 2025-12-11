@@ -89,7 +89,9 @@ export default function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-3">
-            <Button size="sm">Get Free Analysis</Button>
+            <Link href="/ai-damage-analyzer">
+              <Button size="sm">Get Free Analysis</Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -133,7 +135,9 @@ export default function Header() {
               ))}
             </div>
             <div className="mt-4 px-4">
-              <Button className="w-full">Get Free Analysis</Button>
+              <Link href="/ai-damage-analyzer" onClick={() => setMobileMenuOpen(false)}>
+                <Button className="w-full">Get Free Analysis</Button>
+              </Link>
             </div>
           </div>
         )}
