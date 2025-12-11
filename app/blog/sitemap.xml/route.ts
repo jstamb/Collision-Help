@@ -1,5 +1,5 @@
 import { BlogClient } from 'seobot'
-import type { IArticle } from '@/types/seobot'
+import type { IArticleIndex } from '@/types/seobot'
 
 export async function GET() {
   const apiKey = process.env.SEOBOT_API_KEY
@@ -12,7 +12,7 @@ export async function GET() {
     const client = new BlogClient(apiKey)
 
     // Fetch all articles (paginate through all pages)
-    const allArticles: IArticle[] = []
+    const allArticles: IArticleIndex[] = []
     let page = 0
     const limit = 100 // Max per page
     let hasMore = true
@@ -36,7 +36,7 @@ export async function GET() {
     const baseUrl = 'https://collisionhelp.org'
 
     const urls = allArticles
-      .filter((article) => article.slug && article.publishedAt && article.published && !article.deleted)
+      .filter((article) => article.slug && article.publishedAt)
       .map((article) => {
         const lastmod = article.updatedAt || article.publishedAt
         return `

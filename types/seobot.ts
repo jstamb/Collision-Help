@@ -19,6 +19,7 @@ export interface IRelatedPost {
   slug: string
 }
 
+// Full article type (returned by getArticle)
 export interface IArticle {
   id: string
   slug: string
@@ -40,7 +41,16 @@ export interface IArticle {
   image: string
 }
 
-export interface IArticlesResponse {
-  articles: IArticle[]
-  total: number
+// Index article type (returned by getArticles, getCategoryArticles, getTagArticles)
+// This is a subset of IArticle without full content fields
+export interface IArticleIndex {
+  id: string
+  slug: string
+  headline: string
+  metaDescription: string
+  category?: ICategory
+  readingTime?: number
+  publishedAt: string
+  updatedAt?: string
+  image?: string
 }
