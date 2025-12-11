@@ -247,10 +247,10 @@ Consider seeking additional assistance if:
                   </h3>
                   <ul className="space-y-2 text-sm">
                     {tableOfContents.map((heading) => (
-                      <li key={heading.id} className={heading.level === 3 ? 'ml-3' : ''}>
+                      <li key={heading.id}>
                         <a
                           href={`#${heading.id}`}
-                          className="text-slate-600 hover:text-brand-600 transition-colors block"
+                          className="text-slate-600 hover:text-brand-600 transition-colors block py-0.5"
                         >
                           {heading.title}
                         </a>

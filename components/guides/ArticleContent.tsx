@@ -148,16 +148,16 @@ export default function ArticleContent({ content }: ArticleContentProps) {
                   td: ({ children }) => (
                     <td className="px-4 py-3 text-slate-600 border border-slate-200">{children}</td>
                   ),
-                  // Add IDs to headings for anchor links
+                  // Add IDs to headings for anchor links with scroll-margin for fixed header
                   h2: ({ children }) => {
                     const text = typeof children === 'string' ? children : String(children)
                     const id = text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')
-                    return <h2 id={id}>{children}</h2>
+                    return <h2 id={id} style={{ scrollMarginTop: '100px' }}>{children}</h2>
                   },
                   h3: ({ children }) => {
                     const text = typeof children === 'string' ? children : String(children)
                     const id = text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')
-                    return <h3 id={id}>{children}</h3>
+                    return <h3 id={id} style={{ scrollMarginTop: '100px' }}>{children}</h3>
                   },
                 }}
               >

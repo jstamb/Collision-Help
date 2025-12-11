@@ -11,17 +11,17 @@ export interface TOCItem {
 
 /**
  * Extract headings from markdown content for table of contents
+ * Only extracts H2 headings to keep TOC concise
  */
 export function extractHeadings(content: string): TOCItem[] {
-  const headingRegex = /^(#{2,3})\s+(.+)$/gm
+  const headingRegex = /^##\s+(.+)$/gm
   const headings: TOCItem[] = []
 
   let match
   while ((match = headingRegex.exec(content)) !== null) {
-    const level = match[1].length
-    const title = match[2].trim()
+    const title = match[1].trim()
     const id = title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')
-    headings.push({ id, title, level })
+    headings.push({ id, title, level: 2 })
   }
 
   return headings
