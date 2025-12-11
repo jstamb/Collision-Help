@@ -16,6 +16,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'cdn.seobotai.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'assets.seobotai.com',
+      },
     ],
   },
   // Reduce cold start time on Cloud Run
