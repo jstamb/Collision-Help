@@ -220,7 +220,7 @@ export default async function ArticlePage({ params }: PageProps) {
                 <div className="mt-12 pt-8 border-t border-slate-200">
                   <h3 className="text-sm font-semibold text-slate-500 mb-3">Tags</h3>
                   <div className="flex flex-wrap gap-2">
-                    {article.tags.map((tag) => (
+                    {article.tags.map((tag: any) => (
                       <Link
                         key={tag.id}
                         href={`/blog/tag/${tag.slug}`}
@@ -239,7 +239,7 @@ export default async function ArticlePage({ params }: PageProps) {
                 <div className="mt-12 pt-8 border-t border-slate-200">
                   <h3 className="text-xl font-bold text-slate-900 mb-6">Related Articles</h3>
                   <div className="grid md:grid-cols-2 gap-6">
-                    {article.relatedPosts.slice(0, 2).map((related) => (
+                    {article.relatedPosts.slice(0, 2).map((related: any) => (
                       <Link
                         key={related.id}
                         href={`/blog/${related.slug}`}
