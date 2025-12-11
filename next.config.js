@@ -11,7 +11,11 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'picsum.photos',
-      }
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.seobotai.com',
+      },
     ],
   },
   // Reduce cold start time on Cloud Run
