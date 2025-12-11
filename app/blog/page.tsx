@@ -7,6 +7,9 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { Calendar, Clock, ChevronRight, ChevronLeft, Tag, BookOpen } from 'lucide-react'
 
+// Revalidate this page every 60 seconds to fetch fresh articles
+export const revalidate = 60
+
 export const metadata: Metadata = {
   title: 'Car Accident Blog | Collision Help',
   description: 'Expert articles on car accidents, insurance claims, vehicle damage assessment, and legal guidance. Stay informed with the latest tips and advice.',

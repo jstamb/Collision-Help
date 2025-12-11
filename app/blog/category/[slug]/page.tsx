@@ -7,6 +7,9 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { Calendar, Clock, ChevronRight, ChevronLeft, Tag, BookOpen, FolderOpen } from 'lucide-react'
 
+// Revalidate this page every 60 seconds to fetch fresh content
+export const revalidate = 60
+
 interface PageProps {
   params: Promise<{ slug: string }>
   searchParams: Promise<{ page?: string }>

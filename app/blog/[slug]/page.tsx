@@ -8,6 +8,9 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { Calendar, Clock, ChevronRight, Tag, User, ArrowLeft } from 'lucide-react'
 
+// Revalidate this page every 60 seconds to fetch fresh content
+export const revalidate = 60
+
 interface PageProps {
   params: Promise<{ slug: string }>
 }
