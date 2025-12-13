@@ -255,7 +255,7 @@ export default async function CityPage({ params }: PageProps) {
 
       <main>
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-brand-900 text-white pt-6 pb-12 md:pt-8 md:pb-16">
+        <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-brand-900 text-white pt-24 pb-12 md:pt-28 md:pb-16">
           <div className="container mx-auto px-4">
             {/* Breadcrumb */}
             <nav className="flex items-center gap-2 text-sm text-slate-400 mb-6">
