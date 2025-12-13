@@ -633,48 +633,28 @@ export const californiaCities: CityData[] = [
     ],
 
     neighborhoods: [
-      {
-        name: "Tower District",
-        slug: "tower-district",
-        description: "Historic entertainment district with pedestrian activity and nightlife traffic"
-      },
-      {
-        name: "Downtown Fresno",
-        slug: "downtown-fresno",
-        description: "Business district with Fulton Street redevelopment and event traffic"
-      },
-      {
-        name: "Clovis",
-        slug: "clovis",
-        description: "Adjacent city with Old Town Clovis attracting weekend visitors"
-      },
-      {
-        name: "Woodward Park Area",
-        slug: "woodward-park",
-        description: "Growing northeast area with regional park drawing heavy weekend traffic"
-      },
-      {
-        name: "Fresno State Area",
-        slug: "fresno-state",
-        description: "University district with game day and event traffic congestion"
-      }
+      { name: "Tower District", characteristics: "Historic entertainment district with pedestrian activity and nightlife traffic" },
+      { name: "Downtown Fresno", characteristics: "Business district with Fulton Street redevelopment and event traffic" },
+      { name: "Clovis", characteristics: "Adjacent city with Old Town Clovis attracting weekend visitors" },
+      { name: "Woodward Park Area", characteristics: "Growing northeast area with regional park drawing heavy weekend traffic" },
+      { name: "Fresno State Area", characteristics: "University district with game day and event traffic congestion" }
     ],
 
     trafficPatterns: [
       {
-        period: "Harvest Season (June-October)",
+        type: "Harvest Season (June-October)",
         description: "Agricultural truck traffic increases dramatically; slow-moving farm equipment on roads"
       },
       {
-        period: "Tule Fog Season (November-March)",
+        type: "Tule Fog Season (November-March)",
         description: "Dense fog creates EXTREMELY DANGEROUS conditions with multi-vehicle pileups common"
       },
       {
-        period: "Summer Heat Waves",
+        type: "Summer Heat Waves",
         description: "100°F+ temperatures cause tire blowouts and overheated vehicles on highways"
       },
       {
-        period: "Yosemite Season (May-September)",
+        type: "Yosemite Season (May-September)",
         description: "Highway 41 tourist traffic to national park significantly increases"
       }
     ],
@@ -766,53 +746,29 @@ export const californiaCities: CityData[] = [
     ],
 
     neighborhoods: [
-      {
-        name: "Downtown Long Beach",
-        slug: "downtown-long-beach",
-        description: "Urban core with convention center, waterfront attractions, and cruise terminal traffic"
-      },
-      {
-        name: "Belmont Shore",
-        slug: "belmont-shore",
-        description: "Popular beach community with 2nd Street dining and shopping traffic"
-      },
-      {
-        name: "Port of Long Beach Area",
-        slug: "port-area",
-        description: "Industrial port zone with constant truck traffic—use extreme caution"
-      },
-      {
-        name: "Naples",
-        slug: "naples",
-        description: "Island community with narrow bridges and limited parking creating bottlenecks"
-      },
-      {
-        name: "Bixby Knolls",
-        slug: "bixby-knolls",
-        description: "Residential area with Atlantic Avenue commercial corridor"
-      },
-      {
-        name: "Cal State Long Beach Area",
-        slug: "csulb",
-        description: "University district with student traffic and parking challenges"
-      }
+      { name: "Downtown Long Beach", characteristics: "Urban core with convention center, waterfront attractions, and cruise terminal traffic" },
+      { name: "Belmont Shore", characteristics: "Popular beach community with 2nd Street dining and shopping traffic" },
+      { name: "Port of Long Beach Area", characteristics: "Industrial port zone with constant truck traffic—use extreme caution" },
+      { name: "Naples", characteristics: "Island community with narrow bridges and limited parking creating bottlenecks" },
+      { name: "Bixby Knolls", characteristics: "Residential area with Atlantic Avenue commercial corridor" },
+      { name: "Cal State Long Beach Area", characteristics: "University district with student traffic and parking challenges" }
     ],
 
     trafficPatterns: [
       {
-        period: "Port Operations (24/7)",
+        type: "Port Operations (24/7)",
         description: "Constant container truck traffic on I-710; peak congestion during daytime hours"
       },
       {
-        period: "Cruise Ship Days",
+        type: "Cruise Ship Days",
         description: "Major traffic around downtown when cruise ships arrive/depart at Long Beach Cruise Terminal"
       },
       {
-        period: "Grand Prix Weekend (April)",
+        type: "Grand Prix Weekend (April)",
         description: "Downtown streets closed for racing; expect major detours and congestion"
       },
       {
-        period: "Summer Beach Season",
+        type: "Summer Beach Season",
         description: "PCH and beach access roads heavily congested on weekends"
       }
     ],
@@ -905,53 +861,29 @@ export const californiaCities: CityData[] = [
     ],
 
     neighborhoods: [
-      {
-        name: "Downtown Oakland",
-        slug: "downtown-oakland",
-        description: "Business district with BART stations, events at Oakland Arena, and court traffic"
-      },
-      {
-        name: "Jack London Square",
-        slug: "jack-london-square",
-        description: "Waterfront entertainment district with restaurants and ferry terminal"
-      },
-      {
-        name: "Temescal",
-        slug: "temescal",
-        description: "Popular shopping and dining corridor on Telegraph Avenue"
-      },
-      {
-        name: "Rockridge",
-        slug: "rockridge",
-        description: "Affluent neighborhood with College Avenue shopping district"
-      },
-      {
-        name: "Port of Oakland Area",
-        slug: "port-area",
-        description: "Industrial port zone with container truck traffic"
-      },
-      {
-        name: "Oakland Hills",
-        slug: "oakland-hills",
-        description: "Hillside residential areas with winding roads and fire evacuation concerns"
-      }
+      { name: "Downtown Oakland", characteristics: "Business district with BART stations, events at Oakland Arena, and court traffic" },
+      { name: "Jack London Square", characteristics: "Waterfront entertainment district with restaurants and ferry terminal" },
+      { name: "Temescal", characteristics: "Popular shopping and dining corridor on Telegraph Avenue" },
+      { name: "Rockridge", characteristics: "Affluent neighborhood with College Avenue shopping district" },
+      { name: "Port of Oakland Area", characteristics: "Industrial port zone with container truck traffic" },
+      { name: "Oakland Hills", characteristics: "Hillside residential areas with winding roads and fire evacuation concerns" }
     ],
 
     trafficPatterns: [
       {
-        period: "Bay Bridge Commute (Daily)",
+        type: "Bay Bridge Commute (Daily)",
         description: "I-80 westbound extremely congested mornings; eastbound evenings—some of worst traffic in US"
       },
       {
-        period: "Caldecott Tunnel Rush Hour",
+        type: "Caldecott Tunnel Rush Hour",
         description: "Highway 24 through tunnel backs up significantly during commute hours"
       },
       {
-        period: "Event Days",
+        type: "Event Days",
         description: "Oakland Coliseum events create I-880 gridlock; plan extra time"
       },
       {
-        period: "Port Operations",
+        type: "Port Operations",
         description: "24/7 truck traffic on I-880 from Port of Oakland"
       }
     ],
@@ -1041,48 +973,28 @@ export const californiaCities: CityData[] = [
     ],
 
     neighborhoods: [
-      {
-        name: "Downtown Bakersfield",
-        slug: "downtown-bakersfield",
-        description: "Historic downtown with revitalization and event traffic"
-      },
-      {
-        name: "Oildale",
-        slug: "oildale",
-        description: "Northern area with industrial traffic"
-      },
-      {
-        name: "Rosedale",
-        slug: "rosedale",
-        description: "Growing northwest area with new development"
-      },
-      {
-        name: "Southwest Bakersfield",
-        slug: "southwest",
-        description: "Residential area near highway interchanges"
-      },
-      {
-        name: "Highway 99 Corridor",
-        slug: "highway-99-corridor",
-        description: "Commercial strip with high accident rates"
-      }
+      { name: "Downtown Bakersfield", characteristics: "Historic downtown with revitalization and event traffic" },
+      { name: "Oildale", characteristics: "Northern area with industrial traffic" },
+      { name: "Rosedale", characteristics: "Growing northwest area with new development" },
+      { name: "Southwest Bakersfield", characteristics: "Residential area near highway interchanges" },
+      { name: "Highway 99 Corridor", characteristics: "Commercial strip with high accident rates" }
     ],
 
     trafficPatterns: [
       {
-        period: "Agricultural Season (Year-round)",
+        type: "Agricultural Season (Year-round)",
         description: "Constant truck traffic from farming operations; slow-moving farm equipment on rural roads"
       },
       {
-        period: "Oil Field Shift Changes",
+        type: "Oil Field Shift Changes",
         description: "Oil industry workers create traffic spikes at shift changes"
       },
       {
-        period: "Tule Fog Season (November-March)",
+        type: "Tule Fog Season (November-March)",
         description: "EXTREMELY DANGEROUS dense fog causes zero visibility and massive pileups"
       },
       {
-        period: "Weekend Grapevine Traffic",
+        type: "Weekend Grapevine Traffic",
         description: "I-5 over Grapevine Pass extremely congested with LA-bound traffic"
       }
     ],
@@ -1175,48 +1087,28 @@ export const californiaCities: CityData[] = [
     ],
 
     neighborhoods: [
-      {
-        name: "Downtown San Bernardino",
-        slug: "downtown",
-        description: "Central business district with court and government traffic"
-      },
-      {
-        name: "Inland Center Area",
-        slug: "inland-center",
-        description: "Commercial district with mall and retail traffic"
-      },
-      {
-        name: "Cal State San Bernardino",
-        slug: "csusb",
-        description: "University area with student traffic"
-      },
-      {
-        name: "San Bernardino International Airport",
-        slug: "airport-area",
-        description: "Growing logistics hub with increasing truck traffic"
-      },
-      {
-        name: "Cajon Pass Area",
-        slug: "cajon-pass",
-        description: "Mountain pass entrance with truck staging areas"
-      }
+      { name: "Downtown San Bernardino", characteristics: "Central business district with court and government traffic" },
+      { name: "Inland Center Area", characteristics: "Commercial district with mall and retail traffic" },
+      { name: "Cal State San Bernardino", characteristics: "University area with student traffic" },
+      { name: "San Bernardino International Airport", characteristics: "Growing logistics hub with increasing truck traffic" },
+      { name: "Cajon Pass Area", characteristics: "Mountain pass entrance with truck staging areas" }
     ],
 
     trafficPatterns: [
       {
-        period: "Cajon Pass Traffic (Daily)",
+        type: "Cajon Pass Traffic (Daily)",
         description: "I-15 through Cajon Pass is heavily congested; brake check areas for trucks"
       },
       {
-        period: "Weekend Las Vegas Traffic",
+        type: "Weekend Las Vegas Traffic",
         description: "Friday evenings and Sunday returns create massive I-15 backups"
       },
       {
-        period: "Logistics/Warehouse Traffic",
+        type: "Logistics/Warehouse Traffic",
         description: "Massive warehouse district creates constant truck traffic on I-10"
       },
       {
-        period: "Mountain Resort Weekends",
+        type: "Mountain Resort Weekends",
         description: "Big Bear and Lake Arrowhead traffic clogs mountain routes"
       }
     ],
@@ -1310,48 +1202,28 @@ export const californiaCities: CityData[] = [
     ],
 
     neighborhoods: [
-      {
-        name: "Anaheim Resort District",
-        slug: "resort-district",
-        description: "Disneyland and convention center area with extreme tourist traffic"
-      },
-      {
-        name: "Platinum Triangle",
-        slug: "platinum-triangle",
-        description: "Angel Stadium and Honda Center area with major event traffic"
-      },
-      {
-        name: "Downtown Anaheim",
-        slug: "downtown-anaheim",
-        description: "Historic Packing District and Center Street with dining/entertainment traffic"
-      },
-      {
-        name: "Anaheim Hills",
-        slug: "anaheim-hills",
-        description: "Hillside residential area with winding roads"
-      },
-      {
-        name: "West Anaheim",
-        slug: "west-anaheim",
-        description: "Residential area near Buena Park and Knott's Berry Farm"
-      }
+      { name: "Anaheim Resort District", characteristics: "Disneyland and convention center area with extreme tourist traffic" },
+      { name: "Platinum Triangle", characteristics: "Angel Stadium and Honda Center area with major event traffic" },
+      { name: "Downtown Anaheim", characteristics: "Historic Packing District and Center Street with dining/entertainment traffic" },
+      { name: "Anaheim Hills", characteristics: "Hillside residential area with winding roads" },
+      { name: "West Anaheim", characteristics: "Residential area near Buena Park and Knott's Berry Farm" }
     ],
 
     trafficPatterns: [
       {
-        period: "Disneyland Operations (Daily)",
+        type: "Disneyland Operations (Daily)",
         description: "Disney attracts 50,000+ visitors daily; I-5 around Harbor Boulevard extremely congested"
       },
       {
-        period: "Angels/Ducks Game Days",
+        type: "Angels/Ducks Game Days",
         description: "Stadium and arena events create Platinum Triangle gridlock"
       },
       {
-        period: "Convention Events",
+        type: "Convention Events",
         description: "Anaheim Convention Center hosts major events creating regional traffic impacts"
       },
       {
-        period: "Highway 91 Commute",
+        type: "Highway 91 Commute",
         description: "Highway 91 is consistently rated among America's most congested freeways"
       }
     ],
@@ -1445,48 +1317,28 @@ export const californiaCities: CityData[] = [
     ],
 
     neighborhoods: [
-      {
-        name: "Downtown Santa Ana",
-        slug: "downtown-santa-ana",
-        description: "Historic downtown with government buildings, courts, and artist district"
-      },
-      {
-        name: "South Coast Metro",
-        slug: "south-coast-metro",
-        description: "Major business and shopping district near South Coast Plaza"
-      },
-      {
-        name: "Santa Ana Civic Center",
-        slug: "civic-center",
-        description: "County government complex with court traffic"
-      },
-      {
-        name: "MainPlace Area",
-        slug: "mainplace",
-        description: "Mall and commercial area near I-5"
-      },
-      {
-        name: "John Wayne Airport Area",
-        slug: "airport-area",
-        description: "Airport and business district with rental car traffic"
-      }
+      { name: "Downtown Santa Ana", characteristics: "Historic downtown with government buildings, courts, and artist district" },
+      { name: "South Coast Metro", characteristics: "Major business and shopping district near South Coast Plaza" },
+      { name: "Santa Ana Civic Center", characteristics: "County government complex with court traffic" },
+      { name: "MainPlace Area", characteristics: "Mall and commercial area near I-5" },
+      { name: "John Wayne Airport Area", characteristics: "Airport and business district with rental car traffic" }
     ],
 
     trafficPatterns: [
       {
-        period: "Court Hours (Weekdays)",
+        type: "Court Hours (Weekdays)",
         description: "Orange County Superior Court generates significant downtown traffic"
       },
       {
-        period: "South Coast Plaza Events",
+        type: "South Coast Plaza Events",
         description: "Shopping center draws regional traffic, especially weekends and holidays"
       },
       {
-        period: "Airport Traffic",
+        type: "Airport Traffic",
         description: "John Wayne Airport creates localized congestion on nearby streets"
       },
       {
-        period: "Rush Hour I-5",
+        type: "Rush Hour I-5",
         description: "I-5 through Santa Ana experiences severe commute congestion"
       }
     ],
@@ -2134,53 +1986,29 @@ export const texasCities: CityData[] = [
     ],
 
     neighborhoods: [
-      {
-        name: "Downtown El Paso",
-        slug: "downtown-el-paso",
-        description: "Historic business district adjacent to international bridges; heavy pedestrian traffic"
-      },
-      {
-        name: "UTEP Area",
-        slug: "utep-area",
-        description: "University of Texas at El Paso campus area with student traffic and parking challenges"
-      },
-      {
-        name: "Westside",
-        slug: "westside",
-        description: "Growing residential area near New Mexico border with I-10 access"
-      },
-      {
-        name: "Eastside/Mission Valley",
-        slug: "mission-valley",
-        description: "Historic Mission Trail area with Socorro and San Elizario communities"
-      },
-      {
-        name: "Northeast/Fort Bliss",
-        slug: "fort-bliss",
-        description: "Military installation area with significant soldier and contractor traffic"
-      },
-      {
-        name: "Cielo Vista Area",
-        slug: "cielo-vista",
-        description: "Major shopping district with mall traffic and commercial congestion"
-      }
+      { name: "Downtown El Paso", characteristics: "Historic business district adjacent to international bridges; heavy pedestrian traffic" },
+      { name: "UTEP Area", characteristics: "University of Texas at El Paso campus area with student traffic and parking challenges" },
+      { name: "Westside", characteristics: "Growing residential area near New Mexico border with I-10 access" },
+      { name: "Eastside/Mission Valley", characteristics: "Historic Mission Trail area with Socorro and San Elizario communities" },
+      { name: "Northeast/Fort Bliss", characteristics: "Military installation area with significant soldier and contractor traffic" },
+      { name: "Cielo Vista Area", characteristics: "Major shopping district with mall traffic and commercial congestion" }
     ],
 
     trafficPatterns: [
       {
-        period: "International Bridge Rush Hours",
+        type: "International Bridge Rush Hours",
         description: "Morning and evening cross-border commuters create major delays at Paso del Norte, Stanton, and Zaragoza bridges"
       },
       {
-        period: "Fort Bliss PT Hours",
+        type: "Fort Bliss PT Hours",
         description: "Early morning military physical training releases soldiers onto roads simultaneously"
       },
       {
-        period: "Weekend Shopping",
+        type: "Weekend Shopping",
         description: "Mexican nationals crossing for weekend shopping create retail area congestion"
       },
       {
-        period: "Dust Storm Season",
+        type: "Dust Storm Season",
         description: "Spring windstorms create sudden zero-visibility dust storms (haboobs) causing pileups"
       }
     ],
@@ -2721,53 +2549,29 @@ export const floridaCities: CityData[] = [
     ],
 
     neighborhoods: [
-      {
-        name: "Downtown St. Petersburg",
-        slug: "downtown-st-pete",
-        description: "Vibrant waterfront district with museums, restaurants, and event traffic"
-      },
-      {
-        name: "Grand Central District",
-        slug: "grand-central",
-        description: "Arts and antiques district with pedestrian activity"
-      },
-      {
-        name: "Beach Drive",
-        slug: "beach-drive",
-        description: "Upscale waterfront area with restaurants and galleries"
-      },
-      {
-        name: "Tropicana Field Area",
-        slug: "tropicana-field",
-        description: "Stadium district with major event traffic for Rays games and concerts"
-      },
-      {
-        name: "St. Pete Beach",
-        slug: "st-pete-beach",
-        description: "Gulf beach community with heavy tourist traffic"
-      },
-      {
-        name: "Tyrone Area",
-        slug: "tyrone",
-        description: "Commercial area with mall and shopping center traffic"
-      }
+      { name: "Downtown St. Petersburg", characteristics: "Vibrant waterfront district with museums, restaurants, and event traffic" },
+      { name: "Grand Central District", characteristics: "Arts and antiques district with pedestrian activity" },
+      { name: "Beach Drive", characteristics: "Upscale waterfront area with restaurants and galleries" },
+      { name: "Tropicana Field Area", characteristics: "Stadium district with major event traffic for Rays games and concerts" },
+      { name: "St. Pete Beach", characteristics: "Gulf beach community with heavy tourist traffic" },
+      { name: "Tyrone Area", characteristics: "Commercial area with mall and shopping center traffic" }
     ],
 
     trafficPatterns: [
       {
-        period: "Bridge Commute Hours",
+        type: "Bridge Commute Hours",
         description: "Howard Frankland, Gandy, and Courtney Campbell bridges extremely congested during Tampa commute"
       },
       {
-        period: "Spring Training (February-March)",
+        type: "Spring Training (February-March)",
         description: "Major League Baseball spring training brings significant tourist traffic"
       },
       {
-        period: "Rays Game Days",
+        type: "Rays Game Days",
         description: "Tropicana Field events create localized congestion"
       },
       {
-        period: "Beach Season (Year-round)",
+        type: "Beach Season (Year-round)",
         description: "Gulf beaches attract visitors especially on weekends and holidays"
       }
     ],
@@ -3989,53 +3793,29 @@ export const ohioCities: CityData[] = [
     ],
 
     neighborhoods: [
-      {
-        name: "Downtown/The Banks",
-        slug: "downtown-banks",
-        description: "Central business district with stadium traffic for Reds and Bengals games"
-      },
-      {
-        name: "Over-the-Rhine (OTR)",
-        slug: "over-the-rhine",
-        description: "Historic entertainment district with narrow streets and pedestrian activity"
-      },
-      {
-        name: "Clifton/University",
-        slug: "clifton-university",
-        description: "UC campus area with student traffic and hospital complexes"
-      },
-      {
-        name: "Hyde Park/Oakley",
-        slug: "hyde-park-oakley",
-        description: "Popular dining and shopping districts on the east side"
-      },
-      {
-        name: "Northern Kentucky",
-        slug: "northern-kentucky",
-        description: "Covington and Newport across the river; different state laws apply"
-      },
-      {
-        name: "West Side/Western Hills",
-        slug: "western-hills",
-        description: "Hilly terrain with Western Hills Viaduct bottleneck"
-      }
+      { name: "Downtown/The Banks", characteristics: "Central business district with stadium traffic for Reds and Bengals games" },
+      { name: "Over-the-Rhine (OTR)", characteristics: "Historic entertainment district with narrow streets and pedestrian activity" },
+      { name: "Clifton/University", characteristics: "UC campus area with student traffic and hospital complexes" },
+      { name: "Hyde Park/Oakley", characteristics: "Popular dining and shopping districts on the east side" },
+      { name: "Northern Kentucky", characteristics: "Covington and Newport across the river; different state laws apply" },
+      { name: "West Side/Western Hills", characteristics: "Hilly terrain with Western Hills Viaduct bottleneck" }
     ],
 
     trafficPatterns: [
       {
-        period: "Brent Spence Bridge Congestion",
+        type: "Brent Spence Bridge Congestion",
         description: "This critical I-75 bridge is one of the nation's worst bottlenecks—constant backup"
       },
       {
-        period: "Game Days",
+        type: "Game Days",
         description: "Reds (spring-fall) and Bengals (fall-winter) games create severe downtown congestion"
       },
       {
-        period: "Rush Hour Hills",
+        type: "Rush Hour Hills",
         description: "Cincinnati's extreme hills create dangerous conditions when wet or icy"
       },
       {
-        period: "Festival Season",
+        type: "Festival Season",
         description: "Oktoberfest, Taste of Cincinnati, and other festivals close downtown streets"
       }
     ],
