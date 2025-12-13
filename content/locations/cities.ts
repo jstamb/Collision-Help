@@ -7266,7 +7266,7 @@ export const alabamaCities: CityData[] = [
       { type: "Rush Hour", description: "I-65 and I-85 congested 7-9 AM and 4-6 PM" },
       { type: "State Government", description: "Capitol and state offices affect downtown traffic" },
       { type: "Maxwell AFB", description: "Military base shift changes impact west Montgomery" },
-      { type: "ASU Events", characteristics: "Alabama State University events affect downtown" },
+      { type: "ASU Events", description: "Alabama State University events affect downtown" },
       { type: "Football Season", description: "Auburn/Alabama traffic on I-85 and I-65" }
     ],
 
@@ -8885,7 +8885,7 @@ export const mississippiCities: CityData[] = [
     trafficPatterns: [
       { type: "State Government", description: "Capitol workers create concentrated rush hour peaks" },
       { type: "Medical Center Traffic", description: "UMC and area hospitals generate significant all-day traffic" },
-      { type: "Stadium Events", characteristics: "Mississippi Veterans Memorial Stadium events impact I-55" },
+      { type: "Stadium Events", description: "Mississippi Veterans Memorial Stadium events impact I-55" },
       { type: "Suburban Flight", description: "Significant commuter traffic from Madison and Rankin counties" }
     ],
 
