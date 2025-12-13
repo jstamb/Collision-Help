@@ -604,6 +604,949 @@ export const californiaCities: CityData[] = [
       "Sacramento traffic collision",
       "California capital car accident"
     ]
+  },
+  {
+    slug: "fresno",
+    name: "Fresno",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 542107,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Highway 99",
+        description: "Primary north-south corridor through city; heavy truck traffic from agricultural operations"
+      },
+      {
+        name: "Highway 41",
+        description: "Gateway to Yosemite; tourist traffic spikes seasonally with national park visitors"
+      },
+      {
+        name: "Highway 180",
+        description: "East-west route to Kings Canyon; connects downtown to eastern suburbs"
+      },
+      {
+        name: "Highway 168",
+        description: "Northeast corridor to Clovis and Sierra Nevada foothills"
+      }
+    ],
+
+    neighborhoods: [
+      {
+        name: "Tower District",
+        slug: "tower-district",
+        description: "Historic entertainment district with pedestrian activity and nightlife traffic"
+      },
+      {
+        name: "Downtown Fresno",
+        slug: "downtown-fresno",
+        description: "Business district with Fulton Street redevelopment and event traffic"
+      },
+      {
+        name: "Clovis",
+        slug: "clovis",
+        description: "Adjacent city with Old Town Clovis attracting weekend visitors"
+      },
+      {
+        name: "Woodward Park Area",
+        slug: "woodward-park",
+        description: "Growing northeast area with regional park drawing heavy weekend traffic"
+      },
+      {
+        name: "Fresno State Area",
+        slug: "fresno-state",
+        description: "University district with game day and event traffic congestion"
+      }
+    ],
+
+    trafficPatterns: [
+      {
+        period: "Harvest Season (June-October)",
+        description: "Agricultural truck traffic increases dramatically; slow-moving farm equipment on roads"
+      },
+      {
+        period: "Tule Fog Season (November-March)",
+        description: "Dense fog creates EXTREMELY DANGEROUS conditions with multi-vehicle pileups common"
+      },
+      {
+        period: "Summer Heat Waves",
+        description: "100°F+ temperatures cause tire blowouts and overheated vehicles on highways"
+      },
+      {
+        period: "Yosemite Season (May-September)",
+        description: "Highway 41 tourist traffic to national park significantly increases"
+      }
+    ],
+
+    annualAccidents: 8500,
+    fatalAccidents: 85,
+
+    commonAccidentTypes: [
+      "Tule fog multi-vehicle pileups",
+      "Agricultural truck collisions",
+      "Highway 99 high-speed crashes",
+      "Heat-related tire blowouts",
+      "Pedestrian accidents in urban areas"
+    ],
+
+    dangerousIntersections: [
+      "Highway 99 and Highway 41 interchange",
+      "Shaw Avenue and Highway 99",
+      "Blackstone Avenue and Ashlan Avenue",
+      "First Street and Ventura Avenue",
+      "Highway 41 and Friant Road"
+    ],
+
+    policeNonEmergency: "(559) 621-7000",
+
+    introText: "Fresno, California's fifth-largest city and the heart of the San Joaquin Valley, faces unique traffic challenges combining agricultural operations, extreme weather conditions, and its position as the gateway to Yosemite National Park. The city's most dangerous hazard is Tule fog—dense radiation fog that can reduce visibility to near zero and has caused some of California's deadliest highway accidents.",
+
+    localConsiderations: [
+      "TULE FOG WARNING: Fresno experiences some of the densest fog in the nation; multi-vehicle pileups with 50+ cars have occurred on Highway 99",
+      "Agricultural truck traffic: Large farming operations mean slow-moving equipment and heavy trucks on rural roads",
+      "Pure Comparative Negligence applies—you can recover damages even if mostly at fault",
+      "Yosemite tourism creates seasonal traffic spikes on Highway 41",
+      "Extreme summer heat (100°F+) contributes to vehicle failures and driver fatigue"
+    ],
+
+    weatherFactors: [
+      "Tule fog (November-March): Most dangerous driving condition; can have zero visibility",
+      "Extreme summer heat: Regular 100°F+ days cause tire blowouts and overheating",
+      "Air quality alerts: Poor air quality days may affect visibility",
+      "Rare winter ice: Valley floor can ice over during cold snaps"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Agricultural vehicle right-of-way rules apply in rural areas"
+    ],
+
+    metaTitle: "Fresno Car Accident Help | San Joaquin Valley Collision Guide",
+    metaDescription: "Fresno car accident assistance. Navigate Tule fog dangers, agricultural traffic, and Highway 99 accidents. Free guidance for Fresno Valley accident victims.",
+    keywords: [
+      "Fresno car accident",
+      "Fresno accident lawyer",
+      "Highway 99 accident Fresno",
+      "Tule fog accident",
+      "San Joaquin Valley car crash",
+      "Fresno traffic collision"
+    ]
+  },
+  {
+    slug: "long-beach",
+    name: "Long Beach",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 466742,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "I-405",
+        description: "San Diego Freeway through city; consistently ranked among America's most congested freeways"
+      },
+      {
+        name: "I-710",
+        description: "Long Beach Freeway; EXTREMELY heavy truck traffic from Port of Long Beach—busiest port in Western Hemisphere"
+      },
+      {
+        name: "Highway 1 (PCH)",
+        description: "Pacific Coast Highway along the beach; tourist and local traffic mix"
+      },
+      {
+        name: "Highway 91",
+        description: "Artesia Freeway connecting to Orange County and Riverside"
+      },
+      {
+        name: "I-110",
+        description: "Harbor Freeway connecting to San Pedro and downtown LA"
+      }
+    ],
+
+    neighborhoods: [
+      {
+        name: "Downtown Long Beach",
+        slug: "downtown-long-beach",
+        description: "Urban core with convention center, waterfront attractions, and cruise terminal traffic"
+      },
+      {
+        name: "Belmont Shore",
+        slug: "belmont-shore",
+        description: "Popular beach community with 2nd Street dining and shopping traffic"
+      },
+      {
+        name: "Port of Long Beach Area",
+        slug: "port-area",
+        description: "Industrial port zone with constant truck traffic—use extreme caution"
+      },
+      {
+        name: "Naples",
+        slug: "naples",
+        description: "Island community with narrow bridges and limited parking creating bottlenecks"
+      },
+      {
+        name: "Bixby Knolls",
+        slug: "bixby-knolls",
+        description: "Residential area with Atlantic Avenue commercial corridor"
+      },
+      {
+        name: "Cal State Long Beach Area",
+        slug: "csulb",
+        description: "University district with student traffic and parking challenges"
+      }
+    ],
+
+    trafficPatterns: [
+      {
+        period: "Port Operations (24/7)",
+        description: "Constant container truck traffic on I-710; peak congestion during daytime hours"
+      },
+      {
+        period: "Cruise Ship Days",
+        description: "Major traffic around downtown when cruise ships arrive/depart at Long Beach Cruise Terminal"
+      },
+      {
+        period: "Grand Prix Weekend (April)",
+        description: "Downtown streets closed for racing; expect major detours and congestion"
+      },
+      {
+        period: "Summer Beach Season",
+        description: "PCH and beach access roads heavily congested on weekends"
+      }
+    ],
+
+    annualAccidents: 7200,
+    fatalAccidents: 48,
+
+    commonAccidentTypes: [
+      "Truck collisions on I-710 corridor",
+      "Rear-end accidents on congested I-405",
+      "Bicycle accidents (high cycling population)",
+      "Pedestrian accidents in downtown/beach areas",
+      "Port-area industrial accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-710 and I-405 interchange",
+      "PCH and 2nd Street",
+      "Atlantic Avenue and Del Amo Boulevard",
+      "Lakewood Boulevard and Carson Street",
+      "Ocean Boulevard and Alamitos Avenue"
+    ],
+
+    policeNonEmergency: "(562) 435-6711",
+
+    introText: "Long Beach, California's seventh-largest city, is home to one of the world's busiest seaports, creating unique traffic challenges not found in other cities. The Port of Long Beach handles over 9 million shipping containers annually, making the I-710 corridor one of the most dangerous truck routes in America. Combined with beach tourism, a thriving downtown, and proximity to Los Angeles, Long Beach drivers face complex traffic situations daily.",
+
+    localConsiderations: [
+      "I-710 DANGER ZONE: This corridor has the highest concentration of truck traffic in the nation—container trucks from the port operate 24/7",
+      "Port truck accidents often involve commercial carriers with large insurance policies—proper documentation is critical",
+      "Pure Comparative Negligence applies—you can recover damages even if partially at fault",
+      "Bicycle-friendly city has many cyclists; check blind spots carefully",
+      "Grand Prix weekend (April) closes downtown streets—plan accordingly"
+    ],
+
+    weatherFactors: [
+      "Coastal fog: Morning marine layer reduces visibility, especially on PCH",
+      "Sun glare: Strong afternoon sun on westbound routes",
+      "Mild weather year-round reduces weather-related accidents",
+      "Oil on roads: First rain after dry spell makes roads extremely slick"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Port area has commercial vehicle weight restrictions and designated routes",
+      "Bicycle lanes throughout city—watch for cyclists when turning"
+    ],
+
+    metaTitle: "Long Beach Car Accident Help | Port City Collision Guide",
+    metaDescription: "Long Beach car accident assistance. Navigate I-710 truck traffic, port area dangers, and beach community roads. Free guidance for Long Beach accident victims.",
+    keywords: [
+      "Long Beach car accident",
+      "Long Beach accident lawyer",
+      "I-710 truck accident",
+      "Port of Long Beach accident",
+      "Long Beach traffic collision",
+      "LA Harbor area car crash"
+    ]
+  },
+  {
+    slug: "oakland",
+    name: "Oakland",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 433823,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "I-880",
+        description: "Nimitz Freeway; major industrial corridor with heavy truck traffic to Port of Oakland"
+      },
+      {
+        name: "I-580",
+        description: "MacArthur Freeway; critical east-west corridor connecting Bay Bridge to Central Valley"
+      },
+      {
+        name: "I-980",
+        description: "Short downtown connector freeway linking I-580 to I-880"
+      },
+      {
+        name: "Highway 24",
+        description: "Caldecott Tunnel route to Contra Costa County; heavy commuter traffic"
+      },
+      {
+        name: "I-80",
+        description: "Bay Bridge approach; one of the most congested corridors in America"
+      }
+    ],
+
+    neighborhoods: [
+      {
+        name: "Downtown Oakland",
+        slug: "downtown-oakland",
+        description: "Business district with BART stations, events at Oakland Arena, and court traffic"
+      },
+      {
+        name: "Jack London Square",
+        slug: "jack-london-square",
+        description: "Waterfront entertainment district with restaurants and ferry terminal"
+      },
+      {
+        name: "Temescal",
+        slug: "temescal",
+        description: "Popular shopping and dining corridor on Telegraph Avenue"
+      },
+      {
+        name: "Rockridge",
+        slug: "rockridge",
+        description: "Affluent neighborhood with College Avenue shopping district"
+      },
+      {
+        name: "Port of Oakland Area",
+        slug: "port-area",
+        description: "Industrial port zone with container truck traffic"
+      },
+      {
+        name: "Oakland Hills",
+        slug: "oakland-hills",
+        description: "Hillside residential areas with winding roads and fire evacuation concerns"
+      }
+    ],
+
+    trafficPatterns: [
+      {
+        period: "Bay Bridge Commute (Daily)",
+        description: "I-80 westbound extremely congested mornings; eastbound evenings—some of worst traffic in US"
+      },
+      {
+        period: "Caldecott Tunnel Rush Hour",
+        description: "Highway 24 through tunnel backs up significantly during commute hours"
+      },
+      {
+        period: "Event Days",
+        description: "Oakland Coliseum events create I-880 gridlock; plan extra time"
+      },
+      {
+        period: "Port Operations",
+        description: "24/7 truck traffic on I-880 from Port of Oakland"
+      }
+    ],
+
+    annualAccidents: 6800,
+    fatalAccidents: 65,
+
+    commonAccidentTypes: [
+      "Bay Bridge approach rear-end collisions",
+      "I-880 truck accidents",
+      "Sideshow-related incidents",
+      "Pedestrian accidents in urban core",
+      "Hills area accidents on winding roads"
+    ],
+
+    dangerousIntersections: [
+      "I-80 and I-580 interchange (MacArthur Maze)",
+      "I-880 and I-980 interchange",
+      "Broadway and Grand Avenue",
+      "International Boulevard and High Street",
+      "Highway 24 and I-580 interchange"
+    ],
+
+    policeNonEmergency: "(510) 777-3333",
+
+    introText: "Oakland, the largest city in the East Bay and home to the Port of Oakland—one of America's busiest seaports—faces intense traffic challenges from multiple sources. The city sits at the convergence of multiple major freeways, including the Bay Bridge approach, creating what's known as the 'MacArthur Maze.' Combined with port truck traffic, a dense urban environment, and hillside communities with winding roads, Oakland presents unique driving challenges.",
+
+    localConsiderations: [
+      "MacArthur Maze: The I-80/I-580/I-880 interchange is notoriously complex and accident-prone",
+      "Bay Bridge traffic: I-80 to San Francisco is consistently ranked among the nation's worst commutes",
+      "Port truck traffic on I-880 creates similar dangers to Long Beach's I-710",
+      "Pure Comparative Negligence applies—you can recover damages even if partially at fault",
+      "Oakland Hills have narrow, winding roads that become treacherous in rain",
+      "Sideshows (illegal car stunts) occasionally block intersections—avoid and call police"
+    ],
+
+    weatherFactors: [
+      "Morning fog: Marine layer from the bay reduces visibility, especially near water",
+      "Microclimates: Weather varies dramatically between waterfront and hills",
+      "First rain after dry spell: Roads become extremely slick with accumulated oil",
+      "Hills area: More rain and occasional ice during winter cold snaps"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "BART parking enforcement strict around stations",
+      "Red light cameras active at various intersections"
+    ],
+
+    metaTitle: "Oakland Car Accident Help | East Bay Collision Guide",
+    metaDescription: "Oakland car accident assistance. Navigate Bay Bridge traffic, I-880 port trucks, and the MacArthur Maze. Free guidance for Oakland and East Bay accident victims.",
+    keywords: [
+      "Oakland car accident",
+      "Oakland accident lawyer",
+      "I-880 accident Oakland",
+      "Bay Bridge accident",
+      "East Bay car crash",
+      "MacArthur Maze accident"
+    ]
+  },
+  {
+    slug: "bakersfield",
+    name: "Bakersfield",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 403455,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Highway 99",
+        description: "Primary north-south route through the Central Valley; heavy truck traffic from agricultural operations"
+      },
+      {
+        name: "Highway 58",
+        description: "East-west route connecting to Tehachapi Pass and Mojave Desert; mountain grades with truck traffic"
+      },
+      {
+        name: "Highway 178",
+        description: "Route to Lake Isabella and Kern River Canyon; winding mountain road"
+      },
+      {
+        name: "I-5",
+        description: "Western route through Grapevine Pass; steep grades and weather closures"
+      }
+    ],
+
+    neighborhoods: [
+      {
+        name: "Downtown Bakersfield",
+        slug: "downtown-bakersfield",
+        description: "Historic downtown with revitalization and event traffic"
+      },
+      {
+        name: "Oildale",
+        slug: "oildale",
+        description: "Northern area with industrial traffic"
+      },
+      {
+        name: "Rosedale",
+        slug: "rosedale",
+        description: "Growing northwest area with new development"
+      },
+      {
+        name: "Southwest Bakersfield",
+        slug: "southwest",
+        description: "Residential area near highway interchanges"
+      },
+      {
+        name: "Highway 99 Corridor",
+        slug: "highway-99-corridor",
+        description: "Commercial strip with high accident rates"
+      }
+    ],
+
+    trafficPatterns: [
+      {
+        period: "Agricultural Season (Year-round)",
+        description: "Constant truck traffic from farming operations; slow-moving farm equipment on rural roads"
+      },
+      {
+        period: "Oil Field Shift Changes",
+        description: "Oil industry workers create traffic spikes at shift changes"
+      },
+      {
+        period: "Tule Fog Season (November-March)",
+        description: "EXTREMELY DANGEROUS dense fog causes zero visibility and massive pileups"
+      },
+      {
+        period: "Weekend Grapevine Traffic",
+        description: "I-5 over Grapevine Pass extremely congested with LA-bound traffic"
+      }
+    ],
+
+    annualAccidents: 7500,
+    fatalAccidents: 90,
+
+    commonAccidentTypes: [
+      "Tule fog chain-reaction pileups",
+      "Highway 99 truck accidents",
+      "Oil field vehicle accidents",
+      "Agricultural equipment collisions",
+      "Grapevine Pass weather-related crashes"
+    ],
+
+    dangerousIntersections: [
+      "Highway 99 and Highway 58 interchange",
+      "Highway 99 and Rosedale Highway",
+      "White Lane and South H Street",
+      "California Avenue and Real Road",
+      "Ming Avenue and Ashe Road"
+    ],
+
+    policeNonEmergency: "(661) 327-7111",
+
+    introText: "Bakersfield, at the southern end of California's Central Valley, is a major oil production center and agricultural hub. The city faces deadly traffic challenges from Tule fog—dense radiation fog that has caused some of California's worst highway disasters. Combined with heavy truck traffic from both the oil industry and agriculture, plus the treacherous Grapevine Pass on I-5, Bakersfield drivers face unique hazards.",
+
+    localConsiderations: [
+      "TULE FOG EXTREME DANGER: Bakersfield is in the heart of Tule fog country; pileups with 100+ vehicles have occurred on Highway 99",
+      "If fog visibility drops: Pull completely off the road, turn OFF all lights (so others don't follow your taillights into a crash)",
+      "Pure Comparative Negligence applies—you can recover damages even if mostly at fault",
+      "Oil industry truck traffic: Large equipment on roads; commercial carrier accidents common",
+      "Grapevine Pass (I-5): Check conditions before traveling; closes in snow and can have high winds"
+    ],
+
+    weatherFactors: [
+      "Tule fog (November-March): Can reduce visibility to zero; most dangerous driving condition in California",
+      "Extreme summer heat: Regular 100°F+ days cause tire blowouts and vehicle overheating",
+      "Grapevine winter weather: Snow closures, ice, and high winds on I-5 pass",
+      "Dust storms: Agricultural dust can reduce visibility suddenly"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Agricultural vehicle right-of-way rules in rural areas",
+      "Oil field vehicle regulations apply in drilling zones"
+    ],
+
+    metaTitle: "Bakersfield Car Accident Help | Kern County Collision Guide",
+    metaDescription: "Bakersfield car accident assistance. Navigate Tule fog dangers, Highway 99 truck traffic, and oil field roads. Free guidance for Kern County accident victims.",
+    keywords: [
+      "Bakersfield car accident",
+      "Bakersfield accident lawyer",
+      "Highway 99 accident Bakersfield",
+      "Tule fog accident Kern County",
+      "Bakersfield traffic collision",
+      "Central Valley car crash"
+    ]
+  },
+  {
+    slug: "san-bernardino",
+    name: "San Bernardino",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 222203,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "I-10",
+        description: "Major east-west interstate through city; connects LA to Palm Springs and Arizona"
+      },
+      {
+        name: "I-215",
+        description: "North-south route through city connecting to Riverside and I-15"
+      },
+      {
+        name: "I-15",
+        description: "Northeast route through Cajon Pass to Las Vegas; steep mountain grades"
+      },
+      {
+        name: "Highway 210",
+        description: "Foothill Freeway along the San Bernardino Mountains"
+      },
+      {
+        name: "Highway 18",
+        description: "Mountain route to Big Bear Lake; dangerous curves and winter conditions"
+      }
+    ],
+
+    neighborhoods: [
+      {
+        name: "Downtown San Bernardino",
+        slug: "downtown",
+        description: "Central business district with court and government traffic"
+      },
+      {
+        name: "Inland Center Area",
+        slug: "inland-center",
+        description: "Commercial district with mall and retail traffic"
+      },
+      {
+        name: "Cal State San Bernardino",
+        slug: "csusb",
+        description: "University area with student traffic"
+      },
+      {
+        name: "San Bernardino International Airport",
+        slug: "airport-area",
+        description: "Growing logistics hub with increasing truck traffic"
+      },
+      {
+        name: "Cajon Pass Area",
+        slug: "cajon-pass",
+        description: "Mountain pass entrance with truck staging areas"
+      }
+    ],
+
+    trafficPatterns: [
+      {
+        period: "Cajon Pass Traffic (Daily)",
+        description: "I-15 through Cajon Pass is heavily congested; brake check areas for trucks"
+      },
+      {
+        period: "Weekend Las Vegas Traffic",
+        description: "Friday evenings and Sunday returns create massive I-15 backups"
+      },
+      {
+        period: "Logistics/Warehouse Traffic",
+        description: "Massive warehouse district creates constant truck traffic on I-10"
+      },
+      {
+        period: "Mountain Resort Weekends",
+        description: "Big Bear and Lake Arrowhead traffic clogs mountain routes"
+      }
+    ],
+
+    annualAccidents: 5800,
+    fatalAccidents: 52,
+
+    commonAccidentTypes: [
+      "Cajon Pass runaway truck accidents",
+      "I-10 warehouse truck collisions",
+      "High-speed freeway accidents",
+      "Mountain road crashes on Highway 18/138",
+      "Rear-end collisions in freeway congestion"
+    ],
+
+    dangerousIntersections: [
+      "I-10 and I-215 interchange",
+      "I-15 and I-215 interchange",
+      "Cajon Pass descending grades",
+      "Highland Avenue and Victoria Avenue",
+      "Baseline Street and Mountain View Avenue"
+    ],
+
+    policeNonEmergency: "(909) 384-5742",
+
+    introText: "San Bernardino, the county seat of the largest county in the continental United States, sits at a critical transportation crossroads. The city is at the base of Cajon Pass—a notorious stretch of I-15 where runaway truck accidents have caused deadly crashes. The Inland Empire's massive warehouse and logistics industry means constant truck traffic on local freeways, while weekend traffic to Las Vegas and mountain resorts creates severe congestion.",
+
+    localConsiderations: [
+      "CAJON PASS DANGER: This steep mountain pass has caused numerous fatal runaway truck accidents—maintain safe distance from trucks",
+      "Truck brake check areas: Required stops for commercial vehicles; sudden merging traffic",
+      "Pure Comparative Negligence applies—you can recover damages even if mostly at fault",
+      "Warehouse district accidents often involve commercial carriers with corporate insurance",
+      "Las Vegas weekend traffic: Friday/Sunday I-15 extremely congested and accident-prone",
+      "Mountain roads to Big Bear: Check chains requirements in winter"
+    ],
+
+    weatherFactors: [
+      "Cajon Pass wind: Extreme Santa Ana winds can flip trucks and blow debris across highway",
+      "Winter mountain conditions: Snow and ice on I-15 and mountain roads",
+      "Extreme summer heat: 100°F+ temperatures cause tire blowouts",
+      "Santa Ana winds: Create fire and debris hazards on freeways"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Commercial truck brake check requirements on Cajon Pass",
+      "Chain requirements for mountain routes in winter"
+    ],
+
+    metaTitle: "San Bernardino Car Accident Help | Inland Empire Collision Guide",
+    metaDescription: "San Bernardino car accident assistance. Navigate Cajon Pass dangers, I-10 truck traffic, and Inland Empire freeways. Free guidance for San Bernardino County accident victims.",
+    keywords: [
+      "San Bernardino car accident",
+      "San Bernardino accident lawyer",
+      "Cajon Pass accident",
+      "I-10 accident San Bernardino",
+      "Inland Empire car crash",
+      "San Bernardino County traffic collision"
+    ]
+  },
+  {
+    slug: "anaheim",
+    name: "Anaheim",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 350365,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "I-5",
+        description: "Primary freeway through city; provides access to Disneyland Resort and Angel Stadium"
+      },
+      {
+        name: "Highway 91",
+        description: "East-west freeway connecting Orange County to Riverside; notoriously congested"
+      },
+      {
+        name: "Highway 57",
+        description: "North-south freeway connecting to Brea and Diamond Bar"
+      },
+      {
+        name: "Highway 22",
+        description: "Garden Grove Freeway connecting to Long Beach"
+      },
+      {
+        name: "I-405",
+        description: "Western route connecting to LA and San Diego"
+      }
+    ],
+
+    neighborhoods: [
+      {
+        name: "Anaheim Resort District",
+        slug: "resort-district",
+        description: "Disneyland and convention center area with extreme tourist traffic"
+      },
+      {
+        name: "Platinum Triangle",
+        slug: "platinum-triangle",
+        description: "Angel Stadium and Honda Center area with major event traffic"
+      },
+      {
+        name: "Downtown Anaheim",
+        slug: "downtown-anaheim",
+        description: "Historic Packing District and Center Street with dining/entertainment traffic"
+      },
+      {
+        name: "Anaheim Hills",
+        slug: "anaheim-hills",
+        description: "Hillside residential area with winding roads"
+      },
+      {
+        name: "West Anaheim",
+        slug: "west-anaheim",
+        description: "Residential area near Buena Park and Knott's Berry Farm"
+      }
+    ],
+
+    trafficPatterns: [
+      {
+        period: "Disneyland Operations (Daily)",
+        description: "Disney attracts 50,000+ visitors daily; I-5 around Harbor Boulevard extremely congested"
+      },
+      {
+        period: "Angels/Ducks Game Days",
+        description: "Stadium and arena events create Platinum Triangle gridlock"
+      },
+      {
+        period: "Convention Events",
+        description: "Anaheim Convention Center hosts major events creating regional traffic impacts"
+      },
+      {
+        period: "Highway 91 Commute",
+        description: "Highway 91 is consistently rated among America's most congested freeways"
+      }
+    ],
+
+    annualAccidents: 5200,
+    fatalAccidents: 28,
+
+    commonAccidentTypes: [
+      "I-5 congestion rear-end accidents",
+      "Tourist-related accidents (unfamiliar drivers)",
+      "Highway 91 high-speed crashes",
+      "Event traffic accidents",
+      "Pedestrian accidents in resort area"
+    ],
+
+    dangerousIntersections: [
+      "I-5 and Highway 91 interchange",
+      "I-5 and Ball Road (Disneyland exit)",
+      "Harbor Boulevard and Katella Avenue",
+      "Ball Road and Harbor Boulevard",
+      "Highway 91 and Highway 57 interchange"
+    ],
+
+    policeNonEmergency: "(714) 765-1900",
+
+    introText: "Anaheim, home to Disneyland Resort—the second most visited theme park in the world—faces unique traffic challenges centered around tourism and major sporting events. The city draws over 25 million visitors annually to Disney alone, plus millions more for Angels baseball, Ducks hockey, and the Anaheim Convention Center. This creates some of Orange County's most challenging traffic patterns, particularly on I-5 and around Harbor Boulevard.",
+
+    localConsiderations: [
+      "DISNEY TRAFFIC: The Resort District around Harbor Boulevard and Ball Road experiences extreme congestion; allow extra time",
+      "Tourist drivers: Expect unfamiliar drivers looking at GPS, making sudden lane changes, and missing exits",
+      "Pure Comparative Negligence applies—you can recover damages even if mostly at fault",
+      "Event traffic: Check schedule for Angels, Ducks, and convention events before traveling through",
+      "Highway 91 corridor: One of the most congested in America; consider express lanes",
+      "Rental car accidents common due to tourist population—verify insurance coverage"
+    ],
+
+    weatherFactors: [
+      "Coastal fog: Morning marine layer can reduce visibility on I-5",
+      "Sun glare: Afternoon sun intense on westbound routes",
+      "Santa Ana winds: Create fire hazards and debris on roads",
+      "Mild weather year-round reduces weather-related accidents"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Express lane requirements on Highway 91",
+      "Special event traffic control around resort district"
+    ],
+
+    metaTitle: "Anaheim Car Accident Help | Orange County Disneyland Area Guide",
+    metaDescription: "Anaheim car accident assistance. Navigate Disneyland area traffic, understand I-5 and Highway 91 accident claims, and get help with your insurance claim. Free guidance for Anaheim accident victims.",
+    keywords: [
+      "Anaheim car accident",
+      "Anaheim accident lawyer",
+      "Disneyland traffic accident",
+      "I-5 accident Anaheim",
+      "Orange County car crash",
+      "Highway 91 accident"
+    ]
+  },
+  {
+    slug: "santa-ana",
+    name: "Santa Ana",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 310227,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "I-5",
+        description: "Primary north-south freeway through city"
+      },
+      {
+        name: "Highway 55",
+        description: "Costa Mesa Freeway connecting to Newport Beach and I-405"
+      },
+      {
+        name: "Highway 22",
+        description: "Garden Grove Freeway running east-west through city"
+      },
+      {
+        name: "I-405",
+        description: "San Diego Freeway on western edge of city"
+      },
+      {
+        name: "Highway 57",
+        description: "Orange Freeway on eastern edge"
+      }
+    ],
+
+    neighborhoods: [
+      {
+        name: "Downtown Santa Ana",
+        slug: "downtown-santa-ana",
+        description: "Historic downtown with government buildings, courts, and artist district"
+      },
+      {
+        name: "South Coast Metro",
+        slug: "south-coast-metro",
+        description: "Major business and shopping district near South Coast Plaza"
+      },
+      {
+        name: "Santa Ana Civic Center",
+        slug: "civic-center",
+        description: "County government complex with court traffic"
+      },
+      {
+        name: "MainPlace Area",
+        slug: "mainplace",
+        description: "Mall and commercial area near I-5"
+      },
+      {
+        name: "John Wayne Airport Area",
+        slug: "airport-area",
+        description: "Airport and business district with rental car traffic"
+      }
+    ],
+
+    trafficPatterns: [
+      {
+        period: "Court Hours (Weekdays)",
+        description: "Orange County Superior Court generates significant downtown traffic"
+      },
+      {
+        period: "South Coast Plaza Events",
+        description: "Shopping center draws regional traffic, especially weekends and holidays"
+      },
+      {
+        period: "Airport Traffic",
+        description: "John Wayne Airport creates localized congestion on nearby streets"
+      },
+      {
+        period: "Rush Hour I-5",
+        description: "I-5 through Santa Ana experiences severe commute congestion"
+      }
+    ],
+
+    annualAccidents: 4800,
+    fatalAccidents: 30,
+
+    commonAccidentTypes: [
+      "I-5 freeway accidents",
+      "Pedestrian accidents in urban areas (Santa Ana has high pedestrian activity)",
+      "Rear-end collisions in congested traffic",
+      "Side-impact crashes at intersections",
+      "Hit-and-run incidents"
+    ],
+
+    dangerousIntersections: [
+      "I-5 and Highway 22 interchange",
+      "Bristol Street and MacArthur Boulevard",
+      "17th Street and Tustin Avenue",
+      "First Street and Grand Avenue",
+      "Harbor Boulevard and Westminster Avenue"
+    ],
+
+    policeNonEmergency: "(714) 245-8665",
+
+    introText: "Santa Ana, the county seat of Orange County and home to the Orange County Superior Court, is one of the most densely populated cities in California. Its central location in Orange County means it sees pass-through traffic from multiple freeways, while its downtown hosts the busiest courthouse in the county. The city has a significant pedestrian population, making pedestrian-vehicle accidents a particular concern.",
+
+    localConsiderations: [
+      "HIGH PEDESTRIAN ACTIVITY: Santa Ana has one of the highest pedestrian accident rates in Orange County—use extreme caution",
+      "County seat: Court traffic creates downtown congestion; expect jury duty and court-related parking issues",
+      "Pure Comparative Negligence applies—you can recover damages even if mostly at fault",
+      "Hit-and-run rates higher than surrounding cities—document everything and get witness info immediately",
+      "Densely populated: Tight streets, limited parking, and frequent double-parking create hazards",
+      "Multilingual community: Some accident reports may require translation assistance"
+    ],
+
+    weatherFactors: [
+      "Coastal influence: Morning fog can reduce visibility",
+      "Mild temperatures year-round minimize weather-related accidents",
+      "Santa Ana winds: Can create debris hazards and fire conditions",
+      "First rain after dry period makes roads slick"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Strict pedestrian right-of-way enforcement",
+      "Red light cameras active at several intersections"
+    ],
+
+    metaTitle: "Santa Ana Car Accident Help | Orange County Seat Collision Guide",
+    metaDescription: "Santa Ana car accident assistance. Navigate the Orange County seat, understand pedestrian accident claims, and get help with your insurance claim. Free guidance for Santa Ana accident victims.",
+    keywords: [
+      "Santa Ana car accident",
+      "Santa Ana accident lawyer",
+      "Orange County accident",
+      "I-5 accident Santa Ana",
+      "pedestrian accident Santa Ana",
+      "Santa Ana traffic collision"
+    ]
   }
 ];
 
@@ -1162,6 +2105,142 @@ export const texasCities: CityData[] = [
       "Texas car accident help Fort Worth",
       "Tarrant County accident attorney"
     ]
+  },
+  {
+    slug: "el-paso",
+    name: "El Paso",
+    state: "texas",
+    stateAbbreviation: "TX",
+    population: 678815,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "I-10",
+        description: "Major east-west interstate; only route through city connecting Texas to New Mexico and Arizona"
+      },
+      {
+        name: "US-54",
+        description: "Patriot Freeway; primary north-south route through central El Paso"
+      },
+      {
+        name: "Loop 375",
+        description: "Border Highway/Transmountain Road; circles the city and provides mountain pass route"
+      },
+      {
+        name: "US-62/180",
+        description: "Montana Avenue; major arterial connecting to Carlsbad and eastern destinations"
+      }
+    ],
+
+    neighborhoods: [
+      {
+        name: "Downtown El Paso",
+        slug: "downtown-el-paso",
+        description: "Historic business district adjacent to international bridges; heavy pedestrian traffic"
+      },
+      {
+        name: "UTEP Area",
+        slug: "utep-area",
+        description: "University of Texas at El Paso campus area with student traffic and parking challenges"
+      },
+      {
+        name: "Westside",
+        slug: "westside",
+        description: "Growing residential area near New Mexico border with I-10 access"
+      },
+      {
+        name: "Eastside/Mission Valley",
+        slug: "mission-valley",
+        description: "Historic Mission Trail area with Socorro and San Elizario communities"
+      },
+      {
+        name: "Northeast/Fort Bliss",
+        slug: "fort-bliss",
+        description: "Military installation area with significant soldier and contractor traffic"
+      },
+      {
+        name: "Cielo Vista Area",
+        slug: "cielo-vista",
+        description: "Major shopping district with mall traffic and commercial congestion"
+      }
+    ],
+
+    trafficPatterns: [
+      {
+        period: "International Bridge Rush Hours",
+        description: "Morning and evening cross-border commuters create major delays at Paso del Norte, Stanton, and Zaragoza bridges"
+      },
+      {
+        period: "Fort Bliss PT Hours",
+        description: "Early morning military physical training releases soldiers onto roads simultaneously"
+      },
+      {
+        period: "Weekend Shopping",
+        description: "Mexican nationals crossing for weekend shopping create retail area congestion"
+      },
+      {
+        period: "Dust Storm Season",
+        description: "Spring windstorms create sudden zero-visibility dust storms (haboobs) causing pileups"
+      }
+    ],
+
+    annualAccidents: 15000,
+    fatalAccidents: 95,
+
+    commonAccidentTypes: [
+      "I-10 high-speed crashes",
+      "International bridge approach accidents",
+      "Dust storm pileups",
+      "Commercial truck accidents",
+      "Pedestrian accidents near bridges"
+    ],
+
+    dangerousIntersections: [
+      "I-10 and US-54 interchange",
+      "I-10 and Airway Boulevard",
+      "Paisano Drive and Santa Fe Street (bridge approach)",
+      "Mesa Street and I-10",
+      "Zaragoza Road and I-10"
+    ],
+
+    policeNonEmergency: "(915) 832-4400",
+
+    introText: "El Paso, Texas's sixth-largest city, sits at the far western tip of Texas on the Mexican border directly across from Ciudad Juárez—together forming the largest binational metropolitan area in the Western Hemisphere. The city's unique position creates distinct traffic challenges including international border crossing delays, military traffic from Fort Bliss (one of the Army's largest installations), and extreme desert weather conditions including dangerous dust storms.",
+
+    localConsiderations: [
+      "INTERNATIONAL ACCIDENT COMPLEXITY: Accidents near international bridges may involve Mexican nationals; establish insurance status immediately",
+      "Mexican auto insurance is REQUIRED if you drive into Mexico—US policies do NOT cover accidents in Mexico",
+      "Texas uses modified comparative negligence with 51% bar—if you're 51%+ at fault, you recover nothing",
+      "Fort Bliss military personnel: Federal Tort Claims Act may apply for accidents involving on-duty soldiers",
+      "Dust storms (haboobs): If you can't see, pull off the road COMPLETELY, turn off lights, and wait",
+      "High rate of uninsured drivers due to border proximity—consider uninsured motorist coverage"
+    ],
+
+    weatherFactors: [
+      "Dust storms: Spring winds create sudden zero-visibility conditions causing multi-vehicle pileups",
+      "Extreme heat: Summer temperatures exceed 100°F regularly; tire blowouts common",
+      "Flash flooding: Monsoon season (July-September) causes dangerous road flooding",
+      "Sun glare: Morning eastbound and evening westbound sun glare extremely intense"
+    ],
+
+    uniqueTrafficLaws: [
+      "Texas uses modified comparative negligence (51% bar)",
+      "Border zone may have federal jurisdiction considerations",
+      "Commercial truck regulations strictly enforced on I-10",
+      "Move Over/Slow Down law applies to emergency vehicles"
+    ],
+
+    metaTitle: "El Paso Car Accident Help | Border City Collision Guide",
+    metaDescription: "El Paso car accident assistance. Navigate international border traffic, understand cross-border accident claims, and get help after I-10 and bridge area collisions. Free guidance for El Paso accident victims.",
+    keywords: [
+      "El Paso car accident",
+      "El Paso accident lawyer",
+      "I-10 accident El Paso",
+      "border accident Texas",
+      "El Paso traffic collision",
+      "Texas Mexico border car crash"
+    ]
   }
 ];
 
@@ -1608,6 +2687,146 @@ export const floridaCities: CityData[] = [
       "Jacksonville traffic collision",
       "Florida car accident help Jacksonville",
       "Duval County accident attorney"
+    ]
+  },
+  {
+    slug: "st-petersburg",
+    name: "St. Petersburg",
+    state: "florida",
+    stateAbbreviation: "FL",
+    population: 261338,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "I-275",
+        description: "Primary north-south interstate through the peninsula; connects to Tampa via Howard Frankland Bridge"
+      },
+      {
+        name: "I-175",
+        description: "Short spur connecting downtown St. Pete to I-275"
+      },
+      {
+        name: "US-19",
+        description: "Major arterial along the western coast; EXTREMELY DANGEROUS with high pedestrian fatality rate"
+      },
+      {
+        name: "Gandy Boulevard",
+        description: "Connects to Tampa via Gandy Bridge; heavily congested during rush hours"
+      },
+      {
+        name: "4th Street N",
+        description: "Major north-south arterial through the city"
+      }
+    ],
+
+    neighborhoods: [
+      {
+        name: "Downtown St. Petersburg",
+        slug: "downtown-st-pete",
+        description: "Vibrant waterfront district with museums, restaurants, and event traffic"
+      },
+      {
+        name: "Grand Central District",
+        slug: "grand-central",
+        description: "Arts and antiques district with pedestrian activity"
+      },
+      {
+        name: "Beach Drive",
+        slug: "beach-drive",
+        description: "Upscale waterfront area with restaurants and galleries"
+      },
+      {
+        name: "Tropicana Field Area",
+        slug: "tropicana-field",
+        description: "Stadium district with major event traffic for Rays games and concerts"
+      },
+      {
+        name: "St. Pete Beach",
+        slug: "st-pete-beach",
+        description: "Gulf beach community with heavy tourist traffic"
+      },
+      {
+        name: "Tyrone Area",
+        slug: "tyrone",
+        description: "Commercial area with mall and shopping center traffic"
+      }
+    ],
+
+    trafficPatterns: [
+      {
+        period: "Bridge Commute Hours",
+        description: "Howard Frankland, Gandy, and Courtney Campbell bridges extremely congested during Tampa commute"
+      },
+      {
+        period: "Spring Training (February-March)",
+        description: "Major League Baseball spring training brings significant tourist traffic"
+      },
+      {
+        period: "Rays Game Days",
+        description: "Tropicana Field events create localized congestion"
+      },
+      {
+        period: "Beach Season (Year-round)",
+        description: "Gulf beaches attract visitors especially on weekends and holidays"
+      }
+    ],
+
+    annualAccidents: 6500,
+    fatalAccidents: 55,
+
+    commonAccidentTypes: [
+      "US-19 pedestrian fatalities (consistently rated among America's most dangerous roads)",
+      "Bridge approach rear-end collisions",
+      "Tourist-related accidents",
+      "Bicycle accidents (high cycling population)",
+      "Intersection crashes on major arterials"
+    ],
+
+    dangerousIntersections: [
+      "US-19 and Park Boulevard",
+      "US-19 and 66th Street",
+      "4th Street and 22nd Avenue",
+      "34th Street and 38th Avenue",
+      "I-275 and I-175 interchange"
+    ],
+
+    policeNonEmergency: "(727) 893-7780",
+
+    introText: "St. Petersburg, located on a peninsula between Tampa Bay and the Gulf of Mexico, is known for its beaches, arts scene, and as home to the Tampa Bay Rays. The city faces unique traffic challenges due to its peninsula geography—all commuter traffic to Tampa must cross one of several bridges, creating severe bottlenecks. Most notably, US-19 running through the area is consistently ranked among the most dangerous roads in America for pedestrians.",
+
+    localConsiderations: [
+      "US-19 EXTREME DANGER: This road has the highest pedestrian fatality rate in Florida—use extreme caution",
+      "Florida is a NO-FAULT state: Your PIP (Personal Injury Protection) pays regardless of fault up to $10,000",
+      "Modified comparative negligence with 51% bar—if you're 51%+ at fault, you recover nothing",
+      "Bridge accidents: May involve FDOT (state) jurisdiction; document carefully",
+      "High tourist and elderly population—expect unpredictable driving patterns",
+      "Bicycle-friendly city: Many cyclists use city streets; check before turning"
+    ],
+
+    weatherFactors: [
+      "Hurricane season (June-November): Know evacuation routes across bridges",
+      "Afternoon thunderstorms: Daily summer storms create hydroplaning hazards",
+      "Severe sun glare: Especially on bridges during sunrise/sunset commutes",
+      "Occasional fog: Reduces visibility on bridges and causeways"
+    ],
+
+    uniqueTrafficLaws: [
+      "Florida no-fault state with PIP requirement",
+      "Modified comparative negligence (51% bar) applies",
+      "Move Over law for emergency vehicles",
+      "Bridge lane restrictions during high winds"
+    ],
+
+    metaTitle: "St. Petersburg Car Accident Help | Pinellas Peninsula Collision Guide",
+    metaDescription: "St. Petersburg car accident assistance. Navigate US-19 dangers, bridge traffic, and beach area roads. Understand Florida's no-fault insurance. Free guidance for St. Pete accident victims.",
+    keywords: [
+      "St Petersburg car accident",
+      "St Pete accident lawyer",
+      "US-19 accident Florida",
+      "Pinellas County car crash",
+      "St Petersburg traffic collision",
+      "Tampa Bay area accident help"
     ]
   }
 ];
@@ -2736,6 +3955,146 @@ export const ohioCities: CityData[] = [
       "Cuyahoga County accident attorney",
       "Ohio car accident help Cleveland",
       "Cleveland traffic collision"
+    ]
+  },
+  {
+    slug: "cincinnati",
+    name: "Cincinnati",
+    state: "ohio",
+    stateAbbreviation: "OH",
+    population: 309317,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "I-75",
+        description: "Major north-south interstate through downtown; connects to Kentucky via Brent Spence Bridge"
+      },
+      {
+        name: "I-71",
+        description: "Northeast route to Columbus; merges with I-75 through downtown 'spaghetti junction'"
+      },
+      {
+        name: "I-74",
+        description: "Western route to Indianapolis; major commuter corridor"
+      },
+      {
+        name: "I-275",
+        description: "Outer beltway circling Greater Cincinnati through Ohio, Kentucky, and Indiana"
+      },
+      {
+        name: "US-50",
+        description: "East-west route through downtown connecting to eastern suburbs"
+      }
+    ],
+
+    neighborhoods: [
+      {
+        name: "Downtown/The Banks",
+        slug: "downtown-banks",
+        description: "Central business district with stadium traffic for Reds and Bengals games"
+      },
+      {
+        name: "Over-the-Rhine (OTR)",
+        slug: "over-the-rhine",
+        description: "Historic entertainment district with narrow streets and pedestrian activity"
+      },
+      {
+        name: "Clifton/University",
+        slug: "clifton-university",
+        description: "UC campus area with student traffic and hospital complexes"
+      },
+      {
+        name: "Hyde Park/Oakley",
+        slug: "hyde-park-oakley",
+        description: "Popular dining and shopping districts on the east side"
+      },
+      {
+        name: "Northern Kentucky",
+        slug: "northern-kentucky",
+        description: "Covington and Newport across the river; different state laws apply"
+      },
+      {
+        name: "West Side/Western Hills",
+        slug: "western-hills",
+        description: "Hilly terrain with Western Hills Viaduct bottleneck"
+      }
+    ],
+
+    trafficPatterns: [
+      {
+        period: "Brent Spence Bridge Congestion",
+        description: "This critical I-75 bridge is one of the nation's worst bottlenecks—constant backup"
+      },
+      {
+        period: "Game Days",
+        description: "Reds (spring-fall) and Bengals (fall-winter) games create severe downtown congestion"
+      },
+      {
+        period: "Rush Hour Hills",
+        description: "Cincinnati's extreme hills create dangerous conditions when wet or icy"
+      },
+      {
+        period: "Festival Season",
+        description: "Oktoberfest, Taste of Cincinnati, and other festivals close downtown streets"
+      }
+    ],
+
+    annualAccidents: 11500,
+    fatalAccidents: 65,
+
+    commonAccidentTypes: [
+      "Brent Spence Bridge rear-end collisions",
+      "Hill-related accidents (especially in winter)",
+      "Downtown spaghetti junction merging accidents",
+      "Cross-state accidents involving Kentucky",
+      "Stadium event traffic accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-75/I-71 downtown interchange (Spaghetti Junction)",
+      "Brent Spence Bridge approaches",
+      "Western Hills Viaduct",
+      "Reading Road and I-71",
+      "Columbia Parkway curves"
+    ],
+
+    policeNonEmergency: "(513) 765-1212",
+
+    introText: "Cincinnati, Ohio's third-largest city, straddles the Ohio River on the Kentucky border, creating unique cross-state traffic and legal complexities. The city's most notorious bottleneck is the Brent Spence Bridge—a critical I-75 crossing that carries 160,000+ vehicles daily despite being designed for 80,000. Cincinnati's extreme hilly terrain adds another layer of danger, particularly during winter when its famous hills become treacherous.",
+
+    localConsiderations: [
+      "CROSS-STATE ACCIDENTS: Crashes on the Brent Spence Bridge or in Kentucky may involve Kentucky law—determine accident location immediately",
+      "Ohio is a fault-based state with modified comparative negligence (51% bar)",
+      "Brent Spence Bridge: One of the nation's most congested chokepoints; allow extra time and maintain safe following distance",
+      "HILLS WARNING: Cincinnati has the steepest paved street in the country; hills become extremely dangerous when icy",
+      "Hamilton County handles most Ohio-side cases; Kentucky crashes go to Campbell or Kenton County",
+      "Stadium district accidents common during Bengals and Reds games"
+    ],
+
+    weatherFactors: [
+      "Ice on hills: Cincinnati's steep hills become impassable when icy; multiple hill closures common",
+      "River valley fog: Ohio River creates dense fog, especially on bridges",
+      "Flash flooding: Low-lying areas near river prone to sudden flooding",
+      "Snow on bridges: Bridge decks ice before road surfaces"
+    ],
+
+    uniqueTrafficLaws: [
+      "Ohio is a fault-based insurance state",
+      "Modified comparative negligence (51% bar) applies",
+      "Kentucky uses pure comparative negligence (different if crash is on KY side)",
+      "Move Over law for emergency vehicles"
+    ],
+
+    metaTitle: "Cincinnati Car Accident Help | Tri-State Collision Guide",
+    metaDescription: "Cincinnati car accident assistance. Navigate Brent Spence Bridge traffic, understand cross-state accident claims with Kentucky, and get help with your insurance claim. Free guidance for Cincinnati accident victims.",
+    keywords: [
+      "Cincinnati car accident",
+      "Cincinnati accident lawyer",
+      "I-75 accident Cincinnati",
+      "Brent Spence Bridge accident",
+      "Hamilton County accident attorney",
+      "Ohio Kentucky border car crash"
     ]
   }
 ];
@@ -4216,6 +5575,5608 @@ export const wisconsinCities: CityData[] = [
   }
 ];
 
+// Oregon Cities - Portland has highest accident rate in the nation (7.46/1000 drivers)
+export const oregonCities: CityData[] = [
+  {
+    slug: "portland",
+    name: "Portland",
+    state: "oregon",
+    stateAbbreviation: "OR",
+    population: 652503,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 5",
+        description: "Primary north-south corridor through Portland connecting to Seattle and California",
+        accidentHotspots: ["Rose Quarter area", "Terwilliger Curves", "I-5/I-84 interchange", "Marquam Bridge"]
+      },
+      {
+        name: "Interstate 84 (Banfield Freeway)",
+        description: "East-west route through Portland to the Columbia River Gorge",
+        accidentHotspots: ["Lloyd District", "Hollywood area", "I-5 junction", "Gateway"]
+      },
+      {
+        name: "Interstate 405",
+        description: "Western bypass loop through downtown Portland",
+        accidentHotspots: ["Fremont Bridge", "US-26 interchange", "I-5 connections"]
+      },
+      {
+        name: "US-26 (Sunset Highway)",
+        description: "Route from downtown Portland to Beaverton, Hillsboro, and the coast",
+        accidentHotspots: ["Vista Ridge Tunnel", "Zoo interchange", "Sylvan area", "Cornell Road"]
+      },
+      {
+        name: "Interstate 205",
+        description: "Eastern bypass connecting Vancouver, WA to Oregon City",
+        accidentHotspots: ["Glenn Jackson Bridge", "Airport Way", "Clackamas area", "Oregon City"]
+      },
+      {
+        name: "US-30 (Yeon Avenue)",
+        description: "Industrial route along the Willamette River",
+        accidentHotspots: ["St. Johns Bridge approach", "Industrial area", "NW Portland"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown/Pearl District", characteristics: "Heavy pedestrian traffic, one-way streets, transit conflicts, homeless population" },
+      { name: "Northeast Portland", characteristics: "Alberta Street congestion, Lloyd Center, I-84 access, cycling heavy" },
+      { name: "Southeast Portland", characteristics: "Hawthorne/Division traffic, dense residential, bike lanes, bar traffic" },
+      { name: "Northwest Portland", characteristics: "Nob Hill shopping, 23rd Avenue parking issues, steep hills" },
+      { name: "St. Johns/North Portland", characteristics: "Cathedral Park area, St. Johns Bridge traffic, industrial zones" },
+      { name: "Sellwood-Moreland", characteristics: "Antique district traffic, narrow streets, bridge congestion" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "Severe congestion on I-5, I-84, and I-405 from 7-9 AM and 4-7 PM" },
+      { type: "Bridge Congestion", description: "All Willamette River bridges create bottlenecks during peak hours" },
+      { type: "Rain Events", description: "First rain after dry spell creates extremely hazardous conditions" },
+      { type: "Events", description: "Moda Center, Providence Park events cause Northeast/Downtown gridlock" },
+      { type: "Tech Corridor", description: "Heavy traffic to Beaverton/Hillsboro tech campuses on US-26" }
+    ],
+
+    annualAccidents: 12000,
+    accidentYear: 2023,
+    fatalAccidents: 63,
+
+    commonAccidentTypes: [
+      "Rain-related crashes (Portland averages 164 rainy days/year)",
+      "Rear-end collisions on congested freeways",
+      "Bicycle vs. vehicle accidents (Portland is the most bikeable major city)",
+      "Pedestrian accidents downtown and in dense neighborhoods",
+      "Bridge-related accidents during icy conditions",
+      "Hit-and-run incidents (increasing problem)",
+      "Distracted driving accidents"
+    ],
+
+    dangerousIntersections: [
+      "82nd Avenue & Division",
+      "Powell & 82nd Avenue",
+      "Burnside & MLK Boulevard",
+      "Sandy & 82nd Avenue",
+      "Foster & 82nd Avenue",
+      "122nd & Division",
+      "MLK & Columbia"
+    ],
+
+    policeNonEmergency: "(503) 823-3333",
+
+    introText: "Portland has the highest accident rate in the nation at 7.46 accidents per 1,000 drivers - more than double the 50-city average. The city's combination of frequent rain, high cycling rates, complex bridge infrastructure, and dense urban neighborhoods creates challenging driving conditions. Oregon is an at-fault state but uniquely requires PIP coverage, providing a safety net regardless of fault.",
+
+    localConsiderations: [
+      "Portland has the HIGHEST accident rate of any major US city (7.46 per 1,000 drivers)",
+      "Oregon requires PIP coverage despite being an at-fault state",
+      "Uninsured motorist coverage is mandatory in Oregon",
+      "Multnomah County Circuit Court handles most Portland accident cases",
+      "Portland has very high cyclist traffic - drivers must exercise extra caution",
+      "Rain creates treacherous conditions, especially after dry periods when oil accumulates",
+      "Many intersections lack turn signals, creating confusion",
+      "Hit-and-run rates have increased significantly in recent years"
+    ],
+
+    weatherFactors: [
+      "Portland averages 164 rainy days per year - wet roads are the norm",
+      "First rain after dry spell is extremely dangerous (oil slick conditions)",
+      "Ice storms can make bridges impassable (bridges freeze before roads)",
+      "Fog in the Willamette Valley reduces visibility",
+      "Occasional snow causes major disruptions (city not equipped for it)"
+    ],
+
+    uniqueTrafficLaws: [
+      "Oregon requires PIP coverage (minimum $15,000)",
+      "Cyclists have equal road rights - 3-foot passing rule",
+      "No self-service gas stations (attendants pump gas)",
+      "Studded tires allowed Nov 1 - March 31 only",
+      "U-turns allowed unless specifically prohibited"
+    ],
+
+    metaTitle: "Portland Car Accident Help | Oregon's #1 Accident City Guide",
+    metaDescription: "Portland has the highest accident rate in America. Get local guidance on Oregon's fault laws, PIP coverage requirements, and navigating claims after a Portland car accident.",
+    keywords: [
+      "Portland car accident",
+      "Portland accident lawyer",
+      "Oregon car accident help",
+      "I-5 accident Portland",
+      "Portland traffic collision",
+      "Multnomah County accident attorney",
+      "Portland insurance claim",
+      "Oregon PIP coverage"
+    ]
+  },
+  {
+    slug: "salem",
+    name: "Salem",
+    state: "oregon",
+    stateAbbreviation: "OR",
+    population: 178510,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 5",
+        description: "Primary north-south route through Salem",
+        accidentHotspots: ["Market Street interchange", "Mission Street exit", "Chemawa Road area"]
+      },
+      {
+        name: "Highway 22",
+        description: "East-west route connecting Salem to the coast and Santiam Pass",
+        accidentHotspots: ["I-5 junction", "Lancaster Drive", "Dallas area"]
+      },
+      {
+        name: "Highway 99E",
+        description: "Historic route through downtown Salem",
+        accidentHotspots: ["Downtown area", "Pringle Parkway", "South Salem"]
+      },
+      {
+        name: "Mission Street",
+        description: "Major east-west arterial through Salem",
+        accidentHotspots: ["I-5 area", "Lancaster intersection", "Downtown"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Salem", characteristics: "State capitol traffic, government workers, one-way streets" },
+      { name: "West Salem", characteristics: "Bridge bottleneck across Willamette, suburban development" },
+      { name: "South Salem", characteristics: "Commercial corridors, Lancaster Drive traffic" },
+      { name: "Keizer (adjacent)", characteristics: "Bedroom community, I-5 commuter traffic" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-5 and bridges congested 7-9 AM and 4-6 PM" },
+      { type: "Legislative Sessions", description: "State Capitol area sees increased traffic when legislature meets" },
+      { type: "Willamette University", description: "School year brings increased downtown traffic" },
+      { type: "Bridge Bottleneck", description: "Limited crossings of Willamette River create backups" }
+    ],
+
+    annualAccidents: 4500,
+    accidentYear: 2023,
+    fatalAccidents: 22,
+
+    commonAccidentTypes: [
+      "I-5 freeway accidents",
+      "Bridge-related accidents",
+      "Rain-related crashes",
+      "Pedestrian accidents near Capitol",
+      "Rear-end collisions on congested arterials"
+    ],
+
+    dangerousIntersections: [
+      "Lancaster & Market",
+      "Commercial & Mission",
+      "Liberty & Center",
+      "Portland Road & Silverton Road"
+    ],
+
+    policeNonEmergency: "(503) 588-6123",
+
+    introText: "Salem is Oregon's capital city and faces typical Willamette Valley driving challenges including frequent rain and fog. The city has limited Willamette River crossings, creating significant bridge congestion. Oregon's mandatory PIP coverage provides immediate medical expense coverage regardless of fault.",
+
+    localConsiderations: [
+      "Marion County Circuit Court handles most Salem accident cases",
+      "Oregon requires PIP coverage (minimum $15,000)",
+      "State government traffic patterns affect downtown",
+      "Limited bridge crossings create bottlenecks",
+      "Uninsured motorist coverage is mandatory"
+    ],
+
+    weatherFactors: [
+      "Willamette Valley fog can reduce visibility significantly",
+      "Frequent rain throughout fall, winter, and spring",
+      "Ice on bridges during cold snaps",
+      "Occasional flooding affects roads"
+    ],
+
+    metaTitle: "Salem Car Accident Help | Oregon Capital City Collision Guide",
+    metaDescription: "Salem, Oregon car accident assistance. Understand Oregon's PIP requirements, navigate Marion County claims, and get help after a Salem area collision.",
+    keywords: [
+      "Salem car accident",
+      "Salem Oregon accident lawyer",
+      "Marion County accident attorney",
+      "I-5 Salem accident",
+      "Oregon car accident help"
+    ]
+  }
+];
+
+// New Mexico Cities
+export const newMexicoCities: CityData[] = [
+  {
+    slug: "albuquerque",
+    name: "Albuquerque",
+    state: "new-mexico",
+    stateAbbreviation: "NM",
+    population: 564559,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 40",
+        description: "Major east-west transcontinental route through Albuquerque",
+        accidentHotspots: ["Big I interchange", "Coors Boulevard exit", "Juan Tabo area", "Tramway Boulevard"]
+      },
+      {
+        name: "Interstate 25",
+        description: "Primary north-south corridor connecting El Paso to Denver",
+        accidentHotspots: ["Big I interchange", "Gibson Boulevard", "Paseo del Norte", "Alameda area"]
+      },
+      {
+        name: "Paseo del Norte (NM 423)",
+        description: "Major east-west arterial in north Albuquerque",
+        accidentHotspots: ["I-25 interchange", "Coors Road", "Jefferson area", "Tramway"]
+      },
+      {
+        name: "Coors Boulevard",
+        description: "Major north-south route on the west side",
+        accidentHotspots: ["I-40 intersection", "Montano Road", "Paseo del Norte", "Rio Bravo"]
+      },
+      {
+        name: "Central Avenue (Historic Route 66)",
+        description: "Historic main street running east-west through the city",
+        accidentHotspots: ["Downtown area", "Nob Hill", "UNM area", "Fair Heights"]
+      },
+      {
+        name: "Tramway Boulevard",
+        description: "Eastern mountain route with scenic views",
+        accidentHotspots: ["I-40 area", "Menaul intersection", "Academy area"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown/Old Town", characteristics: "Tourist traffic, one-way streets, events, pedestrians" },
+      { name: "Northeast Heights", characteristics: "Upscale residential, Tramway access, shopping centers" },
+      { name: "Southeast/UNM Area", characteristics: "University traffic, student pedestrians, Nob Hill nightlife" },
+      { name: "West Side/Rio Rancho", characteristics: "Rapid development, limited river crossings, commuter traffic" },
+      { name: "North Valley", characteristics: "Rural roads, acequia crossings, agricultural vehicles" },
+      { name: "South Valley", characteristics: "Mixed urban-rural, industrial zones, Rio Bravo traffic" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-25 and I-40 heavily congested 7-9 AM and 4-6:30 PM" },
+      { type: "Big I Congestion", description: "I-25/I-40 interchange is a major bottleneck" },
+      { type: "Balloon Fiesta", description: "October event causes massive traffic on I-25 and Paseo del Norte" },
+      { type: "UNM Events", description: "Football games and university events impact Central/University area" },
+      { type: "West Side Commute", description: "Limited river crossings create bridge bottlenecks" }
+    ],
+
+    annualAccidents: 14000,
+    accidentYear: 2023,
+    fatalAccidents: 89,
+
+    commonAccidentTypes: [
+      "Wrong-way driver accidents on I-40 (Albuquerque leads nation in wrong-way crashes)",
+      "High-speed freeway collisions",
+      "DUI-related accidents (New Mexico has high DUI rates)",
+      "Pedestrian accidents on Central Avenue",
+      "Red light running at major intersections",
+      "Rear-end collisions during rush hour",
+      "Hit-and-run incidents"
+    ],
+
+    dangerousIntersections: [
+      "Central & San Mateo",
+      "Coors & I-40",
+      "Menaul & San Mateo",
+      "Central & Louisiana",
+      "Gibson & University",
+      "Montgomery & San Mateo",
+      "Lomas & I-25"
+    ],
+
+    policeNonEmergency: "(505) 242-2677",
+
+    introText: "Albuquerque has one of the highest accident rates in the Southwest, with particular concerns about wrong-way drivers and DUI incidents. The city's unique geography—bordered by mountains and the Rio Grande—creates traffic bottlenecks and limited crossing points. New Mexico is an at-fault state with mandatory liability insurance, but has concerning rates of uninsured drivers.",
+
+    localConsiderations: [
+      "Albuquerque has extremely high rates of wrong-way driver accidents",
+      "New Mexico has high DUI accident rates - increased risk at night",
+      "Approximately 20% of New Mexico drivers are uninsured (UM coverage crucial)",
+      "Bernalillo County Metropolitan Court handles most local accident cases",
+      "The 'Big I' interchange is the largest in New Mexico and a major accident hotspot",
+      "High altitude sun can cause significant glare issues",
+      "Balloon Fiesta (October) causes major traffic disruptions",
+      "Many acequias (irrigation ditches) create road hazards"
+    ],
+
+    weatherFactors: [
+      "Monsoon season (July-September) brings sudden flash floods",
+      "Dust storms can cause zero visibility on I-40",
+      "High altitude sun creates intense glare, especially at sunset",
+      "Winter ice on bridges and overpasses",
+      "Occasional snow causes significant disruptions",
+      "Tumbleweeds on highways can cause accidents"
+    ],
+
+    uniqueTrafficLaws: [
+      "New Mexico requires minimum $25,000/$50,000/$10,000 liability coverage",
+      "Cell phone use while driving is prohibited in Albuquerque",
+      "Right turn on red permitted unless posted otherwise",
+      "Move-over law for emergency vehicles",
+      "New Mexico has implied consent for DUI testing"
+    ],
+
+    metaTitle: "Albuquerque Car Accident Help | New Mexico Collision Guide",
+    metaDescription: "Albuquerque car accident assistance. Navigate New Mexico's at-fault insurance system, understand local traffic dangers, and get help after an ABQ collision.",
+    keywords: [
+      "Albuquerque car accident",
+      "Albuquerque accident lawyer",
+      "New Mexico car accident help",
+      "I-40 accident Albuquerque",
+      "I-25 accident ABQ",
+      "Bernalillo County accident attorney",
+      "Albuquerque insurance claim",
+      "Big I accident"
+    ]
+  },
+  {
+    slug: "santa-fe",
+    name: "Santa Fe",
+    state: "new-mexico",
+    stateAbbreviation: "NM",
+    population: 89177,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 25",
+        description: "Primary route connecting Santa Fe to Albuquerque and beyond",
+        accidentHotspots: ["Old Pecos Trail exit", "St. Francis Drive", "Cerrillos Road area"]
+      },
+      {
+        name: "US-84/285",
+        description: "Route north toward Espanola and Taos",
+        accidentHotspots: ["Opera area", "Tesuque", "Pojoaque"]
+      },
+      {
+        name: "St. Francis Drive",
+        description: "Major north-south arterial through Santa Fe",
+        accidentHotspots: ["Cerrillos intersection", "I-25 area", "Downtown approach"]
+      },
+      {
+        name: "Cerrillos Road",
+        description: "Commercial corridor with heavy retail traffic",
+        accidentHotspots: ["St. Francis intersection", "Rodeo Road area", "I-25 access"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown/Plaza Area", characteristics: "Narrow historic streets, heavy tourist foot traffic, limited parking" },
+      { name: "South Capitol", characteristics: "State government traffic, museums, residential" },
+      { name: "Cerrillos Road Corridor", characteristics: "Heavy commercial traffic, retail, strip mall access" },
+      { name: "Old Pecos Trail", characteristics: "Residential, I-25 access, growing development" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-25 and St. Francis Drive congested 7:30-9 AM and 4:30-6 PM" },
+      { type: "Tourist Season", description: "Summer and Indian Market (August) bring heavy downtown traffic" },
+      { type: "Legislative Session", description: "January-March increases government district traffic" },
+      { type: "Santa Fe Opera", description: "Summer opera performances cause US-84/285 congestion" }
+    ],
+
+    annualAccidents: 3200,
+    accidentYear: 2023,
+    fatalAccidents: 18,
+
+    commonAccidentTypes: [
+      "Tourist-related accidents (unfamiliar drivers, distracted by scenery)",
+      "Pedestrian accidents in the historic downtown area",
+      "DUI accidents (especially after Opera and Plaza events)",
+      "Winter weather accidents on mountain roads",
+      "Rear-end collisions on Cerrillos Road"
+    ],
+
+    dangerousIntersections: [
+      "Cerrillos & St. Francis",
+      "St. Francis & Cordova",
+      "Cerrillos & Rodeo Road",
+      "Old Pecos Trail & I-25"
+    ],
+
+    policeNonEmergency: "(505) 428-3710",
+
+    introText: "Santa Fe's unique character as a historic tourist destination creates distinct driving challenges. Narrow historic streets, unfamiliar tourists, and a vibrant nightlife contribute to accident risks. The city sits at 7,000 feet elevation, which affects vehicle performance and creates weather-related driving hazards.",
+
+    localConsiderations: [
+      "Santa Fe Magistrate Court handles traffic violations and minor accidents",
+      "Downtown streets are extremely narrow and confusing",
+      "High tourist population means many unfamiliar drivers",
+      "Elevation (7,000 ft) affects vehicle performance and reaction times",
+      "Art and culture events create unexpected traffic",
+      "Limited parking downtown causes circulation issues",
+      "Many roads are unpaved or poorly maintained"
+    ],
+
+    weatherFactors: [
+      "High altitude means more intense sun and glare",
+      "Winter snow and ice on mountain roads",
+      "Monsoon flooding (July-September)",
+      "Elevation affects braking and engine performance",
+      "Rapid temperature changes between day and night"
+    ],
+
+    metaTitle: "Santa Fe Car Accident Help | New Mexico Capital City Guide",
+    metaDescription: "Santa Fe, New Mexico car accident assistance. Navigate tourist traffic challenges, mountain driving conditions, and get help after a collision in the City Different.",
+    keywords: [
+      "Santa Fe car accident",
+      "Santa Fe accident lawyer",
+      "New Mexico capital accident",
+      "Santa Fe traffic collision",
+      "Santa Fe County accident attorney",
+      "downtown Santa Fe accident"
+    ]
+  }
+];
+
+// Louisiana Cities
+export const louisianaCities: CityData[] = [
+  {
+    slug: "new-orleans",
+    name: "New Orleans",
+    state: "louisiana",
+    stateAbbreviation: "LA",
+    population: 383997,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 10",
+        description: "Major east-west corridor through the city, elevated through downtown",
+        accidentHotspots: ["Superdome area", "I-10/I-610 split", "High Rise (over Industrial Canal)", "Bonnet Carré Spillway"]
+      },
+      {
+        name: "Interstate 610",
+        description: "Northern bypass connecting I-10 to Gentilly",
+        accidentHotspots: ["I-10 interchange", "Paris Avenue exit", "Elysian Fields exit"]
+      },
+      {
+        name: "US-90 (Claiborne Avenue)",
+        description: "Historic route through downtown and uptown areas",
+        accidentHotspots: ["CBD area", "Tulane/Broad intersection", "Carrollton area"]
+      },
+      {
+        name: "Pontchartrain Expressway (US-90)",
+        description: "Elevated highway connecting downtown to Westbank",
+        accidentHotspots: ["Crescent City Connection approaches", "Convention Center area"]
+      },
+      {
+        name: "Lake Pontchartrain Causeway",
+        description: "World's longest bridge over water (24 miles)",
+        accidentHotspots: ["Fog conditions", "Metairie approach", "Mandeville approach"]
+      },
+      {
+        name: "Interstate 510",
+        description: "Connector to New Orleans East and Michoud",
+        accidentHotspots: ["Chef Menteur Highway junction", "I-10 interchange"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "French Quarter", characteristics: "Narrow one-way streets, heavy pedestrian traffic, bar crowds, delivery vehicles" },
+      { name: "Central Business District", characteristics: "Convention traffic, hotel zones, streetcar conflicts, one-way grid" },
+      { name: "Uptown/Garden District", characteristics: "Streetcar routes, oak tree hazards, university traffic, narrow streets" },
+      { name: "Mid-City", characteristics: "Major intersections, hospital traffic, flooding prone" },
+      { name: "New Orleans East", characteristics: "High-speed corridors, limited lighting, longer emergency response times" },
+      { name: "Westbank/Algiers", characteristics: "Bridge congestion, ferry traffic, industrial areas" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-10 severely congested 7-9 AM and 4-7 PM, especially near CBD" },
+      { type: "Special Events", description: "Saints games, conventions, and festivals cause major gridlock" },
+      { type: "Mardi Gras", description: "Streets closed for parades throughout January-March" },
+      { type: "French Quarter", description: "Constant congestion, especially weekend nights" },
+      { type: "Weather Events", description: "Heavy rain causes immediate flooding and highway closures" }
+    ],
+
+    annualAccidents: 15000,
+    accidentYear: 2023,
+    fatalAccidents: 112,
+
+    commonAccidentTypes: [
+      "DUI-related accidents (New Orleans has very high DUI rates)",
+      "Pothole-related accidents and vehicle damage",
+      "Flooding-related hydroplaning accidents",
+      "Pedestrian accidents in French Quarter and CBD",
+      "Streetcar-vehicle collisions",
+      "Hit-and-run incidents (significant problem)",
+      "Wrong-way accidents on elevated highways",
+      "Bridge accidents during fog conditions"
+    ],
+
+    dangerousIntersections: [
+      "Claiborne & Canal Street",
+      "Broad Street & Orleans Avenue",
+      "Elysian Fields & St. Claude",
+      "Carrollton & Claiborne",
+      "Chef Menteur & Read Boulevard",
+      "St. Charles & Napoleon",
+      "Veterans Boulevard & Causeway"
+    ],
+
+    policeNonEmergency: "(504) 821-2222",
+
+    introText: "New Orleans presents unique driving challenges with its historic narrow streets, frequent flooding, and notoriously poor road conditions. The city has one of the highest rates of uninsured drivers in the nation and significant DUI-related accidents. Louisiana is an at-fault state with mandatory liability insurance, but enforcement is challenging.",
+
+    localConsiderations: [
+      "Louisiana has one of the highest uninsured driver rates in the nation (~12%)",
+      "New Orleans roads are notoriously in poor condition with severe potholes",
+      "Orleans Parish Civil District Court handles most accident lawsuits",
+      "Louisiana uses pure comparative fault - you can recover even if mostly at fault",
+      "Mardi Gras season (Jan-March) creates unique traffic and liability situations",
+      "Streetcars have right-of-way and create unique accident scenarios",
+      "Hit-and-run rates are very high in New Orleans",
+      "Many streets flood with minimal rain, creating hazardous conditions"
+    ],
+
+    weatherFactors: [
+      "Heavy afternoon thunderstorms in summer cause flash flooding",
+      "Street flooding can occur within minutes of heavy rain",
+      "Fog on Lake Pontchartrain Causeway can be extremely dangerous",
+      "Hurricane evacuation routes (contraflow) on I-10/I-55",
+      "High humidity causes road slickness",
+      "Summer heat can cause tire blowouts and road buckling"
+    ],
+
+    uniqueTrafficLaws: [
+      "Louisiana requires minimum $15,000/$30,000/$25,000 liability coverage",
+      "Open container laws are relaxed in the French Quarter (pedestrians only)",
+      "Streetcars have absolute right-of-way",
+      "Right turn on red permitted unless posted",
+      "Louisiana uses pure comparative negligence (you can recover even at 99% fault)"
+    ],
+
+    metaTitle: "New Orleans Car Accident Help | Louisiana Collision Guide",
+    metaDescription: "New Orleans car accident assistance. Navigate Louisiana's fault-based system, understand unique NOLA driving hazards, and get help after a collision in the Crescent City.",
+    keywords: [
+      "New Orleans car accident",
+      "New Orleans accident lawyer",
+      "Louisiana car accident help",
+      "I-10 accident New Orleans",
+      "French Quarter accident",
+      "Orleans Parish accident attorney",
+      "NOLA insurance claim",
+      "New Orleans pothole damage"
+    ]
+  },
+  {
+    slug: "baton-rouge",
+    name: "Baton Rouge",
+    state: "louisiana",
+    stateAbbreviation: "LA",
+    population: 227470,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 10",
+        description: "Major east-west corridor through Baton Rouge",
+        accidentHotspots: ["Mississippi River Bridge", "I-10/I-12 merge", "College Drive exit", "Siegen Lane area"]
+      },
+      {
+        name: "Interstate 12",
+        description: "Route connecting Baton Rouge to North Shore and Florida",
+        accidentHotspots: ["I-10 junction", "Airline Highway exit", "Denham Springs area"]
+      },
+      {
+        name: "Interstate 110",
+        description: "Downtown spur connecting to I-10",
+        accidentHotspots: ["Downtown exits", "I-10 interchange", "Government Street"]
+      },
+      {
+        name: "US-61 (Airline Highway)",
+        description: "Historic route to New Orleans with heavy commercial traffic",
+        accidentHotspots: ["Florida Boulevard area", "Gonzales approach", "Cortana Mall area"]
+      },
+      {
+        name: "US-190 (Florida Boulevard)",
+        description: "Major east-west arterial through the city",
+        accidentHotspots: ["Airline Highway intersection", "College Drive", "Sherwood Forest area"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown", characteristics: "State capitol traffic, government workers, one-way streets" },
+      { name: "LSU/Southdowns", characteristics: "University traffic, game day congestion, student pedestrians" },
+      { name: "Mid City", characteristics: "Mixed commercial, Government Street corridor, older infrastructure" },
+      { name: "Prairieville/Gonzales", characteristics: "Suburban sprawl, Airline Highway congestion, rapid growth" },
+      { name: "Central/Zachary", characteristics: "I-110 corridor, rural-suburban transition" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-10 and I-12 severely congested 7-9 AM and 4-6:30 PM" },
+      { type: "LSU Events", description: "Football games cause complete gridlock in south Baton Rouge" },
+      { type: "Mississippi River Bridge", description: "Constant bottleneck - only two river crossings for metro area" },
+      { type: "Industrial Traffic", description: "Heavy truck traffic from chemical plants along River Road" },
+      { type: "Legislative Sessions", description: "Downtown congestion increases during sessions" }
+    ],
+
+    annualAccidents: 12000,
+    accidentYear: 2023,
+    fatalAccidents: 78,
+
+    commonAccidentTypes: [
+      "I-10/I-12 merge accidents (extremely dangerous interchange)",
+      "Mississippi River Bridge congestion-related crashes",
+      "DUI-related accidents (significant issue)",
+      "Rear-end collisions in highway traffic",
+      "Pedestrian accidents near LSU campus",
+      "Flooding-related accidents",
+      "Hit-and-run incidents"
+    ],
+
+    dangerousIntersections: [
+      "Florida & Airline Highway",
+      "College Drive & I-10",
+      "Siegen Lane & I-10",
+      "Florida Boulevard & Foster Drive",
+      "Plank Road & Choctaw Drive"
+    ],
+
+    policeNonEmergency: "(225) 389-2000",
+
+    introText: "Baton Rouge suffers from severe traffic congestion due to limited Mississippi River crossings and a problematic highway system. The I-10/I-12 merge is one of the most dangerous interchanges in Louisiana. Like the rest of the state, Baton Rouge has high uninsured driver rates and significant DUI accident problems.",
+
+    localConsiderations: [
+      "Only two Mississippi River crossings create severe bottlenecks",
+      "I-10/I-12 merge is notoriously dangerous during peak hours",
+      "East Baton Rouge Parish Court handles local accident cases",
+      "Louisiana uses pure comparative fault system",
+      "LSU game days create major traffic disruptions",
+      "Chemical plant corridor (Cancer Alley) has heavy truck traffic",
+      "High uninsured driver rates - UM coverage strongly recommended"
+    ],
+
+    weatherFactors: [
+      "Frequent afternoon thunderstorms cause flooding",
+      "Flash floods on low-lying roadways",
+      "Fog along Mississippi River",
+      "Hurricane evacuation routes affect highways",
+      "Heat-related road damage"
+    ],
+
+    metaTitle: "Baton Rouge Car Accident Help | Louisiana Capital City Guide",
+    metaDescription: "Baton Rouge car accident assistance. Navigate I-10/I-12 hazards, understand Louisiana's fault-based insurance, and get help after a collision in the capital city.",
+    keywords: [
+      "Baton Rouge car accident",
+      "Baton Rouge accident lawyer",
+      "Louisiana capital accident",
+      "I-10 accident Baton Rouge",
+      "Mississippi River Bridge accident",
+      "East Baton Rouge Parish attorney",
+      "LSU traffic accident"
+    ]
+  }
+];
+
+// South Carolina Cities
+export const southCarolinaCities: CityData[] = [
+  {
+    slug: "charleston",
+    name: "Charleston",
+    state: "south-carolina",
+    stateAbbreviation: "SC",
+    population: 150277,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 26",
+        description: "Primary route connecting Charleston to Columbia and inland SC",
+        accidentHotspots: ["I-526 interchange", "Ashley Phosphate Road", "Summerville approach", "Downtown exits"]
+      },
+      {
+        name: "Interstate 526 (Mark Clark Expressway)",
+        description: "Beltway around North Charleston and West Ashley",
+        accidentHotspots: ["I-26 interchange", "Leeds Avenue", "Savannah Highway exit", "Mount Pleasant approach"]
+      },
+      {
+        name: "US-17 (Savannah Highway)",
+        description: "Coastal route through West Ashley and downtown",
+        accidentHotspots: ["Folly Road intersection", "Downtown peninsula", "Mount Pleasant"]
+      },
+      {
+        name: "Ravenel Bridge (US-17)",
+        description: "Cable-stayed bridge connecting Charleston to Mount Pleasant",
+        accidentHotspots: ["High wind conditions", "Merge areas on both ends", "Tourist stops on shoulders"]
+      },
+      {
+        name: "US-78",
+        description: "Route to North Charleston and Summerville",
+        accidentHotspots: ["Rivers Avenue intersection", "I-26 area"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown/Peninsula", characteristics: "Historic narrow streets, tourist pedestrians, carriage tours, flooding" },
+      { name: "Mount Pleasant", characteristics: "Bridge congestion, rapid growth, Coleman Boulevard traffic" },
+      { name: "West Ashley", characteristics: "Savannah Highway bottleneck, suburban sprawl" },
+      { name: "North Charleston", characteristics: "Commercial corridors, airport traffic, industrial areas" },
+      { name: "James Island/Folly Beach", characteristics: "Beach traffic, limited access, seasonal congestion" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-26 and Ravenel Bridge severely congested 7-9 AM and 4-7 PM" },
+      { type: "Tourist Season", description: "Spring and summer bring heavy downtown and beach traffic" },
+      { type: "Bridge Congestion", description: "Ravenel Bridge creates major bottleneck between Charleston and Mt. Pleasant" },
+      { type: "Cruise Ships", description: "Port traffic spikes with cruise arrivals" },
+      { type: "Beach Traffic", description: "Weekends see heavy traffic to Folly Beach and Sullivan's Island" }
+    ],
+
+    annualAccidents: 9500,
+    accidentYear: 2023,
+    fatalAccidents: 52,
+
+    commonAccidentTypes: [
+      "Tourist-related accidents (unfamiliar drivers)",
+      "Flooding-related hydroplaning",
+      "Rear-end collisions on bridge approaches",
+      "Pedestrian accidents in historic district",
+      "Bicycle vs. vehicle accidents",
+      "DUI accidents (especially downtown bar district)",
+      "Deer strikes in suburban areas"
+    ],
+
+    dangerousIntersections: [
+      "Savannah Highway & Folly Road",
+      "Coleman Boulevard & Houston Northcutt",
+      "Rivers Avenue & Ashley Phosphate",
+      "Meeting Street & Calhoun Street",
+      "Highway 17 & Highway 41"
+    ],
+
+    policeNonEmergency: "(843) 577-7434",
+
+    introText: "Charleston's historic character and booming tourism create unique driving challenges. The city's peninsula geography means limited access points and frequent congestion. South Carolina is an at-fault state with modified comparative negligence - you cannot recover if more than 50% at fault.",
+
+    localConsiderations: [
+      "Charleston County Court of Common Pleas handles accident lawsuits",
+      "South Carolina uses modified comparative fault (51% bar)",
+      "Downtown peninsula has very limited parking and narrow streets",
+      "Flooding is common downtown during high tides and rain",
+      "Tourism increases accident rates significantly in spring/summer",
+      "Ravenel Bridge has unique wind conditions affecting vehicles",
+      "Horse-drawn carriage tours share downtown streets"
+    ],
+
+    weatherFactors: [
+      "King tides cause regular downtown flooding",
+      "Hurricane season (June-November) brings evacuations",
+      "Afternoon thunderstorms in summer",
+      "High humidity makes roads slick after light rain",
+      "Fog on bridges and waterways"
+    ],
+
+    uniqueTrafficLaws: [
+      "South Carolina requires minimum $25,000/$50,000/$25,000 liability",
+      "No mandatory PIP or no-fault coverage",
+      "Right turn on red permitted unless posted",
+      "SC has implied consent for DUI testing",
+      "51% comparative fault bar - can't recover if mostly at fault"
+    ],
+
+    metaTitle: "Charleston Car Accident Help | South Carolina Coastal Guide",
+    metaDescription: "Charleston car accident assistance. Navigate historic district challenges, understand SC's fault-based insurance, and get help after a collision in the Holy City.",
+    keywords: [
+      "Charleston car accident",
+      "Charleston accident lawyer",
+      "South Carolina car accident",
+      "Ravenel Bridge accident",
+      "Charleston County attorney",
+      "downtown Charleston accident",
+      "Mount Pleasant accident"
+    ]
+  },
+  {
+    slug: "columbia",
+    name: "Columbia",
+    state: "south-carolina",
+    stateAbbreviation: "SC",
+    population: 136632,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 20",
+        description: "Major east-west route through Columbia",
+        accidentHotspots: ["I-26 interchange", "Bush River Road", "Broad River Road", "Two Notch area"]
+      },
+      {
+        name: "Interstate 26",
+        description: "Route connecting Columbia to Charleston",
+        accidentHotspots: ["I-20 interchange", "Lake Murray area", "St. Andrews Road"]
+      },
+      {
+        name: "Interstate 77",
+        description: "North-south route to Charlotte and Rock Hill",
+        accidentHotspots: ["I-20 interchange", "Bluff Road", "Shop Road area"]
+      },
+      {
+        name: "US-1 (Two Notch Road)",
+        description: "Major commercial corridor in northeast Columbia",
+        accidentHotspots: ["Decker Boulevard", "Trenholm Road", "Northeast area"]
+      },
+      {
+        name: "US-378 (Devine Street)",
+        description: "Route through Five Points and downtown",
+        accidentHotspots: ["Five Points area", "Fort Jackson approach", "USC campus"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown/Vista", characteristics: "Government traffic, one-way streets, USC events" },
+      { name: "Five Points", characteristics: "Bar district, student pedestrians, narrow streets, nightlife accidents" },
+      { name: "Forest Acres/Trenholm", characteristics: "Commercial corridors, shopping traffic" },
+      { name: "Irmo/Lake Murray", characteristics: "Suburban growth, I-26 congestion" },
+      { name: "St. Andrews", characteristics: "Mixed development, Harbison area traffic" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-20, I-26, and I-77 congested 7-9 AM and 4-6:30 PM" },
+      { type: "USC Events", description: "Football games cause major gridlock around Williams-Brice Stadium" },
+      { type: "State Government", description: "Legislative sessions increase downtown traffic" },
+      { type: "Fort Jackson", description: "Military traffic affects eastern corridors" },
+      { type: "Lake Murray", description: "Weekend recreation traffic on I-26" }
+    ],
+
+    annualAccidents: 8500,
+    accidentYear: 2023,
+    fatalAccidents: 48,
+
+    commonAccidentTypes: [
+      "Interstate interchange accidents (three major interstates converge)",
+      "Rear-end collisions during rush hour",
+      "DUI accidents in Five Points area",
+      "Pedestrian accidents near USC campus",
+      "Commercial vehicle accidents on I-20",
+      "Weather-related accidents in summer storms"
+    ],
+
+    dangerousIntersections: [
+      "Two Notch Road & Decker Boulevard",
+      "Assembly Street & Gervais Street",
+      "Bush River Road & I-20",
+      "Broad River Road & Greystone Boulevard",
+      "Devine Street & Harden Street"
+    ],
+
+    policeNonEmergency: "(803) 545-3500",
+
+    introText: "Columbia sits at the convergence of three major interstates, creating complex traffic patterns and significant accident risks. As South Carolina's capital and home to the state's largest university, the city sees varied traffic from government, military, and student populations.",
+
+    localConsiderations: [
+      "Three major interstates (I-20, I-26, I-77) converge in Columbia",
+      "Richland County Court of Common Pleas handles accident cases",
+      "South Carolina uses 51% modified comparative fault bar",
+      "USC football games create extreme traffic around Williams-Brice Stadium",
+      "Fort Jackson adds significant military traffic",
+      "Five Points bar district has high DUI accident rates",
+      "State government operations affect downtown traffic patterns"
+    ],
+
+    weatherFactors: [
+      "Severe afternoon thunderstorms in summer",
+      "Ice storms more common than Charleston (further inland)",
+      "Flash flooding in low-lying areas",
+      "Extreme summer heat affects road conditions"
+    ],
+
+    metaTitle: "Columbia Car Accident Help | South Carolina Capital Guide",
+    metaDescription: "Columbia car accident assistance. Navigate the capital city's interstate system, understand SC insurance laws, and get help after a collision in the Midlands.",
+    keywords: [
+      "Columbia SC car accident",
+      "Columbia accident lawyer",
+      "Richland County accident attorney",
+      "I-20 accident Columbia",
+      "USC traffic accident",
+      "South Carolina capital accident"
+    ]
+  }
+];
+
+// Missouri Cities
+export const missouriCities: CityData[] = [
+  {
+    slug: "st-louis",
+    name: "St. Louis",
+    state: "missouri",
+    stateAbbreviation: "MO",
+    population: 293310,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 70",
+        description: "Major east-west corridor through downtown St. Louis",
+        accidentHotspots: ["Downtown interchange", "Poplar Street Bridge", "Airport area", "Stan Musial Veterans Memorial Bridge"]
+      },
+      {
+        name: "Interstate 64/US-40",
+        description: "Primary east-west route through central St. Louis",
+        accidentHotspots: ["I-170 interchange", "Clayton area", "Hampton/Kingshighway", "Downtown exits"]
+      },
+      {
+        name: "Interstate 55",
+        description: "North-south route to Chicago and Memphis",
+        accidentHotspots: ["I-44 junction", "Poplar Street Bridge", "Jefferson Barracks area"]
+      },
+      {
+        name: "Interstate 44",
+        description: "Historic Route 66 corridor southwest",
+        accidentHotspots: ["I-55 junction", "Hampton interchange", "Shrewsbury area"]
+      },
+      {
+        name: "Interstate 270",
+        description: "Outer beltway around St. Louis metro",
+        accidentHotspots: ["I-70 interchange", "I-64 junction", "Lindbergh area", "Missouri River crossing"]
+      },
+      {
+        name: "Interstate 170",
+        description: "Inner connector between I-70 and I-64",
+        accidentHotspots: ["I-64 interchange", "Delmar Boulevard", "Page Avenue"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown/Gateway Arch", characteristics: "Tourist traffic, stadium events, one-way streets, convention visitors" },
+      { name: "Central West End", characteristics: "Hospital district, restaurant traffic, pedestrians, Metrolink crossings" },
+      { name: "The Hill", characteristics: "Narrow streets, restaurant district, limited parking" },
+      { name: "Delmar Loop", characteristics: "Entertainment district, pedestrians, trolley, bar traffic" },
+      { name: "South City/Soulard", characteristics: "Narrow streets, brewery traffic, Mardi Gras events" },
+      { name: "Clayton", characteristics: "County government, business traffic, high-rise parking" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "All interstates congested 6:30-9 AM and 3:30-7 PM" },
+      { type: "Cardinals/Blues Games", description: "Downtown gridlock before and after games" },
+      { type: "Construction", description: "Perpetual highway construction affects routes" },
+      { type: "River Crossings", description: "Limited Mississippi River bridges create bottlenecks" },
+      { type: "Weather Events", description: "Ice and snow cause major disruptions (hilly terrain)" }
+    ],
+
+    annualAccidents: 18000,
+    accidentYear: 2023,
+    fatalAccidents: 98,
+
+    commonAccidentTypes: [
+      "Interstate interchange accidents (complex highway system)",
+      "Bridge-related accidents (limited river crossings)",
+      "Rear-end collisions during heavy traffic",
+      "Pedestrian accidents in entertainment districts",
+      "DUI-related accidents",
+      "Hit-and-run incidents (significant problem)",
+      "Winter weather accidents (ice/hills combination)"
+    ],
+
+    dangerousIntersections: [
+      "Kingshighway & Natural Bridge",
+      "Grand & Gravois",
+      "Manchester & Brentwood",
+      "Lindell & Kingshighway",
+      "Hampton & Chippewa",
+      "Page & Union"
+    ],
+
+    policeNonEmergency: "(314) 231-1212",
+
+    introText: "St. Louis has a complex highway system with numerous interchanges and limited Mississippi River crossings. The city faces unique challenges with its hilly terrain making winter driving particularly hazardous. Missouri is an at-fault state with pure comparative fault, allowing recovery regardless of your percentage of fault.",
+
+    localConsiderations: [
+      "St. Louis city is independent from St. Louis County (separate jurisdictions)",
+      "St. Louis Circuit Court handles city accident cases",
+      "Missouri uses pure comparative fault - recover even if mostly at fault",
+      "Limited Mississippi River crossings create severe congestion",
+      "Hilly terrain makes winter driving exceptionally dangerous",
+      "City has high uninsured driver rates - UM coverage recommended",
+      "Cardinals and Blues games create major downtown traffic"
+    ],
+
+    weatherFactors: [
+      "Ice storms are particularly dangerous due to hills",
+      "Summer severe thunderstorms and flash flooding",
+      "Fog along Mississippi and Missouri River valleys",
+      "Temperature extremes affect road conditions",
+      "Snow removal challenges on steep streets"
+    ],
+
+    uniqueTrafficLaws: [
+      "Missouri requires minimum $25,000/$50,000/$25,000 liability",
+      "Uninsured motorist coverage is optional but recommended",
+      "Right turn on red permitted unless posted",
+      "Pure comparative fault - no recovery bar",
+      "Missouri has implied consent for DUI testing"
+    ],
+
+    metaTitle: "St. Louis Car Accident Help | Missouri Gateway City Guide",
+    metaDescription: "St. Louis car accident assistance. Navigate the complex highway system, understand Missouri's fault-based insurance, and get help after a collision in the Gateway City.",
+    keywords: [
+      "St. Louis car accident",
+      "St. Louis accident lawyer",
+      "Missouri car accident help",
+      "I-70 accident St. Louis",
+      "downtown St. Louis accident",
+      "St. Louis Circuit Court",
+      "Gateway Arch traffic accident"
+    ]
+  },
+  {
+    slug: "kansas-city",
+    name: "Kansas City",
+    state: "missouri",
+    stateAbbreviation: "MO",
+    population: 508090,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 70",
+        description: "Major east-west route through Kansas City",
+        accidentHotspots: ["Downtown loop", "I-435 interchange", "Blue Ridge Cutoff", "Sports Complex area"]
+      },
+      {
+        name: "Interstate 35",
+        description: "North-south route connecting to Des Moines and Oklahoma City",
+        accidentHotspots: ["Downtown loop", "I-635 interchange", "Grandview Triangle", "Claycomo area"]
+      },
+      {
+        name: "Interstate 29",
+        description: "Route north along Missouri River to St. Joseph",
+        accidentHotspots: ["I-35 junction", "KCI Airport area", "Platte City"]
+      },
+      {
+        name: "Interstate 435",
+        description: "Outer beltway around Kansas City metro",
+        accidentHotspots: ["Grandview area", "I-70 interchange", "Bannister Road", "State Line Road"]
+      },
+      {
+        name: "Interstate 670",
+        description: "Downtown bypass connecting I-70 and I-35",
+        accidentHotspots: ["Broadway exit", "Main Street", "Southwest Boulevard"]
+      },
+      {
+        name: "US-71 (Bruce R. Watkins Drive)",
+        description: "North-south route through central KC",
+        accidentHotspots: ["I-435 junction", "63rd Street", "Prospect Avenue"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown/Power & Light", characteristics: "Entertainment district, event traffic, one-way streets, T-Mobile Center events" },
+      { name: "Country Club Plaza", characteristics: "Shopping traffic, tourist pedestrians, parking congestion" },
+      { name: "Westport", characteristics: "Bar district, young pedestrians, nightlife traffic" },
+      { name: "Crossroads Arts District", characteristics: "First Friday events, gallery traffic, Union Station area" },
+      { name: "North Kansas City", characteristics: "Industrial, casino traffic, Harrah's area" },
+      { name: "Overland Park (KS side)", characteristics: "Corporate campuses, Sprint Center, suburban congestion" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-35, I-70, and I-435 heavily congested 7-9 AM and 4-6:30 PM" },
+      { type: "Chiefs/Royals Games", description: "Arrowhead/Kauffman Stadium area gridlocked on game days" },
+      { type: "State Line", description: "Heavy cross-traffic between Missouri and Kansas sides" },
+      { type: "Grandview Triangle", description: "Notorious I-435/I-49/I-470 interchange is very dangerous" },
+      { type: "Downtown Events", description: "T-Mobile Center and Power & Light cause major congestion" }
+    ],
+
+    annualAccidents: 16000,
+    accidentYear: 2023,
+    fatalAccidents: 89,
+
+    commonAccidentTypes: [
+      "Interstate interchange accidents",
+      "Grandview Triangle crashes (notorious dangerous area)",
+      "DUI accidents in Westport and Power & Light districts",
+      "Rear-end collisions during heavy traffic",
+      "Cross-state commuter accidents",
+      "Weather-related accidents (ice storms)",
+      "Pedestrian accidents in entertainment districts"
+    ],
+
+    dangerousIntersections: [
+      "Grandview Triangle (I-435/I-49/I-470)",
+      "Broadway & Southwest Boulevard",
+      "39th Street & Main Street",
+      "Troost & 63rd Street",
+      "Prospect & 75th Street"
+    ],
+
+    policeNonEmergency: "(816) 234-5111",
+
+    introText: "Kansas City spans two states (Missouri and Kansas), creating complex jurisdictional issues after accidents. The Grandview Triangle interchange is one of the most dangerous in the Midwest. Missouri side uses pure comparative fault, while Kansas uses modified comparative fault with a 50% bar.",
+
+    localConsiderations: [
+      "Metro spans Missouri AND Kansas - different laws may apply",
+      "Jackson County Circuit Court handles Missouri-side accident cases",
+      "Missouri: pure comparative fault | Kansas: 50% modified comparative fault",
+      "Grandview Triangle is exceptionally dangerous and confusing",
+      "Chiefs and Royals games create massive stadium area traffic",
+      "State line crossings add complexity to insurance claims",
+      "High concentration of interstate interchanges in metro area"
+    ],
+
+    weatherFactors: [
+      "Ice storms are significant hazard (flat terrain, wind)",
+      "Severe spring thunderstorms with tornado risk",
+      "Winter snow can be heavy",
+      "Flash flooding in low-lying areas",
+      "Temperature swings create freeze-thaw road damage"
+    ],
+
+    metaTitle: "Kansas City Car Accident Help | Missouri-Kansas Metro Guide",
+    metaDescription: "Kansas City car accident assistance. Navigate the two-state metro area, understand different fault rules, and get help after a collision in KC.",
+    keywords: [
+      "Kansas City car accident",
+      "Kansas City accident lawyer",
+      "KCMO accident attorney",
+      "Grandview Triangle accident",
+      "I-70 Kansas City accident",
+      "Jackson County accident",
+      "Chiefs game traffic accident"
+    ]
+  }
+];
+
+// Indiana Cities
+export const indianaCities: CityData[] = [
+  {
+    slug: "indianapolis",
+    name: "Indianapolis",
+    state: "indiana",
+    stateAbbreviation: "IN",
+    population: 887642,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 465",
+        description: "Complete beltway around Indianapolis - one of the busiest in the nation",
+        accidentHotspots: ["I-70 interchange (east)", "I-69 junction", "I-65 interchange (north and south)", "Keystone area"]
+      },
+      {
+        name: "Interstate 70",
+        description: "Major east-west route through downtown",
+        accidentHotspots: ["Downtown split", "Airport area", "I-465 interchanges", "Speedway area"]
+      },
+      {
+        name: "Interstate 65",
+        description: "North-south route connecting Chicago to Louisville",
+        accidentHotspots: ["Downtown split", "I-465 interchanges", "Greenwood area", "Lebanon area"]
+      },
+      {
+        name: "Interstate 69",
+        description: "Northeast corridor to Fort Wayne and Michigan",
+        accidentHotspots: ["I-465 interchange", "Fishers area", "82nd Street"]
+      },
+      {
+        name: "Interstate 74",
+        description: "Route to Cincinnati (east) and Champaign (west)",
+        accidentHotspots: ["I-465 junction", "Shelbyville Road", "Airport area"]
+      },
+      {
+        name: "US-31 (Meridian Street)",
+        description: "Major north-south arterial through the city",
+        accidentHotspots: ["Downtown", "Broad Ripple", "Carmel City Center", "Greenwood"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown/Circle Center", characteristics: "Convention traffic, stadium events, one-way streets, Lucas Oil events" },
+      { name: "Broad Ripple", characteristics: "Entertainment district, bar traffic, young pedestrians, narrow streets" },
+      { name: "Fountain Square", characteristics: "Arts district, restaurant traffic, revitalizing area" },
+      { name: "Carmel/Fishers", characteristics: "Suburban growth, roundabouts, corporate traffic, US-31 corridor" },
+      { name: "Speedway", characteristics: "IMS traffic during events, residential, 16th Street corridor" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-465 is congested almost continuously, worst 7-9 AM and 4-6:30 PM" },
+      { type: "Indy 500/Brickyard", description: "May-August racing events cause Speedway area gridlock" },
+      { type: "Colts/Pacers", description: "Downtown stadium events create major congestion" },
+      { type: "Convention Center", description: "Gen Con, FFA, and other conventions add significant traffic" },
+      { type: "Construction", description: "Constant highway construction and lane closures" }
+    ],
+
+    annualAccidents: 22000,
+    accidentYear: 2023,
+    fatalAccidents: 124,
+
+    commonAccidentTypes: [
+      "I-465 high-speed accidents (beltway is extremely busy)",
+      "Interstate interchange accidents (multiple major highways converge)",
+      "Rear-end collisions during rush hour",
+      "DUI accidents in Broad Ripple and downtown",
+      "Pedestrian accidents in entertainment districts",
+      "Weather-related accidents (ice, snow)",
+      "Racing event traffic accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-465 & I-70 (east side)",
+      "I-465 & I-65 (north and south)",
+      "38th Street & Keystone Avenue",
+      "Pendleton Pike & Shadeland Avenue",
+      "86th Street & Michigan Road"
+    ],
+
+    policeNonEmergency: "(317) 327-3811",
+
+    introText: "Indianapolis is the 'Crossroads of America' with more interstate highways converging than any other U.S. city. I-465 is one of the busiest beltways in the nation. Indiana is an at-fault state with modified comparative fault - you cannot recover if more than 50% at fault.",
+
+    localConsiderations: [
+      "More interstate highways converge here than any other US city",
+      "Marion County Superior Court handles most accident cases",
+      "Indiana uses modified comparative fault (51% bar)",
+      "I-465 is the second-busiest beltway in the nation",
+      "Indy 500 and racing events create unique traffic situations",
+      "Convention traffic significantly impacts downtown",
+      "Carmel has more roundabouts than any US city - unique driving patterns"
+    ],
+
+    weatherFactors: [
+      "Ice storms and freezing rain create hazardous conditions",
+      "Lake-effect snow from Lake Michigan affects northern routes",
+      "Severe spring thunderstorms with hail",
+      "Temperature fluctuations cause freeze-thaw damage",
+      "Fog can affect morning commute"
+    ],
+
+    uniqueTrafficLaws: [
+      "Indiana requires minimum $25,000/$50,000/$25,000 liability",
+      "Uninsured motorist coverage is optional",
+      "Move-over law for emergency vehicles",
+      "Right turn on red permitted unless posted",
+      "51% comparative fault bar - can't recover if mostly at fault"
+    ],
+
+    metaTitle: "Indianapolis Car Accident Help | Indiana Crossroads Guide",
+    metaDescription: "Indianapolis car accident assistance. Navigate the Crossroads of America, understand Indiana's fault-based insurance, and get help after a collision in Indy.",
+    keywords: [
+      "Indianapolis car accident",
+      "Indianapolis accident lawyer",
+      "Indiana car accident help",
+      "I-465 accident Indianapolis",
+      "Marion County accident attorney",
+      "Indy 500 traffic accident",
+      "downtown Indianapolis accident"
+    ]
+  }
+];
+
+// Oklahoma Cities
+export const oklahomaCities: CityData[] = [
+  {
+    slug: "oklahoma-city",
+    name: "Oklahoma City",
+    state: "oklahoma",
+    stateAbbreviation: "OK",
+    population: 687725,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 35",
+        description: "Major north-south route through central Oklahoma City",
+        accidentHotspots: ["I-40 interchange", "I-44 junction", "Edmond area", "Moore/Norman area"]
+      },
+      {
+        name: "Interstate 40",
+        description: "East-west transcontinental route through OKC",
+        accidentHotspots: ["I-35 interchange", "Meridian Avenue", "I-44 junction", "Tinker AFB area"]
+      },
+      {
+        name: "Interstate 44 (Turner Turnpike/Kilpatrick)",
+        description: "Northeast route to Tulsa and northwest bypass",
+        accidentHotspots: ["I-35 junction", "Lincoln Boulevard", "Kilpatrick Turnpike merge"]
+      },
+      {
+        name: "Interstate 240",
+        description: "Southern bypass connecting I-35 and I-40",
+        accidentHotspots: ["I-35 interchange", "I-44 junction", "Sooner Road area"]
+      },
+      {
+        name: "Broadway Extension (US-77)",
+        description: "Major north-south route to Edmond",
+        accidentHotspots: ["I-44 interchange", "Memorial Road", "Edmond area"]
+      },
+      {
+        name: "Lake Hefner Parkway",
+        description: "Northwest expressway through residential areas",
+        accidentHotspots: ["Hefner Road", "Northwest Expressway", "Britton Road"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown/Bricktown", characteristics: "Entertainment district, Thunder games, one-way streets, event traffic" },
+      { name: "Midtown", characteristics: "Restaurant district, pedestrians, mixed residential-commercial" },
+      { name: "Northwest OKC", characteristics: "Lake Hefner recreation, suburban growth, Quail Springs traffic" },
+      { name: "Moore/Norman", characteristics: "I-35 corridor congestion, OU game day traffic, suburban sprawl" },
+      { name: "Edmond", characteristics: "UCO traffic, Broadway Extension congestion, rapid growth" },
+      { name: "Tinker AFB Area", characteristics: "Military traffic, shift changes, I-40 access" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-35 and I-40 congested 7-9 AM and 4-6:30 PM" },
+      { type: "Thunder Games", description: "Downtown/Bricktown gridlock before and after games" },
+      { type: "OU Football", description: "I-35 to Norman becomes parking lot on game days" },
+      { type: "Severe Weather", description: "Tornado season (April-June) can cause sudden evacuations" },
+      { type: "State Fair", description: "September fair traffic impacts I-44 and I-40" }
+    ],
+
+    annualAccidents: 15000,
+    accidentYear: 2023,
+    fatalAccidents: 98,
+
+    commonAccidentTypes: [
+      "Interstate interchange accidents (multiple highways converge)",
+      "Severe weather-related accidents (ice storms, tornadoes)",
+      "Rear-end collisions during rush hour",
+      "Wrong-way accidents on highways",
+      "Pedestrian accidents in Bricktown/Midtown",
+      "DUI-related accidents",
+      "Oil field truck accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-35 & I-40 interchange",
+      "I-35 & I-44 junction",
+      "Northwest Expressway & May Avenue",
+      "Memorial Road & Pennsylvania",
+      "Reno Avenue & I-35"
+    ],
+
+    policeNonEmergency: "(405) 231-2121",
+
+    introText: "Oklahoma City sits at the crossroads of I-35 and I-40, creating significant traffic convergence. The city faces unique challenges with severe weather, including ice storms and tornado threats. Oklahoma is an at-fault state with modified comparative fault - you cannot recover if more than 50% at fault.",
+
+    localConsiderations: [
+      "Oklahoma County District Court handles most accident cases",
+      "Oklahoma uses modified comparative fault (51% bar)",
+      "Severe weather (tornadoes, ice storms) creates sudden traffic hazards",
+      "Oil field truck traffic is significant throughout the metro",
+      "Thunder games create major downtown congestion",
+      "OU/OSU football affects I-35 corridor significantly",
+      "Many turnpikes require tolls - keep records for claims"
+    ],
+
+    weatherFactors: [
+      "Tornado Alley - severe weather can strike with little warning",
+      "Ice storms are particularly dangerous (flat terrain, wind)",
+      "Sudden temperature drops create black ice",
+      "Severe thunderstorms with hail damage vehicles",
+      "High winds affect vehicle control, especially on bridges"
+    ],
+
+    uniqueTrafficLaws: [
+      "Oklahoma requires minimum $25,000/$50,000/$25,000 liability",
+      "Uninsured motorist coverage is optional but recommended",
+      "Right turn on red permitted unless posted",
+      "Texting while driving is prohibited",
+      "Move-over law for emergency vehicles"
+    ],
+
+    metaTitle: "Oklahoma City Car Accident Help | OKC Collision Guide",
+    metaDescription: "Oklahoma City car accident assistance. Navigate I-35/I-40 traffic, understand Oklahoma's fault-based insurance, and get help after a collision in OKC.",
+    keywords: [
+      "Oklahoma City car accident",
+      "OKC accident lawyer",
+      "Oklahoma car accident help",
+      "I-35 accident Oklahoma City",
+      "I-40 accident OKC",
+      "Oklahoma County attorney",
+      "Bricktown accident"
+    ]
+  },
+  {
+    slug: "tulsa",
+    name: "Tulsa",
+    state: "oklahoma",
+    stateAbbreviation: "OK",
+    population: 413066,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 44 (Turner Turnpike)",
+        description: "Major route connecting Tulsa to Oklahoma City",
+        accidentHotspots: ["I-244 split", "Downtown exits", "West Tulsa", "Sapulpa area"]
+      },
+      {
+        name: "Interstate 244 (Crosstown/Red Fork)",
+        description: "Inner loop through downtown Tulsa",
+        accidentHotspots: ["I-44 interchanges", "Downtown exits", "Admiral Place", "I-44 east junction"]
+      },
+      {
+        name: "US-169 (Mingo Valley Expressway)",
+        description: "North-south route through east Tulsa",
+        accidentHotspots: ["I-44 interchange", "71st Street", "Broken Arrow Expressway"]
+      },
+      {
+        name: "US-64 (Broken Arrow Expressway)",
+        description: "Route to Broken Arrow and eastern suburbs",
+        accidentHotspots: ["I-44 junction", "Memorial Drive", "Broken Arrow area"]
+      },
+      {
+        name: "Highway 75 (Okmulgee Beeline)",
+        description: "North-south route through west Tulsa",
+        accidentHotspots: ["I-44 area", "Downtown", "Jenks area"]
+      },
+      {
+        name: "Creek Turnpike",
+        description: "Southern bypass to Broken Arrow and Jenks",
+        accidentHotspots: ["Highway 75 junction", "Memorial interchange", "Broken Arrow"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown/Blue Dome", characteristics: "Entertainment district, BOK Center events, one-way streets" },
+      { name: "Brookside", characteristics: "Restaurant district, pedestrians, narrow streets, bar traffic" },
+      { name: "Cherry Street", characteristics: "Shopping traffic, pedestrians, limited parking" },
+      { name: "South Tulsa/Jenks", characteristics: "Suburban growth, Riverside traffic, outlet mall congestion" },
+      { name: "Broken Arrow", characteristics: "Rapid suburban growth, BA Expressway congestion" },
+      { name: "Midtown", characteristics: "TU traffic, Utica Square shopping, historic neighborhoods" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-44 and BA Expressway congested 7-9 AM and 4-6:30 PM" },
+      { type: "BOK Center Events", description: "Downtown gridlock for concerts and events" },
+      { type: "Oil Industry", description: "Energy sector traffic affects downtown during business hours" },
+      { type: "Broken Arrow Growth", description: "Suburban commuter traffic increasing on BA Expressway" },
+      { type: "Severe Weather", description: "Tornado season affects traffic patterns" }
+    ],
+
+    annualAccidents: 11000,
+    accidentYear: 2023,
+    fatalAccidents: 72,
+
+    commonAccidentTypes: [
+      "I-44/I-244 interchange accidents",
+      "Broken Arrow Expressway rear-end collisions",
+      "Severe weather-related crashes",
+      "DUI accidents in entertainment districts",
+      "Pedestrian accidents in Brookside/Cherry Street",
+      "Commercial vehicle accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-44 & I-244 (east and west)",
+      "71st Street & Memorial",
+      "21st Street & Yale",
+      "Admiral & Memorial",
+      "11th Street & Yale"
+    ],
+
+    policeNonEmergency: "(918) 596-9222",
+
+    introText: "Tulsa is Oklahoma's second-largest city with a complex highway system centered on I-44 and I-244. The city faces similar severe weather challenges as OKC, with tornado and ice storm threats. The energy industry presence means significant commercial truck traffic.",
+
+    localConsiderations: [
+      "Tulsa County District Court handles most accident cases",
+      "Oklahoma uses modified comparative fault (51% bar)",
+      "Energy industry creates significant commercial truck traffic",
+      "Broken Arrow is fastest-growing suburb - increasing congestion",
+      "Severe weather poses year-round threat",
+      "Multiple turnpikes in area require toll records",
+      "BOK Center events create downtown traffic spikes"
+    ],
+
+    weatherFactors: [
+      "Part of Tornado Alley - severe storms common",
+      "Ice storms create hazardous driving conditions",
+      "Flash flooding in low-lying areas",
+      "High winds on bridges and overpasses",
+      "Extreme summer heat affects road conditions"
+    ],
+
+    metaTitle: "Tulsa Car Accident Help | Oklahoma Green Country Guide",
+    metaDescription: "Tulsa car accident assistance. Navigate I-44/I-244 traffic, understand Oklahoma insurance laws, and get help after a collision in Green Country.",
+    keywords: [
+      "Tulsa car accident",
+      "Tulsa accident lawyer",
+      "Oklahoma car accident",
+      "I-44 accident Tulsa",
+      "Broken Arrow accident",
+      "Tulsa County attorney"
+    ]
+  }
+];
+
+// Connecticut Cities
+export const connecticutCities: CityData[] = [
+  {
+    slug: "hartford",
+    name: "Hartford",
+    state: "connecticut",
+    stateAbbreviation: "CT",
+    population: 121054,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 84",
+        description: "Major east-west route through Hartford",
+        accidentHotspots: ["I-91 interchange", "Asylum Avenue exit", "West Hartford area", "Manchester"]
+      },
+      {
+        name: "Interstate 91",
+        description: "North-south route along Connecticut River",
+        accidentHotspots: ["I-84 interchange", "Charter Oak Bridge", "Wethersfield area", "Windsor"]
+      },
+      {
+        name: "Route 2",
+        description: "Route east to Glastonbury and Norwich",
+        accidentHotspots: ["I-84 junction", "Glastonbury area", "Founders Bridge"]
+      },
+      {
+        name: "Interstate 291",
+        description: "Northern bypass connecting I-91 and I-84",
+        accidentHotspots: ["I-91 interchange", "Windsor area", "Manchester connector"]
+      },
+      {
+        name: "Route 9",
+        description: "Route south to Middletown and shoreline",
+        accidentHotspots: ["I-91 junction", "Cromwell", "Middletown"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown", characteristics: "Insurance company traffic, XL Center events, government workers" },
+      { name: "West End", characteristics: "Residential, hospital traffic, Mark Twain House area" },
+      { name: "Asylum Hill", characteristics: "Aetna/health insurance HQs, commuter traffic" },
+      { name: "West Hartford", characteristics: "Retail traffic, Blue Back Square, suburban character" },
+      { name: "East Hartford", characteristics: "Pratt & Whitney, industrial traffic, I-84 access" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-84 and I-91 severely congested 7-9 AM and 4-6:30 PM" },
+      { type: "Insurance Industry", description: "Financial district creates concentrated commuter traffic" },
+      { type: "XL Center Events", description: "UConn games and concerts impact downtown" },
+      { type: "Construction Season", description: "Short warm season means intense summer road work" },
+      { type: "Snow Events", description: "Winter storms significantly impact all highways" }
+    ],
+
+    annualAccidents: 6500,
+    accidentYear: 2023,
+    fatalAccidents: 28,
+
+    commonAccidentTypes: [
+      "I-84/I-91 interchange accidents (complex merge)",
+      "Winter weather accidents (snow, ice)",
+      "Rear-end collisions during rush hour",
+      "Pedestrian accidents downtown",
+      "Bridge-related accidents (multiple river crossings)",
+      "Construction zone accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-84 & I-91 interchange",
+      "Main Street & Asylum Avenue",
+      "Farmington Avenue & Asylum",
+      "Park Street & Main Street",
+      "Albany Avenue & Woodland"
+    ],
+
+    policeNonEmergency: "(860) 757-4000",
+
+    introText: "Hartford is Connecticut's capital and the 'Insurance Capital of the World.' The I-84/I-91 interchange is notoriously dangerous. Connecticut is an at-fault state with modified comparative negligence - you cannot recover if more than 50% at fault.",
+
+    localConsiderations: [
+      "Hartford Superior Court handles accident cases",
+      "Connecticut uses modified comparative fault (51% bar)",
+      "I-84/I-91 interchange is among most dangerous in New England",
+      "Insurance industry headquarters mean sophisticated claim handling",
+      "Multiple Connecticut River crossings create bottlenecks",
+      "Winter weather significantly impacts driving conditions",
+      "No-fault PIP coverage is optional in Connecticut"
+    ],
+
+    weatherFactors: [
+      "Significant snowfall (average 40+ inches annually)",
+      "Ice storms create hazardous conditions",
+      "Nor'easters can bring heavy snow and wind",
+      "Freeze-thaw cycles damage roads",
+      "Connecticut River fog affects bridges"
+    ],
+
+    uniqueTrafficLaws: [
+      "Connecticut requires minimum $25,000/$50,000/$25,000 liability",
+      "Uninsured motorist coverage is mandatory",
+      "Handheld phone use while driving prohibited",
+      "Move-over law for emergency vehicles",
+      "Right turn on red permitted unless posted"
+    ],
+
+    metaTitle: "Hartford Car Accident Help | Connecticut Capital Guide",
+    metaDescription: "Hartford car accident assistance. Navigate the Insurance Capital's highways, understand CT fault-based insurance, and get help after a collision.",
+    keywords: [
+      "Hartford car accident",
+      "Hartford accident lawyer",
+      "Connecticut car accident",
+      "I-84 accident Hartford",
+      "I-91 accident Hartford",
+      "Hartford Superior Court",
+      "Connecticut insurance claim"
+    ]
+  },
+  {
+    slug: "new-haven",
+    name: "New Haven",
+    state: "connecticut",
+    stateAbbreviation: "CT",
+    population: 135081,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 95",
+        description: "Major coastal route - heavily traveled corridor",
+        accidentHotspots: ["I-91 interchange (Mixmaster)", "Long Wharf", "Exit 47-48 area", "Branford"]
+      },
+      {
+        name: "Interstate 91",
+        description: "North-south route to Hartford",
+        accidentHotspots: ["I-95 interchange", "Downtown exits", "North Haven area", "Quinnipiac Bridge"]
+      },
+      {
+        name: "Route 34 (Oak Street Connector)",
+        description: "Route west to Derby and I-95",
+        accidentHotspots: ["I-95 area", "Downtown exits", "Yale area"]
+      },
+      {
+        name: "Route 15 (Wilbur Cross/Merritt Parkway)",
+        description: "Scenic parkway with unique challenges",
+        accidentHotspots: ["Low clearance bridges", "Sharp curves", "Narrow lanes", "Meriden area"]
+      },
+      {
+        name: "Route 1 (Boston Post Road)",
+        description: "Coastal route with heavy commercial traffic",
+        accidentHotspots: ["Downtown area", "East Haven", "Branford", "Guilford"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown/Yale", characteristics: "University traffic, pedestrian heavy, one-way streets, events" },
+      { name: "East Rock", characteristics: "Residential, narrow streets, Yale graduate housing" },
+      { name: "Westville", characteristics: "Suburban feel, commuter traffic to downtown" },
+      { name: "Long Wharf", characteristics: "I-95 access, commercial area, IKEA traffic" },
+      { name: "Fair Haven", characteristics: "Mixed residential-industrial, I-91 access" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-95 and I-91 extremely congested, especially Mixmaster" },
+      { type: "Yale Schedule", description: "University calendar significantly impacts traffic" },
+      { type: "Yale Bowl Events", description: "Football games create congestion on Route 34" },
+      { type: "Shore Traffic", description: "Summer weekends see heavy I-95 congestion to beaches" },
+      { type: "Metro-North", description: "Train station creates drop-off/pickup congestion" }
+    ],
+
+    annualAccidents: 7200,
+    accidentYear: 2023,
+    fatalAccidents: 32,
+
+    commonAccidentTypes: [
+      "I-95/I-91 Mixmaster accidents (complex interchange)",
+      "Pedestrian accidents near Yale campus",
+      "Rear-end collisions on I-95",
+      "Merritt Parkway low-clearance bridge strikes",
+      "Bicycle vs. vehicle accidents",
+      "DUI accidents in bar/restaurant districts"
+    ],
+
+    dangerousIntersections: [
+      "I-95 & I-91 (Mixmaster)",
+      "Church Street & Chapel Street",
+      "Whalley Avenue & Fountain Street",
+      "State Street & Chapel Street",
+      "Ella Grasso Boulevard & Route 1"
+    ],
+
+    policeNonEmergency: "(203) 946-6316",
+
+    introText: "New Haven is home to Yale University and sits at the junction of I-95 and I-91, making it a critical transportation hub. The 'Mixmaster' interchange is one of the most dangerous in the Northeast. The city's combination of university traffic, pedestrians, and heavy I-95 corridor traffic creates significant accident risks.",
+
+    localConsiderations: [
+      "New Haven Superior Court handles accident cases",
+      "Connecticut uses modified comparative fault (51% bar)",
+      "Mixmaster (I-95/I-91) is extremely dangerous and confusing",
+      "Yale campus means heavy pedestrian traffic",
+      "Merritt Parkway has unique low bridges and narrow lanes",
+      "I-95 is one of the busiest corridors in the nation",
+      "Mandatory uninsured motorist coverage in CT"
+    ],
+
+    weatherFactors: [
+      "Coastal location means nor'easters are significant threat",
+      "Snow and ice create hazardous conditions",
+      "Sea fog can reduce visibility on coastal routes",
+      "Freeze-thaw cycles damage roads significantly",
+      "Summer humidity can affect brake performance"
+    ],
+
+    metaTitle: "New Haven Car Accident Help | Connecticut Yale City Guide",
+    metaDescription: "New Haven car accident assistance. Navigate the Mixmaster interchange, understand Connecticut insurance laws, and get help after a collision in the Elm City.",
+    keywords: [
+      "New Haven car accident",
+      "New Haven accident lawyer",
+      "Mixmaster accident",
+      "I-95 accident New Haven",
+      "Yale traffic accident",
+      "Connecticut car accident",
+      "New Haven Superior Court"
+    ]
+  }
+];
+
+// Alabama Cities
+export const alabamaCities: CityData[] = [
+  {
+    slug: "birmingham",
+    name: "Birmingham",
+    state: "alabama",
+    stateAbbreviation: "AL",
+    population: 200733,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 65",
+        description: "Major north-south route through Alabama",
+        accidentHotspots: ["I-20/59 interchange", "Downtown exits", "Hoover area", "Homewood"]
+      },
+      {
+        name: "Interstate 20/59",
+        description: "Combined east-west route through downtown",
+        accidentHotspots: ["I-65 interchange", "Bessemer area", "Downtown", "Roebuck area"]
+      },
+      {
+        name: "Interstate 459",
+        description: "Southern bypass around Birmingham",
+        accidentHotspots: ["I-65 interchange", "Hoover", "Trussville", "I-20 junction"]
+      },
+      {
+        name: "US-280 (Cahaba Road)",
+        description: "Major commercial corridor to east suburbs",
+        accidentHotspots: ["Mountain Brook", "Grandview area", "Inverness", "Chelsea"]
+      },
+      {
+        name: "US-31",
+        description: "North-south route through Homewood and Vestavia",
+        accidentHotspots: ["Homewood", "Vestavia Hills", "Hoover", "Gardendale"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown", characteristics: "UAB medical traffic, business district, Railroad Park area" },
+      { name: "Southside/Five Points", characteristics: "Entertainment district, UAB students, restaurant traffic" },
+      { name: "Homewood/Mountain Brook", characteristics: "Upscale retail, US-31 congestion, narrow streets" },
+      { name: "Hoover/Riverchase", characteristics: "Galleria traffic, I-459 access, suburban growth" },
+      { name: "Irondale/Roebuck", characteristics: "I-20 access, commercial corridors" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-65, I-20/59, and US-280 severely congested 7-9 AM and 4-6:30 PM" },
+      { type: "UAB Traffic", description: "University/hospital complex creates significant traffic" },
+      { type: "SEC Football", description: "Alabama/Auburn games cause major traffic throughout state" },
+      { type: "US-280 Congestion", description: "Arguably worst traffic corridor in metro - constant congestion" },
+      { type: "Construction", description: "I-59/20 reconstruction ongoing through downtown" }
+    ],
+
+    annualAccidents: 12000,
+    accidentYear: 2023,
+    fatalAccidents: 68,
+
+    commonAccidentTypes: [
+      "US-280 rear-end collisions (notorious traffic)",
+      "I-65/I-20/59 interchange accidents",
+      "Severe weather accidents (tornadoes, ice)",
+      "Pedestrian accidents near UAB",
+      "DUI-related accidents",
+      "Commercial truck accidents on I-65"
+    ],
+
+    dangerousIntersections: [
+      "US-280 & I-459",
+      "US-280 & Grandview Parkway",
+      "I-65 & I-20/59",
+      "US-31 & Lakeshore Drive",
+      "Green Springs Highway & I-65"
+    ],
+
+    policeNonEmergency: "(205) 328-9311",
+
+    introText: "Birmingham is Alabama's largest city and a major logistics hub. US-280 is notorious for severe traffic congestion. Alabama uses contributory negligence, one of only four states where any fault on your part can completely bar recovery - making documentation critical.",
+
+    localConsiderations: [
+      "Jefferson County Circuit Court handles accident cases",
+      "ALABAMA USES CONTRIBUTORY NEGLIGENCE - any fault bars recovery",
+      "US-280 has some of the worst traffic in the Southeast",
+      "UAB medical district creates significant traffic",
+      "I-59/20 construction affects downtown access",
+      "Alabama has relatively low minimum insurance requirements",
+      "Contributory negligence makes fault documentation critical"
+    ],
+
+    weatherFactors: [
+      "Part of Dixie Alley - severe tornado risk",
+      "Ice storms create extremely hazardous conditions",
+      "Summer thunderstorms cause flash flooding",
+      "Hills and valleys can have localized fog",
+      "Rare snow causes major disruptions"
+    ],
+
+    uniqueTrafficLaws: [
+      "Alabama requires only $25,000/$50,000/$25,000 liability",
+      "CONTRIBUTORY NEGLIGENCE - any fault bars recovery completely",
+      "Uninsured motorist coverage is optional",
+      "Right turn on red permitted unless posted",
+      "Move-over law for emergency vehicles"
+    ],
+
+    metaTitle: "Birmingham Car Accident Help | Alabama Magic City Guide",
+    metaDescription: "Birmingham car accident assistance. Understand Alabama's strict contributory negligence law, navigate US-280 traffic, and get help after a collision.",
+    keywords: [
+      "Birmingham car accident",
+      "Birmingham accident lawyer",
+      "Alabama car accident",
+      "US-280 accident",
+      "Jefferson County attorney",
+      "contributory negligence Alabama",
+      "UAB traffic accident"
+    ]
+  },
+  {
+    slug: "montgomery",
+    name: "Montgomery",
+    state: "alabama",
+    stateAbbreviation: "AL",
+    population: 200603,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 65",
+        description: "Major north-south route through Montgomery",
+        accidentHotspots: ["I-85 interchange", "Downtown exits", "Hope Hull area", "Prattville"]
+      },
+      {
+        name: "Interstate 85",
+        description: "Route to Atlanta and Auburn",
+        accidentHotspots: ["I-65 interchange", "Eastern Boulevard", "Atlanta Highway"]
+      },
+      {
+        name: "US-80 (Atlanta Highway/Jefferson Davis Highway)",
+        description: "Historic east-west route through city",
+        accidentHotspots: ["Eastdale Mall area", "Downtown", "West Montgomery"]
+      },
+      {
+        name: "US-231 (Troy Highway)",
+        description: "Route south to Troy and Dothan",
+        accidentHotspots: ["I-65 area", "Pike Road", "South Boulevard"]
+      },
+      {
+        name: "Eastern Boulevard",
+        description: "Major commercial corridor",
+        accidentHotspots: ["I-85 access", "Eastdale area", "Vaughn Road"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown", characteristics: "State capitol traffic, government workers, historic districts" },
+      { name: "Eastchase/East Montgomery", characteristics: "Retail growth, I-85 access, suburban development" },
+      { name: "Pike Road", characteristics: "Affluent suburb, school traffic, rural character" },
+      { name: "Prattville", characteristics: "Growing suburb, I-65 commuter traffic" },
+      { name: "Maxwell AFB Area", characteristics: "Military traffic, Air War College" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-65 and I-85 congested 7-9 AM and 4-6 PM" },
+      { type: "State Government", description: "Capitol and state offices affect downtown traffic" },
+      { type: "Maxwell AFB", description: "Military base shift changes impact west Montgomery" },
+      { type: "ASU Events", characteristics: "Alabama State University events affect downtown" },
+      { type: "Football Season", description: "Auburn/Alabama traffic on I-85 and I-65" }
+    ],
+
+    annualAccidents: 8500,
+    accidentYear: 2023,
+    fatalAccidents: 52,
+
+    commonAccidentTypes: [
+      "I-65/I-85 interchange accidents",
+      "Rear-end collisions on Eastern Boulevard",
+      "DUI-related accidents",
+      "Severe weather accidents",
+      "Pedestrian accidents downtown",
+      "Military vehicle accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-65 & I-85 interchange",
+      "Eastern Boulevard & I-85",
+      "Atlanta Highway & Coliseum Boulevard",
+      "US-231 & Eastern Boulevard",
+      "Bell Road & Eastern Boulevard"
+    ],
+
+    policeNonEmergency: "(334) 625-2831",
+
+    introText: "Montgomery is Alabama's capital city located at the junction of I-65 and I-85. As a state government hub, it sees significant commuter traffic. Alabama's contributory negligence law makes fault determination crucial - any negligence on your part can bar recovery entirely.",
+
+    localConsiderations: [
+      "Montgomery County Circuit Court handles accident cases",
+      "ALABAMA USES CONTRIBUTORY NEGLIGENCE - any fault bars recovery",
+      "State government creates concentrated downtown traffic",
+      "Maxwell AFB military traffic patterns",
+      "I-65/I-85 junction is key interchange",
+      "Eastern Boulevard retail traffic is heavy",
+      "Contributory negligence makes evidence preservation critical"
+    ],
+
+    weatherFactors: [
+      "Severe thunderstorms and tornado risk",
+      "Summer heat affects road conditions",
+      "Occasional ice storms cause major disruptions",
+      "Flash flooding in low-lying areas",
+      "Fog along Alabama River"
+    ],
+
+    metaTitle: "Montgomery Car Accident Help | Alabama Capital City Guide",
+    metaDescription: "Montgomery car accident assistance. Understand Alabama's contributory negligence law, navigate the capital city, and get help after a collision.",
+    keywords: [
+      "Montgomery car accident",
+      "Montgomery accident lawyer",
+      "Alabama capital accident",
+      "I-65 accident Montgomery",
+      "I-85 accident Montgomery",
+      "Montgomery County attorney",
+      "Alabama contributory negligence"
+    ]
+  }
+];
+
+// Kentucky Cities
+export const kentuckyCities: CityData[] = [
+  {
+    slug: "louisville",
+    name: "Louisville",
+    state: "kentucky",
+    stateAbbreviation: "KY",
+    population: 633045,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 65",
+        description: "Major north-south route crossing Ohio River",
+        accidentHotspots: ["I-64/I-71 interchange (Spaghetti Junction)", "Downtown exits", "Shepherdsville", "Brooks"]
+      },
+      {
+        name: "Interstate 64",
+        description: "East-west route through metro Louisville",
+        accidentHotspots: ["I-65 junction", "I-264 interchange", "Shelbyville Road", "St. Matthews"]
+      },
+      {
+        name: "Interstate 71",
+        description: "Northeast route to Cincinnati",
+        accidentHotspots: ["I-65 junction downtown", "Zorn Avenue", "Prospect area"]
+      },
+      {
+        name: "Interstate 264 (Watterson Expressway)",
+        description: "Inner beltway around Louisville",
+        accidentHotspots: ["I-65 interchange", "I-64 junction", "Bardstown Road", "Dixie Highway"]
+      },
+      {
+        name: "Interstate 265 (Gene Snyder Freeway)",
+        description: "Outer beltway",
+        accidentHotspots: ["I-64 interchange", "I-65 junction", "Taylorsville Road", "Bardstown Road"]
+      },
+      {
+        name: "Ohio River Bridges",
+        description: "Multiple crossings to Indiana",
+        accidentHotspots: ["Kennedy Bridge (I-65)", "Sherman Minton (I-64)", "Clark Memorial", "Lincoln Bridge"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown/NuLu", characteristics: "Event traffic, YUM Center, Main Street entertainment" },
+      { name: "Bardstown Road/Highlands", characteristics: "Restaurant row, pedestrians, bar traffic, narrow streets" },
+      { name: "St. Matthews", characteristics: "Retail hub, Mall St. Matthews traffic, suburban density" },
+      { name: "East End/Prospect", characteristics: "Affluent, I-71 access, school traffic" },
+      { name: "Dixie Highway/Valley Station", characteristics: "Commercial corridor, I-264 access, industrial" },
+      { name: "Churchill Downs Area", characteristics: "Derby traffic, Central Avenue, residential" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-65, I-64, and I-264 congested 7-9 AM and 4-6:30 PM" },
+      { type: "Kentucky Derby", description: "First Saturday in May - citywide gridlock around Churchill Downs" },
+      { type: "Bridge Traffic", description: "Ohio River crossings create bottlenecks with Indiana" },
+      { type: "UofL Events", description: "Cardinals games impact downtown and I-65" },
+      { type: "Thunder Over Louisville", description: "Pre-Derby fireworks cause major road closures" }
+    ],
+
+    annualAccidents: 14000,
+    accidentYear: 2023,
+    fatalAccidents: 85,
+
+    commonAccidentTypes: [
+      "Spaghetti Junction (I-65/I-64/I-71) accidents",
+      "Ohio River bridge accidents",
+      "Rear-end collisions on I-264",
+      "Pedestrian accidents in Highlands/NuLu",
+      "DUI accidents in entertainment districts",
+      "Derby week traffic accidents",
+      "Commercial truck accidents on I-65"
+    ],
+
+    dangerousIntersections: [
+      "Spaghetti Junction (I-65/I-64/I-71)",
+      "Bardstown Road & Eastern Parkway",
+      "Dixie Highway & I-264",
+      "Shelbyville Road & Hurstbourne",
+      "Preston Highway & Outer Loop"
+    ],
+
+    policeNonEmergency: "(502) 574-7111",
+
+    introText: "Louisville sits on the Ohio River with multiple bridges connecting to Indiana. The 'Spaghetti Junction' where I-65, I-64, and I-71 converge is notoriously complex. Kentucky uses pure comparative fault, meaning you can recover damages even if mostly at fault (reduced by your percentage).",
+
+    localConsiderations: [
+      "Jefferson County Circuit Court handles accident cases",
+      "Kentucky uses pure comparative fault - recover even if mostly at fault",
+      "Spaghetti Junction is one of the most complex interchanges in the region",
+      "Ohio River bridges create cross-state jurisdiction issues",
+      "Kentucky Derby causes once-a-year major traffic disruption",
+      "Indiana has different insurance laws - important for bridge accidents",
+      "UPS Worldport creates significant cargo truck traffic"
+    ],
+
+    weatherFactors: [
+      "Ohio River fog can reduce visibility on bridges",
+      "Ice storms create hazardous conditions",
+      "Flash flooding in low-lying areas",
+      "Snow causes moderate disruptions",
+      "Ohio River flooding can close roads"
+    ],
+
+    uniqueTrafficLaws: [
+      "Kentucky requires minimum $25,000/$50,000/$25,000 liability",
+      "Kentucky uses pure comparative fault",
+      "Basic reparations (no-fault PIP) required ($10,000 minimum)",
+      "Right turn on red permitted unless posted",
+      "Texting while driving prohibited"
+    ],
+
+    metaTitle: "Louisville Car Accident Help | Kentucky Derby City Guide",
+    metaDescription: "Louisville car accident assistance. Navigate Spaghetti Junction, understand Kentucky's comparative fault system, and get help after a collision in Derby City.",
+    keywords: [
+      "Louisville car accident",
+      "Louisville accident lawyer",
+      "Kentucky car accident",
+      "Spaghetti Junction accident",
+      "I-65 accident Louisville",
+      "Jefferson County attorney",
+      "Kentucky Derby traffic"
+    ]
+  },
+  {
+    slug: "lexington",
+    name: "Lexington",
+    state: "kentucky",
+    stateAbbreviation: "KY",
+    population: 322570,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 75",
+        description: "Major north-south route to Cincinnati and Knoxville",
+        accidentHotspots: ["I-64 interchange", "Man O' War Boulevard", "Hamburg area", "Georgetown"]
+      },
+      {
+        name: "Interstate 64",
+        description: "Route to Louisville and Ashland",
+        accidentHotspots: ["I-75 interchange", "Downtown exits", "Frankfort"]
+      },
+      {
+        name: "New Circle Road (KY-4)",
+        description: "Inner beltway around Lexington",
+        accidentHotspots: ["Nicholasville Road", "Richmond Road", "Leestown Road", "Bryan Station"]
+      },
+      {
+        name: "Man O' War Boulevard",
+        description: "Outer commercial corridor",
+        accidentHotspots: ["I-75 area", "Nicholasville Road", "Hamburg Pavilion"]
+      },
+      {
+        name: "Nicholasville Road (US-27)",
+        description: "Major south corridor through UK area",
+        accidentHotspots: ["UK campus", "Fayette Mall", "Man O' War", "New Circle"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown", characteristics: "Entertainment district, Rupp Arena events, government" },
+      { name: "UK Campus Area", characteristics: "University traffic, student pedestrians, game days" },
+      { name: "Hamburg", characteristics: "Retail growth, I-75 access, suburban development" },
+      { name: "Chevy Chase/Ashland Park", characteristics: "Established residential, UK hospital traffic" },
+      { name: "Horse Farm Country", characteristics: "Rural roads, slow farm equipment, tourist traffic" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rush Hour", description: "I-75, New Circle, and Nicholasville Road congested 7-9 AM and 4-6:30 PM" },
+      { type: "UK Basketball", description: "Rupp Arena games create downtown gridlock" },
+      { type: "UK Football", description: "Kroger Field games impact campus area" },
+      { type: "Keeneland", description: "Spring/fall race meets cause traffic on Versailles Road" },
+      { type: "Horse Farm Tours", description: "Tourist traffic on rural roads, especially spring" }
+    ],
+
+    annualAccidents: 9000,
+    accidentYear: 2023,
+    fatalAccidents: 48,
+
+    commonAccidentTypes: [
+      "I-75/I-64 interchange accidents",
+      "New Circle Road rear-end collisions",
+      "UK campus pedestrian accidents",
+      "DUI accidents in downtown entertainment district",
+      "Rural road accidents with farm equipment",
+      "Horse-related road incidents"
+    ],
+
+    dangerousIntersections: [
+      "I-75 & I-64 interchange",
+      "Nicholasville Road & New Circle",
+      "Richmond Road & New Circle",
+      "Harrodsburg Road & Man O' War",
+      "Leestown Road & New Circle"
+    ],
+
+    policeNonEmergency: "(859) 258-3600",
+
+    introText: "Lexington is the heart of Kentucky's Bluegrass Region and home to the University of Kentucky. The city combines urban traffic with rural horse farm country. Kentucky's pure comparative fault system allows recovery even if you bear most of the fault, with damages reduced proportionally.",
+
+    localConsiderations: [
+      "Fayette County Circuit Court handles accident cases",
+      "Kentucky uses pure comparative fault",
+      "UK events create significant traffic spikes",
+      "Horse farm areas have unique hazards (slow equipment, horses)",
+      "Keeneland race meets affect west Lexington traffic",
+      "New Circle Road is primary beltway - often congested",
+      "Basic reparations (PIP) coverage required in Kentucky"
+    ],
+
+    weatherFactors: [
+      "Ice storms can be severe",
+      "Flash flooding in low-lying areas",
+      "Fog in Bluegrass valleys",
+      "Snow causes moderate disruptions",
+      "Temperature fluctuations create icy patches"
+    ],
+
+    metaTitle: "Lexington Car Accident Help | Kentucky Bluegrass Guide",
+    metaDescription: "Lexington car accident assistance. Navigate the Horse Capital of the World, understand Kentucky insurance laws, and get help after a Bluegrass collision.",
+    keywords: [
+      "Lexington car accident",
+      "Lexington accident lawyer",
+      "Kentucky car accident",
+      "I-75 accident Lexington",
+      "UK campus accident",
+      "Fayette County attorney",
+      "Bluegrass traffic accident"
+    ]
+  }
+];
+
+// New Jersey Cities
+export const newJerseyCities: CityData[] = [
+  {
+    slug: "newark",
+    name: "Newark",
+    state: "new-jersey",
+    stateAbbreviation: "NJ",
+    population: 311549,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 78",
+        description: "Major east-west route connecting Newark to I-95 and the Holland Tunnel",
+        accidentHotspots: ["Newark Airport interchange", "I-78/NJ Turnpike junction", "Downtown exit ramps"]
+      },
+      {
+        name: "Interstate 95 (New Jersey Turnpike)",
+        description: "Primary north-south toll road through New Jersey's urban corridor",
+        accidentHotspots: ["Newark Airport interchange", "Elizabeth exits", "Secaucus junction"]
+      },
+      {
+        name: "Garden State Parkway",
+        description: "Major north-south route providing access to Newark and suburbs",
+        accidentHotspots: ["Newark Bay Bridge", "Irvington exits", "East Orange junction"]
+      },
+      {
+        name: "Interstate 280",
+        description: "East-west route connecting Newark to western suburbs",
+        accidentHotspots: ["Downtown Newark terminus", "I-80 interchange", "The Oranges section"]
+      },
+      {
+        name: "US Route 1/9",
+        description: "Major arterial through Newark's industrial and commercial areas",
+        accidentHotspots: ["Newark Airport area", "Port Newark", "Truck routes"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Newark", characteristics: "Dense urban core, one-way streets, pedestrian traffic near Penn Station" },
+      { name: "Ironbound", characteristics: "Vibrant commercial district, narrow streets, high pedestrian activity" },
+      { name: "North Newark", characteristics: "Residential with Branch Brook Park traffic, neighborhood streets" },
+      { name: "Newark Airport Area", characteristics: "Heavy airport and cargo traffic, complex interchanges" },
+      { name: "University Heights", characteristics: "Student traffic near Rutgers-Newark and NJIT" }
+    ],
+
+    trafficPatterns: [
+      { type: "Airport Traffic", description: "Newark Liberty Airport creates 24/7 congestion on I-78 and US 1/9" },
+      { type: "NYC Commuter Rush", description: "Extreme morning/evening congestion on routes to NYC tunnels and bridges" },
+      { type: "Port Traffic", description: "Heavy truck traffic serving Port Newark-Elizabeth Marine Terminal" },
+      { type: "Event Traffic", description: "Prudential Center events cause downtown congestion" }
+    ],
+
+    annualAccidents: 7200,
+    accidentYear: 2023,
+    fatalAccidents: 34,
+    commonAccidentTypes: [
+      "Highway crashes on I-95/Turnpike",
+      "Airport area confusion accidents",
+      "Pedestrian accidents in Ironbound",
+      "Truck-involved collisions",
+      "Aggressive driving incidents"
+    ],
+
+    dangerousIntersections: [
+      "Broad Street and Market Street",
+      "McCarter Highway and Raymond Boulevard",
+      "I-78 and NJ Turnpike interchange",
+      "Ferry Street and Union Street (Ironbound)",
+      "Springfield Avenue and Clinton Avenue"
+    ],
+
+    policeNonEmergency: "973-733-6000",
+
+    introText: "Newark, New Jersey's largest city, sits at the nexus of major highways connecting New York City to the rest of the nation. With Newark Liberty International Airport, one of the busiest ports on the East Coast, and proximity to NYC, traffic congestion and accidents are significant concerns. The complex interchange system and aggressive driving culture of the Northeast Corridor create challenging conditions for motorists.",
+
+    localConsiderations: [
+      "New Jersey is a NO-FAULT insurance state - your own insurance pays for injuries regardless of fault",
+      "NJ requires minimum $15,000/$30,000 bodily injury liability coverage",
+      "The 'verbal threshold' option may limit your ability to sue for non-serious injuries",
+      "Newark has high uninsured motorist rates despite mandatory insurance requirements",
+      "Toll road accidents on NJ Turnpike have specific reporting procedures",
+      "Multi-jurisdictional accidents involving Newark, airport authority, or port authority require careful documentation"
+    ],
+
+    weatherFactors: [
+      "Nor'easters bring heavy snow and ice",
+      "Summer humidity creates slick conditions",
+      "Urban heat islands increase tire blowouts",
+      "Heavy rain overwhelms drainage systems",
+      "Salt spray from treated roads causes visibility issues"
+    ],
+
+    uniqueTrafficLaws: [
+      "Right turn on red prohibited in many areas",
+      "NJ jughandles for left turns on major roads",
+      "No passing on right except on multi-lane highways",
+      "Cell phone use banned while driving (hands-free required)"
+    ],
+
+    metaTitle: "Newark Car Accident Help | New Jersey No-Fault Guide",
+    metaDescription: "Newark car accident assistance. Understand New Jersey's no-fault insurance system, navigate I-78 and Turnpike claims, and get help after a Newark collision.",
+    keywords: [
+      "Newark car accident",
+      "Newark accident lawyer",
+      "New Jersey no-fault insurance",
+      "NJ Turnpike accident",
+      "Newark airport accident",
+      "Essex County attorney",
+      "I-78 crash Newark"
+    ]
+  },
+  {
+    slug: "jersey-city",
+    name: "Jersey City",
+    state: "new-jersey",
+    stateAbbreviation: "NJ",
+    population: 292449,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 78 (Extension)",
+        description: "Connects Jersey City to the Holland Tunnel and NYC",
+        accidentHotspots: ["Holland Tunnel approach", "Jersey Avenue exit", "Downtown ramps"]
+      },
+      {
+        name: "New Jersey Turnpike Extension",
+        description: "Provides access to Holland Tunnel and Lincoln Tunnel approaches",
+        accidentHotspots: ["Holland Tunnel toll plaza", "Pulaski Skyway approach", "Bayonne junction"]
+      },
+      {
+        name: "US Route 1/9 (Pulaski Skyway)",
+        description: "Historic elevated highway connecting Jersey City to Newark",
+        accidentHotspots: ["Entire Skyway segment (no shoulders)", "Tonnele Circle", "Journal Square approach"]
+      },
+      {
+        name: "Route 139",
+        description: "Primary route through Jersey City connecting to Holland Tunnel",
+        accidentHotspots: ["Holland Tunnel helix", "Hoboken border", "Downtown exits"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Jersey City", characteristics: "Waterfront high-rises, dense traffic, narrow streets near PATH stations" },
+      { name: "Journal Square", characteristics: "Transportation hub with heavy bus and pedestrian traffic" },
+      { name: "The Heights", characteristics: "Steep hills, narrow residential streets, limited parking" },
+      { name: "Greenville", characteristics: "Diverse neighborhood with heavy commercial traffic on MLK Drive" },
+      { name: "Liberty State Park Area", characteristics: "Tourist traffic, ferry terminal, limited road access" }
+    ],
+
+    trafficPatterns: [
+      { type: "Tunnel Traffic", description: "Holland Tunnel commuters create severe morning westbound, evening eastbound congestion" },
+      { type: "NYC Spillover", description: "Manhattan-bound traffic backs up throughout Jersey City" },
+      { type: "Waterfront Development", description: "New developments creating unprecedented local traffic" },
+      { type: "PATH Station Rush", description: "Heavy pedestrian and vehicle traffic at Grove Street and Journal Square" }
+    ],
+
+    annualAccidents: 4800,
+    accidentYear: 2023,
+    fatalAccidents: 18,
+    commonAccidentTypes: [
+      "Tunnel approach rear-end collisions",
+      "Pedestrian accidents near PATH stations",
+      "Sideswipes on narrow streets",
+      "Parking-related accidents",
+      "Aggressive driver incidents"
+    ],
+
+    dangerousIntersections: [
+      "JFK Boulevard and Sip Avenue",
+      "Tonnele Avenue and Route 1/9",
+      "Newark Avenue and Grove Street",
+      "Montgomery Street and Marin Boulevard",
+      "Communipaw Avenue and West Side Avenue"
+    ],
+
+    policeNonEmergency: "201-547-5477",
+
+    introText: "Jersey City, directly across the Hudson River from Manhattan, experiences traffic challenges from being a primary gateway to New York City. The Holland Tunnel alone handles over 30,000 vehicles daily, and the city's rapid development has outpaced road infrastructure. The infamous Pulaski Skyway, with no shoulders or breakdown lanes, requires extra caution.",
+
+    localConsiderations: [
+      "New Jersey is a NO-FAULT insurance state - your own insurance pays regardless of fault",
+      "Holland Tunnel accidents may involve Port Authority jurisdiction",
+      "Pulaski Skyway accidents are extremely dangerous due to no shoulders - stay in vehicle if possible",
+      "High density of rideshare and delivery vehicles complicates liability",
+      "Many streets have non-standard configurations due to waterfront geography",
+      "Hudson County has specialized traffic court for moving violations"
+    ],
+
+    weatherFactors: [
+      "Hudson River creates fog and wind conditions",
+      "Nor'easters cause major disruptions",
+      "Tunnel approaches ice over quickly",
+      "Waterfront areas flood during high tides and storms",
+      "Wind gusts on elevated roadways"
+    ],
+
+    uniqueTrafficLaws: [
+      "Specific Holland Tunnel traffic regulations apply",
+      "NJ jughandle requirements for left turns",
+      "Strict enforcement of no-standing zones near tunnel",
+      "Right turn on red prohibited in most of Jersey City"
+    ],
+
+    metaTitle: "Jersey City Car Accident Help | Hudson County No-Fault Guide",
+    metaDescription: "Jersey City car accident assistance. Navigate Holland Tunnel claims, understand NJ no-fault insurance, and get help after a Hudson County collision.",
+    keywords: [
+      "Jersey City car accident",
+      "Jersey City accident lawyer",
+      "Holland Tunnel accident",
+      "Pulaski Skyway crash",
+      "Hudson County attorney",
+      "NJ no-fault insurance",
+      "Journal Square accident"
+    ]
+  }
+];
+
+// Iowa Cities
+export const iowaCities: CityData[] = [
+  {
+    slug: "des-moines",
+    name: "Des Moines",
+    state: "iowa",
+    stateAbbreviation: "IA",
+    population: 214133,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 80",
+        description: "Major east-west transcontinental route passing through Des Moines metro",
+        accidentHotspots: ["I-80/I-35 interchange", "Altoona exits", "West Des Moines junction"]
+      },
+      {
+        name: "Interstate 35",
+        description: "Primary north-south route connecting Des Moines to Minneapolis and Kansas City",
+        accidentHotspots: ["I-35/I-80 junction", "Downtown connector", "Ankeny exits"]
+      },
+      {
+        name: "Interstate 235",
+        description: "Inner-city freeway loop through downtown Des Moines",
+        accidentHotspots: ["Mixmaster interchange", "Downtown exits", "MLK Jr. Parkway junction"]
+      },
+      {
+        name: "US Route 69",
+        description: "North-south route through eastern Des Moines metro",
+        accidentHotspots: ["Pleasant Hill area", "Des Moines River bridges", "Industrial zones"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Des Moines", characteristics: "Government buildings, one-way streets, event venue traffic" },
+      { name: "East Village", characteristics: "Entertainment district, pedestrian traffic, bar-area accidents" },
+      { name: "Drake Neighborhood", characteristics: "University traffic, student pedestrians, game day congestion" },
+      { name: "West Des Moines", characteristics: "Suburban commercial, Jordan Creek Mall traffic, rapid growth" },
+      { name: "Ankeny", characteristics: "Fast-growing suburb, new road construction, school traffic" }
+    ],
+
+    trafficPatterns: [
+      { type: "Government Rush Hour", description: "State Capitol workers create concentrated 8 AM and 5 PM peaks" },
+      { type: "Iowa State Fair", description: "Massive traffic disruption for 11 days in August" },
+      { type: "Event Traffic", description: "Wells Fargo Arena events impact downtown accessibility" },
+      { type: "Suburban Growth", description: "Rapid development in West Des Moines and Ankeny strains roads" }
+    ],
+
+    annualAccidents: 6200,
+    accidentYear: 2023,
+    fatalAccidents: 22,
+    commonAccidentTypes: [
+      "Interstate interchange confusion",
+      "Deer strikes (suburban and rural areas)",
+      "Ice and snow-related crashes",
+      "Rear-end collisions on I-235",
+      "Commercial truck accidents on I-80"
+    ],
+
+    dangerousIntersections: [
+      "I-35/I-80/I-235 interchange (Mixmaster)",
+      "Merle Hay Road and Douglas Avenue",
+      "University Avenue and Martin Luther King Jr. Parkway",
+      "Fleur Drive and McKinley Avenue",
+      "SE 14th Street and Army Post Road"
+    ],
+
+    policeNonEmergency: "515-283-4811",
+
+    introText: "Des Moines, Iowa's capital and largest city, serves as a crossroads of America where I-35 and I-80 intersect. Despite being a mid-sized city, it experiences significant traffic challenges, especially during the Iowa State Fair—one of the largest in the nation. The 'Mixmaster' interchange is notoriously complex, and winter weather creates dangerous driving conditions for much of the year.",
+
+    localConsiderations: [
+      "Iowa follows a modified comparative fault system (you can recover if less than 51% at fault)",
+      "No-fault auto insurance is NOT used in Iowa - the at-fault driver's insurance pays",
+      "Iowa has relatively low minimum insurance requirements ($20k/$40k bodily injury)",
+      "Underinsured motorist coverage is strongly recommended",
+      "Iowa State Fair period requires extra caution and alternate routes",
+      "Rural deer strikes covered under comprehensive, not collision coverage"
+    ],
+
+    weatherFactors: [
+      "Severe winter storms and blizzards",
+      "Black ice formation on bridges and overpasses",
+      "Flooding from Des Moines and Raccoon Rivers",
+      "Severe thunderstorms and tornadoes in spring/summer",
+      "Dense fog in river valleys"
+    ],
+
+    uniqueTrafficLaws: [
+      "Iowa has an implied consent law for chemical testing",
+      "Handheld device use prohibited while driving",
+      "Move Over law for emergency vehicles",
+      "Headlights required when wipers are in use"
+    ],
+
+    metaTitle: "Des Moines Car Accident Help | Iowa Insurance Claims Guide",
+    metaDescription: "Des Moines car accident assistance. Navigate I-80 and I-35 claims, understand Iowa's fault-based system, and get help after a Polk County collision.",
+    keywords: [
+      "Des Moines car accident",
+      "Des Moines accident lawyer",
+      "Iowa car accident claim",
+      "I-80 accident Iowa",
+      "I-35 crash Des Moines",
+      "Polk County attorney",
+      "Iowa insurance claim"
+    ]
+  },
+  {
+    slug: "cedar-rapids",
+    name: "Cedar Rapids",
+    state: "iowa",
+    stateAbbreviation: "IA",
+    population: 137710,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 380",
+        description: "Primary north-south route connecting Cedar Rapids to Iowa City and Waterloo",
+        accidentHotspots: ["Downtown exits", "Collins Road interchange", "Hiawatha junction"]
+      },
+      {
+        name: "US Route 30",
+        description: "Historic Lincoln Highway passing through Cedar Rapids east-west",
+        accidentHotspots: ["Mount Vernon Road area", "Westdale Mall vicinity", "Industrial corridors"]
+      },
+      {
+        name: "US Route 151",
+        description: "Diagonal route connecting Cedar Rapids to Madison, WI",
+        accidentHotspots: ["Marion interchange", "Northeast side", "County line crossings"]
+      },
+      {
+        name: "Highway 100",
+        description: "Outer beltway around Cedar Rapids",
+        accidentHotspots: ["I-380 interchanges", "Airport area", "Industrial parks"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Cedar Rapids", characteristics: "One-way street grid, event traffic, flood recovery areas" },
+      { name: "NewBo District", characteristics: "Growing arts district, pedestrian traffic, entertainment venues" },
+      { name: "Marion", characteristics: "Suburban growth, Lindale Mall traffic, school zones" },
+      { name: "Hiawatha", characteristics: "Industrial traffic, casino-bound vehicles, I-380 access" },
+      { name: "Southwest Side", characteristics: "Hospital traffic, Kirkwood College area, established residential" }
+    ],
+
+    trafficPatterns: [
+      { type: "Manufacturing Shifts", description: "Major employers like Collins Aerospace create shift-change traffic" },
+      { type: "Healthcare Traffic", description: "St. Luke's and Mercy Medical Center generate steady flow" },
+      { type: "Event Congestion", description: "US Cellular Center events impact downtown" },
+      { type: "Casino Traffic", description: "Wild Rose Casino draws traffic to Hiawatha area" }
+    ],
+
+    annualAccidents: 3800,
+    accidentYear: 2023,
+    fatalAccidents: 14,
+    commonAccidentTypes: [
+      "I-380 corridor crashes",
+      "Deer strikes in outlying areas",
+      "Weather-related accidents",
+      "Intersection crashes on arterials",
+      "Industrial area truck accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-380 and Highway 30 interchange",
+      "1st Avenue and Collins Road",
+      "Edgewood Road and Williams Boulevard",
+      "16th Avenue SW and Wilson Avenue",
+      "Blairs Ferry Road and Council Street"
+    ],
+
+    policeNonEmergency: "319-286-5491",
+
+    introText: "Cedar Rapids, Iowa's second-largest city, is a major manufacturing and insurance hub. The city recovered remarkably from devastating 2008 floods and continues to grow. I-380 serves as the primary traffic artery, and the city's manufacturing base creates unique shift-change traffic patterns. Winter weather poses significant challenges, and the surrounding rural areas see frequent deer-vehicle collisions.",
+
+    localConsiderations: [
+      "Iowa uses modified comparative fault - recover damages if less than 51% at fault",
+      "Cedar Rapids/Linn County has its own accident reporting requirements",
+      "Many accidents occur during manufacturing shift changes",
+      "Flood history means some areas have unusual road layouts from reconstruction",
+      "Rural accident scenes may have delayed emergency response",
+      "Local legal community is tight-knit - many attorneys know each other"
+    ],
+
+    weatherFactors: [
+      "Heavy snowfall and ice storms",
+      "Flood risk in low-lying areas",
+      "Severe thunderstorms and tornadoes",
+      "Fog in Cedar River valley",
+      "Temperature swings causing road deterioration"
+    ],
+
+    metaTitle: "Cedar Rapids Car Accident Help | Linn County Iowa Guide",
+    metaDescription: "Cedar Rapids car accident assistance. Navigate I-380 claims, understand Iowa's fault system, and get help after a Linn County collision.",
+    keywords: [
+      "Cedar Rapids car accident",
+      "Cedar Rapids accident lawyer",
+      "Iowa car accident",
+      "I-380 crash Cedar Rapids",
+      "Linn County attorney",
+      "Marion car accident",
+      "Iowa insurance claim"
+    ]
+  }
+];
+
+// Arkansas Cities
+export const arkansasCities: CityData[] = [
+  {
+    slug: "little-rock",
+    name: "Little Rock",
+    state: "arkansas",
+    stateAbbreviation: "AR",
+    population: 202591,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 40",
+        description: "Major east-west transcontinental route passing through North Little Rock",
+        accidentHotspots: ["I-40/I-30 split (Big Rock Interchange)", "Arkansas River bridges", "Airport exit area"]
+      },
+      {
+        name: "Interstate 30",
+        description: "Connects Little Rock to Dallas to the southwest and I-40 to the northeast",
+        accidentHotspots: ["Downtown exits", "I-30/I-440 interchange", "Benton exit area"]
+      },
+      {
+        name: "Interstate 430",
+        description: "Western bypass connecting I-40 to I-30 around Little Rock",
+        accidentHotspots: ["Cantrell Road interchange", "I-630 junction", "River crossing"]
+      },
+      {
+        name: "Interstate 630",
+        description: "East-west route through central Little Rock connecting downtown to I-430",
+        accidentHotspots: ["Downtown terminus", "Baptist Health complex", "University Avenue area"]
+      },
+      {
+        name: "Interstate 440",
+        description: "Eastern bypass and airport connector",
+        accidentHotspots: ["Airport exits", "I-40 junction", "Industrial areas"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Little Rock", characteristics: "Government buildings, one-way streets, River Market entertainment traffic" },
+      { name: "Hillcrest", characteristics: "Historic neighborhood, narrow streets, Kavanaugh Boulevard corridor" },
+      { name: "West Little Rock", characteristics: "Suburban sprawl, heavy retail traffic, Chenal Parkway growth" },
+      { name: "North Little Rock", characteristics: "Separate city, Argenta arts district, casino traffic" },
+      { name: "Southwest Little Rock", characteristics: "Industrial areas, airport traffic, diverse communities" }
+    ],
+
+    trafficPatterns: [
+      { type: "Government Rush Hour", description: "State Capitol workers create concentrated morning and evening peaks" },
+      { type: "Healthcare Traffic", description: "UAMS and Baptist Health generate significant all-day traffic" },
+      { type: "Arkansas River Events", description: "River Market district events cause downtown congestion" },
+      { type: "Suburban Growth", description: "West Little Rock development creating new traffic challenges" }
+    ],
+
+    annualAccidents: 8200,
+    accidentYear: 2023,
+    fatalAccidents: 45,
+    commonAccidentTypes: [
+      "Interstate interchange crashes",
+      "I-630 corridor accidents",
+      "Weather-related collisions",
+      "Red-light running at major intersections",
+      "Pedestrian accidents downtown"
+    ],
+
+    dangerousIntersections: [
+      "I-30/I-40 split (Big Rock Interchange)",
+      "Cantrell Road and Riverdale Road",
+      "Rodney Parham Road and Shackleford Road",
+      "Broadway and 3rd Street",
+      "University Avenue and Asher Avenue"
+    ],
+
+    policeNonEmergency: "501-371-4829",
+
+    introText: "Little Rock, Arkansas's capital and largest city, sits at the geographic center of the state where major interstates converge. The 'Big Rock Interchange' where I-30 meets I-40 is one of the busiest and most confusing interchanges in the region. The city's rapid growth, especially in west Little Rock, has created increasing traffic challenges, while unpredictable weather patterns lead to dangerous driving conditions.",
+
+    localConsiderations: [
+      "Arkansas uses modified comparative fault - recover if less than 50% at fault (NOT 51% like some states)",
+      "Arkansas has relatively low minimum insurance requirements ($25k/$50k bodily injury)",
+      "State Capitol area has parking and traffic restrictions",
+      "Multi-jurisdictional issues with North Little Rock (separate city)",
+      "Arkansas River bridges can be affected by weather and flooding",
+      "Many rural areas surrounding Little Rock have limited cell service"
+    ],
+
+    weatherFactors: [
+      "Ice storms are particularly dangerous",
+      "Severe thunderstorms and tornadoes in spring",
+      "Flash flooding in urban areas",
+      "High humidity creates slick conditions",
+      "Temperature fluctuations cause bridge icing"
+    ],
+
+    uniqueTrafficLaws: [
+      "Arkansas has an implied consent law",
+      "Texting while driving prohibited for all drivers",
+      "No cell phone use for drivers under 18",
+      "Move Over law for emergency vehicles"
+    ],
+
+    metaTitle: "Little Rock Car Accident Help | Arkansas Insurance Claims Guide",
+    metaDescription: "Little Rock car accident assistance. Navigate I-30 and I-40 claims, understand Arkansas fault laws, and get help after a Pulaski County collision.",
+    keywords: [
+      "Little Rock car accident",
+      "Little Rock accident lawyer",
+      "Arkansas car accident",
+      "I-30 crash Little Rock",
+      "Big Rock Interchange accident",
+      "Pulaski County attorney",
+      "Arkansas insurance claim"
+    ]
+  },
+  {
+    slug: "fayetteville",
+    name: "Fayetteville",
+    state: "arkansas",
+    stateAbbreviation: "AR",
+    population: 99793,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 49",
+        description: "North-south interstate connecting Northwest Arkansas to Fort Smith and Louisiana",
+        accidentHotspots: ["University of Arkansas exits", "Wedington Drive interchange", "Razorback Road junction"]
+      },
+      {
+        name: "US Route 71",
+        description: "Historic north-south route through Fayetteville",
+        accidentHotspots: ["College Avenue corridor", "Downtown crossings", "Southern approach"]
+      },
+      {
+        name: "US Route 62",
+        description: "East-west route connecting to Bentonville and Rogers",
+        accidentHotspots: ["Highway 112 junction", "East Fayetteville", "Farmington area"]
+      },
+      {
+        name: "Highway 112",
+        description: "Connects Fayetteville to Bentonville through Springdale",
+        accidentHotspots: ["Razorback Road intersection", "Springdale border", "Mall area"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Fayetteville", characteristics: "Historic square, university adjacent, entertainment district" },
+      { name: "University of Arkansas Campus", characteristics: "50,000+ students, game day traffic, pedestrian-heavy" },
+      { name: "East Fayetteville", characteristics: "Growing suburbs, shopping centers, school zones" },
+      { name: "South Fayetteville", characteristics: "Industrial areas, I-49 access, truck traffic" },
+      { name: "Wedington Area", characteristics: "Rapid residential growth, new road construction" }
+    ],
+
+    trafficPatterns: [
+      { type: "Razorback Game Days", description: "70,000+ fans descend on Fayetteville for Arkansas football games" },
+      { type: "University Calendar", description: "Class schedules and semester changes dramatically affect traffic" },
+      { type: "Regional Growth", description: "Northwest Arkansas is one of America's fastest-growing regions" },
+      { type: "Walmart Effect", description: "Proximity to Walmart HQ brings business travelers and vendors" }
+    ],
+
+    annualAccidents: 3200,
+    accidentYear: 2023,
+    fatalAccidents: 12,
+    commonAccidentTypes: [
+      "University area pedestrian accidents",
+      "Game day parking lot incidents",
+      "I-49 high-speed crashes",
+      "Alcohol-related accidents near entertainment district",
+      "Weather-related mountain road accidents"
+    ],
+
+    dangerousIntersections: [
+      "College Avenue and Dickson Street",
+      "Razorback Road and Martin Luther King Jr. Boulevard",
+      "Wedington Drive and I-49 interchange",
+      "15th Street and School Avenue",
+      "Mission Boulevard and Crossover Road"
+    ],
+
+    policeNonEmergency: "479-587-3555",
+
+    introText: "Fayetteville, home to the University of Arkansas and part of the booming Northwest Arkansas region, faces unique traffic challenges from rapid growth and a massive university population. Razorback game days transform the city, with populations effectively doubling. The Ozark Mountain terrain creates additional hazards, especially during winter weather. As part of one of America's fastest-growing metro areas, road infrastructure is constantly struggling to keep pace.",
+
+    localConsiderations: [
+      "Arkansas uses modified comparative fault - must be less than 50% at fault to recover",
+      "Game day accidents may involve intoxicated drivers - document carefully",
+      "University students may have limited insurance coverage",
+      "Mountain roads require extra caution in winter",
+      "Northwest Arkansas is a competitive insurance market - shop around",
+      "Regional growth means many new roads and changing traffic patterns"
+    ],
+
+    weatherFactors: [
+      "Ice storms shut down hill roads",
+      "Flash flooding in creek areas",
+      "Dense fog in valleys",
+      "Severe thunderstorms and tornadoes",
+      "Snow accumulation on mountain routes"
+    ],
+
+    metaTitle: "Fayetteville Car Accident Help | Northwest Arkansas Guide",
+    metaDescription: "Fayetteville car accident assistance. Navigate university area claims, understand Arkansas fault laws, and get help after a Washington County collision.",
+    keywords: [
+      "Fayetteville car accident",
+      "Northwest Arkansas accident lawyer",
+      "Arkansas car accident",
+      "I-49 crash Fayetteville",
+      "Razorback game day accident",
+      "Washington County attorney",
+      "University of Arkansas accident"
+    ]
+  }
+];
+
+// Utah Cities
+export const utahCities: CityData[] = [
+  {
+    slug: "salt-lake-city",
+    name: "Salt Lake City",
+    state: "utah",
+    stateAbbreviation: "UT",
+    population: 212341,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 15",
+        description: "Primary north-south route through the Wasatch Front urban corridor",
+        accidentHotspots: ["Point of the Mountain", "Spaghetti Bowl (I-15/I-80)", "Downtown exits", "600 South interchange"]
+      },
+      {
+        name: "Interstate 80",
+        description: "East-west transcontinental route crossing the Wasatch Mountains to Park City",
+        accidentHotspots: ["Parleys Canyon", "Salt Lake Valley floor", "Spaghetti Bowl interchange"]
+      },
+      {
+        name: "Interstate 215",
+        description: "Beltway around Salt Lake City connecting suburbs",
+        accidentHotspots: ["I-15 interchanges", "Cottonwood Canyons access", "Airport junction"]
+      },
+      {
+        name: "US Route 89",
+        description: "Historic route through Salt Lake Valley and into the mountains",
+        accidentHotspots: ["State Street corridor", "Murray area", "North Salt Lake"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Salt Lake City", characteristics: "Grid system, wide streets, LDS Church headquarters traffic" },
+      { name: "Sugar House", characteristics: "Historic district, pedestrian-friendly, Highland Drive corridor" },
+      { name: "University District", characteristics: "U of U campus, Research Park, hospital complex traffic" },
+      { name: "The Avenues", characteristics: "Historic hillside neighborhood, steep streets, limited parking" },
+      { name: "Rose Park/Westside", characteristics: "Industrial areas, I-15 access, diverse communities" }
+    ],
+
+    trafficPatterns: [
+      { type: "Ski Traffic", description: "Winter weekends see massive canyon-bound traffic to world-class resorts" },
+      { type: "LDS Events", description: "General Conference twice yearly brings 100,000+ visitors downtown" },
+      { type: "Tech Corridor", description: "Growing tech industry creates suburban commuter patterns" },
+      { type: "Inversion Conditions", description: "Winter inversions encourage public transit but create visibility issues" }
+    ],
+
+    annualAccidents: 7800,
+    accidentYear: 2023,
+    fatalAccidents: 28,
+    commonAccidentTypes: [
+      "Canyon road crashes (mountain driving)",
+      "I-15 high-speed collisions",
+      "Winter weather accidents",
+      "Ski traffic congestion incidents",
+      "Pedestrian accidents downtown"
+    ],
+
+    dangerousIntersections: [
+      "Spaghetti Bowl (I-15/I-80 interchange)",
+      "600 South and State Street",
+      "Point of the Mountain (I-15)",
+      "Foothill Drive and Wakara Way",
+      "Redwood Road and North Temple"
+    ],
+
+    policeNonEmergency: "801-799-3000",
+
+    introText: "Salt Lake City, Utah's capital and cultural hub, combines urban density with dramatic mountain geography. The Wasatch Mountains rise directly behind the city, and ski traffic to world-renowned resorts creates significant congestion. Winter weather, including lake-effect snow and dangerous temperature inversions, adds complexity. The 'Spaghetti Bowl' interchange where I-15 meets I-80 is notoriously complex, and canyon roads require special driving skills.",
+
+    localConsiderations: [
+      "Utah uses modified comparative fault - recover if 49% or less at fault (NOT 50%)",
+      "Utah has unique 'no-fault' PIP coverage requirements up to $3,000",
+      "Canyon accidents may have delayed emergency response",
+      "Ski resort traffic creates insurance jurisdiction questions (resort roads)",
+      "Air quality alerts during inversions may affect accident scene documentation",
+      "Utah requires proof of insurance to register vehicles"
+    ],
+
+    weatherFactors: [
+      "Lake-effect snow from Great Salt Lake",
+      "Winter inversions create fog and poor visibility",
+      "Mountain canyon weather changes rapidly",
+      "Ice on bridges and overpasses",
+      "Summer thunderstorms with flash flooding"
+    ],
+
+    uniqueTrafficLaws: [
+      "Utah has a 0.05% BAC legal limit (lowest in nation)",
+      "Move Over law with specific fines",
+      "Handheld device use prohibited",
+      "Chain requirements in canyons during winter storms"
+    ],
+
+    metaTitle: "Salt Lake City Car Accident Help | Utah Insurance Claims Guide",
+    metaDescription: "Salt Lake City car accident assistance. Navigate I-15 and canyon road claims, understand Utah's fault laws, and get help after a collision in Salt Lake County.",
+    keywords: [
+      "Salt Lake City car accident",
+      "Salt Lake City accident lawyer",
+      "Utah car accident",
+      "I-15 crash Utah",
+      "Parleys Canyon accident",
+      "Salt Lake County attorney",
+      "Utah ski traffic accident"
+    ]
+  },
+  {
+    slug: "provo",
+    name: "Provo",
+    state: "utah",
+    stateAbbreviation: "UT",
+    population: 116618,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 15",
+        description: "Primary north-south corridor through Utah Valley",
+        accidentHotspots: ["University Parkway interchange", "Center Street exit", "Orem/Provo border"]
+      },
+      {
+        name: "US Route 89",
+        description: "State Street corridor through Provo and Utah Valley",
+        accidentHotspots: ["BYU campus area", "Downtown intersections", "Orem transition zone"]
+      },
+      {
+        name: "Provo Canyon Road (US 189)",
+        description: "Mountain route through scenic canyon to Heber Valley",
+        accidentHotspots: ["Bridal Veil Falls area", "Deer Creek Reservoir", "Canyon curves"]
+      },
+      {
+        name: "University Parkway",
+        description: "Major east-west route connecting I-15 to BYU and the mountains",
+        accidentHotspots: ["BYU stadium area", "I-15 interchange", "East bench residential"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Provo", characteristics: "Historic center, narrow streets, courthouse traffic" },
+      { name: "BYU Campus Area", characteristics: "30,000+ students, pedestrian-heavy, game day congestion" },
+      { name: "East Bench", characteristics: "Residential hillside, canyon access, steep streets" },
+      { name: "West Provo", characteristics: "Industrial areas, growing commercial, I-15 access" },
+      { name: "Provo Riverwoods", characteristics: "Major shopping destination, heavy traffic flow" }
+    ],
+
+    trafficPatterns: [
+      { type: "BYU Schedule", description: "University calendar dramatically affects traffic patterns" },
+      { type: "Stadium Events", description: "LaVell Edwards Stadium events bring 60,000+ fans" },
+      { type: "Canyon Recreation", description: "Weekend traffic to Provo Canyon and Sundance Resort" },
+      { type: "Tech Growth", description: "Silicon Slopes expansion creating new commuter patterns" }
+    ],
+
+    annualAccidents: 3400,
+    accidentYear: 2023,
+    fatalAccidents: 11,
+    commonAccidentTypes: [
+      "I-15 corridor crashes",
+      "Pedestrian accidents near campus",
+      "Canyon road incidents",
+      "Intersection collisions on State Street",
+      "Weather-related mountain accidents"
+    ],
+
+    dangerousIntersections: [
+      "University Parkway and I-15 interchange",
+      "Center Street and State Street",
+      "University Avenue and 800 North",
+      "Freedom Boulevard and 500 South",
+      "Provo Canyon Road curves"
+    ],
+
+    policeNonEmergency: "801-852-6210",
+
+    introText: "Provo, home to Brigham Young University and the heart of Utah Valley, combines small-city charm with significant traffic challenges. The 30,000+ student population creates unique patterns, and game days at LaVell Edwards Stadium transform traffic. Provo Canyon provides beautiful but dangerous mountain access, requiring careful driving especially in winter. As part of the booming 'Silicon Slopes' tech corridor, traffic continues to increase.",
+
+    localConsiderations: [
+      "Utah uses modified comparative fault - must be 49% or less at fault to recover",
+      "BYU students may have unique insurance situations (out-of-state, missionary service)",
+      "Canyon accidents face extended emergency response times",
+      "Stadium events involve special traffic control - note any changes to normal patterns",
+      "Utah County courts handle civil matters",
+      "Tech industry growth bringing more out-of-state drivers unfamiliar with local conditions"
+    ],
+
+    weatherFactors: [
+      "Lake effect snow from Utah Lake",
+      "Canyon weather changes rapidly",
+      "Temperature inversions reduce visibility",
+      "Ice on mountain roads persists into spring",
+      "Flash floods during summer thunderstorms"
+    ],
+
+    metaTitle: "Provo Car Accident Help | Utah County Insurance Guide",
+    metaDescription: "Provo car accident assistance. Navigate BYU area claims, canyon road accidents, and understand Utah's fault laws after a Utah County collision.",
+    keywords: [
+      "Provo car accident",
+      "Provo accident lawyer",
+      "Utah car accident",
+      "BYU campus accident",
+      "Provo Canyon crash",
+      "Utah County attorney",
+      "Silicon Slopes traffic accident"
+    ]
+  }
+];
+
+// Kansas Cities
+export const kansasCities: CityData[] = [
+  {
+    slug: "wichita",
+    name: "Wichita",
+    state: "kansas",
+    stateAbbreviation: "KS",
+    population: 397532,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 35",
+        description: "Primary north-south route connecting Wichita to Oklahoma City and Kansas City",
+        accidentHotspots: ["K-96 interchange", "Kellogg junction", "South Wichita exits"]
+      },
+      {
+        name: "US-54/400 (Kellogg Avenue)",
+        description: "Major east-west freeway through central Wichita",
+        accidentHotspots: ["I-235 interchange", "Downtown exits", "Webb Road area"]
+      },
+      {
+        name: "Interstate 235",
+        description: "Inner loop connecting I-135 to Kellogg through west Wichita",
+        accidentHotspots: ["Kellogg interchange", "Zoo Boulevard area", "I-135 junction"]
+      },
+      {
+        name: "Interstate 135",
+        description: "North-south route connecting Wichita to Salina and I-70",
+        accidentHotspots: ["K-96 interchange", "13th Street exits", "Park City area"]
+      },
+      {
+        name: "K-96",
+        description: "Highway loop around north and east Wichita",
+        accidentHotspots: ["I-35 junction", "Greenwich Road area", "Andover approach"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Wichita", characteristics: "Revitalized urban core, arena traffic, one-way streets" },
+      { name: "Old Town", characteristics: "Entertainment district, pedestrian traffic, nightlife area" },
+      { name: "College Hill", characteristics: "Historic residential, narrow streets, university proximity" },
+      { name: "West Wichita", characteristics: "Suburban growth, commercial corridors, I-235 access" },
+      { name: "Derby/Haysville", characteristics: "Southern suburbs, Spirit AeroSystems traffic, school zones" }
+    ],
+
+    trafficPatterns: [
+      { type: "Aviation Industry", description: "Spirit AeroSystems and aircraft manufacturers create shift-change traffic" },
+      { type: "Kellogg Corridor", description: "East-west Kellogg is consistently congested throughout the day" },
+      { type: "Event Traffic", description: "Intrust Bank Arena events impact downtown" },
+      { type: "Severe Weather", description: "Tornado warnings cause sudden traffic disruptions" }
+    ],
+
+    annualAccidents: 8500,
+    accidentYear: 2023,
+    fatalAccidents: 42,
+    commonAccidentTypes: [
+      "Kellogg Avenue high-speed crashes",
+      "Weather-related accidents",
+      "Intersection collisions",
+      "Commercial vehicle accidents",
+      "Distracted driving incidents"
+    ],
+
+    dangerousIntersections: [
+      "Kellogg and I-235 interchange",
+      "Kellogg and Rock Road",
+      "21st Street and Amidon",
+      "Central and Broadway",
+      "Harry Street and Seneca"
+    ],
+
+    policeNonEmergency: "316-268-4111",
+
+    introText: "Wichita, Kansas's largest city and the 'Air Capital of the World,' is home to major aircraft manufacturers including Spirit AeroSystems, Textron Aviation, and Bombardier Learjet. The city's industrial heritage creates unique traffic patterns, particularly during shift changes. Located in Tornado Alley, Wichita experiences severe weather that significantly impacts driving conditions. The Kellogg Avenue corridor is notorious for accidents.",
+
+    localConsiderations: [
+      "Kansas uses modified comparative fault - recover if less than 50% at fault",
+      "Kansas has relatively low minimum insurance requirements ($25k/$50k bodily injury)",
+      "Aviation industry shift changes create predictable traffic surges",
+      "Tornado season (March-June) requires weather awareness while driving",
+      "Wichita has its own municipal court for traffic violations",
+      "Many rural roads surrounding Wichita lack shoulders and lighting"
+    ],
+
+    weatherFactors: [
+      "Tornado Alley location - severe storms common",
+      "Hail damage frequent during spring",
+      "Ice storms shut down roads in winter",
+      "High winds affect vehicle stability",
+      "Flash flooding in urban areas"
+    ],
+
+    uniqueTrafficLaws: [
+      "Kansas has implied consent law",
+      "Texting while driving prohibited",
+      "Move Over law for emergency vehicles",
+      "Child restraint laws are strictly enforced"
+    ],
+
+    metaTitle: "Wichita Car Accident Help | Kansas Insurance Claims Guide",
+    metaDescription: "Wichita car accident assistance. Navigate Kellogg Avenue claims, understand Kansas fault laws, and get help after a Sedgwick County collision.",
+    keywords: [
+      "Wichita car accident",
+      "Wichita accident lawyer",
+      "Kansas car accident",
+      "Kellogg Avenue crash",
+      "I-35 accident Wichita",
+      "Sedgwick County attorney",
+      "Kansas insurance claim"
+    ]
+  },
+  {
+    slug: "kansas-city",
+    name: "Kansas City",
+    state: "kansas",
+    stateAbbreviation: "KS",
+    population: 156607,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 70",
+        description: "Major east-west transcontinental route through Kansas City metro",
+        accidentHotspots: ["I-70/I-635 interchange", "State line area", "Turner Diagonal junction"]
+      },
+      {
+        name: "Interstate 635",
+        description: "North-south route connecting I-70 to I-35 through KCK",
+        accidentHotspots: ["I-70 interchange", "Parallel Parkway area", "Legends area"]
+      },
+      {
+        name: "Interstate 35",
+        description: "Runs through eastern edge of KCK connecting to downtown KC metro",
+        accidentHotspots: ["I-635 junction", "18th Street Expressway", "Argentine area"]
+      },
+      {
+        name: "US-69 (18th Street Expressway)",
+        description: "North-south route through central Kansas City, KS",
+        accidentHotspots: ["I-70 interchange", "Downtown KCK", "Industrial areas"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown KCK", characteristics: "Government center, industrial heritage, revitalization ongoing" },
+      { name: "The Legends", characteristics: "Major retail destination, Speedway traffic, suburban development" },
+      { name: "Argentine", characteristics: "Historic neighborhood, industrial traffic, rail crossings" },
+      { name: "Rosedale", characteristics: "University of Kansas Medical Center area, hospital traffic" },
+      { name: "Turner", characteristics: "Industrial corridor, trucking routes, I-70 access" }
+    ],
+
+    trafficPatterns: [
+      { type: "Cross-State Commuting", description: "Significant traffic crossing state line to/from KCMO" },
+      { type: "Legends Traffic", description: "Kansas Speedway events and shopping create massive surges" },
+      { type: "Industrial Trucks", description: "Heavy commercial traffic through Turner and Argentine districts" },
+      { type: "Medical Center Rush", description: "KU Medical Center generates healthcare worker traffic" }
+    ],
+
+    annualAccidents: 4200,
+    accidentYear: 2023,
+    fatalAccidents: 28,
+    commonAccidentTypes: [
+      "Interstate interchange crashes",
+      "Cross-state line accidents",
+      "Commercial truck collisions",
+      "Railroad crossing incidents",
+      "Event traffic accidents near Speedway"
+    ],
+
+    dangerousIntersections: [
+      "I-70 and I-635 interchange",
+      "7th Street and Minnesota Avenue",
+      "State Avenue and 47th Street",
+      "Parallel Parkway and I-635",
+      "18th Street and Minnesota Avenue"
+    ],
+
+    policeNonEmergency: "913-596-3000",
+
+    introText: "Kansas City, Kansas (distinct from Kansas City, Missouri across the state line) combines industrial heritage with modern development at The Legends entertainment district. The city is home to Kansas Speedway NASCAR events and Sporting Kansas City soccer. Cross-state traffic between KCK and KCMO creates unique jurisdictional and insurance complexities. Heavy industrial and trucking traffic remains significant.",
+
+    localConsiderations: [
+      "Kansas uses modified comparative fault - recover if less than 50% at fault",
+      "Cross-state accidents may involve both Kansas and Missouri insurance laws",
+      "Kansas City, KS is in Wyandotte County - different from Jackson County (KCMO)",
+      "The Unified Government of Wyandotte County handles local matters",
+      "Speedway events create special traffic control - note any deviations from normal patterns",
+      "Industrial areas have significant truck traffic - document commercial vehicle involvement carefully"
+    ],
+
+    weatherFactors: [
+      "Severe thunderstorms and tornadoes",
+      "Ice storms cause major disruptions",
+      "Missouri River flooding affects low areas",
+      "Temperature swings create black ice",
+      "Heavy fog in river valleys"
+    ],
+
+    uniqueTrafficLaws: [
+      "Kansas and Missouri have different traffic laws - know which state you're in",
+      "Kansas implied consent law applies",
+      "Move Over law enforcement",
+      "Commercial vehicle regulations strictly enforced"
+    ],
+
+    metaTitle: "Kansas City KS Car Accident Help | Wyandotte County Guide",
+    metaDescription: "Kansas City, Kansas car accident assistance. Navigate cross-state claims, understand Kansas fault laws, and get help after a Wyandotte County collision.",
+    keywords: [
+      "Kansas City KS car accident",
+      "KCK accident lawyer",
+      "Kansas car accident",
+      "Wyandotte County attorney",
+      "I-70 crash Kansas City",
+      "Kansas Speedway accident",
+      "cross-state accident claim"
+    ]
+  }
+];
+
+// Nebraska Cities
+export const nebraskaCities: CityData[] = [
+  {
+    slug: "omaha",
+    name: "Omaha",
+    state: "nebraska",
+    stateAbbreviation: "NE",
+    population: 486051,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 80",
+        description: "Major east-west transcontinental route through Omaha metro",
+        accidentHotspots: ["I-80/I-480 interchange", "L Street exit area", "Gretna exits"]
+      },
+      {
+        name: "Interstate 480",
+        description: "Downtown connector linking I-80 to downtown Omaha and Council Bluffs",
+        accidentHotspots: ["Downtown exits", "Missouri River bridges", "I-80 junction"]
+      },
+      {
+        name: "Interstate 680",
+        description: "Western bypass around Omaha connecting to I-80",
+        accidentHotspots: ["Mormon Bridge area", "West Dodge Road interchange", "I-80 junctions"]
+      },
+      {
+        name: "US Route 75 (Kennedy Freeway)",
+        description: "North-south route through central Omaha",
+        accidentHotspots: ["I-80 interchange", "Bellevue area", "Downtown connector"]
+      },
+      {
+        name: "West Dodge Road",
+        description: "Major commercial corridor through west Omaha",
+        accidentHotspots: ["168th Street area", "Westroads Mall vicinity", "I-680 interchange"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Omaha", characteristics: "Business district, Old Market entertainment area, event venue traffic" },
+      { name: "Midtown", characteristics: "UNMC medical campus, dense residential, Blackstone District nightlife" },
+      { name: "West Omaha", characteristics: "Suburban sprawl, major retail corridors, rapid growth" },
+      { name: "South Omaha", characteristics: "Historic stockyards area, industrial traffic, diverse communities" },
+      { name: "Bellevue", characteristics: "Offutt Air Force Base traffic, suburban residential, US-75 corridor" }
+    ],
+
+    trafficPatterns: [
+      { type: "West Dodge Congestion", description: "West Dodge Road is chronically congested, especially near Westroads" },
+      { type: "Event Traffic", description: "College World Series and CHI Health Center events cause major downtown congestion" },
+      { type: "Cross-River Traffic", description: "Traffic between Omaha and Council Bluffs (Iowa) via I-480" },
+      { type: "Military Traffic", description: "Offutt AFB shift changes impact Bellevue and US-75" }
+    ],
+
+    annualAccidents: 9200,
+    accidentYear: 2023,
+    fatalAccidents: 38,
+    commonAccidentTypes: [
+      "Interstate interchange crashes",
+      "West Dodge Road accidents",
+      "Weather-related collisions",
+      "Rear-end crashes in congestion",
+      "Pedestrian accidents in entertainment districts"
+    ],
+
+    dangerousIntersections: [
+      "I-80 and I-480 interchange",
+      "West Dodge Road and 168th Street",
+      "72nd Street and Dodge Street",
+      "L Street and I-80 interchange",
+      "84th Street and Center Street"
+    ],
+
+    policeNonEmergency: "402-444-5600",
+
+    introText: "Omaha, Nebraska's largest city and a major financial center (home to Berkshire Hathaway, Mutual of Omaha, and Union Pacific), sits along the Missouri River at the Iowa border. The city hosts the College World Series annually, bringing massive crowds. West Omaha's rapid suburban growth has created significant traffic challenges, particularly along the West Dodge Road corridor. Winter weather can be severe, and cross-state traffic to Council Bluffs creates jurisdictional complexities.",
+
+    localConsiderations: [
+      "Nebraska uses modified comparative fault - recover if 49% or less at fault",
+      "Nebraska requires minimum $25k/$50k bodily injury coverage",
+      "Cross-state accidents with Iowa may involve different insurance rules",
+      "College World Series (June) creates unprecedented downtown traffic",
+      "Offutt Air Force Base accidents may involve federal jurisdiction",
+      "Nebraska is a 'choice no-fault' state - understand your policy type"
+    ],
+
+    weatherFactors: [
+      "Severe blizzards and ice storms",
+      "Missouri River flooding in spring",
+      "Tornado risk March through June",
+      "Extreme temperature swings cause road damage",
+      "Black ice forms quickly on bridges"
+    ],
+
+    uniqueTrafficLaws: [
+      "Nebraska has implied consent law",
+      "Primary seat belt enforcement",
+      "Cell phone restrictions for learner permits",
+      "Move Over law for emergency vehicles"
+    ],
+
+    metaTitle: "Omaha Car Accident Help | Nebraska Insurance Claims Guide",
+    metaDescription: "Omaha car accident assistance. Navigate I-80 claims, understand Nebraska's fault system, and get help after a Douglas County collision.",
+    keywords: [
+      "Omaha car accident",
+      "Omaha accident lawyer",
+      "Nebraska car accident",
+      "I-80 crash Omaha",
+      "West Dodge accident",
+      "Douglas County attorney",
+      "Nebraska insurance claim"
+    ]
+  },
+  {
+    slug: "lincoln",
+    name: "Lincoln",
+    state: "nebraska",
+    stateAbbreviation: "NE",
+    population: 295222,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 80",
+        description: "Major transcontinental route passing through Lincoln",
+        accidentHotspots: ["I-180 interchange", "West Lincoln exits", "Airport area"]
+      },
+      {
+        name: "Interstate 180",
+        description: "Spur route connecting I-80 to downtown Lincoln",
+        accidentHotspots: ["Downtown terminus", "I-80 junction", "Cornhusker Highway area"]
+      },
+      {
+        name: "US Route 77",
+        description: "North-south route through east Lincoln",
+        accidentHotspots: ["I-80 interchange", "Nebraska Innovation Campus", "Saltillo Road area"]
+      },
+      {
+        name: "US Route 6 (Cornhusker Highway)",
+        description: "Major east-west commercial corridor through north Lincoln",
+        accidentHotspots: ["I-180 area", "N 27th Street junction", "East Lincoln industrial"]
+      },
+      {
+        name: "Nebraska Highway 2",
+        description: "East-west route through south Lincoln",
+        accidentHotspots: ["South Street area", "70th Street junction", "SouthPointe Mall vicinity"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Lincoln", characteristics: "State Capitol, Haymarket entertainment district, university proximity" },
+      { name: "University of Nebraska Campus", characteristics: "25,000+ students, game day traffic, pedestrian-heavy" },
+      { name: "South Lincoln", characteristics: "Growing suburbs, SouthPointe development, retail corridors" },
+      { name: "East Lincoln", characteristics: "Innovation Campus, industrial areas, I-80 access" },
+      { name: "Havelock", characteristics: "Historic neighborhood, BNSF rail yards, industrial traffic" }
+    ],
+
+    trafficPatterns: [
+      { type: "Husker Game Days", description: "Memorial Stadium brings 90,000+ fans - city population nearly doubles" },
+      { type: "State Government", description: "Capitol workers create concentrated rush hour peaks" },
+      { type: "University Calendar", description: "Class schedules dramatically affect traffic patterns" },
+      { type: "Rail Traffic", description: "BNSF operations create crossing delays in Havelock area" }
+    ],
+
+    annualAccidents: 5800,
+    accidentYear: 2023,
+    fatalAccidents: 22,
+    commonAccidentTypes: [
+      "Game day traffic accidents",
+      "I-80 corridor crashes",
+      "Weather-related collisions",
+      "Railroad crossing incidents",
+      "University area pedestrian accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-80 and I-180 interchange",
+      "27th Street and Cornhusker Highway",
+      "O Street and 48th Street",
+      "56th Street and Highway 2",
+      "84th Street and Holdrege Street"
+    ],
+
+    policeNonEmergency: "402-441-6000",
+
+    introText: "Lincoln, Nebraska's capital and home to the University of Nebraska, transforms on Husker football Saturdays when Memorial Stadium becomes the state's third-largest city. The combination of state government, a major research university, and railroad operations creates diverse traffic challenges. Lincoln's grid system makes navigation straightforward, but game days require significant planning. Severe winter weather and tornadoes in spring add seasonal hazards.",
+
+    localConsiderations: [
+      "Nebraska uses modified comparative fault - must be 49% or less at fault to recover",
+      "Game day parking and traffic accidents may involve university property",
+      "State Capitol area has parking and traffic restrictions",
+      "Railroad crossing accidents have specific reporting requirements",
+      "Lancaster County courts handle civil matters",
+      "Lincoln has proactive red-light camera enforcement at key intersections"
+    ],
+
+    weatherFactors: [
+      "Severe blizzards disrupt traffic for days",
+      "Tornado season requires weather awareness",
+      "Ice storms cause widespread accidents",
+      "Temperature fluctuations damage roads",
+      "Spring flooding affects Salt Creek areas"
+    ],
+
+    metaTitle: "Lincoln Car Accident Help | Lancaster County Nebraska Guide",
+    metaDescription: "Lincoln car accident assistance. Navigate Husker game day claims, understand Nebraska's fault system, and get help after a Lancaster County collision.",
+    keywords: [
+      "Lincoln car accident",
+      "Lincoln accident lawyer",
+      "Nebraska car accident",
+      "I-80 crash Lincoln",
+      "Husker game day accident",
+      "Lancaster County attorney",
+      "University of Nebraska accident"
+    ]
+  }
+];
+
+// Mississippi Cities
+export const mississippiCities: CityData[] = [
+  {
+    slug: "jackson",
+    name: "Jackson",
+    state: "mississippi",
+    stateAbbreviation: "MS",
+    population: 153701,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 20",
+        description: "Major east-west route connecting Jackson to Dallas and Atlanta",
+        accidentHotspots: ["I-20/I-55 interchange (Stack)", "Terry Road exits", "Pearl area"]
+      },
+      {
+        name: "Interstate 55",
+        description: "Primary north-south route through Jackson connecting to Memphis and New Orleans",
+        accidentHotspots: ["High Street interchange", "Northside Drive area", "The Stack interchange"]
+      },
+      {
+        name: "Interstate 220",
+        description: "Northern bypass around Jackson",
+        accidentHotspots: ["I-55 junctions", "Hanging Moss Road area", "Airport approach"]
+      },
+      {
+        name: "US Route 80",
+        description: "Historic east-west route through central Jackson",
+        accidentHotspots: ["Downtown intersections", "Terry Road junction", "Pearl transition"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Jackson", characteristics: "State Capitol, government offices, one-way street grid" },
+      { name: "Fondren", characteristics: "Arts district, pedestrian traffic, restaurant corridor" },
+      { name: "Belhaven", characteristics: "Historic residential, Belhaven University traffic, narrow streets" },
+      { name: "North Jackson", characteristics: "Suburban development, I-55 corridor, growing commercial" },
+      { name: "South Jackson", characteristics: "Industrial areas, I-20 access, established residential" }
+    ],
+
+    trafficPatterns: [
+      { type: "State Government", description: "Capitol workers create concentrated rush hour peaks" },
+      { type: "Medical Center Traffic", description: "UMC and area hospitals generate significant all-day traffic" },
+      { type: "Stadium Events", characteristics: "Mississippi Veterans Memorial Stadium events impact I-55" },
+      { type: "Suburban Flight", description: "Significant commuter traffic from Madison and Rankin counties" }
+    ],
+
+    annualAccidents: 7400,
+    accidentYear: 2023,
+    fatalAccidents: 65,
+    commonAccidentTypes: [
+      "Interstate interchange crashes",
+      "Weather-related accidents",
+      "Red-light running",
+      "Pedestrian accidents downtown",
+      "Aggressive driving incidents"
+    ],
+
+    dangerousIntersections: [
+      "I-20/I-55 interchange (The Stack)",
+      "State Street and Fortification Street",
+      "Woodrow Wilson Avenue and I-55",
+      "Northside Drive and I-55",
+      "Highway 80 and Ellis Avenue"
+    ],
+
+    policeNonEmergency: "601-960-1234",
+
+    introText: "Jackson, Mississippi's capital and largest city, serves as the state's economic and political hub. The city faces significant infrastructure challenges, and The Stack interchange (I-20/I-55) is one of the most accident-prone areas in the state. Jackson has experienced population decline as residents move to surrounding suburbs, creating heavy commuter traffic. Hot, humid summers and occasional severe weather add to driving challenges.",
+
+    localConsiderations: [
+      "Mississippi uses pure comparative fault - you can recover even if 99% at fault (reduced by your percentage)",
+      "Mississippi has relatively low minimum insurance requirements ($25k/$50k bodily injury)",
+      "Jackson has high uninsured motorist rates - UM coverage is essential",
+      "Water main breaks and road conditions can contribute to accidents - document road conditions",
+      "Multi-jurisdictional metro area (Hinds, Madison, Rankin counties)",
+      "Mississippi allows recovery for pain and suffering without threshold requirements"
+    ],
+
+    weatherFactors: [
+      "Severe thunderstorms and tornadoes",
+      "Flash flooding in urban areas",
+      "High humidity creates slick conditions",
+      "Ice storms (rare but devastating)",
+      "Extreme summer heat affects tire performance"
+    ],
+
+    uniqueTrafficLaws: [
+      "Mississippi has implied consent law",
+      "No texting while driving for all drivers",
+      "Move Over law for emergency vehicles",
+      "Seat belt enforcement is secondary"
+    ],
+
+    metaTitle: "Jackson Car Accident Help | Mississippi Insurance Claims Guide",
+    metaDescription: "Jackson car accident assistance. Navigate I-55 and I-20 claims, understand Mississippi's pure comparative fault system, and get help after a Hinds County collision.",
+    keywords: [
+      "Jackson car accident",
+      "Jackson accident lawyer",
+      "Mississippi car accident",
+      "I-55 crash Jackson",
+      "The Stack accident",
+      "Hinds County attorney",
+      "Mississippi insurance claim"
+    ]
+  },
+  {
+    slug: "gulfport",
+    name: "Gulfport",
+    state: "mississippi",
+    stateAbbreviation: "MS",
+    population: 72076,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 10",
+        description: "Major east-west route along the Gulf Coast connecting to New Orleans and Mobile",
+        accidentHotspots: ["Highway 49 interchange", "Canal Road exits", "Biloxi border area"]
+      },
+      {
+        name: "US Route 49",
+        description: "Primary north-south route connecting Gulfport to Jackson and I-20",
+        accidentHotspots: ["I-10 interchange", "Crossroads area", "Pass Road junction"]
+      },
+      {
+        name: "US Route 90 (Beach Boulevard)",
+        description: "Historic coastal route along the Gulf of Mexico beachfront",
+        accidentHotspots: ["Casino areas", "Downtown Gulfport", "Long Beach transition"]
+      },
+      {
+        name: "Highway 53",
+        description: "North-south connector through west Gulfport",
+        accidentHotspots: ["I-10 junction", "Orange Grove area", "Industrial zones"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Gulfport", characteristics: "Port traffic, revitalizing downtown, cruise terminal" },
+      { name: "Beach/Casino District", characteristics: "Tourism traffic, casino parking, Beach Boulevard corridor" },
+      { name: "North Gulfport", characteristics: "Residential suburbs, Crossroads shopping, school zones" },
+      { name: "Orange Grove", characteristics: "Established residential, local commercial, I-10 access" },
+      { name: "Port Area", characteristics: "Heavy truck and cargo traffic, Seabee Base access" }
+    ],
+
+    trafficPatterns: [
+      { type: "Casino Traffic", description: "Island View and other casinos create significant 24/7 traffic" },
+      { type: "Port Operations", description: "Mississippi State Port generates heavy commercial truck traffic" },
+      { type: "Beach Season", description: "Summer months bring tourist traffic to coastal areas" },
+      { type: "Military Traffic", description: "Seabee Base and Coast Guard operations" }
+    ],
+
+    annualAccidents: 3800,
+    accidentYear: 2023,
+    fatalAccidents: 24,
+    commonAccidentTypes: [
+      "I-10 corridor crashes",
+      "Beach Boulevard accidents",
+      "Casino-area incidents",
+      "Truck-involved collisions",
+      "Weather-related accidents"
+    ],
+
+    dangerousIntersections: [
+      "Highway 49 and I-10 interchange",
+      "Highway 49 and Pass Road",
+      "Beach Boulevard and Highway 49",
+      "Cowan Road and Highway 53",
+      "Three Rivers Road and Highway 49"
+    ],
+
+    policeNonEmergency: "228-868-5959",
+
+    introText: "Gulfport, Mississippi's second-largest city and a major Gulf Coast destination, combines port operations, military installations, casino entertainment, and beach tourism. Rebuilt after Hurricane Katrina devastated the coast in 2005, the city has modern infrastructure but faces unique challenges from coastal weather. The I-10 corridor sees heavy traffic between New Orleans and Mobile, while Beach Boulevard draws tourists to casinos and waterfront attractions.",
+
+    localConsiderations: [
+      "Mississippi uses pure comparative fault - recover damages even if partially at fault",
+      "Hurricane evacuation routes (contraflow on I-10) have special rules during emergencies",
+      "Casino areas have high pedestrian traffic - particularly at night",
+      "Port and military base accidents may involve federal jurisdiction",
+      "Coastal flooding during storms can cause road hazards even after rain stops",
+      "Harrison County courts handle civil matters"
+    ],
+
+    weatherFactors: [
+      "Hurricane season (June-November) creates evacuation traffic",
+      "Tropical storms bring flooding and debris",
+      "Sea fog reduces visibility on coastal roads",
+      "High humidity makes roads slick after brief rain",
+      "Storm surge can flood Beach Boulevard quickly"
+    ],
+
+    metaTitle: "Gulfport Car Accident Help | Gulf Coast Mississippi Guide",
+    metaDescription: "Gulfport car accident assistance. Navigate I-10 and coastal claims, understand Mississippi's fault system, and get help after a Harrison County collision.",
+    keywords: [
+      "Gulfport car accident",
+      "Mississippi Gulf Coast accident",
+      "Biloxi car accident",
+      "I-10 crash Mississippi",
+      "Beach Boulevard accident",
+      "Harrison County attorney",
+      "casino area accident"
+    ]
+  }
+];
+
+// Hawaii Cities
+export const hawaiiCities: CityData[] = [
+  {
+    slug: "honolulu",
+    name: "Honolulu",
+    state: "hawaii",
+    stateAbbreviation: "HI",
+    population: 350964,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate H-1",
+        description: "Primary east-west freeway through Honolulu, from Hawaii Kai to Pearl City",
+        accidentHotspots: ["Kapalama area", "Airport interchange", "Middle Street merge", "Aiea Heights"]
+      },
+      {
+        name: "Interstate H-2",
+        description: "North-south route connecting H-1 to central Oahu",
+        accidentHotspots: ["H-1 interchange", "Wahiawa area", "Mililani exits"]
+      },
+      {
+        name: "Interstate H-3",
+        description: "Connects Honolulu to Kaneohe through the Koolau Mountains",
+        accidentHotspots: ["Tetsuo Harano Tunnels", "Halawa interchange", "Kaneohe exits"]
+      },
+      {
+        name: "Likelike Highway (Route 63)",
+        description: "Connects Honolulu to Kaneohe through Wilson Tunnel",
+        accidentHotspots: ["Wilson Tunnel area", "Kalihi Valley", "Kaneohe transition"]
+      },
+      {
+        name: "Pali Highway (Route 61)",
+        description: "Scenic route through Nuuanu Pali to Windward side",
+        accidentHotspots: ["Pali Tunnels", "Nuuanu curves", "Kailua approach"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Honolulu", characteristics: "Business district, government offices, one-way streets, limited parking" },
+      { name: "Waikiki", characteristics: "Tourist mecca, heavy pedestrian traffic, constant congestion, rental car unfamiliarity" },
+      { name: "Ala Moana", characteristics: "Major shopping center, heavy retail traffic, beach parking overflow" },
+      { name: "Kalihi", characteristics: "Industrial areas, port traffic, H-1 access points" },
+      { name: "Hawaii Kai", characteristics: "Suburban residential, single access via H-1, marina traffic" }
+    ],
+
+    trafficPatterns: [
+      { type: "H-1 Chronic Congestion", description: "H-1 is consistently ranked among America's worst commutes" },
+      { type: "Waikiki Tourism", description: "Millions of tourists unfamiliar with local roads" },
+      { type: "Military Traffic", description: "Pearl Harbor, Schofield Barracks create significant traffic" },
+      { type: "Single-Access Communities", description: "Hawaii Kai, Mililani have limited evacuation routes" }
+    ],
+
+    annualAccidents: 12500,
+    accidentYear: 2023,
+    fatalAccidents: 48,
+    commonAccidentTypes: [
+      "H-1 congestion-related crashes",
+      "Tourist rental car incidents",
+      "Pedestrian accidents in Waikiki",
+      "Motorcycle and moped crashes",
+      "Tunnel approach accidents"
+    ],
+
+    dangerousIntersections: [
+      "H-1/H-2 interchange (Pearl City)",
+      "Nimitz Highway and Sand Island Access",
+      "Kapiolani Boulevard and Piikoi Street",
+      "Ala Moana Boulevard and Ward Avenue",
+      "Kamehameha Highway and Likelike interchange"
+    ],
+
+    policeNonEmergency: "808-529-3111",
+
+    introText: "Honolulu, Hawaii's capital and economic center on the island of Oahu, faces unique transportation challenges as the most isolated major city in the world. The H-1 freeway regularly ranks among America's most congested corridors, while millions of tourists unfamiliar with local roads add complexity. Island geography means limited alternative routes when accidents occur. The mix of rental cars, mopeds, pedestrians, and military traffic creates diverse hazards.",
+
+    localConsiderations: [
+      "Hawaii uses modified comparative fault - recover if 50% or less at fault",
+      "Hawaii is a NO-FAULT insurance state for PIP benefits",
+      "Rental car accidents are extremely common - document rental company involvement",
+      "Tourist drivers unfamiliar with local conditions are a significant factor",
+      "Limited tow and repair options increase claim complexity",
+      "Island geography means limited alternative routes during accidents",
+      "Hawaii has high minimum insurance requirements ($20k/$40k BI, $10k PD)"
+    ],
+
+    weatherFactors: [
+      "Trade wind showers cause sudden slick conditions",
+      "Flash flooding in valleys and tunnels",
+      "Vog (volcanic smog) reduces visibility",
+      "Bright tropical sun creates glare",
+      "Tsunami warnings affect coastal evacuation"
+    ],
+
+    uniqueTrafficLaws: [
+      "Using a cell phone while driving is prohibited (including at red lights)",
+      "Pedestrians have right-of-way in marked and unmarked crosswalks",
+      "Mopeds have specific lane restrictions",
+      "No right turn on red at many intersections"
+    ],
+
+    metaTitle: "Honolulu Car Accident Help | Hawaii No-Fault Insurance Guide",
+    metaDescription: "Honolulu car accident assistance. Navigate Hawaii's no-fault system, H-1 freeway claims, and get help after an Oahu collision. Rental car accident specialists.",
+    keywords: [
+      "Honolulu car accident",
+      "Hawaii car accident lawyer",
+      "Oahu accident attorney",
+      "H-1 crash Honolulu",
+      "Waikiki traffic accident",
+      "Hawaii no-fault insurance",
+      "rental car accident Hawaii"
+    ]
+  }
+];
+
+// New Hampshire Cities
+export const newHampshireCities: CityData[] = [
+  {
+    slug: "manchester",
+    name: "Manchester",
+    state: "new-hampshire",
+    stateAbbreviation: "NH",
+    population: 115644,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 93",
+        description: "Primary north-south route connecting Manchester to Boston and northern NH",
+        accidentHotspots: ["I-293 interchange", "Exit 8 (Wellington Road)", "Bedford tolls area"]
+      },
+      {
+        name: "Interstate 293",
+        description: "Western bypass around Manchester connecting I-93 to Route 101",
+        accidentHotspots: ["I-93 south junction", "Amoskeag Bridge area", "Route 101 interchange"]
+      },
+      {
+        name: "Route 101",
+        description: "East-west route connecting Manchester to the Seacoast and Keene",
+        accidentHotspots: ["I-293 interchange", "Elm Street area", "Goffstown border"]
+      },
+      {
+        name: "US Route 3 (Everett Turnpike)",
+        description: "Toll road connecting Manchester to Nashua and the Massachusetts border",
+        accidentHotspots: ["Bedford tolls", "Merrimack exits", "Nashua approach"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Manchester", characteristics: "Mill buildings converted to offices, Elm Street corridor, nightlife district" },
+      { name: "Millyard", characteristics: "Historic mill complex, tech companies, pedestrian bridges" },
+      { name: "West Side", characteristics: "Residential neighborhoods, Notre Dame Bridge traffic, local commercial" },
+      { name: "South Manchester", characteristics: "Airport access, commercial development, I-93 corridor" },
+      { name: "North End", characteristics: "Residential, Arms Park area, I-293 access" }
+    ],
+
+    trafficPatterns: [
+      { type: "Boston Commuter Traffic", description: "Significant traffic to/from Boston via I-93, especially mornings and evenings" },
+      { type: "Airport Traffic", description: "Manchester-Boston Regional Airport serves southern NH and northern MA" },
+      { type: "Seasonal Tourism", description: "Fall foliage and ski season create significant north-south traffic" },
+      { type: "Event Traffic", description: "SNHU Arena events impact downtown accessibility" }
+    ],
+
+    annualAccidents: 2800,
+    accidentYear: 2023,
+    fatalAccidents: 12,
+    commonAccidentTypes: [
+      "I-93 high-speed crashes",
+      "Weather-related accidents",
+      "Rear-end collisions in commuter traffic",
+      "Bridge and interchange incidents",
+      "Pedestrian accidents downtown"
+    ],
+
+    dangerousIntersections: [
+      "I-93 and I-293 interchange",
+      "Elm Street and Bridge Street",
+      "Second Street and Lake Avenue",
+      "Granite Street and Canal Street",
+      "South Willow Street and Sundial Avenue"
+    ],
+
+    policeNonEmergency: "603-668-8711",
+
+    introText: "Manchester, New Hampshire's largest city, serves as the economic hub of the state with its transformed mill buildings housing tech companies and businesses. The city is a major commuter hub with significant traffic to Boston via I-93. New Hampshire's unique position—no state income or sales tax—attracts Massachusetts residents, creating significant cross-border traffic. Winter weather in northern New England creates challenging driving conditions.",
+
+    localConsiderations: [
+      "New Hampshire uses modified comparative fault - recover if 50% or less at fault",
+      "New Hampshire is the ONLY state that does NOT require auto insurance for most drivers",
+      "Despite no mandate, uninsured motorist coverage is critical in NH",
+      "NH requires $25k/$50k liability IF you're found at fault and don't have insurance",
+      "Many drivers are Massachusetts commuters - may have MA insurance",
+      "Toll roads have specific accident reporting procedures"
+    ],
+
+    weatherFactors: [
+      "Heavy snowfall and ice storms",
+      "Black ice on bridges over Merrimack River",
+      "Nor'easters can shut down highways",
+      "Dense fog in river valley",
+      "Freeze-thaw cycles damage roads"
+    ],
+
+    uniqueTrafficLaws: [
+      "No mandatory auto insurance requirement (unique in US)",
+      "Implied consent law for DUI testing",
+      "Right turn on red permitted unless posted",
+      "Move Over law for emergency vehicles"
+    ],
+
+    metaTitle: "Manchester Car Accident Help | New Hampshire Insurance Guide",
+    metaDescription: "Manchester car accident assistance. Navigate NH's unique no-mandate insurance system, I-93 claims, and get help after a Hillsborough County collision.",
+    keywords: [
+      "Manchester NH car accident",
+      "Manchester accident lawyer",
+      "New Hampshire car accident",
+      "I-93 crash Manchester",
+      "NH insurance requirements",
+      "Hillsborough County attorney",
+      "no insurance requirement NH"
+    ]
+  },
+  {
+    slug: "nashua",
+    name: "Nashua",
+    state: "new-hampshire",
+    stateAbbreviation: "NH",
+    population: 91322,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "US Route 3 (Everett Turnpike)",
+        description: "Primary toll road connecting Nashua to Manchester and Massachusetts",
+        accidentHotspots: ["Exit 5W (Pheasant Lane)", "Exit 8 (Somerset Parkway)", "MA border area"]
+      },
+      {
+        name: "Route 101A (Amherst Street)",
+        description: "Major east-west commercial corridor through Nashua",
+        accidentHotspots: ["Pheasant Lane Mall area", "Daniel Webster Highway junction", "Milford border"]
+      },
+      {
+        name: "Route 3A (Daniel Webster Highway)",
+        description: "North-south commercial route parallel to Everett Turnpike",
+        accidentHotspots: ["Amherst Street intersection", "South Nashua commercial area", "Merrimack border"]
+      },
+      {
+        name: "Route 111",
+        description: "East-west connector to Hudson and I-93",
+        accidentHotspots: ["Hudson bridge", "Downtown Nashua", "Commercial zones"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Nashua", characteristics: "Historic Main Street, restaurants and shops, theater district" },
+      { name: "South Nashua", characteristics: "Pheasant Lane Mall, heavy retail traffic, MA border proximity" },
+      { name: "North Nashua", characteristics: "Residential suburbs, Exit 8 commercial development" },
+      { name: "Nashua Millyard", characteristics: "Tech company offices, Clock Tower Place, riverfront development" },
+      { name: "West Hollis Street Area", characteristics: "Commercial corridor, hospital traffic" }
+    ],
+
+    trafficPatterns: [
+      { type: "Massachusetts Border Traffic", description: "Massive shopping traffic from MA residents seeking tax-free purchases" },
+      { type: "Boston Commuters", description: "Many residents commute to Boston, creating I-93 connector traffic" },
+      { type: "Retail Congestion", description: "Pheasant Lane Mall area is chronically congested, especially weekends and holidays" },
+      { type: "Tech Industry", description: "BAE Systems and tech companies create rush hour patterns" }
+    ],
+
+    annualAccidents: 2200,
+    accidentYear: 2023,
+    fatalAccidents: 8,
+    commonAccidentTypes: [
+      "Retail area parking lot accidents",
+      "Route 3 toll plaza incidents",
+      "Massachusetts driver unfamiliarity",
+      "Weather-related crashes",
+      "Rear-end collisions in shopping traffic"
+    ],
+
+    dangerousIntersections: [
+      "Daniel Webster Highway and Amherst Street",
+      "Main Street and West Hollis Street",
+      "Exit 5 and Pheasant Lane Mall access",
+      "Route 111 and Main Street",
+      "Route 101A and Somerset Parkway"
+    ],
+
+    policeNonEmergency: "603-594-3500",
+
+    introText: "Nashua, New Hampshire's second-largest city, sits directly on the Massachusetts border and attracts significant tax-free shopping traffic. The Pheasant Lane Mall area is perpetually congested with Massachusetts shoppers. Many Nashua residents commute to Boston, creating complex traffic patterns. The mix of local traffic, commuters, and out-of-state shoppers creates unique accident dynamics, especially when Massachusetts drivers unfamiliar with NH roads and laws are involved.",
+
+    localConsiderations: [
+      "New Hampshire does NOT require auto insurance - the only US state without mandate",
+      "Many accidents involve Massachusetts drivers with MA insurance policies",
+      "Cross-state accidents may involve both NH and MA insurance laws",
+      "Shopping areas see high pedestrian traffic from out-of-state visitors",
+      "Nashua municipal court handles traffic violations",
+      "Many parking lot accidents in retail areas - private property rules may apply"
+    ],
+
+    weatherFactors: [
+      "Snow and ice storms affect border crossing traffic",
+      "Black ice forms quickly on bridges over Nashua River",
+      "Nor'easters shut down shopping areas",
+      "Winter conditions catch MA drivers unprepared",
+      "Temperature variations cause road buckling"
+    ],
+
+    metaTitle: "Nashua Car Accident Help | NH-MA Border Insurance Guide",
+    metaDescription: "Nashua car accident assistance. Navigate cross-state accidents with Massachusetts, understand NH's unique insurance laws, and get help after a collision.",
+    keywords: [
+      "Nashua car accident",
+      "Nashua accident lawyer",
+      "NH MA border accident",
+      "Pheasant Lane Mall accident",
+      "New Hampshire insurance",
+      "Hillsborough County attorney",
+      "cross-state accident claim"
+    ]
+  }
+];
+
+// Maine Cities
+export const maineCities: CityData[] = [
+  {
+    slug: "portland",
+    name: "Portland",
+    state: "maine",
+    stateAbbreviation: "ME",
+    population: 68408,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 95 (Maine Turnpike)",
+        description: "Primary toll road connecting Portland to southern Maine and Boston",
+        accidentHotspots: ["Exit 44 (Maine Mall)", "Scarborough exits", "South Portland interchange"]
+      },
+      {
+        name: "Interstate 295",
+        description: "Eastern bypass through Portland connecting to I-95",
+        accidentHotspots: ["Downtown Portland exits", "Back Cove area", "Falmouth Spur junction"]
+      },
+      {
+        name: "US Route 1",
+        description: "Historic coastal route through Greater Portland",
+        accidentHotspots: ["Scarborough commercial area", "South Portland", "Falmouth Foreside"]
+      },
+      {
+        name: "Route 302",
+        description: "Major route to western Maine mountains and Sebago Lake region",
+        accidentHotspots: ["Westbrook transition", "Windham area", "Congestion during ski season"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Portland", characteristics: "Arts District, Old Port waterfront, narrow one-way streets, tourist traffic" },
+      { name: "Old Port", characteristics: "Cobblestone streets, heavy pedestrian traffic, bars and restaurants, nightlife" },
+      { name: "West End", characteristics: "Historic Victorian neighborhood, Western Promenade, residential streets" },
+      { name: "East End", characteristics: "Munjoy Hill, ferry terminal traffic, Eastern Promenade" },
+      { name: "South Portland", characteristics: "Maine Mall, suburban commercial, I-95 access" }
+    ],
+
+    trafficPatterns: [
+      { type: "Tourist Season", description: "Summer and fall foliage bring millions of visitors to Portland's waterfront" },
+      { type: "Ferry Traffic", description: "Casco Bay Lines and Nova Scotia ferries create periodic traffic surges" },
+      { type: "Cruise Ships", description: "Cruise ship arrivals bring thousands of day visitors" },
+      { type: "Ski Traffic", description: "Winter weekends see traffic heading to Sunday River and Sugarloaf" }
+    ],
+
+    annualAccidents: 2400,
+    accidentYear: 2023,
+    fatalAccidents: 8,
+    commonAccidentTypes: [
+      "Old Port pedestrian accidents",
+      "Weather-related crashes",
+      "Tourist unfamiliarity accidents",
+      "Parking lot incidents at Maine Mall",
+      "I-295 merging accidents"
+    ],
+
+    dangerousIntersections: [
+      "Congress Street and High Street",
+      "Forest Avenue and I-295 interchange",
+      "Commercial Street and Franklin Street",
+      "Brighton Avenue and Stevens Avenue",
+      "Marginal Way and Franklin Arterial"
+    ],
+
+    policeNonEmergency: "207-874-8575",
+
+    introText: "Portland, Maine's largest city, is a vibrant coastal destination known for its food scene, arts district, and historic Old Port waterfront. The narrow streets of the Old Port create challenging driving conditions, especially during tourist season when millions visit. Winter weather in Maine is particularly severe, and the city's coastal location means rapid weather changes. Cruise ship arrivals periodically flood the downtown with thousands of visitors unfamiliar with local roads.",
+
+    localConsiderations: [
+      "Maine uses modified comparative fault - recover if 50% or less at fault",
+      "Maine requires minimum $50k/$100k bodily injury coverage (higher than most states)",
+      "Tourist season accidents often involve out-of-state drivers",
+      "Old Port has many narrow one-way streets with cobblestones",
+      "Ferry terminal traffic requires awareness of pedestrians with luggage",
+      "Parking is extremely limited downtown - many fender benders in tight spaces"
+    ],
+
+    weatherFactors: [
+      "Nor'easters bring heavy snow and coastal flooding",
+      "Sea fog rolls in quickly from Casco Bay",
+      "Black ice is common on bridges and waterfront roads",
+      "Rapid temperature changes near ocean",
+      "Salt air accelerates vehicle corrosion"
+    ],
+
+    uniqueTrafficLaws: [
+      "Maine has implied consent law",
+      "Handheld device use prohibited while driving",
+      "Move Over law for emergency vehicles",
+      "Headlights required in inclement weather"
+    ],
+
+    metaTitle: "Portland Car Accident Help | Maine Insurance Claims Guide",
+    metaDescription: "Portland car accident assistance. Navigate Old Port claims, understand Maine's insurance requirements, and get help after a Cumberland County collision.",
+    keywords: [
+      "Portland Maine car accident",
+      "Portland accident lawyer",
+      "Maine car accident",
+      "Old Port accident",
+      "I-295 crash Portland",
+      "Cumberland County attorney",
+      "Maine insurance claim"
+    ]
+  }
+];
+
+// Rhode Island Cities
+export const rhodeIslandCities: CityData[] = [
+  {
+    slug: "providence",
+    name: "Providence",
+    state: "rhode-island",
+    stateAbbreviation: "RI",
+    population: 190934,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 95",
+        description: "Primary north-south route through Providence connecting Boston and New York",
+        accidentHotspots: ["Downtown Providence interchange", "I-195 junction", "Pawtucket border"]
+      },
+      {
+        name: "Interstate 195",
+        description: "East-west route connecting Providence to Cape Cod and southeastern MA",
+        accidentHotspots: ["I-95 interchange", "India Point", "East Providence area"]
+      },
+      {
+        name: "Interstate 295",
+        description: "Western bypass around Providence connecting to I-95",
+        accidentHotspots: ["Warwick interchange", "Johnston area", "Attleboro approach"]
+      },
+      {
+        name: "Route 146",
+        description: "North-south route connecting Providence to Worcester, MA",
+        accidentHotspots: ["I-95 interchange", "North Providence", "Lincoln area"]
+      },
+      {
+        name: "Route 10",
+        description: "Limited access highway through western Providence",
+        accidentHotspots: ["Downtown connector", "Olneyville area", "Cranston junction"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Providence", characteristics: "Financial district, Waterplace Park, convention traffic" },
+      { name: "Federal Hill", characteristics: "Little Italy, restaurant row, pedestrian traffic, narrow streets" },
+      { name: "College Hill", characteristics: "Brown University, RISD, steep hills, student pedestrians" },
+      { name: "East Side", characteristics: "Affluent residential, Wayland Square, school traffic" },
+      { name: "Olneyville", characteristics: "Industrial heritage, commercial traffic, Route 10 access" }
+    ],
+
+    trafficPatterns: [
+      { type: "University Traffic", description: "Brown, RISD, Providence College, and other schools create student traffic" },
+      { type: "Boston Commuters", description: "Significant commuter rail and car traffic to Boston" },
+      { type: "Event Traffic", description: "Dunkin' Donuts Center and WaterFire events impact downtown" },
+      { type: "I-95 Corridor", description: "Through-traffic between Boston and New York" }
+    ],
+
+    annualAccidents: 4800,
+    accidentYear: 2023,
+    fatalAccidents: 18,
+    commonAccidentTypes: [
+      "I-95 high-speed crashes",
+      "College Hill pedestrian accidents",
+      "Federal Hill parking incidents",
+      "Intersection collisions",
+      "Weather-related accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-95 and I-195 interchange",
+      "Broad Street and Elmwood Avenue",
+      "North Main Street and Olney Street",
+      "Westminster Street and Empire Street",
+      "Atwells Avenue and Dean Street"
+    ],
+
+    policeNonEmergency: "401-272-3121",
+
+    introText: "Providence, Rhode Island's capital and largest city, packs dense urban traffic into America's smallest state. Major interstates converge here, creating significant through-traffic between Boston and New York. The city's historic neighborhoods feature narrow streets and steep hills, particularly on College Hill near Brown University and RISD. Federal Hill's vibrant restaurant scene draws visitors but creates parking challenges. Rhode Island's small size means many accidents involve drivers from neighboring Massachusetts and Connecticut.",
+
+    localConsiderations: [
+      "Rhode Island uses pure comparative fault - recover damages even if mostly at fault",
+      "Rhode Island requires minimum $25k/$50k bodily injury coverage",
+      "Small state means many cross-state accidents with MA and CT drivers",
+      "Providence's complex one-way street system confuses visitors",
+      "College areas have high pedestrian density year-round",
+      "WaterFire events close streets and create detour confusion"
+    ],
+
+    weatherFactors: [
+      "Nor'easters bring heavy snow and flooding",
+      "Narragansett Bay influences local weather patterns",
+      "Coastal flooding affects downtown areas",
+      "Black ice forms quickly on hills",
+      "Hurricane season affects coastal routes"
+    ],
+
+    uniqueTrafficLaws: [
+      "Rhode Island has implied consent law",
+      "Handheld device use prohibited",
+      "Right turn on red permitted unless posted",
+      "Move Over law for emergency vehicles"
+    ],
+
+    metaTitle: "Providence Car Accident Help | Rhode Island Insurance Guide",
+    metaDescription: "Providence car accident assistance. Navigate Rhode Island's pure comparative fault system, I-95 corridor claims, and get help after a collision.",
+    keywords: [
+      "Providence car accident",
+      "Providence accident lawyer",
+      "Rhode Island car accident",
+      "I-95 crash Providence",
+      "Federal Hill accident",
+      "Providence County attorney",
+      "Rhode Island insurance claim"
+    ]
+  }
+];
+
+// Delaware Cities
+export const delawareCities: CityData[] = [
+  {
+    slug: "wilmington",
+    name: "Wilmington",
+    state: "delaware",
+    stateAbbreviation: "DE",
+    population: 70898,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 95",
+        description: "Primary north-south route through Wilmington connecting Philadelphia and Baltimore",
+        accidentHotspots: ["Delaware Memorial Bridge approach", "I-495 interchange", "Downtown exits"]
+      },
+      {
+        name: "Interstate 495",
+        description: "Bypass around Wilmington connecting to I-95 north and south",
+        accidentHotspots: ["I-95 interchanges", "Claymont area", "Port of Wilmington vicinity"]
+      },
+      {
+        name: "US Route 202 (Concord Pike)",
+        description: "Major north-south commercial corridor to Pennsylvania",
+        accidentHotspots: ["Talleyville area", "PA state line", "Fairfax Shopping Center"]
+      },
+      {
+        name: "Route 141",
+        description: "North-south route through New Castle County",
+        accidentHotspots: ["I-95 interchange", "Newport area", "Prices Corner"]
+      },
+      {
+        name: "US Route 13 (DuPont Highway)",
+        description: "Historic north-south route through Delaware",
+        accidentHotspots: ["New Castle area", "Commercial zones", "Southern transitions"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Wilmington", characteristics: "Financial district, corporate headquarters, Riverfront development" },
+      { name: "Riverfront", characteristics: "Entertainment district, minor league stadium, restaurant row" },
+      { name: "Trolley Square", characteristics: "Historic neighborhood, dining and nightlife, residential" },
+      { name: "Brandywine", characteristics: "Affluent suburb, Winterthur traffic, scenic roads" },
+      { name: "North Wilmington", characteristics: "Shopping centers, Concord Pike commercial corridor" }
+    ],
+
+    trafficPatterns: [
+      { type: "Corporate Traffic", description: "Major corporations (DuPont, banks) create concentrated rush hours" },
+      { type: "I-95 Corridor", description: "Heavy through-traffic between Philadelphia, Baltimore, and points south" },
+      { type: "Delaware Memorial Bridge", description: "Bridge traffic to New Jersey affects I-95 and I-295" },
+      { type: "Tax-Free Shopping", description: "Delaware's no sales tax attracts shoppers from neighboring states" }
+    ],
+
+    annualAccidents: 3200,
+    accidentYear: 2023,
+    fatalAccidents: 15,
+    commonAccidentTypes: [
+      "I-95 high-speed crashes",
+      "Bridge approach accidents",
+      "Concord Pike retail area incidents",
+      "Pedestrian accidents downtown",
+      "Weather-related collisions"
+    ],
+
+    dangerousIntersections: [
+      "I-95 and I-495 interchange",
+      "Concord Pike and Silverside Road",
+      "Market Street and 10th Street",
+      "Route 141 and Route 2",
+      "Maryland Avenue and DuPont Street"
+    ],
+
+    policeNonEmergency: "302-654-5151",
+
+    introText: "Wilmington, Delaware's largest city and a major corporate hub, sits along the I-95 corridor between Philadelphia and Baltimore. The city's status as a corporate haven (many Fortune 500 companies are incorporated here) creates significant business traffic. Delaware's lack of sales tax attracts shoppers from Pennsylvania, New Jersey, and Maryland. The Delaware Memorial Bridge connects to New Jersey and can significantly impact local traffic during peak periods or incidents.",
+
+    localConsiderations: [
+      "Delaware uses modified comparative fault - recover if 50% or less at fault",
+      "Delaware requires minimum $25k/$50k bodily injury coverage",
+      "Many accidents involve drivers from PA, NJ, or MD",
+      "Corporate Delaware means many business vehicles and commuters",
+      "Delaware Memorial Bridge tolls and backups affect accident response",
+      "Small state with centralized court system - cases heard in Wilmington"
+    ],
+
+    weatherFactors: [
+      "Nor'easters bring heavy snow and ice",
+      "Delaware River fog affects bridge visibility",
+      "Coastal storms impact the region",
+      "Temperature swings cause black ice",
+      "Bridge can close in high winds"
+    ],
+
+    uniqueTrafficLaws: [
+      "Delaware has implied consent law",
+      "Handheld device use prohibited",
+      "Seat belt enforcement is primary",
+      "Move Over law with specific penalties"
+    ],
+
+    metaTitle: "Wilmington Car Accident Help | Delaware Insurance Claims Guide",
+    metaDescription: "Wilmington car accident assistance. Navigate I-95 corridor claims, understand Delaware's fault laws, and get help after a New Castle County collision.",
+    keywords: [
+      "Wilmington car accident",
+      "Wilmington accident lawyer",
+      "Delaware car accident",
+      "I-95 crash Delaware",
+      "Delaware Memorial Bridge accident",
+      "New Castle County attorney",
+      "Delaware insurance claim"
+    ]
+  }
+];
+
+// West Virginia Cities
+export const westVirginiaCities: CityData[] = [
+  {
+    slug: "charleston",
+    name: "Charleston",
+    state: "west-virginia",
+    stateAbbreviation: "WV",
+    population: 48018,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 64",
+        description: "Primary east-west route through Charleston connecting to Huntington and Virginia",
+        accidentHotspots: ["Kanawha River bridges", "Downtown exits", "Institute area"]
+      },
+      {
+        name: "Interstate 77",
+        description: "North-south route connecting Charleston to Ohio and Virginia",
+        accidentHotspots: ["I-64 interchange", "Kanawha Turnpike area", "Big Chimney"]
+      },
+      {
+        name: "Interstate 79",
+        description: "North-south route connecting to Clarksburg and Pittsburgh",
+        accidentHotspots: ["Elkview area", "Clendenin exits", "Northern approach"]
+      },
+      {
+        name: "US Route 60 (MacCorkle Avenue)",
+        description: "Major commercial corridor through the Kanawha Valley",
+        accidentHotspots: ["South Charleston", "Kanawha City", "St. Albans area"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Charleston", characteristics: "State Capitol, government offices, Kanawha Boulevard" },
+      { name: "East End", characteristics: "Historic residential, Capitol campus, pedestrian areas" },
+      { name: "Kanawha City", characteristics: "Commercial strip, mall traffic, US-60 corridor" },
+      { name: "South Charleston", characteristics: "Chemical industry traffic, suburban residential" },
+      { name: "Cross Lanes", characteristics: "Suburban growth, I-64 access, commercial development" }
+    ],
+
+    trafficPatterns: [
+      { type: "State Government", description: "Capitol workers create concentrated rush hour peaks" },
+      { type: "Chemical Industry", description: "Shift changes at chemical plants affect valley traffic" },
+      { type: "Bridge Constraints", description: "Limited river crossings create bottlenecks" },
+      { type: "Mountain Terrain", description: "Winding roads and steep grades throughout region" }
+    ],
+
+    annualAccidents: 3400,
+    accidentYear: 2023,
+    fatalAccidents: 22,
+    commonAccidentTypes: [
+      "Mountain road accidents",
+      "Bridge-related incidents",
+      "Weather-related crashes",
+      "Coal truck collisions",
+      "Flooding-related accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-64 and I-77 interchange",
+      "MacCorkle Avenue and Bridge Road",
+      "Corridor G and US-60",
+      "Washington Street and Kanawha Boulevard",
+      "Patrick Street Bridge approaches"
+    ],
+
+    policeNonEmergency: "304-348-8111",
+
+    introText: "Charleston, West Virginia's capital and largest city, sits in the Kanawha Valley surrounded by mountains. The city's geography creates significant traffic challenges, with limited river crossings and winding mountain roads. The chemical industry has historically shaped the region, and coal truck traffic remains common on many highways. Flooding is a recurring concern, and winter weather in the Appalachian Mountains creates hazardous driving conditions.",
+
+    localConsiderations: [
+      "West Virginia uses modified comparative fault - recover if 50% or less at fault",
+      "West Virginia requires minimum $25k/$50k bodily injury coverage",
+      "Mountain roads and bridges have unique hazards - document terrain conditions",
+      "Coal truck accidents involve commercial vehicle regulations",
+      "Flooding can make roads impassable - note any flood damage",
+      "Limited alternative routes when accidents block main corridors"
+    ],
+
+    weatherFactors: [
+      "Flash flooding in valleys and hollows",
+      "Mountain snow and ice",
+      "Dense fog in river valleys",
+      "Rapid weather changes with elevation",
+      "Black ice on bridges and tunnels"
+    ],
+
+    uniqueTrafficLaws: [
+      "West Virginia has implied consent law",
+      "Texting while driving prohibited",
+      "Move Over law for emergency vehicles",
+      "Seat belt enforcement is primary"
+    ],
+
+    metaTitle: "Charleston Car Accident Help | West Virginia Insurance Guide",
+    metaDescription: "Charleston car accident assistance. Navigate mountain road claims, understand West Virginia fault laws, and get help after a Kanawha County collision.",
+    keywords: [
+      "Charleston WV car accident",
+      "Charleston accident lawyer",
+      "West Virginia car accident",
+      "I-64 crash Charleston",
+      "Kanawha Valley accident",
+      "Kanawha County attorney",
+      "WV insurance claim"
+    ]
+  },
+  {
+    slug: "huntington",
+    name: "Huntington",
+    state: "west-virginia",
+    stateAbbreviation: "WV",
+    population: 45110,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 64",
+        description: "Primary east-west route connecting Huntington to Charleston and Kentucky",
+        accidentHotspots: ["Ohio River bridges", "29th Street interchange", "Eastern approach"]
+      },
+      {
+        name: "US Route 60",
+        description: "Historic east-west route through Huntington",
+        accidentHotspots: ["Downtown area", "Barboursville junction", "Milton approach"]
+      },
+      {
+        name: "US Route 52",
+        description: "North-south route connecting to Ohio via bridge",
+        accidentHotspots: ["Ohio River Bridge", "31st Street", "Southern residential areas"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Huntington", characteristics: "Marshall University proximity, Pullman Square, limited parking" },
+      { name: "Marshall Campus Area", characteristics: "Student traffic and pedestrians, game day congestion" },
+      { name: "Ritter Park Area", characteristics: "Residential neighborhood, park traffic, narrow streets" },
+      { name: "Barboursville", characteristics: "Huntington Mall area, suburban commercial, I-64 access" },
+      { name: "Westmoreland", characteristics: "Historic residential, established neighborhood" }
+    ],
+
+    trafficPatterns: [
+      { type: "Marshall University", description: "Game days and events significantly impact downtown" },
+      { type: "Tri-State Traffic", description: "Cross-state traffic between WV, OH, and KY" },
+      { type: "Healthcare Traffic", description: "Cabell Huntington Hospital and St. Mary's generate traffic" },
+      { type: "Mall Traffic", description: "Huntington Mall in Barboursville draws regional shoppers" }
+    ],
+
+    annualAccidents: 2600,
+    accidentYear: 2023,
+    fatalAccidents: 16,
+    commonAccidentTypes: [
+      "Bridge crossing accidents",
+      "University area pedestrian incidents",
+      "Weather-related crashes",
+      "Mall area parking lot accidents",
+      "Cross-state driver unfamiliarity"
+    ],
+
+    dangerousIntersections: [
+      "3rd Avenue and Hal Greer Boulevard",
+      "US-60 and I-64 interchange",
+      "20th Street and 5th Avenue",
+      "Ohio River bridges",
+      "US-60 and Mall Road (Barboursville)"
+    ],
+
+    policeNonEmergency: "304-696-5510",
+
+    introText: "Huntington, West Virginia's second-largest city, sits where West Virginia, Ohio, and Kentucky meet at the Ohio River. Marshall University adds a significant student population, and game days transform local traffic. The tri-state location means many accidents involve drivers from neighboring states with different insurance laws. The Ohio River bridges are critical chokepoints, and winter weather in the Appalachian foothills creates hazardous conditions.",
+
+    localConsiderations: [
+      "West Virginia uses modified comparative fault - recover if 50% or less at fault",
+      "Tri-state accidents may involve WV, OH, or KY insurance laws",
+      "Marshall game days require special traffic awareness",
+      "Bridge accidents may involve multiple jurisdictions",
+      "Cabell County courts handle most civil matters",
+      "Ohio drivers nearby may have different liability expectations"
+    ],
+
+    weatherFactors: [
+      "Ohio River fog and flooding",
+      "Appalachian winter weather",
+      "Ice on bridges and overpasses",
+      "Flash flooding in low areas",
+      "Variable conditions across state lines"
+    ],
+
+    metaTitle: "Huntington Car Accident Help | Tri-State WV-OH-KY Guide",
+    metaDescription: "Huntington car accident assistance. Navigate tri-state claims, understand West Virginia fault laws, and get help after a Cabell County collision.",
+    keywords: [
+      "Huntington WV car accident",
+      "Huntington accident lawyer",
+      "West Virginia car accident",
+      "tri-state accident",
+      "Marshall University accident",
+      "Cabell County attorney",
+      "Ohio River bridge accident"
+    ]
+  }
+];
+
+// Montana Cities
+export const montanaCities: CityData[] = [
+  {
+    slug: "billings",
+    name: "Billings",
+    state: "montana",
+    stateAbbreviation: "MT",
+    population: 119157,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 90",
+        description: "Major east-west route through Billings connecting to Seattle and Chicago",
+        accidentHotspots: ["Downtown exits", "West End interchange", "Laurel junction"]
+      },
+      {
+        name: "Interstate 94",
+        description: "Northeast route connecting to North Dakota",
+        accidentHotspots: ["I-90 junction", "Lockwood area", "Eastern approach"]
+      },
+      {
+        name: "US Route 87",
+        description: "North-south route connecting Billings to Great Falls and Wyoming",
+        accidentHotspots: ["King Avenue corridor", "Heights area", "Southern exits"]
+      },
+      {
+        name: "US Route 212",
+        description: "Route to Red Lodge and Beartooth Highway",
+        accidentHotspots: ["City limits transition", "Rockvale area", "Mountain approach"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Billings", characteristics: "Historic center, walkable core, medical district" },
+      { name: "The Heights", characteristics: "Residential suburb, Rimrock views, school traffic" },
+      { name: "West End", characteristics: "Commercial growth, big box retail, I-90 access" },
+      { name: "Lockwood", characteristics: "Fast-growing suburb, refinery traffic" },
+      { name: "South Side", characteristics: "Established residential, hospital traffic" }
+    ],
+
+    trafficPatterns: [
+      { type: "Oil Industry", description: "Refinery operations and oil field traffic" },
+      { type: "Medical Hub", description: "Regional healthcare destination draws patients from across Montana" },
+      { type: "Tourism Traffic", description: "Gateway to Yellowstone and Beartooth Highway" },
+      { type: "Agricultural Traffic", description: "Seasonal farming equipment and livestock transport" }
+    ],
+
+    annualAccidents: 3200,
+    accidentYear: 2023,
+    fatalAccidents: 18,
+    commonAccidentTypes: [
+      "Interstate high-speed crashes",
+      "Wildlife collisions (deer, antelope)",
+      "Weather-related accidents",
+      "Commercial vehicle incidents",
+      "Tourist unfamiliarity"
+    ],
+
+    dangerousIntersections: [
+      "I-90 and 27th Street interchange",
+      "King Avenue and 24th Street West",
+      "Grand Avenue and 13th Street West",
+      "Main Street and 27th Street",
+      "Rimrock Road and Zimmerman Trail"
+    ],
+
+    policeNonEmergency: "406-657-8460",
+
+    introText: "Billings, Montana's largest city, serves as the economic hub of a vast region spanning Montana, Wyoming, and the Dakotas. The city is a gateway to Yellowstone National Park and the spectacular Beartooth Highway. Wide open spaces mean high-speed travel is common, while wildlife crossings create unexpected hazards. The oil refining industry adds commercial traffic, and winter weather can be severe with little warning on the open plains.",
+
+    localConsiderations: [
+      "Montana uses modified comparative fault - recover if 50% or less at fault",
+      "Montana requires minimum $25k/$50k bodily injury coverage",
+      "Wildlife collisions are common - comprehensive coverage recommended",
+      "Vast distances mean delayed emergency response in rural areas",
+      "Many tourists unfamiliar with mountain and rural driving conditions",
+      "Yellowstone traffic creates seasonal congestion on US-212"
+    ],
+
+    weatherFactors: [
+      "Severe winter blizzards with whiteout conditions",
+      "High winds affect vehicle stability",
+      "Rapid temperature drops",
+      "Black ice on bridges and overpasses",
+      "Dust storms from agricultural areas"
+    ],
+
+    uniqueTrafficLaws: [
+      "Montana has implied consent law",
+      "Daytime speed limits (previously no speed limit)",
+      "Move Over law for emergency vehicles",
+      "Open container laws vary by municipality"
+    ],
+
+    metaTitle: "Billings Car Accident Help | Montana Insurance Claims Guide",
+    metaDescription: "Billings car accident assistance. Navigate I-90 claims, wildlife collision coverage, and get help after a Yellowstone County collision.",
+    keywords: [
+      "Billings car accident",
+      "Billings accident lawyer",
+      "Montana car accident",
+      "I-90 crash Montana",
+      "wildlife collision Montana",
+      "Yellowstone County attorney",
+      "Montana insurance claim"
+    ]
+  },
+  {
+    slug: "missoula",
+    name: "Missoula",
+    state: "montana",
+    stateAbbreviation: "MT",
+    population: 75516,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 90",
+        description: "Primary east-west route through Missoula connecting to Spokane and Billings",
+        accidentHotspots: ["Reserve Street interchange", "Orange Street exit", "East Missoula"]
+      },
+      {
+        name: "US Route 93",
+        description: "North-south route connecting to Kalispell and Idaho",
+        accidentHotspots: ["Reserve Street", "South Hills area", "Lolo approach"]
+      },
+      {
+        name: "US Route 12",
+        description: "East-west route through Lolo Pass to Idaho",
+        accidentHotspots: ["Lolo Pass mountain section", "Lolo town area", "Eastern transition"]
+      },
+      {
+        name: "Reserve Street",
+        description: "Major commercial corridor on Missoula's west side",
+        accidentHotspots: ["I-90 interchange", "Mullan Road junction", "Brooks Street area"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Missoula", characteristics: "Historic Hip Strip, university adjacent, pedestrian-friendly" },
+      { name: "University District", characteristics: "UM campus, student housing, high pedestrian traffic" },
+      { name: "South Hills", characteristics: "Residential hillside, narrow winding roads" },
+      { name: "Reserve Street Corridor", characteristics: "Commercial sprawl, heavy retail traffic" },
+      { name: "Rattlesnake", characteristics: "Residential valley, wildlife corridor, single access" }
+    ],
+
+    trafficPatterns: [
+      { type: "University of Montana", description: "Game days and events significantly impact downtown" },
+      { type: "Recreation Traffic", description: "Skiers, hikers, and outdoor enthusiasts heading to mountains" },
+      { type: "Tourism", description: "Gateway to Glacier National Park draws summer visitors" },
+      { type: "Timber Industry", description: "Logging trucks on surrounding highways" }
+    ],
+
+    annualAccidents: 2400,
+    accidentYear: 2023,
+    fatalAccidents: 10,
+    commonAccidentTypes: [
+      "Mountain pass accidents",
+      "Wildlife collisions",
+      "University area pedestrian incidents",
+      "Reserve Street congestion crashes",
+      "Weather-related accidents"
+    ],
+
+    dangerousIntersections: [
+      "Reserve Street and I-90 interchange",
+      "Brooks Street and Higgins Avenue",
+      "Orange Street and Broadway",
+      "Russell Street and South Avenue",
+      "Mullan Road and Reserve Street"
+    ],
+
+    policeNonEmergency: "406-552-6300",
+
+    introText: "Missoula, Montana's second-largest city and home to the University of Montana, sits in a valley surrounded by mountains at the confluence of five river valleys. The outdoor recreation culture means significant traffic heading to skiing, hiking, and camping destinations. Mountain passes can be treacherous, and wildlife crossings are common. The university adds young drivers and pedestrian traffic, while summer tourism to Glacier National Park swells the population.",
+
+    localConsiderations: [
+      "Montana uses modified comparative fault - recover if 50% or less at fault",
+      "University students may have limited insurance or out-of-state coverage",
+      "Mountain pass accidents may have delayed emergency response",
+      "Wildlife collisions common - note time and location carefully",
+      "Recreation vehicle traffic (RVs, trailers) creates unique hazards",
+      "Missoula County courts handle civil matters"
+    ],
+
+    weatherFactors: [
+      "Heavy mountain snowfall",
+      "Lolo Pass can close in winter",
+      "Inversions create fog and poor air quality",
+      "Rapid weather changes in mountains",
+      "Spring runoff flooding"
+    ],
+
+    metaTitle: "Missoula Car Accident Help | Western Montana Insurance Guide",
+    metaDescription: "Missoula car accident assistance. Navigate mountain pass claims, university area accidents, and get help after a Missoula County collision.",
+    keywords: [
+      "Missoula car accident",
+      "Missoula accident lawyer",
+      "Montana car accident",
+      "I-90 crash Missoula",
+      "University of Montana accident",
+      "Missoula County attorney",
+      "Lolo Pass accident"
+    ]
+  }
+];
+
+// Idaho Cities
+export const idahoCities: CityData[] = [
+  {
+    slug: "boise",
+    name: "Boise",
+    state: "idaho",
+    stateAbbreviation: "ID",
+    population: 235684,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 84",
+        description: "Primary east-west route through Boise connecting to Portland and Salt Lake City",
+        accidentHotspots: ["Downtown connector", "Broadway interchange", "Meridian exits"]
+      },
+      {
+        name: "Interstate 184 (The Connector)",
+        description: "Spur route connecting I-84 to downtown Boise",
+        accidentHotspots: ["Downtown terminus", "I-84 junction", "Vista Avenue area"]
+      },
+      {
+        name: "US Route 20/26",
+        description: "Major routes connecting Boise to eastern Idaho and mountain resorts",
+        accidentHotspots: ["Lucky Peak area", "Eagle Road junction", "Idaho City approach"]
+      },
+      {
+        name: "State Highway 55",
+        description: "Route north to McCall and Cascade through mountains",
+        accidentHotspots: ["Horseshoe Bend", "Smith's Ferry", "Banks area"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Boise", characteristics: "Capitol district, Basque Block, pedestrian-friendly core" },
+      { name: "North End", characteristics: "Historic residential, Hyde Park, narrow streets" },
+      { name: "Boise Bench", characteristics: "Established residential, Vista Avenue corridor" },
+      { name: "West Boise", characteristics: "Suburban growth, State Street commercial" },
+      { name: "Southeast Boise", characteristics: "Boise State University, Micron traffic, growing residential" }
+    ],
+
+    trafficPatterns: [
+      { type: "Tech Industry Growth", description: "Micron and tech companies create rush hour patterns" },
+      { type: "Recreation Traffic", description: "Skiers heading to Bogus Basin, rafters to Payette River" },
+      { type: "Boise State Events", description: "Football games and events impact downtown" },
+      { type: "California Migration", description: "Rapid population growth straining infrastructure" }
+    ],
+
+    annualAccidents: 5800,
+    accidentYear: 2023,
+    fatalAccidents: 24,
+    commonAccidentTypes: [
+      "I-84 corridor crashes",
+      "Mountain road accidents",
+      "Rapid growth area construction zone incidents",
+      "Wildlife collisions on outskirts",
+      "Weather-related accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-84 and I-184 interchange",
+      "Eagle Road and I-84",
+      "State Street and Glenwood Street",
+      "Broadway Avenue and Front Street",
+      "Cole Road and Fairview Avenue"
+    ],
+
+    policeNonEmergency: "208-377-6790",
+
+    introText: "Boise, Idaho's capital and largest city, has experienced explosive growth as people migrate from California and other states. The city's population has grown significantly, straining road infrastructure. Boise serves as a gateway to mountain recreation at Bogus Basin, Sun Valley, and McCall. The tech industry (led by Micron) has transformed the economy, and Boise State University adds to traffic complexity. Mountain passes to the north can be treacherous in winter.",
+
+    localConsiderations: [
+      "Idaho uses modified comparative fault - recover if 50% or less at fault",
+      "Idaho requires minimum $25k/$50k bodily injury coverage",
+      "Rapid growth means many construction zones and changing road patterns",
+      "Many new residents unfamiliar with mountain driving and Idaho laws",
+      "Recreation traffic peaks on weekends and powder days",
+      "Ada County courts handle most civil matters for Boise area"
+    ],
+
+    weatherFactors: [
+      "Mountain snow and ice",
+      "Temperature inversions create fog",
+      "Rapid weather changes from valley to mountains",
+      "High desert wind and dust",
+      "Flash floods during summer thunderstorms"
+    ],
+
+    uniqueTrafficLaws: [
+      "Idaho has implied consent law",
+      "Handheld device use prohibited while driving",
+      "Idaho Stop Law allows cyclists to treat stop signs as yields",
+      "Move Over law for emergency vehicles"
+    ],
+
+    metaTitle: "Boise Car Accident Help | Idaho Insurance Claims Guide",
+    metaDescription: "Boise car accident assistance. Navigate I-84 claims, understand Idaho fault laws, and get help after an Ada County collision.",
+    keywords: [
+      "Boise car accident",
+      "Boise accident lawyer",
+      "Idaho car accident",
+      "I-84 crash Boise",
+      "Ada County attorney",
+      "Idaho insurance claim",
+      "Treasure Valley accident"
+    ]
+  }
+];
+
+// Wyoming Cities
+export const wyomingCities: CityData[] = [
+  {
+    slug: "cheyenne",
+    name: "Cheyenne",
+    state: "wyoming",
+    stateAbbreviation: "WY",
+    population: 65132,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 80",
+        description: "Major transcontinental route through Cheyenne",
+        accidentHotspots: ["I-25 interchange", "Port of Entry", "Eastern approach"]
+      },
+      {
+        name: "Interstate 25",
+        description: "North-south route connecting Denver to Casper and Montana",
+        accidentHotspots: ["I-80 interchange", "Colorado border", "Northern exits"]
+      },
+      {
+        name: "US Route 85",
+        description: "North-south route through eastern Wyoming",
+        accidentHotspots: ["City center transitions", "Northern industrial area"]
+      },
+      {
+        name: "US Route 30",
+        description: "Historic Lincoln Highway through Cheyenne",
+        accidentHotspots: ["Downtown area", "Western transition", "Happy Jack Road junction"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Cheyenne", characteristics: "Historic depot district, government offices, western heritage" },
+      { name: "North Cheyenne", characteristics: "Residential suburbs, Warren AFB proximity" },
+      { name: "South Cheyenne", characteristics: "I-80 commercial corridor, truck stops" },
+      { name: "East Cheyenne", characteristics: "Industrial areas, railroad yards" },
+      { name: "West Cheyenne", characteristics: "Newer residential development, school zones" }
+    ],
+
+    trafficPatterns: [
+      { type: "I-80 Corridor", description: "Heavy commercial truck traffic on transcontinental route" },
+      { type: "Military Traffic", description: "F.E. Warren Air Force Base creates rush hour patterns" },
+      { type: "Frontier Days", description: "World's largest outdoor rodeo brings massive July crowds" },
+      { type: "Denver Commuters", description: "Some residents commute to/from Denver metro" }
+    ],
+
+    annualAccidents: 1800,
+    accidentYear: 2023,
+    fatalAccidents: 12,
+    commonAccidentTypes: [
+      "I-80 high-speed and truck accidents",
+      "Wind-related vehicle rollovers",
+      "Weather-related crashes",
+      "Wildlife collisions",
+      "Frontier Days event traffic"
+    ],
+
+    dangerousIntersections: [
+      "I-80 and I-25 interchange",
+      "Dell Range Boulevard and Yellowstone Road",
+      "Lincolnway and Central Avenue",
+      "College Drive and Converse Avenue",
+      "I-80 and US-85 junction"
+    ],
+
+    policeNonEmergency: "307-637-6525",
+
+    introText: "Cheyenne, Wyoming's capital and largest city, sits at the intersection of I-80 and I-25, making it a critical transportation hub. The city is known for extreme wind—often exceeding 60 mph—which regularly causes vehicle rollovers, especially for commercial trucks on I-80. Frontier Days, the world's largest outdoor rodeo, transforms the city each July. F.E. Warren Air Force Base adds military traffic, and wildlife crossings are common on surrounding highways.",
+
+    localConsiderations: [
+      "Wyoming uses modified comparative fault - recover if 50% or less at fault",
+      "Wyoming requires minimum $25k/$50k bodily injury coverage",
+      "WIND IS A MAJOR FACTOR - document wind conditions at time of accident",
+      "I-80 is frequently closed due to weather or wind - closures create sudden traffic",
+      "Commercial truck accidents are common - federal regulations apply",
+      "Laramie County courts handle civil matters"
+    ],
+
+    weatherFactors: [
+      "Extreme high winds (60+ mph common)",
+      "Severe winter blizzards and road closures",
+      "Ground blizzards with near-zero visibility",
+      "Rapid temperature changes",
+      "High altitude affects vehicle performance"
+    ],
+
+    uniqueTrafficLaws: [
+      "Wyoming has implied consent law",
+      "No state income tax but vehicle registration required",
+      "Move Over law for emergency vehicles",
+      "Commercial vehicle chain laws on I-80"
+    ],
+
+    metaTitle: "Cheyenne Car Accident Help | Wyoming Insurance Claims Guide",
+    metaDescription: "Cheyenne car accident assistance. Navigate I-80 and wind-related claims, understand Wyoming fault laws, and get help after a Laramie County collision.",
+    keywords: [
+      "Cheyenne car accident",
+      "Cheyenne accident lawyer",
+      "Wyoming car accident",
+      "I-80 crash Wyoming",
+      "wind rollover accident",
+      "Laramie County attorney",
+      "Wyoming insurance claim"
+    ]
+  }
+];
+
+// North Dakota Cities
+export const northDakotaCities: CityData[] = [
+  {
+    slug: "fargo",
+    name: "Fargo",
+    state: "north-dakota",
+    stateAbbreviation: "ND",
+    population: 125990,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 94",
+        description: "Primary east-west route through Fargo connecting to Minneapolis and Billings",
+        accidentHotspots: ["Main Avenue exits", "I-29 interchange", "West Fargo area"]
+      },
+      {
+        name: "Interstate 29",
+        description: "North-south route connecting to Canada and South Dakota",
+        accidentHotspots: ["I-94 interchange", "52nd Avenue area", "Northern exits"]
+      },
+      {
+        name: "US Route 10",
+        description: "East-west route through downtown Fargo",
+        accidentHotspots: ["Main Avenue downtown", "Moorhead bridge", "West Fargo transition"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Fargo", characteristics: "Historic Broadway, NDSU proximity, entertainment district" },
+      { name: "NDSU Campus Area", characteristics: "University traffic, student pedestrians, game day congestion" },
+      { name: "South Fargo", characteristics: "Growing suburbs, commercial development, I-29 access" },
+      { name: "West Fargo", characteristics: "Rapid suburban growth, Sheyenne area, retail corridors" },
+      { name: "Moorhead (MN)", characteristics: "Twin city across Red River, different state laws apply" }
+    ],
+
+    trafficPatterns: [
+      { type: "Cross-State Traffic", description: "Fargo-Moorhead metro spans ND and MN state lines" },
+      { type: "NDSU Events", description: "Bison football and events impact campus area" },
+      { type: "Red River Flooding", description: "Spring floods can close roads and bridges" },
+      { type: "Oil Field Traffic", description: "Western ND oil boom creates commercial traffic" }
+    ],
+
+    annualAccidents: 2800,
+    accidentYear: 2023,
+    fatalAccidents: 10,
+    commonAccidentTypes: [
+      "Winter weather crashes",
+      "Interstate high-speed accidents",
+      "Cross-state driver confusion",
+      "Flooding-related incidents",
+      "Wildlife collisions"
+    ],
+
+    dangerousIntersections: [
+      "I-94 and I-29 interchange",
+      "Main Avenue and University Drive",
+      "13th Avenue and I-29",
+      "45th Street and I-94",
+      "Red River bridges"
+    ],
+
+    policeNonEmergency: "701-235-4493",
+
+    introText: "Fargo, North Dakota's largest city, forms a metro area with Moorhead, Minnesota across the Red River. This cross-state situation creates unique legal considerations when accidents occur. The city experiences extreme weather, from severe winter blizzards to spring flooding of the Red River. NDSU brings a large student population, and the western North Dakota oil boom has increased commercial truck traffic through the region.",
+
+    localConsiderations: [
+      "North Dakota uses modified comparative fault - recover if 50% or less at fault",
+      "North Dakota requires minimum $25k/$50k bodily injury coverage",
+      "Fargo-Moorhead accidents may involve both ND and MN laws",
+      "Red River flooding closes bridges - know alternate routes",
+      "Severe winter weather can delay emergency response",
+      "Cass County courts handle civil matters for Fargo"
+    ],
+
+    weatherFactors: [
+      "Extreme winter cold (-30°F possible)",
+      "Blizzards with whiteout conditions",
+      "Red River spring flooding",
+      "Black ice forms quickly",
+      "High winds on open prairie"
+    ],
+
+    uniqueTrafficLaws: [
+      "North Dakota has implied consent law",
+      "Texting while driving prohibited",
+      "Move Over law for emergency vehicles",
+      "Studded tires allowed October 15 - April 15"
+    ],
+
+    metaTitle: "Fargo Car Accident Help | North Dakota Insurance Guide",
+    metaDescription: "Fargo car accident assistance. Navigate cross-state claims with Minnesota, understand ND fault laws, and get help after a Cass County collision.",
+    keywords: [
+      "Fargo car accident",
+      "Fargo accident lawyer",
+      "North Dakota car accident",
+      "I-94 crash Fargo",
+      "Fargo Moorhead accident",
+      "Cass County attorney",
+      "ND MN border accident"
+    ]
+  },
+  {
+    slug: "bismarck",
+    name: "Bismarck",
+    state: "north-dakota",
+    stateAbbreviation: "ND",
+    population: 74710,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 94",
+        description: "Primary east-west route through Bismarck",
+        accidentHotspots: ["Missouri River crossing", "Mandan exits", "Downtown interchange"]
+      },
+      {
+        name: "US Route 83",
+        description: "North-south route through central North Dakota",
+        accidentHotspots: ["State Street corridor", "North Bismarck", "Southern approaches"]
+      },
+      {
+        name: "US Route 83 Bypass",
+        description: "Bypass route around Bismarck",
+        accidentHotspots: ["I-94 interchange", "Airport area", "Century Avenue junction"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Bismarck", characteristics: "State Capitol, government offices, historic main street" },
+      { name: "North Bismarck", characteristics: "Residential growth, Kirkwood Mall area, retail corridors" },
+      { name: "South Bismarck", characteristics: "University of Mary access, residential suburbs" },
+      { name: "Mandan", characteristics: "Sister city across Missouri River, different city jurisdiction" }
+    ],
+
+    trafficPatterns: [
+      { type: "State Government", description: "Capitol workers create concentrated rush hours" },
+      { type: "Oil Industry", description: "Support services for Bakken oil fields" },
+      { type: "Missouri River Bridge", description: "Limited crossings create bottlenecks" },
+      { type: "Legislative Sessions", description: "Biennial sessions increase traffic when in session" }
+    ],
+
+    annualAccidents: 1800,
+    accidentYear: 2023,
+    fatalAccidents: 8,
+    commonAccidentTypes: [
+      "Winter weather crashes",
+      "Bridge-related incidents",
+      "Wildlife collisions",
+      "Commercial vehicle accidents",
+      "Intersection crashes"
+    ],
+
+    dangerousIntersections: [
+      "I-94 and US-83 interchange",
+      "State Street and Main Avenue",
+      "Century Avenue and State Street",
+      "Missouri River bridges",
+      "Divide Avenue and I-94"
+    ],
+
+    policeNonEmergency: "701-223-1212",
+
+    introText: "Bismarck, North Dakota's capital, sits on the Missouri River across from Mandan. As the state capital, it hosts government workers and serves as a service hub for the Bakken oil region to the west. Extreme winter weather is a fact of life, and the Missouri River bridges are critical infrastructure. The relatively small population means traffic is generally manageable, but winter conditions can make any drive hazardous.",
+
+    localConsiderations: [
+      "North Dakota uses modified comparative fault - recover if 50% or less at fault",
+      "State Capitol area has specific parking and traffic restrictions",
+      "Mandan accidents fall under Morton County jurisdiction",
+      "Oil field workers may have unique employment situations affecting claims",
+      "Burleigh County courts handle civil matters for Bismarck",
+      "Winter road conditions can be a significant factor in liability"
+    ],
+
+    weatherFactors: [
+      "Extreme cold and blizzards",
+      "Missouri River ice creates bridge hazards",
+      "Rapid temperature drops",
+      "Ground blizzards on open roads",
+      "Spring ice breakup flooding"
+    ],
+
+    metaTitle: "Bismarck Car Accident Help | North Dakota Capital City Guide",
+    metaDescription: "Bismarck car accident assistance. Navigate state capital claims, understand ND fault laws, and get help after a Burleigh County collision.",
+    keywords: [
+      "Bismarck car accident",
+      "Bismarck accident lawyer",
+      "North Dakota car accident",
+      "I-94 crash Bismarck",
+      "Burleigh County attorney",
+      "Mandan accident",
+      "ND insurance claim"
+    ]
+  }
+];
+
+// South Dakota Cities
+export const southDakotaCities: CityData[] = [
+  {
+    slug: "sioux-falls",
+    name: "Sioux Falls",
+    state: "south-dakota",
+    stateAbbreviation: "SD",
+    population: 195850,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 90",
+        description: "Major east-west transcontinental route through Sioux Falls",
+        accidentHotspots: ["I-29 interchange", "Russell Street exit", "Western approach"]
+      },
+      {
+        name: "Interstate 29",
+        description: "Primary north-south route connecting to Fargo and Kansas City",
+        accidentHotspots: ["I-90 interchange", "41st Street exits", "Tea area"]
+      },
+      {
+        name: "Interstate 229",
+        description: "Eastern bypass around Sioux Falls",
+        accidentHotspots: ["I-90 junctions", "Benson Road area", "Louise Avenue"]
+      },
+      {
+        name: "US Route 16 (6th Street)",
+        description: "Major east-west arterial through Sioux Falls",
+        accidentHotspots: ["Downtown area", "Western Avenue junction", "Cliff Avenue"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Sioux Falls", characteristics: "Historic Phillips Avenue, Falls Park tourism, entertainment district" },
+      { name: "East Sioux Falls", characteristics: "Empire Mall, 41st Street retail corridor, suburban growth" },
+      { name: "Northwest Sioux Falls", characteristics: "Sanford Health campus, residential growth" },
+      { name: "Southern Sioux Falls", characteristics: "Growing suburbs, Tea and Harrisburg communities" },
+      { name: "Brandon", characteristics: "Eastern suburb, school district traffic" }
+    ],
+
+    trafficPatterns: [
+      { type: "Healthcare Hub", description: "Sanford and Avera health systems draw regional patients" },
+      { type: "Retail Destination", description: "Empire Mall and 41st Street draw shoppers from region" },
+      { type: "Rapid Growth", description: "One of America's fastest-growing cities straining infrastructure" },
+      { type: "Meatpacking Industry", description: "Smithfield plant creates shift-change traffic" }
+    ],
+
+    annualAccidents: 4200,
+    accidentYear: 2023,
+    fatalAccidents: 14,
+    commonAccidentTypes: [
+      "Interstate interchange crashes",
+      "Winter weather accidents",
+      "Retail corridor congestion incidents",
+      "Growth area construction zone accidents",
+      "Commercial vehicle crashes"
+    ],
+
+    dangerousIntersections: [
+      "I-90 and I-29 interchange",
+      "41st Street and Louise Avenue",
+      "Minnesota Avenue and 26th Street",
+      "Russell Street and I-90",
+      "Western Avenue and 12th Street"
+    ],
+
+    policeNonEmergency: "605-367-7000",
+
+    introText: "Sioux Falls, South Dakota's largest city, has emerged as a regional hub for healthcare, retail, and financial services. The city's rapid growth has made it one of America's fastest-growing metros, straining road infrastructure. Located at the intersection of I-29 and I-90, it sees significant through-traffic. Winter weather can be severe, and the Big Sioux River creates flood concerns in spring.",
+
+    localConsiderations: [
+      "South Dakota uses modified comparative fault - recover if less than 50% at fault (SLIGHT-GROSS rule)",
+      "South Dakota requires minimum $25k/$50k bodily injury coverage",
+      "SD has no state income tax - attracts business and creates commuter patterns",
+      "Minnehaha County courts handle civil matters",
+      "Rapid growth means many new roads and construction zones",
+      "Healthcare employers create consistent all-day traffic patterns"
+    ],
+
+    weatherFactors: [
+      "Severe blizzards and ice storms",
+      "Big Sioux River flooding",
+      "Extreme cold affects vehicle performance",
+      "Rapid weather changes",
+      "High winds on prairie roads"
+    ],
+
+    uniqueTrafficLaws: [
+      "South Dakota has implied consent law",
+      "Texting while driving prohibited",
+      "Move Over law for emergency vehicles",
+      "No vehicle inspection requirement"
+    ],
+
+    metaTitle: "Sioux Falls Car Accident Help | South Dakota Insurance Guide",
+    metaDescription: "Sioux Falls car accident assistance. Navigate I-90 and I-29 claims, understand South Dakota's fault laws, and get help after a Minnehaha County collision.",
+    keywords: [
+      "Sioux Falls car accident",
+      "Sioux Falls accident lawyer",
+      "South Dakota car accident",
+      "I-29 crash Sioux Falls",
+      "I-90 accident South Dakota",
+      "Minnehaha County attorney",
+      "SD insurance claim"
+    ]
+  },
+  {
+    slug: "rapid-city",
+    name: "Rapid City",
+    state: "south-dakota",
+    stateAbbreviation: "SD",
+    population: 74703,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 90",
+        description: "Primary east-west route through Rapid City",
+        accidentHotspots: ["Exit 57 (Haines Avenue)", "Exit 59 (LaCrosse Street)", "Box Elder area"]
+      },
+      {
+        name: "US Route 16",
+        description: "Route to Mount Rushmore and Black Hills",
+        accidentHotspots: ["Rushmore Road corridor", "Keystone approach", "Mountain curves"]
+      },
+      {
+        name: "Highway 44",
+        description: "East-west route through Rapid City to Badlands",
+        accidentHotspots: ["Downtown transitions", "Eastern industrial area"]
+      },
+      {
+        name: "Highway 79",
+        description: "North-south route to Sturgis and Hot Springs",
+        accidentHotspots: ["I-90 interchange", "Ellsworth AFB area", "Box Elder junction"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Rapid City", characteristics: "Historic Main Street, presidential statues, tourism district" },
+      { name: "West Rapid City", characteristics: "Hospital hill, residential, steep terrain" },
+      { name: "North Rapid City", characteristics: "Rushmore Mall, commercial corridor, school zones" },
+      { name: "Box Elder", characteristics: "Ellsworth AFB community, suburban growth" },
+      { name: "Rapid Valley", characteristics: "Eastern suburbs, mobile home communities" }
+    ],
+
+    trafficPatterns: [
+      { type: "Tourism Season", description: "Mount Rushmore and Black Hills draw millions of visitors" },
+      { type: "Sturgis Rally", description: "Annual motorcycle rally brings 500,000+ riders in August" },
+      { type: "Military Traffic", description: "Ellsworth Air Force Base creates traffic patterns" },
+      { type: "Casino Traffic", description: "Deadwood casinos draw traffic through Rapid City" }
+    ],
+
+    annualAccidents: 2200,
+    accidentYear: 2023,
+    fatalAccidents: 12,
+    commonAccidentTypes: [
+      "Tourist unfamiliarity with mountain roads",
+      "Motorcycle accidents (especially Sturgis period)",
+      "Wildlife collisions (deer, elk)",
+      "Weather-related mountain road crashes",
+      "I-90 high-speed accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-90 and Haines Avenue interchange",
+      "Mount Rushmore Road and Main Street",
+      "Omaha Street and 5th Street",
+      "Cambell Street and St. Joseph Street",
+      "Highway 79 and I-90"
+    ],
+
+    policeNonEmergency: "605-394-4131",
+
+    introText: "Rapid City, gateway to Mount Rushmore and the Black Hills, is South Dakota's second-largest city and a major tourism destination. The annual Sturgis Motorcycle Rally transforms the region each August with over 500,000 bikers. Mountain roads require careful driving, and wildlife crossings are common. Ellsworth Air Force Base adds military traffic, and the tourism economy creates highly seasonal traffic patterns.",
+
+    localConsiderations: [
+      "South Dakota uses modified comparative fault with slight-gross negligence rule",
+      "Sturgis Rally period (August) dramatically increases accident risk",
+      "Motorcycle accidents have unique considerations - helmet law is limited",
+      "Mountain road accidents may have delayed emergency response",
+      "Tourism means many out-of-state drivers unfamiliar with conditions",
+      "Pennington County courts handle civil matters"
+    ],
+
+    weatherFactors: [
+      "Mountain weather changes rapidly",
+      "Early and late snow in Black Hills",
+      "Flash floods in gulches and canyons",
+      "Hail storms in summer",
+      "Ice on mountain roads persists"
+    ],
+
+    metaTitle: "Rapid City Car Accident Help | Black Hills Mount Rushmore Guide",
+    metaDescription: "Rapid City car accident assistance. Navigate mountain road claims, Sturgis Rally accidents, and get help after a Pennington County collision.",
+    keywords: [
+      "Rapid City car accident",
+      "Black Hills accident lawyer",
+      "Mount Rushmore accident",
+      "Sturgis motorcycle accident",
+      "South Dakota car accident",
+      "Pennington County attorney",
+      "I-90 crash Rapid City"
+    ]
+  }
+];
+
+// Alaska Cities
+export const alaskaCities: CityData[] = [
+  {
+    slug: "anchorage",
+    name: "Anchorage",
+    state: "alaska",
+    stateAbbreviation: "AK",
+    population: 291247,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Glenn Highway (Route 1)",
+        description: "Primary route northeast to Matanuska-Susitna Valley and interior Alaska",
+        accidentHotspots: ["Muldoon Road interchange", "Eagle River area", "Mirror Lake curves"]
+      },
+      {
+        name: "Seward Highway (Route 1)",
+        description: "South route to Kenai Peninsula, scenic but dangerous",
+        accidentHotspots: ["Potter Marsh area", "Turnagain Arm curves", "Beluga Point"]
+      },
+      {
+        name: "Minnesota Drive",
+        description: "Major north-south arterial through Anchorage",
+        accidentHotspots: ["International Airport Road", "Tudor Road interchange", "Downtown approach"]
+      },
+      {
+        name: "New Seward Highway",
+        description: "Urban expressway portion through Anchorage",
+        accidentHotspots: ["Dimond Boulevard", "O'Malley Road", "Huffman Road"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Anchorage", characteristics: "Urban core, limited parking, tourist cruise ship traffic" },
+      { name: "Midtown", characteristics: "Commercial district, Sears Mall area, busy intersections" },
+      { name: "South Anchorage", characteristics: "Suburban residential, school zones, Hillside access" },
+      { name: "Eagle River", characteristics: "Suburban community, Glenn Highway commuters" },
+      { name: "Muldoon", characteristics: "Diverse neighborhood, JBER military base proximity" }
+    ],
+
+    trafficPatterns: [
+      { type: "Seasonal Daylight", description: "Summer 20+ hours daylight, winter ~5 hours affects driving" },
+      { type: "Military Traffic", description: "JBER (Joint Base Elmendorf-Richardson) creates significant traffic" },
+      { type: "Moose Crossings", description: "Urban moose population creates constant collision risk" },
+      { type: "Cruise Ship Season", description: "Summer tourism floods downtown with unfamiliar drivers" }
+    ],
+
+    annualAccidents: 5200,
+    accidentYear: 2023,
+    fatalAccidents: 28,
+    commonAccidentTypes: [
+      "Moose-vehicle collisions (MAJOR HAZARD)",
+      "Winter ice and snow crashes",
+      "Seward Highway cliff-edge accidents",
+      "Darkness-related accidents in winter",
+      "Tourist unfamiliarity"
+    ],
+
+    dangerousIntersections: [
+      "Tudor Road and Seward Highway",
+      "Muldoon Road and Glenn Highway",
+      "Northern Lights and Minnesota Drive",
+      "Dimond Boulevard and Seward Highway",
+      "5th Avenue and C Street"
+    ],
+
+    policeNonEmergency: "907-786-8900",
+
+    introText: "Anchorage, Alaska's largest city, faces driving challenges unlike anywhere else in the United States. Moose-vehicle collisions are a constant threat—moose are massive (up to 1,500 lbs) and can total a vehicle or kill occupants. The Seward Highway along Turnagain Arm is spectacularly scenic but has no guardrails with cliffs dropping to the ocean. Winter brings extreme ice, limited daylight, and temperatures that challenge vehicles and drivers alike.",
+
+    localConsiderations: [
+      "Alaska uses pure comparative fault - recover even if mostly at fault",
+      "Alaska requires minimum $50k/$100k bodily injury coverage (HIGH)",
+      "MOOSE COLLISIONS are covered under comprehensive, not collision coverage",
+      "Seward Highway accidents may require air evacuation - document accessibility",
+      "Extreme cold can affect vehicle evidence preservation",
+      "Alaska has unique PIP requirements - $10,000 minimum",
+      "Limited road network means few alternate routes when accidents block highways"
+    ],
+
+    weatherFactors: [
+      "Extreme winter ice and snow",
+      "Limited daylight in winter (4-5 hours)",
+      "Avalanche zones on mountain highways",
+      "Freezing rain creates black ice quickly",
+      "Summer midnight sun affects driver fatigue"
+    ],
+
+    uniqueTrafficLaws: [
+      "Alaska has implied consent law",
+      "Studded tires allowed September 16 - April 30",
+      "Headlights required at all times on certain highways",
+      "Move Over law for emergency vehicles"
+    ],
+
+    metaTitle: "Anchorage Car Accident Help | Alaska Insurance Claims Guide",
+    metaDescription: "Anchorage car accident assistance. Navigate moose collision claims, understand Alaska's pure comparative fault system, and get help after an accident.",
+    keywords: [
+      "Anchorage car accident",
+      "Alaska car accident lawyer",
+      "moose collision Alaska",
+      "Seward Highway accident",
+      "Glenn Highway crash",
+      "Alaska insurance claim",
+      "winter driving accident Alaska"
+    ]
+  }
+];
+
+// Vermont Cities
+export const vermontCities: CityData[] = [
+  {
+    slug: "burlington",
+    name: "Burlington",
+    state: "vermont",
+    stateAbbreviation: "VT",
+    population: 45417,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 89",
+        description: "Primary north-south route connecting Burlington to Montpelier and New Hampshire",
+        accidentHotspots: ["Exit 14W (downtown)", "Exit 12 (Williston)", "Southern approach"]
+      },
+      {
+        name: "US Route 7",
+        description: "North-south route through western Vermont",
+        accidentHotspots: ["Shelburne Road corridor", "South Burlington", "Winooski transition"]
+      },
+      {
+        name: "US Route 2",
+        description: "East-west route through Burlington and northern Vermont",
+        accidentHotspots: ["Williston Road", "Main Street downtown", "Causeway approach"]
+      },
+      {
+        name: "Route 127 (Northern Connector)",
+        description: "Northern bypass connecting I-89 to North Burlington",
+        accidentHotspots: ["I-89 interchange", "North Avenue junction"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Burlington", characteristics: "Church Street pedestrian mall, UVM proximity, narrow streets" },
+      { name: "Old North End", characteristics: "Diverse neighborhood, Intervale area, residential streets" },
+      { name: "South Burlington", characteristics: "Suburban commercial, Shelburne Road retail, airport area" },
+      { name: "Winooski", characteristics: "Adjacent city, historic mill town, rotary intersection" },
+      { name: "University District", characteristics: "UVM and Champlain College, student traffic and pedestrians" }
+    ],
+
+    trafficPatterns: [
+      { type: "University Traffic", description: "UVM and Champlain College create student traffic patterns" },
+      { type: "Lake Champlain Tourism", description: "Summer waterfront and ferry traffic" },
+      { type: "Ski Season", description: "Winter traffic to Stowe, Smugglers' Notch, and other resorts" },
+      { type: "Canadian Visitors", description: "Montreal day-trippers and cross-border shopping" }
+    ],
+
+    annualAccidents: 1400,
+    accidentYear: 2023,
+    fatalAccidents: 5,
+    commonAccidentTypes: [
+      "Winter weather crashes",
+      "Pedestrian accidents downtown",
+      "Deer collisions on outskirts",
+      "University area incidents",
+      "Tourism-related accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-89 Exit 14W interchange",
+      "Shelburne Road and Williston Road",
+      "Main Street and Battery Street",
+      "Winooski Rotary",
+      "North Avenue and Route 127"
+    ],
+
+    policeNonEmergency: "802-658-2704",
+
+    introText: "Burlington, Vermont's largest city, sits on the shores of Lake Champlain with stunning views of the Adirondacks. The University of Vermont dominates the city's character, and the pedestrian-only Church Street Marketplace is a regional destination. Proximity to Montreal brings Canadian visitors, and world-class ski resorts draw winter traffic. Vermont's rural character means deer collisions are common, and winter weather in the Green Mountains can be severe.",
+
+    localConsiderations: [
+      "Vermont uses modified comparative fault - recover if 50% or less at fault",
+      "Vermont requires minimum $25k/$50k bodily injury coverage",
+      "Canadian drivers involved in accidents may have different insurance structures",
+      "University students may have out-of-state or limited coverage",
+      "Church Street pedestrian mall adjacent - note exact accident location",
+      "Chittenden County courts handle civil matters",
+      "Vermont has strong consumer protection laws for insurance claims"
+    ],
+
+    weatherFactors: [
+      "Heavy lake-effect snow from Lake Champlain",
+      "Mountain pass closures in winter",
+      "Black ice common throughout winter",
+      "Mud season creates poor road conditions",
+      "Dense fog from lake"
+    ],
+
+    uniqueTrafficLaws: [
+      "Vermont has implied consent law",
+      "Handheld device use prohibited",
+      "Move Over law for emergency vehicles",
+      "Right turn on red permitted unless posted"
+    ],
+
+    metaTitle: "Burlington Car Accident Help | Vermont Insurance Claims Guide",
+    metaDescription: "Burlington car accident assistance. Navigate Vermont's fault laws, winter driving claims, and get help after a Chittenden County collision.",
+    keywords: [
+      "Burlington car accident",
+      "Vermont car accident lawyer",
+      "Burlington accident attorney",
+      "I-89 crash Vermont",
+      "Chittenden County attorney",
+      "Vermont insurance claim",
+      "ski traffic accident"
+    ]
+  }
+];
+
 // Index of all cities by state
 export const citiesByState: Record<string, CityData[]> = {
   california: californiaCities,
@@ -4238,6 +11199,36 @@ export const citiesByState: Record<string, CityData[]> = {
   maryland: marylandCities,
   minnesota: minnesotaCities,
   wisconsin: wisconsinCities,
+  oregon: oregonCities,
+  "new-mexico": newMexicoCities,
+  louisiana: louisianaCities,
+  "south-carolina": southCarolinaCities,
+  missouri: missouriCities,
+  indiana: indianaCities,
+  oklahoma: oklahomaCities,
+  connecticut: connecticutCities,
+  alabama: alabamaCities,
+  kentucky: kentuckyCities,
+  "new-jersey": newJerseyCities,
+  iowa: iowaCities,
+  arkansas: arkansasCities,
+  utah: utahCities,
+  kansas: kansasCities,
+  nebraska: nebraskaCities,
+  mississippi: mississippiCities,
+  hawaii: hawaiiCities,
+  "new-hampshire": newHampshireCities,
+  maine: maineCities,
+  "rhode-island": rhodeIslandCities,
+  delaware: delawareCities,
+  "west-virginia": westVirginiaCities,
+  montana: montanaCities,
+  idaho: idahoCities,
+  wyoming: wyomingCities,
+  "north-dakota": northDakotaCities,
+  "south-dakota": southDakotaCities,
+  alaska: alaskaCities,
+  vermont: vermontCities,
 };
 
 // Helper function to get a city by state and slug

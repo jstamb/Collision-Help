@@ -3,13 +3,36 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { pillars, getPillar } from '@/content/guides/pillars'
+import { citiesByState } from '@/content/locations/cities'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import PillarHero from '@/components/guides/PillarHero'
 import GuideCard from '@/components/guides/GuideCard'
 import FAQAccordion from '@/components/shared/FAQAccordion'
 import CTABanner from '@/components/shared/CTABanner'
-import { ArrowRight, BookOpen } from 'lucide-react'
+import { ArrowRight, BookOpen, MapPin } from 'lucide-react'
+
+// Get featured cities for internal linking (major cities across the country)
+const getFeaturedCities = () => {
+  const featured = [
+    { state: 'california', city: 'los-angeles' },
+    { state: 'california', city: 'san-francisco' },
+    { state: 'texas', city: 'houston' },
+    { state: 'texas', city: 'dallas' },
+    { state: 'florida', city: 'miami' },
+    { state: 'new-york', city: 'new-york-city' },
+    { state: 'illinois', city: 'chicago' },
+    { state: 'arizona', city: 'phoenix' },
+    { state: 'oregon', city: 'portland' },
+    { state: 'new-mexico', city: 'albuquerque' },
+  ]
+
+  return featured.map(({ state, city }) => {
+    const cityData = citiesByState[state]?.find(c => c.slug === city)
+    if (!cityData) return null
+    return { ...cityData, stateSlug: state }
+  }).filter(Boolean).slice(0, 6)
+}
 
 // Generate static params for all pillars
 export async function generateStaticParams() {
@@ -40,6 +63,7 @@ export default function PillarHubPage({ params }: { params: { pillar: string } }
   const p1Articles = pillar.articles.filter(a => a.priority === 'P1')
   const p2Articles = pillar.articles.filter(a => a.priority === 'P2')
   const otherPillars = pillars.filter(p => p.slug !== pillar.slug).slice(0, 3)
+  const featuredCities = getFeaturedCities()
 
   return (
     <>
@@ -161,6 +185,37 @@ export default function PillarHubPage({ params }: { params: { pillar: string } }
                     ))}
                   </div>
                 </div>
+
+                {/* Local Help - City Links */}
+                {featuredCities.length > 0 && (
+                  <div className="bg-white rounded-xl border border-slate-200 p-5">
+                    <h3 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
+                      <MapPin className="w-4 h-4 text-brand-600" />
+                      Local Help by City
+                    </h3>
+                    <p className="text-xs text-slate-500 mb-3">
+                      Get location-specific accident guidance:
+                    </p>
+                    <div className="space-y-2">
+                      {featuredCities.map((city: any) => (
+                        <Link
+                          key={`${city.stateSlug}-${city.slug}`}
+                          href={`/locations/${city.stateSlug}/${city.slug}`}
+                          className="flex items-center justify-between text-sm text-slate-600 hover:text-brand-600 transition-colors py-1"
+                        >
+                          <span>{city.name}, {city.stateAbbreviation}</span>
+                          <ArrowRight className="w-3 h-3" />
+                        </Link>
+                      ))}
+                    </div>
+                    <Link
+                      href="/locations"
+                      className="mt-4 block text-center text-sm text-brand-600 hover:text-brand-700 font-medium"
+                    >
+                      View All Locations →
+                    </Link>
+                  </div>
+                )}
               </div>
             </aside>
           </div>

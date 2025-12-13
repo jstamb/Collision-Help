@@ -6,6 +6,8 @@ import {
   Car,
   Truck,
   Heart,
+  AlertTriangle,
+  ArrowLeftRight,
   LucideIcon
 } from 'lucide-react'
 
@@ -615,6 +617,202 @@ export const pillars: Pillar[] = [
       {
         question: 'Will a pre-existing condition hurt my claim?',
         answer: 'Not necessarily. The "eggshell plaintiff" doctrine means you can claim for aggravation of existing conditions. Document your pre-accident condition for comparison.'
+      }
+    ]
+  },
+  {
+    slug: 'hit-and-run',
+    title: 'Hit-and-Run Accident Guide',
+    shortTitle: 'Hit-and-Run',
+    description: 'What to do when the other driver flees the scene. Learn your rights, how to file a claim, use your uninsured motorist coverage, and help police find the driver.',
+    icon: AlertTriangle,
+    color: 'red',
+    articles: [
+      {
+        slug: 'what-to-do-hit-and-run',
+        title: 'What to Do After a Hit-and-Run',
+        description: 'Critical steps to take immediately when the other driver flees.',
+        readingTime: '8 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'filing-hit-and-run-claim',
+        title: 'Filing a Hit-and-Run Insurance Claim',
+        description: 'How to file a claim when you don\'t know who hit you.',
+        readingTime: '7 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'uninsured-motorist-hit-and-run',
+        title: 'Using Uninsured Motorist Coverage for Hit-and-Run',
+        description: 'How UM/UIM coverage protects you when the driver is unknown.',
+        readingTime: '8 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'hit-and-run-police-report',
+        title: 'Filing a Police Report for Hit-and-Run',
+        description: 'Why the police report is essential and what to include.',
+        readingTime: '6 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'parked-car-hit-and-run',
+        title: 'Hit-and-Run While Parked',
+        description: 'Your options when someone hits your parked car and leaves.',
+        readingTime: '6 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'finding-hit-and-run-driver',
+        title: 'How to Find a Hit-and-Run Driver',
+        description: 'Tips for identifying the fleeing driver with witnesses and cameras.',
+        readingTime: '7 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'hit-and-run-no-uninsured-motorist',
+        title: 'Hit-and-Run Without UM Coverage',
+        description: 'Your options if you don\'t have uninsured motorist coverage.',
+        readingTime: '6 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'hit-and-run-injuries',
+        title: 'Injury Claims After Hit-and-Run',
+        description: 'Getting medical treatment and compensation covered.',
+        readingTime: '7 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'hit-and-run-penalties',
+        title: 'Hit-and-Run Penalties by State',
+        description: 'What happens to drivers who flee accident scenes.',
+        readingTime: '6 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'hit-and-run-witness',
+        title: 'I Witnessed a Hit-and-Run',
+        description: 'How to help as a witness to a hit-and-run accident.',
+        readingTime: '5 min read',
+        priority: 'P2'
+      }
+    ],
+    faqs: [
+      {
+        question: 'Will my insurance go up after a hit-and-run claim?',
+        answer: 'In most states, no. Since you\'re not at fault and using your uninsured motorist coverage, insurers generally cannot raise your rates. However, policies vary by state and insurer.'
+      },
+      {
+        question: 'What if someone hit my parked car and left?',
+        answer: 'File a police report immediately, check for witnesses or security cameras, and file a claim under your collision coverage. If you identify the driver, their liability insurance should pay.'
+      },
+      {
+        question: 'Can I sue an unknown hit-and-run driver?',
+        answer: 'You need to identify the driver first. Focus on finding them through witnesses, security footage, and police investigation. Once identified, you can pursue their insurance or sue directly.'
+      },
+      {
+        question: 'Is there a time limit to report a hit-and-run?',
+        answer: 'Report to police immediately—many states require reporting within 24-72 hours. For insurance claims, notify your insurer as soon as possible. For lawsuits, statute of limitations (typically 2-3 years) applies.'
+      }
+    ]
+  },
+  {
+    slug: 't-bone-accidents',
+    title: 'T-Bone & Side-Impact Collision Guide',
+    shortTitle: 'T-Bone',
+    description: 'T-bone and side-impact collisions are among the most dangerous. Learn about fault determination, common injuries, and maximizing your compensation.',
+    icon: ArrowLeftRight,
+    color: 'purple',
+    articles: [
+      {
+        slug: 't-bone-collision-fault',
+        title: 'Who Is at Fault in a T-Bone Accident?',
+        description: 'How fault is determined when vehicles collide at intersections.',
+        readingTime: '8 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 't-bone-intersection-accidents',
+        title: 'T-Bone Accidents at Intersections',
+        description: 'Common intersection scenarios and how fault is assigned.',
+        readingTime: '7 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 't-bone-red-light-runner',
+        title: 'T-Boned by a Red Light Runner',
+        description: 'Your rights when someone runs a red light and hits you.',
+        readingTime: '7 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'side-impact-injuries',
+        title: 'Common Side-Impact Collision Injuries',
+        description: 'Why T-bone accidents cause severe injuries and how to claim.',
+        readingTime: '8 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 't-bone-left-turn',
+        title: 'T-Bone Accident While Turning Left',
+        description: 'Fault rules for left-turn collisions at intersections.',
+        readingTime: '7 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'broadside-collision-settlement',
+        title: 'T-Bone Accident Settlement Guide',
+        description: 'What affects your settlement value in side-impact crashes.',
+        readingTime: '8 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 't-bone-parking-lot',
+        title: 'T-Bone Accidents in Parking Lots',
+        description: 'Fault and claims for side-impact crashes in parking areas.',
+        readingTime: '6 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 't-bone-stop-sign',
+        title: 'T-Bone Accident at Stop Sign',
+        description: 'Determining fault when stop signs are involved.',
+        readingTime: '6 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 't-bone-uncontrolled-intersection',
+        title: 'T-Bone at Uncontrolled Intersection',
+        description: 'Fault rules when there are no traffic signals or signs.',
+        readingTime: '6 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'sideswipe-accidents',
+        title: 'Sideswipe Accidents',
+        description: 'When vehicles collide side-to-side while traveling.',
+        readingTime: '6 min read',
+        priority: 'P2'
+      }
+    ],
+    faqs: [
+      {
+        question: 'Who is at fault in a T-bone accident?',
+        answer: 'Usually the driver who failed to yield right-of-way: running red lights, ignoring stop signs, or making unsafe left turns. However, fault can be shared if the other driver was speeding or ran a yellow light.'
+      },
+      {
+        question: 'Why are T-bone accidents so dangerous?',
+        answer: 'Side-impact crashes are especially dangerous because the side of a car offers less protection than the front or rear. Occupants on the struck side face direct impact with less crumple zone to absorb force.'
+      },
+      {
+        question: 'What is the average T-bone accident settlement?',
+        answer: 'Property damage only: $5,000-$15,000. With injuries: $25,000-$75,000. Serious injuries (TBI, spinal): $100,000-$500,000+. Settlements vary significantly based on injury severity and fault.'
+      },
+      {
+        question: 'How do I prove the other driver ran a red light?',
+        answer: 'Evidence includes: traffic camera footage, dashcam video, witness statements, police report, intersection surveillance cameras, and accident reconstruction experts for serious cases.'
       }
     ]
   }
