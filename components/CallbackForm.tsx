@@ -204,7 +204,7 @@ export default function CallbackForm({ isOpen, onClose, state, stateName }: Call
                   placeholder="When did it happen? What type of collision? Any injuries?"
                   rows={3}
                   className={cn(
-                    "flex w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
+                    "flex w-full rounded-md border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
                     errors.accidentDetails && 'border-red-500'
                   )}
                 />

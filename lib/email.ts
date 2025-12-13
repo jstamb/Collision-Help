@@ -1004,3 +1004,190 @@ export async function sendCallbackNotificationEmail(data: CallbackData): Promise
     return false
   }
 }
+
+// User confirmation email for callback requests
+export async function sendCallbackConfirmationEmail(data: {
+  name: string
+  email: string
+  phone: string
+  stateName?: string
+}): Promise<boolean> {
+  if (!process.env.RESEND_API_KEY) {
+    console.error('Missing RESEND_API_KEY')
+    return false
+  }
+
+  if (!data.email) {
+    console.log('No email provided for confirmation')
+    return false
+  }
+
+  const firstName = data.name.split(' ')[0]
+
+  const html = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We Received Your Request - Collision Help</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f1f5f9;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f1f5f9; padding: 40px 20px;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+
+          <!-- Header -->
+          <tr>
+            <td style="background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); padding: 40px; text-align: center;">
+              <div style="width: 64px; height: 64px; background-color: rgba(255,255,255,0.2); border-radius: 50%; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center;">
+                <img src="https://collisionhelp.org/check-circle.png" alt="Success" width="32" height="32" style="display: block;" onerror="this.style.display='none'">
+              </div>
+              <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: 700;">
+                Request Received!
+              </h1>
+              <p style="margin: 12px 0 0 0; color: #e0f2fe; font-size: 16px;">
+                We're on it, ${firstName}.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Main Content -->
+          <tr>
+            <td style="padding: 40px;">
+              <p style="margin: 0 0 24px 0; color: #334155; font-size: 16px; line-height: 1.7;">
+                Thank you for reaching out to Collision Help. We've received your callback request and a member of our team will be in touch shortly.
+              </p>
+
+              <!-- What to Expect Box -->
+              <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
+                <h2 style="margin: 0 0 16px 0; color: #0369a1; font-size: 18px; font-weight: 600;">
+                  What Happens Next
+                </h2>
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td style="padding: 8px 0;">
+                      <table cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td style="width: 32px; vertical-align: top;">
+                            <div style="width: 24px; height: 24px; background-color: #0ea5e9; border-radius: 50%; color: white; font-size: 12px; font-weight: 700; text-align: center; line-height: 24px;">1</div>
+                          </td>
+                          <td style="padding-left: 12px;">
+                            <p style="margin: 0; color: #0c4a6e; font-size: 14px; line-height: 1.5;">
+                              <strong>Review</strong> - Our team will review your details
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 8px 0;">
+                      <table cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td style="width: 32px; vertical-align: top;">
+                            <div style="width: 24px; height: 24px; background-color: #0ea5e9; border-radius: 50%; color: white; font-size: 12px; font-weight: 700; text-align: center; line-height: 24px;">2</div>
+                          </td>
+                          <td style="padding-left: 12px;">
+                            <p style="margin: 0; color: #0c4a6e; font-size: 14px; line-height: 1.5;">
+                              <strong>Call</strong> - We'll call you at ${data.phone}
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 8px 0;">
+                      <table cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td style="width: 32px; vertical-align: top;">
+                            <div style="width: 24px; height: 24px; background-color: #0ea5e9; border-radius: 50%; color: white; font-size: 12px; font-weight: 700; text-align: center; line-height: 24px;">3</div>
+                          </td>
+                          <td style="padding-left: 12px;">
+                            <p style="margin: 0; color: #0c4a6e; font-size: 14px; line-height: 1.5;">
+                              <strong>Connect</strong> - We'll help connect you with the right resources
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <!-- Timeframe Notice -->
+              <div style="background-color: #fef3c7; border-radius: 8px; padding: 16px; margin-bottom: 24px; border-left: 4px solid #f59e0b;">
+                <p style="margin: 0; color: #92400e; font-size: 14px; line-height: 1.5;">
+                  <strong>Expected Response Time:</strong> We typically respond within 1-2 business hours during normal business hours (Mon-Fri, 9am-6pm EST).
+                </p>
+              </div>
+
+              <!-- While You Wait -->
+              <h3 style="margin: 0 0 12px 0; color: #1e293b; font-size: 16px; font-weight: 600;">
+                While You Wait
+              </h3>
+              <p style="margin: 0 0 16px 0; color: #64748b; font-size: 14px; line-height: 1.6;">
+                Here are a few things you can do to prepare:
+              </p>
+              <ul style="margin: 0 0 24px 0; padding-left: 20px; color: #475569; font-size: 14px; line-height: 1.8;">
+                <li>Gather any photos of the damage you haven't shared yet</li>
+                <li>Locate your insurance policy information</li>
+                <li>Write down key details about the accident while they're fresh</li>
+                <li>Note any medical symptoms you're experiencing</li>
+              </ul>
+
+              <!-- Divider -->
+              <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 24px 0;">
+
+              <!-- Contact Info -->
+              <p style="margin: 0; color: #64748b; font-size: 13px; text-align: center;">
+                Questions? Visit <a href="https://collisionhelp.org" style="color: #0ea5e9; text-decoration: none;">collisionhelp.org</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color: #1e293b; padding: 24px 40px; text-align: center;">
+              <a href="https://collisionhelp.org" style="color: #ffffff; font-size: 16px; text-decoration: none; font-weight: 600;">Collision Help</a>
+              <p style="margin: 8px 0 0 0; color: #94a3b8; font-size: 12px;">
+                Helping accident victims navigate the claims process
+              </p>
+            </td>
+          </tr>
+
+        </table>
+
+        <!-- Unsubscribe Footer -->
+        <p style="margin: 24px 0 0 0; color: #94a3b8; font-size: 11px; text-align: center;">
+          You received this email because you requested a callback from Collision Help.
+        </p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+`
+
+  try {
+    const { data: emailData, error } = await getResendClient().emails.send({
+      from: 'Collision Help <hello@collisionhelp.org>',
+      to: [data.email],
+      subject: `We've received your request - Collision Help`,
+      html
+    })
+
+    if (error) {
+      console.error('Callback confirmation email error:', error)
+      return false
+    }
+
+    console.log('Callback confirmation email sent:', emailData?.id)
+    return true
+  } catch (error) {
+    console.error('Callback confirmation email send error:', error)
+    return false
+  }
+}

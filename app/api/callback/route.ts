@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { v4 as uuidv4 } from 'uuid'
-import { sendCallbackNotificationEmail, findMatchingLead } from '@/lib/email'
+import { sendCallbackNotificationEmail, sendCallbackConfirmationEmail, findMatchingLead } from '@/lib/email'
 
 interface CallbackRequest {
   name: string
@@ -48,6 +48,21 @@ export async function POST(request: NextRequest) {
     if (!emailSent) {
       console.error('Failed to send callback notification email')
       // Still return success - we have the data, email failure shouldn't block user
+    }
+
+    // Send confirmation email to user (if they provided an email)
+    if (body.email) {
+      const confirmationSent = await sendCallbackConfirmationEmail({
+        name: body.name,
+        email: body.email,
+        phone: body.phone,
+        stateName: body.stateName
+      })
+
+      if (!confirmationSent) {
+        console.error('Failed to send user confirmation email')
+        // Non-blocking - user still gets success response
+      }
     }
 
     return NextResponse.json({
