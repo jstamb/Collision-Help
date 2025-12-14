@@ -25,11 +25,13 @@ const navigation = [
     href: '/tools',
     children: [
       { name: 'AI Damage Analyzer', href: '/ai-damage-analyzer' },
+      { name: 'Settlement Calculator', href: '/tools/settlement-calculator' },
       { name: 'Total Loss Calculator', href: '/tools/total-loss-calculator' },
     ]
   },
+  { name: 'Resources', href: '/resources' },
+  { name: 'Glossary', href: '/glossary' },
   { name: 'Locations', href: '/locations' },
-  { name: 'Blog', href: '/blog' },
   { name: 'About', href: '/about' },
 ]
 

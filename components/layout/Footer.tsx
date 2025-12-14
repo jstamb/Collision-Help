@@ -14,7 +14,12 @@ const footerLinks = {
   ],
   tools: [
     { name: 'AI Damage Analyzer', href: '/' },
+    { name: 'Settlement Calculator', href: '/tools/settlement-calculator' },
     { name: 'Total Loss Calculator', href: '/tools/total-loss-calculator' },
+  ],
+  resources: [
+    { name: 'Resources Hub', href: '/resources' },
+    { name: 'Glossary', href: '/glossary' },
   ],
   states: [
     { name: 'California', href: '/locations/california' },
@@ -34,7 +39,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
@@ -65,6 +70,20 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Tools</h3>
             <ul className="space-y-3">
               {footerLinks.tools.map((link) => (
+                <li key={link.name}>
+                  <Link href={link.href} className="text-sm hover:text-white transition-colors">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div>
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Resources</h3>
+            <ul className="space-y-3">
+              {footerLinks.resources.map((link) => (
                 <li key={link.name}>
                   <Link href={link.href} className="text-sm hover:text-white transition-colors">
                     {link.name}
