@@ -113,7 +113,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }))
   )
 
-  return [
+  const allPages = [
     ...staticPages,
     ...toolPages,
     ...pillarPages,
@@ -121,4 +121,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...statePages,
     ...cityPages,
   ]
+
+  // Log sitemap stats during build (visible in build output)
+  if (process.env.NODE_ENV === 'production') {
+    console.log(`[Sitemap] Generated ${allPages.length} URLs:`)
+    console.log(`  - Static pages: ${staticPages.length}`)
+    console.log(`  - Tool pages: ${toolPages.length}`)
+    console.log(`  - Pillar pages: ${pillarPages.length}`)
+    console.log(`  - Article pages: ${articlePages.length}`)
+    console.log(`  - State pages: ${statePages.length}`)
+    console.log(`  - City pages: ${cityPages.length}`)
+  }
+
+  return allPages
 }
