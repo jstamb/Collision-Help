@@ -12,26 +12,63 @@ import FAQAccordion from '@/components/shared/FAQAccordion'
 import CTABanner from '@/components/shared/CTABanner'
 import { ArrowRight, BookOpen, MapPin } from 'lucide-react'
 
-// Get featured cities for internal linking (major cities across the country)
-const getFeaturedCities = () => {
-  const featured = [
+// Get featured cities for internal linking - prioritize states with pillar-specific articles
+const getFeaturedCities = (pillarSlug: string, articles: { slug: string }[]) => {
+  // Map of state slugs to their major cities
+  const stateCityMap: Record<string, string[]> = {
+    'california': ['los-angeles', 'san-francisco', 'san-diego'],
+    'texas': ['houston', 'dallas', 'austin'],
+    'florida': ['miami', 'tampa', 'orlando'],
+    'new-york': ['new-york-city'],
+    'illinois': ['chicago'],
+    'arizona': ['phoenix'],
+    'georgia': ['atlanta'],
+    'ohio': ['columbus', 'cleveland'],
+  }
+
+  // Check which states have articles in this pillar
+  const statesWithArticles = new Set<string>()
+  articles.forEach(article => {
+    Object.keys(stateCityMap).forEach(state => {
+      if (article.slug.includes(state.replace('-', ''))) {
+        statesWithArticles.add(state)
+      }
+    })
+  })
+
+  // Build featured list - prioritize states with articles
+  const featured: { state: string; city: string }[] = []
+
+  // First add cities from states that have pillar articles
+  statesWithArticles.forEach(state => {
+    const cities = stateCityMap[state]
+    if (cities && cities.length > 0) {
+      featured.push({ state, city: cities[0] })
+    }
+  })
+
+  // Then fill in with other major cities
+  const defaultCities = [
     { state: 'california', city: 'los-angeles' },
-    { state: 'california', city: 'san-francisco' },
     { state: 'texas', city: 'houston' },
-    { state: 'texas', city: 'dallas' },
     { state: 'florida', city: 'miami' },
     { state: 'new-york', city: 'new-york-city' },
     { state: 'illinois', city: 'chicago' },
     { state: 'arizona', city: 'phoenix' },
-    { state: 'oregon', city: 'portland' },
-    { state: 'new-mexico', city: 'albuquerque' },
+    { state: 'georgia', city: 'atlanta' },
   ]
 
-  return featured.map(({ state, city }) => {
+  defaultCities.forEach(item => {
+    if (!featured.some(f => f.state === item.state)) {
+      featured.push(item)
+    }
+  })
+
+  return featured.slice(0, 6).map(({ state, city }) => {
     const cityData = citiesByState[state]?.find(c => c.slug === city)
     if (!cityData) return null
     return { ...cityData, stateSlug: state }
-  }).filter(Boolean).slice(0, 6)
+  }).filter(Boolean)
 }
 
 // Generate static params for all pillars
@@ -63,7 +100,7 @@ export default function PillarHubPage({ params }: { params: { pillar: string } }
   const p1Articles = pillar.articles.filter(a => a.priority === 'P1')
   const p2Articles = pillar.articles.filter(a => a.priority === 'P2')
   const otherPillars = pillars.filter(p => p.slug !== pillar.slug).slice(0, 3)
-  const featuredCities = getFeaturedCities()
+  const featuredCities = getFeaturedCities(pillar.slug, pillar.articles)
 
   return (
     <>

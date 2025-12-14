@@ -8,6 +8,9 @@ import {
   Heart,
   AlertTriangle,
   ArrowLeftRight,
+  MapPin,
+  CloudRain,
+  Gavel,
   LucideIcon
 } from 'lucide-react'
 
@@ -813,6 +816,367 @@ export const pillars: Pillar[] = [
       {
         question: 'How do I prove the other driver ran a red light?',
         answer: 'Evidence includes: traffic camera footage, dashcam video, witness statements, police report, intersection surveillance cameras, and accident reconstruction experts for serious cases.'
+      }
+    ]
+  },
+  {
+    slug: 'dangerous-roads',
+    title: 'Dangerous Roads & Intersections Guide',
+    shortTitle: 'Dangerous Roads',
+    description: 'Navigate America\'s most hazardous roads with confidence. Learn about high-risk highways, dangerous intersections, and accident hotspots across major cities and states.',
+    icon: MapPin,
+    color: 'red',
+    articles: [
+      {
+        slug: 'most-dangerous-highways-usa',
+        title: 'Most Dangerous Highways in America',
+        description: 'The deadliest interstate highways and what makes them so hazardous.',
+        readingTime: '10 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'dangerous-intersections-why',
+        title: 'What Makes an Intersection Dangerous?',
+        description: 'Understanding the factors that create high-risk intersections.',
+        readingTime: '7 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'california-dangerous-roads',
+        title: 'Most Dangerous Roads in California',
+        description: 'From I-405 to PCH—California\'s deadliest roadways and safety tips.',
+        readingTime: '9 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'texas-dangerous-roads',
+        title: 'Most Dangerous Roads in Texas',
+        description: 'Texas highways with the highest accident rates and fatalities.',
+        readingTime: '9 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'florida-dangerous-roads',
+        title: 'Most Dangerous Roads in Florida',
+        description: 'Florida\'s deadliest highways and intersections explained.',
+        readingTime: '9 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'highway-accident-survival',
+        title: 'Highway Accident Survival Guide',
+        description: 'What to do if you\'re in an accident on a dangerous highway.',
+        readingTime: '8 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'intersection-accident-claims',
+        title: 'Intersection Accident Claims',
+        description: 'How dangerous intersections affect your accident claim.',
+        readingTime: '7 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'new-york-dangerous-roads',
+        title: 'Most Dangerous Roads in New York',
+        description: 'High-risk highways and intersections in the Empire State.',
+        readingTime: '8 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'arizona-dangerous-roads',
+        title: 'Most Dangerous Roads in Arizona',
+        description: 'Arizona\'s deadliest roadways from Phoenix to Tucson.',
+        readingTime: '8 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'georgia-dangerous-roads',
+        title: 'Most Dangerous Roads in Georgia',
+        description: 'Atlanta\'s notorious highways and Georgia\'s high-risk roads.',
+        readingTime: '8 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'illinois-dangerous-roads',
+        title: 'Most Dangerous Roads in Illinois',
+        description: 'Chicago-area expressways and Illinois highway accident hotspots.',
+        readingTime: '8 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'rural-road-dangers',
+        title: 'Rural Road Accident Risks',
+        description: 'Why rural roads are more dangerous than you think.',
+        readingTime: '7 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'construction-zone-accidents',
+        title: 'Construction Zone Accidents',
+        description: 'Navigating work zones and your rights after a construction zone crash.',
+        readingTime: '7 min read',
+        priority: 'P2'
+      }
+    ],
+    faqs: [
+      {
+        question: 'What is the most dangerous highway in America?',
+        answer: 'I-95 consistently ranks as one of the deadliest, spanning from Miami to Maine. In terms of fatality rate per mile, I-4 in Florida and I-10 in Texas also rank extremely high. Rural interstates often have higher death rates due to speed and distance from trauma centers.'
+      },
+      {
+        question: 'Does where an accident happens affect my claim?',
+        answer: 'Yes. Accidents in known dangerous areas can help establish negligence (e.g., a city knew about a dangerous intersection). Traffic camera footage, road condition reports, and accident history can all strengthen your claim.'
+      },
+      {
+        question: 'Can I sue a city for a dangerous road?',
+        answer: 'Potentially, yes. If a road defect, poor signage, or known dangerous condition contributed to your accident, you may have a claim against the government entity responsible. These claims have strict notice requirements and shorter deadlines.'
+      },
+      {
+        question: 'Why do some intersections have so many accidents?',
+        answer: 'Common factors include: poor visibility, confusing lane markings, short yellow light timing, lack of turn signals, high traffic volume, and poor road design. Many dangerous intersections have been known problems for years.'
+      }
+    ]
+  },
+  {
+    slug: 'weather-driving',
+    title: 'Weather & Seasonal Driving Guide',
+    shortTitle: 'Weather Driving',
+    description: 'How weather conditions affect accident risk, fault determination, and your insurance claim. Regional guides for rain, snow, fog, and extreme conditions.',
+    icon: CloudRain,
+    color: 'sky',
+    articles: [
+      {
+        slug: 'rain-accident-fault',
+        title: 'Rain Accidents: Who Is at Fault?',
+        description: 'How wet conditions affect fault determination in car accidents.',
+        readingTime: '7 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'hydroplaning-accidents',
+        title: 'Hydroplaning Accidents Explained',
+        description: 'What happens when you hydroplane and how it affects your claim.',
+        readingTime: '7 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'fog-accidents',
+        title: 'Fog-Related Car Accidents',
+        description: 'Driving in fog and liability when visibility is limited.',
+        readingTime: '6 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'ice-snow-accidents',
+        title: 'Ice and Snow Accident Claims',
+        description: 'Fault and claims when winter conditions cause crashes.',
+        readingTime: '8 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'sun-glare-accidents',
+        title: 'Sun Glare Accidents',
+        description: 'When blinding sun contributes to accidents—who is liable?',
+        readingTime: '6 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'florida-rainy-season-driving',
+        title: 'Florida Rainy Season Driving',
+        description: 'Navigating Florida\'s dangerous summer storm season.',
+        readingTime: '8 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'california-wildfire-driving',
+        title: 'Driving During California Wildfires',
+        description: 'Smoke, evacuations, and accident claims during fire season.',
+        readingTime: '7 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'texas-flash-flood-accidents',
+        title: 'Texas Flash Flood Accidents',
+        description: 'Flash floods, road washouts, and liability in Texas.',
+        readingTime: '7 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'hurricane-evacuation-accidents',
+        title: 'Hurricane Evacuation Accidents',
+        description: 'Accidents during mandatory evacuations and who is liable.',
+        readingTime: '7 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'black-ice-accidents',
+        title: 'Black Ice Accidents',
+        description: 'The hidden danger of black ice and accident liability.',
+        readingTime: '6 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'dust-storm-accidents',
+        title: 'Dust Storm Accidents in Arizona',
+        description: 'Haboob safety and liability in Arizona dust storms.',
+        readingTime: '7 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'extreme-heat-tire-blowouts',
+        title: 'Extreme Heat and Tire Blowouts',
+        description: 'Summer heat, tire failures, and accident claims.',
+        readingTime: '6 min read',
+        priority: 'P2'
+      }
+    ],
+    faqs: [
+      {
+        question: 'Am I at fault if I crash in bad weather?',
+        answer: 'Weather itself isn\'t an excuse. Drivers are expected to adjust speed and following distance for conditions. If you were driving too fast for conditions, you can be found at fault even if the weather caused you to lose control.'
+      },
+      {
+        question: 'Can I claim for an accident caused by rain or ice?',
+        answer: 'Yes, but liability depends on the circumstances. Another driver may be at fault if they were driving too fast for conditions. Road authorities can sometimes be liable for failing to treat icy roads or fix drainage issues.'
+      },
+      {
+        question: 'Does weather affect my settlement amount?',
+        answer: 'It can. If weather was a contributing factor and the other driver should have adjusted their driving, it strengthens your case. Insurance adjusters consider whether reasonable precautions were taken.'
+      },
+      {
+        question: 'What if I hit someone because I hydroplaned?',
+        answer: 'You may be found at fault. Courts generally hold that drivers should slow down in wet conditions. However, if a road defect (poor drainage, standing water) contributed, you might have a claim against the road authority.'
+      }
+    ]
+  },
+  {
+    slug: 'state-insurance-laws',
+    title: 'State Insurance Laws Guide',
+    shortTitle: 'State Laws',
+    description: 'Car insurance laws vary dramatically by state. Understand your state\'s fault system, minimum coverage requirements, and how local laws affect your accident claim.',
+    icon: Gavel,
+    color: 'indigo',
+    articles: [
+      {
+        slug: 'at-fault-vs-no-fault-explained',
+        title: 'At-Fault vs No-Fault States Explained',
+        description: 'Complete breakdown of how your state\'s system works.',
+        readingTime: '10 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'comparative-negligence-states',
+        title: 'Comparative Negligence by State',
+        description: 'How fault percentages affect your claim in each state.',
+        readingTime: '9 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'california-car-accident-laws',
+        title: 'California Car Accident Laws',
+        description: 'Complete guide to California\'s insurance and accident laws.',
+        readingTime: '10 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'texas-car-accident-laws',
+        title: 'Texas Car Accident Laws',
+        description: 'Texas insurance requirements and fault rules explained.',
+        readingTime: '10 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'florida-car-accident-laws',
+        title: 'Florida Car Accident Laws',
+        description: 'Florida\'s no-fault system and PIP requirements.',
+        readingTime: '10 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'new-york-car-accident-laws',
+        title: 'New York Car Accident Laws',
+        description: 'NY\'s no-fault insurance and serious injury threshold.',
+        readingTime: '9 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'minimum-coverage-by-state',
+        title: 'Minimum Insurance Coverage by State',
+        description: 'State-by-state breakdown of required insurance limits.',
+        readingTime: '8 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'statute-of-limitations-by-state',
+        title: 'Accident Lawsuit Deadlines by State',
+        description: 'How long you have to file a claim in each state.',
+        readingTime: '8 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'georgia-car-accident-laws',
+        title: 'Georgia Car Accident Laws',
+        description: 'Georgia\'s modified comparative fault and insurance rules.',
+        readingTime: '9 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'arizona-car-accident-laws',
+        title: 'Arizona Car Accident Laws',
+        description: 'Arizona\'s pure comparative negligence system.',
+        readingTime: '9 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'illinois-car-accident-laws',
+        title: 'Illinois Car Accident Laws',
+        description: 'Illinois fault rules and insurance requirements.',
+        readingTime: '9 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'ohio-car-accident-laws',
+        title: 'Ohio Car Accident Laws',
+        description: 'Ohio\'s modified comparative negligence rules.',
+        readingTime: '9 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'uninsured-motorist-laws',
+        title: 'Uninsured Motorist Coverage by State',
+        description: 'Which states require UM coverage and what it means for you.',
+        readingTime: '8 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'pip-coverage-by-state',
+        title: 'PIP Coverage Requirements by State',
+        description: 'Personal Injury Protection rules in no-fault states.',
+        readingTime: '8 min read',
+        priority: 'P2'
+      }
+    ],
+    faqs: [
+      {
+        question: 'What is the difference between at-fault and no-fault states?',
+        answer: 'In at-fault (tort) states, the driver who caused the accident pays for damages through their liability insurance. In no-fault states, each driver\'s own insurance pays their medical bills regardless of fault, with lawsuits limited to serious injuries.'
+      },
+      {
+        question: 'Which states are no-fault?',
+        answer: 'Florida, Michigan, New Jersey, New York, Pennsylvania, Hawaii, Kansas, Kentucky, Massachusetts, Minnesota, North Dakota, and Utah have no-fault systems. Puerto Rico also uses no-fault. Requirements and thresholds vary by state.'
+      },
+      {
+        question: 'Can I sue in a no-fault state?',
+        answer: 'Yes, but only if injuries meet a threshold. States use either a monetary threshold (medical bills exceed a certain amount) or verbal threshold (specific serious injuries like fractures, permanent injury, or disfigurement).'
+      },
+      {
+        question: 'How does comparative negligence affect my claim?',
+        answer: 'In pure comparative states, you can recover damages minus your fault percentage (even at 99% fault). In modified comparative states, you can\'t recover if you\'re more than 50% (or 51%) at fault. A few states still use contributory negligence where any fault bars recovery.'
+      },
+      {
+        question: 'What is the statute of limitations for car accidents?',
+        answer: 'Most states allow 2-3 years to file a lawsuit after a car accident. Some states have shorter deadlines (1 year in Kentucky and Louisiana). Claims against government entities often have much shorter notice requirements (sometimes 30-180 days).'
       }
     ]
   }

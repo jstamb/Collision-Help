@@ -631,29 +631,52 @@ export default async function CityPage({ params }: PageProps) {
                   </div>
                 )}
 
-                {/* Related Guides */}
+                {/* Location-Relevant Guides */}
                 <div className="bg-white rounded-xl p-6 shadow-sm">
                   <h3 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
                     <BookOpen className="w-5 h-5 text-brand-600" />
-                    Related Guides
+                    {state.name} Accident Guides
                   </h3>
                   <p className="text-sm text-slate-600 mb-4">
-                    Learn more about handling specific accident situations:
+                    Essential reading for {city.name} drivers:
                   </p>
                   <div className="space-y-2">
-                    {pillars.slice(0, 6).map(pillar => {
-                      const PillarIcon = pillar.icon
-                      return (
-                        <Link
-                          key={pillar.slug}
-                          href={`/guides/${pillar.slug}`}
-                          className="flex items-center gap-3 p-2 rounded hover:bg-slate-50 transition-colors group"
-                        >
-                          <PillarIcon className="w-4 h-4 text-slate-400 group-hover:text-brand-600" />
-                          <span className="text-sm text-slate-700 group-hover:text-brand-600">{pillar.shortTitle}</span>
-                        </Link>
+                    {/* Location-specific pillars first */}
+                    {(() => {
+                      const locationPillars = pillars.filter(p =>
+                        ['dangerous-roads', 'weather-driving', 'state-insurance-laws'].includes(p.slug)
                       )
-                    })}
+                      const otherPillars = pillars.filter(p =>
+                        !['dangerous-roads', 'weather-driving', 'state-insurance-laws'].includes(p.slug)
+                      ).slice(0, 3)
+                      const combinedPillars = [...locationPillars, ...otherPillars]
+
+                      return combinedPillars.map(pillar => {
+                        const PillarIcon = pillar.icon
+                        // Find state-specific article if exists
+                        const stateArticle = pillar.articles.find(a =>
+                          a.slug.includes(stateSlug) ||
+                          a.slug.includes(state.name.toLowerCase().replace(' ', '-'))
+                        )
+                        const linkHref = stateArticle
+                          ? `/guides/${pillar.slug}/${stateArticle.slug}`
+                          : `/guides/${pillar.slug}`
+                        const linkText = stateArticle
+                          ? stateArticle.title.replace('Most Dangerous Roads in ', '').replace(' Car Accident Laws', ' Laws')
+                          : pillar.shortTitle
+
+                        return (
+                          <Link
+                            key={pillar.slug}
+                            href={linkHref}
+                            className="flex items-center gap-3 p-2 rounded hover:bg-slate-50 transition-colors group"
+                          >
+                            <PillarIcon className="w-4 h-4 text-slate-400 group-hover:text-brand-600" />
+                            <span className="text-sm text-slate-700 group-hover:text-brand-600">{linkText}</span>
+                          </Link>
+                        )
+                      })
+                    })()}
                   </div>
                   <Link
                     href="/guides"
