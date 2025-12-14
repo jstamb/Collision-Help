@@ -1191,3 +1191,595 @@ export async function sendCallbackConfirmationEmail(data: {
     return false
   }
 }
+
+// Settlement Calculator Email Types
+interface SettlementCalculatorEmailData {
+  id: string
+  contact: {
+    name: string
+    email: string
+    phone: string
+    state: string
+  }
+  calculation: {
+    totalEconomicDamages: number
+    medicalExpenses: number
+    lostIncome: number
+    propertyDamage: number
+    painSufferingLow: number
+    painSufferingHigh: number
+    totalSettlementLow: number
+    totalSettlementHigh: number
+    faultReduction: number
+    multiplierLow: number
+    multiplierHigh: number
+    severityLabel: string
+  }
+  inputs: {
+    medicalBills: string
+    futureMedical: string
+    lostWages: string
+    futureLostWages: string
+    propertyDamage: string
+    injurySeverity: string
+    atFault: string
+  }
+  createdAt: string
+}
+
+// Admin notification for settlement calculator
+export async function sendSettlementCalculatorAdminEmail(
+  data: SettlementCalculatorEmailData
+): Promise<boolean> {
+  if (!process.env.RESEND_API_KEY) {
+    console.error('Missing RESEND_API_KEY')
+    return false
+  }
+
+  const { contact, calculation, inputs } = data
+  const firstName = contact.name.split(' ')[0]
+
+  // Determine lead quality based on settlement estimate
+  let leadGrade = 'C'
+  let gradeColor = '#f59e0b'
+  let gradeLabel = 'MODERATE VALUE'
+
+  if (calculation.totalSettlementHigh >= 100000) {
+    leadGrade = 'A'
+    gradeColor = '#22c55e'
+    gradeLabel = 'HIGH VALUE'
+  } else if (calculation.totalSettlementHigh >= 50000) {
+    leadGrade = 'B'
+    gradeColor = '#3b82f6'
+    gradeLabel = 'GOOD VALUE'
+  } else if (calculation.totalSettlementHigh < 15000) {
+    leadGrade = 'D'
+    gradeColor = '#ef4444'
+    gradeLabel = 'LOW VALUE'
+  }
+
+  const faultLabels: Record<string, string> = {
+    'not_at_fault': 'Not At Fault',
+    'partial': 'Partial Fault',
+    'mostly': 'Mostly At Fault'
+  }
+
+  const html = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Settlement Calculator Lead - Collision Help</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f1f5f9;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f1f5f9; padding: 40px 20px;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+
+          <!-- Header with Lead Grade -->
+          <tr>
+            <td style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); padding: 30px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <h1 style="margin: 0; color: #ffffff; font-size: 24px; font-weight: 700;">
+                      Settlement Calculator Lead
+                    </h1>
+                    <p style="margin: 8px 0 0 0; color: #94a3b8; font-size: 14px;">
+                      ${new Date(data.createdAt).toLocaleString('en-US', {
+                        weekday: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit'
+                      })}
+                    </p>
+                  </td>
+                  <td align="right" valign="top">
+                    <div style="display: inline-block; background-color: ${gradeColor}; color: #ffffff; font-size: 32px; font-weight: 800; padding: 12px 24px; border-radius: 12px; text-align: center;">
+                      ${leadGrade}
+                      <div style="font-size: 10px; font-weight: 600; letter-spacing: 1px; margin-top: 2px;">${gradeLabel}</div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Settlement Estimate -->
+          <tr>
+            <td style="padding: 24px 40px; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <span style="color: #92400e; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Estimated Settlement Range</span>
+                    <div style="color: #78350f; font-size: 32px; font-weight: 800; margin-top: 4px;">
+                      $${calculation.totalSettlementLow.toLocaleString(undefined, { maximumFractionDigits: 0 })} - $${calculation.totalSettlementHigh.toLocaleString(undefined, { maximumFractionDigits: 0 })}
+                    </div>
+                  </td>
+                  <td align="right" valign="middle">
+                    <span style="display: inline-block; background-color: ${inputs.atFault === 'not_at_fault' ? '#22c55e' : inputs.atFault === 'partial' ? '#f59e0b' : '#ef4444'}; color: #ffffff; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 8px 16px; border-radius: 20px; letter-spacing: 0.5px;">
+                      ${faultLabels[inputs.atFault] || 'Unknown'}
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Contact Info -->
+          <tr>
+            <td style="padding: 30px 40px 20px;">
+              <h2 style="margin: 0 0 16px 0; color: #1e293b; font-size: 18px; font-weight: 600; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px;">
+                Contact Information
+              </h2>
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="50%" style="padding: 8px 0;">
+                    <span style="color: #64748b; font-size: 13px;">Name</span><br>
+                    <strong style="color: #1e293b; font-size: 16px;">${contact.name}</strong>
+                  </td>
+                  <td width="50%" style="padding: 8px 0;">
+                    <span style="color: #64748b; font-size: 13px;">State</span><br>
+                    <strong style="color: #1e293b; font-size: 16px;">${contact.state}</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px 0;">
+                    <span style="color: #64748b; font-size: 13px;">Phone</span><br>
+                    <a href="tel:${contact.phone}" style="color: #0ea5e9; font-size: 16px; font-weight: 600; text-decoration: none;">${contact.phone}</a>
+                  </td>
+                  <td style="padding: 8px 0;">
+                    <span style="color: #64748b; font-size: 13px;">Email</span><br>
+                    <a href="mailto:${contact.email}" style="color: #0ea5e9; font-size: 16px; text-decoration: none;">${contact.email}</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Calculator Inputs -->
+          <tr>
+            <td style="padding: 0 40px 20px;">
+              <h2 style="margin: 0 0 16px 0; color: #1e293b; font-size: 18px; font-weight: 600; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px;">
+                Calculator Inputs
+              </h2>
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="50%" style="padding: 8px 0;">
+                    <span style="color: #64748b; font-size: 13px;">Medical Bills</span><br>
+                    <strong style="color: #1e293b; font-size: 15px;">$${parseFloat(inputs.medicalBills || '0').toLocaleString()}</strong>
+                  </td>
+                  <td width="50%" style="padding: 8px 0;">
+                    <span style="color: #64748b; font-size: 13px;">Future Medical</span><br>
+                    <strong style="color: #1e293b; font-size: 15px;">$${parseFloat(inputs.futureMedical || '0').toLocaleString()}</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px 0;">
+                    <span style="color: #64748b; font-size: 13px;">Lost Wages</span><br>
+                    <strong style="color: #1e293b; font-size: 15px;">$${parseFloat(inputs.lostWages || '0').toLocaleString()}</strong>
+                  </td>
+                  <td style="padding: 8px 0;">
+                    <span style="color: #64748b; font-size: 13px;">Future Lost Wages</span><br>
+                    <strong style="color: #1e293b; font-size: 15px;">$${parseFloat(inputs.futureLostWages || '0').toLocaleString()}</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px 0;">
+                    <span style="color: #64748b; font-size: 13px;">Property Damage</span><br>
+                    <strong style="color: #1e293b; font-size: 15px;">$${parseFloat(inputs.propertyDamage || '0').toLocaleString()}</strong>
+                  </td>
+                  <td style="padding: 8px 0;">
+                    <span style="color: #64748b; font-size: 13px;">Injury Severity</span><br>
+                    <strong style="color: #1e293b; font-size: 15px; text-transform: capitalize;">${inputs.injurySeverity}</strong>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Calculation Breakdown -->
+          <tr>
+            <td style="padding: 0 40px 30px;">
+              <h2 style="margin: 0 0 16px 0; color: #1e293b; font-size: 18px; font-weight: 600; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px;">
+                Calculation Breakdown
+              </h2>
+              <div style="background-color: #f8fafc; border-radius: 8px; padding: 16px;">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td style="padding: 4px 0;">
+                      <span style="color: #64748b; font-size: 13px;">Economic Damages:</span>
+                    </td>
+                    <td align="right">
+                      <strong style="color: #1e293b; font-size: 14px;">$${calculation.totalEconomicDamages.toLocaleString()}</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 4px 0;">
+                      <span style="color: #64748b; font-size: 13px;">Pain & Suffering:</span>
+                    </td>
+                    <td align="right">
+                      <strong style="color: #1e293b; font-size: 14px;">$${calculation.painSufferingLow.toLocaleString(undefined, { maximumFractionDigits: 0 })} - $${calculation.painSufferingHigh.toLocaleString(undefined, { maximumFractionDigits: 0 })}</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 4px 0;">
+                      <span style="color: #64748b; font-size: 13px;">Multiplier Used:</span>
+                    </td>
+                    <td align="right">
+                      <strong style="color: #1e293b; font-size: 14px;">${calculation.multiplierLow}x - ${calculation.multiplierHigh}x</strong>
+                    </td>
+                  </tr>
+                  ${calculation.faultReduction > 0 ? `
+                  <tr>
+                    <td style="padding: 4px 0;">
+                      <span style="color: #ef4444; font-size: 13px;">Fault Reduction:</span>
+                    </td>
+                    <td align="right">
+                      <strong style="color: #ef4444; font-size: 14px;">-${(calculation.faultReduction * 100).toFixed(0)}%</strong>
+                    </td>
+                  </tr>
+                  ` : ''}
+                </table>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color: #1e293b; padding: 20px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <span style="color: #94a3b8; font-size: 12px;">Lead ID: ${data.id}</span><br>
+                    <span style="color: #94a3b8; font-size: 12px;">Source: Settlement Calculator</span>
+                  </td>
+                  <td align="right">
+                    <a href="https://collisionhelp.org" style="color: #0ea5e9; font-size: 12px; text-decoration: none;">Collision Help</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+`
+
+  const subjectLine = `[${leadGrade}] ${contact.name} - ${contact.state} - Settlement: $${calculation.totalSettlementLow.toLocaleString(undefined, { maximumFractionDigits: 0 })}+`
+
+  try {
+    const { data: emailResult, error } = await getResendClient().emails.send({
+      from: 'Collision Help <notifications@collisionhelp.org>',
+      to: ['hello+collisionhelp@stambaughdesigns.co'],
+      subject: subjectLine,
+      html
+    })
+
+    if (error) {
+      console.error('Settlement admin email error:', error)
+      return false
+    }
+
+    console.log('Settlement admin email sent:', emailResult?.id)
+    return true
+  } catch (error) {
+    console.error('Settlement admin email send error:', error)
+    return false
+  }
+}
+
+// User-facing email for Settlement Calculator
+export async function sendSettlementCalculatorUserEmail(
+  data: SettlementCalculatorEmailData
+): Promise<boolean> {
+  if (!process.env.RESEND_API_KEY) {
+    console.error('Missing RESEND_API_KEY')
+    return false
+  }
+
+  const { contact, calculation, inputs } = data
+  const firstName = contact.name.split(' ')[0]
+
+  const severityDescriptions: Record<string, string> = {
+    'minor': 'Minor injuries (soft tissue, bruising)',
+    'moderate': 'Moderate injuries (whiplash, sprains, minor fractures)',
+    'significant': 'Significant injuries (fractures, herniated discs)',
+    'severe': 'Severe injuries (surgery required, extended treatment)',
+    'permanent': 'Permanent/Catastrophic injuries (disability, TBI, spinal cord)'
+  }
+
+  const faultDescriptions: Record<string, string> = {
+    'not_at_fault': 'You indicated that the other driver was fully at fault',
+    'partial': 'You indicated shared fault, which typically reduces settlement by 20-40%',
+    'mostly': 'You indicated you were mostly at fault, which significantly limits recovery'
+  }
+
+  const html = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Settlement Estimate - Collision Help</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f1f5f9;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f1f5f9; padding: 40px 20px;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+
+          <!-- Header -->
+          <tr>
+            <td style="background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); padding: 30px 40px; text-align: center;">
+              <h1 style="margin: 0; color: #ffffff; font-size: 24px; font-weight: 700;">
+                Your Settlement Estimate Report
+              </h1>
+              <p style="margin: 8px 0 0 0; color: #e0f2fe; font-size: 14px;">
+                Prepared for ${firstName} on ${new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+              </p>
+            </td>
+          </tr>
+
+          <!-- Introduction -->
+          <tr>
+            <td style="padding: 30px 40px;">
+              <p style="margin: 0 0 16px 0; color: #334155; font-size: 16px; line-height: 1.6;">
+                Hi ${firstName},
+              </p>
+              <p style="margin: 0 0 16px 0; color: #334155; font-size: 16px; line-height: 1.6;">
+                Thank you for using our Settlement Calculator. Based on the information you provided, here's an estimate of what your car accident claim may be worth.
+              </p>
+              <p style="margin: 0; color: #64748b; font-size: 14px; font-style: italic;">
+                Please note: This is an estimate only. Actual settlements vary based on many factors including jurisdiction, insurance limits, and case-specific circumstances.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Settlement Estimate Box -->
+          <tr>
+            <td style="padding: 0 40px 30px;">
+              <div style="background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); border-radius: 12px; padding: 24px; text-align: center;">
+                <span style="color: #e0f2fe; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Estimated Settlement Range</span>
+                <div style="color: #ffffff; font-size: 36px; font-weight: 800; margin-top: 8px;">
+                  $${calculation.totalSettlementLow.toLocaleString(undefined, { maximumFractionDigits: 0 })} - $${calculation.totalSettlementHigh.toLocaleString(undefined, { maximumFractionDigits: 0 })}
+                </div>
+                ${calculation.faultReduction > 0 ? `
+                <p style="margin: 8px 0 0 0; color: #bae6fd; font-size: 13px;">
+                  Adjusted for ${(calculation.faultReduction * 100).toFixed(0)}% shared fault reduction
+                </p>
+                ` : ''}
+              </div>
+            </td>
+          </tr>
+
+          <!-- Your Information -->
+          <tr>
+            <td style="padding: 0 40px 24px;">
+              <h2 style="margin: 0 0 16px 0; color: #1e293b; font-size: 18px; font-weight: 600; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px;">
+                Information You Provided
+              </h2>
+
+              <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 16px;">
+                <tr>
+                  <td width="50%" style="padding: 12px; background-color: #f8fafc; border-radius: 8px 0 0 0;">
+                    <span style="color: #64748b; font-size: 12px; text-transform: uppercase;">Medical Bills</span><br>
+                    <strong style="color: #1e293b; font-size: 16px;">$${parseFloat(inputs.medicalBills || '0').toLocaleString()}</strong>
+                  </td>
+                  <td width="50%" style="padding: 12px; background-color: #f8fafc; border-radius: 0 8px 0 0;">
+                    <span style="color: #64748b; font-size: 12px; text-transform: uppercase;">Future Medical</span><br>
+                    <strong style="color: #1e293b; font-size: 16px;">$${parseFloat(inputs.futureMedical || '0').toLocaleString()}</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 12px; background-color: #f8fafc;">
+                    <span style="color: #64748b; font-size: 12px; text-transform: uppercase;">Lost Wages</span><br>
+                    <strong style="color: #1e293b; font-size: 16px;">$${parseFloat(inputs.lostWages || '0').toLocaleString()}</strong>
+                  </td>
+                  <td style="padding: 12px; background-color: #f8fafc;">
+                    <span style="color: #64748b; font-size: 12px; text-transform: uppercase;">Property Damage</span><br>
+                    <strong style="color: #1e293b; font-size: 16px;">$${parseFloat(inputs.propertyDamage || '0').toLocaleString()}</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 12px; background-color: #f8fafc; border-radius: 0 0 0 8px;">
+                    <span style="color: #64748b; font-size: 12px; text-transform: uppercase;">Injury Type</span><br>
+                    <strong style="color: #1e293b; font-size: 14px;">${severityDescriptions[inputs.injurySeverity] || 'Not specified'}</strong>
+                  </td>
+                  <td style="padding: 12px; background-color: #f8fafc; border-radius: 0 0 8px 0;">
+                    <span style="color: #64748b; font-size: 12px; text-transform: uppercase;">State</span><br>
+                    <strong style="color: #1e293b; font-size: 16px;">${contact.state}</strong>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- How We Calculated -->
+          <tr>
+            <td style="padding: 0 40px 24px;">
+              <h2 style="margin: 0 0 16px 0; color: #1e293b; font-size: 18px; font-weight: 600; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px;">
+                How We Calculated Your Estimate
+              </h2>
+
+              <div style="background-color: #f8fafc; border-radius: 8px; padding: 16px; margin-bottom: 16px;">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td style="padding: 6px 0;">
+                      <span style="color: #475569; font-size: 14px;">Total Economic Damages</span>
+                    </td>
+                    <td align="right">
+                      <strong style="color: #1e293b; font-size: 14px;">$${calculation.totalEconomicDamages.toLocaleString()}</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 6px 0;">
+                      <span style="color: #475569; font-size: 14px;">Pain & Suffering Multiplier</span>
+                    </td>
+                    <td align="right">
+                      <strong style="color: #1e293b; font-size: 14px;">${calculation.multiplierLow}x - ${calculation.multiplierHigh}x</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 6px 0;">
+                      <span style="color: #475569; font-size: 14px;">Estimated Pain & Suffering</span>
+                    </td>
+                    <td align="right">
+                      <strong style="color: #1e293b; font-size: 14px;">$${calculation.painSufferingLow.toLocaleString(undefined, { maximumFractionDigits: 0 })} - $${calculation.painSufferingHigh.toLocaleString(undefined, { maximumFractionDigits: 0 })}</strong>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <p style="margin: 0; color: #64748b; font-size: 14px; line-height: 1.6;">
+                ${faultDescriptions[inputs.atFault] || 'Fault was not specified.'}
+              </p>
+            </td>
+          </tr>
+
+          <!-- Important Next Steps -->
+          <tr>
+            <td style="padding: 0 40px 24px;">
+              <h2 style="margin: 0 0 16px 0; color: #1e293b; font-size: 18px; font-weight: 600; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px;">
+                Important Next Steps
+              </h2>
+
+              <div style="margin-bottom: 16px;">
+                <h3 style="margin: 0 0 8px 0; color: #334155; font-size: 15px; font-weight: 600;">
+                  1. Document Everything
+                </h3>
+                <p style="margin: 0; color: #64748b; font-size: 14px; line-height: 1.5;">
+                  Keep copies of all medical bills, treatment records, pay stubs showing lost wages, and receipts for any accident-related expenses.
+                </p>
+              </div>
+
+              <div style="margin-bottom: 16px;">
+                <h3 style="margin: 0 0 8px 0; color: #334155; font-size: 15px; font-weight: 600;">
+                  2. Don't Accept the First Offer
+                </h3>
+                <p style="margin: 0; color: #64748b; font-size: 14px; line-height: 1.5;">
+                  Insurance companies typically offer 25-50% less than fair value initially. Use your estimate as a starting point for negotiations.
+                </p>
+              </div>
+
+              <div style="margin-bottom: 16px;">
+                <h3 style="margin: 0 0 8px 0; color: #334155; font-size: 15px; font-weight: 600;">
+                  3. Wait for Maximum Medical Improvement
+                </h3>
+                <p style="margin: 0; color: #64748b; font-size: 14px; line-height: 1.5;">
+                  Don't settle until you know the full extent of your injuries. Future medical costs should be included in your claim.
+                </p>
+              </div>
+
+              <div>
+                <h3 style="margin: 0 0 8px 0; color: #334155; font-size: 15px; font-weight: 600;">
+                  4. Consider a Free Legal Consultation
+                </h3>
+                <p style="margin: 0; color: #64748b; font-size: 14px; line-height: 1.5;">
+                  Personal injury attorneys work on contingency and can often increase settlement amounts by 3-4x, even after their fee.
+                </p>
+              </div>
+            </td>
+          </tr>
+
+          ${calculation.totalSettlementHigh >= 25000 ? `
+          <!-- CTA for Higher Value Cases -->
+          <tr>
+            <td style="padding: 0 40px 30px;">
+              <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); border-radius: 12px; padding: 24px; text-align: center;">
+                <h3 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 600;">
+                  Your Case May Benefit From Professional Help
+                </h3>
+                <p style="margin: 0 0 16px 0; color: #94a3b8; font-size: 14px;">
+                  Based on your estimated settlement range, speaking with a personal injury attorney could help ensure you receive fair compensation.
+                </p>
+                <a href="https://collisionhelp.org/guides/claims-process/when-to-hire-attorney" style="display: inline-block; background-color: #0ea5e9; color: #ffffff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px;">
+                  Learn About Your Options
+                </a>
+              </div>
+            </td>
+          </tr>
+          ` : ''}
+
+          <!-- Disclaimer -->
+          <tr>
+            <td style="padding: 0 40px 30px;">
+              <div style="background-color: #fef3c7; border-radius: 8px; padding: 16px; border-left: 4px solid #f59e0b;">
+                <p style="margin: 0; color: #92400e; font-size: 13px; line-height: 1.5;">
+                  <strong>Disclaimer:</strong> This estimate is for informational purposes only and should not be considered legal or financial advice. Actual settlement amounts vary significantly based on jurisdiction, insurance policy limits, evidence, negotiation skills, and case-specific factors. Consult with a licensed attorney for professional case evaluation.
+                </p>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color: #1e293b; padding: 24px 40px; text-align: center;">
+              <a href="https://collisionhelp.org" style="color: #ffffff; font-size: 16px; text-decoration: none; font-weight: 600;">Collision Help</a>
+              <p style="margin: 8px 0 0 0; color: #94a3b8; font-size: 12px;">
+                Helping accident victims navigate the claims process
+              </p>
+            </td>
+          </tr>
+
+        </table>
+
+        <!-- Unsubscribe Footer -->
+        <p style="margin: 24px 0 0 0; color: #94a3b8; font-size: 11px; text-align: center;">
+          You received this email because you requested a settlement estimate from Collision Help.
+        </p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+`
+
+  try {
+    const { data: emailResult, error } = await getResendClient().emails.send({
+      from: 'Collision Help <reports@collisionhelp.org>',
+      to: [contact.email],
+      subject: `Your Settlement Estimate: $${calculation.totalSettlementLow.toLocaleString(undefined, { maximumFractionDigits: 0 })} - $${calculation.totalSettlementHigh.toLocaleString(undefined, { maximumFractionDigits: 0 })}`,
+      html
+    })
+
+    if (error) {
+      console.error('Settlement user email error:', error)
+      return false
+    }
+
+    console.log('Settlement user email sent:', emailResult?.id)
+    return true
+  } catch (error) {
+    console.error('Settlement user email send error:', error)
+    return false
+  }
+}

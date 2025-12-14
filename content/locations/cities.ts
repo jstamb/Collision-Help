@@ -10957,6 +10957,131 @@ export const vermontCities: CityData[] = [
   }
 ];
 
+// District of Columbia
+export const dcCities: CityData[] = [
+  {
+    slug: "washington",
+    name: "Washington",
+    state: "district-of-columbia",
+    stateAbbreviation: "DC",
+    population: 689545,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 495 (Capital Beltway)",
+        description: "Major beltway surrounding Washington DC, shared with Virginia and Maryland",
+        accidentHotspots: ["Mixing Bowl (Springfield)", "Wilson Bridge", "Bethesda/Silver Spring"]
+      },
+      {
+        name: "Interstate 395",
+        description: "Primary route from Virginia into downtown DC",
+        accidentHotspots: ["14th Street Bridge", "Southwest Waterfront", "Pentagon area"]
+      },
+      {
+        name: "Interstate 295",
+        description: "Eastern route connecting to Baltimore and Anacostia",
+        accidentHotspots: ["Anacostia Freeway", "DC/Maryland line", "Benning Road"]
+      },
+      {
+        name: "US Route 50",
+        description: "East-west corridor connecting to Annapolis and Virginia",
+        accidentHotspots: ["New York Avenue", "Bladensburg", "Capitol Hill approach"]
+      },
+      {
+        name: "Rock Creek Parkway",
+        description: "Scenic route through Rock Creek Park with rush hour restrictions",
+        accidentHotspots: ["Beach Drive intersections", "Woodley Park", "Kennedy Center area"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown/Penn Quarter", characteristics: "Government buildings, tourist traffic, Metro heavy" },
+      { name: "Capitol Hill", characteristics: "Congressional offices, Supreme Court, narrow streets" },
+      { name: "Georgetown", characteristics: "Historic narrow streets, university traffic, no Metro" },
+      { name: "Dupont Circle", characteristics: "Embassies, busy roundabout, heavy pedestrian traffic" },
+      { name: "Adams Morgan", characteristics: "Nightlife district, weekend congestion, limited parking" },
+      { name: "Navy Yard/Capitol Riverfront", characteristics: "Rapidly developing, stadium events, construction zones" },
+      { name: "Anacostia", characteristics: "Southeast DC, different traffic patterns from Northwest" },
+      { name: "Embassy Row", characteristics: "Massachusetts Avenue, diplomatic vehicles, security checkpoints" }
+    ],
+
+    trafficPatterns: [
+      { type: "Federal Commute", description: "Government workers create 7-9am and 4-6pm rush hours" },
+      { type: "Metro System", description: "Many commute by Metro but still heavy surface traffic" },
+      { type: "Motorcade Disruptions", description: "Presidential and diplomatic motorcades close streets" },
+      { type: "Tourist Traffic", description: "National Mall area congested year-round" },
+      { type: "Event Traffic", description: "Nationals Park, protests, and special events" }
+    ],
+
+    annualAccidents: 18000,
+    accidentYear: 2023,
+    fatalAccidents: 40,
+    commonAccidentTypes: [
+      "Rear-end collisions in heavy traffic",
+      "Roundabout/circle accidents",
+      "Pedestrian strikes in crosswalks",
+      "Cyclist collisions",
+      "Rideshare/taxi incidents",
+      "Government vehicle accidents"
+    ],
+
+    dangerousIntersections: [
+      "Dupont Circle",
+      "Thomas Circle",
+      "Washington Circle",
+      "14th and U Street NW",
+      "New York Avenue and Florida Avenue",
+      "K Street and Connecticut Avenue"
+    ],
+
+    policeNonEmergency: "311 or 202-727-9099",
+
+    introText: "Washington, DC, the nation's capital, presents unique driving challenges with its mix of federal workers, tourists, and residents. The city's famous L'Enfant street plan features numerous traffic circles and diagonal avenues that create complex intersections. Motorcades, protests, and special events frequently disrupt traffic. The Metro system handles many commuters, but surface traffic remains heavy. Accidents involving federal vehicles, diplomatic cars, and rideshare services add complexity to claims.",
+
+    localConsiderations: [
+      "DC uses contributory negligence - ANY fault on your part may bar recovery entirely",
+      "DC is one of only 4 jurisdictions with pure contributory negligence",
+      "Accidents involving federal vehicles may require claims through the Federal Tort Claims Act",
+      "Diplomatic vehicles may have immunity - document carefully",
+      "DC requires minimum $25k/$50k bodily injury, $10k property damage",
+      "Uninsured motorist coverage is mandatory in DC",
+      "DC Superior Court handles civil traffic matters",
+      "6-month notice requirement for claims against DC government"
+    ],
+
+    weatherFactors: [
+      "Summer thunderstorms cause flash flooding",
+      "Winter ice storms and occasional snow",
+      "Cherry blossom season brings heavy tourist traffic",
+      "Humidity creates slick roads from oil buildup",
+      "Rare but impactful snowstorms shut down the city"
+    ],
+
+    uniqueTrafficLaws: [
+      "No right turn on red at many downtown intersections",
+      "Handheld device use prohibited while driving",
+      "Speed cameras throughout the city",
+      "Red light cameras at major intersections",
+      "Strict school zone enforcement",
+      "HOV restrictions on certain routes"
+    ],
+
+    metaTitle: "Washington DC Car Accident Help | District Insurance Claims Guide",
+    metaDescription: "Washington DC car accident assistance. Navigate DC's strict contributory negligence rules, federal vehicle claims, and get help after a District collision.",
+    keywords: [
+      "Washington DC car accident",
+      "DC car accident lawyer",
+      "District of Columbia accident attorney",
+      "Capitol Hill crash",
+      "federal vehicle accident",
+      "DC insurance claim",
+      "contributory negligence DC",
+      "diplomatic vehicle accident"
+    ]
+  }
+];
+
 // Index of all cities by state
 export const citiesByState: Record<string, CityData[]> = {
   california: californiaCities,
@@ -11009,6 +11134,7 @@ export const citiesByState: Record<string, CityData[]> = {
   "south-dakota": southDakotaCities,
   alaska: alaskaCities,
   vermont: vermontCities,
+  "district-of-columbia": dcCities,
 };
 
 // Helper function to get a city by state and slug

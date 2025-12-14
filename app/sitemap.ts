@@ -46,12 +46,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.3,
     },
+    {
+      url: `${BASE_URL}/glossary`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/resources`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ]
 
   // Tools pages
   const toolPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE_URL}/tools/total-loss-calculator`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/tools/settlement-calculator`,
       lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.8,

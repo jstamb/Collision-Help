@@ -2,7 +2,7 @@ import React from 'react'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { pillars, getPillar, getArticle } from '@/content/guides/pillars'
+import { pillars, getPillar, getArticle, Pillar } from '@/content/guides/pillars'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import Breadcrumbs from '@/components/layout/Breadcrumbs'
@@ -10,7 +10,175 @@ import SummaryBox from '@/components/shared/SummaryBox'
 import CTABanner from '@/components/shared/CTABanner'
 import ArticleContent from '@/components/guides/ArticleContent'
 import { getArticleContent, extractHeadings, TOCItem } from '@/lib/content'
-import { ArrowRight, ArrowLeft, Clock, Calendar, BookOpen } from 'lucide-react'
+import { ArrowRight, ArrowLeft, Clock, Calendar, BookOpen, ExternalLink } from 'lucide-react'
+
+// Cross-pillar article relationships based on topic overlap
+const crossPillarLinks: Record<string, { pillar: string; articles: string[] }[]> = {
+  // Total Loss Dispute links
+  'total-loss-dispute/how-insurance-calculates-total-loss': [
+    { pillar: 'insurance-claims', articles: ['filing-claim-step-by-step'] },
+    { pillar: 'state-insurance-laws', articles: ['at-fault-vs-no-fault-explained'] }
+  ],
+  'total-loss-dispute/dispute-total-loss-valuation': [
+    { pillar: 'insurance-claims', articles: ['insurance-claim-denied'] },
+    { pillar: 'repair-rights', articles: ['repair-estimate-too-low'] }
+  ],
+  'total-loss-dispute/gap-insurance-explained': [
+    { pillar: 'insurance-claims', articles: ['filing-claim-step-by-step'] },
+    { pillar: 'state-insurance-laws', articles: ['minimum-coverage-by-state'] }
+  ],
+  // Insurance Claims links
+  'insurance-claims/what-to-do-after-accident': [
+    { pillar: 'fault-determination', articles: ['dispute-fault-determination'] },
+    { pillar: 'accident-injuries', articles: ['delayed-injury-symptoms', 'seeking-medical-treatment'] }
+  ],
+  'insurance-claims/filing-claim-step-by-step': [
+    { pillar: 'total-loss-dispute', articles: ['how-insurance-calculates-total-loss'] },
+    { pillar: 'repair-rights', articles: ['choose-your-own-shop'] }
+  ],
+  'insurance-claims/how-long-insurance-claim-takes': [
+    { pillar: 'repair-rights', articles: ['supplemental-claims'] },
+    { pillar: 'state-insurance-laws', articles: ['statute-of-limitations-by-state'] }
+  ],
+  'insurance-claims/dealing-with-other-drivers-insurance': [
+    { pillar: 'fault-determination', articles: ['at-fault-vs-no-fault-states'] },
+    { pillar: 'state-insurance-laws', articles: ['uninsured-motorist-laws'] }
+  ],
+  // Repair Rights links
+  'repair-rights/oem-vs-aftermarket-parts': [
+    { pillar: 'total-loss-dispute', articles: ['dispute-total-loss-valuation'] },
+    { pillar: 'insurance-claims', articles: ['documenting-accident-damage'] }
+  ],
+  'repair-rights/repair-estimate-too-low': [
+    { pillar: 'total-loss-dispute', articles: ['negotiate-total-loss-settlement'] },
+    { pillar: 'insurance-claims', articles: ['insurance-claim-denied'] }
+  ],
+  // Fault Determination links
+  'fault-determination/at-fault-vs-no-fault-states': [
+    { pillar: 'state-insurance-laws', articles: ['at-fault-vs-no-fault-explained', 'pip-coverage-by-state'] },
+    { pillar: 'insurance-claims', articles: ['dealing-with-other-drivers-insurance'] }
+  ],
+  'fault-determination/fault-percentage-explained': [
+    { pillar: 'state-insurance-laws', articles: ['comparative-negligence-states'] },
+    { pillar: 'accident-injuries', articles: ['pain-and-suffering'] }
+  ],
+  // Rear-End Collisions links
+  'rear-end-collisions/rear-end-collision-fault': [
+    { pillar: 'fault-determination', articles: ['fault-percentage-explained'] },
+    { pillar: 'accident-injuries', articles: ['whiplash-treatment'] }
+  ],
+  'rear-end-collisions/whiplash-claims': [
+    { pillar: 'accident-injuries', articles: ['common-car-accident-injuries', 'delayed-injury-symptoms'] },
+    { pillar: 'insurance-claims', articles: ['how-long-insurance-claim-takes'] }
+  ],
+  // Accident Injuries links
+  'accident-injuries/common-car-accident-injuries': [
+    { pillar: 'rear-end-collisions', articles: ['whiplash-claims'] },
+    { pillar: 'insurance-claims', articles: ['what-to-do-after-accident'] }
+  ],
+  'accident-injuries/delayed-injury-symptoms': [
+    { pillar: 'insurance-claims', articles: ['documenting-accident-damage'] },
+    { pillar: 'rear-end-collisions', articles: ['low-speed-rear-end'] }
+  ],
+  'accident-injuries/pain-and-suffering': [
+    { pillar: 'state-insurance-laws', articles: ['comparative-negligence-states'] },
+    { pillar: 'fault-determination', articles: ['fault-percentage-explained'] }
+  ],
+  // Hit-and-Run links
+  'hit-and-run/what-to-do-hit-and-run': [
+    { pillar: 'insurance-claims', articles: ['filing-claim-step-by-step'] },
+    { pillar: 'state-insurance-laws', articles: ['uninsured-motorist-laws'] }
+  ],
+  'hit-and-run/uninsured-motorist-hit-and-run': [
+    { pillar: 'state-insurance-laws', articles: ['uninsured-motorist-laws', 'minimum-coverage-by-state'] },
+    { pillar: 'insurance-claims', articles: ['dealing-with-other-drivers-insurance'] }
+  ],
+  // T-Bone links
+  't-bone-accidents/t-bone-collision-fault': [
+    { pillar: 'fault-determination', articles: ['fault-percentage-explained', 'dispute-fault-determination'] },
+    { pillar: 'insurance-claims', articles: ['documenting-accident-damage'] }
+  ],
+  't-bone-accidents/side-impact-injuries': [
+    { pillar: 'accident-injuries', articles: ['common-car-accident-injuries', 'traumatic-brain-injury'] },
+    { pillar: 'insurance-claims', articles: ['what-to-do-after-accident'] }
+  ],
+  // Commercial Vehicle links
+  'commercial-vehicle/uber-lyft-accidents': [
+    { pillar: 'insurance-claims', articles: ['dealing-with-other-drivers-insurance'] },
+    { pillar: 'accident-injuries', articles: ['seeking-medical-treatment'] }
+  ],
+  'commercial-vehicle/hit-by-commercial-truck': [
+    { pillar: 'fault-determination', articles: ['fault-percentage-explained'] },
+    { pillar: 'state-insurance-laws', articles: ['statute-of-limitations-by-state'] }
+  ],
+  // State Insurance Laws links
+  'state-insurance-laws/at-fault-vs-no-fault-explained': [
+    { pillar: 'fault-determination', articles: ['at-fault-vs-no-fault-states'] },
+    { pillar: 'insurance-claims', articles: ['dealing-with-other-drivers-insurance'] }
+  ],
+  'state-insurance-laws/comparative-negligence-states': [
+    { pillar: 'fault-determination', articles: ['fault-percentage-explained'] },
+    { pillar: 'accident-injuries', articles: ['pain-and-suffering'] }
+  ],
+  'state-insurance-laws/uninsured-motorist-laws': [
+    { pillar: 'hit-and-run', articles: ['uninsured-motorist-hit-and-run'] },
+    { pillar: 'insurance-claims', articles: ['dealing-with-other-drivers-insurance'] }
+  ],
+  // Weather Driving links
+  'weather-driving/rain-accident-fault': [
+    { pillar: 'fault-determination', articles: ['fault-percentage-explained'] },
+    { pillar: 'insurance-claims', articles: ['what-to-do-after-accident'] }
+  ],
+  'weather-driving/ice-snow-accidents': [
+    { pillar: 'fault-determination', articles: ['dispute-fault-determination'] },
+    { pillar: 'dangerous-roads', articles: ['highway-accident-survival'] }
+  ],
+  // Dangerous Roads links
+  'dangerous-roads/most-dangerous-highways-usa': [
+    { pillar: 'insurance-claims', articles: ['what-to-do-after-accident'] },
+    { pillar: 'weather-driving', articles: ['highway-accident-survival'] }
+  ],
+  'dangerous-roads/intersection-accident-claims': [
+    { pillar: 't-bone-accidents', articles: ['t-bone-collision-fault'] },
+    { pillar: 'fault-determination', articles: ['dispute-fault-determination'] }
+  ]
+}
+
+// Get cross-pillar related articles
+function getCrossPillarArticles(pillarSlug: string, articleSlug: string, currentPillar: Pillar) {
+  const key = `${pillarSlug}/${articleSlug}`
+  const links = crossPillarLinks[key] || []
+
+  const results: { pillar: Pillar; article: { slug: string; title: string; description: string } }[] = []
+
+  links.forEach(link => {
+    const pillar = pillars.find(p => p.slug === link.pillar)
+    if (pillar && pillar.slug !== currentPillar.slug) {
+      link.articles.forEach(articleSlug => {
+        const article = pillar.articles.find(a => a.slug === articleSlug)
+        if (article && results.length < 3) {
+          results.push({ pillar, article })
+        }
+      })
+    }
+  })
+
+  // If we don't have enough cross-pillar links, add some generic related content
+  if (results.length < 2) {
+    // Get articles from other pillars that might be relevant based on common themes
+    const otherPillars = pillars.filter(p => p.slug !== currentPillar.slug)
+    for (const otherPillar of otherPillars) {
+      if (results.length >= 3) break
+      // Get the first P1 article from each pillar
+      const p1Article = otherPillar.articles.find(a => a.priority === 'P1')
+      if (p1Article && !results.some(r => r.pillar.slug === otherPillar.slug && r.article.slug === p1Article.slug)) {
+        results.push({ pillar: otherPillar, article: p1Article })
+      }
+    }
+  }
+
+  return results.slice(0, 3)
+}
 
 // Generate static params for all articles
 export async function generateStaticParams() {
@@ -104,6 +272,7 @@ Consider seeking additional assistance if:
   const prevArticle = currentIndex > 0 ? pillar.articles[currentIndex - 1] : null
   const nextArticle = currentIndex < pillar.articles.length - 1 ? pillar.articles[currentIndex + 1] : null
   const relatedArticles = pillar.articles.filter(a => a.slug !== article.slug).slice(0, 3)
+  const crossPillarArticles = getCrossPillarArticles(params.pillar, params.article, pillar)
 
   // JSON-LD for Article
   const jsonLd = {
@@ -282,6 +451,41 @@ Consider seeking additional assistance if:
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
+
+                {/* Cross-Pillar Related Articles */}
+                {crossPillarArticles.length > 0 && (
+                  <div className="bg-white rounded-xl border border-slate-200 p-5">
+                    <h3 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
+                      <ExternalLink className="w-4 h-4 text-brand-600" />
+                      Related From Other Guides
+                    </h3>
+                    <ul className="space-y-3">
+                      {crossPillarArticles.map(({ pillar: relatedPillar, article: relatedArticle }) => {
+                        const RelatedIcon = relatedPillar.icon
+                        return (
+                          <li key={`${relatedPillar.slug}-${relatedArticle.slug}`}>
+                            <Link
+                              href={`/guides/${relatedPillar.slug}/${relatedArticle.slug}`}
+                              className="group block"
+                            >
+                              <div className="flex items-start gap-2">
+                                <RelatedIcon className="w-4 h-4 text-slate-400 group-hover:text-brand-600 mt-0.5 flex-shrink-0" />
+                                <div>
+                                  <span className="text-sm text-slate-600 group-hover:text-brand-600 transition-colors block">
+                                    {relatedArticle.title}
+                                  </span>
+                                  <span className="text-xs text-slate-400">
+                                    {relatedPillar.shortTitle}
+                                  </span>
+                                </div>
+                              </div>
+                            </Link>
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  </div>
+                )}
 
                 {/* CTA Card */}
                 <div className="bg-gradient-to-br from-brand-600 to-brand-700 rounded-xl p-5 text-white">

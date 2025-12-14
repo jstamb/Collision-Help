@@ -102,8 +102,41 @@ export default function PillarHubPage({ params }: { params: { pillar: string } }
   const otherPillars = pillars.filter(p => p.slug !== pillar.slug).slice(0, 3)
   const featuredCities = getFeaturedCities(pillar.slug, pillar.articles)
 
+  // FAQPage JSON-LD schema for rich snippets
+  const faqJsonLd = pillar.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": pillar.faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  } : null
+
+  // WebPage JSON-LD schema
+  const webPageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": `${pillar.title} | Collision Help`,
+    "description": pillar.description,
+    "url": `https://collisionhelp.org/guides/${pillar.slug}`
+  }
+
   return (
     <>
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
+      />
       <Header />
       <main className="min-h-screen bg-slate-50">
         {/* Hero */}
