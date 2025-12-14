@@ -2,11 +2,11 @@ import React from 'react'
 import type { Metadata } from 'next'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
-import { FileText } from 'lucide-react'
+import { FileText, CheckCircle, AlertTriangle, Scale, Shield, Handshake, Heart, Info, Mail } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Terms of Service | Collision Help',
-  description: 'Terms of Service for Collision Help. Review the terms and conditions for using our car accident assistance website and AI damage analysis services.',
+  description: 'Terms of Service for Collision Help. Review the terms and conditions for using our free car accident assistance website and AI damage analysis services.',
   alternates: {
     canonical: 'https://collisionhelp.org/terms',
   },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 }
 
 export default function TermsOfServicePage() {
-  const lastUpdated = 'December 10, 2025'
+  const lastUpdated = 'December 14, 2025'
 
   return (
     <>
@@ -34,219 +34,320 @@ export default function TermsOfServicePage() {
           </div>
         </section>
 
+        {/* Plain Language Summary */}
+        <section className="py-8 bg-blue-50 border-b border-blue-100">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto">
+              <div className="flex items-center gap-3 mb-4">
+                <Info className="w-6 h-6 text-blue-600" />
+                <h2 className="text-xl font-bold text-slate-900">The Short Version (Plain Language)</h2>
+              </div>
+              <p className="text-slate-600 mb-4">
+                While the full legal terms are below, here&apos;s what you really need to know:
+              </p>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-700"><strong>Free to use</strong> — All our guides, tools, and resources cost nothing</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-700"><strong>Educational only</strong> — We provide info, not legal or insurance advice</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-700"><strong>AI estimates</strong> — Our damage analyzer gives estimates, not guarantees</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-700"><strong>Optional connections</strong> — Attorney referrals only happen if you ask</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Content */}
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto prose prose-slate">
+            <div className="max-w-3xl mx-auto">
 
-              <p className="lead text-lg text-slate-600">
-                Welcome to Collision Help. By accessing or using our website at collisionhelp.org (the "Service"),
-                you agree to be bound by these Terms of Service ("Terms"). Please read them carefully before
-                using our Service.
-              </p>
-
-              <h2>1. Acceptance of Terms</h2>
-              <p>
-                By accessing or using our Service, you acknowledge that you have read, understood, and agree
-                to be bound by these Terms. If you do not agree to these Terms, you may not access or use
-                the Service.
-              </p>
-              <p>
-                We reserve the right to update or modify these Terms at any time. Your continued use of the
-                Service following any changes constitutes acceptance of those changes.
+              <p className="text-lg text-slate-600 mb-8">
+                Welcome to Collision Help. By using our website at collisionhelp.org (the &ldquo;Service&rdquo;),
+                you agree to these Terms of Service. We&apos;ve written these to be as clear as possible while
+                still providing the legal protections our service requires.
               </p>
 
-              <h2>2. Description of Service</h2>
-              <p>
-                Collision Help provides educational information, tools, and resources related to car accidents,
-                insurance claims, and vehicle damage assessment. Our services include:
-              </p>
-              <ul>
-                <li>AI-powered vehicle damage analysis</li>
-                <li>State-specific accident and insurance information</li>
-                <li>Educational guides and resources</li>
-                <li>Tools such as total loss calculators</li>
-                <li>Connection services to legal and insurance professionals</li>
-              </ul>
+              {/* Our Commitment to You */}
+              <div className="bg-green-50 border border-green-200 rounded-xl p-6 mb-10">
+                <div className="flex items-center gap-3 mb-4">
+                  <Heart className="w-6 h-6 text-green-600" />
+                  <h2 className="text-xl font-bold text-slate-900">Our Commitment to You</h2>
+                </div>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-700"><strong>100% Free:</strong> All guides, calculators, and resources are completely free to use</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-700"><strong>No Pressure:</strong> You&apos;re never required to submit your information or request legal help</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-700"><strong>Vetted Attorneys:</strong> If you request help, we only connect you with licensed, experienced professionals</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-700"><strong>No Hidden Costs:</strong> Attorney consultations are free; they work on contingency (no fee unless you win)</span>
+                  </li>
+                </ul>
+              </div>
 
-              <h2>3. Important Disclaimers</h2>
+              <div className="prose prose-slate max-w-none">
 
-              <h3>Not Legal Advice</h3>
-              <p>
-                <strong>The information provided on Collision Help is for general informational purposes only
-                and does not constitute legal advice.</strong> We are not a law firm, and the information on
-                this website should not be relied upon as a substitute for professional legal counsel. Laws
-                vary by state and are subject to change. Always consult with a qualified attorney for advice
-                specific to your situation.
-              </p>
+                {/* Acceptance */}
+                <h2>1. Acceptance of Terms</h2>
+                <p>
+                  By accessing or using our Service, you acknowledge that you have read and agree to these Terms.
+                  If you don&apos;t agree, please don&apos;t use the Service. We may update these Terms occasionally,
+                  and your continued use constitutes acceptance of any changes.
+                </p>
 
-              <h3>Not Insurance Advice</h3>
-              <p>
-                The information we provide about insurance claims, coverage, and processes is educational in
-                nature. We are not licensed insurance agents or adjusters. For specific guidance about your
-                insurance policy or claim, consult with your insurance company or a licensed insurance professional.
-              </p>
+                {/* Description of Service */}
+                <div className="flex items-center gap-3 mb-4 mt-12 not-prose">
+                  <div className="w-10 h-10 bg-brand-100 rounded-lg flex items-center justify-center">
+                    <Shield className="w-5 h-5 text-brand-600" />
+                  </div>
+                  <h2 className="text-2xl font-bold text-slate-900 m-0">2. What We Provide</h2>
+                </div>
 
-              <h3>AI Analysis Limitations</h3>
-              <p>
-                Our AI Damage Analyzer provides preliminary assessments based on visual analysis of photos you
-                submit. These assessments are:
-              </p>
-              <ul>
-                <li>Estimates only and not guaranteed to be accurate</li>
-                <li>Not a substitute for professional appraisals or inspections</li>
-                <li>Based solely on visible damage in the photos provided</li>
-                <li>Not binding on insurance companies or any other party</li>
-              </ul>
-              <p>
-                Actual repair costs, total loss determinations, and claim values are determined by insurance
-                adjusters and appraisers using their own methodologies.
-              </p>
+                <p>
+                  Collision Help is a <strong>free educational resource</strong> for people who&apos;ve been in car accidents.
+                  Our services include:
+                </p>
+                <ul>
+                  <li><strong>Educational Guides:</strong> Information about insurance claims, repairs, and your rights (60+ guides)</li>
+                  <li><strong>AI Damage Analyzer:</strong> Upload photos for an instant damage assessment</li>
+                  <li><strong>Calculators:</strong> Estimate settlement values and total loss determinations</li>
+                  <li><strong>State-Specific Information:</strong> Insurance laws and resources for all 50 states</li>
+                  <li><strong>Attorney Connections:</strong> Optional referrals to vetted legal professionals (only if you request)</li>
+                </ul>
 
-              <h3>No Attorney-Client Relationship</h3>
-              <p>
-                Using our Service or submitting information through our forms does not create an attorney-client
-                relationship. If we connect you with an attorney, any attorney-client relationship is between
-                you and that attorney, subject to their own terms and engagement agreements.
-              </p>
+                {/* Important Disclaimers */}
+                <div className="flex items-center gap-3 mb-4 mt-12 not-prose">
+                  <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
+                    <AlertTriangle className="w-5 h-5 text-amber-600" />
+                  </div>
+                  <h2 className="text-2xl font-bold text-slate-900 m-0">3. Important Disclaimers</h2>
+                </div>
 
-              <h2>4. User Responsibilities</h2>
-              <p>By using our Service, you agree to:</p>
-              <ul>
-                <li>Provide accurate and truthful information</li>
-                <li>Only upload photos that you have the right to share</li>
-                <li>Not use the Service for any fraudulent or illegal purposes</li>
-                <li>Not misrepresent your identity or circumstances</li>
-                <li>Not attempt to manipulate or abuse our AI systems</li>
-                <li>Not use automated tools to scrape or extract data from our website</li>
-                <li>Comply with all applicable laws and regulations</li>
-              </ul>
+                <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 my-4 not-prose">
+                  <p className="text-slate-700 mb-2">
+                    <strong>Please understand:</strong> We provide educational information, not professional advice.
+                    For decisions about your specific situation, always consult qualified professionals.
+                  </p>
+                </div>
 
-              <h2>5. Age Requirements</h2>
-              <p>
-                You must be at least 18 years old to use our Service. By using the Service, you represent and
-                warrant that you are at least 18 years of age.
-              </p>
+                <h3>Not Legal Advice</h3>
+                <p>
+                  The information on Collision Help is for <strong>general educational purposes only</strong> and
+                  is not legal advice. We are not a law firm. Laws vary by state and change frequently.
+                  For advice specific to your situation, consult with a qualified attorney.
+                </p>
 
-              <h2>6. Intellectual Property</h2>
-              <p>
-                All content on Collision Help, including text, graphics, logos, images, tools, and software,
-                is owned by or licensed to us and is protected by copyright, trademark, and other intellectual
-                property laws.
-              </p>
-              <p>
-                You may not reproduce, distribute, modify, create derivative works from, publicly display,
-                or exploit any content from our website without our prior written permission.
-              </p>
+                <h3>Not Insurance Advice</h3>
+                <p>
+                  Our information about insurance claims and processes is educational. We are not licensed
+                  insurance agents. For specific guidance about your policy or claim, contact your insurance
+                  company or a licensed insurance professional.
+                </p>
 
-              <h2>7. User-Submitted Content</h2>
-              <p>
-                When you submit photos, accident descriptions, or other content to our Service, you:
-              </p>
-              <ul>
-                <li>Retain ownership of your content</li>
-                <li>Grant us a non-exclusive, worldwide, royalty-free license to use, process, and analyze
-                your content for the purpose of providing our services</li>
-                <li>Represent that you have the right to share the content</li>
-                <li>Understand that we may retain your content for quality improvement and service enhancement</li>
-              </ul>
+                <h3>AI Analysis Limitations</h3>
+                <p>
+                  Our AI Damage Analyzer provides <strong>preliminary estimates only</strong>. These estimates are:
+                </p>
+                <ul>
+                  <li>Based only on visible damage in your photos</li>
+                  <li>Not a substitute for professional appraisals</li>
+                  <li>Not binding on insurance companies or anyone else</li>
+                  <li>Not guaranteed to be accurate—actual costs may vary significantly</li>
+                </ul>
+                <p>
+                  Insurance adjusters make final determinations using their own methodologies.
+                </p>
 
-              <h2>8. Third-Party Services and Links</h2>
-              <p>
-                Our Service may contain links to third-party websites or services, including attorney referral
-                services, insurance resources, and other partners. We are not responsible for:
-              </p>
-              <ul>
-                <li>The content, accuracy, or opinions expressed on third-party websites</li>
-                <li>The products, services, or practices of third parties</li>
-                <li>Any damages or losses caused by third-party services</li>
-              </ul>
-              <p>
-                Your interactions with third parties, including attorneys or service providers we may connect
-                you with, are solely between you and that third party.
-              </p>
+                {/* Attorney Referrals */}
+                <div className="flex items-center gap-3 mb-4 mt-12 not-prose">
+                  <div className="w-10 h-10 bg-brand-100 rounded-lg flex items-center justify-center">
+                    <Handshake className="w-5 h-5 text-brand-600" />
+                  </div>
+                  <h2 className="text-2xl font-bold text-slate-900 m-0">4. How Attorney Connections Work</h2>
+                </div>
 
-              <h2>9. Limitation of Liability</h2>
-              <p>
-                TO THE MAXIMUM EXTENT PERMITTED BY LAW, COLLISION HELP AND ITS OWNERS, OPERATORS, EMPLOYEES,
-                AND AFFILIATES SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR
-                PUNITIVE DAMAGES ARISING OUT OF OR RELATED TO YOUR USE OF THE SERVICE.
-              </p>
-              <p>
-                Our total liability for any claims arising under these Terms shall not exceed the amount you
-                paid to us (if any) for use of the Service during the twelve (12) months preceding the claim.
-              </p>
-              <p>
-                We do not guarantee any specific outcomes from using our Service, including but not limited to:
-              </p>
-              <ul>
-                <li>Insurance claim approvals or amounts</li>
-                <li>Legal case outcomes</li>
-                <li>Accuracy of damage estimates</li>
-                <li>Availability of attorneys or service providers</li>
-              </ul>
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 my-4 not-prose">
+                  <p className="text-slate-700 m-0">
+                    <strong>Complete Transparency:</strong> If you choose to request legal help, here&apos;s exactly what happens
+                    and how we sustain our free service.
+                  </p>
+                </div>
 
-              <h2>10. Disclaimer of Warranties</h2>
-              <p>
-                THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER
-                EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR
-                A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR ACCURACY.
-              </p>
-              <p>
-                We do not warrant that the Service will be uninterrupted, error-free, or completely secure.
-              </p>
+                <p>
+                  Using our website or submitting information does <strong>not</strong> create an attorney-client
+                  relationship. Here&apos;s how our optional attorney connection service works:
+                </p>
+                <ul>
+                  <li><strong>You Choose:</strong> Attorney connections only happen if you explicitly request a case review</li>
+                  <li><strong>Vetted Network:</strong> All attorneys are licensed in their respective states and experienced in motor vehicle accidents</li>
+                  <li><strong>Free Consultation:</strong> Initial case reviews are always free</li>
+                  <li><strong>Contingency Basis:</strong> Most MVA attorneys work on contingency—you pay nothing unless you win</li>
+                  <li><strong>Our Business Model:</strong> When an attorney takes your case, they may pay us a referral fee from their share—this never affects your settlement or costs you anything</li>
+                </ul>
+                <p>
+                  Any attorney-client relationship is between you and that attorney, subject to their terms.
+                </p>
 
-              <h2>11. Indemnification</h2>
-              <p>
-                You agree to indemnify, defend, and hold harmless Collision Help and its owners, operators,
-                employees, and affiliates from and against any claims, damages, losses, liabilities, costs,
-                and expenses (including reasonable attorneys' fees) arising out of or related to:
-              </p>
-              <ul>
-                <li>Your use of the Service</li>
-                <li>Your violation of these Terms</li>
-                <li>Your violation of any rights of another party</li>
-                <li>Any content you submit to the Service</li>
-              </ul>
+                {/* User Responsibilities */}
+                <div className="flex items-center gap-3 mb-4 mt-12 not-prose">
+                  <div className="w-10 h-10 bg-brand-100 rounded-lg flex items-center justify-center">
+                    <Scale className="w-5 h-5 text-brand-600" />
+                  </div>
+                  <h2 className="text-2xl font-bold text-slate-900 m-0">5. Your Responsibilities</h2>
+                </div>
 
-              <h2>12. Governing Law and Dispute Resolution</h2>
-              <p>
-                These Terms shall be governed by and construed in accordance with the laws of the State of
-                Delaware, without regard to its conflict of law provisions.
-              </p>
-              <p>
-                Any disputes arising under these Terms shall be resolved through binding arbitration in
-                accordance with the rules of the American Arbitration Association, except that either party
-                may seek injunctive relief in any court of competent jurisdiction.
-              </p>
+                <p>When using our Service, you agree to:</p>
+                <ul>
+                  <li>Provide accurate and truthful information</li>
+                  <li>Only upload photos that you have the right to share</li>
+                  <li>Not use the Service for fraudulent or illegal purposes</li>
+                  <li>Not misrepresent your identity or circumstances</li>
+                  <li>Not attempt to manipulate our AI systems</li>
+                  <li>Comply with all applicable laws</li>
+                </ul>
+                <p>
+                  You must be at least <strong>18 years old</strong> to use our Service.
+                </p>
 
-              <h2>13. Termination</h2>
-              <p>
-                We reserve the right to terminate or suspend your access to the Service at any time, without
-                prior notice, for any reason, including but not limited to violation of these Terms.
-              </p>
+                {/* Intellectual Property */}
+                <h2>6. Intellectual Property</h2>
+                <p>
+                  All content on Collision Help (text, graphics, tools, etc.) is owned by or licensed to us
+                  and protected by intellectual property laws. You may not copy, distribute, or create
+                  derivative works without our permission.
+                </p>
 
-              <h2>14. Severability</h2>
-              <p>
-                If any provision of these Terms is found to be unenforceable or invalid, that provision shall
-                be limited or eliminated to the minimum extent necessary, and the remaining provisions shall
-                remain in full force and effect.
-              </p>
+                {/* User Content */}
+                <h2>7. Your Content</h2>
+                <p>When you submit photos or other content, you:</p>
+                <ul>
+                  <li><strong>Retain ownership</strong> of your content</li>
+                  <li>Grant us permission to use it for providing our services</li>
+                  <li>Confirm you have the right to share it</li>
+                </ul>
 
-              <h2>15. Entire Agreement</h2>
-              <p>
-                These Terms, together with our Privacy Policy, constitute the entire agreement between you
-                and Collision Help regarding your use of the Service and supersede any prior agreements.
-              </p>
+                {/* Third Party */}
+                <h2>8. Third-Party Services</h2>
+                <p>
+                  Our Service may link to third-party websites or connect you with third-party professionals.
+                  We are not responsible for third-party content, practices, or services. Your interactions
+                  with third parties are solely between you and them.
+                </p>
 
-              <h2>16. Contact Information</h2>
-              <p>
-                If you have any questions about these Terms of Service, please contact us:
-              </p>
-              <ul>
-                <li>Email: legal@collisionhelp.org</li>
-                <li>Website: collisionhelp.org</li>
-              </ul>
+                {/* Limitation of Liability */}
+                <h2>9. Limitation of Liability</h2>
+                <p>
+                  TO THE MAXIMUM EXTENT PERMITTED BY LAW, COLLISION HELP SHALL NOT BE LIABLE FOR ANY INDIRECT,
+                  INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING FROM YOUR USE OF THE SERVICE.
+                </p>
+                <p>
+                  We do not guarantee any specific outcomes, including:
+                </p>
+                <ul>
+                  <li>Insurance claim approvals or amounts</li>
+                  <li>Legal case outcomes</li>
+                  <li>Accuracy of estimates</li>
+                  <li>Availability of attorneys</li>
+                </ul>
+
+                {/* Warranty Disclaimer */}
+                <h2>10. Disclaimer of Warranties</h2>
+                <p>
+                  THE SERVICE IS PROVIDED &ldquo;AS IS&rdquo; WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED.
+                  We do not warrant that the Service will be uninterrupted, error-free, or completely secure.
+                </p>
+
+                {/* Indemnification */}
+                <h2>11. Indemnification</h2>
+                <p>
+                  You agree to indemnify and hold harmless Collision Help from any claims arising out of your
+                  use of the Service, violation of these Terms, or violation of any rights of another party.
+                </p>
+
+                {/* Governing Law */}
+                <h2>12. Governing Law</h2>
+                <p>
+                  These Terms are governed by the laws of the State of Delaware. Disputes will be resolved
+                  through binding arbitration in accordance with the American Arbitration Association rules,
+                  except that either party may seek injunctive relief in court.
+                </p>
+
+                {/* Termination */}
+                <h2>13. Termination</h2>
+                <p>
+                  We may terminate or suspend your access at any time for violation of these Terms.
+                </p>
+
+                {/* Severability */}
+                <h2>14. Severability</h2>
+                <p>
+                  If any provision is found unenforceable, the remaining provisions remain in effect.
+                </p>
+
+                {/* Entire Agreement */}
+                <h2>15. Entire Agreement</h2>
+                <p>
+                  These Terms, together with our Privacy Policy, constitute the entire agreement between
+                  you and Collision Help regarding use of the Service.
+                </p>
+
+              </div>
+
+              {/* Contact Section */}
+              <div className="mt-12 bg-slate-100 rounded-xl p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <Mail className="w-6 h-6 text-brand-600" />
+                  <h2 className="text-xl font-bold text-slate-900">Questions About These Terms?</h2>
+                </div>
+                <p className="text-slate-600 mb-4">
+                  We&apos;re happy to clarify anything in these Terms of Service. Our team typically responds
+                  within 1-2 business days.
+                </p>
+                <div className="space-y-2">
+                  <p className="text-slate-700">
+                    <strong>Email:</strong>{' '}
+                    <a href="mailto:legal@collisionhelp.org" className="text-brand-600 hover:underline">
+                      legal@collisionhelp.org
+                    </a>
+                  </p>
+                  <p className="text-slate-700">
+                    <strong>Website:</strong>{' '}
+                    <a href="https://collisionhelp.org" className="text-brand-600 hover:underline">
+                      collisionhelp.org
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              {/* Related Links */}
+              <div className="mt-8 p-6 bg-brand-50 rounded-xl">
+                <p className="text-slate-700 m-0">
+                  <strong>Related:</strong> Please also review our{' '}
+                  <a href="/privacy" className="text-brand-600 hover:underline">Privacy Policy</a>{' '}
+                  to understand how we handle your personal information, and visit our{' '}
+                  <a href="/about" className="text-brand-600 hover:underline">About page</a>{' '}
+                  to learn more about how our service works.
+                </p>
+              </div>
 
             </div>
           </div>
