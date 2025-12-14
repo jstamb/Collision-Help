@@ -1,10 +1,12 @@
+'use client'
+
 import React from 'react'
 import { Link } from '@/i18n/navigation'
 import { Shield } from 'lucide-react'
-import { getTranslations } from 'next-intl/server'
+import { useTranslations } from 'next-intl'
 
-export default async function Footer() {
-  const t = await getTranslations()
+export default function Footer() {
+  const t = useTranslations()
 
   const footerLinks = {
     guides: [
