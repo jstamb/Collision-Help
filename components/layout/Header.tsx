@@ -1,43 +1,46 @@
 'use client'
 
 import React, { useState } from 'react'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { Shield, Menu, X, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { cn } from '@/lib/utils'
-
-const navigation = [
-  {
-    name: 'Guides',
-    href: '/guides',
-    children: [
-      { name: 'Total Loss Disputes', href: '/guides/total-loss-dispute' },
-      { name: 'Insurance Claims', href: '/guides/insurance-claims' },
-      { name: 'Repair Rights', href: '/guides/repair-rights' },
-      { name: 'Fault Determination', href: '/guides/fault-determination' },
-      { name: 'Rear-End Collisions', href: '/guides/rear-end-collisions' },
-      { name: 'Commercial Vehicles', href: '/guides/commercial-vehicle' },
-      { name: 'Accident Injuries', href: '/guides/accident-injuries' },
-    ]
-  },
-  {
-    name: 'Tools',
-    href: '/tools',
-    children: [
-      { name: 'AI Damage Analyzer', href: '/ai-damage-analyzer' },
-      { name: 'Settlement Calculator', href: '/tools/settlement-calculator' },
-      { name: 'Total Loss Calculator', href: '/tools/total-loss-calculator' },
-    ]
-  },
-  { name: 'Resources', href: '/resources' },
-  { name: 'Glossary', href: '/glossary' },
-  { name: 'Locations', href: '/locations' },
-  { name: 'About', href: '/about' },
-]
+import { useTranslations } from 'next-intl'
+import LanguageSwitcher from '@/components/ui/LanguageSwitcher'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const t = useTranslations()
+
+  const navigation = [
+    {
+      name: t('nav.guides'),
+      href: '/guides',
+      children: [
+        { name: t('guides.totalLossDisputes'), href: '/guides/total-loss-dispute' },
+        { name: t('guides.insuranceClaims'), href: '/guides/insurance-claims' },
+        { name: t('guides.repairRights'), href: '/guides/repair-rights' },
+        { name: t('guides.faultDetermination'), href: '/guides/fault-determination' },
+        { name: t('guides.rearEndCollisions'), href: '/guides/rear-end-collisions' },
+        { name: t('guides.commercialVehicles'), href: '/guides/commercial-vehicle' },
+        { name: t('guides.accidentInjuries'), href: '/guides/accident-injuries' },
+      ]
+    },
+    {
+      name: t('nav.tools'),
+      href: '/tools',
+      children: [
+        { name: t('tools.aiDamageAnalyzer'), href: '/ai-damage-analyzer' },
+        { name: t('tools.settlementCalculator'), href: '/tools/settlement-calculator' },
+        { name: t('tools.totalLossCalculator'), href: '/tools/total-loss-calculator' },
+      ]
+    },
+    { name: t('nav.resources'), href: '/resources' },
+    { name: t('nav.glossary'), href: '/glossary' },
+    { name: t('nav.locations'), href: '/locations' },
+    { name: t('nav.about'), href: '/about' },
+  ]
 
   return (
     <header className="fixed w-full bg-white/95 backdrop-blur-md z-50 border-b border-slate-200">
@@ -46,7 +49,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Shield className="w-7 h-7 text-brand-600" />
-            <span className="text-xl font-bold text-slate-900 tracking-tight">Collision Help</span>
+            <span className="text-xl font-bold text-slate-900 tracking-tight">{t('common.siteName')}</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -89,10 +92,11 @@ export default function Header() {
             ))}
           </div>
 
-          {/* Desktop CTA */}
+          {/* Desktop CTA + Language Switcher */}
           <div className="hidden lg:flex items-center gap-3">
+            <LanguageSwitcher />
             <Link href="/ai-damage-analyzer">
-              <Button size="sm">Get Free Analysis</Button>
+              <Button size="sm">{t('common.getFreeAnalysis')}</Button>
             </Link>
           </div>
 
@@ -136,9 +140,10 @@ export default function Header() {
                 </div>
               ))}
             </div>
-            <div className="mt-4 px-4">
+            <div className="mt-4 px-4 space-y-3">
+              <LanguageSwitcher />
               <Link href="/ai-damage-analyzer" onClick={() => setMobileMenuOpen(false)}>
-                <Button className="w-full">Get Free Analysis</Button>
+                <Button className="w-full">{t('common.getFreeAnalysis')}</Button>
               </Link>
             </div>
           </div>

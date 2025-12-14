@@ -16842,7 +16842,6 @@ export const connecticutCities: CityData[] = [
       "Connecticut car accident",
       "New Haven Superior Court"
     ]
-  }
   },
   {
     slug: "bridgeport",

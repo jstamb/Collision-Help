@@ -1,0 +1,90 @@
+{
+  "common": {
+    "siteName": "Collision Help",
+    "tagline": "AI-powered damage analysis and expert guidance to help you navigate insurance claims and get back on the road.",
+    "copyright": "Collision Help. All rights reserved.",
+    "disclaimer": "Disclaimer: This website provides general information only and is not legal or medical advice. Consult with qualified professionals for advice specific to your situation.",
+    "availableNationwide": "Available Nationwide",
+    "getFreeAnalysis": "Get Free Analysis",
+    "freeEvaluation": "Free Evaluation",
+    "dataEncrypted": "Data Encrypted",
+    "allStates": "All States"
+  },
+  "nav": {
+    "guides": "Guides",
+    "tools": "Tools",
+    "resources": "Resources",
+    "glossary": "Glossary",
+    "locations": "Locations",
+    "about": "About",
+    "states": "States",
+    "company": "Company"
+  },
+  "guides": {
+    "totalLossDisputes": "Total Loss Disputes",
+    "insuranceClaims": "Insurance Claims",
+    "repairRights": "Repair Rights",
+    "faultDetermination": "Fault Determination",
+    "rearEndCollisions": "Rear-End Collisions",
+    "commercialVehicles": "Commercial Vehicles",
+    "accidentInjuries": "Accident Injuries"
+  },
+  "tools": {
+    "aiDamageAnalyzer": "AI Damage Analyzer",
+    "settlementCalculator": "Settlement Calculator",
+    "totalLossCalculator": "Total Loss Calculator"
+  },
+  "footer": {
+    "resourcesHub": "Resources Hub",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "home": {
+    "heroTitle": "Dealing with Insurance After an Accident?",
+    "heroDescription": "We help you navigate claims, repairs, and total loss disputes. Upload your photos and get expert guidance within 24 hours. No obligation.",
+    "howItWorksTitle": "Simple, Stress-Free Process",
+    "howItWorksSubtitle": "We handle the complexity so you can focus on recovering.",
+    "step1Title": "1. Tell Us What Happened",
+    "step1Desc": "Answer a few simple questions about the accident and vehicle involved.",
+    "step2Title": "2. Upload Photos",
+    "step2Desc": "Securely upload photos of damage. Our system analyzes severity instantly.",
+    "step3Title": "3. Get Expert Guidance",
+    "step3Desc": "Receive a personalized roadmap for your insurance claim or repair process."
+  },
+  "leadForm": {
+    "title": "Get Your Free Damage Analysis",
+    "subtitle": "Upload photos of your vehicle damage and receive expert guidance within 24 hours.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "John Smith",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "john@example.com",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "(555) 123-4567",
+    "descriptionLabel": "What happened?",
+    "descriptionPlaceholder": "Briefly describe the accident and any concerns you have about your insurance claim...",
+    "uploadLabel": "Upload Damage Photos",
+    "uploadDescription": "Drag and drop files here, or click to browse",
+    "uploadFormats": "JPG, PNG up to 10MB each",
+    "submitButton": "Get My Free Analysis",
+    "submitting": "Submitting...",
+    "privacyNotice": "Your information is secure and will never be shared without your consent.",
+    "successTitle": "Thank You!",
+    "successMessage": "We've received your submission and will be in touch within 24 hours with your free damage analysis."
+  },
+  "about": {
+    "title": "About Collision Help",
+    "description": "We're dedicated to helping accident victims navigate the complex world of insurance claims."
+  },
+  "locations": {
+    "title": "Car Accident Resources by State",
+    "description": "Find state-specific information about insurance requirements, fault laws, and local resources.",
+    "stateGuide": "State Guide",
+    "cityGuides": "City Guides"
+  },
+  "metadata": {
+    "homeTitle": "Collision Help - Free AI Car Damage Analysis & Insurance Claim Assistance",
+    "homeDescription": "Get free AI-powered car damage analysis and expert guidance for insurance claims. Upload photos for instant assessment and personalized advice.",
+    "aboutTitle": "About Us - Collision Help",
+    "aboutDescription": "Learn about Collision Help's mission to assist accident victims with insurance claims and vehicle damage assessment."
+  }
+}

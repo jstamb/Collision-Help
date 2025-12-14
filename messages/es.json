@@ -1,0 +1,90 @@
+{
+  "common": {
+    "siteName": "Collision Help",
+    "tagline": "Analisis de danos con IA y orientacion experta para ayudarte a navegar reclamos de seguros y volver a la carretera.",
+    "copyright": "Collision Help. Todos los derechos reservados.",
+    "disclaimer": "Aviso: Este sitio web proporciona solo informacion general y no constituye asesoramiento legal ni medico. Consulte con profesionales calificados para obtener asesoramiento especifico para su situacion.",
+    "availableNationwide": "Disponible en Todo el Pais",
+    "getFreeAnalysis": "Obtener Analisis Gratis",
+    "freeEvaluation": "Evaluacion Gratuita",
+    "dataEncrypted": "Datos Encriptados",
+    "allStates": "Todos los Estados"
+  },
+  "nav": {
+    "guides": "Guias",
+    "tools": "Herramientas",
+    "resources": "Recursos",
+    "glossary": "Glosario",
+    "locations": "Ubicaciones",
+    "about": "Nosotros",
+    "states": "Estados",
+    "company": "Compania"
+  },
+  "guides": {
+    "totalLossDisputes": "Disputas de Perdida Total",
+    "insuranceClaims": "Reclamos de Seguros",
+    "repairRights": "Derechos de Reparacion",
+    "faultDetermination": "Determinacion de Culpa",
+    "rearEndCollisions": "Colisiones Traseras",
+    "commercialVehicles": "Vehiculos Comerciales",
+    "accidentInjuries": "Lesiones por Accidentes"
+  },
+  "tools": {
+    "aiDamageAnalyzer": "Analizador de Danos con IA",
+    "settlementCalculator": "Calculadora de Compensacion",
+    "totalLossCalculator": "Calculadora de Perdida Total"
+  },
+  "footer": {
+    "resourcesHub": "Centro de Recursos",
+    "privacyPolicy": "Politica de Privacidad",
+    "termsOfService": "Terminos de Servicio"
+  },
+  "home": {
+    "heroTitle": "Lidiando con el Seguro Despues de un Accidente?",
+    "heroDescription": "Te ayudamos a navegar reclamos, reparaciones y disputas de perdida total. Sube tus fotos y recibe orientacion experta en 24 horas. Sin compromiso.",
+    "howItWorksTitle": "Proceso Simple y Sin Estres",
+    "howItWorksSubtitle": "Nosotros manejamos la complejidad para que puedas enfocarte en recuperarte.",
+    "step1Title": "1. Cuentanos Que Paso",
+    "step1Desc": "Responde algunas preguntas simples sobre el accidente y el vehiculo involucrado.",
+    "step2Title": "2. Sube Fotos",
+    "step2Desc": "Sube fotos del dano de forma segura. Nuestro sistema analiza la gravedad al instante.",
+    "step3Title": "3. Recibe Orientacion Experta",
+    "step3Desc": "Recibe una guia personalizada para tu reclamo de seguro o proceso de reparacion."
+  },
+  "leadForm": {
+    "title": "Obtén Tu Análisis de Daños Gratis",
+    "subtitle": "Sube fotos del daño de tu vehículo y recibe orientación experta en 24 horas.",
+    "nameLabel": "Nombre Completo",
+    "namePlaceholder": "Juan Pérez",
+    "emailLabel": "Correo Electrónico",
+    "emailPlaceholder": "juan@ejemplo.com",
+    "phoneLabel": "Número de Teléfono",
+    "phonePlaceholder": "(555) 123-4567",
+    "descriptionLabel": "¿Qué pasó?",
+    "descriptionPlaceholder": "Describe brevemente el accidente y cualquier preocupación que tengas sobre tu reclamo de seguro...",
+    "uploadLabel": "Subir Fotos del Daño",
+    "uploadDescription": "Arrastra y suelta archivos aquí, o haz clic para buscar",
+    "uploadFormats": "JPG, PNG hasta 10MB cada uno",
+    "submitButton": "Obtener Mi Análisis Gratis",
+    "submitting": "Enviando...",
+    "privacyNotice": "Tu información está segura y nunca será compartida sin tu consentimiento.",
+    "successTitle": "¡Gracias!",
+    "successMessage": "Hemos recibido tu solicitud y nos pondremos en contacto en 24 horas con tu análisis de daños gratuito."
+  },
+  "about": {
+    "title": "Sobre Collision Help",
+    "description": "Estamos dedicados a ayudar a las victimas de accidentes a navegar el complejo mundo de los reclamos de seguros."
+  },
+  "locations": {
+    "title": "Recursos de Accidentes de Auto por Estado",
+    "description": "Encuentra informacion especifica por estado sobre requisitos de seguros, leyes de culpa y recursos locales.",
+    "stateGuide": "Guia del Estado",
+    "cityGuides": "Guias de Ciudades"
+  },
+  "metadata": {
+    "homeTitle": "Collision Help - Analisis Gratuito de Danos de Auto con IA y Asistencia con Reclamos de Seguros",
+    "homeDescription": "Obtén análisis gratuito de daños de auto con IA y orientación experta para reclamos de seguros. Sube fotos para evaluación instantánea y consejos personalizados.",
+    "aboutTitle": "Sobre Nosotros - Collision Help",
+    "aboutDescription": "Conoce la misión de Collision Help de ayudar a víctimas de accidentes con reclamos de seguros y evaluación de daños vehiculares."
+  }
+}

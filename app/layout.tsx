@@ -1,13 +1,13 @@
-import React from 'react'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import Script from 'next/script'
-import './globals.css'
-import { cn } from '@/lib/utils'
+import React from 'react';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import Script from 'next/script';
+import './globals.css';
+import { cn } from '@/lib/utils';
 
-const GA_MEASUREMENT_ID = 'G-VYBCK94B6J'
+const GA_MEASUREMENT_ID = 'G-VYBCK94B6J';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://collisionhelp.org'),
@@ -33,18 +33,20 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  alternates: {
-    canonical: 'https://collisionhelp.org',
-  },
-}
+};
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
+  params: Promise<{ locale?: string }>;
 }) {
+  const { locale } = await params;
+  const lang = locale || 'en';
+
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang={lang} className="scroll-smooth">
       <head>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
@@ -63,5 +65,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  )
+  );
 }
