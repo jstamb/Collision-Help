@@ -1,13 +1,9 @@
 import { MetadataRoute } from 'next'
 import { pillars } from '@/content/guides/pillars'
 import { states } from '@/content/locations/states'
+import { citiesByState } from '@/content/locations/cities'
 
 const BASE_URL = 'https://collisionhelp.org'
-
-// Helper to convert city name to slug
-function cityToSlug(city: string): string {
-  return city.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
-}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
@@ -88,14 +84,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  // City pages (all cities under each state)
-  const cityPages: MetadataRoute.Sitemap = states.flatMap((state) =>
-    state.majorCities.map((city) => ({
-      url: `${BASE_URL}/locations/${state.slug}/${cityToSlug(city)}`,
-      lastModified: now,
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
-    }))
+  // City pages (all cities from the cities data)
+  const cityPages: MetadataRoute.Sitemap = Object.entries(citiesByState).flatMap(
+    ([stateSlug, cities]) =>
+      cities.map((city) => ({
+        url: `${BASE_URL}/locations/${stateSlug}/${city.slug}`,
+        lastModified: now,
+        changeFrequency: 'monthly' as const,
+        priority: 0.6,
+      }))
   )
 
   return [
