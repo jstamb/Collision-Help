@@ -4,6 +4,11 @@ import { states } from '@/content/locations/states'
 
 const BASE_URL = 'https://collisionhelp.org'
 
+// Helper to convert city name to slug
+function cityToSlug(city: string): string {
+  return city.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
 
@@ -27,6 +32,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.9,
     },
+    {
+      url: `${BASE_URL}/locations`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/privacy`,
+      lastModified: now,
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${BASE_URL}/terms`,
+      lastModified: now,
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+  ]
+
+  // Tools pages
+  const toolPages: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE_URL}/tools/total-loss-calculator`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
   ]
 
   // Pillar hub pages
@@ -47,7 +80,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   )
 
-  // State/location pages
+  // State pages
   const statePages: MetadataRoute.Sitemap = states.map((state) => ({
     url: `${BASE_URL}/locations/${state.slug}`,
     lastModified: now,
@@ -55,5 +88,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...staticPages, ...pillarPages, ...articlePages, ...statePages]
+  // City pages (all cities under each state)
+  const cityPages: MetadataRoute.Sitemap = states.flatMap((state) =>
+    state.majorCities.map((city) => ({
+      url: `${BASE_URL}/locations/${state.slug}/${cityToSlug(city)}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    }))
+  )
+
+  return [
+    ...staticPages,
+    ...toolPages,
+    ...pillarPages,
+    ...articlePages,
+    ...statePages,
+    ...cityPages,
+  ]
 }
