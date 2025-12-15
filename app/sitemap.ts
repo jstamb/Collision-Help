@@ -6,6 +6,8 @@ import { locales } from '@/i18n/config'
 
 const BASE_URL = 'https://collisionhelp.org'
 
+// Sitemap includes all locales (en, es) with hreflang alternates
+
 type SitemapEntry = MetadataRoute.Sitemap[number]
 
 function createLocalizedUrl(
