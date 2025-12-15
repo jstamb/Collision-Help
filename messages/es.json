@@ -336,6 +336,24 @@
     "articles": "Artículos",
     "breadcrumbGuides": "Guías"
   },
+  "articlePage": {
+    "breadcrumbGuides": "Guías",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "tableOfContents": "Tabla de Contenidos",
+    "relatedArticles": "Artículos Relacionados",
+    "viewAllGuides": "Ver todas las guías de {pillarName}",
+    "relatedFromOtherGuides": "Relacionados de Otras Guías",
+    "needPersonalizedHelp": "¿Necesitas Ayuda Personalizada?",
+    "getFreeAnalysis": "Obtén un análisis gratuito de los daños de tu vehículo.",
+    "startFreeAnalysis": "Iniciar Análisis Gratis",
+    "ctaTitle": "Obtén una Evaluación de Daños Gratis",
+    "ctaDesc": "Sube fotos para análisis instantáneo con IA",
+    "summaryPoint1": "Este artículo cubre los aspectos clave de {articleTitle}",
+    "summaryPoint2": "Aprende qué pasos tomar y qué evitar",
+    "summaryPoint3": "Entiende cómo esto afecta tu reclamo de seguro",
+    "summaryPoint4": "Obtén consejos prácticos que puedes usar hoy"
+  },
   "guidesHub": {
     "title": "Guías y Recursos de Accidentes de Auto",
     "description": "Orientación experta para ayudarte a navegar reclamos de seguros, entender tus derechos y volver al camino. Escrito para personas reales lidiando con accidentes reales.",

@@ -336,6 +336,24 @@
     "articles": "Articles",
     "breadcrumbGuides": "Guides"
   },
+  "articlePage": {
+    "breadcrumbGuides": "Guides",
+    "previous": "Previous",
+    "next": "Next",
+    "tableOfContents": "Table of Contents",
+    "relatedArticles": "Related Articles",
+    "viewAllGuides": "View all {pillarName} guides",
+    "relatedFromOtherGuides": "Related From Other Guides",
+    "needPersonalizedHelp": "Need Personalized Help?",
+    "getFreeAnalysis": "Get a free analysis of your vehicle damage.",
+    "startFreeAnalysis": "Start Free Analysis",
+    "ctaTitle": "Get a Free Damage Assessment",
+    "ctaDesc": "Upload photos for instant AI analysis",
+    "summaryPoint1": "This article covers the key aspects of {articleTitle}",
+    "summaryPoint2": "Learn what steps to take and what to avoid",
+    "summaryPoint3": "Understand how this affects your insurance claim",
+    "summaryPoint4": "Get actionable advice you can use today"
+  },
   "guidesHub": {
     "title": "Car Accident Guides & Resources",
     "description": "Expert guidance to help you navigate insurance claims, understand your rights, and get back on the road. Written for real people dealing with real accidents.",

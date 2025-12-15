@@ -1,7 +1,7 @@
 import React from 'react'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { pillars, getPillar, getArticle, getTranslatedPillar, getTranslatedPillars, Pillar } from '@/content/guides/pillars'
 import { getTranslations } from 'next-intl/server'
 import Header from '@/components/layout/Header'
@@ -212,6 +212,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ pillar
   const basePillar = getPillar(pillarSlug)
   const baseArticle = getArticle(pillarSlug, articleSlug)
   const tContent = await getTranslations('guidesContent')
+  const t = await getTranslations('articlePage')
 
   if (!basePillar || !baseArticle) {
     notFound()
@@ -319,7 +320,7 @@ Consider seeking additional assistance if:
           <div className="container mx-auto px-4">
             <Breadcrumbs
               items={[
-                { label: 'Guides', href: '/guides' },
+                { label: t('breadcrumbGuides'), href: '/guides' },
                 { label: pillar.shortTitle, href: `/guides/${pillar.slug}` },
                 { label: article.title }
               ]}
@@ -358,10 +359,10 @@ Consider seeking additional assistance if:
             <article className="lg:col-span-2">
               <SummaryBox>
                 <ul className="space-y-2">
-                  <li>This article covers the key aspects of {article.title.toLowerCase()}</li>
-                  <li>Learn what steps to take and what to avoid</li>
-                  <li>Understand how this affects your insurance claim</li>
-                  <li>Get actionable advice you can use today</li>
+                  <li>{t('summaryPoint1', { articleTitle: article.title.toLowerCase() })}</li>
+                  <li>{t('summaryPoint2')}</li>
+                  <li>{t('summaryPoint3')}</li>
+                  <li>{t('summaryPoint4')}</li>
                 </ul>
               </SummaryBox>
 
@@ -372,8 +373,8 @@ Consider seeking additional assistance if:
               <div className="mt-12">
                 <CTABanner
                   variant="compact"
-                  title="Get a Free Damage Assessment"
-                  description="Upload photos for instant AI analysis"
+                  title={t('ctaTitle')}
+                  description={t('ctaDesc')}
                 />
               </div>
 
@@ -387,7 +388,7 @@ Consider seeking additional assistance if:
                     >
                       <ArrowLeft className="w-5 h-5 text-slate-400 group-hover:text-brand-600" />
                       <div>
-                        <span className="text-xs text-slate-500 block">Previous</span>
+                        <span className="text-xs text-slate-500 block">{t('previous')}</span>
                         <span className="text-sm font-medium text-slate-900 group-hover:text-brand-700">
                           {prevArticle.title}
                         </span>
@@ -401,7 +402,7 @@ Consider seeking additional assistance if:
                       className="flex items-center gap-3 p-4 rounded-xl border border-slate-200 hover:border-brand-300 hover:bg-slate-50 transition-all group flex-1 text-right sm:justify-end"
                     >
                       <div>
-                        <span className="text-xs text-slate-500 block">Next</span>
+                        <span className="text-xs text-slate-500 block">{t('next')}</span>
                         <span className="text-sm font-medium text-slate-900 group-hover:text-brand-700">
                           {nextArticle.title}
                         </span>
@@ -420,7 +421,7 @@ Consider seeking additional assistance if:
                 <div className="bg-slate-50 rounded-xl p-5">
                   <h3 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
                     <BookOpen className="w-4 h-4 text-brand-600" />
-                    Table of Contents
+                    {t('tableOfContents')}
                   </h3>
                   <ul className="space-y-2 text-sm">
                     {tableOfContents.map((heading) => (
@@ -438,7 +439,7 @@ Consider seeking additional assistance if:
 
                 {/* Related Articles */}
                 <div className="bg-white rounded-xl border border-slate-200 p-5">
-                  <h3 className="font-semibold text-slate-900 mb-4">Related Articles</h3>
+                  <h3 className="font-semibold text-slate-900 mb-4">{t('relatedArticles')}</h3>
                   <ul className="space-y-3">
                     {relatedArticles.map((related) => (
                       <li key={related.slug}>
@@ -455,7 +456,7 @@ Consider seeking additional assistance if:
                     href={`/guides/${pillar.slug}`}
                     className="inline-flex items-center gap-1 mt-4 text-sm font-medium text-brand-600 hover:text-brand-700"
                   >
-                    View all {pillar.shortTitle} guides
+                    {t('viewAllGuides', { pillarName: pillar.shortTitle })}
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -465,7 +466,7 @@ Consider seeking additional assistance if:
                   <div className="bg-white rounded-xl border border-slate-200 p-5">
                     <h3 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
                       <ExternalLink className="w-4 h-4 text-brand-600" />
-                      Related From Other Guides
+                      {t('relatedFromOtherGuides')}
                     </h3>
                     <ul className="space-y-3">
                       {crossPillarArticles.map(({ pillar: relatedPillar, article: relatedArticle }) => {
@@ -497,15 +498,15 @@ Consider seeking additional assistance if:
 
                 {/* CTA Card */}
                 <div className="bg-gradient-to-br from-brand-600 to-brand-700 rounded-xl p-5 text-white">
-                  <h3 className="font-semibold mb-2">Need Personalized Help?</h3>
+                  <h3 className="font-semibold mb-2">{t('needPersonalizedHelp')}</h3>
                   <p className="text-brand-100 text-sm mb-4">
-                    Get a free analysis of your vehicle damage.
+                    {t('getFreeAnalysis')}
                   </p>
                   <Link
                     href="/"
                     className="inline-flex items-center gap-2 bg-white text-brand-700 font-medium px-4 py-2 rounded-lg text-sm hover:bg-brand-50 transition-colors"
                   >
-                    Start Free Analysis
+                    {t('startFreeAnalysis')}
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
