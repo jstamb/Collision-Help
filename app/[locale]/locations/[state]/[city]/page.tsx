@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getStateBySlug, getFaultSystemExplanation, getComparativeNegligenceExplanation } from '@/content/locations/states'
@@ -8,6 +8,7 @@ import { pillars } from '@/content/guides/pillars'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import CallbackButton from '@/components/CallbackButton'
+import { getTranslations } from 'next-intl/server'
 import {
   MapPin,
   AlertTriangle,
@@ -209,6 +210,7 @@ export default async function CityPage({ params }: PageProps) {
   const { state: stateSlug, city: citySlug } = await params
   const city = getCityBySlug(stateSlug, citySlug)
   const state = getStateBySlug(stateSlug)
+  const t = await getTranslations('cityPage')
 
   if (!city || !state) {
     notFound()
@@ -221,11 +223,11 @@ export default async function CityPage({ params }: PageProps) {
   const getFaultBadge = () => {
     switch (state.faultSystem) {
       case 'no-fault':
-        return { bg: 'bg-blue-100', text: 'text-blue-700', label: 'No-Fault State' }
+        return { bg: 'bg-blue-100', text: 'text-blue-700', label: t('noFaultState') }
       case 'choice':
-        return { bg: 'bg-purple-100', text: 'text-purple-700', label: 'Choice State' }
+        return { bg: 'bg-purple-100', text: 'text-purple-700', label: t('choiceState') }
       default:
-        return { bg: 'bg-slate-100', text: 'text-slate-700', label: 'At-Fault State' }
+        return { bg: 'bg-slate-100', text: 'text-slate-700', label: t('atFaultState') }
     }
   }
 
@@ -259,9 +261,9 @@ export default async function CityPage({ params }: PageProps) {
           <div className="container mx-auto px-4">
             {/* Breadcrumb */}
             <nav className="flex items-center gap-2 text-sm text-slate-400 mb-6">
-              <Link href="/" className="hover:text-white transition-colors">Home</Link>
+              <Link href="/" className="hover:text-white transition-colors">{t('breadcrumbHome')}</Link>
               <ChevronRight className="w-4 h-4" />
-              <Link href="/locations" className="hover:text-white transition-colors">Locations</Link>
+              <Link href="/locations" className="hover:text-white transition-colors">{t('breadcrumbLocations')}</Link>
               <ChevronRight className="w-4 h-4" />
               <Link href={`/locations/${stateSlug}`} className="hover:text-white transition-colors">{state.name}</Link>
               <ChevronRight className="w-4 h-4" />
@@ -280,7 +282,7 @@ export default async function CityPage({ params }: PageProps) {
               </div>
 
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-                Car Accident Help in <span className="text-brand-400">{city.name}</span>
+                {t('heroTitle')} <span className="text-brand-400">{city.name}</span>
               </h1>
 
               <p className="text-lg text-slate-300 mb-6 max-w-3xl">
@@ -293,7 +295,7 @@ export default async function CityPage({ params }: PageProps) {
                   className="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
                 >
                   <Car className="w-5 h-5" />
-                  Analyze Your Damage
+                  {t('analyzeYourDamage')}
                 </Link>
                 <CallbackButton
                   state={stateSlug}
@@ -301,7 +303,7 @@ export default async function CityPage({ params }: PageProps) {
                   className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
                 >
                   <Phone className="w-5 h-5" />
-                  Request Callback
+                  {t('requestCallback')}
                 </CallbackButton>
               </div>
             </div>
@@ -314,25 +316,25 @@ export default async function CityPage({ params }: PageProps) {
             <div className="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-5xl mx-auto">
               <div className="text-center">
                 <div className="text-2xl font-bold text-slate-900">{city.population.toLocaleString()}</div>
-                <div className="text-xs text-slate-500">Population ({city.populationYear})</div>
+                <div className="text-xs text-slate-500">{t('population')} ({city.populationYear})</div>
               </div>
               {city.annualAccidents && (
                 <div className="text-center">
                   <div className="text-2xl font-bold text-red-600">{city.annualAccidents.toLocaleString()}+</div>
-                  <div className="text-xs text-slate-500">Annual Accidents</div>
+                  <div className="text-xs text-slate-500">{t('annualAccidents')}</div>
                 </div>
               )}
               <div className="text-center">
                 <div className="text-2xl font-bold text-brand-600">{state.statuteOfLimitations.personalInjury}</div>
-                <div className="text-xs text-slate-500">Injury Deadline</div>
+                <div className="text-xs text-slate-500">{t('injuryDeadline')}</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-slate-700">{state.minimumCoverage.formatted}</div>
-                <div className="text-xs text-slate-500">Min. Coverage</div>
+                <div className="text-xs text-slate-500">{t('minCoverage')}</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-slate-700">{city.highways.length}</div>
-                <div className="text-xs text-slate-500">Major Highways</div>
+                <div className="text-xs text-slate-500">{t('majorHighways')}</div>
               </div>
             </div>
           </div>
@@ -352,11 +354,11 @@ export default async function CityPage({ params }: PageProps) {
                     <div className="w-10 h-10 bg-brand-100 rounded-lg flex items-center justify-center">
                       <Navigation className="w-5 h-5 text-brand-600" />
                     </div>
-                    <h2 className="text-2xl font-bold text-slate-900">Major Highways & Accident Hotspots</h2>
+                    <h2 className="text-2xl font-bold text-slate-900">{t('majorHighwaysTitle')}</h2>
                   </div>
 
                   <p className="text-slate-600 mb-6">
-                    Understanding where accidents commonly occur in {city.name} can help you stay alert and know what to expect if you're involved in a collision.
+                    {t('majorHighwaysDesc', { cityName: city.name })}
                   </p>
 
                   <div className="space-y-4">
@@ -382,7 +384,7 @@ export default async function CityPage({ params }: PageProps) {
                     <div className="mt-6 p-4 bg-red-50 rounded-lg">
                       <h3 className="font-semibold text-red-900 mb-3 flex items-center gap-2">
                         <AlertTriangle className="w-5 h-5" />
-                        Dangerous Intersections
+                        {t('dangerousIntersections')}
                       </h3>
                       <div className="grid sm:grid-cols-2 gap-2">
                         {city.dangerousIntersections.map((intersection, index) => (
@@ -402,7 +404,7 @@ export default async function CityPage({ params }: PageProps) {
                     <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
                       <Clock className="w-5 h-5 text-orange-600" />
                     </div>
-                    <h2 className="text-2xl font-bold text-slate-900">{city.name} Traffic Patterns</h2>
+                    <h2 className="text-2xl font-bold text-slate-900">{t('trafficPatternsTitle', { cityName: city.name })}</h2>
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-4">
@@ -421,7 +423,7 @@ export default async function CityPage({ params }: PageProps) {
                     <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
                       <Car className="w-5 h-5 text-red-600" />
                     </div>
-                    <h2 className="text-2xl font-bold text-slate-900">Common Accident Types in {city.name}</h2>
+                    <h2 className="text-2xl font-bold text-slate-900">{t('commonAccidentTypes', { cityName: city.name })}</h2>
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-3">
@@ -440,11 +442,11 @@ export default async function CityPage({ params }: PageProps) {
                     <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
                       <Building2 className="w-5 h-5 text-purple-600" />
                     </div>
-                    <h2 className="text-2xl font-bold text-slate-900">Neighborhood Traffic Considerations</h2>
+                    <h2 className="text-2xl font-bold text-slate-900">{t('neighborhoodTitle')}</h2>
                   </div>
 
                   <p className="text-slate-600 mb-6">
-                    Different areas of {city.name} present unique driving challenges. Here's what to know about each neighborhood.
+                    {t('neighborhoodDesc', { cityName: city.name })}
                   </p>
 
                   <div className="space-y-3">
@@ -464,7 +466,7 @@ export default async function CityPage({ params }: PageProps) {
                       <div className="w-10 h-10 bg-sky-100 rounded-lg flex items-center justify-center">
                         <CloudRain className="w-5 h-5 text-sky-600" />
                       </div>
-                      <h2 className="text-2xl font-bold text-slate-900">Weather-Related Driving Hazards</h2>
+                      <h2 className="text-2xl font-bold text-slate-900">{t('weatherTitle')}</h2>
                     </div>
 
                     <div className="space-y-3">
@@ -484,11 +486,11 @@ export default async function CityPage({ params }: PageProps) {
                     <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
                       <FileText className="w-5 h-5 text-amber-600" />
                     </div>
-                    <h2 className="text-2xl font-bold text-slate-900">Local Considerations for {city.name} Accidents</h2>
+                    <h2 className="text-2xl font-bold text-slate-900">{t('localConsiderationsTitle', { cityName: city.name })}</h2>
                   </div>
 
                   <p className="text-slate-600 mb-6">
-                    Important factors specific to handling car accident claims in {city.name}:
+                    {t('localConsiderationsDesc', { cityName: city.name })}
                   </p>
 
                   <ul className="space-y-3">
@@ -505,7 +507,7 @@ export default async function CityPage({ params }: PageProps) {
                 {schema && schema.faqItems && (
                   <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
                     <h2 className="text-2xl font-bold text-slate-900 mb-6">
-                      Frequently Asked Questions About {city.name} Car Accidents
+                      {t('faqTitle', { cityName: city.name })}
                     </h2>
 
                     <div className="space-y-6">
@@ -528,36 +530,36 @@ export default async function CityPage({ params }: PageProps) {
                 <div className="bg-white rounded-xl p-6 shadow-sm sticky top-4">
                   <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
                     <Scale className="w-5 h-5 text-brand-600" />
-                    {state.name} Law Summary
+                    {t('stateLawSummary', { stateName: state.name })}
                   </h3>
 
                   <div className="space-y-4 text-sm">
                     <div className="flex justify-between">
-                      <span className="text-slate-500">Fault System:</span>
+                      <span className="text-slate-500">{t('faultSystem')}</span>
                       <span className={`font-medium px-2 py-0.5 rounded ${faultBadge.bg} ${faultBadge.text}`}>
-                        {faultBadge.label.replace(' State', '')}
+                        {faultBadge.label.replace(' State', '').replace(' Estado', '')}
                       </span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-slate-500">Injury Deadline:</span>
+                      <span className="text-slate-500">{t('injuryDeadlineLabel')}</span>
                       <span className="font-medium text-slate-900">{state.statuteOfLimitations.personalInjury}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-slate-500">Property Deadline:</span>
+                      <span className="text-slate-500">{t('propertyDeadline')}</span>
                       <span className="font-medium text-slate-900">{state.statuteOfLimitations.propertyDamage}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-slate-500">Min. Coverage:</span>
+                      <span className="text-slate-500">{t('minCoverageLabel')}</span>
                       <span className="font-medium text-slate-900">{state.minimumCoverage.formatted}</span>
                     </div>
                     {state.pipRequired && (
                       <div className="flex justify-between">
-                        <span className="text-slate-500">PIP Required:</span>
-                        <span className="font-medium text-green-600">Yes</span>
+                        <span className="text-slate-500">{t('pipRequired')}</span>
+                        <span className="font-medium text-green-600">{t('yes')}</span>
                       </div>
                     )}
                     <div className="flex justify-between">
-                      <span className="text-slate-500">Total Loss:</span>
+                      <span className="text-slate-500">{t('totalLoss')}</span>
                       <span className="font-medium text-slate-900">{state.totalLossThreshold}</span>
                     </div>
                   </div>
@@ -565,7 +567,7 @@ export default async function CityPage({ params }: PageProps) {
                   {state.comparativeNegligence === 'contributory' && (
                     <div className="mt-4 p-3 bg-red-50 rounded-lg">
                       <p className="text-xs text-red-700">
-                        <strong>Warning:</strong> {state.name} uses contributory negligence. Any fault on your part could bar recovery.
+                        <strong>Warning:</strong> {t('contributoryWarning', { stateName: state.name })}
                       </p>
                     </div>
                   )}
@@ -574,15 +576,15 @@ export default async function CityPage({ params }: PageProps) {
                     href={`/locations/${stateSlug}`}
                     className="mt-4 block text-center text-sm text-brand-600 hover:text-brand-700 font-medium"
                   >
-                    View Full {state.name} Guide
+                    {t('viewFullGuide', { stateName: state.name })}
                   </Link>
                 </div>
 
                 {/* Get Help CTA */}
                 <div className="bg-brand-600 rounded-xl p-6 text-white">
-                  <h3 className="font-bold text-lg mb-2">Been in a {city.name} Accident?</h3>
+                  <h3 className="font-bold text-lg mb-2">{t('beenInAccident', { cityName: city.name })}</h3>
                   <p className="text-brand-100 text-sm mb-4">
-                    Get free guidance on your next steps and connect with local legal professionals.
+                    {t('getGuidanceDesc')}
                   </p>
                   <CallbackButton
                     state={stateSlug}
@@ -590,7 +592,7 @@ export default async function CityPage({ params }: PageProps) {
                     className="w-full bg-white text-brand-600 hover:bg-brand-50 px-4 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
                   >
                     <Phone className="w-5 h-5" />
-                    Request Free Callback
+                    {t('requestFreeCallback')}
                   </CallbackButton>
                 </div>
 
@@ -601,11 +603,11 @@ export default async function CityPage({ params }: PageProps) {
                       <Shield className="w-5 h-5 text-slate-600" />
                       {city.name} Police
                     </h3>
-                    <p className="text-sm text-slate-600 mb-2">Non-Emergency Line:</p>
+                    <p className="text-sm text-slate-600 mb-2">{t('policeNonEmergency')}</p>
                     <a href={`tel:${city.policeNonEmergency.replace(/[^\d]/g, '')}`} className="text-lg font-bold text-brand-600 hover:text-brand-700">
                       {city.policeNonEmergency}
                     </a>
-                    <p className="text-xs text-slate-500 mt-2">For accident reports and follow-up</p>
+                    <p className="text-xs text-slate-500 mt-2">{t('forAccidentReports')}</p>
                   </div>
                 )}
 
@@ -614,7 +616,7 @@ export default async function CityPage({ params }: PageProps) {
                   <div className="bg-white rounded-xl p-6 shadow-sm">
                     <h3 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
                       <Users className="w-5 h-5 text-slate-600" />
-                      Other {state.name} Cities
+                      {t('otherCities', { stateName: state.name })}
                     </h3>
                     <div className="space-y-2">
                       {otherCities.map(otherCity => (
@@ -635,10 +637,10 @@ export default async function CityPage({ params }: PageProps) {
                 <div className="bg-white rounded-xl p-6 shadow-sm">
                   <h3 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
                     <BookOpen className="w-5 h-5 text-brand-600" />
-                    {state.name} Accident Guides
+                    {t('accidentGuides', { stateName: state.name })}
                   </h3>
                   <p className="text-sm text-slate-600 mb-4">
-                    Essential reading for {city.name} drivers:
+                    {t('essentialReading', { cityName: city.name })}
                   </p>
                   <div className="space-y-2">
                     {/* Location-specific pillars first */}
@@ -682,14 +684,14 @@ export default async function CityPage({ params }: PageProps) {
                     href="/guides"
                     className="mt-4 block text-center text-sm text-brand-600 hover:text-brand-700 font-medium"
                   >
-                    View All Guides →
+                    {t('viewAllGuides')} →
                   </Link>
                 </div>
 
                 {/* Unique Traffic Laws */}
                 {city.uniqueTrafficLaws && city.uniqueTrafficLaws.length > 0 && (
                   <div className="bg-amber-50 rounded-xl p-6">
-                    <h3 className="font-semibold text-amber-900 mb-3">Local Traffic Laws</h3>
+                    <h3 className="font-semibold text-amber-900 mb-3">{t('localTrafficLaws')}</h3>
                     <ul className="space-y-2">
                       {city.uniqueTrafficLaws.map((law, index) => (
                         <li key={index} className="text-sm text-amber-800 flex items-start gap-2">
@@ -710,10 +712,10 @@ export default async function CityPage({ params }: PageProps) {
         <section className="py-16 bg-slate-900 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Get Expert Help With Your {city.name} Accident
+              {t('getExpertHelp', { cityName: city.name })}
             </h2>
             <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-              Upload photos of your damage for instant AI analysis or connect with local legal professionals who understand {city.name} traffic patterns.
+              {t('getExpertHelpDesc', { cityName: city.name })}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
@@ -721,7 +723,7 @@ export default async function CityPage({ params }: PageProps) {
                 className="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white px-8 py-4 rounded-lg font-semibold transition-colors"
               >
                 <Car className="w-5 h-5" />
-                Try Free AI Analysis
+                {t('tryFreeAnalysis')}
               </Link>
               <CallbackButton
                 state={stateSlug}
@@ -729,7 +731,7 @@ export default async function CityPage({ params }: PageProps) {
                 className="inline-flex items-center gap-2 bg-white text-slate-900 hover:bg-slate-100 px-8 py-4 rounded-lg font-semibold transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                Get Free Case Review
+                {t('getFreeReview')}
               </CallbackButton>
             </div>
           </div>

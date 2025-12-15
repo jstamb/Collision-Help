@@ -8,6 +8,7 @@ interface PillarHeroProps {
   icon: LucideIcon
   breadcrumbs: BreadcrumbItem[]
   articleCount?: number
+  articlesLabel?: string
 }
 
 export default function PillarHero({
@@ -15,7 +16,8 @@ export default function PillarHero({
   description,
   icon: Icon,
   breadcrumbs,
-  articleCount
+  articleCount,
+  articlesLabel = 'Articles'
 }: PillarHeroProps) {
   return (
     <section className="bg-gradient-to-b from-slate-50 to-white pt-24 pb-12">
@@ -29,7 +31,7 @@ export default function PillarHero({
             </div>
             {articleCount && (
               <span className="px-3 py-1 bg-brand-50 text-brand-700 text-sm font-medium rounded-full">
-                {articleCount} Articles
+                {articleCount} {articlesLabel}
               </span>
             )}
           </div>

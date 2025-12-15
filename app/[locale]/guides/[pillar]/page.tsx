@@ -1,8 +1,8 @@
 import React from 'react'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import Link from 'next/link'
-import { pillars, getPillar } from '@/content/guides/pillars'
+import { Link } from '@/i18n/navigation'
+import { pillars, getPillar, getTranslatedPillar, getTranslatedPillars } from '@/content/guides/pillars'
 import { citiesByState } from '@/content/locations/cities'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
@@ -11,6 +11,7 @@ import GuideCard from '@/components/guides/GuideCard'
 import FAQAccordion from '@/components/shared/FAQAccordion'
 import CTABanner from '@/components/shared/CTABanner'
 import { ArrowRight, BookOpen, MapPin } from 'lucide-react'
+import { getTranslations } from 'next-intl/server'
 
 // Get featured cities for internal linking - prioritize states with pillar-specific articles
 const getFeaturedCities = (pillarSlug: string, articles: { slug: string }[]) => {
@@ -79,8 +80,9 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata
-export async function generateMetadata({ params }: { params: { pillar: string } }): Promise<Metadata> {
-  const pillar = getPillar(params.pillar)
+export async function generateMetadata({ params }: { params: Promise<{ pillar: string }> }): Promise<Metadata> {
+  const { pillar: pillarSlug } = await params
+  const pillar = getPillar(pillarSlug)
   if (!pillar) return {}
 
   return {
@@ -89,17 +91,24 @@ export async function generateMetadata({ params }: { params: { pillar: string } 
   }
 }
 
-export default function PillarHubPage({ params }: { params: { pillar: string } }) {
-  const pillar = getPillar(params.pillar)
+export default async function PillarHubPage({ params }: { params: Promise<{ pillar: string }> }) {
+  const { pillar: pillarSlug } = await params
+  const basePillar = getPillar(pillarSlug)
+  const t = await getTranslations('guidesPage')
+  const tContent = await getTranslations('guidesContent')
 
-  if (!pillar) {
+  if (!basePillar) {
     notFound()
   }
+
+  // Get translated pillar content
+  const pillar = getTranslatedPillar(pillarSlug, tContent) || basePillar
+  const translatedPillars = getTranslatedPillars(tContent)
 
   const Icon = pillar.icon
   const p1Articles = pillar.articles.filter(a => a.priority === 'P1')
   const p2Articles = pillar.articles.filter(a => a.priority === 'P2')
-  const otherPillars = pillars.filter(p => p.slug !== pillar.slug).slice(0, 3)
+  const otherPillars = translatedPillars.filter(p => p.slug !== pillar.slug).slice(0, 3)
   const featuredCities = getFeaturedCities(pillar.slug, pillar.articles)
 
   // FAQPage JSON-LD schema for rich snippets
@@ -146,9 +155,10 @@ export default function PillarHubPage({ params }: { params: { pillar: string } }
           icon={pillar.icon}
           articleCount={pillar.articles.length}
           breadcrumbs={[
-            { label: 'Guides', href: '/guides' },
+            { label: t('breadcrumbGuides'), href: '/guides' },
             { label: pillar.shortTitle }
           ]}
+          articlesLabel={t('articles')}
         />
 
         {/* Main Content */}
@@ -160,7 +170,7 @@ export default function PillarHubPage({ params }: { params: { pillar: string } }
               <section>
                 <div className="flex items-center gap-2 mb-6">
                   <BookOpen className="w-5 h-5 text-brand-600" />
-                  <h2 className="text-xl font-semibold text-slate-900">Essential Reading</h2>
+                  <h2 className="text-xl font-semibold text-slate-900">{t('essentialReading')}</h2>
                 </div>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {p1Articles.map((article) => (
@@ -172,6 +182,8 @@ export default function PillarHubPage({ params }: { params: { pillar: string } }
                       icon={Icon}
                       readingTime={article.readingTime}
                       variant="featured"
+                      readGuideLabel={t('readGuide')}
+                      minReadLabel={t('minRead')}
                     />
                   ))}
                 </div>
@@ -180,7 +192,7 @@ export default function PillarHubPage({ params }: { params: { pillar: string } }
               {/* More Articles */}
               {p2Articles.length > 0 && (
                 <section>
-                  <h2 className="text-xl font-semibold text-slate-900 mb-6">More Articles</h2>
+                  <h2 className="text-xl font-semibold text-slate-900 mb-6">{t('moreArticles')}</h2>
                   <div className="space-y-3">
                     {p2Articles.map((article) => (
                       <GuideCard
@@ -190,6 +202,8 @@ export default function PillarHubPage({ params }: { params: { pillar: string } }
                         href={`/guides/${pillar.slug}/${article.slug}`}
                         icon={Icon}
                         readingTime={article.readingTime}
+                        readGuideLabel={t('readGuide')}
+                        minReadLabel={t('minRead')}
                       />
                     ))}
                   </div>
@@ -208,22 +222,22 @@ export default function PillarHubPage({ params }: { params: { pillar: string } }
                 {/* CTA Card */}
                 <div className="bg-gradient-to-br from-brand-600 to-brand-700 rounded-2xl p-6 text-white">
                   <Icon className="w-10 h-10 mb-4 text-brand-200" />
-                  <h3 className="text-lg font-semibold mb-2">Need Help With Your Claim?</h3>
+                  <h3 className="text-lg font-semibold mb-2">{t('needHelp')}</h3>
                   <p className="text-brand-100 text-sm mb-4">
-                    Upload photos of your damage and get a free AI-powered assessment.
+                    {t('needHelpDesc')}
                   </p>
                   <Link
                     href="/"
                     className="inline-flex items-center gap-2 bg-white text-brand-700 font-medium px-4 py-2 rounded-lg hover:bg-brand-50 transition-colors"
                   >
-                    Get Free Analysis
+                    {t('getFreeAnalysis')}
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
 
                 {/* Quick Links */}
                 <div className="bg-white rounded-xl border border-slate-200 p-5">
-                  <h3 className="font-semibold text-slate-900 mb-4">In This Guide</h3>
+                  <h3 className="font-semibold text-slate-900 mb-4">{t('inThisGuide')}</h3>
                   <ul className="space-y-2">
                     {pillar.articles.slice(0, 6).map((article) => (
                       <li key={article.slug}>
@@ -241,7 +255,7 @@ export default function PillarHubPage({ params }: { params: { pillar: string } }
 
                 {/* Related Guides */}
                 <div className="bg-white rounded-xl border border-slate-200 p-5">
-                  <h3 className="font-semibold text-slate-900 mb-4">Related Guides</h3>
+                  <h3 className="font-semibold text-slate-900 mb-4">{t('relatedGuides')}</h3>
                   <div className="space-y-3">
                     {otherPillars.map((other) => (
                       <Link
@@ -261,10 +275,10 @@ export default function PillarHubPage({ params }: { params: { pillar: string } }
                   <div className="bg-white rounded-xl border border-slate-200 p-5">
                     <h3 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
                       <MapPin className="w-4 h-4 text-brand-600" />
-                      Local Help by City
+                      {t('localHelpByCity')}
                     </h3>
                     <p className="text-xs text-slate-500 mb-3">
-                      Get location-specific accident guidance:
+                      {t('localHelpDesc')}
                     </p>
                     <div className="space-y-2">
                       {featuredCities.map((city: any) => (
@@ -282,7 +296,7 @@ export default function PillarHubPage({ params }: { params: { pillar: string } }
                       href="/locations"
                       className="mt-4 block text-center text-sm text-brand-600 hover:text-brand-700 font-medium"
                     >
-                      View All Locations →
+                      {t('viewAllLocations')} →
                     </Link>
                   </div>
                 )}
@@ -293,8 +307,8 @@ export default function PillarHubPage({ params }: { params: { pillar: string } }
 
         {/* Bottom CTA */}
         <CTABanner
-          title="Still Have Questions?"
-          description="Our AI damage analyzer can help assess your vehicle's damage and guide you through the next steps."
+          title={t('stillHaveQuestions')}
+          description={t('stillHaveQuestionsDesc')}
         />
       </main>
       <Footer />

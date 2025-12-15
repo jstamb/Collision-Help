@@ -27,51 +27,8 @@ import {
   Send,
   Loader2
 } from 'lucide-react'
-
-// FAQ data for SEO
-const faqs = [
-  {
-    question: "How are car accident settlements calculated?",
-    answer: "Car accident settlements are typically calculated by adding up all your economic damages (medical bills, lost wages, property damage) and then multiplying by a factor of 1.5 to 5 to account for pain and suffering. The multiplier depends on injury severity—minor injuries use lower multipliers, while severe or permanent injuries use higher ones. This gives you an estimated settlement range, though actual amounts vary based on liability, insurance limits, and negotiation."
-  },
-  {
-    question: "What is the average settlement for a car accident?",
-    answer: "Average car accident settlements vary widely based on injury severity. Minor injuries like whiplash typically settle for $10,000-$25,000. Moderate injuries involving some medical treatment average $25,000-$100,000. Severe injuries requiring surgery or extended treatment can range from $100,000 to $500,000 or more. Cases involving permanent disability or wrongful death often exceed $1 million. These are general ranges—your specific case depends on medical costs, lost income, liability, and available insurance coverage."
-  },
-  {
-    question: "What factors affect car accident settlement amounts?",
-    answer: "Key factors include: injury severity and required treatment, total medical expenses, lost wages and future earning capacity, property damage, evidence of fault, available insurance coverage, permanent impairment or disability, impact on daily life, documentation quality, and the jurisdiction where the accident occurred. Cases with clear liability (like rear-end collisions) and well-documented injuries typically result in higher settlements."
-  },
-  {
-    question: "How long does it take to get a car accident settlement?",
-    answer: "Simple cases with minor injuries and clear liability may settle in 2-4 months. Moderate injury cases typically take 6-12 months. Severe injury cases often require 1-2 years or longer, especially if litigation is involved. Factors affecting timeline include: reaching maximum medical improvement, gathering all documentation, negotiation process, and whether a lawsuit becomes necessary."
-  },
-  {
-    question: "Should I accept the insurance company's first offer?",
-    answer: "Generally, no. First offers are typically lowball offers designed to settle cheaply. Insurance adjusters often offer 25-50% less than what a claim is actually worth. Before accepting, ensure you've reached maximum medical improvement, gathered all bills and documentation, calculated lost wages, and considered future medical needs. Consulting with a personal injury attorney (usually free) can help you understand if an offer is fair."
-  },
-  {
-    question: "What is pain and suffering worth in a settlement?",
-    answer: "Pain and suffering is typically calculated using a multiplier method (1.5x to 5x your economic damages) or a per diem method (daily rate × days of recovery). Minor soft tissue injuries might use a 1.5-2x multiplier. Moderate injuries with some lasting effects use 2-3x. Severe injuries with significant impact use 3-4x. Permanent or catastrophic injuries may use 5x or higher. Documented pain levels, treatment duration, and impact on quality of life all affect this calculation."
-  },
-  {
-    question: "Do I need a lawyer to get a fair settlement?",
-    answer: "While not required, statistics show that accident victims represented by attorneys typically receive 3-4 times higher settlements than those who negotiate alone, even after attorney fees. Attorneys are particularly valuable for: serious injuries, disputed liability, uncooperative insurance companies, complex medical situations, and cases involving multiple parties. Most personal injury attorneys offer free consultations and work on contingency (no upfront cost)."
-  },
-  {
-    question: "What if my medical bills exceed the at-fault driver's insurance limits?",
-    answer: "If the at-fault driver's insurance is insufficient, you have several options: file a claim with your own underinsured motorist (UIM) coverage, use your health insurance or MedPay coverage, sue the at-fault driver personally (though collecting may be difficult), or negotiate medical liens with providers. Having adequate UIM coverage on your own policy is the best protection against underinsured drivers."
-  }
-]
-
-// Injury severity multipliers and descriptions
-const injurySeverityOptions = [
-  { value: 'minor', label: 'Minor (Soft tissue, bruising)', multiplierLow: 1.5, multiplierHigh: 2 },
-  { value: 'moderate', label: 'Moderate (Whiplash, sprains, minor fractures)', multiplierLow: 2, multiplierHigh: 3 },
-  { value: 'significant', label: 'Significant (Fractures, herniated discs)', multiplierLow: 3, multiplierHigh: 4 },
-  { value: 'severe', label: 'Severe (Surgery required, extended treatment)', multiplierLow: 4, multiplierHigh: 5 },
-  { value: 'permanent', label: 'Permanent/Catastrophic (Disability, TBI, spinal cord)', multiplierLow: 5, multiplierHigh: 10 }
-]
+import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 
 const usStates = [
   'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN',
@@ -105,6 +62,29 @@ function FAQItem({ question, answer, isOpen, onClick }: { question: string; answ
 }
 
 export default function SettlementCalculatorPage() {
+  const t = useTranslations('settlementCalcPage')
+
+  // Injury severity multipliers and descriptions
+  const injurySeverityOptions = [
+    { value: 'minor', label: t('injuryMinor'), multiplierLow: 1.5, multiplierHigh: 2 },
+    { value: 'moderate', label: t('injuryModerate'), multiplierLow: 2, multiplierHigh: 3 },
+    { value: 'significant', label: t('injurySignificant'), multiplierLow: 3, multiplierHigh: 4 },
+    { value: 'severe', label: t('injurySevere'), multiplierLow: 4, multiplierHigh: 5 },
+    { value: 'permanent', label: t('injuryPermanent'), multiplierLow: 5, multiplierHigh: 10 }
+  ]
+
+  // FAQ data
+  const faqs = [
+    { question: t('faq1Q'), answer: t('faq1A') },
+    { question: t('faq2Q'), answer: t('faq2A') },
+    { question: t('faq3Q'), answer: t('faq3A') },
+    { question: t('faq4Q'), answer: t('faq4A') },
+    { question: t('faq5Q'), answer: t('faq5A') },
+    { question: t('faq6Q'), answer: t('faq6A') },
+    { question: t('faq7Q'), answer: t('faq7A') },
+    { question: t('faq8Q'), answer: t('faq8A') }
+  ]
+
   // Calculator inputs
   const [medicalBills, setMedicalBills] = useState('')
   const [futureMedical, setFutureMedical] = useState('')
@@ -177,7 +157,7 @@ export default function SettlementCalculatorPage() {
       multiplierHigh: severity.multiplierHigh,
       severityLabel: severity.label
     }
-  }, [medicalBills, futureMedical, lostWages, futureLostWages, propertyDamage, injurySeverity, atFault])
+  }, [medicalBills, futureMedical, lostWages, futureLostWages, propertyDamage, injurySeverity, atFault, injurySeverityOptions])
 
   const handleCalculate = () => {
     if (medicalBills && injurySeverity) {
@@ -263,14 +243,13 @@ export default function SettlementCalculatorPage() {
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 bg-brand-500/20 border border-brand-400/30 rounded-full px-4 py-2 mb-6">
                 <Calculator className="w-4 h-4 text-brand-400" />
-                <span className="text-sm font-medium text-brand-300">Free Settlement Tool</span>
+                <span className="text-sm font-medium text-brand-300">{t('badge')}</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Car Accident <span className="text-brand-400">Settlement Calculator</span>
+                {t('title')} <span className="text-brand-400">{t('titleHighlight')}</span>
               </h1>
               <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
-                Estimate the potential value of your car accident claim based on your medical bills,
-                lost wages, and injury severity. Get a personalized settlement range in minutes.
+                {t('description')}
               </p>
             </div>
           </div>
@@ -284,7 +263,7 @@ export default function SettlementCalculatorPage() {
                 <div className="bg-gradient-to-r from-brand-600 to-brand-700 px-6 py-4">
                   <h2 className="text-xl font-semibold text-white flex items-center gap-2">
                     <Scale className="w-5 h-5" />
-                    Estimate Your Settlement Value
+                    {t('calcTitle')}
                   </h2>
                 </div>
 
@@ -294,7 +273,7 @@ export default function SettlementCalculatorPage() {
                     <div className="space-y-2">
                       <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                         <Heart className="w-4 h-4 text-slate-400" />
-                        Current Medical Bills
+                        {t('currentMedicalBills')}
                       </label>
                       <div className="relative">
                         <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">$</span>
@@ -306,14 +285,14 @@ export default function SettlementCalculatorPage() {
                           className="pl-7"
                         />
                       </div>
-                      <p className="text-xs text-slate-500">Total medical expenses to date</p>
+                      <p className="text-xs text-slate-500">{t('currentMedicalBillsHelp')}</p>
                     </div>
 
                     {/* Future Medical */}
                     <div className="space-y-2">
                       <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                         <Clock className="w-4 h-4 text-slate-400" />
-                        Estimated Future Medical Costs
+                        {t('futureMedicalCosts')}
                       </label>
                       <div className="relative">
                         <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">$</span>
@@ -325,14 +304,14 @@ export default function SettlementCalculatorPage() {
                           className="pl-7"
                         />
                       </div>
-                      <p className="text-xs text-slate-500">Expected ongoing treatment costs</p>
+                      <p className="text-xs text-slate-500">{t('futureMedicalCostsHelp')}</p>
                     </div>
 
                     {/* Lost Wages */}
                     <div className="space-y-2">
                       <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                         <Briefcase className="w-4 h-4 text-slate-400" />
-                        Lost Wages to Date
+                        {t('lostWagesToDate')}
                       </label>
                       <div className="relative">
                         <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">$</span>
@@ -344,14 +323,14 @@ export default function SettlementCalculatorPage() {
                           className="pl-7"
                         />
                       </div>
-                      <p className="text-xs text-slate-500">Income lost due to the accident</p>
+                      <p className="text-xs text-slate-500">{t('lostWagesToDateHelp')}</p>
                     </div>
 
                     {/* Future Lost Wages */}
                     <div className="space-y-2">
                       <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                         <Clock className="w-4 h-4 text-slate-400" />
-                        Future Lost Earning Capacity
+                        {t('futureLostEarning')}
                       </label>
                       <div className="relative">
                         <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">$</span>
@@ -363,14 +342,14 @@ export default function SettlementCalculatorPage() {
                           className="pl-7"
                         />
                       </div>
-                      <p className="text-xs text-slate-500">If injury affects future work ability</p>
+                      <p className="text-xs text-slate-500">{t('futureLostEarningHelp')}</p>
                     </div>
 
                     {/* Property Damage */}
                     <div className="space-y-2">
                       <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                         <Car className="w-4 h-4 text-slate-400" />
-                        Property Damage
+                        {t('propertyDamage')}
                       </label>
                       <div className="relative">
                         <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">$</span>
@@ -382,70 +361,70 @@ export default function SettlementCalculatorPage() {
                           className="pl-7"
                         />
                       </div>
-                      <p className="text-xs text-slate-500">Vehicle repair or total loss value</p>
+                      <p className="text-xs text-slate-500">{t('propertyDamageHelp')}</p>
                     </div>
 
                     {/* Injury Severity */}
                     <div className="space-y-2">
                       <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                         <AlertTriangle className="w-4 h-4 text-slate-400" />
-                        Injury Severity
+                        {t('injurySeverity')}
                       </label>
                       <select
                         value={injurySeverity}
                         onChange={(e) => setInjurySeverity(e.target.value)}
                         className="flex h-11 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
                       >
-                        <option value="">Select injury severity</option>
+                        <option value="">{t('selectInjurySeverity')}</option>
                         {injurySeverityOptions.map(option => (
                           <option key={option.value} value={option.value}>{option.label}</option>
                         ))}
                       </select>
-                      <p className="text-xs text-slate-500">Most serious injury from the accident</p>
+                      <p className="text-xs text-slate-500">{t('injurySeverityHelp')}</p>
                     </div>
 
                     {/* Fault */}
                     <div className="space-y-2 md:col-span-2">
                       <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                         <Scale className="w-4 h-4 text-slate-400" />
-                        Fault Determination
+                        {t('faultDetermination')}
                       </label>
                       <select
                         value={atFault}
                         onChange={(e) => setAtFault(e.target.value)}
                         className="flex h-11 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
                       >
-                        <option value="">Select fault situation</option>
-                        <option value="not_at_fault">Not at fault (other driver 100% liable)</option>
-                        <option value="partial">Partially at fault (shared liability)</option>
-                        <option value="mostly">Mostly at fault (limited recovery)</option>
+                        <option value="">{t('selectFaultSituation')}</option>
+                        <option value="not_at_fault">{t('notAtFault')}</option>
+                        <option value="partial">{t('partialFault')}</option>
+                        <option value="mostly">{t('mostlyFault')}</option>
                       </select>
-                      <p className="text-xs text-slate-500">Your portion of fault affects settlement</p>
+                      <p className="text-xs text-slate-500">{t('faultDeterminationHelp')}</p>
                     </div>
                   </div>
 
                   <div className="mt-8">
                     <Button onClick={handleCalculate} size="lg" className="w-full md:w-auto">
                       <Calculator className="w-5 h-5 mr-2" />
-                      Calculate Settlement Estimate
+                      {t('calculateButton')}
                     </Button>
                   </div>
 
                   {/* Results */}
                   {showResults && calculation && (
                     <div className="mt-8 pt-8 border-t border-slate-200">
-                      <h3 className="text-lg font-semibold text-slate-900 mb-6">Your Estimated Settlement Range</h3>
+                      <h3 className="text-lg font-semibold text-slate-900 mb-6">{t('resultsTitle')}</h3>
 
                       {/* Settlement Estimate */}
                       <div className="rounded-xl p-6 mb-6 bg-gradient-to-r from-brand-50 to-brand-100 border border-brand-200">
                         <div className="text-center">
-                          <p className="text-sm text-brand-600 font-medium mb-2">Estimated Settlement Value</p>
+                          <p className="text-sm text-brand-600 font-medium mb-2">{t('estimatedValue')}</p>
                           <p className="text-4xl md:text-5xl font-bold text-brand-900">
                             ${calculation.totalSettlementLow.toLocaleString(undefined, { maximumFractionDigits: 0 })} - ${calculation.totalSettlementHigh.toLocaleString(undefined, { maximumFractionDigits: 0 })}
                           </p>
                           {calculation.faultReduction > 0 && (
                             <p className="text-sm text-brand-600 mt-2">
-                              Reduced by {(calculation.faultReduction * 100).toFixed(0)}% for shared fault
+                              {t('reducedByFault', { percent: (calculation.faultReduction * 100).toFixed(0) })}
                             </p>
                           )}
                         </div>
@@ -454,24 +433,24 @@ export default function SettlementCalculatorPage() {
                       {/* Breakdown */}
                       <div className="grid md:grid-cols-2 gap-4 mb-6">
                         <div className="bg-slate-50 rounded-lg p-4">
-                          <span className="text-sm text-slate-500">Economic Damages</span>
+                          <span className="text-sm text-slate-500">{t('economicDamages')}</span>
                           <p className="text-2xl font-bold text-slate-900">${calculation.totalEconomicDamages.toLocaleString()}</p>
                           <div className="mt-2 text-sm text-slate-600 space-y-1">
-                            <p>Medical: ${calculation.medicalExpenses.toLocaleString()}</p>
-                            <p>Lost Income: ${calculation.lostIncome.toLocaleString()}</p>
-                            <p>Property: ${calculation.propertyDamage.toLocaleString()}</p>
+                            <p>{t('medical')}: ${calculation.medicalExpenses.toLocaleString()}</p>
+                            <p>{t('lostIncome')}: ${calculation.lostIncome.toLocaleString()}</p>
+                            <p>{t('property')}: ${calculation.propertyDamage.toLocaleString()}</p>
                           </div>
                         </div>
                         <div className="bg-slate-50 rounded-lg p-4">
-                          <span className="text-sm text-slate-500">Pain & Suffering (Estimated)</span>
+                          <span className="text-sm text-slate-500">{t('painSuffering')}</span>
                           <p className="text-2xl font-bold text-slate-900">
                             ${calculation.painSufferingLow.toLocaleString(undefined, { maximumFractionDigits: 0 })} - ${calculation.painSufferingHigh.toLocaleString(undefined, { maximumFractionDigits: 0 })}
                           </p>
                           <p className="text-sm text-slate-600 mt-2">
-                            Multiplier: {calculation.multiplierLow}x - {calculation.multiplierHigh}x
+                            {t('multiplier')}: {calculation.multiplierLow}x - {calculation.multiplierHigh}x
                           </p>
                           <p className="text-xs text-slate-500 mt-1">
-                            Based on: {calculation.severityLabel}
+                            {t('basedOn')}: {calculation.severityLabel}
                           </p>
                         </div>
                       </div>
@@ -481,10 +460,10 @@ export default function SettlementCalculatorPage() {
                         <div className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-xl p-6 text-center">
                           <Shield className="w-10 h-10 text-brand-400 mx-auto mb-4" />
                           <h4 className="text-xl font-bold text-white mb-2">
-                            Get Your Personalized Settlement Report
+                            {t('getReportTitle')}
                           </h4>
                           <p className="text-slate-300 mb-4 max-w-md mx-auto">
-                            Receive a detailed PDF report with your estimate, next steps, and tips to maximize your settlement.
+                            {t('getReportDesc')}
                           </p>
                           <Button
                             onClick={() => setShowLeadForm(true)}
@@ -492,7 +471,7 @@ export default function SettlementCalculatorPage() {
                             className="bg-brand-500 hover:bg-brand-600"
                           >
                             <Mail className="w-5 h-5 mr-2" />
-                            Get My Free Report
+                            {t('getReportButton')}
                           </Button>
                         </div>
                       )}
@@ -501,14 +480,14 @@ export default function SettlementCalculatorPage() {
                       {showLeadForm && !formSubmitted && (
                         <div className="bg-slate-50 rounded-xl p-6">
                           <h4 className="text-lg font-semibold text-slate-900 mb-4">
-                            Enter Your Information to Receive Your Report
+                            {t('formTitle')}
                           </h4>
                           <form onSubmit={handleLeadSubmit} className="space-y-4">
                             <div className="grid md:grid-cols-2 gap-4">
                               <div className="space-y-2">
                                 <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                                   <User className="w-4 h-4 text-slate-400" />
-                                  Your Name
+                                  {t('yourName')}
                                 </label>
                                 <Input
                                   type="text"
@@ -521,7 +500,7 @@ export default function SettlementCalculatorPage() {
                               <div className="space-y-2">
                                 <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                                   <Mail className="w-4 h-4 text-slate-400" />
-                                  Email Address
+                                  {t('emailAddress')}
                                 </label>
                                 <Input
                                   type="email"
@@ -534,7 +513,7 @@ export default function SettlementCalculatorPage() {
                               <div className="space-y-2">
                                 <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                                   <Phone className="w-4 h-4 text-slate-400" />
-                                  Phone Number
+                                  {t('phoneNumber')}
                                 </label>
                                 <Input
                                   type="tel"
@@ -547,7 +526,7 @@ export default function SettlementCalculatorPage() {
                               <div className="space-y-2">
                                 <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                                   <MapPin className="w-4 h-4 text-slate-400" />
-                                  Your State
+                                  {t('yourState')}
                                 </label>
                                 <select
                                   value={leadData.state}
@@ -555,7 +534,7 @@ export default function SettlementCalculatorPage() {
                                   className="flex h-11 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
                                   required
                                 >
-                                  <option value="">Select State</option>
+                                  <option value="">{t('selectState')}</option>
                                   {usStates.map(s => (
                                     <option key={s} value={s}>{s}</option>
                                   ))}
@@ -579,12 +558,12 @@ export default function SettlementCalculatorPage() {
                                 {formSubmitting ? (
                                   <>
                                     <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                                    Sending...
+                                    {t('sendingReport')}
                                   </>
                                 ) : (
                                   <>
                                     <Send className="w-5 h-5 mr-2" />
-                                    Send My Report
+                                    {t('sendReport')}
                                   </>
                                 )}
                               </Button>
@@ -594,13 +573,12 @@ export default function SettlementCalculatorPage() {
                                 onClick={() => setShowLeadForm(false)}
                                 disabled={formSubmitting}
                               >
-                                Cancel
+                                {t('cancel')}
                               </Button>
                             </div>
 
                             <p className="text-xs text-slate-500 text-center">
-                              By submitting, you agree to receive your settlement report and related information via email.
-                              We respect your privacy and will never sell your information.
+                              {t('formPrivacy')}
                             </p>
                           </form>
                         </div>
@@ -611,11 +589,11 @@ export default function SettlementCalculatorPage() {
                         <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
                           <CheckCircle className="w-12 h-12 text-green-600 mx-auto mb-4" />
                           <h4 className="text-xl font-bold text-green-900 mb-2">
-                            Check Your Email!
+                            {t('successTitle')}
                           </h4>
                           <p className="text-green-700">
-                            We've sent your personalized settlement report to <strong>{leadData.email}</strong>.
-                            Please check your inbox (and spam folder) within the next few minutes.
+                            {t('successMessage')} <strong>{leadData.email}</strong>.
+                            {' '}{t('successNote')}
                           </p>
                         </div>
                       )}
@@ -624,9 +602,7 @@ export default function SettlementCalculatorPage() {
                       <div className="mt-6 bg-slate-100 rounded-lg p-4 flex items-start gap-3">
                         <Info className="w-5 h-5 text-slate-500 flex-shrink-0 mt-0.5" />
                         <p className="text-sm text-slate-600">
-                          This calculator provides estimates only. Actual settlement amounts vary based on jurisdiction,
-                          insurance policy limits, negotiation, and specific case circumstances. This is not legal advice.
-                          Consult with a personal injury attorney for a professional case evaluation.
+                          {t('disclaimer')}
                         </p>
                       </div>
                     </div>
@@ -642,46 +618,38 @@ export default function SettlementCalculatorPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8 text-center">
-                Understanding Car Accident Settlements
+                {t('understandingTitle')}
               </h2>
 
               <div className="prose prose-slate max-w-none">
                 <p className="text-lg text-slate-600 mb-8">
-                  After a car accident, understanding how settlements are calculated can help you
-                  ensure you receive fair compensation for your injuries and losses. This guide
-                  explains the key factors that determine settlement value and what you can expect
-                  during the claims process.
+                  {t('understandingIntro')}
                 </p>
 
                 <h3 className="text-2xl font-semibold text-slate-900 mt-12 mb-4">
-                  How Insurance Companies Calculate Settlements
+                  {t('howInsuranceTitle')}
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  Insurance adjusters use specific formulas to calculate settlement offers. Understanding
-                  these methods helps you evaluate whether an offer is fair:
+                  {t('howInsuranceDesc')}
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6 my-8">
                   <div className="bg-slate-50 rounded-xl p-6">
-                    <h4 className="font-semibold text-slate-900 mb-2">The Multiplier Method</h4>
+                    <h4 className="font-semibold text-slate-900 mb-2">{t('multiplierMethod')}</h4>
                     <p className="text-slate-600 text-sm">
-                      The most common approach: add all medical expenses, then multiply by 1.5-5
-                      based on injury severity. Add lost wages and property damage to get the
-                      settlement range. Severe injuries warrant higher multipliers.
+                      {t('multiplierMethodDesc')}
                     </p>
                   </div>
                   <div className="bg-slate-50 rounded-xl p-6">
-                    <h4 className="font-semibold text-slate-900 mb-2">The Per Diem Method</h4>
+                    <h4 className="font-semibold text-slate-900 mb-2">{t('perDiemMethod')}</h4>
                     <p className="text-slate-600 text-sm">
-                      Assigns a daily dollar amount (often your daily earnings) for each day you
-                      suffered from injuries. This amount is multiplied by the number of recovery
-                      days to calculate pain and suffering compensation.
+                      {t('perDiemMethodDesc')}
                     </p>
                   </div>
                 </div>
 
                 <h3 className="text-2xl font-semibold text-slate-900 mt-12 mb-4">
-                  Types of Damages in Car Accident Claims
+                  {t('typesOfDamages')}
                 </h3>
 
                 <div className="space-y-4 my-8">
@@ -690,10 +658,9 @@ export default function SettlementCalculatorPage() {
                       <DollarSign className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-slate-900">Economic Damages</h4>
+                      <h4 className="font-semibold text-slate-900">{t('economicDamagesTitle')}</h4>
                       <p className="text-slate-600 text-sm">
-                        Measurable financial losses including medical bills, lost wages, property damage,
-                        rental cars, and out-of-pocket expenses. These are documented with receipts and records.
+                        {t('economicDamagesDesc')}
                       </p>
                     </div>
                   </div>
@@ -702,10 +669,9 @@ export default function SettlementCalculatorPage() {
                       <Heart className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-slate-900">Non-Economic Damages</h4>
+                      <h4 className="font-semibold text-slate-900">{t('nonEconomicDamagesTitle')}</h4>
                       <p className="text-slate-600 text-sm">
-                        Subjective losses like pain and suffering, emotional distress, loss of enjoyment
-                        of life, and loss of consortium. These are calculated using multipliers or per diem methods.
+                        {t('nonEconomicDamagesDesc')}
                       </p>
                     </div>
                   </div>
@@ -714,59 +680,56 @@ export default function SettlementCalculatorPage() {
                       <AlertTriangle className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-slate-900">Punitive Damages (Rare)</h4>
+                      <h4 className="font-semibold text-slate-900">{t('punitiveDamagesTitle')}</h4>
                       <p className="text-slate-600 text-sm">
-                        Awarded in cases of extreme negligence or intentional misconduct to punish the
-                        at-fault party. Only available in certain states and circumstances.
+                        {t('punitiveDamagesDesc')}
                       </p>
                     </div>
                   </div>
                 </div>
 
                 <h3 className="text-2xl font-semibold text-slate-900 mt-12 mb-4">
-                  Factors That Increase Settlement Value
+                  {t('factorsIncreaseTitle')}
                 </h3>
                 <ul className="list-disc pl-6 space-y-2 text-slate-600 mb-8">
-                  <li><strong>Clear liability:</strong> When the other driver is clearly at fault (rear-end collision, red light violation)</li>
-                  <li><strong>Severe injuries:</strong> Broken bones, herniated discs, traumatic brain injury, surgery required</li>
-                  <li><strong>Long recovery period:</strong> Extended treatment and rehabilitation increase damages</li>
-                  <li><strong>Permanent impairment:</strong> Lasting disability or disfigurement significantly raises value</li>
-                  <li><strong>Strong documentation:</strong> Medical records, photos, witness statements support your claim</li>
-                  <li><strong>High income:</strong> Greater lost wages and earning capacity lead to higher settlements</li>
-                  <li><strong>Adequate insurance:</strong> Higher policy limits mean more available compensation</li>
+                  <li><strong>{t('factorsIncrease1').split(':')[0]}:</strong> {t('factorsIncrease1').split(':')[1]}</li>
+                  <li><strong>{t('factorsIncrease2').split(':')[0]}:</strong> {t('factorsIncrease2').split(':')[1]}</li>
+                  <li><strong>{t('factorsIncrease3').split(':')[0]}:</strong> {t('factorsIncrease3').split(':')[1]}</li>
+                  <li><strong>{t('factorsIncrease4').split(':')[0]}:</strong> {t('factorsIncrease4').split(':')[1]}</li>
+                  <li><strong>{t('factorsIncrease5').split(':')[0]}:</strong> {t('factorsIncrease5').split(':')[1]}</li>
+                  <li><strong>{t('factorsIncrease6').split(':')[0]}:</strong> {t('factorsIncrease6').split(':')[1]}</li>
+                  <li><strong>{t('factorsIncrease7').split(':')[0]}:</strong> {t('factorsIncrease7').split(':')[1]}</li>
                 </ul>
 
                 <h3 className="text-2xl font-semibold text-slate-900 mt-12 mb-4">
-                  Common Mistakes That Reduce Settlements
+                  {t('mistakesTitle')}
                 </h3>
                 <ul className="list-disc pl-6 space-y-2 text-slate-600 mb-8">
-                  <li><strong>Delaying medical treatment:</strong> Gaps in care create doubt about injury severity</li>
-                  <li><strong>Giving recorded statements:</strong> Adjusters can use your words against you</li>
-                  <li><strong>Accepting the first offer:</strong> Initial offers are typically 25-50% below fair value</li>
-                  <li><strong>Posting on social media:</strong> Photos and posts can be used to dispute injuries</li>
-                  <li><strong>Settling too quickly:</strong> Before knowing full extent of injuries and future costs</li>
-                  <li><strong>Not documenting everything:</strong> Missing records reduce your claim value</li>
+                  <li><strong>{t('mistake1').split(':')[0]}:</strong> {t('mistake1').split(':')[1]}</li>
+                  <li><strong>{t('mistake2').split(':')[0]}:</strong> {t('mistake2').split(':')[1]}</li>
+                  <li><strong>{t('mistake3').split(':')[0]}:</strong> {t('mistake3').split(':')[1]}</li>
+                  <li><strong>{t('mistake4').split(':')[0]}:</strong> {t('mistake4').split(':')[1]}</li>
+                  <li><strong>{t('mistake5').split(':')[0]}:</strong> {t('mistake5').split(':')[1]}</li>
+                  <li><strong>{t('mistake6').split(':')[0]}:</strong> {t('mistake6').split(':')[1]}</li>
                 </ul>
 
                 <h3 className="text-2xl font-semibold text-slate-900 mt-12 mb-4">
-                  When to Hire a Personal Injury Attorney
+                  {t('whenToHireTitle')}
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  Consider consulting an attorney when your case involves:
+                  {t('whenToHireIntro')}
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-slate-600 mb-8">
-                  <li>Significant injuries requiring ongoing medical treatment</li>
-                  <li>Disputed liability or shared fault</li>
-                  <li>Insurance company denying or undervaluing your claim</li>
-                  <li>Permanent disability or disfigurement</li>
-                  <li>Complex situations involving multiple parties</li>
-                  <li>Commercial vehicle or trucking accidents</li>
-                  <li>Settlement offers that seem unfairly low</li>
+                  <li>{t('whenToHire1')}</li>
+                  <li>{t('whenToHire2')}</li>
+                  <li>{t('whenToHire3')}</li>
+                  <li>{t('whenToHire4')}</li>
+                  <li>{t('whenToHire5')}</li>
+                  <li>{t('whenToHire6')}</li>
+                  <li>{t('whenToHire7')}</li>
                 </ul>
                 <p className="text-slate-600 mb-4">
-                  Most personal injury attorneys work on contingency, meaning they only get paid if
-                  you win your case. Free consultations allow you to understand your options without
-                  financial risk.
+                  {t('whenToHireNote')}
                 </p>
               </div>
             </div>
@@ -780,10 +743,10 @@ export default function SettlementCalculatorPage() {
               <div className="text-center mb-12">
                 <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-4 py-2 mb-4">
                   <HelpCircle className="w-4 h-4 text-brand-600" />
-                  <span className="text-sm font-medium text-slate-700">Common Questions</span>
+                  <span className="text-sm font-medium text-slate-700">{t('faqBadge')}</span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
-                  Settlement Calculator FAQ
+                  {t('faqTitle')}
                 </h2>
               </div>
 
@@ -807,18 +770,17 @@ export default function SettlementCalculatorPage() {
           <div className="container mx-auto px-4 text-center">
             <Shield className="w-12 h-12 mx-auto mb-6 text-brand-200" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Not Sure About Your Claim Value?
+              {t('ctaTitle')}
             </h2>
             <p className="text-xl text-brand-100 mb-8 max-w-2xl mx-auto">
-              Our AI Damage Analyzer can assess your vehicle damage photos and provide
-              additional insights about your accident claim.
+              {t('ctaDescription')}
             </p>
-            <a
+            <Link
               href="/ai-damage-analyzer"
               className="inline-flex items-center gap-2 bg-white text-brand-600 px-8 py-4 rounded-lg font-semibold hover:bg-brand-50 transition-colors"
             >
-              Get Free AI Analysis <Calculator className="w-5 h-5" />
-            </a>
+              {t('ctaButton')} <Calculator className="w-5 h-5" />
+            </Link>
           </div>
         </section>
       </main>

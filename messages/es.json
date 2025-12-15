@@ -317,5 +317,1393 @@
     "homeDescription": "Obtén análisis gratuito de daños de auto con IA y orientación experta para reclamos de seguros. Sube fotos para evaluación instantánea y consejos personalizados.",
     "aboutTitle": "Sobre Nosotros - Collision Help",
     "aboutDescription": "Conoce la misión de Collision Help de ayudar a víctimas de accidentes con reclamos de seguros y evaluación de daños vehiculares."
+  },
+  "guidesPage": {
+    "essentialReading": "Lectura Esencial",
+    "moreArticles": "Más Artículos",
+    "needHelp": "¿Necesitas Ayuda Con Tu Reclamo?",
+    "needHelpDesc": "Sube fotos de tu daño y obtén una evaluación gratuita con IA.",
+    "getFreeAnalysis": "Obtener Análisis Gratis",
+    "inThisGuide": "En Esta Guía",
+    "relatedGuides": "Guías Relacionadas",
+    "localHelpByCity": "Ayuda Local por Ciudad",
+    "localHelpDesc": "Obtén orientación específica por ubicación:",
+    "viewAllLocations": "Ver Todas las Ubicaciones",
+    "stillHaveQuestions": "¿Aún Tienes Preguntas?",
+    "stillHaveQuestionsDesc": "Nuestro analizador de daños con IA puede ayudar a evaluar los daños de tu vehículo y guiarte en los próximos pasos.",
+    "readGuide": "Leer Guía",
+    "minRead": "min de lectura",
+    "articles": "Artículos",
+    "breadcrumbGuides": "Guías"
+  },
+  "guidesHub": {
+    "title": "Guías y Recursos de Accidentes de Auto",
+    "description": "Orientación experta para ayudarte a navegar reclamos de seguros, entender tus derechos y volver al camino. Escrito para personas reales lidiando con accidentes reales.",
+    "articlesCount": "artículos",
+    "explore": "Explorar",
+    "mostPopular": "Artículos Más Populares",
+    "browseByTopic": "Buscar por Tema",
+    "viewAllArticles": "Ver los {count} artículos"
+  },
+  "locationsHub": {
+    "title": "Ayuda para Accidentes de Auto Por Estado",
+    "subtitle": "Cada estado tiene diferentes leyes de seguros, sistemas de culpa y plazos. Encuentra tu estado abajo para entender tus derechos y opciones después de un accidente de auto.",
+    "stateCoverage": "Cobertura de 50 Estados",
+    "atFaultStates": "Estados de Culpa",
+    "noFaultStates": "Estados Sin Culpa",
+    "choiceStates": "Estados de Elección",
+    "contributoryNegligence": "Negligencia Contributiva",
+    "selectYourState": "Selecciona Tu Estado",
+    "selectYourStateDesc": "Haz clic en tu estado para ver información detallada sobre requisitos de seguros, sistemas de culpa, plazos de prescripción y más.",
+    "understandingSystems": "Entendiendo los Sistemas de Seguros por Estado",
+    "atFaultTitle": "Estados de Culpa",
+    "atFaultDesc": "En estados de culpa (tort), el conductor que causó el accidente es responsable de pagar los daños. Puedes presentar un reclamo contra su seguro o demandarlo directamente.",
+    "atFault1": "Presenta reclamo con el seguro del conductor culpable",
+    "atFault2": "Puedes demandar por daños completos incluyendo dolor y sufrimiento",
+    "atFault3": "La determinación de culpa es crítica",
+    "noFaultTitle": "Estados Sin Culpa",
+    "noFaultDesc": "En estados sin culpa, tu propio seguro (PIP) paga tus facturas médicas y salarios perdidos sin importar quién causó el accidente. Las demandas son limitadas.",
+    "noFault1": "Tu cobertura PIP paga primero",
+    "noFault2": "Compensación más rápida, menos litigios",
+    "noFault3": "Solo puedes demandar si las lesiones cumplen el umbral",
+    "choiceTitle": "Estados de Elección",
+    "choiceDesc": "Los estados de elección te permiten seleccionar entre cobertura sin culpa o cobertura tradicional de culpa cuando compras tu póliza.",
+    "choice1": "Elige tu tipo de cobertura",
+    "choice2": "Diferentes primas y derechos",
+    "choice3": "Kentucky, Nueva Jersey, Pensilvania",
+    "contributoryWarningTitle": "Advertencia: Estados de Negligencia Contributiva",
+    "contributoryWarningDesc": "Si estás en Alabama, Maryland, Carolina del Norte, Virginia o Washington D.C., ten en cuenta que estas jurisdicciones siguen reglas de negligencia contributiva pura. Esto significa que si te encuentran con solo 1% de culpa en el accidente, podrías quedar completamente excluido de recibir cualquier compensación.",
+    "contributoryWarningNote": "En estos estados, documentar que no tuviste culpa es especialmente crítico. Considera consultar con un abogado temprano en el proceso.",
+    "noFaultStatesList": "Estados con Seguro Sin Culpa",
+    "notSureTitle": "¿No Sabes Por Dónde Empezar?",
+    "notSureDesc": "Nuestro Analizador de Daños con IA puede ayudarte a entender tu accidente sin importar en qué estado estés.",
+    "tryFreeAnalysis": "Prueba el Análisis Gratis con IA",
+    "regionNortheast": "Noreste",
+    "regionSoutheast": "Sureste",
+    "regionMidwest": "Medio Oeste",
+    "regionSouthwest": "Suroeste",
+    "regionWest": "Oeste"
+  },
+  "statePage": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbLocations": "Ubicaciones",
+    "heroTitle": "Ayuda para Accidentes de Auto en {stateName}",
+    "heroSubtitle": "Entendiendo el {faultSystem} de {stateName}, tus derechos y cómo navegar el proceso de reclamos después de un accidente de auto.",
+    "noFaultInsuranceSystem": "sistema de seguro sin culpa",
+    "choiceNoFaultSystem": "sistema de elección sin culpa",
+    "atFaultInsuranceSystem": "sistema de seguro de culpa",
+    "noFaultState": "Estado Sin Culpa",
+    "choiceNoFault": "Elección Sin Culpa",
+    "atFaultState": "Estado de Culpa",
+    "atFaultTort": "Culpa (Tort)",
+    "toFileInjuryClaim": "para Presentar Reclamo por Lesiones",
+    "minimumCoverage": "Cobertura Mínima",
+    "quickFacts": "Datos Rápidos de Accidentes de Auto en {stateName}",
+    "faultSystem": "Sistema de Culpa",
+    "comparativeNegligence": "Negligencia Comparativa",
+    "pure": "Pura",
+    "contributory": "Contributiva",
+    "modified50": "Modificada (Barra del 50%)",
+    "modified51": "Modificada (Barra del 51%)",
+    "personalInjuryDeadline": "Plazo para Lesiones Personales",
+    "propertyDamageDeadline": "Plazo para Daños a la Propiedad",
+    "minimumLiabilityCoverage": "Cobertura Mínima de Responsabilidad",
+    "totalLossThreshold": "Umbral de Pérdida Total",
+    "pipCoverageRequired": "Cobertura PIP Requerida",
+    "minimum": "mínimo",
+    "uninsuredMotorist": "Motorista Sin Seguro",
+    "required": "Requerido",
+    "understandingFaultTitle": "Entendiendo el Sistema de Seguro {faultType} de {stateName}",
+    "noFault": "Sin Culpa",
+    "howFaultAffectsClaim": "Cómo la Culpa Afecta Tu Reclamo",
+    "importantWarning": "Advertencia Importante",
+    "contributoryWarningText": "La regla de negligencia contributiva de {stateName} es extremadamente estricta. Documenta todo en la escena del accidente y evita cualquier declaración que pueda interpretarse como admisión de culpa.",
+    "insuranceRequirementsTitle": "Requisitos de Seguro de Auto en {stateName}",
+    "insuranceRequirementsDesc": "{stateName} requiere que todos los conductores tengan cobertura mínima de seguro de auto. Entender estos requisitos te ayuda a asegurarte de estar adecuadamente protegido e informar tus decisiones al presentar un reclamo.",
+    "minimumRequiredCoverage": "Cobertura Mínima Requerida",
+    "bodilyInjuryPerPerson": "Lesiones Corporales (por persona)",
+    "bodilyInjuryPerAccident": "Lesiones Corporales (por accidente)",
+    "propertyDamage": "Daños a la Propiedad",
+    "pipCoverage": "Cobertura PIP (Protección contra Lesiones Personales)",
+    "insuranceRecommendations": "Recomendaciones de Seguro",
+    "umUimRecommendation": "Considera cobertura de motorista sin seguro/con seguro insuficiente",
+    "umUimDesc": "Te protege si el conductor culpable no tiene seguro adecuado. Recomendado incluso donde no es requerido por ley.",
+    "higherLimitsRecommendation": "Considera límites de responsabilidad más altos",
+    "higherLimitsDesc": "La cobertura mínima puede no protegerte completamente en un accidente grave. Límites más altos proporcionan mejor protección.",
+    "importantConsiderations": "Consideraciones Importantes para {stateName}",
+    "findCityTitle": "Encuentra Ayuda para Accidentes en Tu Ciudad",
+    "findCityDesc": "Obtén información localizada para las principales ciudades de {stateName}.",
+    "viewDetails": "Ver Detalles",
+    "faqTitle": "Preguntas Frecuentes: Accidentes de Auto en {stateName}",
+    "relatedGuides": "Guías Relacionadas",
+    "viewGuide": "Ver Guía",
+    "freeAnalysis": "Análisis Gratis",
+    "freeAnalysisDesc": "Obtén evaluación de daños con IA",
+    "getStarted": "Comenzar",
+    "callbackTitle": "Habla Con un Experto",
+    "callbackDesc": "Obtén orientación personalizada para tu reclamo de accidente en {stateName}.",
+    "requestCallback": "Solicitar Llamada",
+    "faq1Q": "¿Qué significa que {stateName} es un estado sin culpa?",
+    "faq1A": "En {stateName}, sin culpa significa que tu propio seguro (cobertura PIP) paga tus gastos médicos y salarios perdidos después de un accidente, sin importar quién lo causó. Esto acelera la compensación, pero limita tu capacidad de demandar a menos que tus lesiones cumplan ciertos umbrales.",
+    "faq2Q": "¿Qué significa que {stateName} es un estado de elección sin culpa?",
+    "faq2A": "{stateName} te permite elegir entre una póliza sin culpa (donde tu propio PIP paga sin importar la culpa) o una póliza tradicional de tort (donde puedes demandar al conductor culpable). Cada opción tiene diferentes primas y limitaciones de recuperación.",
+    "faq3Q": "¿Es {stateName} un estado de culpa o sin culpa?",
+    "faq3A": "{stateName} es un estado de culpa (tort). Esto significa que el conductor que causó el accidente es responsable de pagar los daños. Puedes presentar un reclamo contra su seguro o demandarlo directamente por facturas médicas, salarios perdidos y dolor y sufrimiento.",
+    "faq4Q": "¿Cuánto tiempo tengo para presentar un reclamo por accidente de auto en {stateName}?",
+    "faq4A": "En {stateName}, el plazo de prescripción para reclamos por lesiones personales es de {personalInjury}, y {propertyDamage} para daños a la propiedad. Es importante actuar rápido, ya que perder estos plazos puede impedirte permanentemente recuperar compensación.",
+    "faq5Q": "¿Cuál es el seguro de auto mínimo requerido en {stateName}?",
+    "faq5A": "{stateName} requiere cobertura mínima de responsabilidad de {coverage}.",
+    "faq5APipRequired": "La cobertura de Protección contra Lesiones Personales (PIP) también es obligatoria.",
+    "faq5AUmRequired": "La cobertura de motorista sin seguro es requerida.",
+    "faq5AUmOptional": "La cobertura de motorista sin seguro es opcional pero recomendada.",
+    "faq6QContributory": "¿Qué pasa si soy parcialmente culpable de un accidente en {stateName}?",
+    "faq6AContributory": "{stateName} sigue reglas de negligencia contributiva, que son muy estrictas. Si te encuentran con solo 1% de culpa en el accidente, podrías quedar completamente excluido de recuperar cualquier compensación. Esto hace que documentar la culpa sea extremadamente importante.",
+    "faq6QComparative": "¿Puedo recuperar daños si soy parcialmente culpable en {stateName}?",
+    "faq6APure": "Sí, {stateName} usa negligencia comparativa pura. Puedes recuperar daños incluso si eres mayormente culpable—tu compensación simplemente se reduce por tu porcentaje de culpa.",
+    "faq6AModified50": "Depende de tu porcentaje de culpa. {stateName} usa negligencia comparativa modificada con una barra del 50%. Puedes recuperar daños solo si tu culpa es menor al 50%.",
+    "faq6AModified51": "Depende de tu porcentaje de culpa. {stateName} usa negligencia comparativa modificada con una barra del 51%. Puedes recuperar daños solo si tu culpa es 50% o menos.",
+    "faq7Q": "¿Cómo se determina una pérdida total en {stateName}?",
+    "faq7A": "En {stateName}, tu vehículo típicamente se considera pérdida total cuando los costos de reparación exceden el {threshold} de su valor real en efectivo.",
+    "faq7ATLF": "Las compañías de seguros usan la Fórmula de Pérdida Total (costo de reparación + valor de salvamento > valor real en efectivo) para hacer esta determinación.",
+    "faq7ATLV": "Las compañías de seguros usan el método de umbral de porcentaje para hacer esta determinación.",
+    "faq8Q": "¿Puedo elegir mi propio taller de reparación en {stateName}?",
+    "faq8A": "Sí, tienes derecho a elegir tu propio taller de reparación en {stateName}. Las compañías de seguros pueden recomendar talleres preferidos, pero no pueden obligarte a usarlos. Sin embargo, usar su red preferida puede agilizar el proceso de reclamos.",
+    "faq9Q": "¿Qué es el seguro PIP y cómo funciona en {stateName}?",
+    "faq9A": "La Protección contra Lesiones Personales (PIP) es obligatoria en {stateName}. Cubre tus gastos médicos y salarios perdidos después de un accidente sin importar quién tuvo la culpa.",
+    "faq9AAmount": "La cobertura mínima de PIP requerida es {amount}.",
+    "personalInjuryProtection": "Protección contra Lesiones Personales (PIP)",
+    "umRequired": "Requerido",
+    "umOptional": "Opcional (Recomendado)",
+    "insuranceMinimumNote": "Aunque estos son los mínimos legales, muchos expertos recomiendan tener límites de cobertura más altos. Los costos médicos y las reparaciones de vehículos a menudo exceden los montos mínimos de cobertura, dejándote personalmente responsable por la diferencia.",
+    "statuteOfLimitationsTitle": "Plazo de Prescripción en {stateName}",
+    "statuteOfLimitationsDesc": "El plazo de prescripción establece una fecha límite para presentar reclamos legales después de un accidente. En {stateName}, tienes {personalInjury} para presentar una demanda por lesiones personales y {propertyDamage} para reclamos por daños a la propiedad.",
+    "whyTimingMatters": "Por Qué es Importante el Tiempo",
+    "whyTimingMattersDesc": "No cumplir con el plazo de prescripción puede impedirte permanentemente recuperar compensación, sin importar cuán fuerte sea tu caso. Además, la evidencia se vuelve más difícil de reunir y los recuerdos de los testigos se desvanecen con el tiempo. Iniciar el proceso de reclamos con prontitud te da la mejor oportunidad de un resultado exitoso.",
+    "urgentShortDeadline": "Urgente: Plazo Corto",
+    "urgentShortDeadlineText": "{stateName} tiene uno de los plazos de prescripción más cortos del país para reclamos por lesiones personales. Debes actuar rápidamente para proteger tus derechos.",
+    "totalLossRulesTitle": "Reglas de Pérdida Total en {stateName}",
+    "totalLossRulesDesc": "Cuando tu vehículo está severamente dañado, la compañía de seguros determinará si es más económico repararlo o declararlo como pérdida total. En {stateName}, un vehículo típicamente se considera pérdida total cuando los costos de reparación alcanzan el {threshold} de su valor real en efectivo (ACV).",
+    "howTotalLossCalculated": "Cómo se Calcula la Pérdida Total",
+    "totalLossFormulaDesc": "{stateName} usa la Fórmula de Pérdida Total (TLF), donde un vehículo se considera pérdida total si el costo de reparación más el valor de salvamento excede el valor real en efectivo. Este método considera lo que la compañía de seguros puede recuperar vendiendo el vehículo dañado.",
+    "totalLossThresholdDesc": "{stateName} usa un método de umbral porcentual. Si los costos de reparación exceden el {threshold} del valor real en efectivo de tu vehículo, será declarado como pérdida total.",
+    "optionsAfterTotalLoss": "Tus Opciones Después de una Pérdida Total",
+    "totalLossOption1": "Aceptar el pago del seguro y entregar tu vehículo",
+    "totalLossOption2": "Negociar si crees que la valoración es muy baja",
+    "totalLossOption3": "Quedarte con tu vehículo (el pago se reducirá por el valor de salvamento) y recibir un título de salvamento",
+    "whatToDoAfterTitle": "Qué Hacer Después de un Accidente de Auto en {stateName}",
+    "whatToDoAfterDesc": "Los pasos que tomes inmediatamente después de un accidente pueden impactar significativamente tu capacidad de recuperar compensación. Esto es lo que debes hacer:",
+    "step1Title": "Llama al 911",
+    "step1Desc": "Reporta el accidente a la policía y solicita asistencia médica si alguien está lesionado. Un informe policial crea documentación oficial.",
+    "step2Title": "Documenta Todo",
+    "step2Desc": "Toma fotos de todos los vehículos, daños, condiciones del camino, señales de tráfico y cualquier lesión visible. Obtén información de contacto de los testigos.",
+    "step3Title": "Intercambia Información",
+    "step3Desc": "Obtén el nombre del otro conductor, teléfono, compañía de seguros, número de póliza, placa y número de licencia de conducir.",
+    "step4Title": "Busca Atención Médica",
+    "step4Desc": "Aunque te sientas bien, haz que un médico te revise. Algunas lesiones no muestran síntomas inmediatamente, y los registros médicos son cruciales para los reclamos.",
+    "step5Title": "Reporta a Tu Seguro",
+    "step5Desc": "Notifica a tu compañía de seguros prontamente. En {stateName}, puede haber plazos específicos para reportar.",
+    "step6Title": "No Admitas Culpa",
+    "step6Desc": "Evita hacer declaraciones como \"Lo siento\" o \"Fue mi culpa\". Estas pueden usarse en tu contra al determinar responsabilidad.",
+    "dealingWithInsuranceTitle": "Tratando con Compañías de Seguros en {stateName}",
+    "dealingWithInsuranceNoFault": "En el sistema sin culpa de {stateName}, típicamente presentarás un reclamo primero con tu propia compañía de seguros para gastos médicos y salarios perdidos (a través de PIP). Para daños a la propiedad y reclamos adicionales, podrías tratar con el asegurador del conductor culpable.",
+    "dealingWithInsuranceAtFault": "En {stateName}, probablemente tratarás tanto con tu propia compañía de seguros como con el asegurador del conductor culpable. Entender tus derechos y el proceso de reclamos te ayuda a navegar las negociaciones efectivamente.",
+    "knowYourRights": "Conoce Tus Derechos",
+    "right1": "Puedes elegir tu propio taller de reparación—las aseguradoras pueden recomendar pero no requerir sus talleres preferidos",
+    "right2": "Tienes derecho a un auto de alquiler si tu póliza o la póliza del conductor culpable incluye esta cobertura",
+    "right3": "No tienes que aceptar la primera oferta de acuerdo—puedes negociar o disputar valoraciones",
+    "right4": "Tienes derecho a solicitar una tasación independiente si no estás de acuerdo con la evaluación de daños",
+    "commonTactics": "Tácticas Comunes a Vigilar",
+    "commonTacticsDesc": "Los ajustadores de seguros pueden tratar de minimizar los pagos grabando declaraciones que pueden usarse en tu contra, ofreciendo acuerdos rápidos y bajos, o retrasando el proceso de reclamos. Considera consultar con un abogado antes de aceptar cualquier acuerdo, especialmente para lesiones significativas.",
+    "stateSpecificTitle": "Consideraciones Específicas Importantes de {stateName}",
+    "stateSpecificDesc": "Cada estado tiene factores únicos que pueden afectar los reclamos por accidentes de auto. Esto es lo que debes saber sobre {stateName}:",
+    "cityGuidesTitle": "Guías de Accidentes Específicas por Ciudad para {stateName}",
+    "cityGuidesDesc": "Obtén orientación detallada sobre accidentes para tu ciudad específica, incluyendo autopistas locales, intersecciones peligrosas, patrones de tráfico y consideraciones específicas del vecindario.",
+    "majorHighwaysCovered": "{count} autopistas principales cubiertas",
+    "viewCityGuide": "Ver guía de la ciudad",
+    "majorCitiesTitle": "Principales Ciudades que Atendemos en {stateName}",
+    "majorCitiesDesc": "Ayudamos a víctimas de accidentes en todo {stateName}, incluyendo residentes en estas áreas metropolitanas principales. Las áreas urbanas a menudo ven tasas más altas de accidentes debido a la densidad del tráfico, mientras que las áreas rurales pueden enfrentar desafíos únicos con tiempos de respuesta de emergencia y acceso a instalaciones de reparación.",
+    "faqSectionTitle": "Preguntas Frecuentes Sobre Accidentes de Auto en {stateName}",
+    "getFreeReview": "Obtén Tu Evaluación Gratuita del Caso",
+    "understandOptions": "Entiende tus opciones después de un accidente de auto en {stateName}.",
+    "findOutOptions": "Descubre tus opciones después de un accidente de auto en {stateName}.",
+    "aiAnalyzerTitle": "Analizador de Daños con IA",
+    "aiAnalyzerDesc": "Sube fotos de tus daños por accidente y obtén un análisis instantáneo con IA de la fortaleza de tu caso.",
+    "tryFreeAnalyzer": "Prueba el Analizador Gratis",
+    "needHelpNow": "¿Necesitas Ayuda Ahora?",
+    "needHelpNowDesc": "Conéctate con profesionales experimentados en accidentes de {stateName} que pueden ayudarte con tu reclamo.",
+    "requestCallBack": "Solicitar una Llamada",
+    "beenInAccident": "¿Tuviste un Accidente de Auto en {stateName}?",
+    "beenInAccidentDesc": "No navegues el proceso de reclamos solo. Obtén una evaluación gratuita del caso y entiende tus opciones.",
+    "useAiAnalyzer": "Usar Analizador de Daños con IA",
+    "getFreeReviewButton": "Obtener Evaluación Gratuita"
+  },
+  "cityPage": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbLocations": "Ubicaciones",
+    "heroTitle": "Ayuda para Accidentes de Auto en",
+    "noFaultState": "Estado Sin Culpa",
+    "choiceState": "Estado de Elección",
+    "atFaultState": "Estado Con Culpa",
+    "analyzeYourDamage": "Analiza Tu Daño",
+    "requestCallback": "Solicitar Llamada",
+    "population": "Población",
+    "annualAccidents": "Accidentes Anuales",
+    "injuryDeadline": "Plazo de Lesiones",
+    "minCoverage": "Cob. Mínima",
+    "majorHighways": "Autopistas Principales",
+    "majorHighwaysTitle": "Autopistas Principales y Puntos de Accidentes",
+    "majorHighwaysDesc": "Entender dónde ocurren comúnmente los accidentes en {cityName} puede ayudarte a estar alerta y saber qué esperar si estás involucrado en una colisión.",
+    "dangerousIntersections": "Intersecciones Peligrosas",
+    "trafficPatternsTitle": "Patrones de Tráfico de {cityName}",
+    "commonAccidentTypes": "Tipos Comunes de Accidentes en {cityName}",
+    "neighborhoodTitle": "Consideraciones de Tráfico por Vecindario",
+    "neighborhoodDesc": "Diferentes áreas de {cityName} presentan desafíos únicos de conducción. Esto es lo que debes saber sobre cada vecindario.",
+    "weatherTitle": "Peligros de Conducción Relacionados con el Clima",
+    "localConsiderationsTitle": "Consideraciones Locales para Accidentes en {cityName}",
+    "localConsiderationsDesc": "Factores importantes específicos para manejar reclamos por accidentes de auto en {cityName}:",
+    "faqTitle": "Preguntas Frecuentes Sobre Accidentes de Auto en {cityName}",
+    "stateLawSummary": "Resumen de Leyes de {stateName}",
+    "faultSystem": "Sistema de Culpa:",
+    "injuryDeadlineLabel": "Plazo de Lesiones:",
+    "propertyDeadline": "Plazo de Propiedad:",
+    "minCoverageLabel": "Cob. Mínima:",
+    "pipRequired": "PIP Requerido:",
+    "yes": "Sí",
+    "totalLoss": "Pérdida Total:",
+    "contributoryWarning": "{stateName} usa negligencia contributiva. Cualquier culpa de tu parte podría impedir la recuperación.",
+    "viewFullGuide": "Ver Guía Completa de {stateName}",
+    "beenInAccident": "¿Tuviste un Accidente en {cityName}?",
+    "getGuidanceDesc": "Obtén orientación gratuita sobre tus próximos pasos y conéctate con profesionales legales locales.",
+    "requestFreeCallback": "Solicitar Llamada Gratuita",
+    "policeNonEmergency": "Línea No de Emergencia:",
+    "forAccidentReports": "Para reportes de accidentes y seguimiento",
+    "otherCities": "Otras Ciudades de {stateName}",
+    "accidentGuides": "Guías de Accidentes de {stateName}",
+    "essentialReading": "Lectura esencial para conductores de {cityName}:",
+    "viewAllGuides": "Ver Todas las Guías",
+    "localTrafficLaws": "Leyes de Tráfico Locales",
+    "getExpertHelp": "Obtén Ayuda Experta Con Tu Accidente en {cityName}",
+    "getExpertHelpDesc": "Sube fotos de tu daño para análisis instantáneo con IA o conéctate con profesionales legales locales que entienden los patrones de tráfico de {cityName}.",
+    "tryFreeAnalysis": "Prueba el Análisis con IA Gratis",
+    "getFreeReview": "Obtener Evaluación Gratuita"
+  },
+  "glossaryPage": {
+    "badge": "Guía de Referencia",
+    "title": "Glosario de Accidentes de Auto y Seguros",
+    "description": "Entender la terminología de seguros es crucial cuando navegas un reclamo por accidente de auto. Usa este glosario para descifrar la jerga y proteger tus derechos.",
+    "needHelpTitle": "¿Necesitas Ayuda Con Tu Reclamo?",
+    "needHelpDesc": "Ahora que entiendes la terminología, explora nuestras guías completas o usa nuestras herramientas gratuitas para ayudar con tu reclamo.",
+    "browseGuides": "Ver Guías",
+    "settlementCalculator": "Calculadora de Acuerdo"
+  },
+  "resourcesPage": {
+    "badge": "Recursos Gratuitos",
+    "title": "Recursos de Accidentes de Auto",
+    "description": "Herramientas gratuitas, listas de verificación y guías para ayudarte a navegar el proceso de reclamos de seguros y maximizar tu acuerdo. Todo lo que necesitas para proteger tus derechos.",
+    "quickAccessTools": "Herramientas de Acceso Rápido",
+    "settlementCalcTitle": "Calculadora de Acuerdo",
+    "settlementCalcDesc": "Estima cuánto vale tu reclamo de accidente",
+    "totalLossCalcTitle": "Calculadora de Pérdida Total",
+    "totalLossCalcDesc": "Descubre si tu auto es pérdida total y estima el pago",
+    "calculators": "Calculadoras",
+    "checklists": "Listas de Verificación",
+    "referenceGuides": "Guías de Referencia",
+    "checklist": "Lista de Verificación",
+    "template": "Plantilla",
+    "tool": "Herramienta",
+    "guide": "Guía",
+    "useTool": "Usar Herramienta",
+    "viewResource": "Ver Recurso",
+    "howToUseTitle": "Cómo Usar Estos Recursos",
+    "step1Title": "Inmediatamente Después del Accidente",
+    "step1Desc": "Usa la Lista de Verificación Post-Accidente para asegurarte de recopilar toda la información necesaria en la escena.",
+    "step2Title": "Durante el Proceso de Reclamos",
+    "step2Desc": "Usa nuestras calculadoras para entender el valor de tu reclamo y las listas de verificación para mantenerte organizado.",
+    "step3Title": "Antes del Acuerdo",
+    "step3Desc": "Consulta nuestras guías para entender tus derechos y negociar un acuerdo justo.",
+    "personalizedHelpTitle": "¿Necesitas Ayuda Personalizada?",
+    "personalizedHelpDesc": "Nuestro Analizador de Daños con IA puede evaluar las fotos de tu accidente y proporcionar un informe personalizado sobre tu reclamo.",
+    "getFreeAnalysis": "Obtener Análisis Gratis con IA",
+    "postAccidentChecklist": "Lista de Verificación Post-Accidente",
+    "postAccidentDesc": "Lista paso a paso de todo lo que necesitas hacer inmediatamente después de un accidente de auto. Desde verificaciones de seguridad hasta documentación.",
+    "documentationChecklist": "Lista de Documentación para Reclamos de Seguros",
+    "documentationDesc": "Lista completa de documentos, fotos y evidencia que necesitas reunir para un reclamo de seguros exitoso.",
+    "totalLossChecklist": "Lista de Disputa de Pérdida Total",
+    "totalLossChecklistDesc": "Todo lo que necesitas para disputar una valuación baja de pérdida total, incluyendo listados comparables y evidencia a reunir.",
+    "medicalChecklist": "Lista de Documentación Médica",
+    "medicalDesc": "Registra todas las visitas médicas, tratamientos y gastos después de tu accidente. Esencial para reclamos por lesiones.",
+    "settlementCalcResource": "Calculadora de Acuerdo",
+    "settlementCalcResourceDesc": "Estima el valor potencial de tu acuerdo por accidente de auto basado en facturas médicas, salarios perdidos y severidad de lesiones.",
+    "totalLossCalcResource": "Calculadora de Pérdida Total",
+    "totalLossCalcResourceDesc": "Descubre si tu auto será declarado pérdida total y estima tu pago de seguro esperado.",
+    "stateLawsReference": "Referencia de Leyes de Seguros por Estado",
+    "stateLawsDesc": "Referencia rápida para los requisitos de seguros de tu estado, reglas de culpa y plazos de reclamos.",
+    "glossaryReference": "Glosario de Terminología de Seguros",
+    "glossaryDesc": "Descifra la jerga de seguros con nuestro glosario completo de términos de accidentes de auto y seguros.",
+    "repairRightsGuide": "Guía de Derechos de Reparación",
+    "repairRightsDesc": "Conoce tus derechos al elegir un taller de reparación, exigir partes OEM y manejar disputas.",
+    "faultGuide": "Guía de Determinación de Culpa",
+    "faultGuideDesc": "Entiende cómo las compañías de seguros determinan la culpa y qué puedes hacer para disputar una evaluación injusta."
+  },
+  "aiAnalyzerPage": {
+    "badge": "Análisis Gratuito con IA",
+    "title": "Analizador de Daños de",
+    "titleHighlight": "Accidentes de Auto con IA",
+    "description": "Sube fotos del daño de tu accidente y recibe un análisis detallado de la fortaleza de tu caso, daños estimados y opciones legales—entregado a tu correo en minutos.",
+    "free": "100% Gratis",
+    "noObligation": "Sin Compromiso",
+    "confidential": "Confidencial",
+    "featurePhotoTitle": "Análisis de Fotos",
+    "featurePhotoDesc": "Nuestra IA examina tus fotos del accidente para identificar la severidad del daño y el tipo de impacto",
+    "featureLiabilityTitle": "Evaluación de Responsabilidad",
+    "featureLiabilityDesc": "Entiende quién puede ser culpable basándose en patrones de daño visibles",
+    "featureReportTitle": "Informe Detallado",
+    "featureReportDesc": "Recibe un informe completo enviado directamente a tu correo",
+    "featureResultsTitle": "Resultados en Minutos",
+    "featureResultsDesc": "Obtén tu análisis entregado en tu bandeja de entrada en minutos",
+    "formTitle": "Obtén Tu Análisis de Daños Gratis",
+    "formDescription": "Sube fotos del daño de tu vehículo y proporciona tu información de contacto. Recibirás un informe detallado explicando tu situación y opciones.",
+    "howItWorks": "Cómo Funciona",
+    "step1Title": "Sube Tus Fotos",
+    "step1Desc": "Toma fotos claras de todos los daños de tu vehículo desde múltiples ángulos",
+    "step2Title": "La IA Analiza el Daño",
+    "step2Desc": "Nuestra IA avanzada examina patrones de impacto, severidad del daño e indicadores de culpa",
+    "step3Title": "Recibe Tu Informe",
+    "step3Desc": "Recibe un análisis detallado con tus opciones para los próximos pasos",
+    "benefitsTitle": "Lo Que Aprenderás de Tu Informe",
+    "benefit1": "Entiende la fortaleza de tu caso potencial",
+    "benefit2": "Obtén costos estimados de reparación de daños",
+    "benefit3": "Aprende sobre lesiones comunes de accidentes similares",
+    "benefit4": "Conoce tus derechos y opciones legales",
+    "benefit5": "Completamente gratis - sin compromiso",
+    "benefit6": "Análisis privado y confidencial",
+    "whyUseTitle": "¿Por Qué Usar Nuestro Analizador de IA?",
+    "whyUseP1": "Después de un accidente, es difícil saber si tienes un caso fuerte o cuáles son tus opciones. Las compañías de seguros tienen equipos de ajustadores y abogados—ahora puedes nivelar el campo de juego.",
+    "whyUseP2": "Nuestra IA ha sido entrenada con miles de casos de accidentes para ayudarte a entender el valor potencial de tu reclamo y si hablar con un abogado podría beneficiarte.",
+    "faqTitle": "Preguntas Frecuentes",
+    "faq1Q": "¿Este análisis de daños es realmente gratis?",
+    "faq1A": "Sí, completamente gratis sin condiciones. Proporcionamos este servicio para ayudar a las víctimas de accidentes a entender su situación. No hay obligación de tomar ninguna acción adicional.",
+    "faq2Q": "¿Qué tan preciso es el análisis de IA?",
+    "faq2A": "Nuestra IA proporciona una evaluación preliminar basada en patrones de daño visibles. Aunque está entrenada con miles de casos de accidentes, el análisis debe usarse como punto de partida para entender tu situación, no como asesoría legal.",
+    "faq3Q": "¿Qué fotos debo subir?",
+    "faq3A": "Toma fotos claras y bien iluminadas de todos los daños de tu vehículo. Incluye primeros planos de las áreas dañadas y tomas más amplias mostrando el impacto general. Fotos desde múltiples ángulos ayudan a nuestra IA a proporcionar un análisis más preciso.",
+    "faq4Q": "¿Cuánto tiempo tarda en llegar mi informe?",
+    "faq4A": "La mayoría de los informes se entregan a tu correo en 5-10 minutos después del envío. Revisa tu carpeta de spam si no lo ves en tu bandeja de entrada.",
+    "faq5Q": "¿Mi información se mantiene privada?",
+    "faq5A": "Absolutamente. Tus fotos e información personal se mantienen confidenciales y solo se usan para generar tu informe de análisis de daños. Nunca vendemos tu información a terceros.",
+    "ctaTitle": "¿Listo Para Entender Tu Caso?",
+    "ctaDescription": "Obtén tu análisis de daños con IA gratis ahora. Solo toma unos minutos.",
+    "ctaButton": "Comenzar Análisis Gratis"
+  },
+  "settlementCalcPage": {
+    "badge": "Herramienta de Compensación Gratis",
+    "title": "Calculadora de Compensación",
+    "titleHighlight": "por Accidente de Auto",
+    "description": "Estima el valor potencial de tu reclamo por accidente de auto basándote en tus facturas médicas, salarios perdidos y severidad de lesiones. Obtén un rango de compensación personalizado en minutos.",
+    "calcTitle": "Estima el Valor de Tu Compensación",
+    "currentMedicalBills": "Facturas Médicas Actuales",
+    "currentMedicalBillsHelp": "Total de gastos médicos hasta la fecha",
+    "futureMedicalCosts": "Costos Médicos Futuros Estimados",
+    "futureMedicalCostsHelp": "Costos de tratamiento continuo esperados",
+    "lostWagesToDate": "Salarios Perdidos Hasta la Fecha",
+    "lostWagesToDateHelp": "Ingresos perdidos debido al accidente",
+    "futureLostEarning": "Capacidad de Ingresos Futuros Perdida",
+    "futureLostEarningHelp": "Si la lesión afecta la capacidad laboral futura",
+    "propertyDamage": "Daño a la Propiedad",
+    "propertyDamageHelp": "Reparación del vehículo o valor de pérdida total",
+    "injurySeverity": "Severidad de la Lesión",
+    "injurySeverityHelp": "La lesión más grave del accidente",
+    "selectInjurySeverity": "Selecciona severidad de lesión",
+    "faultDetermination": "Determinación de Culpa",
+    "faultDeterminationHelp": "Tu porción de culpa afecta la compensación",
+    "selectFaultSituation": "Selecciona situación de culpa",
+    "notAtFault": "Sin culpa (el otro conductor es 100% responsable)",
+    "partialFault": "Parcialmente culpable (responsabilidad compartida)",
+    "mostlyFault": "Mayormente culpable (recuperación limitada)",
+    "calculateButton": "Calcular Estimación de Compensación",
+    "resultsTitle": "Tu Rango de Compensación Estimado",
+    "estimatedValue": "Valor de Compensación Estimado",
+    "reducedByFault": "Reducido por {percent}% por culpa compartida",
+    "economicDamages": "Daños Económicos",
+    "medical": "Médico",
+    "lostIncome": "Ingresos Perdidos",
+    "property": "Propiedad",
+    "painSuffering": "Dolor y Sufrimiento (Estimado)",
+    "multiplier": "Multiplicador",
+    "basedOn": "Basado en",
+    "getReportTitle": "Obtén Tu Informe de Compensación Personalizado",
+    "getReportDesc": "Recibe un informe PDF detallado con tu estimación, próximos pasos y consejos para maximizar tu compensación.",
+    "getReportButton": "Obtener Mi Informe Gratis",
+    "formTitle": "Ingresa Tu Información Para Recibir Tu Informe",
+    "yourName": "Tu Nombre",
+    "emailAddress": "Correo Electrónico",
+    "phoneNumber": "Número de Teléfono",
+    "yourState": "Tu Estado",
+    "selectState": "Seleccionar Estado",
+    "sendingReport": "Enviando...",
+    "sendReport": "Enviar Mi Informe",
+    "cancel": "Cancelar",
+    "formPrivacy": "Al enviar, aceptas recibir tu informe de compensación e información relacionada por correo electrónico. Respetamos tu privacidad y nunca venderemos tu información.",
+    "successTitle": "¡Revisa Tu Correo!",
+    "successMessage": "Hemos enviado tu informe de compensación personalizado a",
+    "successNote": "Por favor revisa tu bandeja de entrada (y carpeta de spam) en los próximos minutos.",
+    "disclaimer": "Esta calculadora proporciona solo estimaciones. Los montos reales de compensación varían según la jurisdicción, límites de póliza de seguro, negociación y circunstancias específicas del caso. Esto no es asesoría legal. Consulta con un abogado de lesiones personales para una evaluación profesional del caso.",
+    "understandingTitle": "Entendiendo las Compensaciones por Accidentes de Auto",
+    "understandingIntro": "Después de un accidente de auto, entender cómo se calculan las compensaciones puede ayudarte a asegurar que recibas una compensación justa por tus lesiones y pérdidas. Esta guía explica los factores clave que determinan el valor de la compensación y qué puedes esperar durante el proceso de reclamos.",
+    "howInsuranceTitle": "Cómo las Compañías de Seguros Calculan las Compensaciones",
+    "howInsuranceDesc": "Los ajustadores de seguros usan fórmulas específicas para calcular ofertas de compensación. Entender estos métodos te ayuda a evaluar si una oferta es justa:",
+    "multiplierMethod": "El Método del Multiplicador",
+    "multiplierMethodDesc": "El enfoque más común: suma todos los gastos médicos, luego multiplica por 1.5-5 según la severidad de la lesión. Agrega salarios perdidos y daños a la propiedad para obtener el rango de compensación. Las lesiones severas justifican multiplicadores más altos.",
+    "perDiemMethod": "El Método Por Día",
+    "perDiemMethodDesc": "Asigna una cantidad diaria en dólares (a menudo tus ingresos diarios) por cada día que sufriste de lesiones. Esta cantidad se multiplica por el número de días de recuperación para calcular la compensación por dolor y sufrimiento.",
+    "typesOfDamages": "Tipos de Daños en Reclamos por Accidentes de Auto",
+    "economicDamagesTitle": "Daños Económicos",
+    "economicDamagesDesc": "Pérdidas financieras medibles incluyendo facturas médicas, salarios perdidos, daños a la propiedad, autos de alquiler y gastos de bolsillo. Estos se documentan con recibos y registros.",
+    "nonEconomicDamagesTitle": "Daños No Económicos",
+    "nonEconomicDamagesDesc": "Pérdidas subjetivas como dolor y sufrimiento, angustia emocional, pérdida del disfrute de la vida y pérdida de consorcio. Estos se calculan usando multiplicadores o métodos por día.",
+    "punitiveDamagesTitle": "Daños Punitivos (Raros)",
+    "punitiveDamagesDesc": "Otorgados en casos de negligencia extrema o mala conducta intencional para castigar al culpable. Solo disponibles en ciertos estados y circunstancias.",
+    "factorsIncreaseTitle": "Factores Que Aumentan el Valor de la Compensación",
+    "factorsIncrease1": "Responsabilidad clara: Cuando el otro conductor es claramente culpable (colisión trasera, violación de luz roja)",
+    "factorsIncrease2": "Lesiones severas: Huesos rotos, discos herniados, lesión cerebral traumática, cirugía requerida",
+    "factorsIncrease3": "Período de recuperación largo: Tratamiento y rehabilitación extendidos aumentan los daños",
+    "factorsIncrease4": "Deterioro permanente: Discapacidad o desfiguración duradera aumenta significativamente el valor",
+    "factorsIncrease5": "Documentación sólida: Registros médicos, fotos, declaraciones de testigos respaldan tu reclamo",
+    "factorsIncrease6": "Ingresos altos: Mayores salarios perdidos y capacidad de ingresos llevan a compensaciones más altas",
+    "factorsIncrease7": "Seguro adecuado: Límites de póliza más altos significan más compensación disponible",
+    "mistakesTitle": "Errores Comunes Que Reducen las Compensaciones",
+    "mistake1": "Retrasar el tratamiento médico: Las brechas en el cuidado crean dudas sobre la severidad de la lesión",
+    "mistake2": "Dar declaraciones grabadas: Los ajustadores pueden usar tus palabras en tu contra",
+    "mistake3": "Aceptar la primera oferta: Las ofertas iniciales típicamente están 25-50% por debajo del valor justo",
+    "mistake4": "Publicar en redes sociales: Fotos y publicaciones pueden usarse para disputar lesiones",
+    "mistake5": "Liquidar demasiado rápido: Antes de conocer la extensión total de las lesiones y costos futuros",
+    "mistake6": "No documentar todo: Los registros faltantes reducen el valor de tu reclamo",
+    "whenToHireTitle": "Cuándo Contratar un Abogado de Lesiones Personales",
+    "whenToHireIntro": "Considera consultar a un abogado cuando tu caso involucre:",
+    "whenToHire1": "Lesiones significativas que requieren tratamiento médico continuo",
+    "whenToHire2": "Responsabilidad disputada o culpa compartida",
+    "whenToHire3": "La compañía de seguros negando o subvalorando tu reclamo",
+    "whenToHire4": "Discapacidad permanente o desfiguración",
+    "whenToHire5": "Situaciones complejas involucrando múltiples partes",
+    "whenToHire6": "Accidentes de vehículos comerciales o camiones",
+    "whenToHire7": "Ofertas de compensación que parecen injustamente bajas",
+    "whenToHireNote": "La mayoría de los abogados de lesiones personales trabajan por contingencia, lo que significa que solo cobran si ganas tu caso. Las consultas gratuitas te permiten entender tus opciones sin riesgo financiero.",
+    "faqBadge": "Preguntas Comunes",
+    "faqTitle": "Preguntas Frecuentes de la Calculadora de Compensación",
+    "ctaTitle": "¿No Estás Seguro del Valor de Tu Reclamo?",
+    "ctaDescription": "Nuestro Analizador de Daños con IA puede evaluar las fotos del daño de tu vehículo y proporcionar información adicional sobre tu reclamo por accidente.",
+    "ctaButton": "Obtener Análisis Gratis con IA",
+    "injuryMinor": "Menor (Tejido blando, moretones)",
+    "injuryModerate": "Moderada (Latigazo cervical, esguinces, fracturas menores)",
+    "injurySignificant": "Significativa (Fracturas, discos herniados)",
+    "injurySevere": "Severa (Cirugía requerida, tratamiento prolongado)",
+    "injuryPermanent": "Permanente/Catastrófica (Discapacidad, TBI, médula espinal)",
+    "faq1Q": "¿Cómo se calculan las compensaciones por accidentes de auto?",
+    "faq1A": "Las compensaciones por accidentes de auto típicamente se calculan sumando todos tus daños económicos (facturas médicas, salarios perdidos, daños a la propiedad) y luego multiplicando por un factor de 1.5 a 5 para considerar el dolor y sufrimiento. El multiplicador depende de la severidad de la lesión—las lesiones menores usan multiplicadores más bajos, mientras que las lesiones severas o permanentes usan más altos. Esto te da un rango de compensación estimado, aunque los montos reales varían según responsabilidad, límites de seguro y negociación.",
+    "faq2Q": "¿Cuál es la compensación promedio por un accidente de auto?",
+    "faq2A": "Las compensaciones promedio por accidentes de auto varían ampliamente según la severidad de la lesión. Las lesiones menores como el latigazo cervical típicamente se liquidan por $10,000-$25,000. Las lesiones moderadas que involucran algún tratamiento médico promedian $25,000-$100,000. Las lesiones severas que requieren cirugía o tratamiento prolongado pueden variar de $100,000 a $500,000 o más. Los casos que involucran discapacidad permanente o muerte injusta a menudo superan $1 millón. Estos son rangos generales—tu caso específico depende de costos médicos, ingresos perdidos, responsabilidad y cobertura de seguro disponible.",
+    "faq3Q": "¿Qué factores afectan los montos de compensación por accidentes de auto?",
+    "faq3A": "Los factores clave incluyen: severidad de la lesión y tratamiento requerido, gastos médicos totales, salarios perdidos y capacidad de ingresos futuros, daños a la propiedad, evidencia de culpa, cobertura de seguro disponible, deterioro permanente o discapacidad, impacto en la vida diaria, calidad de documentación y la jurisdicción donde ocurrió el accidente. Los casos con responsabilidad clara (como colisiones traseras) y lesiones bien documentadas típicamente resultan en compensaciones más altas.",
+    "faq4Q": "¿Cuánto tiempo toma obtener una compensación por accidente de auto?",
+    "faq4A": "Los casos simples con lesiones menores y responsabilidad clara pueden liquidarse en 2-4 meses. Los casos de lesiones moderadas típicamente toman 6-12 meses. Los casos de lesiones severas a menudo requieren 1-2 años o más, especialmente si hay litigio involucrado. Los factores que afectan el cronograma incluyen: alcanzar la mejoría médica máxima, reunir toda la documentación, proceso de negociación y si una demanda se vuelve necesaria.",
+    "faq5Q": "¿Debo aceptar la primera oferta de la compañía de seguros?",
+    "faq5A": "Generalmente, no. Las primeras ofertas son típicamente ofertas bajas diseñadas para liquidar barato. Los ajustadores de seguros a menudo ofrecen 25-50% menos de lo que realmente vale un reclamo. Antes de aceptar, asegúrate de haber alcanzado la mejoría médica máxima, reunido todas las facturas y documentación, calculado los salarios perdidos y considerado las necesidades médicas futuras. Consultar con un abogado de lesiones personales (usualmente gratis) puede ayudarte a entender si una oferta es justa.",
+    "faq6Q": "¿Cuánto vale el dolor y sufrimiento en una compensación?",
+    "faq6A": "El dolor y sufrimiento típicamente se calcula usando un método multiplicador (1.5x a 5x tus daños económicos) o un método por día (tarifa diaria × días de recuperación). Las lesiones menores de tejido blando podrían usar un multiplicador de 1.5-2x. Las lesiones moderadas con algunos efectos duraderos usan 2-3x. Las lesiones severas con impacto significativo usan 3-4x. Las lesiones permanentes o catastróficas pueden usar 5x o más. Los niveles de dolor documentados, duración del tratamiento e impacto en la calidad de vida todos afectan este cálculo.",
+    "faq7Q": "¿Necesito un abogado para obtener una compensación justa?",
+    "faq7A": "Aunque no es requerido, las estadísticas muestran que las víctimas de accidentes representadas por abogados típicamente reciben compensaciones 3-4 veces más altas que quienes negocian solos, incluso después de los honorarios del abogado. Los abogados son particularmente valiosos para: lesiones graves, responsabilidad disputada, compañías de seguros no cooperativas, situaciones médicas complejas y casos que involucran múltiples partes. La mayoría de los abogados de lesiones personales ofrecen consultas gratuitas y trabajan por contingencia (sin costo inicial).",
+    "faq8Q": "¿Qué pasa si mis facturas médicas exceden los límites del seguro del conductor culpable?",
+    "faq8A": "Si el seguro del conductor culpable es insuficiente, tienes varias opciones: presentar un reclamo con tu propia cobertura de motorista con seguro insuficiente (UIM), usar tu seguro de salud o cobertura MedPay, demandar al conductor culpable personalmente (aunque cobrar puede ser difícil), o negociar gravámenes médicos con proveedores. Tener cobertura UIM adecuada en tu propia póliza es la mejor protección contra conductores con seguro insuficiente."
+  },
+  "totalLossCalcPage": {
+    "badge": "Herramienta de Seguro Gratis",
+    "title": "Calculadora de",
+    "titleHighlight": "Pérdida Total",
+    "description": "Descubre si tu auto será declarado pérdida total y estima tu compensación de seguro. Nuestra calculadora usa umbrales específicos por estado para darte resultados precisos.",
+    "calcTitle": "Calcula Tu Compensación por Pérdida Total",
+    "vehicleValue": "Valor Real en Efectivo del Vehículo (ACV)",
+    "vehicleValueHelp": "Valor de mercado pre-accidente de tu vehículo",
+    "repairCost": "Costo de Reparación Estimado",
+    "repairCostHelp": "Costo total para reparar el daño",
+    "yourState": "Tu Estado",
+    "yourStateHelp": "Cada estado tiene diferentes umbrales de pérdida total",
+    "selectState": "Seleccionar Estado",
+    "salvageValue": "Valor de Salvamento (Opcional)",
+    "salvageValueHelp": "Por cuánto podría venderse el vehículo dañado",
+    "deductible": "Tu Deducible",
+    "deductibleHelp": "Tu deducible de colisión o cobertura completa",
+    "loanBalance": "Saldo Actual del Préstamo (Opcional)",
+    "loanBalanceHelp": "Cantidad que aún debes del auto",
+    "calculateButton": "Calcular Pérdida Total",
+    "resultsTitle": "Tus Resultados",
+    "likelyTotalLoss": "Probablemente Pérdida Total",
+    "likelyRepairable": "Probablemente Reparable",
+    "repairPercentage": "Los costos de reparación son {percent}% del valor de tu vehículo.",
+    "stateThreshold": "El umbral de tu estado es {threshold}.",
+    "vehicleValueLabel": "Valor del Vehículo",
+    "repairCostLabel": "Costo de Reparación",
+    "expectedSettlement": "Compensación Esperada",
+    "afterDeductible": "Después de ${amount} de deducible",
+    "gapAmountOwed": "Cantidad de Brecha Adeudada",
+    "equityAfterPayoff": "Equidad Después del Pago",
+    "mayNeedGap": "Podrías necesitar seguro de brecha",
+    "disclaimer": "Esta calculadora proporciona solo estimaciones. La determinación real de pérdida total y los montos de compensación varían según la compañía de seguros, términos de la póliza y circunstancias específicas. Consulta a tu ajustador de seguros para valuaciones oficiales.",
+    "understandingTitle": "Entendiendo los Reclamos de Seguro por Pérdida Total de Auto",
+    "understandingIntro": "Cuando tu vehículo está involucrado en un accidente, una de las determinaciones más importantes es si el auto es \"pérdida total\" o si puede ser reparado. Esta decisión impacta significativamente tu reclamo de seguro, tus finanzas y tus próximos pasos. Nuestra calculadora de pérdida total te ayuda a entender qué esperar antes de que la compañía de seguros tome su decisión.",
+    "whatIsTotalLossTitle": "¿Qué Es un Vehículo de Pérdida Total?",
+    "whatIsTotalLossP1": "Una pérdida total, también llamada \"auto siniestrado,\" ocurre cuando el costo de reparar tu vehículo excede cierto porcentaje de su valor real en efectivo (ACV). El ACV representa lo que valía tu auto inmediatamente antes del accidente, considerando factores como antigüedad, kilometraje, condición y precios del mercado local.",
+    "whatIsTotalLossP2": "Las compañías de seguros declaran vehículos como pérdida total porque tiene más sentido económico pagarte el valor del auto que gastar más en reparaciones. Sin embargo, el umbral para esta determinación varía significativamente dependiendo de tu estado y compañía de seguros.",
+    "thresholdsTitle": "Cómo Funcionan los Umbrales de Pérdida Total por Estado",
+    "thresholdsIntro": "Los estados regulan las determinaciones de pérdida total de dos maneras principales:",
+    "percentageMethodTitle": "Método de Umbral de Porcentaje",
+    "percentageMethodDesc": "La mayoría de los estados usan un umbral de porcentaje fijo, típicamente entre 70% y 100%. Si los costos de reparación exceden este porcentaje del ACV del vehículo, se declara pérdida total. Por ejemplo, en un estado con umbral de 75%, un auto de $20,000 sería declarado pérdida total si las reparaciones exceden $15,000.",
+    "tlfMethodTitle": "Fórmula de Pérdida Total (TLF)",
+    "tlfMethodDesc": "Algunos estados usan la Fórmula de Pérdida Total, donde el costo de reparación más el valor de salvamento debe exceder el ACV. Este método considera por cuánto podría venderse el vehículo dañado, haciendo el cálculo más matizado pero a menudo resultando en menos declaraciones de pérdida total.",
+    "processTitle": "El Proceso de Compensación por Pérdida Total",
+    "processIntro": "Entender el proceso de pérdida total te ayuda a prepararte para negociaciones y asegurar que recibas una compensación justa:",
+    "processStep1Title": "Evaluación Inicial",
+    "processStep1Desc": "Un ajustador inspecciona tu vehículo y estima los costos de reparación. También fotografiarán el daño y documentarán la condición del vehículo.",
+    "processStep2Title": "Valuación",
+    "processStep2Desc": "La compañía de seguros determina el ACV de tu vehículo usando servicios de valuación y datos de ventas comparables de tu mercado local.",
+    "processStep3Title": "Decisión de Pérdida Total",
+    "processStep3Desc": "Basándose en estimaciones de reparación, ACV y el umbral de tu estado, la aseguradora determina si el vehículo es pérdida total.",
+    "processStep4Title": "Oferta de Compensación",
+    "processStep4Desc": "Recibes una oferta por el ACV menos tu deducible. Puedes aceptar, negociar o disputar la valuación.",
+    "processStep5Title": "Transferencia de Título",
+    "processStep5Desc": "Al aceptar la compensación, firmas el título. El vehículo va a salvamento a menos que elijas quedártelo.",
+    "disputeTitle": "Cómo Disputar una Oferta Baja de Pérdida Total",
+    "disputeIntro": "Las compañías de seguros no siempre ofrecen compensaciones justas. Si crees que tu vehículo vale más que la oferta inicial, tienes todo el derecho de negociar. Así es como construir un caso fuerte:",
+    "dispute1": "Reunir ventas comparables: Encuentra listados y ventas recientes de vehículos similares en tu área de Kelley Blue Book, Edmunds, AutoTrader y concesionarios locales.",
+    "dispute2": "Documenta la condición de tu vehículo: Proporciona evidencia de bajo kilometraje, mantenimiento reciente, llantas nuevas o mejoras que agreguen valor.",
+    "dispute3": "Obtén múltiples valuaciones: Solicita cotizaciones de concesionarios y usa múltiples herramientas de valuación para establecer un rango justo.",
+    "dispute4": "Revisa el informe de valuación de la aseguradora: Pide el informe de CCC, Mitchell o Audatex que usaron y verifica errores.",
+    "dispute5": "Contrata un tasador independiente: Para disputas significativas, una tasación profesional puede proporcionar ventaja.",
+    "dispute6": "Presenta una queja: Si las negociaciones fallan, contacta al comisionado de seguros de tu estado.",
+    "gapInsuranceTitle": "Entendiendo el Seguro de Brecha",
+    "gapInsuranceIntro": "El seguro de brecha (Protección de Activos Garantizada) es crucial si debes más en tu préstamo de auto de lo que vale el vehículo. Esto es común para:",
+    "gap1": "Autos nuevos que se deprecian rápidamente",
+    "gap2": "Préstamos con poco o ningún pago inicial",
+    "gap3": "Términos de préstamo extendidos (72+ meses)",
+    "gap4": "Vehículos que se compraron por encima del valor de mercado",
+    "gapInsuranceNote": "Sin seguro de brecha, eres responsable de pagar la diferencia entre la compensación del seguro y tu saldo de préstamo restante. Nuestra calculadora muestra esta \"cantidad de brecha\" si ingresas tu saldo actual del préstamo.",
+    "keepVehicleTitle": "Quedarte Con Tu Vehículo Siniestrado",
+    "keepVehicleIntro": "En la mayoría de los estados, puedes elegir quedarte con tu vehículo siniestrado. La compañía de seguros deducirá el valor de salvamento de tu compensación. Sin embargo, considera estos factores:",
+    "keep1": "Tu auto recibirá un título de salvamento o reconstruido, reduciendo significativamente el valor de reventa",
+    "keep2": "Algunas aseguradoras no proporcionarán cobertura completa/colisión en vehículos con título de salvamento",
+    "keep3": "Necesitarás pasar una inspección de vehículo reconstruido antes de conducirlo legalmente",
+    "keep4": "Las reparaciones pueden revelar daños ocultos adicionales que aumentan los costos",
+    "keep5": "Las preocupaciones futuras de seguridad y confiabilidad deben ser evaluadas por un mecánico",
+    "faqBadge": "Preguntas Comunes",
+    "faqTitle": "Preguntas Frecuentes de Pérdida Total",
+    "ctaTitle": "¿Necesitas Ayuda Con Tu Reclamo de Pérdida Total?",
+    "ctaDescription": "Si has tenido un accidente y tu auto podría ser pérdida total, nuestro Analizador de Daños con IA puede ayudarte a entender tu situación y opciones.",
+    "ctaButton": "Obtener Análisis Gratis con IA",
+    "faq1Q": "¿Qué significa 'pérdida total' para un auto?",
+    "faq1A": "Una pérdida total ocurre cuando el costo de reparar tu vehículo excede cierto porcentaje de su valor real en efectivo (ACV). La mayoría de las compañías de seguros usan un umbral entre 70-80%, aunque algunos estados tienen leyes específicas. Cuando tu auto es declarado pérdida total, la compañía de seguros te pagará el ACV del vehículo menos tu deducible en lugar de pagar las reparaciones.",
+    "faq2Q": "¿Cómo calculan las compañías de seguros el valor de pérdida total?",
+    "faq2A": "Las compañías de seguros calculan el valor de pérdida total usando el Valor Real en Efectivo (ACV) de tu vehículo, que considera el valor de mercado pre-accidente, kilometraje, condición, equipo opcional y ventas comparables recientes en tu área. Típicamente usan servicios de valuación como CCC, Mitchell o Audatex para determinar este valor.",
+    "faq3Q": "¿Puedo disputar una oferta de compensación por pérdida total?",
+    "faq3A": "Sí, puedes y debes disputar una oferta baja de pérdida total. Reúne evidencia incluyendo ventas comparables recientes de sitios como Kelley Blue Book, Edmunds y listados de concesionarios locales. Documenta cualquier mejora o mantenimiento reciente. También puedes contratar un tasador independiente o presentar una queja con el comisionado de seguros de tu estado.",
+    "faq4Q": "¿Cuál es el umbral de pérdida total en mi estado?",
+    "faq4A": "Los umbrales de pérdida total varían por estado, típicamente entre 70% y 100% del ACV del vehículo. Algunos estados usan una Fórmula de Pérdida Total (TLF) donde el costo de reparación + valor de salvamento debe exceder el ACV. Consulta las regulaciones específicas de tu estado o pregunta a tu compañía de seguros por el umbral que usan.",
+    "faq5Q": "¿Puedo quedarme con mi auto si es pérdida total?",
+    "faq5A": "En la mayoría de los casos, sí, puedes quedarte con tu auto siniestrado aceptando una compensación reducida (el ACV menos el valor de salvamento). Recibirás un título de salvamento, lo que afecta el valor de reventa futuro y puede requerir una inspección de título reconstruido antes de que el auto pueda conducirse legalmente de nuevo. Algunos estados no permiten esta opción para vehículos severamente dañados.",
+    "faq6Q": "¿Cuánto tiempo toma el proceso de compensación por pérdida total?",
+    "faq6A": "El proceso de compensación por pérdida total típicamente toma 2-4 semanas desde la fecha del accidente. Esto incluye la inspección inicial (1-3 días), proceso de valuación (3-5 días), período de negociación (varía) y procesamiento de pago (3-7 días). Los casos complejos o disputas pueden extender este cronograma significativamente.",
+    "faq7Q": "¿El seguro de brecha ayudará si mi auto es pérdida total?",
+    "faq7A": "Sí, el seguro de brecha cubre la diferencia entre lo que debes en tu préstamo de auto y lo que la compañía de seguros paga por la pérdida total. Esto es especialmente valioso para autos nuevos que se deprecian rápidamente o si hiciste un pago inicial pequeño. El seguro de brecha típicamente se compra cuando compras o alquilas el vehículo.",
+    "faq8Q": "¿Qué pasa con mi préstamo de auto si mi auto es pérdida total?",
+    "faq8A": "Sigues siendo responsable de pagar tu préstamo de auto aunque tu auto sea pérdida total. La compensación del seguro va primero a tu acreedor (el banco o compañía financiera). Si la compensación no cubre el saldo total del préstamo, deberás la diferencia a menos que tengas seguro de brecha."
+  },
+  "guidesContent": {
+    "pillars": {
+      "totalLossDispute": {
+        "title": "Guía de Disputas de Pérdida Total",
+        "shortTitle": "Pérdida Total",
+        "description": "Aprende cómo las compañías de seguros determinan la pérdida total, cómo disputar su valuación y tus opciones para quedarte con o entregar tu vehículo siniestrado.",
+        "articles": {
+          "howInsuranceCalculatesTotalLoss": {
+            "title": "Cómo Calculan los Seguros la Pérdida Total",
+            "description": "Entendiendo la fórmula que usan las compañías de seguros para decidir si tu auto es pérdida total.",
+            "readingTime": "8 min de lectura"
+          },
+          "disputeTotalLossValuation": {
+            "title": "Cómo Disputar la Valuación de Pérdida Total",
+            "description": "Guía paso a paso para impugnar una oferta injusta de compensación por pérdida total.",
+            "readingTime": "10 min de lectura"
+          },
+          "keepTotaledCarSalvageTitle": {
+            "title": "¿Puedes Quedarte con Tu Auto Siniestrado?",
+            "description": "Tus opciones para salvamento retenido por el propietario y lo que significa para tu título.",
+            "readingTime": "7 min de lectura"
+          },
+          "totalLossThresholdByState": {
+            "title": "Umbral de Pérdida Total por Estado",
+            "description": "Desglose estado por estado de cuándo el seguro debe declarar tu auto como pérdida total.",
+            "readingTime": "6 min de lectura"
+          },
+          "negotiateTotalLossSettlement": {
+            "title": "Cómo Negociar la Compensación por Pérdida Total",
+            "description": "Tácticas para obtener un pago mayor cuando tu auto es pérdida total.",
+            "readingTime": "9 min de lectura"
+          },
+          "gapInsuranceExplained": {
+            "title": "Seguro de Brecha Explicado",
+            "description": "Qué cubre el seguro de brecha y cuándo lo necesitas.",
+            "readingTime": "5 min de lectura"
+          },
+          "ownerRetainedSalvage": {
+            "title": "Salvamento Retenido por el Propietario Explicado",
+            "description": "Quedarte con tu auto siniestrado y qué pasa con el título.",
+            "readingTime": "6 min de lectura"
+          },
+          "actualCashValueVsReplacement": {
+            "title": "Valor Real en Efectivo vs Costo de Reemplazo",
+            "description": "Entendiendo la diferencia entre valor real en efectivo y costo de reemplazo.",
+            "readingTime": "5 min de lectura"
+          }
+        },
+        "faqs": {
+          "faq1Q": "¿Qué porcentaje de daño hace que un auto sea pérdida total?",
+          "faq1A": "Varía por estado, típicamente entre 50-100% del valor real en efectivo del auto. Algunos estados usan una Fórmula de Pérdida Total (TLF) que suma el costo de reparación más el valor de salvamento.",
+          "faq2Q": "¿Puedo disputar que mi auto sea declarado pérdida total?",
+          "faq2A": "Sí, puedes disputar la valuación proporcionando listados de vehículos comparables, obteniendo avalúos independientes y documentando cualquier característica única o mejoras recientes de tu auto.",
+          "faq3Q": "¿Puedo quedarme con mi auto si el seguro lo declara pérdida total?",
+          "faq3A": "En la mayoría de los estados, sí. Esto se llama salvamento retenido por el propietario. La compañía de seguros deducirá el valor de salvamento de tu compensación y tu auto recibirá un título de salvamento o reconstruido."
+        }
+      },
+      "insuranceClaims": {
+        "title": "Guía de Reclamos de Seguros",
+        "shortTitle": "Reclamos de Seguros",
+        "description": "Todo lo que necesitas saber sobre presentar y manejar tu reclamo de seguro de auto, desde la escena del accidente hasta la compensación final.",
+        "articles": {
+          "whatToDoAfterAccident": {
+            "title": "Qué Hacer Después de un Accidente de Auto",
+            "description": "Pasos esenciales a tomar inmediatamente después de un accidente para proteger tu reclamo.",
+            "readingTime": "7 min de lectura"
+          },
+          "filingClaimStepByStep": {
+            "title": "Cómo Presentar un Reclamo de Seguro",
+            "description": "Guía completa del proceso de presentación de reclamos de seguro.",
+            "readingTime": "8 min de lectura"
+          },
+          "howLongInsuranceClaimTakes": {
+            "title": "¿Cuánto Tiempo Toma un Reclamo de Seguro?",
+            "description": "Plazos típicos y qué puede acelerar o retrasar tu reclamo.",
+            "readingTime": "6 min de lectura"
+          },
+          "dealingWithOtherDriversInsurance": {
+            "title": "Tratando con el Seguro del Otro Conductor",
+            "description": "Cómo navegar un reclamo de seguro de terceros.",
+            "readingTime": "7 min de lectura"
+          },
+          "rentalCarCoverage": {
+            "title": "Cobertura de Auto de Alquiler Después del Accidente",
+            "description": "Entendiendo tus beneficios de auto de alquiler y cómo maximizar la cobertura.",
+            "readingTime": "5 min de lectura"
+          },
+          "insuranceClaimDenied": {
+            "title": "Qué Hacer si el Reclamo es Denegado",
+            "description": "Pasos para apelar un reclamo de seguro denegado.",
+            "readingTime": "8 min de lectura"
+          },
+          "documentingAccidentDamage": {
+            "title": "Cómo Documentar el Daño del Accidente",
+            "description": "Mejores prácticas para fotos, videos y documentación escrita.",
+            "readingTime": "6 min de lectura"
+          },
+          "diminishedValueClaims": {
+            "title": "¿Qué es el Valor Disminuido?",
+            "description": "Reclamando compensación por el valor de reventa reducido de tu auto.",
+            "readingTime": "7 min de lectura"
+          }
+        },
+        "faqs": {
+          "faq1Q": "¿Cuánto tiempo tiene el seguro para pagar un reclamo?",
+          "faq1A": "La mayoría de los estados requieren que las aseguradoras reconozcan los reclamos dentro de 15 días y paguen dentro de 30-45 días de llegar a un acuerdo. Los plazos específicos varían por estado.",
+          "faq2Q": "¿Debo aceptar la primera oferta de compensación?",
+          "faq2A": "Generalmente no. Las primeras ofertas suelen ser más bajas de lo que te corresponde. Revisa la oferta cuidadosamente, compara con valores de mercado y negocia si es necesario.",
+          "faq3Q": "¿Puedo presentar un reclamo sin reporte policial?",
+          "faq3A": "Sí, pero un reporte policial fortalece tu reclamo. Si no presentaste uno en la escena, puede que puedas hacer el reporte después en la estación."
+        }
+      },
+      "repairRights": {
+        "title": "Guía de Tus Derechos de Reparación",
+        "shortTitle": "Derechos de Reparación",
+        "description": "Conoce tus derechos cuando se trata de reparaciones de auto después de un accidente. Aprende sobre la elección del taller, calidad de partes y qué hacer si las reparaciones salen mal.",
+        "articles": {
+          "chooseYourOwnShop": {
+            "title": "¿Puedo Elegir Mi Propio Taller?",
+            "description": "Tus derechos para seleccionar dónde se repara tu auto.",
+            "readingTime": "5 min de lectura"
+          },
+          "oemVsAftermarketParts": {
+            "title": "Partes OEM vs Genéricas",
+            "description": "Entendiendo la diferencia y tus derechos a partes de calidad.",
+            "readingTime": "7 min de lectura"
+          },
+          "repairEstimateTooLow": {
+            "title": "¿Presupuesto de Reparación Muy Bajo?",
+            "description": "Qué hacer cuando el seguro no cubre los costos completos de reparación.",
+            "readingTime": "6 min de lectura"
+          },
+          "badRepairJobRecourse": {
+            "title": "¿Qué Pasa si las Reparaciones No Se Hacen Bien?",
+            "description": "Tus opciones cuando un taller hace trabajo de mala calidad.",
+            "readingTime": "6 min de lectura"
+          },
+          "insurancePreferredShops": {
+            "title": "Talleres Preferidos del Seguro Explicados",
+            "description": "Pros y contras de usar talleres recomendados por el seguro.",
+            "readingTime": "5 min de lectura"
+          },
+          "supplementalClaims": {
+            "title": "Obteniendo Cobertura por Daños Suplementarios",
+            "description": "Cómo reclamar daños adicionales encontrados durante las reparaciones.",
+            "readingTime": "5 min de lectura"
+          },
+          "frameDamageRepair": {
+            "title": "Daño al Chasis - ¿Reparar o Pérdida Total?",
+            "description": "Entendiendo la severidad del daño al chasis y opciones de reparación.",
+            "readingTime": "7 min de lectura"
+          }
+        },
+        "faqs": {
+          "faq1Q": "¿Puede el seguro obligarme a usar su taller?",
+          "faq1A": "No. En los 50 estados, tienes derecho a elegir tu propio taller de reparación. Las compañías de seguros pueden recomendar talleres pero no pueden obligarte a usarlos.",
+          "faq2Q": "¿Tengo que aceptar partes genéricas?",
+          "faq2A": "Depende de tu estado y póliza. Algunos estados requieren que las aseguradoras usen partes OEM, mientras que otros permiten genéricas con la debida notificación. Revisa tu póliza y las leyes estatales.",
+          "faq3Q": "¿Qué pasa si el taller encuentra más daños?",
+          "faq3A": "El taller debe presentar un reclamo suplementario con tu seguro por el daño adicional. Esto es común y no debería retrasar significativamente tu reparación."
+        }
+      },
+      "faultDetermination": {
+        "title": "Guía de Determinación de Culpa",
+        "shortTitle": "Culpa",
+        "description": "Entiende cómo se determina la culpa después de un accidente, cómo afecta tu reclamo y qué hacer si no estás de acuerdo con la evaluación de culpa.",
+        "articles": {
+          "atFaultVsNoFaultStates": {
+            "title": "Estados de Culpa vs Sin Culpa",
+            "description": "Cómo el sistema de tu estado afecta tu reclamo por accidente.",
+            "readingTime": "8 min de lectura"
+          },
+          "faultPercentageExplained": {
+            "title": "Cómo Funciona el Porcentaje de Culpa",
+            "description": "Entendiendo la negligencia comparativa y contributiva.",
+            "readingTime": "7 min de lectura"
+          },
+          "disputeFaultDetermination": {
+            "title": "Cómo Disputar la Culpa",
+            "description": "Pasos para impugnar una evaluación injusta de culpa.",
+            "readingTime": "8 min de lectura"
+          },
+          "parkingLotAccidentFault": {
+            "title": "Reglas de Culpa en Accidentes de Estacionamiento",
+            "description": "Reglas especiales para determinar culpa en estacionamientos.",
+            "readingTime": "6 min de lectura"
+          },
+          "multiVehicleAccident": {
+            "title": "Culpa en Accidentes de Múltiples Vehículos",
+            "description": "Cómo se divide la culpa cuando hay múltiples autos involucrados.",
+            "readingTime": "7 min de lectura"
+          },
+          "comparativeNegligence": {
+            "title": "Negligencia Comparativa Explicada",
+            "description": "Cómo la culpa compartida afecta tu compensación.",
+            "readingTime": "6 min de lectura"
+          },
+          "policeReportFault": {
+            "title": "¿El Reporte Policial Determina la Culpa?",
+            "description": "El rol de los reportes policiales en las decisiones de culpa del seguro.",
+            "readingTime": "5 min de lectura"
+          }
+        },
+        "faqs": {
+          "faq1Q": "¿Quién determina la culpa en un accidente de auto?",
+          "faq1A": "Los ajustadores de seguros determinan la culpa para propósitos del reclamo basándose en reportes policiales, declaraciones de testigos, fotos y leyes de tráfico aplicables. Esto es separado de cualquier determinación legal.",
+          "faq2Q": "¿Puedo recuperar daños si soy parcialmente culpable?",
+          "faq2A": "En la mayoría de los estados, sí. Los estados de negligencia comparativa pura permiten recuperación menos tu porcentaje de culpa. Los estados de comparativa modificada tienen umbrales (generalmente 50-51%).",
+          "faq3Q": "¿Qué pasa si el otro conductor miente sobre el accidente?",
+          "faq3A": "Documenta todo: fotos, contactos de testigos, grabaciones de cámara. Obtén un reporte policial. Los investigadores de seguros están entrenados para identificar inconsistencias en las declaraciones."
+        }
+      },
+      "rearEndCollisions": {
+        "title": "Guía de Colisiones Traseras",
+        "shortTitle": "Colisión Trasera",
+        "description": "Todo sobre accidentes traseros: reglas de culpa, lesiones comunes, expectativas de compensación y protección de tus derechos después de ser golpeado por atrás.",
+        "articles": {
+          "rearEndCollisionFault": {
+            "title": "¿Quién Tiene la Culpa en una Colisión Trasera?",
+            "description": "Entendiendo la presunción de culpa y excepciones.",
+            "readingTime": "7 min de lectura"
+          },
+          "stoppedAtRedLight": {
+            "title": "Golpeado por Atrás Mientras Estaba Detenido en Semáforo Rojo",
+            "description": "Tus derechos cuando eres golpeado mientras estás legalmente detenido.",
+            "readingTime": "6 min de lectura"
+          },
+          "chainReactionRearEnd": {
+            "title": "Accidentes Traseros en Cadena",
+            "description": "Cómo se determina la culpa en choques múltiples.",
+            "readingTime": "7 min de lectura"
+          },
+          "whiplashClaims": {
+            "title": "Reclamos de Latigazo Cervical Después de Colisión Trasera",
+            "description": "Documentando y reclamando lesiones de latigazo cervical.",
+            "readingTime": "8 min de lectura"
+          },
+          "lowSpeedRearEnd": {
+            "title": "Accidentes Traseros a Baja Velocidad",
+            "description": "Por qué los impactos menores aún pueden causar lesiones.",
+            "readingTime": "6 min de lectura"
+          },
+          "rearEndedWhileTurning": {
+            "title": "Golpeado por Atrás Mientras Hacía un Giro",
+            "description": "Reglas de culpa cuando eres golpeado durante giros.",
+            "readingTime": "6 min de lectura"
+          },
+          "brakeCheckingAccidents": {
+            "title": "Accidentes por Frenado Brusco",
+            "description": "Cuando el conductor de adelante puede tener la culpa.",
+            "readingTime": "6 min de lectura"
+          },
+          "highwayRearEnd": {
+            "title": "Colisiones Traseras en Carretera",
+            "description": "Consideraciones de accidentes traseros a alta velocidad.",
+            "readingTime": "7 min de lectura"
+          },
+          "rearEndRentalCar": {
+            "title": "Golpeado por Atrás en Auto de Alquiler",
+            "description": "Seguro y responsabilidad cuando conduces un auto de alquiler.",
+            "readingTime": "6 min de lectura"
+          },
+          "rearEndUninsuredDriver": {
+            "title": "Golpeado por Atrás por Conductor Sin Seguro",
+            "description": "Tus opciones cuando el conductor culpable no tiene seguro.",
+            "readingTime": "7 min de lectura"
+          }
+        },
+        "faqs": {
+          "faq1Q": "¿El conductor de atrás siempre tiene la culpa?",
+          "faq1A": "Casi siempre, pero no al 100%. El conductor trasero tiene presunción de culpa, pero existen excepciones: si el conductor de adelante da reversa, tiene luces de freno rotas o frena bruscamente intencionalmente.",
+          "faq2Q": "¿Cuál es la compensación promedio por una colisión trasera?",
+          "faq2A": "Solo daños a la propiedad: $3,000-$10,000. Con lesiones menores: $10,000-$25,000. Lesiones graves como latigazo cervical con tratamiento: $25,000-$100,000+. Cada caso varía.",
+          "faq3Q": "¿Debo ver a un doctor después de ser golpeado por atrás?",
+          "faq3A": "Sí, incluso si te sientes bien. El latigazo cervical y las lesiones de tejido blando a menudo no aparecen hasta 24-72 horas después. La documentación médica temprana es crucial para cualquier reclamo potencial."
+        }
+      },
+      "commercialVehicle": {
+        "title": "Guía de Accidentes con Vehículos Comerciales",
+        "shortTitle": "Comercial",
+        "description": "Los accidentes que involucran vehículos comerciales, camiones y viajes compartidos son más complejos. Aprende sobre diferentes seguros, regulaciones y cómo proteger tu reclamo.",
+        "articles": {
+          "hitByCommercialTruck": {
+            "title": "Golpeado por un Camión Comercial",
+            "description": "Diferencias clave cuando está involucrado un camión comercial.",
+            "readingTime": "8 min de lectura"
+          },
+          "deliveryTruckAccidents": {
+            "title": "Accidentes con Camiones de Reparto",
+            "description": "Reclamos que involucran Amazon, FedEx, UPS y otros servicios de entrega.",
+            "readingTime": "7 min de lectura"
+          },
+          "uberLyftAccidents": {
+            "title": "Accidentes de Uber y Lyft",
+            "description": "Entendiendo los períodos de cobertura de seguro de viajes compartidos.",
+            "readingTime": "8 min de lectura"
+          },
+          "companyVehicleAccident": {
+            "title": "Accidente en Vehículo de la Empresa",
+            "description": "Responsabilidad cuando conduces o eres golpeado por un vehículo de empresa.",
+            "readingTime": "7 min de lectura"
+          },
+          "busAccidents": {
+            "title": "Reclamos por Accidentes de Autobús",
+            "description": "Reglas especiales para accidentes de transporte público y autobuses escolares.",
+            "readingTime": "7 min de lectura"
+          },
+          "taxiAccidentClaims": {
+            "title": "Reclamos por Accidentes de Taxi",
+            "description": "Seguro y responsabilidad para accidentes de taxis tradicionales.",
+            "readingTime": "6 min de lectura"
+          },
+          "truckingRegulations": {
+            "title": "Regulaciones de Camiones y Tu Reclamo",
+            "description": "Regulaciones federales que pueden fortalecer tu caso.",
+            "readingTime": "8 min de lectura"
+          },
+          "commercialVehicleInsurance": {
+            "title": "Reclamos de Seguro de Vehículos Comerciales",
+            "description": "Entendiendo límites de cobertura más altos y múltiples pólizas.",
+            "readingTime": "7 min de lectura"
+          },
+          "fleetVehicleAccidents": {
+            "title": "Accidentes de Vehículos de Flota",
+            "description": "Reclamos contra flotas de empresas y responsabilidad corporativa.",
+            "readingTime": "6 min de lectura"
+          }
+        },
+        "faqs": {
+          "faq1Q": "¿Por qué los reclamos de accidentes de camiones son diferentes?",
+          "faq1A": "Los camiones comerciales tienen mínimos de seguro más altos ($750,000-$1M+), más partes pueden ser responsables (conductor, empresa, cargador) y pueden aplicar regulaciones federales.",
+          "faq2Q": "¿Qué pasa si un conductor de Amazon me golpeó?",
+          "faq2A": "Amazon usa varios arreglos de conductores (contratistas DSP, conductores Flex). La cobertura depende del estatus del conductor. El seguro de Amazon típicamente proporciona $1M en cobertura.",
+          "faq3Q": "¿Quién paga en un accidente de Uber/Lyft?",
+          "faq3A": "Depende del estatus del conductor: app apagada = seguro personal, app encendida esperando = cobertura limitada, conduciendo activamente = póliza de $1M de Uber/Lyft."
+        }
+      },
+      "accidentInjuries": {
+        "title": "Guía de Lesiones por Accidentes de Auto",
+        "shortTitle": "Lesiones",
+        "description": "Entendiendo lesiones comunes de accidentes, cuándo buscar atención médica y cómo las lesiones afectan tu reclamo de seguro y compensación.",
+        "articles": {
+          "commonCarAccidentInjuries": {
+            "title": "Lesiones Comunes de Accidentes de Auto",
+            "description": "Resumen de lesiones típicas por colisiones vehiculares.",
+            "readingTime": "8 min de lectura"
+          },
+          "delayedInjurySymptoms": {
+            "title": "Síntomas de Lesiones Retardadas",
+            "description": "Lesiones que pueden no aparecer hasta días después del impacto.",
+            "readingTime": "7 min de lectura"
+          },
+          "seekingMedicalTreatment": {
+            "title": "Buscando Tratamiento Médico Después del Accidente",
+            "description": "Cuándo y cómo obtener atención médica adecuada.",
+            "readingTime": "7 min de lectura"
+          },
+          "whiplashTreatment": {
+            "title": "Tratamiento y Recuperación del Latigazo Cervical",
+            "description": "Entendiendo las opciones de tratamiento para el latigazo cervical.",
+            "readingTime": "8 min de lectura"
+          },
+          "backInjuryClaims": {
+            "title": "Reclamos por Lesiones de Espalda",
+            "description": "Documentando y reclamando lesiones de espalda.",
+            "readingTime": "8 min de lectura"
+          },
+          "traumaticBrainInjury": {
+            "title": "Lesión Cerebral Traumática (TBI)",
+            "description": "Reconociendo y reclamando lesiones cerebrales.",
+            "readingTime": "9 min de lectura"
+          },
+          "brokenBonesClaims": {
+            "title": "Reclamos por Huesos Rotos",
+            "description": "Lesiones de fracturas y compensación.",
+            "readingTime": "7 min de lectura"
+          },
+          "softTissueInjuries": {
+            "title": "Reclamos por Lesiones de Tejido Blando",
+            "description": "Por qué los reclamos de tejido blando a menudo son disputados.",
+            "readingTime": "7 min de lectura"
+          },
+          "ptsdCarAccident": {
+            "title": "TEPT Después de un Accidente de Auto",
+            "description": "Lesiones psicológicas y compensación.",
+            "readingTime": "7 min de lectura"
+          },
+          "painAndSuffering": {
+            "title": "Compensación por Dolor y Sufrimiento",
+            "description": "Cómo se calculan los daños por dolor y sufrimiento.",
+            "readingTime": "8 min de lectura"
+          },
+          "preExistingConditions": {
+            "title": "Condiciones Preexistentes y Reclamos",
+            "description": "Cómo afectan las lesiones previas tu reclamo por accidente.",
+            "readingTime": "7 min de lectura"
+          }
+        },
+        "faqs": {
+          "faq1Q": "¿Debo ver a un doctor aunque me sienta bien?",
+          "faq1A": "Sí. La adrenalina enmascara el dolor, y lesiones como el latigazo cervical a menudo no aparecen hasta 24-72 horas después. La documentación médica temprana es crucial para cualquier reclamo potencial.",
+          "faq2Q": "¿Qué es el seguro PIP?",
+          "faq2A": "La Protección contra Lesiones Personales cubre tus gastos médicos sin importar la culpa. Requerido en estados sin culpa. La cobertura típicamente varía de $10,000 a $50,000.",
+          "faq3Q": "¿Una condición preexistente perjudicará mi reclamo?",
+          "faq3A": "No necesariamente. La doctrina del 'demandante frágil' significa que puedes reclamar por agravación de condiciones existentes. Documenta tu condición pre-accidente para comparación."
+        }
+      },
+      "hitAndRun": {
+        "title": "Guía de Accidentes de Fuga",
+        "shortTitle": "Fuga",
+        "description": "Qué hacer cuando el otro conductor huye de la escena. Aprende tus derechos, cómo presentar un reclamo, usar tu cobertura de motorista sin seguro y ayudar a la policía a encontrar al conductor.",
+        "articles": {
+          "whatToDoHitAndRun": {
+            "title": "Qué Hacer Después de un Accidente de Fuga",
+            "description": "Pasos críticos a tomar inmediatamente cuando el otro conductor huye.",
+            "readingTime": "8 min de lectura"
+          },
+          "filingHitAndRunClaim": {
+            "title": "Presentando un Reclamo de Seguro por Fuga",
+            "description": "Cómo presentar un reclamo cuando no sabes quién te golpeó.",
+            "readingTime": "7 min de lectura"
+          },
+          "uninsuredMotoristHitAndRun": {
+            "title": "Usando Cobertura de Motorista Sin Seguro para Fuga",
+            "description": "Cómo la cobertura UM/UIM te protege cuando el conductor es desconocido.",
+            "readingTime": "8 min de lectura"
+          },
+          "hitAndRunPoliceReport": {
+            "title": "Presentando un Reporte Policial por Fuga",
+            "description": "Por qué el reporte policial es esencial y qué incluir.",
+            "readingTime": "6 min de lectura"
+          },
+          "parkedCarHitAndRun": {
+            "title": "Fuga con Auto Estacionado",
+            "description": "Tus opciones cuando alguien golpea tu auto estacionado y huye.",
+            "readingTime": "6 min de lectura"
+          },
+          "findingHitAndRunDriver": {
+            "title": "Cómo Encontrar a un Conductor que Huyó",
+            "description": "Consejos para identificar al conductor que huyó con testigos y cámaras.",
+            "readingTime": "7 min de lectura"
+          },
+          "hitAndRunNoUninsuredMotorist": {
+            "title": "Fuga Sin Cobertura UM",
+            "description": "Tus opciones si no tienes cobertura de motorista sin seguro.",
+            "readingTime": "6 min de lectura"
+          },
+          "hitAndRunInjuries": {
+            "title": "Reclamos por Lesiones Después de Fuga",
+            "description": "Obteniendo tratamiento médico y compensación cubiertos.",
+            "readingTime": "7 min de lectura"
+          },
+          "hitAndRunPenalties": {
+            "title": "Penalidades por Fuga por Estado",
+            "description": "Qué le pasa a los conductores que huyen de escenas de accidentes.",
+            "readingTime": "6 min de lectura"
+          },
+          "hitAndRunWitness": {
+            "title": "Fui Testigo de un Accidente de Fuga",
+            "description": "Cómo ayudar como testigo de un accidente de fuga.",
+            "readingTime": "5 min de lectura"
+          }
+        },
+        "faqs": {
+          "faq1Q": "¿Aumentará mi seguro después de un reclamo por fuga?",
+          "faq1A": "En la mayoría de los estados, no. Como no tienes la culpa y usas tu cobertura de motorista sin seguro, las aseguradoras generalmente no pueden aumentar tus tarifas. Sin embargo, las pólizas varían por estado y aseguradora.",
+          "faq2Q": "¿Qué pasa si alguien golpeó mi auto estacionado y huyó?",
+          "faq2A": "Presenta un reporte policial inmediatamente, busca testigos o cámaras de seguridad y presenta un reclamo bajo tu cobertura de colisión. Si identificas al conductor, su seguro de responsabilidad debería pagar.",
+          "faq3Q": "¿Puedo demandar a un conductor de fuga desconocido?",
+          "faq3A": "Necesitas identificar al conductor primero. Enfócate en encontrarlo a través de testigos, grabaciones de seguridad e investigación policial. Una vez identificado, puedes perseguir su seguro o demandarlo directamente.",
+          "faq4Q": "¿Hay un límite de tiempo para reportar una fuga?",
+          "faq4A": "Reporta a la policía inmediatamente—muchos estados requieren reportar dentro de 24-72 horas. Para reclamos de seguro, notifica a tu aseguradora lo antes posible. Para demandas, aplica el plazo de prescripción (típicamente 2-3 años)."
+        }
+      },
+      "tBoneAccidents": {
+        "title": "Guía de Colisiones en T e Impacto Lateral",
+        "shortTitle": "Colisión en T",
+        "description": "Las colisiones en T e impacto lateral están entre las más peligrosas. Aprende sobre determinación de culpa, lesiones comunes y maximizar tu compensación.",
+        "articles": {
+          "tBoneCollisionFault": {
+            "title": "¿Quién Tiene la Culpa en un Accidente en T?",
+            "description": "Cómo se determina la culpa cuando vehículos colisionan en intersecciones.",
+            "readingTime": "8 min de lectura"
+          },
+          "tBoneIntersectionAccidents": {
+            "title": "Accidentes en T en Intersecciones",
+            "description": "Escenarios comunes de intersección y cómo se asigna la culpa.",
+            "readingTime": "7 min de lectura"
+          },
+          "tBoneRedLightRunner": {
+            "title": "Golpeado en T por Alguien que Pasó un Semáforo Rojo",
+            "description": "Tus derechos cuando alguien pasa un semáforo rojo y te golpea.",
+            "readingTime": "7 min de lectura"
+          },
+          "sideImpactInjuries": {
+            "title": "Lesiones Comunes de Colisión de Impacto Lateral",
+            "description": "Por qué los accidentes en T causan lesiones severas y cómo reclamar.",
+            "readingTime": "8 min de lectura"
+          },
+          "tBoneLeftTurn": {
+            "title": "Accidente en T al Girar a la Izquierda",
+            "description": "Reglas de culpa para colisiones de giro a la izquierda en intersecciones.",
+            "readingTime": "7 min de lectura"
+          },
+          "broadsideCollisionSettlement": {
+            "title": "Guía de Compensación por Accidente en T",
+            "description": "Qué afecta el valor de tu compensación en choques de impacto lateral.",
+            "readingTime": "8 min de lectura"
+          },
+          "tBoneParkingLot": {
+            "title": "Accidentes en T en Estacionamientos",
+            "description": "Culpa y reclamos por choques de impacto lateral en estacionamientos.",
+            "readingTime": "6 min de lectura"
+          },
+          "tBoneStopSign": {
+            "title": "Accidente en T en Señal de Alto",
+            "description": "Determinando culpa cuando hay señales de alto involucradas.",
+            "readingTime": "6 min de lectura"
+          },
+          "tBoneUncontrolledIntersection": {
+            "title": "Colisión en T en Intersección Sin Control",
+            "description": "Reglas de culpa cuando no hay semáforos o señales.",
+            "readingTime": "6 min de lectura"
+          },
+          "sideswipeAccidents": {
+            "title": "Accidentes de Roce Lateral",
+            "description": "Cuando vehículos colisionan lado a lado mientras viajan.",
+            "readingTime": "6 min de lectura"
+          }
+        },
+        "faqs": {
+          "faq1Q": "¿Quién tiene la culpa en un accidente en T?",
+          "faq1A": "Generalmente el conductor que no cedió el paso: pasando semáforos rojos, ignorando señales de alto o haciendo giros inseguros a la izquierda. Sin embargo, la culpa puede ser compartida si el otro conductor iba a exceso de velocidad o pasó una luz amarilla.",
+          "faq2Q": "¿Por qué son tan peligrosos los accidentes en T?",
+          "faq2A": "Los choques de impacto lateral son especialmente peligrosos porque el lado de un auto ofrece menos protección que el frente o trasero. Los ocupantes del lado golpeado enfrentan impacto directo con menos zona de deformación para absorber la fuerza.",
+          "faq3Q": "¿Cuál es la compensación promedio de un accidente en T?",
+          "faq3A": "Solo daños a la propiedad: $5,000-$15,000. Con lesiones: $25,000-$75,000. Lesiones graves (TBI, espinal): $100,000-$500,000+. Las compensaciones varían significativamente según la severidad de la lesión y la culpa.",
+          "faq4Q": "¿Cómo pruebo que el otro conductor pasó un semáforo rojo?",
+          "faq4A": "La evidencia incluye: grabación de cámara de tráfico, video de cámara de tablero, declaraciones de testigos, reporte policial, cámaras de vigilancia de la intersección y expertos en reconstrucción de accidentes para casos graves."
+        }
+      },
+      "dangerousRoads": {
+        "title": "Guía de Carreteras e Intersecciones Peligrosas",
+        "shortTitle": "Carreteras Peligrosas",
+        "description": "Navega las carreteras más peligrosas de América con confianza. Aprende sobre autopistas de alto riesgo, intersecciones peligrosas y puntos de accidentes en ciudades y estados principales.",
+        "articles": {
+          "mostDangerousHighwaysUsa": {
+            "title": "Las Autopistas Más Peligrosas de América",
+            "description": "Las autopistas interestatales más mortales y qué las hace tan peligrosas.",
+            "readingTime": "10 min de lectura"
+          },
+          "dangerousIntersectionsWhy": {
+            "title": "¿Qué Hace que una Intersección Sea Peligrosa?",
+            "description": "Entendiendo los factores que crean intersecciones de alto riesgo.",
+            "readingTime": "7 min de lectura"
+          },
+          "californiaDangerousRoads": {
+            "title": "Las Carreteras Más Peligrosas de California",
+            "description": "Desde la I-405 hasta PCH—las carreteras más mortales de California y consejos de seguridad.",
+            "readingTime": "9 min de lectura"
+          },
+          "texasDangerousRoads": {
+            "title": "Las Carreteras Más Peligrosas de Texas",
+            "description": "Autopistas de Texas con las tasas más altas de accidentes y muertes.",
+            "readingTime": "9 min de lectura"
+          },
+          "floridaDangerousRoads": {
+            "title": "Las Carreteras Más Peligrosas de Florida",
+            "description": "Las autopistas e intersecciones más mortales de Florida explicadas.",
+            "readingTime": "9 min de lectura"
+          },
+          "highwayAccidentSurvival": {
+            "title": "Guía de Supervivencia de Accidentes en Autopista",
+            "description": "Qué hacer si tienes un accidente en una autopista peligrosa.",
+            "readingTime": "8 min de lectura"
+          },
+          "intersectionAccidentClaims": {
+            "title": "Reclamos por Accidentes en Intersecciones",
+            "description": "Cómo las intersecciones peligrosas afectan tu reclamo por accidente.",
+            "readingTime": "7 min de lectura"
+          },
+          "newYorkDangerousRoads": {
+            "title": "Las Carreteras Más Peligrosas de Nueva York",
+            "description": "Autopistas e intersecciones de alto riesgo en el Estado Empire.",
+            "readingTime": "8 min de lectura"
+          },
+          "arizonaDangerousRoads": {
+            "title": "Las Carreteras Más Peligrosas de Arizona",
+            "description": "Las carreteras más mortales de Arizona desde Phoenix hasta Tucson.",
+            "readingTime": "8 min de lectura"
+          },
+          "georgiaDangerousRoads": {
+            "title": "Las Carreteras Más Peligrosas de Georgia",
+            "description": "Las autopistas notorias de Atlanta y las carreteras de alto riesgo de Georgia.",
+            "readingTime": "8 min de lectura"
+          },
+          "illinoisDangerousRoads": {
+            "title": "Las Carreteras Más Peligrosas de Illinois",
+            "description": "Autopistas del área de Chicago y puntos de accidentes de Illinois.",
+            "readingTime": "8 min de lectura"
+          },
+          "ruralRoadDangers": {
+            "title": "Riesgos de Accidentes en Carreteras Rurales",
+            "description": "Por qué las carreteras rurales son más peligrosas de lo que piensas.",
+            "readingTime": "7 min de lectura"
+          },
+          "constructionZoneAccidents": {
+            "title": "Accidentes en Zonas de Construcción",
+            "description": "Navegando zonas de trabajo y tus derechos después de un choque en zona de construcción.",
+            "readingTime": "7 min de lectura"
+          }
+        },
+        "faqs": {
+          "faq1Q": "¿Cuál es la autopista más peligrosa de América?",
+          "faq1A": "La I-95 consistentemente se clasifica como una de las más mortales, extendiéndose desde Miami hasta Maine. En términos de tasa de muertes por milla, la I-4 en Florida y la I-10 en Texas también clasifican extremadamente alto. Las interestatales rurales a menudo tienen tasas de muerte más altas debido a la velocidad y distancia de centros de trauma.",
+          "faq2Q": "¿Dónde ocurre un accidente afecta mi reclamo?",
+          "faq2A": "Sí. Los accidentes en áreas conocidas como peligrosas pueden ayudar a establecer negligencia (por ejemplo, una ciudad sabía de una intersección peligrosa). Las grabaciones de cámaras de tráfico, reportes de condición del camino e historial de accidentes pueden fortalecer tu reclamo.",
+          "faq3Q": "¿Puedo demandar a una ciudad por una carretera peligrosa?",
+          "faq3A": "Potencialmente, sí. Si un defecto del camino, señalización deficiente o condición peligrosa conocida contribuyó a tu accidente, puedes tener un reclamo contra la entidad gubernamental responsable. Estos reclamos tienen requisitos estrictos de notificación y plazos más cortos.",
+          "faq4Q": "¿Por qué algunas intersecciones tienen tantos accidentes?",
+          "faq4A": "Los factores comunes incluyen: poca visibilidad, marcas de carriles confusas, tiempo corto de luz amarilla, falta de señales de giro, alto volumen de tráfico y mal diseño vial. Muchas intersecciones peligrosas han sido problemas conocidos por años."
+        }
+      },
+      "weatherDriving": {
+        "title": "Guía de Conducción en Clima y Estaciones",
+        "shortTitle": "Conducción en Clima",
+        "description": "Cómo las condiciones climáticas afectan el riesgo de accidentes, determinación de culpa y tu reclamo de seguro. Guías regionales para lluvia, nieve, niebla y condiciones extremas.",
+        "articles": {
+          "rainAccidentFault": {
+            "title": "Accidentes en Lluvia: ¿Quién Tiene la Culpa?",
+            "description": "Cómo las condiciones húmedas afectan la determinación de culpa en accidentes de auto.",
+            "readingTime": "7 min de lectura"
+          },
+          "hydroplaningAccidents": {
+            "title": "Accidentes por Hidroplaneo Explicados",
+            "description": "Qué sucede cuando hidroplaneas y cómo afecta tu reclamo.",
+            "readingTime": "7 min de lectura"
+          },
+          "fogAccidents": {
+            "title": "Accidentes de Auto Relacionados con Niebla",
+            "description": "Conducir en niebla y responsabilidad cuando la visibilidad es limitada.",
+            "readingTime": "6 min de lectura"
+          },
+          "iceSnowAccidents": {
+            "title": "Reclamos por Accidentes en Hielo y Nieve",
+            "description": "Culpa y reclamos cuando las condiciones invernales causan choques.",
+            "readingTime": "8 min de lectura"
+          },
+          "sunGlareAccidents": {
+            "title": "Accidentes por Deslumbramiento Solar",
+            "description": "Cuando el sol cegador contribuye a accidentes—¿quién es responsable?",
+            "readingTime": "6 min de lectura"
+          },
+          "floridaRainySeasonDriving": {
+            "title": "Conducción en Temporada de Lluvias de Florida",
+            "description": "Navegando la peligrosa temporada de tormentas de verano de Florida.",
+            "readingTime": "8 min de lectura"
+          },
+          "californiaWildfireDriving": {
+            "title": "Conducir Durante Incendios Forestales de California",
+            "description": "Humo, evacuaciones y reclamos por accidentes durante temporada de incendios.",
+            "readingTime": "7 min de lectura"
+          },
+          "texasFlashFloodAccidents": {
+            "title": "Accidentes por Inundaciones Repentinas en Texas",
+            "description": "Inundaciones repentinas, derrumbes de carreteras y responsabilidad en Texas.",
+            "readingTime": "7 min de lectura"
+          },
+          "hurricaneEvacuationAccidents": {
+            "title": "Accidentes en Evacuaciones por Huracán",
+            "description": "Accidentes durante evacuaciones obligatorias y quién es responsable.",
+            "readingTime": "7 min de lectura"
+          },
+          "blackIceAccidents": {
+            "title": "Accidentes por Hielo Negro",
+            "description": "El peligro oculto del hielo negro y responsabilidad por accidentes.",
+            "readingTime": "6 min de lectura"
+          },
+          "dustStormAccidents": {
+            "title": "Accidentes por Tormentas de Polvo en Arizona",
+            "description": "Seguridad en haboob y responsabilidad en tormentas de polvo de Arizona.",
+            "readingTime": "7 min de lectura"
+          },
+          "extremeHeatTireBlowouts": {
+            "title": "Calor Extremo y Reventones de Llantas",
+            "description": "Calor de verano, fallas de llantas y reclamos por accidentes.",
+            "readingTime": "6 min de lectura"
+          }
+        },
+        "faqs": {
+          "faq1Q": "¿Tengo la culpa si choco en mal clima?",
+          "faq1A": "El clima en sí no es excusa. Se espera que los conductores ajusten la velocidad y distancia de seguimiento para las condiciones. Si ibas muy rápido para las condiciones, puedes ser encontrado culpable aunque el clima te haya hecho perder el control.",
+          "faq2Q": "¿Puedo reclamar por un accidente causado por lluvia o hielo?",
+          "faq2A": "Sí, pero la responsabilidad depende de las circunstancias. Otro conductor puede tener la culpa si iba muy rápido para las condiciones. Las autoridades viales a veces pueden ser responsables por no tratar carreteras heladas o arreglar problemas de drenaje.",
+          "faq3Q": "¿El clima afecta el monto de mi compensación?",
+          "faq3A": "Puede. Si el clima fue un factor contribuyente y el otro conductor debió ajustar su conducción, fortalece tu caso. Los ajustadores de seguros consideran si se tomaron precauciones razonables.",
+          "faq4Q": "¿Qué pasa si golpeo a alguien porque hidroplaneé?",
+          "faq4A": "Puedes ser encontrado culpable. Los tribunales generalmente sostienen que los conductores deben reducir velocidad en condiciones húmedas. Sin embargo, si un defecto vial (mal drenaje, agua estancada) contribuyó, podrías tener un reclamo contra la autoridad vial."
+        }
+      },
+      "stateInsuranceLaws": {
+        "title": "Guía de Leyes de Seguros por Estado",
+        "shortTitle": "Leyes Estatales",
+        "description": "Las leyes de seguro de auto varían dramáticamente por estado. Entiende el sistema de culpa de tu estado, requisitos mínimos de cobertura y cómo las leyes locales afectan tu reclamo por accidente.",
+        "articles": {
+          "atFaultVsNoFaultExplained": {
+            "title": "Estados de Culpa vs Sin Culpa Explicados",
+            "description": "Desglose completo de cómo funciona el sistema de tu estado.",
+            "readingTime": "10 min de lectura"
+          },
+          "comparativeNegligenceStates": {
+            "title": "Negligencia Comparativa por Estado",
+            "description": "Cómo los porcentajes de culpa afectan tu reclamo en cada estado.",
+            "readingTime": "9 min de lectura"
+          },
+          "californiaCarAccidentLaws": {
+            "title": "Leyes de Accidentes de Auto de California",
+            "description": "Guía completa de las leyes de seguros y accidentes de California.",
+            "readingTime": "10 min de lectura"
+          },
+          "texasCarAccidentLaws": {
+            "title": "Leyes de Accidentes de Auto de Texas",
+            "description": "Requisitos de seguro de Texas y reglas de culpa explicadas.",
+            "readingTime": "10 min de lectura"
+          },
+          "floridaCarAccidentLaws": {
+            "title": "Leyes de Accidentes de Auto de Florida",
+            "description": "El sistema sin culpa de Florida y requisitos de PIP.",
+            "readingTime": "10 min de lectura"
+          },
+          "newYorkCarAccidentLaws": {
+            "title": "Leyes de Accidentes de Auto de Nueva York",
+            "description": "El seguro sin culpa de NY y el umbral de lesiones graves.",
+            "readingTime": "9 min de lectura"
+          },
+          "minimumCoverageByState": {
+            "title": "Cobertura Mínima de Seguro por Estado",
+            "description": "Desglose estado por estado de los límites de seguro requeridos.",
+            "readingTime": "8 min de lectura"
+          },
+          "statuteOfLimitationsByState": {
+            "title": "Plazos de Demandas por Accidente por Estado",
+            "description": "Cuánto tiempo tienes para presentar un reclamo en cada estado.",
+            "readingTime": "8 min de lectura"
+          },
+          "georgiaCarAccidentLaws": {
+            "title": "Leyes de Accidentes de Auto de Georgia",
+            "description": "La culpa comparativa modificada de Georgia y reglas de seguros.",
+            "readingTime": "9 min de lectura"
+          },
+          "arizonaCarAccidentLaws": {
+            "title": "Leyes de Accidentes de Auto de Arizona",
+            "description": "El sistema de negligencia comparativa pura de Arizona.",
+            "readingTime": "9 min de lectura"
+          },
+          "illinoisCarAccidentLaws": {
+            "title": "Leyes de Accidentes de Auto de Illinois",
+            "description": "Reglas de culpa de Illinois y requisitos de seguro.",
+            "readingTime": "9 min de lectura"
+          },
+          "ohioCarAccidentLaws": {
+            "title": "Leyes de Accidentes de Auto de Ohio",
+            "description": "Las reglas de negligencia comparativa modificada de Ohio.",
+            "readingTime": "9 min de lectura"
+          },
+          "uninsuredMotoristLaws": {
+            "title": "Cobertura de Motorista Sin Seguro por Estado",
+            "description": "Qué estados requieren cobertura UM y qué significa para ti.",
+            "readingTime": "8 min de lectura"
+          },
+          "pipCoverageByState": {
+            "title": "Requisitos de Cobertura PIP por Estado",
+            "description": "Reglas de Protección contra Lesiones Personales en estados sin culpa.",
+            "readingTime": "8 min de lectura"
+          }
+        },
+        "faqs": {
+          "faq1Q": "¿Cuál es la diferencia entre estados de culpa y sin culpa?",
+          "faq1A": "En estados de culpa (tort), el conductor que causó el accidente paga los daños a través de su seguro de responsabilidad. En estados sin culpa, el seguro de cada conductor paga sus propias facturas médicas sin importar la culpa, con demandas limitadas a lesiones graves.",
+          "faq2Q": "¿Qué estados son sin culpa?",
+          "faq2A": "Florida, Michigan, Nueva Jersey, Nueva York, Pensilvania, Hawái, Kansas, Kentucky, Massachusetts, Minnesota, Dakota del Norte y Utah tienen sistemas sin culpa. Puerto Rico también usa sin culpa. Los requisitos y umbrales varían por estado.",
+          "faq3Q": "¿Puedo demandar en un estado sin culpa?",
+          "faq3A": "Sí, pero solo si las lesiones cumplen un umbral. Los estados usan un umbral monetario (facturas médicas exceden cierta cantidad) o umbral verbal (lesiones graves específicas como fracturas, lesión permanente o desfiguración).",
+          "faq4Q": "¿Cómo afecta la negligencia comparativa mi reclamo?",
+          "faq4A": "En estados de comparativa pura, puedes recuperar daños menos tu porcentaje de culpa (incluso al 99% de culpa). En estados de comparativa modificada, no puedes recuperar si tienes más del 50% (o 51%) de culpa. Algunos estados aún usan negligencia contributiva donde cualquier culpa impide la recuperación.",
+          "faq5Q": "¿Cuál es el plazo de prescripción para accidentes de auto?",
+          "faq5A": "La mayoría de los estados permiten 2-3 años para presentar una demanda después de un accidente de auto. Algunos estados tienen plazos más cortos (1 año en Kentucky y Luisiana). Los reclamos contra entidades gubernamentales a menudo tienen requisitos de notificación mucho más cortos (a veces 30-180 días)."
+        }
+      }
+    }
   }
 }

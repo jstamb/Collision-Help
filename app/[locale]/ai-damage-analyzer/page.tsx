@@ -4,6 +4,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import AnalyzerForm from '@/components/AnalyzerForm'
 import { Camera, Shield, Clock, FileText, CheckCircle, Zap } from 'lucide-react'
+import { getTranslations } from 'next-intl/server'
 
 export const metadata: Metadata = {
   title: 'Free AI Auto Accident Damage Analyzer | Instant Case Evaluation',
@@ -20,57 +21,67 @@ export const metadata: Metadata = {
   },
 }
 
-const features = [
-  {
-    icon: Camera,
-    title: 'Photo Analysis',
-    description: 'Our AI examines your accident photos to identify damage severity and impact type'
-  },
-  {
-    icon: Shield,
-    title: 'Liability Assessment',
-    description: 'Understand who may be at fault based on visible damage patterns'
-  },
-  {
-    icon: FileText,
-    title: 'Detailed Report',
-    description: 'Receive a comprehensive report emailed directly to you'
-  },
-  {
-    icon: Clock,
-    title: 'Results in Minutes',
-    description: 'Get your analysis delivered to your inbox within minutes'
-  }
-]
+export default async function AIDamageAnalyzerPage() {
+  const t = await getTranslations('aiAnalyzerPage')
 
-const steps = [
-  {
-    number: '1',
-    title: 'Upload Your Photos',
-    description: 'Take clear photos of all damage to your vehicle from multiple angles'
-  },
-  {
-    number: '2',
-    title: 'AI Analyzes Damage',
-    description: 'Our advanced AI examines impact patterns, damage severity, and fault indicators'
-  },
-  {
-    number: '3',
-    title: 'Get Your Report',
-    description: 'Receive a detailed analysis with your options for next steps'
-  }
-]
+  const features = [
+    {
+      icon: Camera,
+      title: t('featurePhotoTitle'),
+      description: t('featurePhotoDesc')
+    },
+    {
+      icon: Shield,
+      title: t('featureLiabilityTitle'),
+      description: t('featureLiabilityDesc')
+    },
+    {
+      icon: FileText,
+      title: t('featureReportTitle'),
+      description: t('featureReportDesc')
+    },
+    {
+      icon: Clock,
+      title: t('featureResultsTitle'),
+      description: t('featureResultsDesc')
+    }
+  ]
 
-const benefits = [
-  'Understand the strength of your potential case',
-  'Get estimated damage repair costs',
-  'Learn about common injuries from similar accidents',
-  'Know your rights and legal options',
-  'Completely free - no obligation',
-  'Private and confidential analysis'
-]
+  const steps = [
+    {
+      number: '1',
+      title: t('step1Title'),
+      description: t('step1Desc')
+    },
+    {
+      number: '2',
+      title: t('step2Title'),
+      description: t('step2Desc')
+    },
+    {
+      number: '3',
+      title: t('step3Title'),
+      description: t('step3Desc')
+    }
+  ]
 
-export default function AIDamageAnalyzerPage() {
+  const benefits = [
+    t('benefit1'),
+    t('benefit2'),
+    t('benefit3'),
+    t('benefit4'),
+    t('benefit5'),
+    t('benefit6')
+  ]
+
+  const faqs = [
+    { question: t('faq1Q'), answer: t('faq1A') },
+    { question: t('faq2Q'), answer: t('faq2A') },
+    { question: t('faq3Q'), answer: t('faq3A') },
+    { question: t('faq4Q'), answer: t('faq4A') },
+    { question: t('faq5Q'), answer: t('faq5A') }
+  ]
+
   return (
     <>
       <Header />
@@ -81,23 +92,23 @@ export default function AIDamageAnalyzerPage() {
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 bg-brand-500/20 border border-brand-400/30 rounded-full px-4 py-2 mb-6">
                 <Zap className="w-4 h-4 text-brand-400" />
-                <span className="text-sm font-medium text-brand-300">Free AI-Powered Analysis</span>
+                <span className="text-sm font-medium text-brand-300">{t('badge')}</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                AI Auto Accident <span className="text-brand-400">Damage Analyzer</span>
+                {t('title')} <span className="text-brand-400">{t('titleHighlight')}</span>
               </h1>
               <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
-                Upload photos of your accident damage and receive a detailed analysis of your case strength, estimated damages, and legal options—delivered to your inbox in minutes.
+                {t('description')}
               </p>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-400">
                 <span className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-400" /> 100% Free
+                  <CheckCircle className="w-4 h-4 text-green-400" /> {t('free')}
                 </span>
                 <span className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-400" /> No Obligation
+                  <CheckCircle className="w-4 h-4 text-green-400" /> {t('noObligation')}
                 </span>
                 <span className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-400" /> Confidential
+                  <CheckCircle className="w-4 h-4 text-green-400" /> {t('confidential')}
                 </span>
               </div>
             </div>
@@ -126,11 +137,10 @@ export default function AIDamageAnalyzerPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                Get Your Free Damage Analysis
+                {t('formTitle')}
               </h2>
               <p className="text-lg text-slate-600">
-                Upload photos of your vehicle damage and provide your contact information.
-                You'll receive a detailed report explaining your situation and options.
+                {t('formDescription')}
               </p>
             </div>
             <AnalyzerForm />
@@ -141,7 +151,7 @@ export default function AIDamageAnalyzerPage() {
         <section className="py-16 bg-slate-900 text-white">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              How It Works
+              {t('howItWorks')}
             </h2>
             <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               {steps.map((step) => (
@@ -164,7 +174,7 @@ export default function AIDamageAnalyzerPage() {
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                   <h2 className="text-3xl font-bold text-slate-900 mb-6">
-                    What You'll Learn From Your Report
+                    {t('benefitsTitle')}
                   </h2>
                   <ul className="space-y-4">
                     {benefits.map((benefit) => (
@@ -177,15 +187,13 @@ export default function AIDamageAnalyzerPage() {
                 </div>
                 <div className="bg-gradient-to-br from-brand-50 to-slate-100 rounded-2xl p-8">
                   <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                    Why Use Our AI Analyzer?
+                    {t('whyUseTitle')}
                   </h3>
                   <p className="text-slate-600 mb-4">
-                    After an accident, it's hard to know if you have a strong case or what your options are.
-                    Insurance companies have teams of adjusters and lawyers—now you can level the playing field.
+                    {t('whyUseP1')}
                   </p>
                   <p className="text-slate-600">
-                    Our AI has been trained on thousands of accident cases to help you understand
-                    the potential value of your claim and whether speaking with an attorney might benefit you.
+                    {t('whyUseP2')}
                   </p>
                 </div>
               </div>
@@ -197,56 +205,19 @@ export default function AIDamageAnalyzerPage() {
         <section className="py-16 bg-slate-50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center text-slate-900 mb-12">
-              Frequently Asked Questions
+              {t('faqTitle')}
             </h2>
             <div className="max-w-3xl mx-auto space-y-6">
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-slate-900 mb-2">
-                  Is this damage analysis really free?
-                </h3>
-                <p className="text-slate-600">
-                  Yes, completely free with no strings attached. We provide this service to help accident victims
-                  understand their situation. There's no obligation to take any further action.
-                </p>
-              </div>
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-slate-900 mb-2">
-                  How accurate is the AI analysis?
-                </h3>
-                <p className="text-slate-600">
-                  Our AI provides a preliminary assessment based on visible damage patterns. While it's trained
-                  on thousands of accident cases, the analysis should be used as a starting point for understanding
-                  your situation, not as legal advice.
-                </p>
-              </div>
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-slate-900 mb-2">
-                  What photos should I upload?
-                </h3>
-                <p className="text-slate-600">
-                  Take clear, well-lit photos of all damage to your vehicle. Include close-ups of damaged areas
-                  and wider shots showing the overall impact. Photos from multiple angles help our AI provide
-                  a more accurate analysis.
-                </p>
-              </div>
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-slate-900 mb-2">
-                  How long does it take to get my report?
-                </h3>
-                <p className="text-slate-600">
-                  Most reports are delivered to your email within 5-10 minutes of submission. Check your spam
-                  folder if you don't see it in your inbox.
-                </p>
-              </div>
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-slate-900 mb-2">
-                  Is my information kept private?
-                </h3>
-                <p className="text-slate-600">
-                  Absolutely. Your photos and personal information are kept confidential and are only used
-                  to generate your damage analysis report. We never sell your information to third parties.
-                </p>
-              </div>
+              {faqs.map((faq, index) => (
+                <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
+                  <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                    {faq.question}
+                  </h3>
+                  <p className="text-slate-600">
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -255,16 +226,16 @@ export default function AIDamageAnalyzerPage() {
         <section className="py-16 bg-brand-600 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Understand Your Case?
+              {t('ctaTitle')}
             </h2>
             <p className="text-xl text-brand-100 mb-8 max-w-2xl mx-auto">
-              Get your free AI damage analysis now. It only takes a few minutes.
+              {t('ctaDescription')}
             </p>
             <a
               href="#analyzer"
               className="inline-flex items-center gap-2 bg-white text-brand-600 px-8 py-4 rounded-lg font-semibold hover:bg-brand-50 transition-colors"
             >
-              Start Free Analysis <Zap className="w-5 h-5" />
+              {t('ctaButton')} <Zap className="w-5 h-5" />
             </a>
           </div>
         </section>

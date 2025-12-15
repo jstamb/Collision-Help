@@ -1190,3 +1190,111 @@ export function getArticle(pillarSlug: string, articleSlug: string): Article | u
   const pillar = getPillar(pillarSlug)
   return pillar?.articles.find(a => a.slug === articleSlug)
 }
+
+// Slug to translation key mappings
+const pillarSlugToKey: Record<string, string> = {
+  'total-loss-dispute': 'totalLossDispute',
+  'insurance-claims': 'insuranceClaims',
+  'repair-rights': 'repairRights',
+  'fault-determination': 'faultDetermination',
+  'rear-end-collisions': 'rearEndCollisions',
+  'commercial-vehicle': 'commercialVehicle',
+  'accident-injuries': 'accidentInjuries',
+  'hit-and-run': 'hitAndRun',
+  't-bone-accidents': 'tBoneAccidents',
+  'dangerous-roads': 'dangerousRoads',
+  'weather-driving': 'weatherDriving',
+  'state-insurance-laws': 'stateInsuranceLaws',
+}
+
+// Convert article slug to translation key (kebab-case to camelCase)
+function articleSlugToKey(slug: string): string {
+  return slug.replace(/-([a-z])/g, (_, letter) => letter.toUpperCase())
+}
+
+// Translation function type from next-intl
+type TranslationFunction = (key: string) => string
+
+/**
+ * Get a translated pillar with all its content
+ * @param pillarSlug - The pillar's URL slug
+ * @param t - Translation function from getTranslations('guidesContent')
+ * @returns Translated pillar or undefined if not found
+ */
+export function getTranslatedPillar(
+  pillarSlug: string,
+  t: TranslationFunction
+): Pillar | undefined {
+  const basePillar = getPillar(pillarSlug)
+  if (!basePillar) return undefined
+
+  const pillarKey = pillarSlugToKey[pillarSlug]
+  if (!pillarKey) return basePillar
+
+  try {
+    return {
+      ...basePillar,
+      title: t(`pillars.${pillarKey}.title`),
+      shortTitle: t(`pillars.${pillarKey}.shortTitle`),
+      description: t(`pillars.${pillarKey}.description`),
+      articles: basePillar.articles.map(article => {
+        const articleKey = articleSlugToKey(article.slug)
+        return {
+          ...article,
+          title: t(`pillars.${pillarKey}.articles.${articleKey}.title`),
+          description: t(`pillars.${pillarKey}.articles.${articleKey}.description`),
+          readingTime: t(`pillars.${pillarKey}.articles.${articleKey}.readingTime`),
+        }
+      }),
+      faqs: basePillar.faqs.map((_, index) => ({
+        question: t(`pillars.${pillarKey}.faqs.faq${index + 1}Q`),
+        answer: t(`pillars.${pillarKey}.faqs.faq${index + 1}A`),
+      })),
+    }
+  } catch {
+    // Fallback to English if translation not found
+    return basePillar
+  }
+}
+
+/**
+ * Get all pillars with translated content
+ * @param t - Translation function from getTranslations('guidesContent')
+ * @returns Array of translated pillars
+ */
+export function getTranslatedPillars(t: TranslationFunction): Pillar[] {
+  return pillars.map(pillar => getTranslatedPillar(pillar.slug, t) || pillar)
+}
+
+/**
+ * Get a translated article
+ * @param pillarSlug - The pillar's URL slug
+ * @param articleSlug - The article's URL slug
+ * @param t - Translation function from getTranslations('guidesContent')
+ * @returns Translated article or undefined if not found
+ */
+export function getTranslatedArticle(
+  pillarSlug: string,
+  articleSlug: string,
+  t: TranslationFunction
+): Article | undefined {
+  const baseArticle = getArticle(pillarSlug, articleSlug)
+  if (!baseArticle) return undefined
+
+  const pillarKey = pillarSlugToKey[pillarSlug]
+  if (!pillarKey) return baseArticle
+
+  const articleKey = articleSlugToKey(articleSlug)
+
+  try {
+    return {
+      ...baseArticle,
+      title: t(`pillars.${pillarKey}.articles.${articleKey}.title`),
+      description: t(`pillars.${pillarKey}.articles.${articleKey}.description`),
+      readingTime: t(`pillars.${pillarKey}.articles.${articleKey}.readingTime`),
+    }
+  } catch {
+    // Fallback to English if translation not found
+    return baseArticle
+  }
+}

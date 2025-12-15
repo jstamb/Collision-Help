@@ -1,7 +1,6 @@
 import React from 'react'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { ArrowRight, Clock, LucideIcon } from 'lucide-react'
-import { cn } from '@/lib/utils'
 
 interface GuideCardProps {
   title: string
@@ -10,6 +9,8 @@ interface GuideCardProps {
   icon?: LucideIcon
   readingTime?: string
   variant?: 'default' | 'featured' | 'compact'
+  readGuideLabel?: string
+  minReadLabel?: string
 }
 
 export default function GuideCard({
@@ -18,8 +19,15 @@ export default function GuideCard({
   href,
   icon: Icon,
   readingTime,
-  variant = 'default'
+  variant = 'default',
+  readGuideLabel = 'Read Guide',
+  minReadLabel = 'min read'
 }: GuideCardProps) {
+  // Format reading time with translation
+  const formattedReadingTime = readingTime
+    ? readingTime.replace('min read', minReadLabel)
+    : undefined
+
   if (variant === 'compact') {
     return (
       <Link
@@ -59,14 +67,14 @@ export default function GuideCard({
             {description}
           </p>
           <div className="flex items-center justify-between">
-            {readingTime && (
+            {formattedReadingTime && (
               <span className="flex items-center gap-1 text-xs text-slate-500">
                 <Clock className="w-3 h-3" />
-                {readingTime}
+                {formattedReadingTime}
               </span>
             )}
             <span className="flex items-center gap-1 text-sm font-medium text-brand-600 group-hover:gap-2 transition-all">
-              Read Guide
+              {readGuideLabel}
               <ArrowRight className="w-4 h-4" />
             </span>
           </div>
@@ -92,10 +100,10 @@ export default function GuideCard({
             {title}
           </h3>
           <p className="text-sm text-slate-600 line-clamp-2">{description}</p>
-          {readingTime && (
+          {formattedReadingTime && (
             <span className="inline-flex items-center gap-1 mt-2 text-xs text-slate-500">
               <Clock className="w-3 h-3" />
-              {readingTime}
+              {formattedReadingTime}
             </span>
           )}
         </div>

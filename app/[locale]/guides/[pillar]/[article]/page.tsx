@@ -2,7 +2,8 @@ import React from 'react'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { pillars, getPillar, getArticle, Pillar } from '@/content/guides/pillars'
+import { pillars, getPillar, getArticle, getTranslatedPillar, getTranslatedPillars, Pillar } from '@/content/guides/pillars'
+import { getTranslations } from 'next-intl/server'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import Breadcrumbs from '@/components/layout/Breadcrumbs'
@@ -145,14 +146,14 @@ const crossPillarLinks: Record<string, { pillar: string; articles: string[] }[]>
 }
 
 // Get cross-pillar related articles
-function getCrossPillarArticles(pillarSlug: string, articleSlug: string, currentPillar: Pillar) {
+function getCrossPillarArticles(pillarSlug: string, articleSlug: string, currentPillar: Pillar, translatedPillars: Pillar[]) {
   const key = `${pillarSlug}/${articleSlug}`
   const links = crossPillarLinks[key] || []
 
   const results: { pillar: Pillar; article: { slug: string; title: string; description: string } }[] = []
 
   links.forEach(link => {
-    const pillar = pillars.find(p => p.slug === link.pillar)
+    const pillar = translatedPillars.find(p => p.slug === link.pillar)
     if (pillar && pillar.slug !== currentPillar.slug) {
       link.articles.forEach(articleSlug => {
         const article = pillar.articles.find(a => a.slug === articleSlug)
@@ -166,7 +167,7 @@ function getCrossPillarArticles(pillarSlug: string, articleSlug: string, current
   // If we don't have enough cross-pillar links, add some generic related content
   if (results.length < 2) {
     // Get articles from other pillars that might be relevant based on common themes
-    const otherPillars = pillars.filter(p => p.slug !== currentPillar.slug)
+    const otherPillars = translatedPillars.filter(p => p.slug !== currentPillar.slug)
     for (const otherPillar of otherPillars) {
       if (results.length >= 3) break
       // Get the first P1 article from each pillar
@@ -206,16 +207,23 @@ export async function generateMetadata({ params }: { params: { pillar: string; a
   }
 }
 
-export default function ArticlePage({ params }: { params: { pillar: string; article: string } }) {
-  const pillar = getPillar(params.pillar)
-  const article = getArticle(params.pillar, params.article)
+export default async function ArticlePage({ params }: { params: Promise<{ pillar: string; article: string }> }) {
+  const { pillar: pillarSlug, article: articleSlug } = await params
+  const basePillar = getPillar(pillarSlug)
+  const baseArticle = getArticle(pillarSlug, articleSlug)
+  const tContent = await getTranslations('guidesContent')
 
-  if (!pillar || !article) {
+  if (!basePillar || !baseArticle) {
     notFound()
   }
 
+  // Get translated content
+  const translatedPillars = getTranslatedPillars(tContent)
+  const pillar = getTranslatedPillar(pillarSlug, tContent) || basePillar
+  const article = pillar.articles.find(a => a.slug === articleSlug) || baseArticle
+
   // Load markdown content if available
-  const markdownContent = getArticleContent(params.pillar, params.article)
+  const markdownContent = getArticleContent(pillarSlug, articleSlug)
 
   // Default placeholder content for articles without markdown files
   const defaultContent = `
@@ -272,7 +280,7 @@ Consider seeking additional assistance if:
   const prevArticle = currentIndex > 0 ? pillar.articles[currentIndex - 1] : null
   const nextArticle = currentIndex < pillar.articles.length - 1 ? pillar.articles[currentIndex + 1] : null
   const relatedArticles = pillar.articles.filter(a => a.slug !== article.slug).slice(0, 3)
-  const crossPillarArticles = getCrossPillarArticles(params.pillar, params.article, pillar)
+  const crossPillarArticles = getCrossPillarArticles(pillarSlug, articleSlug, pillar, translatedPillars)
 
   // JSON-LD for Article
   const jsonLd = {

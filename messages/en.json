@@ -317,5 +317,1393 @@
     "homeDescription": "Get free AI-powered car damage analysis and expert guidance for insurance claims. Upload photos for instant assessment and personalized advice.",
     "aboutTitle": "About Us - Collision Help",
     "aboutDescription": "Learn about Collision Help's mission to assist accident victims with insurance claims and vehicle damage assessment."
+  },
+  "guidesPage": {
+    "essentialReading": "Essential Reading",
+    "moreArticles": "More Articles",
+    "needHelp": "Need Help With Your Claim?",
+    "needHelpDesc": "Upload photos of your damage and get a free AI-powered assessment.",
+    "getFreeAnalysis": "Get Free Analysis",
+    "inThisGuide": "In This Guide",
+    "relatedGuides": "Related Guides",
+    "localHelpByCity": "Local Help by City",
+    "localHelpDesc": "Get location-specific accident guidance:",
+    "viewAllLocations": "View All Locations",
+    "stillHaveQuestions": "Still Have Questions?",
+    "stillHaveQuestionsDesc": "Our AI damage analyzer can help assess your vehicle's damage and guide you through the next steps.",
+    "readGuide": "Read Guide",
+    "minRead": "min read",
+    "articles": "Articles",
+    "breadcrumbGuides": "Guides"
+  },
+  "guidesHub": {
+    "title": "Car Accident Guides & Resources",
+    "description": "Expert guidance to help you navigate insurance claims, understand your rights, and get back on the road. Written for real people dealing with real accidents.",
+    "articlesCount": "articles",
+    "explore": "Explore",
+    "mostPopular": "Most Popular Articles",
+    "browseByTopic": "Browse by Topic",
+    "viewAllArticles": "View all {count} articles"
+  },
+  "locationsHub": {
+    "title": "Car Accident Help By State",
+    "subtitle": "Every state has different insurance laws, fault systems, and deadlines. Find your state below to understand your rights and options after a car accident.",
+    "stateCoverage": "50 State Coverage",
+    "atFaultStates": "At-Fault States",
+    "noFaultStates": "No-Fault States",
+    "choiceStates": "Choice States",
+    "contributoryNegligence": "Contributory Negligence",
+    "selectYourState": "Select Your State",
+    "selectYourStateDesc": "Click on your state to view detailed information about insurance requirements, fault systems, statute of limitations, and more.",
+    "understandingSystems": "Understanding State Insurance Systems",
+    "atFaultTitle": "At-Fault States",
+    "atFaultDesc": "In at-fault (tort) states, the driver who caused the accident is responsible for paying damages. You can file a claim against their insurance or sue them directly.",
+    "atFault1": "File claim with at-fault driver's insurance",
+    "atFault2": "Can sue for full damages including pain & suffering",
+    "atFault3": "Fault determination is critical",
+    "noFaultTitle": "No-Fault States",
+    "noFaultDesc": "In no-fault states, your own insurance (PIP) pays for your medical bills and lost wages regardless of who caused the accident. Lawsuits are limited.",
+    "noFault1": "Your PIP coverage pays first",
+    "noFault2": "Faster compensation, less litigation",
+    "noFault3": "Can only sue if injuries meet threshold",
+    "choiceTitle": "Choice States",
+    "choiceDesc": "Choice states let you select between no-fault coverage or traditional at-fault coverage when you purchase your policy.",
+    "choice1": "Choose your coverage type",
+    "choice2": "Different premiums and rights",
+    "choice3": "Kentucky, New Jersey, Pennsylvania",
+    "contributoryWarningTitle": "Warning: Contributory Negligence States",
+    "contributoryWarningDesc": "If you're in Alabama, Maryland, North Carolina, Virginia, or Washington D.C., be aware that these jurisdictions follow pure contributory negligence rules. This means if you're found even 1% at fault for the accident, you may be completely barred from recovering any compensation.",
+    "contributoryWarningNote": "In these states, documenting that you were not at fault is especially critical. Consider consulting with an attorney early in the process.",
+    "noFaultStatesList": "No-Fault Insurance States",
+    "notSureTitle": "Not Sure Where to Start?",
+    "notSureDesc": "Our AI Damage Analyzer can help you understand your accident regardless of which state you're in.",
+    "tryFreeAnalysis": "Try Free AI Analysis",
+    "regionNortheast": "Northeast",
+    "regionSoutheast": "Southeast",
+    "regionMidwest": "Midwest",
+    "regionSouthwest": "Southwest",
+    "regionWest": "West"
+  },
+  "statePage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbLocations": "Locations",
+    "heroTitle": "Car Accident Help in {stateName}",
+    "heroSubtitle": "Understanding {stateName}'s {faultSystem}, your rights, and how to navigate the claims process after a car accident.",
+    "noFaultInsuranceSystem": "no-fault insurance system",
+    "choiceNoFaultSystem": "choice no-fault system",
+    "atFaultInsuranceSystem": "at-fault insurance system",
+    "noFaultState": "No-Fault State",
+    "choiceNoFault": "Choice No-Fault",
+    "atFaultState": "At-Fault State",
+    "atFaultTort": "At-Fault (Tort)",
+    "toFileInjuryClaim": "to File Injury Claim",
+    "minimumCoverage": "Minimum Coverage",
+    "quickFacts": "{stateName} Car Accident Quick Facts",
+    "faultSystem": "Fault System",
+    "comparativeNegligence": "Comparative Negligence",
+    "pure": "Pure",
+    "contributory": "Contributory",
+    "modified50": "Modified (50% Bar)",
+    "modified51": "Modified (51% Bar)",
+    "personalInjuryDeadline": "Personal Injury Deadline",
+    "propertyDamageDeadline": "Property Damage Deadline",
+    "minimumLiabilityCoverage": "Minimum Liability Coverage",
+    "totalLossThreshold": "Total Loss Threshold",
+    "pipCoverageRequired": "PIP Coverage Required",
+    "minimum": "minimum",
+    "uninsuredMotorist": "Uninsured Motorist",
+    "required": "Required",
+    "understandingFaultTitle": "Understanding {stateName}'s {faultType} Insurance System",
+    "noFault": "No-Fault",
+    "howFaultAffectsClaim": "How Fault Affects Your Claim",
+    "importantWarning": "Important Warning",
+    "contributoryWarningText": "{stateName}'s contributory negligence rule is extremely strict. Document everything at the accident scene and avoid any statements that could be interpreted as admitting fault.",
+    "insuranceRequirementsTitle": "{stateName} Car Insurance Requirements",
+    "insuranceRequirementsDesc": "{stateName} requires all drivers to carry minimum auto insurance coverage. Understanding these requirements helps ensure you're adequately protected and can inform your decisions when filing a claim.",
+    "minimumRequiredCoverage": "Minimum Required Coverage",
+    "bodilyInjuryPerPerson": "Bodily Injury (per person)",
+    "bodilyInjuryPerAccident": "Bodily Injury (per accident)",
+    "propertyDamage": "Property Damage",
+    "pipCoverage": "PIP Coverage (Personal Injury Protection)",
+    "insuranceRecommendations": "Insurance Recommendations",
+    "umUimRecommendation": "Consider uninsured/underinsured motorist coverage",
+    "umUimDesc": "Protects you if the at-fault driver lacks adequate insurance. Recommended even where not required by law.",
+    "higherLimitsRecommendation": "Consider higher liability limits",
+    "higherLimitsDesc": "Minimum coverage may not fully protect you in a serious accident. Higher limits provide better protection.",
+    "importantConsiderations": "Important Considerations for {stateName}",
+    "findCityTitle": "Find Car Accident Help in Your City",
+    "findCityDesc": "Get localized information for major cities in {stateName}.",
+    "viewDetails": "View Details",
+    "faqTitle": "Frequently Asked Questions: Car Accidents in {stateName}",
+    "relatedGuides": "Related Guides",
+    "viewGuide": "View Guide",
+    "freeAnalysis": "Free Analysis",
+    "freeAnalysisDesc": "Get AI-powered damage assessment",
+    "getStarted": "Get Started",
+    "callbackTitle": "Speak With an Expert",
+    "callbackDesc": "Get personalized guidance for your {stateName} accident claim.",
+    "requestCallback": "Request Callback",
+    "faq1Q": "What does it mean that {stateName} is a no-fault state?",
+    "faq1A": "In {stateName}, no-fault means your own insurance (PIP coverage) pays for your medical expenses and lost wages after an accident, regardless of who caused it. This speeds up compensation, but limits your ability to sue unless your injuries meet certain thresholds.",
+    "faq2Q": "What does it mean that {stateName} is a choice no-fault state?",
+    "faq2A": "{stateName} allows you to choose between a no-fault policy (where your own PIP pays regardless of fault) or a traditional tort policy (where you can sue the at-fault driver). Each option has different premiums and recovery limitations.",
+    "faq3Q": "Is {stateName} an at-fault or no-fault state?",
+    "faq3A": "{stateName} is an at-fault (tort) state. This means the driver who caused the accident is responsible for paying damages. You can file a claim against their insurance or sue them directly for medical bills, lost wages, and pain and suffering.",
+    "faq4Q": "How long do I have to file a car accident claim in {stateName}?",
+    "faq4A": "In {stateName}, the statute of limitations for personal injury claims is {personalInjury}, and {propertyDamage} for property damage. It's important to act quickly, as missing these deadlines can permanently bar you from recovering compensation.",
+    "faq5Q": "What is the minimum car insurance required in {stateName}?",
+    "faq5A": "{stateName} requires minimum liability coverage of {coverage}.",
+    "faq5APipRequired": "Personal Injury Protection (PIP) coverage is also mandatory.",
+    "faq5AUmRequired": "Uninsured motorist coverage is required.",
+    "faq5AUmOptional": "Uninsured motorist coverage is optional but recommended.",
+    "faq6QContributory": "What happens if I'm partially at fault for an accident in {stateName}?",
+    "faq6AContributory": "{stateName} follows contributory negligence rules, which are very strict. If you are found even 1% at fault for the accident, you may be completely barred from recovering any compensation. This makes documenting fault extremely important.",
+    "faq6QComparative": "Can I still recover damages if I'm partially at fault in {stateName}?",
+    "faq6APure": "Yes, {stateName} uses pure comparative negligence. You can recover damages even if you're mostly at fault—your award is simply reduced by your percentage of fault.",
+    "faq6AModified50": "It depends on your percentage of fault. {stateName} uses modified comparative negligence with a 50% bar. You can recover damages only if your fault is less than 50%.",
+    "faq6AModified51": "It depends on your percentage of fault. {stateName} uses modified comparative negligence with a 51% bar. You can recover damages only if your fault is 50% or less.",
+    "faq7Q": "How is a total loss determined in {stateName}?",
+    "faq7A": "In {stateName}, your vehicle is typically considered a total loss when repair costs exceed {threshold} of its actual cash value.",
+    "faq7ATLF": "Insurance companies use the Total Loss Formula (repair cost + salvage value > actual cash value) to make this determination.",
+    "faq7ATLV": "Insurance companies use the percentage threshold method to make this determination.",
+    "faq8Q": "Can I choose my own repair shop in {stateName}?",
+    "faq8A": "Yes, you have the right to choose your own repair shop in {stateName}. Insurance companies may recommend preferred shops, but they cannot require you to use them. However, using their preferred network may streamline the claims process.",
+    "faq9Q": "What is PIP insurance and how does it work in {stateName}?",
+    "faq9A": "Personal Injury Protection (PIP) is mandatory in {stateName}. It covers your medical expenses and lost wages after an accident regardless of who was at fault.",
+    "faq9AAmount": "The minimum PIP coverage required is {amount}.",
+    "personalInjuryProtection": "Personal Injury Protection (PIP)",
+    "umRequired": "Required",
+    "umOptional": "Optional (Recommended)",
+    "insuranceMinimumNote": "While these are the legal minimums, many experts recommend carrying higher coverage limits. Medical costs and vehicle repairs often exceed minimum coverage amounts, leaving you personally responsible for the difference.",
+    "statuteOfLimitationsTitle": "Statute of Limitations in {stateName}",
+    "statuteOfLimitationsDesc": "The statute of limitations sets a deadline for filing legal claims after an accident. In {stateName}, you have {personalInjury} to file a personal injury lawsuit and {propertyDamage} for property damage claims.",
+    "whyTimingMatters": "Why Timing Matters",
+    "whyTimingMattersDesc": "Missing the statute of limitations deadline can permanently bar you from recovering compensation, no matter how strong your case. Additionally, evidence becomes harder to gather and witnesses' memories fade over time. Starting the claims process promptly gives you the best chance of a successful outcome.",
+    "urgentShortDeadline": "Urgent: Short Deadline",
+    "urgentShortDeadlineText": "{stateName} has one of the shortest statute of limitations in the country for personal injury claims. You must act quickly to protect your rights.",
+    "totalLossRulesTitle": "Total Loss Rules in {stateName}",
+    "totalLossRulesDesc": "When your vehicle is severely damaged, the insurance company will determine if it's more economical to repair it or declare it a total loss. In {stateName}, a vehicle is typically totaled when repair costs reach {threshold} of its actual cash value (ACV).",
+    "howTotalLossCalculated": "How Total Loss is Calculated",
+    "totalLossFormulaDesc": "{stateName} uses the Total Loss Formula (TLF), where a vehicle is totaled if the repair cost plus salvage value exceeds the actual cash value. This method considers what the insurance company can recover by selling the damaged vehicle.",
+    "totalLossThresholdDesc": "{stateName} uses a percentage threshold method. If repair costs exceed {threshold} of your vehicle's actual cash value, it will be declared a total loss.",
+    "optionsAfterTotalLoss": "Your Options After a Total Loss",
+    "totalLossOption1": "Accept the insurance payout and surrender your vehicle",
+    "totalLossOption2": "Negotiate if you believe the valuation is too low",
+    "totalLossOption3": "Keep your vehicle (payout will be reduced by salvage value) and receive a salvage title",
+    "whatToDoAfterTitle": "What To Do After a Car Accident in {stateName}",
+    "whatToDoAfterDesc": "The steps you take immediately after an accident can significantly impact your ability to recover compensation. Here's what you should do:",
+    "step1Title": "Call 911",
+    "step1Desc": "Report the accident to police and request medical assistance if anyone is injured. A police report creates official documentation.",
+    "step2Title": "Document Everything",
+    "step2Desc": "Take photos of all vehicles, damage, road conditions, traffic signs, and any visible injuries. Get contact information from witnesses.",
+    "step3Title": "Exchange Information",
+    "step3Desc": "Get the other driver's name, phone, insurance company, policy number, license plate, and driver's license number.",
+    "step4Title": "Seek Medical Attention",
+    "step4Desc": "Even if you feel fine, get checked by a doctor. Some injuries don't show symptoms immediately, and medical records are crucial for claims.",
+    "step5Title": "Report to Your Insurance",
+    "step5Desc": "Notify your insurance company promptly. In {stateName}, there may be specific timeframes for reporting.",
+    "step6Title": "Don't Admit Fault",
+    "step6Desc": "Avoid making statements like \"I'm sorry\" or \"It was my fault.\" These can be used against you in determining liability.",
+    "dealingWithInsuranceTitle": "Dealing with Insurance Companies in {stateName}",
+    "dealingWithInsuranceNoFault": "In {stateName}'s no-fault system, you'll typically file a claim with your own insurance company first for medical expenses and lost wages (through PIP). For property damage and additional claims, you may deal with the at-fault driver's insurer.",
+    "dealingWithInsuranceAtFault": "In {stateName}, you'll likely deal with both your own insurance company and the at-fault driver's insurer. Understanding your rights and the claims process helps you navigate negotiations effectively.",
+    "knowYourRights": "Know Your Rights",
+    "right1": "You can choose your own repair shop—insurers can recommend but not require their preferred shops",
+    "right2": "You're entitled to a rental car if your policy or the at-fault driver's policy includes this coverage",
+    "right3": "You don't have to accept the first settlement offer—you can negotiate or dispute valuations",
+    "right4": "You have the right to request an independent appraisal if you disagree with the damage assessment",
+    "commonTactics": "Common Tactics to Watch For",
+    "commonTacticsDesc": "Insurance adjusters may try to minimize payouts by recording statements that can be used against you, offering quick lowball settlements, or delaying the claims process. Consider consulting with an attorney before accepting any settlement, especially for significant injuries.",
+    "stateSpecificTitle": "Important {stateName}-Specific Considerations",
+    "stateSpecificDesc": "Every state has unique factors that can affect car accident claims. Here's what you should know about {stateName}:",
+    "cityGuidesTitle": "City-Specific Accident Guides for {stateName}",
+    "cityGuidesDesc": "Get detailed accident guidance for your specific city, including local highways, dangerous intersections, traffic patterns, and neighborhood-specific considerations.",
+    "majorHighwaysCovered": "{count} major highways covered",
+    "viewCityGuide": "View city guide",
+    "majorCitiesTitle": "Major Cities We Serve in {stateName}",
+    "majorCitiesDesc": "We help accident victims across {stateName}, including residents in these major metropolitan areas. Urban areas often see higher accident rates due to traffic density, while rural areas may face unique challenges with emergency response times and access to repair facilities.",
+    "faqSectionTitle": "Frequently Asked Questions About {stateName} Car Accidents",
+    "getFreeReview": "Get Your Free Case Review",
+    "understandOptions": "Understand your options after a {stateName} car accident.",
+    "findOutOptions": "Find out your options after a {stateName} car accident.",
+    "aiAnalyzerTitle": "AI Damage Analyzer",
+    "aiAnalyzerDesc": "Upload photos of your accident damage and get an instant AI analysis of your case strength.",
+    "tryFreeAnalyzer": "Try Free Analyzer",
+    "needHelpNow": "Need Help Now?",
+    "needHelpNowDesc": "Get connected with experienced {stateName} accident professionals who can help with your claim.",
+    "requestCallBack": "Request a Call Back",
+    "beenInAccident": "Been in a {stateName} Car Accident?",
+    "beenInAccidentDesc": "Don't navigate the claims process alone. Get a free case evaluation and understand your options.",
+    "useAiAnalyzer": "Use AI Damage Analyzer",
+    "getFreeReviewButton": "Get Free Case Review"
+  },
+  "cityPage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbLocations": "Locations",
+    "heroTitle": "Car Accident Help in",
+    "noFaultState": "No-Fault State",
+    "choiceState": "Choice State",
+    "atFaultState": "At-Fault State",
+    "analyzeYourDamage": "Analyze Your Damage",
+    "requestCallback": "Request Callback",
+    "population": "Population",
+    "annualAccidents": "Annual Accidents",
+    "injuryDeadline": "Injury Deadline",
+    "minCoverage": "Min. Coverage",
+    "majorHighways": "Major Highways",
+    "majorHighwaysTitle": "Major Highways & Accident Hotspots",
+    "majorHighwaysDesc": "Understanding where accidents commonly occur in {cityName} can help you stay alert and know what to expect if you're involved in a collision.",
+    "dangerousIntersections": "Dangerous Intersections",
+    "trafficPatternsTitle": "{cityName} Traffic Patterns",
+    "commonAccidentTypes": "Common Accident Types in {cityName}",
+    "neighborhoodTitle": "Neighborhood Traffic Considerations",
+    "neighborhoodDesc": "Different areas of {cityName} present unique driving challenges. Here's what to know about each neighborhood.",
+    "weatherTitle": "Weather-Related Driving Hazards",
+    "localConsiderationsTitle": "Local Considerations for {cityName} Accidents",
+    "localConsiderationsDesc": "Important factors specific to handling car accident claims in {cityName}:",
+    "faqTitle": "Frequently Asked Questions About {cityName} Car Accidents",
+    "stateLawSummary": "{stateName} Law Summary",
+    "faultSystem": "Fault System:",
+    "injuryDeadlineLabel": "Injury Deadline:",
+    "propertyDeadline": "Property Deadline:",
+    "minCoverageLabel": "Min. Coverage:",
+    "pipRequired": "PIP Required:",
+    "yes": "Yes",
+    "totalLoss": "Total Loss:",
+    "contributoryWarning": "{stateName} uses contributory negligence. Any fault on your part could bar recovery.",
+    "viewFullGuide": "View Full {stateName} Guide",
+    "beenInAccident": "Been in a {cityName} Accident?",
+    "getGuidanceDesc": "Get free guidance on your next steps and connect with local legal professionals.",
+    "requestFreeCallback": "Request Free Callback",
+    "policeNonEmergency": "Non-Emergency Line:",
+    "forAccidentReports": "For accident reports and follow-up",
+    "otherCities": "Other {stateName} Cities",
+    "accidentGuides": "{stateName} Accident Guides",
+    "essentialReading": "Essential reading for {cityName} drivers:",
+    "viewAllGuides": "View All Guides",
+    "localTrafficLaws": "Local Traffic Laws",
+    "getExpertHelp": "Get Expert Help With Your {cityName} Accident",
+    "getExpertHelpDesc": "Upload photos of your damage for instant AI analysis or connect with local legal professionals who understand {cityName} traffic patterns.",
+    "tryFreeAnalysis": "Try Free AI Analysis",
+    "getFreeReview": "Get Free Case Review"
+  },
+  "glossaryPage": {
+    "badge": "Reference Guide",
+    "title": "Car Accident & Insurance Glossary",
+    "description": "Understanding insurance terminology is crucial when navigating a car accident claim. Use this glossary to decode the jargon and protect your rights.",
+    "needHelpTitle": "Need Help With Your Claim?",
+    "needHelpDesc": "Now that you understand the terminology, explore our comprehensive guides or use our free tools to help with your claim.",
+    "browseGuides": "Browse Guides",
+    "settlementCalculator": "Settlement Calculator"
+  },
+  "resourcesPage": {
+    "badge": "Free Resources",
+    "title": "Car Accident Resources",
+    "description": "Free tools, checklists, and guides to help you navigate the insurance claims process and maximize your settlement. Everything you need to protect your rights.",
+    "quickAccessTools": "Quick Access Tools",
+    "settlementCalcTitle": "Settlement Calculator",
+    "settlementCalcDesc": "Estimate what your accident claim is worth",
+    "totalLossCalcTitle": "Total Loss Calculator",
+    "totalLossCalcDesc": "Find out if your car is totaled and estimate payout",
+    "calculators": "Calculators",
+    "checklists": "Checklists",
+    "referenceGuides": "Reference Guides",
+    "checklist": "Checklist",
+    "template": "Template",
+    "tool": "Tool",
+    "guide": "Guide",
+    "useTool": "Use Tool",
+    "viewResource": "View Resource",
+    "howToUseTitle": "How to Use These Resources",
+    "step1Title": "Immediately After Accident",
+    "step1Desc": "Use the Post-Accident Checklist to ensure you gather all necessary information at the scene.",
+    "step2Title": "During Claims Process",
+    "step2Desc": "Use our calculators to understand your claim value and checklists to stay organized.",
+    "step3Title": "Before Settlement",
+    "step3Desc": "Reference our guides to understand your rights and negotiate a fair settlement.",
+    "personalizedHelpTitle": "Need Personalized Help?",
+    "personalizedHelpDesc": "Our AI Damage Analyzer can assess your accident photos and provide a personalized report on your claim.",
+    "getFreeAnalysis": "Get Free AI Analysis",
+    "postAccidentChecklist": "Post-Accident Checklist",
+    "postAccidentDesc": "Step-by-step checklist of everything you need to do immediately after a car accident. From safety checks to documentation.",
+    "documentationChecklist": "Insurance Claim Documentation Checklist",
+    "documentationDesc": "Complete list of documents, photos, and evidence you need to gather for a successful insurance claim.",
+    "totalLossChecklist": "Total Loss Dispute Checklist",
+    "totalLossChecklistDesc": "Everything you need to dispute a low total loss valuation, including comparable listings and evidence to gather.",
+    "medicalChecklist": "Medical Documentation Checklist",
+    "medicalDesc": "Track all medical visits, treatments, and expenses after your accident. Essential for injury claims.",
+    "settlementCalcResource": "Settlement Calculator",
+    "settlementCalcResourceDesc": "Estimate the potential value of your car accident settlement based on medical bills, lost wages, and injury severity.",
+    "totalLossCalcResource": "Total Loss Calculator",
+    "totalLossCalcResourceDesc": "Find out if your car will be declared a total loss and estimate your expected insurance settlement.",
+    "stateLawsReference": "State Insurance Laws Reference",
+    "stateLawsDesc": "Quick reference for your state's insurance requirements, fault rules, and claim deadlines.",
+    "glossaryReference": "Insurance Terminology Glossary",
+    "glossaryDesc": "Decode insurance jargon with our comprehensive glossary of car accident and insurance terms.",
+    "repairRightsGuide": "Repair Rights Guide",
+    "repairRightsDesc": "Know your rights when choosing a repair shop, demanding OEM parts, and handling disputes.",
+    "faultGuide": "Fault Determination Guide",
+    "faultGuideDesc": "Understand how insurance companies determine fault and what you can do to dispute an unfair assessment."
+  },
+  "aiAnalyzerPage": {
+    "badge": "Free AI-Powered Analysis",
+    "title": "AI Auto Accident",
+    "titleHighlight": "Damage Analyzer",
+    "description": "Upload photos of your accident damage and receive a detailed analysis of your case strength, estimated damages, and legal options—delivered to your inbox in minutes.",
+    "free": "100% Free",
+    "noObligation": "No Obligation",
+    "confidential": "Confidential",
+    "featurePhotoTitle": "Photo Analysis",
+    "featurePhotoDesc": "Our AI examines your accident photos to identify damage severity and impact type",
+    "featureLiabilityTitle": "Liability Assessment",
+    "featureLiabilityDesc": "Understand who may be at fault based on visible damage patterns",
+    "featureReportTitle": "Detailed Report",
+    "featureReportDesc": "Receive a comprehensive report emailed directly to you",
+    "featureResultsTitle": "Results in Minutes",
+    "featureResultsDesc": "Get your analysis delivered to your inbox within minutes",
+    "formTitle": "Get Your Free Damage Analysis",
+    "formDescription": "Upload photos of your vehicle damage and provide your contact information. You'll receive a detailed report explaining your situation and options.",
+    "howItWorks": "How It Works",
+    "step1Title": "Upload Your Photos",
+    "step1Desc": "Take clear photos of all damage to your vehicle from multiple angles",
+    "step2Title": "AI Analyzes Damage",
+    "step2Desc": "Our advanced AI examines impact patterns, damage severity, and fault indicators",
+    "step3Title": "Get Your Report",
+    "step3Desc": "Receive a detailed analysis with your options for next steps",
+    "benefitsTitle": "What You'll Learn From Your Report",
+    "benefit1": "Understand the strength of your potential case",
+    "benefit2": "Get estimated damage repair costs",
+    "benefit3": "Learn about common injuries from similar accidents",
+    "benefit4": "Know your rights and legal options",
+    "benefit5": "Completely free - no obligation",
+    "benefit6": "Private and confidential analysis",
+    "whyUseTitle": "Why Use Our AI Analyzer?",
+    "whyUseP1": "After an accident, it's hard to know if you have a strong case or what your options are. Insurance companies have teams of adjusters and lawyers—now you can level the playing field.",
+    "whyUseP2": "Our AI has been trained on thousands of accident cases to help you understand the potential value of your claim and whether speaking with an attorney might benefit you.",
+    "faqTitle": "Frequently Asked Questions",
+    "faq1Q": "Is this damage analysis really free?",
+    "faq1A": "Yes, completely free with no strings attached. We provide this service to help accident victims understand their situation. There's no obligation to take any further action.",
+    "faq2Q": "How accurate is the AI analysis?",
+    "faq2A": "Our AI provides a preliminary assessment based on visible damage patterns. While it's trained on thousands of accident cases, the analysis should be used as a starting point for understanding your situation, not as legal advice.",
+    "faq3Q": "What photos should I upload?",
+    "faq3A": "Take clear, well-lit photos of all damage to your vehicle. Include close-ups of damaged areas and wider shots showing the overall impact. Photos from multiple angles help our AI provide a more accurate analysis.",
+    "faq4Q": "How long does it take to get my report?",
+    "faq4A": "Most reports are delivered to your email within 5-10 minutes of submission. Check your spam folder if you don't see it in your inbox.",
+    "faq5Q": "Is my information kept private?",
+    "faq5A": "Absolutely. Your photos and personal information are kept confidential and are only used to generate your damage analysis report. We never sell your information to third parties.",
+    "ctaTitle": "Ready to Understand Your Case?",
+    "ctaDescription": "Get your free AI damage analysis now. It only takes a few minutes.",
+    "ctaButton": "Start Free Analysis"
+  },
+  "settlementCalcPage": {
+    "badge": "Free Settlement Tool",
+    "title": "Car Accident",
+    "titleHighlight": "Settlement Calculator",
+    "description": "Estimate the potential value of your car accident claim based on your medical bills, lost wages, and injury severity. Get a personalized settlement range in minutes.",
+    "calcTitle": "Estimate Your Settlement Value",
+    "currentMedicalBills": "Current Medical Bills",
+    "currentMedicalBillsHelp": "Total medical expenses to date",
+    "futureMedicalCosts": "Estimated Future Medical Costs",
+    "futureMedicalCostsHelp": "Expected ongoing treatment costs",
+    "lostWagesToDate": "Lost Wages to Date",
+    "lostWagesToDateHelp": "Income lost due to the accident",
+    "futureLostEarning": "Future Lost Earning Capacity",
+    "futureLostEarningHelp": "If injury affects future work ability",
+    "propertyDamage": "Property Damage",
+    "propertyDamageHelp": "Vehicle repair or total loss value",
+    "injurySeverity": "Injury Severity",
+    "injurySeverityHelp": "Most serious injury from the accident",
+    "selectInjurySeverity": "Select injury severity",
+    "faultDetermination": "Fault Determination",
+    "faultDeterminationHelp": "Your portion of fault affects settlement",
+    "selectFaultSituation": "Select fault situation",
+    "notAtFault": "Not at fault (other driver 100% liable)",
+    "partialFault": "Partially at fault (shared liability)",
+    "mostlyFault": "Mostly at fault (limited recovery)",
+    "calculateButton": "Calculate Settlement Estimate",
+    "resultsTitle": "Your Estimated Settlement Range",
+    "estimatedValue": "Estimated Settlement Value",
+    "reducedByFault": "Reduced by {percent}% for shared fault",
+    "economicDamages": "Economic Damages",
+    "medical": "Medical",
+    "lostIncome": "Lost Income",
+    "property": "Property",
+    "painSuffering": "Pain & Suffering (Estimated)",
+    "multiplier": "Multiplier",
+    "basedOn": "Based on",
+    "getReportTitle": "Get Your Personalized Settlement Report",
+    "getReportDesc": "Receive a detailed PDF report with your estimate, next steps, and tips to maximize your settlement.",
+    "getReportButton": "Get My Free Report",
+    "formTitle": "Enter Your Information to Receive Your Report",
+    "yourName": "Your Name",
+    "emailAddress": "Email Address",
+    "phoneNumber": "Phone Number",
+    "yourState": "Your State",
+    "selectState": "Select State",
+    "sendingReport": "Sending...",
+    "sendReport": "Send My Report",
+    "cancel": "Cancel",
+    "formPrivacy": "By submitting, you agree to receive your settlement report and related information via email. We respect your privacy and will never sell your information.",
+    "successTitle": "Check Your Email!",
+    "successMessage": "We've sent your personalized settlement report to",
+    "successNote": "Please check your inbox (and spam folder) within the next few minutes.",
+    "disclaimer": "This calculator provides estimates only. Actual settlement amounts vary based on jurisdiction, insurance policy limits, negotiation, and specific case circumstances. This is not legal advice. Consult with a personal injury attorney for a professional case evaluation.",
+    "understandingTitle": "Understanding Car Accident Settlements",
+    "understandingIntro": "After a car accident, understanding how settlements are calculated can help you ensure you receive fair compensation for your injuries and losses. This guide explains the key factors that determine settlement value and what you can expect during the claims process.",
+    "howInsuranceTitle": "How Insurance Companies Calculate Settlements",
+    "howInsuranceDesc": "Insurance adjusters use specific formulas to calculate settlement offers. Understanding these methods helps you evaluate whether an offer is fair:",
+    "multiplierMethod": "The Multiplier Method",
+    "multiplierMethodDesc": "The most common approach: add all medical expenses, then multiply by 1.5-5 based on injury severity. Add lost wages and property damage to get the settlement range. Severe injuries warrant higher multipliers.",
+    "perDiemMethod": "The Per Diem Method",
+    "perDiemMethodDesc": "Assigns a daily dollar amount (often your daily earnings) for each day you suffered from injuries. This amount is multiplied by the number of recovery days to calculate pain and suffering compensation.",
+    "typesOfDamages": "Types of Damages in Car Accident Claims",
+    "economicDamagesTitle": "Economic Damages",
+    "economicDamagesDesc": "Measurable financial losses including medical bills, lost wages, property damage, rental cars, and out-of-pocket expenses. These are documented with receipts and records.",
+    "nonEconomicDamagesTitle": "Non-Economic Damages",
+    "nonEconomicDamagesDesc": "Subjective losses like pain and suffering, emotional distress, loss of enjoyment of life, and loss of consortium. These are calculated using multipliers or per diem methods.",
+    "punitiveDamagesTitle": "Punitive Damages (Rare)",
+    "punitiveDamagesDesc": "Awarded in cases of extreme negligence or intentional misconduct to punish the at-fault party. Only available in certain states and circumstances.",
+    "factorsIncreaseTitle": "Factors That Increase Settlement Value",
+    "factorsIncrease1": "Clear liability: When the other driver is clearly at fault (rear-end collision, red light violation)",
+    "factorsIncrease2": "Severe injuries: Broken bones, herniated discs, traumatic brain injury, surgery required",
+    "factorsIncrease3": "Long recovery period: Extended treatment and rehabilitation increase damages",
+    "factorsIncrease4": "Permanent impairment: Lasting disability or disfigurement significantly raises value",
+    "factorsIncrease5": "Strong documentation: Medical records, photos, witness statements support your claim",
+    "factorsIncrease6": "High income: Greater lost wages and earning capacity lead to higher settlements",
+    "factorsIncrease7": "Adequate insurance: Higher policy limits mean more available compensation",
+    "mistakesTitle": "Common Mistakes That Reduce Settlements",
+    "mistake1": "Delaying medical treatment: Gaps in care create doubt about injury severity",
+    "mistake2": "Giving recorded statements: Adjusters can use your words against you",
+    "mistake3": "Accepting the first offer: Initial offers are typically 25-50% below fair value",
+    "mistake4": "Posting on social media: Photos and posts can be used to dispute injuries",
+    "mistake5": "Settling too quickly: Before knowing full extent of injuries and future costs",
+    "mistake6": "Not documenting everything: Missing records reduce your claim value",
+    "whenToHireTitle": "When to Hire a Personal Injury Attorney",
+    "whenToHireIntro": "Consider consulting an attorney when your case involves:",
+    "whenToHire1": "Significant injuries requiring ongoing medical treatment",
+    "whenToHire2": "Disputed liability or shared fault",
+    "whenToHire3": "Insurance company denying or undervaluing your claim",
+    "whenToHire4": "Permanent disability or disfigurement",
+    "whenToHire5": "Complex situations involving multiple parties",
+    "whenToHire6": "Commercial vehicle or trucking accidents",
+    "whenToHire7": "Settlement offers that seem unfairly low",
+    "whenToHireNote": "Most personal injury attorneys work on contingency, meaning they only get paid if you win your case. Free consultations allow you to understand your options without financial risk.",
+    "faqBadge": "Common Questions",
+    "faqTitle": "Settlement Calculator FAQ",
+    "ctaTitle": "Not Sure About Your Claim Value?",
+    "ctaDescription": "Our AI Damage Analyzer can assess your vehicle damage photos and provide additional insights about your accident claim.",
+    "ctaButton": "Get Free AI Analysis",
+    "injuryMinor": "Minor (Soft tissue, bruising)",
+    "injuryModerate": "Moderate (Whiplash, sprains, minor fractures)",
+    "injurySignificant": "Significant (Fractures, herniated discs)",
+    "injurySevere": "Severe (Surgery required, extended treatment)",
+    "injuryPermanent": "Permanent/Catastrophic (Disability, TBI, spinal cord)",
+    "faq1Q": "How are car accident settlements calculated?",
+    "faq1A": "Car accident settlements are typically calculated by adding up all your economic damages (medical bills, lost wages, property damage) and then multiplying by a factor of 1.5 to 5 to account for pain and suffering. The multiplier depends on injury severity—minor injuries use lower multipliers, while severe or permanent injuries use higher ones. This gives you an estimated settlement range, though actual amounts vary based on liability, insurance limits, and negotiation.",
+    "faq2Q": "What is the average settlement for a car accident?",
+    "faq2A": "Average car accident settlements vary widely based on injury severity. Minor injuries like whiplash typically settle for $10,000-$25,000. Moderate injuries involving some medical treatment average $25,000-$100,000. Severe injuries requiring surgery or extended treatment can range from $100,000 to $500,000 or more. Cases involving permanent disability or wrongful death often exceed $1 million. These are general ranges—your specific case depends on medical costs, lost income, liability, and available insurance coverage.",
+    "faq3Q": "What factors affect car accident settlement amounts?",
+    "faq3A": "Key factors include: injury severity and required treatment, total medical expenses, lost wages and future earning capacity, property damage, evidence of fault, available insurance coverage, permanent impairment or disability, impact on daily life, documentation quality, and the jurisdiction where the accident occurred. Cases with clear liability (like rear-end collisions) and well-documented injuries typically result in higher settlements.",
+    "faq4Q": "How long does it take to get a car accident settlement?",
+    "faq4A": "Simple cases with minor injuries and clear liability may settle in 2-4 months. Moderate injury cases typically take 6-12 months. Severe injury cases often require 1-2 years or longer, especially if litigation is involved. Factors affecting timeline include: reaching maximum medical improvement, gathering all documentation, negotiation process, and whether a lawsuit becomes necessary.",
+    "faq5Q": "Should I accept the insurance company's first offer?",
+    "faq5A": "Generally, no. First offers are typically lowball offers designed to settle cheaply. Insurance adjusters often offer 25-50% less than what a claim is actually worth. Before accepting, ensure you've reached maximum medical improvement, gathered all bills and documentation, calculated lost wages, and considered future medical needs. Consulting with a personal injury attorney (usually free) can help you understand if an offer is fair.",
+    "faq6Q": "What is pain and suffering worth in a settlement?",
+    "faq6A": "Pain and suffering is typically calculated using a multiplier method (1.5x to 5x your economic damages) or a per diem method (daily rate × days of recovery). Minor soft tissue injuries might use a 1.5-2x multiplier. Moderate injuries with some lasting effects use 2-3x. Severe injuries with significant impact use 3-4x. Permanent or catastrophic injuries may use 5x or higher. Documented pain levels, treatment duration, and impact on quality of life all affect this calculation.",
+    "faq7Q": "Do I need a lawyer to get a fair settlement?",
+    "faq7A": "While not required, statistics show that accident victims represented by attorneys typically receive 3-4 times higher settlements than those who negotiate alone, even after attorney fees. Attorneys are particularly valuable for: serious injuries, disputed liability, uncooperative insurance companies, complex medical situations, and cases involving multiple parties. Most personal injury attorneys offer free consultations and work on contingency (no upfront cost).",
+    "faq8Q": "What if my medical bills exceed the at-fault driver's insurance limits?",
+    "faq8A": "If the at-fault driver's insurance is insufficient, you have several options: file a claim with your own underinsured motorist (UIM) coverage, use your health insurance or MedPay coverage, sue the at-fault driver personally (though collecting may be difficult), or negotiate medical liens with providers. Having adequate UIM coverage on your own policy is the best protection against underinsured drivers."
+  },
+  "guidesContent": {
+    "pillars": {
+      "totalLossDispute": {
+        "title": "Total Loss Dispute Guide",
+        "shortTitle": "Total Loss",
+        "description": "Learn how insurance companies determine total loss, how to dispute their valuation, and your options for keeping or surrendering your totaled vehicle.",
+        "articles": {
+          "howInsuranceCalculatesTotalLoss": {
+            "title": "How Insurance Calculates Total Loss",
+            "description": "Understanding the formula insurance companies use to decide if your car is totaled.",
+            "readingTime": "8 min read"
+          },
+          "disputeTotalLossValuation": {
+            "title": "How to Dispute Total Loss Valuation",
+            "description": "Step-by-step guide to challenging an unfair total loss settlement offer.",
+            "readingTime": "10 min read"
+          },
+          "keepTotaledCarSalvageTitle": {
+            "title": "Can You Keep Your Totaled Car?",
+            "description": "Your options for owner-retained salvage and what it means for your title.",
+            "readingTime": "7 min read"
+          },
+          "totalLossThresholdByState": {
+            "title": "Total Loss Threshold by State",
+            "description": "State-by-state breakdown of when insurance must declare your car totaled.",
+            "readingTime": "6 min read"
+          },
+          "negotiateTotalLossSettlement": {
+            "title": "How to Negotiate Total Loss Settlement",
+            "description": "Tactics for getting a higher payout when your car is totaled.",
+            "readingTime": "9 min read"
+          },
+          "gapInsuranceExplained": {
+            "title": "GAP Insurance Explained",
+            "description": "What GAP insurance covers and when you need it.",
+            "readingTime": "5 min read"
+          },
+          "ownerRetainedSalvage": {
+            "title": "Owner Retained Salvage Explained",
+            "description": "Keeping your totaled car and what happens to the title.",
+            "readingTime": "6 min read"
+          },
+          "actualCashValueVsReplacement": {
+            "title": "ACV vs Replacement Cost",
+            "description": "Understanding the difference between actual cash value and replacement cost.",
+            "readingTime": "5 min read"
+          }
+        },
+        "faqs": {
+          "faq1Q": "What percentage of damage totals a car?",
+          "faq1A": "It varies by state, typically between 50-100% of the car's actual cash value. Some states use a Total Loss Formula (TLF) that adds repair cost plus salvage value.",
+          "faq2Q": "Can I dispute my car being totaled?",
+          "faq2A": "Yes, you can dispute the valuation by providing comparable vehicle listings, getting independent appraisals, and documenting any unique features or recent upgrades to your car.",
+          "faq3Q": "Can I keep my car if insurance totals it?",
+          "faq3A": "In most states, yes. This is called owner-retained salvage. The insurance company will deduct the salvage value from your settlement, and your car will receive a salvage or rebuilt title."
+        }
+      },
+      "insuranceClaims": {
+        "title": "Insurance Claims Guide",
+        "shortTitle": "Insurance Claims",
+        "description": "Everything you need to know about filing and managing your auto insurance claim, from the accident scene to final settlement.",
+        "articles": {
+          "whatToDoAfterAccident": {
+            "title": "What to Do After a Car Accident",
+            "description": "Essential steps to take immediately after an accident to protect your claim.",
+            "readingTime": "7 min read"
+          },
+          "filingClaimStepByStep": {
+            "title": "How to File an Insurance Claim",
+            "description": "Complete walkthrough of the insurance claim filing process.",
+            "readingTime": "8 min read"
+          },
+          "howLongInsuranceClaimTakes": {
+            "title": "How Long Does an Insurance Claim Take?",
+            "description": "Typical timelines and what can speed up or delay your claim.",
+            "readingTime": "6 min read"
+          },
+          "dealingWithOtherDriversInsurance": {
+            "title": "Dealing With Other Driver's Insurance",
+            "description": "How to navigate a third-party insurance claim.",
+            "readingTime": "7 min read"
+          },
+          "rentalCarCoverage": {
+            "title": "Rental Car Coverage After Accident",
+            "description": "Understanding your rental car benefits and how to maximize coverage.",
+            "readingTime": "5 min read"
+          },
+          "insuranceClaimDenied": {
+            "title": "What to Do If Claim is Denied",
+            "description": "Steps to appeal a denied insurance claim.",
+            "readingTime": "8 min read"
+          },
+          "documentingAccidentDamage": {
+            "title": "How to Document Accident Damage",
+            "description": "Best practices for photos, videos, and written documentation.",
+            "readingTime": "6 min read"
+          },
+          "diminishedValueClaims": {
+            "title": "What is Diminished Value?",
+            "description": "Claiming compensation for your car's reduced resale value.",
+            "readingTime": "7 min read"
+          }
+        },
+        "faqs": {
+          "faq1Q": "How long does insurance have to pay a claim?",
+          "faq1A": "Most states require insurers to acknowledge claims within 15 days and pay within 30-45 days of reaching a settlement. Specific timelines vary by state.",
+          "faq2Q": "Should I accept the first settlement offer?",
+          "faq2A": "Usually not. First offers are often lower than what you're entitled to. Review the offer carefully, compare to market values, and negotiate if necessary.",
+          "faq3Q": "Can I file a claim without a police report?",
+          "faq3A": "Yes, but a police report strengthens your claim. If you didn't file one at the scene, you may be able to file a report later at the station."
+        }
+      },
+      "repairRights": {
+        "title": "Your Repair Rights Guide",
+        "shortTitle": "Repair Rights",
+        "description": "Know your rights when it comes to car repairs after an accident. Learn about shop choice, parts quality, and what to do if repairs go wrong.",
+        "articles": {
+          "chooseYourOwnShop": {
+            "title": "Can I Choose My Own Repair Shop?",
+            "description": "Your rights to select where your car gets repaired.",
+            "readingTime": "5 min read"
+          },
+          "oemVsAftermarketParts": {
+            "title": "OEM vs Aftermarket Parts",
+            "description": "Understanding the difference and your rights to quality parts.",
+            "readingTime": "7 min read"
+          },
+          "repairEstimateTooLow": {
+            "title": "Repair Estimate Too Low?",
+            "description": "What to do when insurance won't cover full repair costs.",
+            "readingTime": "6 min read"
+          },
+          "badRepairJobRecourse": {
+            "title": "What If Repairs Aren't Done Right?",
+            "description": "Your options when a body shop does substandard work.",
+            "readingTime": "6 min read"
+          },
+          "insurancePreferredShops": {
+            "title": "Insurance Preferred Shops Explained",
+            "description": "Pros and cons of using insurance-recommended repair facilities.",
+            "readingTime": "5 min read"
+          },
+          "supplementalClaims": {
+            "title": "Getting Supplemental Damage Covered",
+            "description": "How to claim for additional damage found during repairs.",
+            "readingTime": "5 min read"
+          },
+          "frameDamageRepair": {
+            "title": "Frame Damage - Repair or Total?",
+            "description": "Understanding frame damage severity and repair options.",
+            "readingTime": "7 min read"
+          }
+        },
+        "faqs": {
+          "faq1Q": "Can insurance force me to use their shop?",
+          "faq1A": "No. In all 50 states, you have the right to choose your own repair shop. Insurance companies can recommend shops but cannot require you to use them.",
+          "faq2Q": "Do I have to accept aftermarket parts?",
+          "faq2A": "It depends on your state and policy. Some states require insurers to use OEM parts, while others allow aftermarket with proper disclosure. Check your policy and state laws.",
+          "faq3Q": "What if the shop finds more damage?",
+          "faq3A": "The shop should file a supplement claim with your insurance for the additional damage. This is common and shouldn't delay your repair significantly."
+        }
+      },
+      "faultDetermination": {
+        "title": "Fault Determination Guide",
+        "shortTitle": "Fault",
+        "description": "Understand how fault is determined after an accident, how it affects your claim, and what to do if you disagree with the fault assessment.",
+        "articles": {
+          "atFaultVsNoFaultStates": {
+            "title": "At-Fault vs No-Fault States",
+            "description": "How your state's system affects your accident claim.",
+            "readingTime": "8 min read"
+          },
+          "faultPercentageExplained": {
+            "title": "How Fault Percentage Works",
+            "description": "Understanding comparative and contributory negligence.",
+            "readingTime": "7 min read"
+          },
+          "disputeFaultDetermination": {
+            "title": "How to Dispute Fault",
+            "description": "Steps to challenge an unfair fault assessment.",
+            "readingTime": "8 min read"
+          },
+          "parkingLotAccidentFault": {
+            "title": "Parking Lot Accident Fault Rules",
+            "description": "Special rules for determining fault in parking lots.",
+            "readingTime": "6 min read"
+          },
+          "multiVehicleAccident": {
+            "title": "Multi-Vehicle Accident Fault",
+            "description": "How fault is divided when multiple cars are involved.",
+            "readingTime": "7 min read"
+          },
+          "comparativeNegligence": {
+            "title": "Comparative Negligence Explained",
+            "description": "How shared fault affects your compensation.",
+            "readingTime": "6 min read"
+          },
+          "policeReportFault": {
+            "title": "Does Police Report Determine Fault?",
+            "description": "The role of police reports in insurance fault decisions.",
+            "readingTime": "5 min read"
+          }
+        },
+        "faqs": {
+          "faq1Q": "Who determines fault in a car accident?",
+          "faq1A": "Insurance adjusters determine fault for claim purposes based on police reports, witness statements, photos, and applicable traffic laws. This is separate from any legal determination.",
+          "faq2Q": "Can I recover damages if I'm partially at fault?",
+          "faq2A": "In most states, yes. Pure comparative negligence states allow recovery minus your fault percentage. Modified comparative states have thresholds (usually 50-51%).",
+          "faq3Q": "What if the other driver lies about the accident?",
+          "faq3A": "Document everything: photos, witness contacts, dashcam footage. Get a police report. Insurance investigators are trained to identify inconsistencies in statements."
+        }
+      },
+      "rearEndCollisions": {
+        "title": "Rear-End Collision Guide",
+        "shortTitle": "Rear-End",
+        "description": "Everything about rear-end accidents: fault rules, common injuries, settlement expectations, and protecting your rights after being rear-ended.",
+        "articles": {
+          "rearEndCollisionFault": {
+            "title": "Who Is at Fault in a Rear-End Collision?",
+            "description": "Understanding the presumption of fault and exceptions.",
+            "readingTime": "7 min read"
+          },
+          "stoppedAtRedLight": {
+            "title": "Rear-Ended While Stopped at Red Light",
+            "description": "Your rights when hit while lawfully stopped.",
+            "readingTime": "6 min read"
+          },
+          "chainReactionRearEnd": {
+            "title": "Chain Reaction Rear-End Accidents",
+            "description": "How fault is determined in multi-vehicle pile-ups.",
+            "readingTime": "7 min read"
+          },
+          "whiplashClaims": {
+            "title": "Whiplash Claims After Rear-End Accident",
+            "description": "Documenting and claiming for whiplash injuries.",
+            "readingTime": "8 min read"
+          },
+          "lowSpeedRearEnd": {
+            "title": "Low-Speed Rear-End Accidents",
+            "description": "Why minor impacts can still cause injuries.",
+            "readingTime": "6 min read"
+          },
+          "rearEndedWhileTurning": {
+            "title": "Rear-Ended While Making a Turn",
+            "description": "Fault rules when hit during turns.",
+            "readingTime": "6 min read"
+          },
+          "brakeCheckingAccidents": {
+            "title": "Brake Checking Accidents",
+            "description": "When the lead driver can be at fault.",
+            "readingTime": "6 min read"
+          },
+          "highwayRearEnd": {
+            "title": "Highway Rear-End Collisions",
+            "description": "High-speed rear-end accident considerations.",
+            "readingTime": "7 min read"
+          },
+          "rearEndRentalCar": {
+            "title": "Rear-Ended in a Rental Car",
+            "description": "Insurance and liability when driving a rental.",
+            "readingTime": "6 min read"
+          },
+          "rearEndUninsuredDriver": {
+            "title": "Rear-Ended by Uninsured Driver",
+            "description": "Your options when the at-fault driver has no insurance.",
+            "readingTime": "7 min read"
+          }
+        },
+        "faqs": {
+          "faq1Q": "Is the rear driver always at fault?",
+          "faq1A": "Almost always, but not 100%. The rear driver is presumed at fault, but exceptions exist: if the front driver reverses, has broken brake lights, or brake-checks intentionally.",
+          "faq2Q": "What is the average settlement for a rear-end collision?",
+          "faq2A": "Property damage only: $3,000-$10,000. With minor injuries: $10,000-$25,000. Serious injuries like whiplash with treatment: $25,000-$100,000+. Every case varies.",
+          "faq3Q": "Should I see a doctor after being rear-ended?",
+          "faq3A": "Yes, even if you feel fine. Whiplash and soft tissue injuries often don't appear for 24-72 hours. Early medical documentation is crucial for any potential claim."
+        }
+      },
+      "commercialVehicle": {
+        "title": "Commercial Vehicle Accident Guide",
+        "shortTitle": "Commercial",
+        "description": "Accidents involving commercial vehicles, trucks, and rideshare are more complex. Learn about different insurance, regulations, and how to protect your claim.",
+        "articles": {
+          "hitByCommercialTruck": {
+            "title": "Hit by a Commercial Truck",
+            "description": "Key differences when a commercial truck is involved.",
+            "readingTime": "8 min read"
+          },
+          "deliveryTruckAccidents": {
+            "title": "Delivery Truck Accidents",
+            "description": "Claims involving Amazon, FedEx, UPS, and other delivery services.",
+            "readingTime": "7 min read"
+          },
+          "uberLyftAccidents": {
+            "title": "Uber and Lyft Accidents",
+            "description": "Understanding rideshare insurance coverage periods.",
+            "readingTime": "8 min read"
+          },
+          "companyVehicleAccident": {
+            "title": "Accident in a Company Vehicle",
+            "description": "Liability when driving or hit by a company vehicle.",
+            "readingTime": "7 min read"
+          },
+          "busAccidents": {
+            "title": "Bus Accident Claims",
+            "description": "Special rules for public transit and school bus accidents.",
+            "readingTime": "7 min read"
+          },
+          "taxiAccidentClaims": {
+            "title": "Taxi Accident Claims",
+            "description": "Insurance and liability for traditional taxi accidents.",
+            "readingTime": "6 min read"
+          },
+          "truckingRegulations": {
+            "title": "Trucking Regulations and Your Claim",
+            "description": "Federal regulations that can strengthen your case.",
+            "readingTime": "8 min read"
+          },
+          "commercialVehicleInsurance": {
+            "title": "Commercial Vehicle Insurance Claims",
+            "description": "Understanding higher coverage limits and multiple policies.",
+            "readingTime": "7 min read"
+          },
+          "fleetVehicleAccidents": {
+            "title": "Fleet Vehicle Accidents",
+            "description": "Claims against company fleets and corporate liability.",
+            "readingTime": "6 min read"
+          }
+        },
+        "faqs": {
+          "faq1Q": "Why are truck accident claims different?",
+          "faq1A": "Commercial trucks have higher insurance minimums ($750,000-$1M+), more parties can be liable (driver, company, shipper), and federal regulations may apply.",
+          "faq2Q": "What if an Amazon driver hit me?",
+          "faq2A": "Amazon uses various driver arrangements (DSP contractors, Flex drivers). Coverage depends on the driver's status. Amazon's insurance typically provides $1M in coverage.",
+          "faq3Q": "Who pays in an Uber/Lyft accident?",
+          "faq3A": "It depends on the driver's status: app off = personal insurance, app on waiting = limited coverage, actively driving = $1M policy from Uber/Lyft."
+        }
+      },
+      "accidentInjuries": {
+        "title": "Car Accident Injuries Guide",
+        "shortTitle": "Injuries",
+        "description": "Understanding common accident injuries, when to seek medical care, and how injuries affect your insurance claim and compensation.",
+        "articles": {
+          "commonCarAccidentInjuries": {
+            "title": "Common Car Accident Injuries",
+            "description": "Overview of typical injuries from vehicle collisions.",
+            "readingTime": "8 min read"
+          },
+          "delayedInjurySymptoms": {
+            "title": "Delayed Injury Symptoms",
+            "description": "Injuries that may not appear for days after impact.",
+            "readingTime": "7 min read"
+          },
+          "seekingMedicalTreatment": {
+            "title": "Seeking Medical Treatment After Accident",
+            "description": "When and how to get proper medical care.",
+            "readingTime": "7 min read"
+          },
+          "whiplashTreatment": {
+            "title": "Whiplash Treatment and Recovery",
+            "description": "Understanding whiplash treatment options.",
+            "readingTime": "8 min read"
+          },
+          "backInjuryClaims": {
+            "title": "Back Injury Claims",
+            "description": "Documenting and claiming for back injuries.",
+            "readingTime": "8 min read"
+          },
+          "traumaticBrainInjury": {
+            "title": "Traumatic Brain Injury (TBI)",
+            "description": "Recognizing and claiming for brain injuries.",
+            "readingTime": "9 min read"
+          },
+          "brokenBonesClaims": {
+            "title": "Broken Bone Claims",
+            "description": "Fracture injuries and compensation.",
+            "readingTime": "7 min read"
+          },
+          "softTissueInjuries": {
+            "title": "Soft Tissue Injury Claims",
+            "description": "Why soft tissue claims are often disputed.",
+            "readingTime": "7 min read"
+          },
+          "ptsdCarAccident": {
+            "title": "PTSD After a Car Accident",
+            "description": "Psychological injuries and compensation.",
+            "readingTime": "7 min read"
+          },
+          "painAndSuffering": {
+            "title": "Pain and Suffering Compensation",
+            "description": "How pain and suffering damages are calculated.",
+            "readingTime": "8 min read"
+          },
+          "preExistingConditions": {
+            "title": "Pre-Existing Conditions and Claims",
+            "description": "How prior injuries affect your accident claim.",
+            "readingTime": "7 min read"
+          }
+        },
+        "faqs": {
+          "faq1Q": "Should I see a doctor even if I feel fine?",
+          "faq1A": "Yes. Adrenaline masks pain, and injuries like whiplash often don't appear for 24-72 hours. Early medical documentation is crucial for any potential claim.",
+          "faq2Q": "What is PIP insurance?",
+          "faq2A": "Personal Injury Protection covers your medical expenses regardless of fault. Required in no-fault states. Coverage typically ranges from $10,000 to $50,000.",
+          "faq3Q": "Will a pre-existing condition hurt my claim?",
+          "faq3A": "Not necessarily. The 'eggshell plaintiff' doctrine means you can claim for aggravation of existing conditions. Document your pre-accident condition for comparison."
+        }
+      },
+      "hitAndRun": {
+        "title": "Hit-and-Run Accident Guide",
+        "shortTitle": "Hit-and-Run",
+        "description": "What to do when the other driver flees the scene. Learn your rights, how to file a claim, use your uninsured motorist coverage, and help police find the driver.",
+        "articles": {
+          "whatToDoHitAndRun": {
+            "title": "What to Do After a Hit-and-Run",
+            "description": "Critical steps to take immediately when the other driver flees.",
+            "readingTime": "8 min read"
+          },
+          "filingHitAndRunClaim": {
+            "title": "Filing a Hit-and-Run Insurance Claim",
+            "description": "How to file a claim when you don't know who hit you.",
+            "readingTime": "7 min read"
+          },
+          "uninsuredMotoristHitAndRun": {
+            "title": "Using Uninsured Motorist Coverage for Hit-and-Run",
+            "description": "How UM/UIM coverage protects you when the driver is unknown.",
+            "readingTime": "8 min read"
+          },
+          "hitAndRunPoliceReport": {
+            "title": "Filing a Police Report for Hit-and-Run",
+            "description": "Why the police report is essential and what to include.",
+            "readingTime": "6 min read"
+          },
+          "parkedCarHitAndRun": {
+            "title": "Hit-and-Run While Parked",
+            "description": "Your options when someone hits your parked car and leaves.",
+            "readingTime": "6 min read"
+          },
+          "findingHitAndRunDriver": {
+            "title": "How to Find a Hit-and-Run Driver",
+            "description": "Tips for identifying the fleeing driver with witnesses and cameras.",
+            "readingTime": "7 min read"
+          },
+          "hitAndRunNoUninsuredMotorist": {
+            "title": "Hit-and-Run Without UM Coverage",
+            "description": "Your options if you don't have uninsured motorist coverage.",
+            "readingTime": "6 min read"
+          },
+          "hitAndRunInjuries": {
+            "title": "Injury Claims After Hit-and-Run",
+            "description": "Getting medical treatment and compensation covered.",
+            "readingTime": "7 min read"
+          },
+          "hitAndRunPenalties": {
+            "title": "Hit-and-Run Penalties by State",
+            "description": "What happens to drivers who flee accident scenes.",
+            "readingTime": "6 min read"
+          },
+          "hitAndRunWitness": {
+            "title": "I Witnessed a Hit-and-Run",
+            "description": "How to help as a witness to a hit-and-run accident.",
+            "readingTime": "5 min read"
+          }
+        },
+        "faqs": {
+          "faq1Q": "Will my insurance go up after a hit-and-run claim?",
+          "faq1A": "In most states, no. Since you're not at fault and using your uninsured motorist coverage, insurers generally cannot raise your rates. However, policies vary by state and insurer.",
+          "faq2Q": "What if someone hit my parked car and left?",
+          "faq2A": "File a police report immediately, check for witnesses or security cameras, and file a claim under your collision coverage. If you identify the driver, their liability insurance should pay.",
+          "faq3Q": "Can I sue an unknown hit-and-run driver?",
+          "faq3A": "You need to identify the driver first. Focus on finding them through witnesses, security footage, and police investigation. Once identified, you can pursue their insurance or sue directly.",
+          "faq4Q": "Is there a time limit to report a hit-and-run?",
+          "faq4A": "Report to police immediately—many states require reporting within 24-72 hours. For insurance claims, notify your insurer as soon as possible. For lawsuits, statute of limitations (typically 2-3 years) applies."
+        }
+      },
+      "tBoneAccidents": {
+        "title": "T-Bone & Side-Impact Collision Guide",
+        "shortTitle": "T-Bone",
+        "description": "T-bone and side-impact collisions are among the most dangerous. Learn about fault determination, common injuries, and maximizing your compensation.",
+        "articles": {
+          "tBoneCollisionFault": {
+            "title": "Who Is at Fault in a T-Bone Accident?",
+            "description": "How fault is determined when vehicles collide at intersections.",
+            "readingTime": "8 min read"
+          },
+          "tBoneIntersectionAccidents": {
+            "title": "T-Bone Accidents at Intersections",
+            "description": "Common intersection scenarios and how fault is assigned.",
+            "readingTime": "7 min read"
+          },
+          "tBoneRedLightRunner": {
+            "title": "T-Boned by a Red Light Runner",
+            "description": "Your rights when someone runs a red light and hits you.",
+            "readingTime": "7 min read"
+          },
+          "sideImpactInjuries": {
+            "title": "Common Side-Impact Collision Injuries",
+            "description": "Why T-bone accidents cause severe injuries and how to claim.",
+            "readingTime": "8 min read"
+          },
+          "tBoneLeftTurn": {
+            "title": "T-Bone Accident While Turning Left",
+            "description": "Fault rules for left-turn collisions at intersections.",
+            "readingTime": "7 min read"
+          },
+          "broadsideCollisionSettlement": {
+            "title": "T-Bone Accident Settlement Guide",
+            "description": "What affects your settlement value in side-impact crashes.",
+            "readingTime": "8 min read"
+          },
+          "tBoneParkingLot": {
+            "title": "T-Bone Accidents in Parking Lots",
+            "description": "Fault and claims for side-impact crashes in parking areas.",
+            "readingTime": "6 min read"
+          },
+          "tBoneStopSign": {
+            "title": "T-Bone Accident at Stop Sign",
+            "description": "Determining fault when stop signs are involved.",
+            "readingTime": "6 min read"
+          },
+          "tBoneUncontrolledIntersection": {
+            "title": "T-Bone at Uncontrolled Intersection",
+            "description": "Fault rules when there are no traffic signals or signs.",
+            "readingTime": "6 min read"
+          },
+          "sideswipeAccidents": {
+            "title": "Sideswipe Accidents",
+            "description": "When vehicles collide side-to-side while traveling.",
+            "readingTime": "6 min read"
+          }
+        },
+        "faqs": {
+          "faq1Q": "Who is at fault in a T-bone accident?",
+          "faq1A": "Usually the driver who failed to yield right-of-way: running red lights, ignoring stop signs, or making unsafe left turns. However, fault can be shared if the other driver was speeding or ran a yellow light.",
+          "faq2Q": "Why are T-bone accidents so dangerous?",
+          "faq2A": "Side-impact crashes are especially dangerous because the side of a car offers less protection than the front or rear. Occupants on the struck side face direct impact with less crumple zone to absorb force.",
+          "faq3Q": "What is the average T-bone accident settlement?",
+          "faq3A": "Property damage only: $5,000-$15,000. With injuries: $25,000-$75,000. Serious injuries (TBI, spinal): $100,000-$500,000+. Settlements vary significantly based on injury severity and fault.",
+          "faq4Q": "How do I prove the other driver ran a red light?",
+          "faq4A": "Evidence includes: traffic camera footage, dashcam video, witness statements, police report, intersection surveillance cameras, and accident reconstruction experts for serious cases."
+        }
+      },
+      "dangerousRoads": {
+        "title": "Dangerous Roads & Intersections Guide",
+        "shortTitle": "Dangerous Roads",
+        "description": "Navigate America's most hazardous roads with confidence. Learn about high-risk highways, dangerous intersections, and accident hotspots across major cities and states.",
+        "articles": {
+          "mostDangerousHighwaysUsa": {
+            "title": "Most Dangerous Highways in America",
+            "description": "The deadliest interstate highways and what makes them so hazardous.",
+            "readingTime": "10 min read"
+          },
+          "dangerousIntersectionsWhy": {
+            "title": "What Makes an Intersection Dangerous?",
+            "description": "Understanding the factors that create high-risk intersections.",
+            "readingTime": "7 min read"
+          },
+          "californiaDangerousRoads": {
+            "title": "Most Dangerous Roads in California",
+            "description": "From I-405 to PCH—California's deadliest roadways and safety tips.",
+            "readingTime": "9 min read"
+          },
+          "texasDangerousRoads": {
+            "title": "Most Dangerous Roads in Texas",
+            "description": "Texas highways with the highest accident rates and fatalities.",
+            "readingTime": "9 min read"
+          },
+          "floridaDangerousRoads": {
+            "title": "Most Dangerous Roads in Florida",
+            "description": "Florida's deadliest highways and intersections explained.",
+            "readingTime": "9 min read"
+          },
+          "highwayAccidentSurvival": {
+            "title": "Highway Accident Survival Guide",
+            "description": "What to do if you're in an accident on a dangerous highway.",
+            "readingTime": "8 min read"
+          },
+          "intersectionAccidentClaims": {
+            "title": "Intersection Accident Claims",
+            "description": "How dangerous intersections affect your accident claim.",
+            "readingTime": "7 min read"
+          },
+          "newYorkDangerousRoads": {
+            "title": "Most Dangerous Roads in New York",
+            "description": "High-risk highways and intersections in the Empire State.",
+            "readingTime": "8 min read"
+          },
+          "arizonaDangerousRoads": {
+            "title": "Most Dangerous Roads in Arizona",
+            "description": "Arizona's deadliest roadways from Phoenix to Tucson.",
+            "readingTime": "8 min read"
+          },
+          "georgiaDangerousRoads": {
+            "title": "Most Dangerous Roads in Georgia",
+            "description": "Atlanta's notorious highways and Georgia's high-risk roads.",
+            "readingTime": "8 min read"
+          },
+          "illinoisDangerousRoads": {
+            "title": "Most Dangerous Roads in Illinois",
+            "description": "Chicago-area expressways and Illinois highway accident hotspots.",
+            "readingTime": "8 min read"
+          },
+          "ruralRoadDangers": {
+            "title": "Rural Road Accident Risks",
+            "description": "Why rural roads are more dangerous than you think.",
+            "readingTime": "7 min read"
+          },
+          "constructionZoneAccidents": {
+            "title": "Construction Zone Accidents",
+            "description": "Navigating work zones and your rights after a construction zone crash.",
+            "readingTime": "7 min read"
+          }
+        },
+        "faqs": {
+          "faq1Q": "What is the most dangerous highway in America?",
+          "faq1A": "I-95 consistently ranks as one of the deadliest, spanning from Miami to Maine. In terms of fatality rate per mile, I-4 in Florida and I-10 in Texas also rank extremely high. Rural interstates often have higher death rates due to speed and distance from trauma centers.",
+          "faq2Q": "Does where an accident happens affect my claim?",
+          "faq2A": "Yes. Accidents in known dangerous areas can help establish negligence (e.g., a city knew about a dangerous intersection). Traffic camera footage, road condition reports, and accident history can all strengthen your claim.",
+          "faq3Q": "Can I sue a city for a dangerous road?",
+          "faq3A": "Potentially, yes. If a road defect, poor signage, or known dangerous condition contributed to your accident, you may have a claim against the government entity responsible. These claims have strict notice requirements and shorter deadlines.",
+          "faq4Q": "Why do some intersections have so many accidents?",
+          "faq4A": "Common factors include: poor visibility, confusing lane markings, short yellow light timing, lack of turn signals, high traffic volume, and poor road design. Many dangerous intersections have been known problems for years."
+        }
+      },
+      "weatherDriving": {
+        "title": "Weather & Seasonal Driving Guide",
+        "shortTitle": "Weather Driving",
+        "description": "How weather conditions affect accident risk, fault determination, and your insurance claim. Regional guides for rain, snow, fog, and extreme conditions.",
+        "articles": {
+          "rainAccidentFault": {
+            "title": "Rain Accidents: Who Is at Fault?",
+            "description": "How wet conditions affect fault determination in car accidents.",
+            "readingTime": "7 min read"
+          },
+          "hydroplaningAccidents": {
+            "title": "Hydroplaning Accidents Explained",
+            "description": "What happens when you hydroplane and how it affects your claim.",
+            "readingTime": "7 min read"
+          },
+          "fogAccidents": {
+            "title": "Fog-Related Car Accidents",
+            "description": "Driving in fog and liability when visibility is limited.",
+            "readingTime": "6 min read"
+          },
+          "iceSnowAccidents": {
+            "title": "Ice and Snow Accident Claims",
+            "description": "Fault and claims when winter conditions cause crashes.",
+            "readingTime": "8 min read"
+          },
+          "sunGlareAccidents": {
+            "title": "Sun Glare Accidents",
+            "description": "When blinding sun contributes to accidents—who is liable?",
+            "readingTime": "6 min read"
+          },
+          "floridaRainySeasonDriving": {
+            "title": "Florida Rainy Season Driving",
+            "description": "Navigating Florida's dangerous summer storm season.",
+            "readingTime": "8 min read"
+          },
+          "californiaWildfireDriving": {
+            "title": "Driving During California Wildfires",
+            "description": "Smoke, evacuations, and accident claims during fire season.",
+            "readingTime": "7 min read"
+          },
+          "texasFlashFloodAccidents": {
+            "title": "Texas Flash Flood Accidents",
+            "description": "Flash floods, road washouts, and liability in Texas.",
+            "readingTime": "7 min read"
+          },
+          "hurricaneEvacuationAccidents": {
+            "title": "Hurricane Evacuation Accidents",
+            "description": "Accidents during mandatory evacuations and who is liable.",
+            "readingTime": "7 min read"
+          },
+          "blackIceAccidents": {
+            "title": "Black Ice Accidents",
+            "description": "The hidden danger of black ice and accident liability.",
+            "readingTime": "6 min read"
+          },
+          "dustStormAccidents": {
+            "title": "Dust Storm Accidents in Arizona",
+            "description": "Haboob safety and liability in Arizona dust storms.",
+            "readingTime": "7 min read"
+          },
+          "extremeHeatTireBlowouts": {
+            "title": "Extreme Heat and Tire Blowouts",
+            "description": "Summer heat, tire failures, and accident claims.",
+            "readingTime": "6 min read"
+          }
+        },
+        "faqs": {
+          "faq1Q": "Am I at fault if I crash in bad weather?",
+          "faq1A": "Weather itself isn't an excuse. Drivers are expected to adjust speed and following distance for conditions. If you were driving too fast for conditions, you can be found at fault even if the weather caused you to lose control.",
+          "faq2Q": "Can I claim for an accident caused by rain or ice?",
+          "faq2A": "Yes, but liability depends on the circumstances. Another driver may be at fault if they were driving too fast for conditions. Road authorities can sometimes be liable for failing to treat icy roads or fix drainage issues.",
+          "faq3Q": "Does weather affect my settlement amount?",
+          "faq3A": "It can. If weather was a contributing factor and the other driver should have adjusted their driving, it strengthens your case. Insurance adjusters consider whether reasonable precautions were taken.",
+          "faq4Q": "What if I hit someone because I hydroplaned?",
+          "faq4A": "You may be found at fault. Courts generally hold that drivers should slow down in wet conditions. However, if a road defect (poor drainage, standing water) contributed, you might have a claim against the road authority."
+        }
+      },
+      "stateInsuranceLaws": {
+        "title": "State Insurance Laws Guide",
+        "shortTitle": "State Laws",
+        "description": "Car insurance laws vary dramatically by state. Understand your state's fault system, minimum coverage requirements, and how local laws affect your accident claim.",
+        "articles": {
+          "atFaultVsNoFaultExplained": {
+            "title": "At-Fault vs No-Fault States Explained",
+            "description": "Complete breakdown of how your state's system works.",
+            "readingTime": "10 min read"
+          },
+          "comparativeNegligenceStates": {
+            "title": "Comparative Negligence by State",
+            "description": "How fault percentages affect your claim in each state.",
+            "readingTime": "9 min read"
+          },
+          "californiaCarAccidentLaws": {
+            "title": "California Car Accident Laws",
+            "description": "Complete guide to California's insurance and accident laws.",
+            "readingTime": "10 min read"
+          },
+          "texasCarAccidentLaws": {
+            "title": "Texas Car Accident Laws",
+            "description": "Texas insurance requirements and fault rules explained.",
+            "readingTime": "10 min read"
+          },
+          "floridaCarAccidentLaws": {
+            "title": "Florida Car Accident Laws",
+            "description": "Florida's no-fault system and PIP requirements.",
+            "readingTime": "10 min read"
+          },
+          "newYorkCarAccidentLaws": {
+            "title": "New York Car Accident Laws",
+            "description": "NY's no-fault insurance and serious injury threshold.",
+            "readingTime": "9 min read"
+          },
+          "minimumCoverageByState": {
+            "title": "Minimum Insurance Coverage by State",
+            "description": "State-by-state breakdown of required insurance limits.",
+            "readingTime": "8 min read"
+          },
+          "statuteOfLimitationsByState": {
+            "title": "Accident Lawsuit Deadlines by State",
+            "description": "How long you have to file a claim in each state.",
+            "readingTime": "8 min read"
+          },
+          "georgiaCarAccidentLaws": {
+            "title": "Georgia Car Accident Laws",
+            "description": "Georgia's modified comparative fault and insurance rules.",
+            "readingTime": "9 min read"
+          },
+          "arizonaCarAccidentLaws": {
+            "title": "Arizona Car Accident Laws",
+            "description": "Arizona's pure comparative negligence system.",
+            "readingTime": "9 min read"
+          },
+          "illinoisCarAccidentLaws": {
+            "title": "Illinois Car Accident Laws",
+            "description": "Illinois fault rules and insurance requirements.",
+            "readingTime": "9 min read"
+          },
+          "ohioCarAccidentLaws": {
+            "title": "Ohio Car Accident Laws",
+            "description": "Ohio's modified comparative negligence rules.",
+            "readingTime": "9 min read"
+          },
+          "uninsuredMotoristLaws": {
+            "title": "Uninsured Motorist Coverage by State",
+            "description": "Which states require UM coverage and what it means for you.",
+            "readingTime": "8 min read"
+          },
+          "pipCoverageByState": {
+            "title": "PIP Coverage Requirements by State",
+            "description": "Personal Injury Protection rules in no-fault states.",
+            "readingTime": "8 min read"
+          }
+        },
+        "faqs": {
+          "faq1Q": "What is the difference between at-fault and no-fault states?",
+          "faq1A": "In at-fault (tort) states, the driver who caused the accident pays for damages through their liability insurance. In no-fault states, each driver's own insurance pays their medical bills regardless of fault, with lawsuits limited to serious injuries.",
+          "faq2Q": "Which states are no-fault?",
+          "faq2A": "Florida, Michigan, New Jersey, New York, Pennsylvania, Hawaii, Kansas, Kentucky, Massachusetts, Minnesota, North Dakota, and Utah have no-fault systems. Puerto Rico also uses no-fault. Requirements and thresholds vary by state.",
+          "faq3Q": "Can I sue in a no-fault state?",
+          "faq3A": "Yes, but only if injuries meet a threshold. States use either a monetary threshold (medical bills exceed a certain amount) or verbal threshold (specific serious injuries like fractures, permanent injury, or disfigurement).",
+          "faq4Q": "How does comparative negligence affect my claim?",
+          "faq4A": "In pure comparative states, you can recover damages minus your fault percentage (even at 99% fault). In modified comparative states, you can't recover if you're more than 50% (or 51%) at fault. A few states still use contributory negligence where any fault bars recovery.",
+          "faq5Q": "What is the statute of limitations for car accidents?",
+          "faq5A": "Most states allow 2-3 years to file a lawsuit after a car accident. Some states have shorter deadlines (1 year in Kentucky and Louisiana). Claims against government entities often have much shorter notice requirements (sometimes 30-180 days)."
+        }
+      }
+    }
+  },
+  "totalLossCalcPage": {
+    "badge": "Free Insurance Tool",
+    "title": "Total Loss",
+    "titleHighlight": "Calculator",
+    "description": "Find out if your car will be declared a total loss and estimate your insurance settlement. Our calculator uses state-specific thresholds to give you accurate results.",
+    "calcTitle": "Calculate Your Total Loss Settlement",
+    "vehicleValue": "Vehicle's Actual Cash Value (ACV)",
+    "vehicleValueHelp": "Pre-accident market value of your vehicle",
+    "repairCost": "Estimated Repair Cost",
+    "repairCostHelp": "Total cost to repair the damage",
+    "yourState": "Your State",
+    "yourStateHelp": "Each state has different total loss thresholds",
+    "selectState": "Select State",
+    "salvageValue": "Salvage Value (Optional)",
+    "salvageValueHelp": "What the damaged vehicle could sell for",
+    "deductible": "Your Deductible",
+    "deductibleHelp": "Your collision or comprehensive deductible",
+    "loanBalance": "Current Loan Balance (Optional)",
+    "loanBalanceHelp": "Amount you still owe on the car",
+    "calculateButton": "Calculate Total Loss",
+    "resultsTitle": "Your Results",
+    "likelyTotalLoss": "Likely a Total Loss",
+    "likelyRepairable": "Likely Repairable",
+    "repairPercentage": "Repair costs are {percent}% of your vehicle's value.",
+    "stateThreshold": "Your state's threshold is {threshold}.",
+    "vehicleValueLabel": "Vehicle Value",
+    "repairCostLabel": "Repair Cost",
+    "expectedSettlement": "Expected Settlement",
+    "afterDeductible": "After ${amount} deductible",
+    "gapAmountOwed": "Gap Amount Owed",
+    "equityAfterPayoff": "Equity After Payoff",
+    "mayNeedGap": "You may need gap insurance",
+    "disclaimer": "This calculator provides estimates only. Actual total loss determination and settlement amounts vary by insurance company, policy terms, and specific circumstances. Consult your insurance adjuster for official valuations.",
+    "understandingTitle": "Understanding Total Loss Car Insurance Claims",
+    "understandingIntro": "When your vehicle is involved in an accident, one of the most important determinations is whether the car is a \"total loss\" or if it can be repaired. This decision significantly impacts your insurance claim, your finances, and your next steps. Our total loss calculator helps you understand what to expect before the insurance company makes their decision.",
+    "whatIsTotalLossTitle": "What Is a Total Loss Vehicle?",
+    "whatIsTotalLossP1": "A total loss, also called a \"totaled car,\" occurs when the cost to repair your vehicle exceeds a certain percentage of its actual cash value (ACV). The ACV represents what your car was worth immediately before the accident, considering factors like age, mileage, condition, and local market prices.",
+    "whatIsTotalLossP2": "Insurance companies declare vehicles as total losses because it's more economically sensible to pay you the car's value than to spend more on repairs. However, the threshold for this determination varies significantly depending on your state and insurance company.",
+    "thresholdsTitle": "How Total Loss Thresholds Work by State",
+    "thresholdsIntro": "States regulate total loss determinations in two primary ways:",
+    "percentageMethodTitle": "Percentage Threshold Method",
+    "percentageMethodDesc": "Most states use a fixed percentage threshold, typically between 70% and 100%. If repair costs exceed this percentage of the vehicle's ACV, it's declared a total loss. For example, in a state with a 75% threshold, a $20,000 car would be totaled if repairs exceed $15,000.",
+    "tlfMethodTitle": "Total Loss Formula (TLF)",
+    "tlfMethodDesc": "Some states use the Total Loss Formula, where repair cost plus salvage value must exceed the ACV. This method considers what the damaged vehicle could sell for, making the calculation more nuanced but often resulting in fewer total loss declarations.",
+    "processTitle": "The Total Loss Settlement Process",
+    "processIntro": "Understanding the total loss process helps you prepare for negotiations and ensure you receive fair compensation:",
+    "processStep1Title": "Initial Assessment",
+    "processStep1Desc": "An adjuster inspects your vehicle and estimates repair costs. They'll also photograph damage and document the vehicle's condition.",
+    "processStep2Title": "Valuation",
+    "processStep2Desc": "The insurance company determines your vehicle's ACV using valuation services and comparable sales data from your local market.",
+    "processStep3Title": "Total Loss Decision",
+    "processStep3Desc": "Based on repair estimates, ACV, and your state's threshold, the insurer determines if the vehicle is a total loss.",
+    "processStep4Title": "Settlement Offer",
+    "processStep4Desc": "You receive an offer for the ACV minus your deductible. You can accept, negotiate, or dispute the valuation.",
+    "processStep5Title": "Title Transfer",
+    "processStep5Desc": "Upon accepting the settlement, you sign over the title. The vehicle goes to salvage unless you choose to keep it.",
+    "disputeTitle": "How to Dispute a Low Total Loss Offer",
+    "disputeIntro": "Insurance companies don't always offer fair settlements. If you believe your vehicle is worth more than the initial offer, you have every right to negotiate. Here's how to build a strong case:",
+    "dispute1": "Gather comparable sales: Find recent listings and sales of similar vehicles in your area from Kelley Blue Book, Edmunds, AutoTrader, and local dealerships.",
+    "dispute2": "Document your vehicle's condition: Provide evidence of low mileage, recent maintenance, new tires, or upgrades that add value.",
+    "dispute3": "Get multiple valuations: Request quotes from dealers and use multiple valuation tools to establish a fair range.",
+    "dispute4": "Review the insurer's valuation report: Ask for the CCC, Mitchell, or Audatex report they used and check for errors.",
+    "dispute5": "Hire an independent appraiser: For significant disputes, a professional appraisal can provide leverage.",
+    "dispute6": "File a complaint: If negotiations fail, contact your state's insurance commissioner.",
+    "gapInsuranceTitle": "Understanding Gap Insurance",
+    "gapInsuranceIntro": "Gap insurance (Guaranteed Asset Protection) is crucial if you owe more on your car loan than the vehicle is worth. This is common for:",
+    "gap1": "New cars that depreciate quickly",
+    "gap2": "Loans with little or no down payment",
+    "gap3": "Extended loan terms (72+ months)",
+    "gap4": "Vehicles that were purchased above market value",
+    "gapInsuranceNote": "Without gap insurance, you're responsible for paying the difference between the insurance settlement and your remaining loan balance. Our calculator shows this \"gap amount\" if you enter your current loan balance.",
+    "keepVehicleTitle": "Keeping Your Totaled Vehicle",
+    "keepVehicleIntro": "In most states, you can choose to keep your totaled vehicle. The insurance company will deduct the salvage value from your settlement. However, consider these factors:",
+    "keep1": "Your car will receive a salvage or rebuilt title, significantly reducing resale value",
+    "keep2": "Some insurers won't provide comprehensive/collision coverage on salvage title vehicles",
+    "keep3": "You'll need to pass a rebuilt vehicle inspection before driving it legally",
+    "keep4": "Repairs may reveal additional hidden damage that increases costs",
+    "keep5": "Future safety and reliability concerns should be evaluated by a mechanic",
+    "faqBadge": "Common Questions",
+    "faqTitle": "Total Loss FAQ",
+    "ctaTitle": "Need Help With Your Total Loss Claim?",
+    "ctaDescription": "If you've been in an accident and your car may be totaled, our AI Damage Analyzer can help you understand your situation and options.",
+    "ctaButton": "Get Free AI Analysis",
+    "faq1Q": "What does 'total loss' mean for a car?",
+    "faq1A": "A total loss occurs when the cost to repair your vehicle exceeds a certain percentage of its actual cash value (ACV). Most insurance companies use a threshold between 70-80%, though some states have specific laws. When your car is declared a total loss, the insurance company will pay you the vehicle's ACV minus your deductible instead of paying for repairs.",
+    "faq2Q": "How do insurance companies calculate total loss value?",
+    "faq2A": "Insurance companies calculate total loss value using your vehicle's Actual Cash Value (ACV), which considers the pre-accident market value, mileage, condition, optional equipment, and recent comparable sales in your area. They typically use valuation services like CCC, Mitchell, or Audatex to determine this value.",
+    "faq3Q": "Can I dispute a total loss settlement offer?",
+    "faq3A": "Yes, you can and should dispute a low total loss offer. Gather evidence including recent comparable sales from sites like Kelley Blue Book, Edmunds, and local dealer listings. Document any upgrades or recent maintenance. You can also hire an independent appraiser or file a complaint with your state's insurance commissioner.",
+    "faq4Q": "What is the total loss threshold in my state?",
+    "faq4A": "Total loss thresholds vary by state, typically ranging from 70% to 100% of the vehicle's ACV. Some states use a Total Loss Formula (TLF) where repair cost + salvage value must exceed the ACV. Check your state's specific regulations or ask your insurance company for the threshold they use.",
+    "faq5Q": "Do I get to keep my car if it's totaled?",
+    "faq5A": "In most cases, yes, you can keep your totaled car by accepting a reduced settlement (the ACV minus salvage value). You'll receive a salvage title, which affects future resale value and may require a rebuilt title inspection before the car can be legally driven again. Some states don't allow this option for severely damaged vehicles.",
+    "faq6Q": "How long does the total loss settlement process take?",
+    "faq6A": "The total loss settlement process typically takes 2-4 weeks from the date of the accident. This includes the initial inspection (1-3 days), valuation process (3-5 days), negotiation period (varies), and payment processing (3-7 days). Complex cases or disputes can extend this timeline significantly.",
+    "faq7Q": "Will gap insurance help if my car is totaled?",
+    "faq7A": "Yes, gap insurance covers the difference between what you owe on your car loan and what the insurance company pays for the total loss. This is especially valuable for new cars that depreciate quickly or if you made a small down payment. Gap insurance is typically purchased when you buy or lease the vehicle.",
+    "faq8Q": "What happens to my car loan if my car is totaled?",
+    "faq8A": "You're still responsible for paying off your car loan even if your car is totaled. The insurance settlement goes first to your lienholder (the bank or finance company). If the settlement doesn't cover the full loan balance, you'll owe the difference unless you have gap insurance."
   }
 }

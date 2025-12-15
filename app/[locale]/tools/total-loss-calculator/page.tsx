@@ -22,42 +22,8 @@ import {
   Clock,
   Banknote
 } from 'lucide-react'
-
-// FAQ data for SEO
-const faqs = [
-  {
-    question: "What does 'total loss' mean for a car?",
-    answer: "A total loss occurs when the cost to repair your vehicle exceeds a certain percentage of its actual cash value (ACV). Most insurance companies use a threshold between 70-80%, though some states have specific laws. When your car is declared a total loss, the insurance company will pay you the vehicle's ACV minus your deductible instead of paying for repairs."
-  },
-  {
-    question: "How do insurance companies calculate total loss value?",
-    answer: "Insurance companies calculate total loss value using your vehicle's Actual Cash Value (ACV), which considers the pre-accident market value, mileage, condition, optional equipment, and recent comparable sales in your area. They typically use valuation services like CCC, Mitchell, or Audatex to determine this value."
-  },
-  {
-    question: "Can I dispute a total loss settlement offer?",
-    answer: "Yes, you can and should dispute a low total loss offer. Gather evidence including recent comparable sales from sites like Kelley Blue Book, Edmunds, and local dealer listings. Document any upgrades or recent maintenance. You can also hire an independent appraiser or file a complaint with your state's insurance commissioner."
-  },
-  {
-    question: "What is the total loss threshold in my state?",
-    answer: "Total loss thresholds vary by state, typically ranging from 70% to 100% of the vehicle's ACV. Some states use a Total Loss Formula (TLF) where repair cost + salvage value must exceed the ACV. Check your state's specific regulations or ask your insurance company for the threshold they use."
-  },
-  {
-    question: "Do I get to keep my car if it's totaled?",
-    answer: "In most cases, yes, you can keep your totaled car by accepting a reduced settlement (the ACV minus salvage value). You'll receive a salvage title, which affects future resale value and may require a rebuilt title inspection before the car can be legally driven again. Some states don't allow this option for severely damaged vehicles."
-  },
-  {
-    question: "How long does the total loss settlement process take?",
-    answer: "The total loss settlement process typically takes 2-4 weeks from the date of the accident. This includes the initial inspection (1-3 days), valuation process (3-5 days), negotiation period (varies), and payment processing (3-7 days). Complex cases or disputes can extend this timeline significantly."
-  },
-  {
-    question: "Will gap insurance help if my car is totaled?",
-    answer: "Yes, gap insurance covers the difference between what you owe on your car loan and what the insurance company pays for the total loss. This is especially valuable for new cars that depreciate quickly or if you made a small down payment. Gap insurance is typically purchased when you buy or lease the vehicle."
-  },
-  {
-    question: "What happens to my car loan if my car is totaled?",
-    answer: "You're still responsible for paying off your car loan even if your car is totaled. The insurance settlement goes first to your lienholder (the bank or finance company). If the settlement doesn't cover the full loan balance, you'll owe the difference unless you have gap insurance."
-  }
-]
+import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 
 // State thresholds data
 const stateThresholds: Record<string, { threshold: number | string; method: string }> = {
@@ -141,6 +107,20 @@ function FAQItem({ question, answer, isOpen, onClick }: { question: string; answ
 }
 
 export default function TotalLossCalculatorPage() {
+  const t = useTranslations('totalLossCalcPage')
+
+  // FAQ data for SEO
+  const faqs = [
+    { question: t('faq1Q'), answer: t('faq1A') },
+    { question: t('faq2Q'), answer: t('faq2A') },
+    { question: t('faq3Q'), answer: t('faq3A') },
+    { question: t('faq4Q'), answer: t('faq4A') },
+    { question: t('faq5Q'), answer: t('faq5A') },
+    { question: t('faq6Q'), answer: t('faq6A') },
+    { question: t('faq7Q'), answer: t('faq7A') },
+    { question: t('faq8Q'), answer: t('faq8A') }
+  ]
+
   const [vehicleValue, setVehicleValue] = useState('')
   const [repairCost, setRepairCost] = useState('')
   const [salvageValue, setSalvageValue] = useState('')
@@ -246,14 +226,13 @@ export default function TotalLossCalculatorPage() {
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 bg-brand-500/20 border border-brand-400/30 rounded-full px-4 py-2 mb-6">
                 <Calculator className="w-4 h-4 text-brand-400" />
-                <span className="text-sm font-medium text-brand-300">Free Insurance Tool</span>
+                <span className="text-sm font-medium text-brand-300">{t('badge')}</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Total Loss <span className="text-brand-400">Calculator</span>
+                {t('title')} <span className="text-brand-400">{t('titleHighlight')}</span>
               </h1>
               <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
-                Find out if your car will be declared a total loss and estimate your insurance settlement.
-                Our calculator uses state-specific thresholds to give you accurate results.
+                {t('description')}
               </p>
             </div>
           </div>
@@ -267,7 +246,7 @@ export default function TotalLossCalculatorPage() {
                 <div className="bg-gradient-to-r from-brand-600 to-brand-700 px-6 py-4">
                   <h2 className="text-xl font-semibold text-white flex items-center gap-2">
                     <Car className="w-5 h-5" />
-                    Calculate Your Total Loss Settlement
+                    {t('calcTitle')}
                   </h2>
                 </div>
 
@@ -277,7 +256,7 @@ export default function TotalLossCalculatorPage() {
                     <div className="space-y-2">
                       <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                         <DollarSign className="w-4 h-4 text-slate-400" />
-                        Vehicle's Actual Cash Value (ACV)
+                        {t('vehicleValue')}
                       </label>
                       <div className="relative">
                         <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">$</span>
@@ -289,14 +268,14 @@ export default function TotalLossCalculatorPage() {
                           className="pl-7"
                         />
                       </div>
-                      <p className="text-xs text-slate-500">Pre-accident market value of your vehicle</p>
+                      <p className="text-xs text-slate-500">{t('vehicleValueHelp')}</p>
                     </div>
 
                     {/* Repair Cost */}
                     <div className="space-y-2">
                       <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                         <FileText className="w-4 h-4 text-slate-400" />
-                        Estimated Repair Cost
+                        {t('repairCost')}
                       </label>
                       <div className="relative">
                         <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">$</span>
@@ -308,33 +287,33 @@ export default function TotalLossCalculatorPage() {
                           className="pl-7"
                         />
                       </div>
-                      <p className="text-xs text-slate-500">Total cost to repair the damage</p>
+                      <p className="text-xs text-slate-500">{t('repairCostHelp')}</p>
                     </div>
 
                     {/* State */}
                     <div className="space-y-2">
                       <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                         <Scale className="w-4 h-4 text-slate-400" />
-                        Your State
+                        {t('yourState')}
                       </label>
                       <select
                         value={state}
                         onChange={(e) => setState(e.target.value)}
                         className="flex h-11 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
                       >
-                        <option value="">Select State</option>
+                        <option value="">{t('selectState')}</option>
                         {states.map(s => (
                           <option key={s} value={s}>{s}</option>
                         ))}
                       </select>
-                      <p className="text-xs text-slate-500">Each state has different total loss thresholds</p>
+                      <p className="text-xs text-slate-500">{t('yourStateHelp')}</p>
                     </div>
 
                     {/* Salvage Value */}
                     <div className="space-y-2">
                       <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                         <TrendingUp className="w-4 h-4 text-slate-400" />
-                        Salvage Value (Optional)
+                        {t('salvageValue')}
                       </label>
                       <div className="relative">
                         <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">$</span>
@@ -346,14 +325,14 @@ export default function TotalLossCalculatorPage() {
                           className="pl-7"
                         />
                       </div>
-                      <p className="text-xs text-slate-500">What the damaged vehicle could sell for</p>
+                      <p className="text-xs text-slate-500">{t('salvageValueHelp')}</p>
                     </div>
 
                     {/* Deductible */}
                     <div className="space-y-2">
                       <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                         <Banknote className="w-4 h-4 text-slate-400" />
-                        Your Deductible
+                        {t('deductible')}
                       </label>
                       <div className="relative">
                         <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">$</span>
@@ -365,14 +344,14 @@ export default function TotalLossCalculatorPage() {
                           className="pl-7"
                         />
                       </div>
-                      <p className="text-xs text-slate-500">Your collision or comprehensive deductible</p>
+                      <p className="text-xs text-slate-500">{t('deductibleHelp')}</p>
                     </div>
 
                     {/* Loan Balance */}
                     <div className="space-y-2">
                       <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                         <Clock className="w-4 h-4 text-slate-400" />
-                        Current Loan Balance (Optional)
+                        {t('loanBalance')}
                       </label>
                       <div className="relative">
                         <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">$</span>
@@ -384,21 +363,21 @@ export default function TotalLossCalculatorPage() {
                           className="pl-7"
                         />
                       </div>
-                      <p className="text-xs text-slate-500">Amount you still owe on the car</p>
+                      <p className="text-xs text-slate-500">{t('loanBalanceHelp')}</p>
                     </div>
                   </div>
 
                   <div className="mt-8">
                     <Button onClick={handleCalculate} size="lg" className="w-full md:w-auto">
                       <Calculator className="w-5 h-5 mr-2" />
-                      Calculate Total Loss
+                      {t('calculateButton')}
                     </Button>
                   </div>
 
                   {/* Results */}
                   {showResults && calculation && (
                     <div className="mt-8 pt-8 border-t border-slate-200">
-                      <h3 className="text-lg font-semibold text-slate-900 mb-6">Your Results</h3>
+                      <h3 className="text-lg font-semibold text-slate-900 mb-6">{t('resultsTitle')}</h3>
 
                       {/* Total Loss Determination */}
                       <div className={`rounded-xl p-6 mb-6 ${calculation.isTotalLoss ? 'bg-amber-50 border border-amber-200' : 'bg-green-50 border border-green-200'}`}>
@@ -410,11 +389,11 @@ export default function TotalLossCalculatorPage() {
                           )}
                           <div>
                             <h4 className={`text-xl font-bold ${calculation.isTotalLoss ? 'text-amber-900' : 'text-green-900'}`}>
-                              {calculation.isTotalLoss ? 'Likely a Total Loss' : 'Likely Repairable'}
+                              {calculation.isTotalLoss ? t('likelyTotalLoss') : t('likelyRepairable')}
                             </h4>
                             <p className={`mt-1 ${calculation.isTotalLoss ? 'text-amber-700' : 'text-green-700'}`}>
-                              Repair costs are {calculation.repairPercentage.toFixed(1)}% of your vehicle's value.
-                              {state && ` Your state's threshold is ${calculation.thresholdDisplay}.`}
+                              {t('repairPercentage', { percent: calculation.repairPercentage.toFixed(1) })}
+                              {state && ` ${t('stateThreshold', { threshold: calculation.thresholdDisplay })}`}
                             </p>
                           </div>
                         </div>
@@ -423,28 +402,28 @@ export default function TotalLossCalculatorPage() {
                       {/* Financial Breakdown */}
                       <div className="grid md:grid-cols-2 gap-4">
                         <div className="bg-slate-50 rounded-lg p-4">
-                          <span className="text-sm text-slate-500">Vehicle Value</span>
+                          <span className="text-sm text-slate-500">{t('vehicleValueLabel')}</span>
                           <p className="text-2xl font-bold text-slate-900">${calculation.vehicleValue.toLocaleString()}</p>
                         </div>
                         <div className="bg-slate-50 rounded-lg p-4">
-                          <span className="text-sm text-slate-500">Repair Cost</span>
+                          <span className="text-sm text-slate-500">{t('repairCostLabel')}</span>
                           <p className="text-2xl font-bold text-slate-900">${calculation.repairCost.toLocaleString()}</p>
                         </div>
                         <div className="bg-brand-50 rounded-lg p-4">
-                          <span className="text-sm text-brand-600">Expected Settlement</span>
+                          <span className="text-sm text-brand-600">{t('expectedSettlement')}</span>
                           <p className="text-2xl font-bold text-brand-900">${calculation.expectedPayout.toLocaleString()}</p>
-                          <p className="text-xs text-brand-600 mt-1">After ${calculation.deductible.toLocaleString()} deductible</p>
+                          <p className="text-xs text-brand-600 mt-1">{t('afterDeductible', { amount: calculation.deductible.toLocaleString() })}</p>
                         </div>
                         {calculation.loanBalance > 0 && (
                           <div className={`rounded-lg p-4 ${calculation.hasGap ? 'bg-red-50' : 'bg-green-50'}`}>
                             <span className={`text-sm ${calculation.hasGap ? 'text-red-600' : 'text-green-600'}`}>
-                              {calculation.hasGap ? 'Gap Amount Owed' : 'Equity After Payoff'}
+                              {calculation.hasGap ? t('gapAmountOwed') : t('equityAfterPayoff')}
                             </span>
                             <p className={`text-2xl font-bold ${calculation.hasGap ? 'text-red-900' : 'text-green-900'}`}>
                               ${Math.abs(calculation.netPosition).toLocaleString()}
                             </p>
                             {calculation.hasGap && (
-                              <p className="text-xs text-red-600 mt-1">You may need gap insurance</p>
+                              <p className="text-xs text-red-600 mt-1">{t('mayNeedGap')}</p>
                             )}
                           </div>
                         )}
@@ -454,9 +433,7 @@ export default function TotalLossCalculatorPage() {
                       <div className="mt-6 bg-slate-100 rounded-lg p-4 flex items-start gap-3">
                         <Info className="w-5 h-5 text-slate-500 flex-shrink-0 mt-0.5" />
                         <p className="text-sm text-slate-600">
-                          This calculator provides estimates only. Actual total loss determination and settlement amounts
-                          vary by insurance company, policy terms, and specific circumstances. Consult your insurance
-                          adjuster for official valuations.
+                          {t('disclaimer')}
                         </p>
                       </div>
                     </div>
@@ -472,153 +449,135 @@ export default function TotalLossCalculatorPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8 text-center">
-                Understanding Total Loss Car Insurance Claims
+                {t('understandingTitle')}
               </h2>
 
               <div className="prose prose-slate max-w-none">
                 <p className="text-lg text-slate-600 mb-8">
-                  When your vehicle is involved in an accident, one of the most important determinations is whether
-                  the car is a "total loss" or if it can be repaired. This decision significantly impacts your
-                  insurance claim, your finances, and your next steps. Our total loss calculator helps you
-                  understand what to expect before the insurance company makes their decision.
+                  {t('understandingIntro')}
                 </p>
 
                 <h3 className="text-2xl font-semibold text-slate-900 mt-12 mb-4">
-                  What Is a Total Loss Vehicle?
+                  {t('whatIsTotalLossTitle')}
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  A total loss, also called a "totaled car," occurs when the cost to repair your vehicle
-                  exceeds a certain percentage of its actual cash value (ACV). The ACV represents what your
-                  car was worth immediately before the accident, considering factors like age, mileage,
-                  condition, and local market prices.
+                  {t('whatIsTotalLossP1')}
                 </p>
                 <p className="text-slate-600 mb-4">
-                  Insurance companies declare vehicles as total losses because it's more economically sensible
-                  to pay you the car's value than to spend more on repairs. However, the threshold for this
-                  determination varies significantly depending on your state and insurance company.
+                  {t('whatIsTotalLossP2')}
                 </p>
 
                 <h3 className="text-2xl font-semibold text-slate-900 mt-12 mb-4">
-                  How Total Loss Thresholds Work by State
+                  {t('thresholdsTitle')}
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  States regulate total loss determinations in two primary ways:
+                  {t('thresholdsIntro')}
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6 my-8">
                   <div className="bg-slate-50 rounded-xl p-6">
-                    <h4 className="font-semibold text-slate-900 mb-2">Percentage Threshold Method</h4>
+                    <h4 className="font-semibold text-slate-900 mb-2">{t('percentageMethodTitle')}</h4>
                     <p className="text-slate-600 text-sm">
-                      Most states use a fixed percentage threshold, typically between 70% and 100%. If repair
-                      costs exceed this percentage of the vehicle's ACV, it's declared a total loss. For example,
-                      in a state with a 75% threshold, a $20,000 car would be totaled if repairs exceed $15,000.
+                      {t('percentageMethodDesc')}
                     </p>
                   </div>
                   <div className="bg-slate-50 rounded-xl p-6">
-                    <h4 className="font-semibold text-slate-900 mb-2">Total Loss Formula (TLF)</h4>
+                    <h4 className="font-semibold text-slate-900 mb-2">{t('tlfMethodTitle')}</h4>
                     <p className="text-slate-600 text-sm">
-                      Some states use the Total Loss Formula, where repair cost plus salvage value must exceed
-                      the ACV. This method considers what the damaged vehicle could sell for, making the
-                      calculation more nuanced but often resulting in fewer total loss declarations.
+                      {t('tlfMethodDesc')}
                     </p>
                   </div>
                 </div>
 
                 <h3 className="text-2xl font-semibold text-slate-900 mt-12 mb-4">
-                  The Total Loss Settlement Process
+                  {t('processTitle')}
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  Understanding the total loss process helps you prepare for negotiations and ensure you
-                  receive fair compensation:
+                  {t('processIntro')}
                 </p>
 
                 <div className="space-y-4 my-8">
                   <div className="flex items-start gap-4 p-4 bg-white border border-slate-200 rounded-lg">
                     <div className="w-8 h-8 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 font-bold flex-shrink-0">1</div>
                     <div>
-                      <h4 className="font-semibold text-slate-900">Initial Assessment</h4>
-                      <p className="text-slate-600 text-sm">An adjuster inspects your vehicle and estimates repair costs. They'll also photograph damage and document the vehicle's condition.</p>
+                      <h4 className="font-semibold text-slate-900">{t('processStep1Title')}</h4>
+                      <p className="text-slate-600 text-sm">{t('processStep1Desc')}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4 p-4 bg-white border border-slate-200 rounded-lg">
                     <div className="w-8 h-8 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 font-bold flex-shrink-0">2</div>
                     <div>
-                      <h4 className="font-semibold text-slate-900">Valuation</h4>
-                      <p className="text-slate-600 text-sm">The insurance company determines your vehicle's ACV using valuation services and comparable sales data from your local market.</p>
+                      <h4 className="font-semibold text-slate-900">{t('processStep2Title')}</h4>
+                      <p className="text-slate-600 text-sm">{t('processStep2Desc')}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4 p-4 bg-white border border-slate-200 rounded-lg">
                     <div className="w-8 h-8 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 font-bold flex-shrink-0">3</div>
                     <div>
-                      <h4 className="font-semibold text-slate-900">Total Loss Decision</h4>
-                      <p className="text-slate-600 text-sm">Based on repair estimates, ACV, and your state's threshold, the insurer determines if the vehicle is a total loss.</p>
+                      <h4 className="font-semibold text-slate-900">{t('processStep3Title')}</h4>
+                      <p className="text-slate-600 text-sm">{t('processStep3Desc')}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4 p-4 bg-white border border-slate-200 rounded-lg">
                     <div className="w-8 h-8 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 font-bold flex-shrink-0">4</div>
                     <div>
-                      <h4 className="font-semibold text-slate-900">Settlement Offer</h4>
-                      <p className="text-slate-600 text-sm">You receive an offer for the ACV minus your deductible. You can accept, negotiate, or dispute the valuation.</p>
+                      <h4 className="font-semibold text-slate-900">{t('processStep4Title')}</h4>
+                      <p className="text-slate-600 text-sm">{t('processStep4Desc')}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4 p-4 bg-white border border-slate-200 rounded-lg">
                     <div className="w-8 h-8 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 font-bold flex-shrink-0">5</div>
                     <div>
-                      <h4 className="font-semibold text-slate-900">Title Transfer</h4>
-                      <p className="text-slate-600 text-sm">Upon accepting the settlement, you sign over the title. The vehicle goes to salvage unless you choose to keep it.</p>
+                      <h4 className="font-semibold text-slate-900">{t('processStep5Title')}</h4>
+                      <p className="text-slate-600 text-sm">{t('processStep5Desc')}</p>
                     </div>
                   </div>
                 </div>
 
                 <h3 className="text-2xl font-semibold text-slate-900 mt-12 mb-4">
-                  How to Dispute a Low Total Loss Offer
+                  {t('disputeTitle')}
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  Insurance companies don't always offer fair settlements. If you believe your vehicle is worth
-                  more than the initial offer, you have every right to negotiate. Here's how to build a strong case:
+                  {t('disputeIntro')}
                 </p>
 
                 <ul className="list-disc pl-6 space-y-2 text-slate-600 mb-8">
-                  <li><strong>Gather comparable sales:</strong> Find recent listings and sales of similar vehicles in your area from Kelley Blue Book, Edmunds, AutoTrader, and local dealerships.</li>
-                  <li><strong>Document your vehicle's condition:</strong> Provide evidence of low mileage, recent maintenance, new tires, or upgrades that add value.</li>
-                  <li><strong>Get multiple valuations:</strong> Request quotes from dealers and use multiple valuation tools to establish a fair range.</li>
-                  <li><strong>Review the insurer's valuation report:</strong> Ask for the CCC, Mitchell, or Audatex report they used and check for errors.</li>
-                  <li><strong>Hire an independent appraiser:</strong> For significant disputes, a professional appraisal can provide leverage.</li>
-                  <li><strong>File a complaint:</strong> If negotiations fail, contact your state's insurance commissioner.</li>
+                  <li><strong>{t('dispute1').split(':')[0]}:</strong> {t('dispute1').split(':')[1]}</li>
+                  <li><strong>{t('dispute2').split(':')[0]}:</strong> {t('dispute2').split(':')[1]}</li>
+                  <li><strong>{t('dispute3').split(':')[0]}:</strong> {t('dispute3').split(':')[1]}</li>
+                  <li><strong>{t('dispute4').split(':')[0]}:</strong> {t('dispute4').split(':')[1]}</li>
+                  <li><strong>{t('dispute5').split(':')[0]}:</strong> {t('dispute5').split(':')[1]}</li>
+                  <li><strong>{t('dispute6').split(':')[0]}:</strong> {t('dispute6').split(':')[1]}</li>
                 </ul>
 
                 <h3 className="text-2xl font-semibold text-slate-900 mt-12 mb-4">
-                  Understanding Gap Insurance
+                  {t('gapInsuranceTitle')}
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  Gap insurance (Guaranteed Asset Protection) is crucial if you owe more on your car loan than
-                  the vehicle is worth. This is common for:
+                  {t('gapInsuranceIntro')}
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-slate-600 mb-8">
-                  <li>New cars that depreciate quickly</li>
-                  <li>Loans with little or no down payment</li>
-                  <li>Extended loan terms (72+ months)</li>
-                  <li>Vehicles that were purchased above market value</li>
+                  <li>{t('gap1')}</li>
+                  <li>{t('gap2')}</li>
+                  <li>{t('gap3')}</li>
+                  <li>{t('gap4')}</li>
                 </ul>
                 <p className="text-slate-600 mb-4">
-                  Without gap insurance, you're responsible for paying the difference between the insurance
-                  settlement and your remaining loan balance. Our calculator shows this "gap amount" if you
-                  enter your current loan balance.
+                  {t('gapInsuranceNote')}
                 </p>
 
                 <h3 className="text-2xl font-semibold text-slate-900 mt-12 mb-4">
-                  Keeping Your Totaled Vehicle
+                  {t('keepVehicleTitle')}
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  In most states, you can choose to keep your totaled vehicle. The insurance company will
-                  deduct the salvage value from your settlement. However, consider these factors:
+                  {t('keepVehicleIntro')}
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-slate-600 mb-8">
-                  <li>Your car will receive a salvage or rebuilt title, significantly reducing resale value</li>
-                  <li>Some insurers won't provide comprehensive/collision coverage on salvage title vehicles</li>
-                  <li>You'll need to pass a rebuilt vehicle inspection before driving it legally</li>
-                  <li>Repairs may reveal additional hidden damage that increases costs</li>
-                  <li>Future safety and reliability concerns should be evaluated by a mechanic</li>
+                  <li>{t('keep1')}</li>
+                  <li>{t('keep2')}</li>
+                  <li>{t('keep3')}</li>
+                  <li>{t('keep4')}</li>
+                  <li>{t('keep5')}</li>
                 </ul>
               </div>
             </div>
@@ -632,10 +591,10 @@ export default function TotalLossCalculatorPage() {
               <div className="text-center mb-12">
                 <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-4 py-2 mb-4">
                   <HelpCircle className="w-4 h-4 text-brand-600" />
-                  <span className="text-sm font-medium text-slate-700">Common Questions</span>
+                  <span className="text-sm font-medium text-slate-700">{t('faqBadge')}</span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
-                  Total Loss FAQ
+                  {t('faqTitle')}
                 </h2>
               </div>
 
@@ -659,18 +618,17 @@ export default function TotalLossCalculatorPage() {
           <div className="container mx-auto px-4 text-center">
             <Shield className="w-12 h-12 mx-auto mb-6 text-brand-200" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Need Help With Your Total Loss Claim?
+              {t('ctaTitle')}
             </h2>
             <p className="text-xl text-brand-100 mb-8 max-w-2xl mx-auto">
-              If you've been in an accident and your car may be totaled, our AI Damage Analyzer can help
-              you understand your situation and options.
+              {t('ctaDescription')}
             </p>
-            <a
+            <Link
               href="/ai-damage-analyzer"
               className="inline-flex items-center gap-2 bg-white text-brand-600 px-8 py-4 rounded-lg font-semibold hover:bg-brand-50 transition-colors"
             >
-              Get Free AI Analysis <Calculator className="w-5 h-5" />
-            </a>
+              {t('ctaButton')} <Calculator className="w-5 h-5" />
+            </Link>
           </div>
         </section>
       </main>

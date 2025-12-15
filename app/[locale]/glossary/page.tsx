@@ -1,9 +1,10 @@
 import React from 'react'
 import { Metadata } from 'next'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
-import { BookOpen, Search, ArrowRight, ChevronRight } from 'lucide-react'
+import { BookOpen, ArrowRight, ChevronRight } from 'lucide-react'
+import { getTranslations } from 'next-intl/server'
 
 export const metadata: Metadata = {
   title: 'Car Accident & Insurance Glossary | Collision Help',
@@ -361,7 +362,9 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
 const activeLetters = Object.keys(glossaryTerms).sort()
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 
-export default function GlossaryPage() {
+export default async function GlossaryPage() {
+  const t = await getTranslations('glossaryPage')
+
   // JSON-LD schema
   const jsonLd = {
     "@context": "https://schema.org",
@@ -390,14 +393,13 @@ export default function GlossaryPage() {
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 bg-brand-500/20 border border-brand-400/30 rounded-full px-4 py-2 mb-6">
                 <BookOpen className="w-4 h-4 text-brand-400" />
-                <span className="text-sm font-medium text-brand-300">Reference Guide</span>
+                <span className="text-sm font-medium text-brand-300">{t('badge')}</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Car Accident & Insurance <span className="text-brand-400">Glossary</span>
+                {t('title')}
               </h1>
               <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
-                Understanding insurance terminology is crucial when navigating a car accident claim.
-                Use this glossary to decode the jargon and protect your rights.
+                {t('description')}
               </p>
             </div>
           </div>
@@ -473,25 +475,24 @@ export default function GlossaryPage() {
           <div className="container mx-auto px-4 text-center">
             <BookOpen className="w-12 h-12 mx-auto mb-6 text-brand-200" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Need Help With Your Claim?
+              {t('needHelpTitle')}
             </h2>
             <p className="text-xl text-brand-100 mb-8 max-w-2xl mx-auto">
-              Now that you understand the terminology, explore our comprehensive guides
-              or use our free tools to help with your claim.
+              {t('needHelpDesc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/guides"
                 className="inline-flex items-center gap-2 bg-white text-brand-600 px-6 py-3 rounded-lg font-semibold hover:bg-brand-50 transition-colors"
               >
-                Browse Guides
+                {t('browseGuides')}
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 href="/tools/settlement-calculator"
                 className="inline-flex items-center gap-2 bg-brand-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-800 transition-colors border border-brand-500"
               >
-                Settlement Calculator
+                {t('settlementCalculator')}
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
