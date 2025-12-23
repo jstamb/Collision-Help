@@ -26,6 +26,7 @@ export default function Footer() {
     resources: [
       { name: t('footer.resourcesHub'), href: '/resources' },
       { name: t('nav.glossary'), href: '/glossary' },
+      { name: t('footer.blog'), href: '/blog' },
     ],
     states: [
       { name: 'California', href: '/locations/california' },
