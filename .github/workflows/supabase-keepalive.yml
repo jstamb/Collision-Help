@@ -12,12 +12,15 @@ jobs:
     steps:
       - name: Ping Supabase Database
         run: |
-          response=$(curl -s -o /dev/null -w "%{http_code}" \
+          response=$(curl -sL -o /dev/null -w "%{http_code}" \
             -X GET "${{ secrets.SUPABASE_URL }}/rest/v1/" \
             -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
             -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}")
 
-          if [ "$response" -eq 200 ]; then
+          echo "HTTP Response: $response"
+
+          # Accept any 2xx or 3xx response as success
+          if [ "$response" -ge 200 ] && [ "$response" -lt 400 ]; then
             echo "Supabase ping successful (HTTP $response)"
           else
             echo "Supabase ping failed (HTTP $response)"
