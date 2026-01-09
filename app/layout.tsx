@@ -6,6 +6,7 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 
 const GA_MEASUREMENT_ID = 'G-VYBCK94B6J';
+const CRONITOR_CLIENT_KEY = 'bee8bc73945613102aa5723071fcc965';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -58,6 +59,17 @@ export default async function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
+        {/* Cronitor RUM */}
+        <Script
+          src="https://rum.cronitor.io/script.js"
+          strategy="lazyOnload"
+        />
+        <Script id="cronitor-rum" strategy="lazyOnload">
+          {`
+            window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+            cronitor('config', { clientKey: '${CRONITOR_CLIENT_KEY}' });
           `}
         </Script>
       </head>
