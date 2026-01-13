@@ -83,8 +83,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   )
 
-  // Lawyer pages (high priority conversion pages)
-  const lawyerPaths = Object.entries(lawyerPagesByState).flatMap(([stateSlug, pages]) =>
+  // Lawyer hub page (main)
+  const lawyerHubPath = [
+    { path: '/car-accident-lawyer', changeFrequency: 'weekly' as const, priority: 0.9 },
+  ]
+
+  // Lawyer state hub pages
+  const lawyerStateHubPaths = Object.keys(lawyerPagesByState).map((stateSlug) => ({
+    path: `/car-accident-lawyer/${stateSlug}`,
+    changeFrequency: 'weekly' as const,
+    priority: 0.85,
+  }))
+
+  // Lawyer city pages (high priority conversion pages)
+  const lawyerCityPaths = Object.entries(lawyerPagesByState).flatMap(([stateSlug, pages]) =>
     pages.map((page) => ({
       path: `/car-accident-lawyer/${stateSlug}/${page.slug}`,
       changeFrequency: 'weekly' as const,
@@ -100,7 +112,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...articlePaths,
     ...statePaths,
     ...cityPaths,
-    ...lawyerPaths,
+    ...lawyerHubPath,
+    ...lawyerStateHubPaths,
+    ...lawyerCityPaths,
   ]
 
   // Generate URLs for all locales
@@ -123,7 +137,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     console.log(`  - Article pages: ${articlePaths.length * locales.length}`)
     console.log(`  - State pages: ${statePaths.length * locales.length}`)
     console.log(`  - City pages: ${cityPaths.length * locales.length}`)
-    console.log(`  - Lawyer pages: ${lawyerPaths.length * locales.length}`)
+    console.log(`  - Lawyer hub: ${lawyerHubPath.length * locales.length}`)
+    console.log(`  - Lawyer state hubs: ${lawyerStateHubPaths.length * locales.length}`)
+    console.log(`  - Lawyer city pages: ${lawyerCityPaths.length * locales.length}`)
   }
 
   return allPages

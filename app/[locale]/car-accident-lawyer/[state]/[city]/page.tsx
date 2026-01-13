@@ -256,9 +256,9 @@ export default async function LawyerCityPage({ params }: PageProps) {
               <nav className="flex items-center justify-center gap-2 text-blue-200 text-sm mb-6">
                 <Link href="/" className="hover:text-white">Home</Link>
                 <ChevronRight className="w-4 h-4" />
-                <span>Car Accident Lawyer</span>
+                <Link href="/car-accident-lawyer" className="hover:text-white">Car Accident Lawyer</Link>
                 <ChevronRight className="w-4 h-4" />
-                <span>{page.stateFull}</span>
+                <Link href={`/car-accident-lawyer/${page.state}`} className="hover:text-white">{page.stateFull}</Link>
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">{page.cityName}</span>
               </nav>
