@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import { pillars } from '@/content/guides/pillars'
 import { states } from '@/content/locations/states'
 import { citiesByState } from '@/content/locations/cities'
+import { lawyerPagesByState } from '@/content/lawyers/lawyer-pages'
 import { locales } from '@/i18n/config'
 
 const BASE_URL = 'https://collisionhelp.org'
@@ -82,6 +83,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   )
 
+  // Lawyer pages (high priority conversion pages)
+  const lawyerPaths = Object.entries(lawyerPagesByState).flatMap(([stateSlug, pages]) =>
+    pages.map((page) => ({
+      path: `/car-accident-lawyer/${stateSlug}/${page.slug}`,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    }))
+  )
+
   // Combine all paths
   const allPaths = [
     ...staticPaths,
@@ -90,6 +100,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...articlePaths,
     ...statePaths,
     ...cityPaths,
+    ...lawyerPaths,
   ]
 
   // Generate URLs for all locales
@@ -112,6 +123,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     console.log(`  - Article pages: ${articlePaths.length * locales.length}`)
     console.log(`  - State pages: ${statePaths.length * locales.length}`)
     console.log(`  - City pages: ${cityPaths.length * locales.length}`)
+    console.log(`  - Lawyer pages: ${lawyerPaths.length * locales.length}`)
   }
 
   return allPages

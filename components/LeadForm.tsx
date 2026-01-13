@@ -35,6 +35,8 @@ const Step1Schema = z.object({
 const Step3Schema = z.object({
   concerns: z.array(z.string()).min(1, 'Please select at least one concern'),
   dateRange: z.string().min(1, 'Please select when this happened'),
+  seatbeltFailed: z.enum(['yes', 'no', 'not_sure']).optional(),
+  airbagFailed: z.enum(['yes', 'no', 'not_sure']).optional(),
 })
 
 const Step4Schema = z.object({
@@ -183,6 +185,8 @@ export default function LeadForm({ defaultState }: { defaultState?: string }) {
           vehicle_type: data.vehicleType,
           date_range: data.dateRange,
           concerns: data.concerns,
+          seatbelt_failed: data.seatbeltFailed || 'not_answered',
+          airbag_failed: data.airbagFailed || 'not_answered',
         },
         contact: {
           name: data.name,
@@ -432,6 +436,77 @@ export default function LeadForm({ defaultState }: { defaultState?: string }) {
                     <option value="older">Over a month ago</option>
                   </select>
                   {errors.dateRange && <p className="text-red-500 text-sm">{errors.dateRange.message}</p>}
+                </div>
+
+                {/* Safety Equipment Failure - High Value Lead Questions */}
+                <div className="p-4 bg-amber-50 border border-amber-200 rounded-xl space-y-6">
+                  <div className="flex items-start gap-3">
+                    <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="font-medium text-slate-900">Safety Equipment Questions</p>
+                      <p className="text-sm text-slate-600">If your safety equipment failed during the crash, you may have additional legal options against the manufacturer.</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <label className="text-base font-medium text-slate-900 block">
+                      Did your seat belt fail or malfunction during the crash?
+                    </label>
+                    <div className="grid grid-cols-3 gap-3">
+                      {['yes', 'no', 'not_sure'].map((opt) => (
+                        <label
+                          key={`seatbelt-${opt}`}
+                          className={cn(
+                            "cursor-pointer border rounded-lg p-3 text-center hover:bg-white transition-all text-sm",
+                            watch('seatbeltFailed') === opt
+                              ? "border-brand-500 bg-white ring-1 ring-brand-500"
+                              : "border-slate-200 bg-white/50"
+                          )}
+                        >
+                          <input
+                            type="radio"
+                            value={opt}
+                            {...register('seatbeltFailed')}
+                            className="sr-only"
+                          />
+                          <span className="capitalize font-medium text-slate-700">
+                            {opt === 'not_sure' ? "Not Sure" : opt.charAt(0).toUpperCase() + opt.slice(1)}
+                          </span>
+                        </label>
+                      ))}
+                    </div>
+                    <p className="text-xs text-slate-500">Examples: seat belt unbuckled on impact, didn't lock properly, ripped or tore</p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <label className="text-base font-medium text-slate-900 block">
+                      Did your airbag fail to deploy or malfunction?
+                    </label>
+                    <div className="grid grid-cols-3 gap-3">
+                      {['yes', 'no', 'not_sure'].map((opt) => (
+                        <label
+                          key={`airbag-${opt}`}
+                          className={cn(
+                            "cursor-pointer border rounded-lg p-3 text-center hover:bg-white transition-all text-sm",
+                            watch('airbagFailed') === opt
+                              ? "border-brand-500 bg-white ring-1 ring-brand-500"
+                              : "border-slate-200 bg-white/50"
+                          )}
+                        >
+                          <input
+                            type="radio"
+                            value={opt}
+                            {...register('airbagFailed')}
+                            className="sr-only"
+                          />
+                          <span className="capitalize font-medium text-slate-700">
+                            {opt === 'not_sure' ? "Not Sure" : opt.charAt(0).toUpperCase() + opt.slice(1)}
+                          </span>
+                        </label>
+                      ))}
+                    </div>
+                    <p className="text-xs text-slate-500">Examples: airbag didn't deploy, deployed late, deployed with excessive force</p>
+                  </div>
                 </div>
               </motion.div>
             )}

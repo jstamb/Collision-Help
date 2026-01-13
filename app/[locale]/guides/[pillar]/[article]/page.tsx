@@ -63,15 +63,7 @@ const crossPillarLinks: Record<string, { pillar: string; articles: string[] }[]>
     { pillar: 'state-insurance-laws', articles: ['comparative-negligence-states'] },
     { pillar: 'accident-injuries', articles: ['pain-and-suffering'] }
   ],
-  // Rear-End Collisions links
-  'rear-end-collisions/rear-end-collision-fault': [
-    { pillar: 'fault-determination', articles: ['fault-percentage-explained'] },
-    { pillar: 'accident-injuries', articles: ['whiplash-treatment'] }
-  ],
-  'rear-end-collisions/whiplash-claims': [
-    { pillar: 'accident-injuries', articles: ['common-car-accident-injuries', 'delayed-injury-symptoms'] },
-    { pillar: 'insurance-claims', articles: ['how-long-insurance-claim-takes'] }
-  ],
+  // Rear-End Collisions links - moved to end with defective equipment links
   // Accident Injuries links
   'accident-injuries/common-car-accident-injuries': [
     { pillar: 'rear-end-collisions', articles: ['whiplash-claims'] },
@@ -142,6 +134,67 @@ const crossPillarLinks: Record<string, { pillar: string; articles: string[] }[]>
   'dangerous-roads/intersection-accident-claims': [
     { pillar: 't-bone-accidents', articles: ['t-bone-collision-fault'] },
     { pillar: 'fault-determination', articles: ['dispute-fault-determination'] }
+  ],
+  // Defective Safety Equipment links
+  'defective-safety-equipment/seat-belt-failure-lawsuit': [
+    { pillar: 'rear-end-collisions', articles: ['rear-end-collision-fault', 'whiplash-claims'] },
+    { pillar: 'accident-injuries', articles: ['common-car-accident-injuries'] }
+  ],
+  'defective-safety-equipment/airbag-didnt-deploy-can-you-sue': [
+    { pillar: 'rear-end-collisions', articles: ['rear-end-collision-fault'] },
+    { pillar: 'accident-injuries', articles: ['traumatic-brain-injury', 'common-car-accident-injuries'] }
+  ],
+  'defective-safety-equipment/sue-car-manufacturer-defective-safety-equipment': [
+    { pillar: 'insurance-claims', articles: ['insurance-claim-denied'] },
+    { pillar: 'state-insurance-laws', articles: ['statute-of-limitations-by-state'] }
+  ],
+  'defective-safety-equipment/seat-belt-failure-settlement-amounts': [
+    { pillar: 'accident-injuries', articles: ['pain-and-suffering'] },
+    { pillar: 'rear-end-collisions', articles: ['whiplash-claims'] }
+  ],
+  'defective-safety-equipment/airbag-failure-lawsuit-settlements': [
+    { pillar: 'accident-injuries', articles: ['traumatic-brain-injury', 'pain-and-suffering'] },
+    { pillar: 't-bone-accidents', articles: ['side-impact-injuries'] }
+  ],
+  'defective-safety-equipment/types-of-seat-belt-defects': [
+    { pillar: 'rear-end-collisions', articles: ['rear-end-collision-fault'] },
+    { pillar: 'insurance-claims', articles: ['documenting-accident-damage'] }
+  ],
+  'defective-safety-equipment/preserve-evidence-equipment-failure': [
+    { pillar: 'insurance-claims', articles: ['documenting-accident-damage', 'what-to-do-after-accident'] },
+    { pillar: 'repair-rights', articles: ['choose-your-own-shop'] }
+  ],
+  'defective-safety-equipment/product-liability-vs-car-accident-claims': [
+    { pillar: 'fault-determination', articles: ['at-fault-vs-no-fault-states'] },
+    { pillar: 'insurance-claims', articles: ['dealing-with-other-drivers-insurance'] }
+  ],
+  'defective-safety-equipment/rear-end-collision-seat-belt-failure': [
+    { pillar: 'rear-end-collisions', articles: ['rear-end-collision-fault', 'low-speed-rear-end', 'whiplash-claims'] },
+    { pillar: 'accident-injuries', articles: ['common-car-accident-injuries'] }
+  ],
+  'defective-safety-equipment/takata-airbag-recall-lawsuits': [
+    { pillar: 'insurance-claims', articles: ['what-to-do-after-accident'] },
+    { pillar: 'accident-injuries', articles: ['common-car-accident-injuries'] }
+  ],
+  // Add reverse links: from rear-end articles to defective equipment
+  'rear-end-collisions/rear-end-collision-fault': [
+    { pillar: 'fault-determination', articles: ['fault-percentage-explained'] },
+    { pillar: 'accident-injuries', articles: ['whiplash-treatment'] },
+    { pillar: 'defective-safety-equipment', articles: ['rear-end-collision-seat-belt-failure', 'seat-belt-failure-lawsuit'] }
+  ],
+  'rear-end-collisions/whiplash-claims': [
+    { pillar: 'accident-injuries', articles: ['common-car-accident-injuries', 'delayed-injury-symptoms'] },
+    { pillar: 'insurance-claims', articles: ['how-long-insurance-claim-takes'] },
+    { pillar: 'defective-safety-equipment', articles: ['seat-belt-failure-lawsuit'] }
+  ],
+  'rear-end-collisions/low-speed-rear-end': [
+    { pillar: 'accident-injuries', articles: ['delayed-injury-symptoms'] },
+    { pillar: 'defective-safety-equipment', articles: ['rear-end-collision-seat-belt-failure'] }
+  ],
+  // Add links from injury articles to defective equipment
+  'accident-injuries/traumatic-brain-injury': [
+    { pillar: 'defective-safety-equipment', articles: ['airbag-didnt-deploy-can-you-sue', 'airbag-failure-lawsuit-settlements'] },
+    { pillar: 't-bone-accidents', articles: ['side-impact-injuries'] }
   ]
 }
 

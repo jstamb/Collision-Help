@@ -2072,6 +2072,1928 @@ export const californiaCities: CityData[] = [
       "Central Valley accident attorney",
       "Modesto traffic collision"
     ]
+  },
+
+  {
+    slug: "huntington-beach",
+    name: "Huntington Beach",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 198711,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 405",
+        description: "Major freeway connecting to Los Angeles and San Diego",
+        accidentHotspots: ["Beach Boulevard interchange", "Goldenwest Street", "Brookhurst Street"]
+      },
+      {
+        name: "Pacific Coast Highway (SR-1)",
+        description: "Coastal route through Huntington Beach with beach access traffic",
+        accidentHotspots: ["Main Street", "Beach Boulevard", "Goldenwest Street"]
+      },
+      {
+        name: "Beach Boulevard (SR-39)",
+        description: "Primary north-south arterial through central Huntington Beach",
+        accidentHotspots: ["I-405 interchange", "Edinger Avenue", "Talbert Avenue"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown/Main Street", characteristics: "Tourist area, beach traffic, nightlife congestion" },
+      { name: "Bolsa Chica", characteristics: "Wetlands area, residential, nature preserve access" },
+      { name: "Seacliff", characteristics: "Beachfront homes, PCH access, visitor parking issues" },
+      { name: "Huntington Harbour", characteristics: "Waterfront community, boat traffic, island access" },
+      { name: "Edwards/South", characteristics: "Residential neighborhoods, school zones" }
+    ],
+
+    trafficPatterns: [
+      { type: "Beach Traffic", description: "Summer weekends bring severe congestion on PCH and Beach Blvd" },
+      { type: "Surfing Events", description: "US Open of Surfing and competitions create downtown gridlock" },
+      { type: "I-405 Commuters", description: "Heavy morning and evening commute traffic" },
+      { type: "Sunset Traffic", description: "Evening beach exodus creates dangerous conditions" }
+    ],
+
+    annualAccidents: 2800,
+    accidentYear: 2023,
+    fatalAccidents: 15,
+
+    commonAccidentTypes: [
+      "PCH pedestrian and cyclist accidents",
+      "I-405 rear-end collisions during commute",
+      "Tourist-related distracted driving accidents",
+      "Parking lot accidents near beaches",
+      "DUI accidents in downtown area",
+      "Bicycle accidents on coastal paths"
+    ],
+
+    dangerousIntersections: [
+      "PCH & Beach Boulevard",
+      "Beach Boulevard & Edinger Avenue",
+      "PCH & Goldenwest Street",
+      "Beach Boulevard & Warner Avenue",
+      "PCH & Main Street"
+    ],
+
+    policeNonEmergency: "(714) 960-8811",
+
+    introText: "Huntington Beach, known as Surf City USA, is a popular coastal destination in Orange County. The city sees heavy tourist traffic, especially during summer months and surfing events. Pacific Coast Highway runs through the city, creating pedestrian and cyclist risks. California's pure comparative negligence system applies to all accident claims.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Orange County Superior Court handles cases",
+      "High tourist traffic increases accident risk year-round",
+      "Beach parking lots see frequent minor collisions",
+      "PCH has high pedestrian and cyclist accident rates",
+      "Rental car and rideshare accidents common near beaches"
+    ],
+
+    weatherFactors: [
+      "Marine layer fog reduces visibility on PCH during mornings",
+      "Sunset glare creates dangerous driving conditions westbound",
+      "Rain is rare but causes extremely slippery roads when it occurs",
+      "Santa Ana winds can affect vehicle control and visibility"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Beach-adjacent parking restrictions during summer",
+      "Right turn on red permitted unless posted otherwise"
+    ],
+
+    metaTitle: "Huntington Beach Car Accident Help | Orange County Collision Guide",
+    metaDescription: "Huntington Beach car accident assistance. Navigate PCH accidents, I-405 collisions, and beach traffic incidents. Understand California insurance laws. Free guidance for Surf City accident victims.",
+    keywords: [
+      "Huntington Beach car accident",
+      "Huntington Beach accident lawyer",
+      "PCH accident Huntington Beach",
+      "Orange County car crash",
+      "Surf City traffic collision",
+      "I-405 Huntington Beach accident"
+    ]
+  },
+
+  {
+    slug: "santa-rosa",
+    name: "Santa Rosa",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 178127,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "US-101",
+        description: "Primary north-south freeway through Sonoma County",
+        accidentHotspots: ["Downtown interchange", "Rohnert Park junction", "Santa Rosa Avenue exit"]
+      },
+      {
+        name: "State Route 12",
+        description: "East-west route connecting to Napa and the coast",
+        accidentHotspots: ["US-101 interchange", "Farmers Lane", "Calistoga Road"]
+      },
+      {
+        name: "State Route 116",
+        description: "Western route to Sebastopol and the coast",
+        accidentHotspots: ["Guerneville Road intersection", "Wright Road", "Sebastopol city limits"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Santa Rosa", characteristics: "Business district, courthouse area, redevelopment zones" },
+      { name: "Fountaingrove", characteristics: "Hillside residential, fire-affected area, limited evacuation routes" },
+      { name: "Rincon Valley", characteristics: "Eastern residential, Annadel State Park access, winding roads" },
+      { name: "Southwest Santa Rosa", characteristics: "Working-class neighborhoods, higher traffic density" },
+      { name: "Railroad Square", characteristics: "Historic district, tourist area, pedestrian traffic" }
+    ],
+
+    trafficPatterns: [
+      { type: "Wine Country Tourism", description: "Weekend visitors create Highway 12 and downtown congestion" },
+      { type: "US-101 Commute", description: "Heavy north-south commuter traffic during peak hours" },
+      { type: "Fire Season", description: "Evacuation routes become critical during wildfire events" },
+      { type: "Agricultural Traffic", description: "Harvest season brings vineyard and farm equipment traffic" }
+    ],
+
+    annualAccidents: 3200,
+    accidentYear: 2023,
+    fatalAccidents: 22,
+
+    commonAccidentTypes: [
+      "US-101 high-speed collisions",
+      "Wine tasting related DUI accidents",
+      "Winding road accidents in surrounding hills",
+      "Pedestrian accidents in downtown and Railroad Square",
+      "Bicycle accidents on recreational paths",
+      "Fog-related multi-vehicle accidents"
+    ],
+
+    dangerousIntersections: [
+      "US-101 & Highway 12 interchange",
+      "Mendocino Avenue & College Avenue",
+      "Farmers Lane & Highway 12",
+      "Santa Rosa Avenue & Sebastopol Road",
+      "Fourth Street & Mendocino Avenue"
+    ],
+
+    policeNonEmergency: "(707) 528-5222",
+
+    introText: "Santa Rosa is the largest city in Wine Country and the seat of Sonoma County. The city serves as a hub for wine tourism traffic and commuters traveling on US-101. Winding roads in surrounding hills, fog conditions, and wine tasting-related DUI accidents create unique risks. California's pure comparative negligence system applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Sonoma County Superior Court handles cases",
+      "Wine Country tourism increases DUI accident rates",
+      "Winding roads require careful accident investigation",
+      "Fire season may affect evidence preservation",
+      "Agricultural equipment on rural roads common"
+    ],
+
+    weatherFactors: [
+      "Winter fog in valleys reduces visibility significantly",
+      "Rain on winding roads creates hydroplaning risks",
+      "Wildfire smoke impacts visibility and driver alertness",
+      "Frost on shaded roads during winter mornings"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Evacuation route restrictions during fire season",
+      "Agricultural equipment right-of-way rules"
+    ],
+
+    metaTitle: "Santa Rosa Car Accident Help | Sonoma County Collision Guide",
+    metaDescription: "Santa Rosa car accident assistance. Navigate US-101 accidents, Wine Country driving incidents, and fog-related collisions. Understand California insurance laws. Free guidance for Sonoma County accident victims.",
+    keywords: [
+      "Santa Rosa car accident",
+      "Santa Rosa accident lawyer",
+      "Sonoma County car crash",
+      "Wine Country accident attorney",
+      "US-101 Santa Rosa accident",
+      "Santa Rosa traffic collision"
+    ]
+  },
+
+  {
+    slug: "rancho-cucamonga",
+    name: "Rancho Cucamonga",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 177751,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 15",
+        description: "Major north-south freeway connecting to Las Vegas",
+        accidentHotspots: ["I-10 interchange", "Foothill Boulevard", "Base Line Road exit"]
+      },
+      {
+        name: "Interstate 10",
+        description: "East-west freeway through the Inland Empire",
+        accidentHotspots: ["I-15 interchange", "Haven Avenue", "Archibald Avenue exit"]
+      },
+      {
+        name: "Foothill Boulevard (Route 66)",
+        description: "Historic east-west arterial through the city",
+        accidentHotspots: ["Haven Avenue", "Archibald Avenue", "Vineyard Avenue"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Victoria Gardens", characteristics: "Major shopping and entertainment district, high pedestrian traffic" },
+      { name: "Alta Loma", characteristics: "Northern residential area, foothills, winding roads" },
+      { name: "Terra Vista", characteristics: "Master-planned community, parks, family-oriented" },
+      { name: "Etiwanda", characteristics: "Eastern area, equestrian community, rural feel" },
+      { name: "Haven District", characteristics: "Commercial corridor, freeway access, heavy traffic" }
+    ],
+
+    trafficPatterns: [
+      { type: "Inland Empire Commute", description: "Heavy traffic on I-10 and I-15 during rush hours" },
+      { type: "Victoria Gardens", description: "Shopping center creates weekend and holiday traffic" },
+      { type: "Las Vegas Corridor", description: "I-15 weekend traffic to and from Las Vegas" },
+      { type: "Logistics Traffic", description: "Distribution center trucks on major routes" }
+    ],
+
+    annualAccidents: 2600,
+    accidentYear: 2023,
+    fatalAccidents: 18,
+
+    commonAccidentTypes: [
+      "I-10/I-15 interchange collisions",
+      "Commercial truck accidents",
+      "Shopping center parking lot accidents",
+      "Pedestrian accidents near Victoria Gardens",
+      "High-speed freeway accidents on I-15",
+      "Rear-end collisions in heavy commute traffic"
+    ],
+
+    dangerousIntersections: [
+      "I-10 & I-15 interchange",
+      "Foothill Boulevard & Haven Avenue",
+      "Base Line Road & Archibald Avenue",
+      "Fourth Street & Milliken Avenue",
+      "Arrow Route & Archibald Avenue"
+    ],
+
+    policeNonEmergency: "(909) 477-2800",
+
+    introText: "Rancho Cucamonga is a rapidly growing city in the Inland Empire at the junction of I-10 and I-15. The city sees heavy commuter and logistics traffic, plus significant weekend travel to Las Vegas. Commercial truck accidents and freeway collisions are common concerns. California's pure comparative negligence system applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "San Bernardino County Superior Court handles cases",
+      "I-15 corridor sees heavy commercial truck traffic",
+      "Multiple jurisdictions at city borders may affect response",
+      "Warehouse district creates truck traffic concerns",
+      "Weekend Las Vegas traffic increases I-15 accident risk"
+    ],
+
+    weatherFactors: [
+      "Santa Ana winds create hazardous driving conditions",
+      "Summer heat in Inland Empire can cause vehicle issues",
+      "Occasional fog in morning hours affects visibility",
+      "Rain is rare but creates very slippery conditions"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Truck weight stations on I-15 corridor",
+      "Right turn on red permitted unless posted"
+    ],
+
+    metaTitle: "Rancho Cucamonga Car Accident Help | San Bernardino County Guide",
+    metaDescription: "Rancho Cucamonga car accident assistance. Navigate I-10 and I-15 interchange accidents, commercial truck collisions. Understand California insurance laws. Free guidance for Inland Empire accident victims.",
+    keywords: [
+      "Rancho Cucamonga car accident",
+      "Rancho Cucamonga accident lawyer",
+      "I-10 I-15 accident",
+      "San Bernardino County car crash",
+      "Inland Empire accident attorney",
+      "Rancho Cucamonga traffic collision"
+    ]
+  },
+
+  {
+    slug: "ontario",
+    name: "Ontario",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 175265,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 10",
+        description: "Major east-west freeway through Ontario",
+        accidentHotspots: ["I-15 interchange", "Vineyard Avenue", "Ontario Mills"]
+      },
+      {
+        name: "Interstate 15",
+        description: "North-south route connecting to I-10 and Las Vegas",
+        accidentHotspots: ["I-10 interchange", "Fourth Street", "Jurupa Street"]
+      },
+      {
+        name: "State Route 60",
+        description: "Eastern freeway option connecting to Riverside",
+        accidentHotspots: ["I-15 interchange", "Archibald Avenue", "Milliken Avenue"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Ontario Mills Area", characteristics: "Major shopping destination, high traffic, parking lot accidents" },
+      { name: "Airport Area", characteristics: "Ontario International Airport, commercial, logistics heavy" },
+      { name: "Downtown Ontario", characteristics: "Historic district, pedestrian areas, community events" },
+      { name: "Creekside", characteristics: "Newer residential development, Cucamonga Creek area" },
+      { name: "Mountain Village", characteristics: "Northern residential, near foothills" }
+    ],
+
+    trafficPatterns: [
+      { type: "Airport Traffic", description: "Ontario International creates constant commercial traffic" },
+      { type: "Logistics Hub", description: "Distribution centers generate heavy truck traffic" },
+      { type: "Ontario Mills", description: "Shopping center creates weekend and holiday congestion" },
+      { type: "Convention Traffic", description: "Ontario Convention Center events add periodic traffic" }
+    ],
+
+    annualAccidents: 3100,
+    accidentYear: 2023,
+    fatalAccidents: 24,
+
+    commonAccidentTypes: [
+      "Commercial truck accidents near logistics centers",
+      "I-10 high-speed collisions",
+      "Ontario Mills parking lot accidents",
+      "Airport-related rental car accidents",
+      "Pedestrian accidents in shopping areas",
+      "Rear-end collisions in commute traffic"
+    ],
+
+    dangerousIntersections: [
+      "I-10 & I-15 interchange",
+      "Milliken Avenue & Fourth Street",
+      "Haven Avenue & Ontario Mills",
+      "Vineyard Avenue & I-10",
+      "Archibald Avenue & Fourth Street"
+    ],
+
+    policeNonEmergency: "(909) 986-6711",
+
+    introText: "Ontario is a major logistics and transportation hub in the Inland Empire, home to Ontario International Airport and numerous distribution centers. The convergence of I-10, I-15, and SR-60 creates heavy commercial truck traffic. Shopping centers and the airport add to traffic complexity. California's pure comparative negligence system applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "San Bernardino County Superior Court handles cases",
+      "High commercial truck traffic creates serious accident risk",
+      "Airport-related accidents may involve rental car companies",
+      "Logistics center accidents may have employer liability",
+      "Multiple freeways create complex accident scenarios"
+    ],
+
+    weatherFactors: [
+      "Santa Ana winds affect vehicle control and visibility",
+      "Summer heat can cause tire blowouts on freeways",
+      "Morning fog occasionally reduces visibility",
+      "Air quality issues may affect driver alertness"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Commercial truck restrictions on certain routes",
+      "Airport access road speed limits"
+    ],
+
+    metaTitle: "Ontario Car Accident Help | San Bernardino County Collision Guide",
+    metaDescription: "Ontario CA car accident assistance. Navigate I-10 and I-15 accidents, commercial truck collisions, and airport area incidents. Understand California insurance laws. Free guidance for Ontario accident victims.",
+    keywords: [
+      "Ontario CA car accident",
+      "Ontario California accident lawyer",
+      "I-10 Ontario accident",
+      "Inland Empire truck accident",
+      "Ontario Mills car crash",
+      "Ontario traffic collision"
+    ]
+  },
+
+  {
+    slug: "elk-grove",
+    name: "Elk Grove",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 176124,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "State Route 99",
+        description: "Primary north-south route connecting to Sacramento",
+        accidentHotspots: ["Elk Grove Boulevard", "Laguna Boulevard", "Bond Road"]
+      },
+      {
+        name: "Interstate 5",
+        description: "Western border freeway connecting to Sacramento and Stockton",
+        accidentHotspots: ["Elk Grove Boulevard", "Hood Franklin Road", "Laguna Boulevard"]
+      },
+      {
+        name: "Elk Grove Boulevard",
+        description: "Major east-west arterial through the city center",
+        accidentHotspots: ["Highway 99", "Big Horn Boulevard", "Bruceville Road"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Old Town Elk Grove", characteristics: "Historic downtown, community events, pedestrian activity" },
+      { name: "Laguna", characteristics: "Newer development, master-planned, high school traffic" },
+      { name: "Sheldon", characteristics: "Eastern residential, rural transition area" },
+      { name: "Franklin", characteristics: "Western area, I-5 access, newer development" },
+      { name: "East Franklin", characteristics: "Growing residential area, family oriented" }
+    ],
+
+    trafficPatterns: [
+      { type: "Sacramento Commute", description: "Heavy morning and evening traffic on Highway 99" },
+      { type: "School Traffic", description: "Multiple high schools create significant congestion" },
+      { type: "Outlet Shopping", description: "Seattle Premium Outlets brings weekend visitors" },
+      { type: "Agricultural", description: "Farm equipment on eastern roads during seasons" }
+    ],
+
+    annualAccidents: 2400,
+    accidentYear: 2023,
+    fatalAccidents: 16,
+
+    commonAccidentTypes: [
+      "Highway 99 high-speed collisions",
+      "Rear-end accidents in commuter traffic",
+      "School zone accidents",
+      "Teen driver accidents near high schools",
+      "Pedestrian accidents in Old Town",
+      "Agricultural equipment conflicts on rural roads"
+    ],
+
+    dangerousIntersections: [
+      "Highway 99 & Elk Grove Boulevard",
+      "Elk Grove Boulevard & Big Horn Boulevard",
+      "Laguna Boulevard & Bruceville Road",
+      "Bond Road & Highway 99",
+      "Elk Grove Boulevard & Franklin Boulevard"
+    ],
+
+    policeNonEmergency: "(916) 714-5115",
+
+    introText: "Elk Grove is one of California's fastest-growing cities, located south of Sacramento. The city serves primarily as a bedroom community with heavy commuter traffic on Highway 99. School zones, suburban development patterns, and agricultural transitions create diverse traffic challenges. California's pure comparative negligence system applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Sacramento County Superior Court handles cases",
+      "Heavy commuter traffic to Sacramento increases accident risk",
+      "Multiple school zones require careful timing of accidents",
+      "Newer developments may have construction traffic",
+      "Agricultural equipment on eastern roads during harvest"
+    ],
+
+    weatherFactors: [
+      "Tule fog in winter creates extremely hazardous conditions",
+      "Summer heat can affect vehicle performance",
+      "Rain after long dry periods makes roads slippery",
+      "Valley air quality issues may affect visibility"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Agricultural equipment right-of-way rules",
+      "Enhanced school zone penalties"
+    ],
+
+    metaTitle: "Elk Grove Car Accident Help | Sacramento County Collision Guide",
+    metaDescription: "Elk Grove car accident assistance. Navigate Highway 99 accidents, school zone incidents, and commuter collisions. Understand California insurance laws. Free guidance for Elk Grove accident victims.",
+    keywords: [
+      "Elk Grove car accident",
+      "Elk Grove accident lawyer",
+      "Highway 99 Elk Grove accident",
+      "Sacramento County car crash",
+      "Elk Grove traffic collision",
+      "Elk Grove auto accident attorney"
+    ]
+  },
+
+  {
+    slug: "corona",
+    name: "Corona",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 157136,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 15",
+        description: "Major north-south freeway with heavy truck traffic",
+        accidentHotspots: ["SR-91 interchange", "Magnolia Avenue", "Ontario Avenue"]
+      },
+      {
+        name: "State Route 91",
+        description: "East-west route connecting Orange County to Inland Empire",
+        accidentHotspots: ["I-15 interchange", "Green River Road", "Lincoln Avenue"]
+      },
+      {
+        name: "State Route 71",
+        description: "Connection to Pomona and LA County",
+        accidentHotspots: ["SR-91 interchange", "Serfas Club Drive", "Magnolia Avenue"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Corona", characteristics: "Historic Circle City center, commercial, local events" },
+      { name: "North Corona", characteristics: "Older residential, school zones, neighborhood commercial" },
+      { name: "South Corona", characteristics: "Newer development, master-planned communities" },
+      { name: "Dos Lagos", characteristics: "Shopping and entertainment center, lake community" },
+      { name: "Corona Hills", characteristics: "Hillside residential, winding roads, limited access" }
+    ],
+
+    trafficPatterns: [
+      { type: "91 Corridor", description: "Notorious congestion from Orange County commuters" },
+      { type: "I-15 Commercial", description: "Heavy truck traffic on north-south corridor" },
+      { type: "Commuter Crunch", description: "Evening backup on SR-91 is among worst in nation" },
+      { type: "Event Traffic", description: "Glen Ivy and recreational destinations add weekend traffic" }
+    ],
+
+    annualAccidents: 2900,
+    accidentYear: 2023,
+    fatalAccidents: 21,
+
+    commonAccidentTypes: [
+      "SR-91 stop-and-go rear-end collisions",
+      "I-15/SR-91 interchange accidents",
+      "Commercial truck accidents",
+      "Fatigue-related accidents from long commutes",
+      "Motorcyclists injured lane-splitting in congestion",
+      "School zone accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-15 & SR-91 interchange",
+      "SR-91 & SR-71 interchange",
+      "Magnolia Avenue & I-15",
+      "Ontario Avenue & Main Street",
+      "Lincoln Avenue & Main Street"
+    ],
+
+    policeNonEmergency: "(951) 736-2330",
+
+    introText: "Corona sits at the junction of I-15 and SR-91, two of Southern California's most congested freeways. Known as Circle City, Corona is home to many commuters facing brutal drives to Orange and Los Angeles counties. The 91 Corridor is nationally known for severe congestion, leading to frequent rear-end and fatigue-related accidents. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Riverside County Superior Court handles cases",
+      "SR-91 congestion creates chronic accident conditions",
+      "Toll lane disputes may complicate some accidents",
+      "Heavy commercial truck traffic on I-15",
+      "Long commutes contribute to fatigue accidents"
+    ],
+
+    weatherFactors: [
+      "Santa Ana winds affect vehicle control",
+      "Summer heat causes mechanical failures and irritability",
+      "Morning fog in Santa Ana River corridor",
+      "Rain creates dangerous conditions on slick freeways"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Express toll lanes on SR-91 with complex rules",
+      "Commercial truck lane restrictions"
+    ],
+
+    metaTitle: "Corona Car Accident Help | Riverside County Collision Guide",
+    metaDescription: "Corona car accident assistance. Navigate the notorious 91 Corridor, I-15 truck accidents, and commuter collisions. Understand California insurance laws. Free guidance for Corona accident victims.",
+    keywords: [
+      "Corona car accident",
+      "Corona accident lawyer",
+      "91 Freeway accident Corona",
+      "I-15 Corona collision",
+      "Riverside County car crash",
+      "Corona traffic accident attorney"
+    ]
+  },
+
+  {
+    slug: "lancaster",
+    name: "Lancaster",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 173516,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "State Route 14",
+        description: "Primary freeway connecting to Los Angeles and Palmdale",
+        accidentHotspots: ["Avenue K", "Avenue L", "Avenue I"]
+      },
+      {
+        name: "State Route 138",
+        description: "East-west route through high desert",
+        accidentHotspots: ["SR-14 interchange", "10th Street West", "30th Street West"]
+      },
+      {
+        name: "Avenue I / Avenue J",
+        description: "Major east-west arterials through the city",
+        accidentHotspots: ["Sierra Highway", "10th Street West", "30th Street West"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Lancaster", characteristics: "BLVD district, transit center, urban development" },
+      { name: "West Lancaster", characteristics: "Newer development, master-planned communities" },
+      { name: "East Lancaster", characteristics: "Established neighborhoods, Sierra Highway corridor" },
+      { name: "Quartz Hill", characteristics: "Western residential, unincorporated pocket, winding roads" },
+      { name: "North Lancaster", characteristics: "Rural transition, aerospace industry access" }
+    ],
+
+    trafficPatterns: [
+      { type: "LA Commute", description: "Heavy SR-14 traffic to and from Los Angeles basin" },
+      { type: "Aerospace", description: "Edwards AFB and aerospace industry shift traffic" },
+      { type: "High Desert", description: "Long distances and high speeds characterize local driving" },
+      { type: "Solar Farm", description: "Industrial traffic to solar installations" }
+    ],
+
+    annualAccidents: 2700,
+    accidentYear: 2023,
+    fatalAccidents: 28,
+
+    commonAccidentTypes: [
+      "High-speed SR-14 collisions",
+      "Fatigue accidents from long LA commutes",
+      "Dust storm-related visibility accidents",
+      "Wrong-way accidents on divided highways",
+      "Motorcycle accidents on desert roads",
+      "Pedestrian accidents on high-speed arterials"
+    ],
+
+    dangerousIntersections: [
+      "Avenue I & Sierra Highway",
+      "Avenue K & 10th Street West",
+      "Avenue L & Division Street",
+      "Avenue J & 20th Street West",
+      "SR-14 & Avenue I interchange"
+    ],
+
+    policeNonEmergency: "(661) 948-8466",
+
+    introText: "Lancaster is the larger of the two Antelope Valley cities, located in the high desert north of Los Angeles. Long commutes on SR-14, high-speed desert roads, and extreme weather conditions create unique driving hazards. The city's aerospace and solar industries add commercial traffic to residential areas. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Los Angeles County Superior Court (North District) handles cases",
+      "Long commutes on SR-14 contribute to fatigue accidents",
+      "High-speed arterials increase accident severity",
+      "Desert conditions create unique investigation challenges",
+      "Aerospace contractor vehicles may have specific coverage"
+    ],
+
+    weatherFactors: [
+      "Dust storms can create zero-visibility conditions suddenly",
+      "Extreme summer heat (110°F+) causes vehicle failures",
+      "High winds affect vehicle control, especially trucks",
+      "Winter snow and ice on mountain passes (SR-14 south)",
+      "Temperature extremes cause road surface issues"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Edwards AFB may have jurisdiction for certain incidents",
+      "Commercial vehicle restrictions on certain routes"
+    ],
+
+    metaTitle: "Lancaster Car Accident Help | Antelope Valley Collision Guide",
+    metaDescription: "Lancaster car accident assistance. Navigate SR-14 commuter accidents, high desert road incidents, and dust storm collisions. Understand California insurance laws. Free guidance for Antelope Valley accident victims.",
+    keywords: [
+      "Lancaster car accident",
+      "Lancaster accident lawyer",
+      "SR-14 accident Lancaster",
+      "Antelope Valley car crash",
+      "High desert traffic collision",
+      "Lancaster auto accident attorney"
+    ]
+  },
+
+  {
+    slug: "palmdale",
+    name: "Palmdale",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 169450,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "State Route 14 (Antelope Valley Freeway)",
+        description: "Primary connection to Los Angeles through the mountains",
+        accidentHotspots: ["Palmdale Boulevard", "Avenue P", "Avenue S"]
+      },
+      {
+        name: "State Route 138",
+        description: "East-west mountain route to I-15",
+        accidentHotspots: ["Pearblossom area", "SR-14 junction", "Fort Tejon Road"]
+      },
+      {
+        name: "Palmdale Boulevard",
+        description: "Main commercial east-west arterial",
+        accidentHotspots: ["10th Street West", "Sierra Highway", "47th Street East"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Palmdale", characteristics: "Civic center, BLVD district, transit development" },
+      { name: "East Palmdale", characteristics: "Industrial areas, aerospace, Sierra Highway" },
+      { name: "West Palmdale", characteristics: "Residential growth areas, master-planned" },
+      { name: "Rancho Vista", characteristics: "Northern residential, rural transition" },
+      { name: "Lake Palmdale", characteristics: "Waterfront community, recreational area" }
+    ],
+
+    trafficPatterns: [
+      { type: "LA Commuters", description: "Heavy morning and evening SR-14 traffic" },
+      { type: "Aerospace Industry", description: "Lockheed Martin and defense contractor traffic" },
+      { type: "High Desert", description: "Long distances encourage high-speed driving" },
+      { type: "Mountain Pass", description: "SR-14 Angeles Forest section sees weather impacts" }
+    ],
+
+    annualAccidents: 2500,
+    accidentYear: 2023,
+    fatalAccidents: 26,
+
+    commonAccidentTypes: [
+      "SR-14 high-speed and mountain pass accidents",
+      "Commuter fatigue-related collisions",
+      "Dust storm visibility accidents",
+      "Pedestrian accidents on wide arterials",
+      "Commercial vehicle accidents in industrial areas",
+      "Wrong-way driver incidents"
+    ],
+
+    dangerousIntersections: [
+      "Palmdale Boulevard & 10th Street East",
+      "Avenue P & 10th Street West",
+      "Avenue S & Sierra Highway",
+      "Rancho Vista Boulevard & 25th Street West",
+      "SR-14 & Palmdale Boulevard interchange"
+    ],
+
+    policeNonEmergency: "(661) 267-5170",
+
+    introText: "Palmdale is the southern gateway to the Antelope Valley, with SR-14 providing the crucial link over the San Gabriel Mountains to Los Angeles. The city's aerospace industry and bedroom community status create heavy commuter traffic. Desert weather extremes and mountain pass conditions add to driving hazards. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Los Angeles County Superior Court (North District) handles cases",
+      "Mountain pass conditions on SR-14 create seasonal hazards",
+      "Aerospace contractor traffic may involve special vehicle types",
+      "Long commutes contribute to driver fatigue",
+      "Desert conditions affect evidence preservation"
+    ],
+
+    weatherFactors: [
+      "Mountain pass fog, snow, and ice on SR-14",
+      "Dust storms can strike without warning in desert areas",
+      "Extreme summer heat causes vehicle failures",
+      "High winds especially hazardous for high-profile vehicles",
+      "Sudden temperature changes in mountain passage"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Chain requirements on SR-14 during winter storms",
+      "Commercial truck restrictions on mountain grades"
+    ],
+
+    metaTitle: "Palmdale Car Accident Help | Antelope Valley Collision Guide",
+    metaDescription: "Palmdale car accident assistance. Navigate SR-14 mountain pass accidents, high desert collisions, and commuter incidents. Understand California insurance laws. Free guidance for Palmdale accident victims.",
+    keywords: [
+      "Palmdale car accident",
+      "Palmdale accident lawyer",
+      "SR-14 Palmdale accident",
+      "Antelope Valley car crash",
+      "Los Angeles County desert accident",
+      "Palmdale traffic collision attorney"
+    ]
+  },
+
+  {
+    slug: "salinas",
+    name: "Salinas",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 163542,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "US-101",
+        description: "Primary north-south freeway through the Salinas Valley",
+        accidentHotspots: ["Main Street exit", "Market Street", "Airport Boulevard"]
+      },
+      {
+        name: "State Route 68",
+        description: "Connection to Monterey Peninsula",
+        accidentHotspots: ["Blanco Road", "Reservation Road", "Canyon Del Rey"]
+      },
+      {
+        name: "State Route 183",
+        description: "Route to Castroville and Highway 1",
+        accidentHotspots: ["Abbott Street", "Davis Road", "Castroville area"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Salinas", characteristics: "Historic Oldtown, Steinbeck Center, urban core" },
+      { name: "Alisal", characteristics: "East Salinas, working-class, agricultural workforce" },
+      { name: "Creekbridge", characteristics: "East-side development, master-planned" },
+      { name: "North Salinas", characteristics: "Commercial corridor, Northridge shopping" },
+      { name: "Harden Ranch", characteristics: "Western residential, golf course community" }
+    ],
+
+    trafficPatterns: [
+      { type: "Agricultural", description: "Heavy farm equipment and truck traffic during harvest" },
+      { type: "Monterey Commute", description: "Workers travel Highway 68 to tourism jobs" },
+      { type: "Seasonal Workers", description: "Population fluctuates with agricultural seasons" },
+      { type: "Truck Corridor", description: "Produce trucks use US-101 heavily" }
+    ],
+
+    annualAccidents: 2200,
+    accidentYear: 2023,
+    fatalAccidents: 19,
+
+    commonAccidentTypes: [
+      "Agricultural truck accidents",
+      "US-101 high-speed collisions",
+      "Farm equipment on rural roads",
+      "Pedestrian accidents in urban core",
+      "Fog-related multi-vehicle accidents",
+      "Highway 68 mountain road accidents"
+    ],
+
+    dangerousIntersections: [
+      "US-101 & Market Street interchange",
+      "Main Street & Abbott Street",
+      "Blanco Road & Highway 68",
+      "East Alisal Street & Williams Road",
+      "North Main Street & Boronda Road"
+    ],
+
+    policeNonEmergency: "(831) 758-7321",
+
+    introText: "Salinas is the agricultural heart of California's Salinas Valley, often called the 'Salad Bowl of the World.' The city's economy centers on agriculture, creating heavy farm truck and equipment traffic. Fog, especially in the fall, creates hazardous driving conditions. Many residents work in nearby Monterey's tourism industry. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Monterey County Superior Court handles cases",
+      "Agricultural truck accidents may involve commercial liability",
+      "Farm worker accidents may have employer components",
+      "Seasonal population changes affect traffic patterns",
+      "Highway 68 to Monterey has high accident rates"
+    ],
+
+    weatherFactors: [
+      "Dense fog, especially in fall and winter mornings",
+      "Coastal influence creates unpredictable weather",
+      "Agricultural dust during dry season",
+      "Rain makes roads slippery after dry periods"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Agricultural equipment right-of-way rules",
+      "Farm vehicle lighting requirements"
+    ],
+
+    metaTitle: "Salinas Car Accident Help | Monterey County Collision Guide",
+    metaDescription: "Salinas car accident assistance. Navigate US-101 accidents, agricultural truck collisions, and fog-related incidents. Understand California insurance laws. Free guidance for Salinas Valley accident victims.",
+    keywords: [
+      "Salinas car accident",
+      "Salinas accident lawyer",
+      "Monterey County car crash",
+      "Agricultural truck accident Salinas",
+      "US-101 Salinas collision",
+      "Salinas traffic accident attorney"
+    ]
+  },
+
+  {
+    slug: "pomona",
+    name: "Pomona",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 151713,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 10",
+        description: "Major east-west freeway through northern Pomona",
+        accidentHotspots: ["Garey Avenue", "Indian Hill Boulevard", "Towne Avenue"]
+      },
+      {
+        name: "State Route 71",
+        description: "North-south route connecting to I-10 and SR-60",
+        accidentHotspots: ["I-10 interchange", "Mission Boulevard", "Rio Rancho Road"]
+      },
+      {
+        name: "State Route 60",
+        description: "East-west freeway through southern Pomona",
+        accidentHotspots: ["SR-71 interchange", "Reservoir Street", "Garey Avenue"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Pomona", characteristics: "Arts district, revitalizing area, nightlife" },
+      { name: "Lincoln Park", characteristics: "Historic neighborhood, older residential" },
+      { name: "Phillips Ranch", characteristics: "Hillside community, Cal Poly Pomona adjacent" },
+      { name: "North Pomona", characteristics: "Fairplex area, event traffic, commercial" },
+      { name: "South Pomona", characteristics: "Industrial areas, warehouse districts" }
+    ],
+
+    trafficPatterns: [
+      { type: "Fairplex Events", description: "LA County Fair and events create massive congestion" },
+      { type: "Industrial", description: "Warehouse and distribution truck traffic" },
+      { type: "Cal Poly", description: "University traffic during academic sessions" },
+      { type: "Commuter", description: "I-10 and SR-60 carry heavy regional commuter traffic" }
+    ],
+
+    annualAccidents: 2800,
+    accidentYear: 2023,
+    fatalAccidents: 23,
+
+    commonAccidentTypes: [
+      "I-10 and SR-60 high-speed collisions",
+      "Commercial truck accidents in industrial areas",
+      "Fairplex event-related congestion accidents",
+      "Pedestrian accidents in downtown arts district",
+      "Parking lot accidents at event venues",
+      "Rear-end collisions in commuter traffic"
+    ],
+
+    dangerousIntersections: [
+      "I-10 & SR-71 interchange",
+      "Garey Avenue & Holt Avenue",
+      "Indian Hill Boulevard & Foothill Boulevard",
+      "Mission Boulevard & SR-71",
+      "Temple Avenue & Valley Boulevard"
+    ],
+
+    policeNonEmergency: "(909) 620-2155",
+
+    introText: "Pomona is home to the Fairplex, which hosts the LA County Fair and numerous events throughout the year. The city sits at the intersection of I-10, SR-60, and SR-71, creating complex traffic patterns. Cal Poly Pomona adds university traffic. Industrial and warehouse districts generate significant truck traffic. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Los Angeles County Superior Court (Pomona Courthouse) handles cases",
+      "Fairplex events create periodic massive traffic increases",
+      "Industrial truck traffic requires commercial liability investigation",
+      "University-related accidents may involve young drivers",
+      "Multiple freeway interchanges create complex accident patterns"
+    ],
+
+    weatherFactors: [
+      "Santa Ana winds can affect vehicle control",
+      "Summer heat in the inland valley affects driving conditions",
+      "Morning fog in low-lying areas reduces visibility",
+      "Rain after dry periods creates slippery roads"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Special event traffic controls near Fairplex",
+      "Commercial truck routing restrictions"
+    ],
+
+    metaTitle: "Pomona Car Accident Help | LA County Collision Guide",
+    metaDescription: "Pomona car accident assistance. Navigate I-10, SR-60, and Fairplex event traffic accidents. Understand California insurance laws. Free guidance for Pomona and Eastern LA County accident victims.",
+    keywords: [
+      "Pomona car accident",
+      "Pomona accident lawyer",
+      "I-10 Pomona collision",
+      "LA County Fair traffic accident",
+      "Eastern LA County car crash",
+      "Pomona traffic accident attorney"
+    ]
+  },
+
+  {
+    slug: "hayward",
+    name: "Hayward",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 162954,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 880",
+        description: "Primary north-south freeway through Hayward",
+        accidentHotspots: ["A Street exit", "Industrial Parkway", "Whipple Road"]
+      },
+      {
+        name: "Interstate 580",
+        description: "East-west freeway connecting to the Bay Bridge and I-5",
+        accidentHotspots: ["I-880 interchange", "Hayward Hills area", "Castro Valley"]
+      },
+      {
+        name: "State Route 92",
+        description: "Connection to San Mateo Bridge and Half Moon Bay",
+        accidentHotspots: ["Clawiter Road", "Industrial Boulevard", "Jackson Street"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Hayward", characteristics: "BART station, civic center, revitalization area" },
+      { name: "South Hayward", characteristics: "Industrial, BART station, warehouse districts" },
+      { name: "Hayward Hills", characteristics: "Eastern hillside residential, CSU East Bay" },
+      { name: "Tennyson", characteristics: "Southern residential, near Union City border" },
+      { name: "Mission Highlands", characteristics: "Central residential, older neighborhoods" }
+    ],
+
+    trafficPatterns: [
+      { type: "Bay Area Commute", description: "Heavy I-880 traffic to Oakland and San Jose" },
+      { type: "Bridge Traffic", description: "SR-92 to San Mateo Bridge creates east-west congestion" },
+      { type: "Industrial", description: "Manufacturing and warehouse traffic in south Hayward" },
+      { type: "University", description: "CSU East Bay creates periodic traffic spikes" }
+    ],
+
+    annualAccidents: 2100,
+    accidentYear: 2023,
+    fatalAccidents: 17,
+
+    commonAccidentTypes: [
+      "I-880 high-speed collisions",
+      "Industrial truck accidents",
+      "BART station pedestrian accidents",
+      "Rear-end collisions in commute traffic",
+      "SR-92 interchange accidents",
+      "Student-related accidents near university"
+    ],
+
+    dangerousIntersections: [
+      "I-880 & SR-92 interchange",
+      "Hesperian Boulevard & Industrial Parkway",
+      "Mission Boulevard & Tennyson Road",
+      "A Street & Foothill Boulevard",
+      "Jackson Street & Hesperian Boulevard"
+    ],
+
+    policeNonEmergency: "(510) 293-7000",
+
+    introText: "Hayward is centrally located in the East Bay, serving as a major commuter hub with multiple BART stations and freeway access. The city's industrial areas generate significant truck traffic while I-880 carries heavy commuter traffic between Oakland and San Jose. California's pure comparative negligence system applies to all accident claims.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Alameda County Superior Court handles cases",
+      "Heavy industrial truck traffic in south Hayward",
+      "Multiple BART stations create pedestrian traffic",
+      "I-880 is one of the busiest freight corridors in the state",
+      "Bridge traffic on SR-92 adds to local congestion"
+    ],
+
+    weatherFactors: [
+      "Fog from the Bay can reduce visibility on I-880",
+      "Rain makes freeways particularly slippery",
+      "Microclimate variations between bay and hills",
+      "Wind effects near the Bay shoreline"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Commercial truck restrictions on residential streets",
+      "Right turn on red permitted unless posted"
+    ],
+
+    metaTitle: "Hayward Car Accident Help | Alameda County Collision Guide",
+    metaDescription: "Hayward car accident assistance. Navigate I-880 accidents, industrial truck collisions, and Bay Area commuter incidents. Understand California insurance laws. Free guidance for Hayward accident victims.",
+    keywords: [
+      "Hayward car accident",
+      "Hayward accident lawyer",
+      "I-880 Hayward collision",
+      "Alameda County car crash",
+      "East Bay accident attorney",
+      "Hayward traffic accident"
+    ]
+  },
+
+  {
+    slug: "escondido",
+    name: "Escondido",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 151038,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 15",
+        description: "Major north-south freeway through eastern Escondido",
+        accidentHotspots: ["Via Rancho Parkway", "Valley Parkway", "Felicita Road"]
+      },
+      {
+        name: "State Route 78",
+        description: "East-west route connecting to coast and mountains",
+        accidentHotspots: ["I-15 interchange", "Centre City Parkway", "Nordahl Road"]
+      },
+      {
+        name: "Centre City Parkway",
+        description: "Primary north-south arterial through central Escondido",
+        accidentHotspots: ["Valley Parkway", "Mission Avenue", "Felicita Road"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Escondido", characteristics: "Historic district, Grand Avenue, entertainment venues" },
+      { name: "Felicita", characteristics: "Northern residential, park access, older neighborhoods" },
+      { name: "San Pasqual Valley", characteristics: "Eastern area, Wild Animal Park, rural roads" },
+      { name: "Kit Carson Park Area", characteristics: "Central residential, park facilities" },
+      { name: "Westside", characteristics: "Mixed residential, commercial corridors" }
+    ],
+
+    trafficPatterns: [
+      { type: "I-15 Corridor", description: "Heavy north-south traffic to San Diego and Temecula" },
+      { type: "SR-78 Commute", description: "East-west traffic to coast and Oceanside" },
+      { type: "Tourist Traffic", description: "San Diego Zoo Safari Park generates weekend traffic" },
+      { type: "Agricultural", description: "Avocado and citrus truck traffic in valley areas" }
+    ],
+
+    annualAccidents: 1900,
+    accidentYear: 2023,
+    fatalAccidents: 14,
+
+    commonAccidentTypes: [
+      "I-15 high-speed collisions",
+      "SR-78 interchange accidents",
+      "Pedestrian accidents in downtown",
+      "Rural road accidents in valley areas",
+      "DUI-related crashes in entertainment district",
+      "Commercial truck accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-15 & SR-78 interchange",
+      "Valley Parkway & Centre City Parkway",
+      "Grand Avenue & Broadway",
+      "Mission Avenue & I-15",
+      "Via Rancho Parkway & Midway Drive"
+    ],
+
+    policeNonEmergency: "(760) 839-4722",
+
+    introText: "Escondido is the largest city in North San Diego County's inland region, sitting at the intersection of I-15 and SR-78. The city serves as a commercial hub for surrounding communities while maintaining significant agricultural areas. The San Diego Zoo Safari Park draws tourist traffic. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "San Diego County Superior Court (North County) handles cases",
+      "I-15 corridor sees heavy commercial and recreational traffic",
+      "Safari Park events create weekend traffic spikes",
+      "Agricultural areas have farm equipment on roads",
+      "DUI enforcement is active in downtown entertainment district"
+    ],
+
+    weatherFactors: [
+      "Inland valley heat can affect driver alertness",
+      "Santa Ana winds create hazardous conditions",
+      "Rain is rare but roads become extremely slippery",
+      "Mountain fog can affect eastern areas"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Agricultural vehicle right-of-way rules",
+      "Right turn on red permitted unless posted"
+    ],
+
+    metaTitle: "Escondido Car Accident Help | North County San Diego Guide",
+    metaDescription: "Escondido car accident assistance. Navigate I-15 and SR-78 accidents, North County collisions. Understand California insurance laws. Free guidance for Escondido accident victims.",
+    keywords: [
+      "Escondido car accident",
+      "Escondido accident lawyer",
+      "I-15 Escondido collision",
+      "North County San Diego car crash",
+      "Escondido traffic accident",
+      "San Diego County accident attorney"
+    ]
+  },
+
+  {
+    slug: "sunnyvale",
+    name: "Sunnyvale",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 155805,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "US-101",
+        description: "Primary north-south freeway through Sunnyvale",
+        accidentHotspots: ["Mathilda Avenue", "Lawrence Expressway", "Fair Oaks Avenue"]
+      },
+      {
+        name: "State Route 237",
+        description: "East-west route connecting to I-880 and Milpitas",
+        accidentHotspots: ["US-101 interchange", "Fair Oaks Avenue", "Caribbean Drive"]
+      },
+      {
+        name: "Interstate 280",
+        description: "Western freeway connecting to San Francisco",
+        accidentHotspots: ["Saratoga Avenue", "De Anza Boulevard", "Foothill Expressway"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Sunnyvale", characteristics: "Murphy Avenue, historic core, restaurants" },
+      { name: "Moffett Park", characteristics: "Tech campus area, Google, commercial" },
+      { name: "Lakewood Village", characteristics: "Northern residential, near Moffett Field" },
+      { name: "Cherry Chase", characteristics: "Central residential, tree-lined streets" },
+      { name: "Ponderosa", characteristics: "Southern residential, near Cupertino border" }
+    ],
+
+    trafficPatterns: [
+      { type: "Tech Commute", description: "Major tech companies create heavy US-101 traffic" },
+      { type: "SR-237 Corridor", description: "East-west commuter congestion to 880 and Milpitas" },
+      { type: "Shift Changes", description: "Large corporate campuses create periodic traffic spikes" },
+      { type: "Downtown Events", description: "Murphy Avenue activities add evening and weekend traffic" }
+    ],
+
+    annualAccidents: 1800,
+    accidentYear: 2023,
+    fatalAccidents: 12,
+
+    commonAccidentTypes: [
+      "US-101 rear-end collisions in congestion",
+      "Bicycle accidents on city streets",
+      "Pedestrian accidents near tech campuses",
+      "Expressway high-speed accidents",
+      "Parking lot accidents in commercial areas",
+      "Rideshare-related accidents"
+    ],
+
+    dangerousIntersections: [
+      "US-101 & Mathilda Avenue interchange",
+      "El Camino Real & Mathilda Avenue",
+      "Lawrence Expressway & Central Expressway",
+      "Fair Oaks Avenue & US-101",
+      "Tasman Drive & Mathilda Avenue"
+    ],
+
+    policeNonEmergency: "(408) 730-7100",
+
+    introText: "Sunnyvale is at the heart of Silicon Valley, home to major tech companies including portions of Google's campus. The city experiences heavy commuter traffic on US-101 and expressways connecting to tech employers throughout the region. High-density employment creates rush hour congestion. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Santa Clara County Superior Court handles cases",
+      "Tech company shuttles and rideshares are common",
+      "Bicycle commuting is popular—watch for cyclist accidents",
+      "High property values mean high vehicle values",
+      "Tech worker schedules create non-traditional rush hours"
+    ],
+
+    weatherFactors: [
+      "Fog can reduce visibility on US-101",
+      "Rain creates slippery conditions on expressways",
+      "Mild climate year-round minimizes weather hazards",
+      "Occasional high winds affect vehicle control"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Protected bike lanes have specific rules",
+      "Right turn on red permitted unless posted"
+    ],
+
+    metaTitle: "Sunnyvale Car Accident Help | Silicon Valley Collision Guide",
+    metaDescription: "Sunnyvale car accident assistance. Navigate US-101 tech corridor accidents, expressway collisions, and bicycle incidents. Understand California insurance laws. Free guidance for Silicon Valley accident victims.",
+    keywords: [
+      "Sunnyvale car accident",
+      "Sunnyvale accident lawyer",
+      "US-101 Sunnyvale collision",
+      "Silicon Valley car crash",
+      "Santa Clara County accident attorney",
+      "Sunnyvale traffic accident"
+    ]
+  },
+
+  {
+    slug: "torrance",
+    name: "Torrance",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 145014,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 405",
+        description: "Major north-south freeway through Torrance",
+        accidentHotspots: ["Hawthorne Boulevard", "Crenshaw Boulevard", "Western Avenue"]
+      },
+      {
+        name: "Interstate 110",
+        description: "Eastern border freeway connecting to downtown LA",
+        accidentHotspots: ["Carson Street", "190th Street", "Torrance Boulevard"]
+      },
+      {
+        name: "Pacific Coast Highway (SR-1)",
+        description: "Coastal route through western Torrance",
+        accidentHotspots: ["Crenshaw Boulevard", "Hawthorne Boulevard", "Palos Verdes Boulevard"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Torrance", characteristics: "Old Torrance, historic buildings, local businesses" },
+      { name: "Del Amo", characteristics: "Shopping center area, high traffic, commercial hub" },
+      { name: "Hollywood Riviera", characteristics: "Coastal residential, beach access, upscale homes" },
+      { name: "West Torrance", characteristics: "Residential, school zones, family-oriented" },
+      { name: "North Torrance", characteristics: "Industrial areas, Torrance Refinery nearby" }
+    ],
+
+    trafficPatterns: [
+      { type: "I-405 Commute", description: "Heavy north-south traffic to LAX and Long Beach" },
+      { type: "Del Amo", description: "Major shopping center creates weekend and holiday traffic" },
+      { type: "Beach Traffic", description: "Summer brings coastal congestion on PCH" },
+      { type: "Industrial", description: "Refinery and aerospace company traffic in north Torrance" }
+    ],
+
+    annualAccidents: 2000,
+    accidentYear: 2023,
+    fatalAccidents: 14,
+
+    commonAccidentTypes: [
+      "I-405 high-speed collisions",
+      "Del Amo shopping center parking accidents",
+      "PCH pedestrian and cyclist accidents",
+      "Industrial truck accidents in north Torrance",
+      "Rear-end collisions in commuter traffic",
+      "DUI accidents near entertainment areas"
+    ],
+
+    dangerousIntersections: [
+      "I-405 & Hawthorne Boulevard interchange",
+      "Sepulveda Boulevard & Hawthorne Boulevard",
+      "Torrance Boulevard & Crenshaw Boulevard",
+      "Carson Street & I-110",
+      "PCH & Crenshaw Boulevard"
+    ],
+
+    policeNonEmergency: "(310) 328-3456",
+
+    introText: "Torrance is a major South Bay city known for the Del Amo Fashion Center and significant aerospace and refinery industries. The city sits at the intersection of I-405 and I-110, creating heavy commuter traffic. The Hollywood Riviera area provides beach access while industrial areas in the north generate commercial traffic. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Los Angeles County Superior Court (South District) handles cases",
+      "Industrial accidents may involve hazardous materials",
+      "Del Amo Fashion Center is one of largest malls in US",
+      "Beach access brings seasonal traffic increases",
+      "Multiple aerospace employers create shift-change traffic"
+    ],
+
+    weatherFactors: [
+      "Marine layer fog affects visibility in morning",
+      "Coastal winds can impact vehicle control",
+      "Rain creates slippery conditions, especially on PCH",
+      "Mild climate minimizes extreme weather hazards"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Beach parking restrictions during summer",
+      "Right turn on red permitted unless posted"
+    ],
+
+    metaTitle: "Torrance Car Accident Help | South Bay Collision Guide",
+    metaDescription: "Torrance car accident assistance. Navigate I-405, Del Amo area accidents, and PCH coastal collisions. Understand California insurance laws. Free guidance for South Bay accident victims.",
+    keywords: [
+      "Torrance car accident",
+      "Torrance accident lawyer",
+      "I-405 Torrance collision",
+      "South Bay car crash",
+      "Los Angeles County accident attorney",
+      "Torrance traffic accident"
+    ]
+  },
+
+  {
+    slug: "pasadena",
+    name: "Pasadena",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 138699,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 210 (Foothill Freeway)",
+        description: "Primary east-west freeway through northern Pasadena",
+        accidentHotspots: ["Lake Avenue", "Hill Avenue", "Sierra Madre Villa"]
+      },
+      {
+        name: "State Route 134 (Ventura Freeway)",
+        description: "Southern freeway connecting to I-5 and Glendale",
+        accidentHotspots: ["Orange Grove Boulevard", "Linda Vista Avenue", "I-210 connector"]
+      },
+      {
+        name: "State Route 110 (Pasadena Freeway)",
+        description: "Historic freeway connecting to downtown Los Angeles",
+        accidentHotspots: ["Arroyo Parkway exit", "Avenue 52", "downtown connector"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Old Town Pasadena", characteristics: "Historic shopping district, entertainment, high pedestrian traffic" },
+      { name: "South Pasadena adjacent", characteristics: "Residential, historic homes, tree-lined streets" },
+      { name: "Caltech Area", characteristics: "University environment, research institutions" },
+      { name: "Rose Bowl Area", characteristics: "Event venue, Arroyo Seco, recreational" },
+      { name: "East Pasadena", characteristics: "Residential, shopping centers, I-210 access" }
+    ],
+
+    trafficPatterns: [
+      { type: "Rose Bowl Events", description: "Football games and events create massive congestion" },
+      { type: "Rose Parade", description: "New Year's events affect traffic for days" },
+      { type: "Commuter", description: "I-210 and SR-134 carry heavy regional traffic" },
+      { type: "Old Town", description: "Entertainment district creates evening and weekend traffic" }
+    ],
+
+    annualAccidents: 2100,
+    accidentYear: 2023,
+    fatalAccidents: 16,
+
+    commonAccidentTypes: [
+      "Rose Bowl event-related accidents",
+      "Historic 110 Freeway dangerous curves",
+      "Old Town pedestrian accidents",
+      "I-210 high-speed collisions",
+      "Bicycle accidents on city streets",
+      "Parking lot accidents in commercial areas"
+    ],
+
+    dangerousIntersections: [
+      "I-210 & Lake Avenue interchange",
+      "Colorado Boulevard & Lake Avenue",
+      "Foothill Boulevard & Rosemead Boulevard",
+      "Fair Oaks Avenue & Colorado Boulevard",
+      "Arroyo Parkway & SR-110"
+    ],
+
+    policeNonEmergency: "(626) 744-4501",
+
+    introText: "Pasadena is known for the Rose Bowl, Rose Parade, Caltech, and its historic Old Town district. The city's SR-110 (Pasadena Freeway) is America's first freeway and features dangerous curves designed for 1940s speeds. Major events at the Rose Bowl create significant traffic challenges. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Los Angeles County Superior Court (Pasadena Courthouse) handles cases",
+      "SR-110 has uniquely dangerous design for modern vehicles",
+      "Rose Bowl events require special traffic planning",
+      "Old Town has high pedestrian density",
+      "Caltech and JPL create research institution traffic"
+    ],
+
+    weatherFactors: [
+      "Foothill location can create fog conditions",
+      "Santa Ana winds affect the entire region",
+      "Rain creates dangerous conditions on historic SR-110",
+      "Heat events in summer affect driver comfort"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Special event traffic restrictions near Rose Bowl",
+      "Rose Parade street closures affect New Year period"
+    ],
+
+    metaTitle: "Pasadena Car Accident Help | LA County Collision Guide",
+    metaDescription: "Pasadena car accident assistance. Navigate the dangerous Pasadena Freeway, Rose Bowl event traffic, and Old Town pedestrian areas. Understand California insurance laws. Free guidance for Pasadena accident victims.",
+    keywords: [
+      "Pasadena car accident",
+      "Pasadena accident lawyer",
+      "Pasadena Freeway collision",
+      "Rose Bowl traffic accident",
+      "Old Town Pasadena accident",
+      "Los Angeles County car crash"
+    ]
+  },
+
+  {
+    slug: "orange",
+    name: "Orange",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 139911,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "State Route 55 (Costa Mesa Freeway)",
+        description: "Primary north-south route through Orange",
+        accidentHotspots: ["Chapman Avenue", "Katella Avenue", "Lincoln Avenue"]
+      },
+      {
+        name: "State Route 22 (Garden Grove Freeway)",
+        description: "East-west route through southern Orange",
+        accidentHotspots: ["SR-55 interchange", "The City Drive", "Main Street"]
+      },
+      {
+        name: "Interstate 5",
+        description: "Eastern border freeway",
+        accidentHotspots: ["Chapman Avenue", "The Block area", "Lincoln Avenue"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Old Towne Orange", characteristics: "Historic plaza, antique shops, preserved architecture" },
+      { name: "Orange Park Acres", characteristics: "Equestrian area, rural character, large lots" },
+      { name: "Chapman University Area", characteristics: "College neighborhood, student traffic" },
+      { name: "The Block/Outlets", characteristics: "Major shopping destination, high traffic" },
+      { name: "North Orange", characteristics: "Residential, hospital district" }
+    ],
+
+    trafficPatterns: [
+      { type: "Shopping Traffic", description: "The Block at Orange creates weekend and holiday congestion" },
+      { type: "University", description: "Chapman University creates academic year traffic" },
+      { type: "Medical", description: "St. Joseph Hospital and CHOC generate constant traffic" },
+      { type: "Freeway Commute", description: "SR-55 and SR-22 carry heavy regional traffic" }
+    ],
+
+    annualAccidents: 1700,
+    accidentYear: 2023,
+    fatalAccidents: 13,
+
+    commonAccidentTypes: [
+      "Freeway interchange accidents at SR-55/SR-22",
+      "Shopping center parking lot accidents",
+      "Old Towne pedestrian accidents",
+      "Student-related accidents near Chapman",
+      "Medical facility access accidents",
+      "Rear-end collisions on congested routes"
+    ],
+
+    dangerousIntersections: [
+      "SR-55 & SR-22 interchange",
+      "Chapman Avenue & Tustin Street",
+      "The City Drive & SR-22",
+      "Glassell Street & Chapman Avenue",
+      "Main Street & Katella Avenue"
+    ],
+
+    policeNonEmergency: "(714) 744-7444",
+
+    introText: "Orange is known for its preserved Old Towne historic district with the iconic traffic circle plaza. The city hosts Chapman University, major medical facilities, and The Block at Orange shopping destination. Multiple freeways converge in the area creating complex traffic patterns. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Orange County Superior Court handles cases",
+      "Old Towne has unique circular traffic pattern",
+      "Multiple hospitals mean ambulance traffic",
+      "University population affects accident demographics",
+      "Historic district has pedestrian-heavy areas"
+    ],
+
+    weatherFactors: [
+      "Mild climate minimizes weather hazards",
+      "Santa Ana winds can affect vehicle control",
+      "Rain creates slippery conditions on freeways",
+      "Morning fog occasionally affects visibility"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Old Towne plaza has specific traffic rules",
+      "Right turn on red permitted unless posted"
+    ],
+
+    metaTitle: "Orange CA Car Accident Help | Orange County Collision Guide",
+    metaDescription: "Orange California car accident assistance. Navigate SR-55 and SR-22 accidents, Old Towne traffic, and shopping center incidents. Understand California insurance laws. Free guidance for Orange accident victims.",
+    keywords: [
+      "Orange CA car accident",
+      "Orange California accident lawyer",
+      "Old Towne Orange collision",
+      "Orange County car crash",
+      "SR-55 Orange accident",
+      "Orange traffic accident attorney"
+    ]
+  },
+
+  {
+    slug: "fullerton",
+    name: "Fullerton",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 139640,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "State Route 91 (Riverside Freeway)",
+        description: "Major east-west freeway through Fullerton",
+        accidentHotspots: ["Harbor Boulevard", "Euclid Street", "State College Boulevard"]
+      },
+      {
+        name: "State Route 57 (Orange Freeway)",
+        description: "North-south route through eastern Fullerton",
+        accidentHotspots: ["SR-91 interchange", "Imperial Highway", "Yorba Linda Boulevard"]
+      },
+      {
+        name: "Interstate 5",
+        description: "Western border freeway",
+        accidentHotspots: ["Beach Boulevard", "Harbor Boulevard", "Magnolia Avenue"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Fullerton", characteristics: "Entertainment district, bars, restaurants, nightlife" },
+      { name: "Cal State Fullerton", characteristics: "University area, student housing, young population" },
+      { name: "Sunny Hills", characteristics: "Eastern residential, hillside homes" },
+      { name: "West Fullerton", characteristics: "Industrial areas, warehouse districts" },
+      { name: "Raymond Hills", characteristics: "Central residential, schools" }
+    ],
+
+    trafficPatterns: [
+      { type: "University", description: "Cal State Fullerton creates academic traffic patterns" },
+      { type: "Nightlife", description: "Downtown entertainment creates evening and weekend traffic" },
+      { type: "Commuter", description: "SR-91 is notoriously congested during rush hours" },
+      { type: "Industrial", description: "West Fullerton has commercial truck traffic" }
+    ],
+
+    annualAccidents: 1800,
+    accidentYear: 2023,
+    fatalAccidents: 15,
+
+    commonAccidentTypes: [
+      "SR-91 rear-end collisions in congestion",
+      "DUI accidents in downtown entertainment district",
+      "Student-related accidents near university",
+      "SR-57/SR-91 interchange accidents",
+      "Pedestrian accidents in downtown",
+      "Industrial truck accidents"
+    ],
+
+    dangerousIntersections: [
+      "SR-91 & SR-57 interchange",
+      "Harbor Boulevard & SR-91",
+      "State College Boulevard & Nutwood Avenue",
+      "Euclid Street & Orangethorpe Avenue",
+      "Commonwealth Avenue & Harbor Boulevard"
+    ],
+
+    policeNonEmergency: "(714) 738-6800",
+
+    introText: "Fullerton is home to Cal State Fullerton and a vibrant downtown entertainment district. The city sits at the junction of SR-91 and SR-57, two major Orange County freeways. The entertainment district creates nightlife-related traffic and DUI risks. California's pure comparative negligence applies to all claims.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Orange County Superior Court handles cases",
+      "Downtown DUI enforcement is active on weekends",
+      "University population affects accident demographics",
+      "SR-91 congestion creates chronic accident conditions",
+      "Entertainment district has high pedestrian traffic"
+    ],
+
+    weatherFactors: [
+      "Mild climate minimizes weather-related accidents",
+      "Santa Ana winds can affect vehicle control",
+      "Rain creates slippery conditions on freeways",
+      "Heat in summer may affect driver alertness"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Downtown has specific parking restrictions",
+      "Right turn on red permitted unless posted"
+    ],
+
+    metaTitle: "Fullerton Car Accident Help | Orange County Collision Guide",
+    metaDescription: "Fullerton car accident assistance. Navigate SR-91 congestion accidents, downtown entertainment district incidents, and university area collisions. Understand California insurance laws. Free guidance for Fullerton accident victims.",
+    keywords: [
+      "Fullerton car accident",
+      "Fullerton accident lawyer",
+      "SR-91 Fullerton collision",
+      "Orange County car crash",
+      "Cal State Fullerton accident",
+      "Fullerton DUI accident attorney"
+    ]
+  },
+
+  {
+    slug: "roseville",
+    name: "Roseville",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 147773,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 80",
+        description: "Primary east-west freeway connecting to Sacramento and Reno",
+        accidentHotspots: ["Eureka Road", "Douglas Boulevard", "Atlantic Street"]
+      },
+      {
+        name: "State Route 65",
+        description: "North-south route to Lincoln and Marysville",
+        accidentHotspots: ["I-80 interchange", "Pleasant Grove Boulevard", "Stanford Ranch Road"]
+      },
+      {
+        name: "Douglas Boulevard",
+        description: "Major commercial arterial through central Roseville",
+        accidentHotspots: ["Sunrise Avenue", "Harding Boulevard", "Rocky Ridge Drive"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Historic Roseville", characteristics: "Downtown, railroad heritage, revitalization" },
+      { name: "Westpark", characteristics: "Master-planned, commercial, Galleria Mall" },
+      { name: "Granite Bay Adjacent", characteristics: "Upscale residential, Folsom Lake access" },
+      { name: "Sun City Roseville", characteristics: "Senior community, age-restricted, golf course" },
+      { name: "Fiddyment Farm", characteristics: "Western growth area, new development" }
+    ],
+
+    trafficPatterns: [
+      { type: "Sacramento Commute", description: "Heavy I-80 traffic to downtown Sacramento" },
+      { type: "Galleria Traffic", description: "Major shopping center creates weekend congestion" },
+      { type: "Sierra Access", description: "Recreation traffic to Lake Tahoe via I-80" },
+      { type: "Growth Traffic", description: "Rapid development creates construction and moving traffic" }
+    ],
+
+    annualAccidents: 2000,
+    accidentYear: 2023,
+    fatalAccidents: 15,
+
+    commonAccidentTypes: [
+      "I-80 high-speed collisions",
+      "Galleria Mall parking lot accidents",
+      "Construction zone accidents in growth areas",
+      "Sierra recreation traffic accidents",
+      "Rear-end collisions in commuter traffic",
+      "Senior driver accidents in Sun City"
+    ],
+
+    dangerousIntersections: [
+      "I-80 & Douglas Boulevard interchange",
+      "I-80 & SR-65 interchange",
+      "Douglas Boulevard & Sunrise Avenue",
+      "Pleasant Grove Boulevard & Roseville Parkway",
+      "Eureka Road & I-80"
+    ],
+
+    policeNonEmergency: "(916) 774-5000",
+
+    introText: "Roseville is one of California's fastest-growing cities, located along the I-80 corridor between Sacramento and Lake Tahoe. The Westfield Galleria and Fountains at Roseville attract significant shopping traffic. Rapid growth creates ongoing construction and development-related traffic challenges. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Placer County Superior Court handles cases",
+      "Rapid growth creates construction zone hazards",
+      "I-80 is major route to Lake Tahoe and Reno",
+      "Large senior population in Sun City affects demographics",
+      "Shopping centers create holiday traffic surges"
+    ],
+
+    weatherFactors: [
+      "Summer heat can affect vehicle performance",
+      "Winter storms can impact I-80 Sierra traffic",
+      "Tule fog occasionally affects the area",
+      "Rain creates slippery conditions after dry periods"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Construction zone speed limits enforced",
+      "Chain controls on I-80 during winter storms"
+    ],
+
+    metaTitle: "Roseville Car Accident Help | Placer County Collision Guide",
+    metaDescription: "Roseville car accident assistance. Navigate I-80 accidents, Galleria traffic incidents, and construction zone collisions. Understand California insurance laws. Free guidance for Roseville accident victims.",
+    keywords: [
+      "Roseville car accident",
+      "Roseville accident lawyer",
+      "I-80 Roseville collision",
+      "Placer County car crash",
+      "Galleria Roseville accident",
+      "Roseville traffic accident attorney"
+    ]
+  },
+
+  {
+    slug: "victorville",
+    name: "Victorville",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 134810,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 15",
+        description: "Primary freeway connecting Los Angeles to Las Vegas",
+        accidentHotspots: ["Bear Valley Road", "Palmdale Road", "Mojave Drive"]
+      },
+      {
+        name: "US-395",
+        description: "North-south route through eastern High Desert",
+        accidentHotspots: ["Bear Valley Road", "Air Expressway", "Adelanto Road"]
+      },
+      {
+        name: "Bear Valley Road",
+        description: "Major east-west commercial arterial",
+        accidentHotspots: ["I-15 area", "Hesperia Road", "Amargosa Road"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Old Town Victorville", characteristics: "Historic Route 66 district, revitalization efforts" },
+      { name: "Spring Valley Lake", characteristics: "Master-planned lake community, residential" },
+      { name: "Southern Logistics Airport", characteristics: "Industrial area, former George AFB" },
+      { name: "Bear Valley", characteristics: "Commercial corridor, retail centers" },
+      { name: "North Victorville", characteristics: "Residential growth areas, desert transition" }
+    ],
+
+    trafficPatterns: [
+      { type: "Las Vegas Corridor", description: "Heavy weekend I-15 traffic to and from Las Vegas" },
+      { type: "High Desert Logistics", description: "Distribution center truck traffic" },
+      { type: "LA Commute", description: "Some residents commute via I-15 to LA basin" },
+      { type: "Desert Conditions", description: "Long distances and high speeds characterize driving" }
+    ],
+
+    annualAccidents: 2300,
+    accidentYear: 2023,
+    fatalAccidents: 32,
+
+    commonAccidentTypes: [
+      "I-15 high-speed collisions",
+      "Las Vegas corridor fatigue accidents",
+      "Dust storm visibility accidents",
+      "Commercial truck accidents",
+      "DUI accidents (higher rates in High Desert)",
+      "Wrong-way driver incidents"
+    ],
+
+    dangerousIntersections: [
+      "I-15 & Bear Valley Road interchange",
+      "I-15 & Palmdale Road interchange",
+      "Bear Valley Road & Hesperia Road",
+      "US-395 & Bear Valley Road",
+      "Amargosa Road & Bear Valley Road"
+    ],
+
+    policeNonEmergency: "(760) 241-2911",
+
+    introText: "Victorville is the largest city in the High Desert region, sitting on I-15 between Los Angeles and Las Vegas. The city experiences heavy weekend traffic to Vegas and significant logistics truck traffic. Desert conditions including dust storms and extreme heat create unique driving hazards. Higher accident and fatality rates reflect challenging conditions. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "San Bernardino County Superior Court (Victorville) handles cases",
+      "I-15 sees heavy commercial and Las Vegas recreation traffic",
+      "Higher uninsured driver rates in High Desert region",
+      "Dust storms can strike without warning",
+      "Long distances may delay emergency response"
+    ],
+
+    weatherFactors: [
+      "Extreme summer heat (110°F+) causes vehicle failures",
+      "Dust storms create zero-visibility conditions suddenly",
+      "High winds affect vehicle control, especially trucks",
+      "Winter cold and ice in mountain passes (I-15 south)",
+      "Temperature extremes between day and night"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Commercial truck regulations on I-15 corridor",
+      "Right turn on red permitted unless posted"
+    ],
+
+    metaTitle: "Victorville Car Accident Help | High Desert Collision Guide",
+    metaDescription: "Victorville car accident assistance. Navigate I-15 Vegas corridor accidents, dust storm incidents, and desert road collisions. Understand California insurance laws. Free guidance for High Desert accident victims.",
+    keywords: [
+      "Victorville car accident",
+      "Victorville accident lawyer",
+      "I-15 Victorville collision",
+      "High Desert car crash",
+      "San Bernardino County accident attorney",
+      "Victorville traffic accident"
+    ]
   }
 ];
 

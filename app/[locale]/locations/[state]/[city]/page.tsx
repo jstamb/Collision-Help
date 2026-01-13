@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getStateBySlug, getFaultSystemExplanation, getComparativeNegligenceExplanation } from '@/content/locations/states'
 import { getCityBySlug, getCitiesForState, type CityData } from '@/content/locations/cities'
+import { getLawyerPageBySlug } from '@/content/lawyers/lawyer-pages'
 import { pillars } from '@/content/guides/pillars'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
@@ -218,6 +219,7 @@ export default async function CityPage({ params }: PageProps) {
 
   const schema = generateSchema(city, state)
   const otherCities = getCitiesForState(stateSlug).filter(c => c.slug !== citySlug)
+  const lawyerPage = getLawyerPageBySlug(stateSlug, citySlug)
 
   // Determine fault badge color
   const getFaultBadge = () => {
@@ -596,6 +598,25 @@ export default async function CityPage({ params }: PageProps) {
                   </CallbackButton>
                 </div>
 
+                {/* Find a Lawyer CTA - Links to dedicated lawyer page */}
+                {lawyerPage && (
+                  <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 text-white">
+                    <h3 className="font-bold text-lg mb-2">
+                      Need a {city.name} Car Accident Lawyer?
+                    </h3>
+                    <p className="text-slate-300 text-sm mb-4">
+                      Learn about your legal options, what to expect from a car accident attorney, and how contingency fees work.
+                    </p>
+                    <Link
+                      href={`/car-accident-lawyer/${stateSlug}/${citySlug}`}
+                      className="w-full bg-brand-500 hover:bg-brand-600 text-white px-4 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
+                    >
+                      <Scale className="w-5 h-5" />
+                      Find a Lawyer in {city.name}
+                    </Link>
+                  </div>
+                )}
+
                 {/* Police Contact */}
                 {city.policeNonEmergency && (
                   <div className="bg-slate-100 rounded-xl p-6">
@@ -733,6 +754,15 @@ export default async function CityPage({ params }: PageProps) {
                 <Phone className="w-5 h-5" />
                 {t('getFreeReview')}
               </CallbackButton>
+              {lawyerPage && (
+                <Link
+                  href={`/car-accident-lawyer/${stateSlug}/${citySlug}`}
+                  className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-lg font-semibold transition-colors"
+                >
+                  <Scale className="w-5 h-5" />
+                  Find a Lawyer
+                </Link>
+              )}
             </div>
           </div>
         </section>

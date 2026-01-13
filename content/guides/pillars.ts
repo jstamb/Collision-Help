@@ -11,6 +11,7 @@ import {
   MapPin,
   CloudRain,
   Gavel,
+  ShieldX,
   LucideIcon
 } from 'lucide-react'
 
@@ -1179,6 +1180,136 @@ export const pillars: Pillar[] = [
         answer: 'Most states allow 2-3 years to file a lawsuit after a car accident. Some states have shorter deadlines (1 year in Kentucky and Louisiana). Claims against government entities often have much shorter notice requirements (sometimes 30-180 days).'
       }
     ]
+  },
+  {
+    slug: 'defective-safety-equipment',
+    title: 'Defective Safety Equipment Guide',
+    shortTitle: 'Defective Equipment',
+    description: 'When seat belts fail or airbags don\'t deploy, you may have a product liability claim against the manufacturer. Learn about your legal options for defective auto safety equipment.',
+    icon: ShieldX,
+    color: 'red',
+    articles: [
+      {
+        slug: 'seat-belt-failure-lawsuit',
+        title: 'Seat Belt Failure Lawsuits: Your Complete Guide',
+        description: 'How to sue when your seat belt fails, malfunctions, or doesn\'t protect you during a crash.',
+        readingTime: '10 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'airbag-didnt-deploy-can-you-sue',
+        title: 'Can You Sue If Your Airbag Didn\'t Deploy?',
+        description: 'Your legal options when airbags fail to deploy during an accident.',
+        readingTime: '9 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'sue-car-manufacturer-defective-safety-equipment',
+        title: 'Suing Car Manufacturers for Defective Safety Equipment',
+        description: 'How to hold automakers accountable for dangerous seat belts and airbags.',
+        readingTime: '11 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'seat-belt-failure-settlement-amounts',
+        title: 'Seat Belt Failure Settlement Amounts',
+        description: 'Average settlements and verdicts in defective seat belt lawsuits.',
+        readingTime: '8 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'airbag-failure-lawsuit-settlements',
+        title: 'Airbag Failure Lawsuit Settlements',
+        description: 'What compensation to expect when airbags malfunction or fail to deploy.',
+        readingTime: '8 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'types-of-seat-belt-defects',
+        title: 'Types of Seat Belt Defects and Malfunctions',
+        description: 'Common seat belt failures: retractor problems, latch failures, webbing tears, and more.',
+        readingTime: '9 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'preserve-evidence-equipment-failure',
+        title: 'How to Preserve Evidence After Equipment Failure',
+        description: 'Critical steps to document seat belt and airbag failures for your lawsuit.',
+        readingTime: '7 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'product-liability-vs-car-accident-claims',
+        title: 'Product Liability vs. Car Accident Claims',
+        description: 'Understanding the difference between suing the other driver and suing the manufacturer.',
+        readingTime: '8 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'seat-belt-retractor-failure',
+        title: 'Seat Belt Retractor Failure Lawsuits',
+        description: 'When seat belt retractors fail to lock during impact.',
+        readingTime: '7 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'airbag-sensor-failure',
+        title: 'Airbag Sensor Failure: Who Is Liable?',
+        description: 'When defective sensors cause airbags to fail or deploy incorrectly.',
+        readingTime: '7 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'takata-airbag-recall-lawsuits',
+        title: 'Takata Airbag Recall Lawsuits',
+        description: 'Your rights if injured by exploding Takata airbag inflators.',
+        readingTime: '8 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'who-can-be-sued-defective-equipment',
+        title: 'Who Can Be Sued for Defective Safety Equipment?',
+        description: 'All parties that may be liable: manufacturers, dealers, and repair shops.',
+        readingTime: '7 min read',
+        priority: 'P2'
+      },
+      {
+        slug: 'rear-end-collision-seat-belt-failure',
+        title: 'Rear-End Collision Seat Belt Failures',
+        description: 'Special considerations when seat belts fail in rear-end crashes.',
+        readingTime: '8 min read',
+        priority: 'P1'
+      },
+      {
+        slug: 'airbag-injuries-excessive-deployment',
+        title: 'Airbag Injuries from Excessive Deployment Force',
+        description: 'When airbags deploy too forcefully and cause injuries instead of preventing them.',
+        readingTime: '7 min read',
+        priority: 'P2'
+      }
+    ],
+    faqs: [
+      {
+        question: 'Can I sue if my seat belt failed in a car accident?',
+        answer: 'Yes. If your seat belt failed, didn\'t lock properly, or broke during an accident, you may have a product liability claim against the seat belt or vehicle manufacturer. These cases are separate from your claim against the at-fault driver.'
+      },
+      {
+        question: 'What is the average settlement for airbags not deploying?',
+        answer: 'Airbag failure settlements typically range from $100,000 to over $1 million depending on injury severity. Cases involving wrongful death, paralysis, or traumatic brain injury often result in multi-million dollar verdicts.'
+      },
+      {
+        question: 'Who is liable when a seat belt fails?',
+        answer: 'Multiple parties can be held liable: the vehicle manufacturer, the seat belt manufacturer, component suppliers, and sometimes dealers or repair shops if they improperly installed or repaired the seat belt.'
+      },
+      {
+        question: 'How do I prove my seat belt was defective?',
+        answer: 'Preserve the vehicle and seat belt as evidence. An expert will inspect for defects like retractor failure, latch problems, or webbing tears. Medical records showing enhanced injuries from the failure are also crucial.'
+      },
+      {
+        question: 'What should I do if my airbag didn\'t deploy?',
+        answer: 'Don\'t let the vehicle be destroyed. Document everything with photos. Get medical treatment immediately. Contact a product liability attorney who can arrange for an expert inspection of the airbag system before evidence is lost.'
+      }
+    ]
   }
 ]
 
@@ -1205,6 +1336,7 @@ const pillarSlugToKey: Record<string, string> = {
   'dangerous-roads': 'dangerousRoads',
   'weather-driving': 'weatherDriving',
   'state-insurance-laws': 'stateInsuranceLaws',
+  'defective-safety-equipment': 'defectiveSafetyEquipment',
 }
 
 // Convert article slug to translation key (kebab-case to camelCase)
