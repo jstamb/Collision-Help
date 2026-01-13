@@ -2145,6 +2145,291 @@ export const californiaLawyerPages: LawyerPageData[] = [
 
     metaTitle: "Victorville Car Accident Lawyer | High Desert",
     metaDescription: "Victorville car accident attorney. I-15 Las Vegas corridor, dust storms, and High Desert accidents. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "chula-vista",
+    cityName: "Chula Vista",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["I-5", "I-805", "SR-54", "SR-125"],
+    localCourthouse: "San Diego County Superior Court - South County",
+
+    introHook: "Chula Vista is San Diego County's second-largest city and one of the fastest-growing in California, located just minutes from the Mexican border. The convergence of I-5 and I-805, combined with heavy cross-border traffic and commuter congestion, creates thousands of accidents annually. If you've been injured in a Chula Vista collision, understanding California law and insurance tactics is essential.",
+
+    whyYouNeedLawyer: [
+      "The accident involved cross-border traffic or international insurance issues",
+      "You were injured on I-5 or I-805 during heavy commute",
+      "The other driver fled across the border (hit-and-run)",
+      "A commercial or trucking vehicle was involved",
+      "The insurance company is disputing fault",
+      "Your injuries require ongoing medical treatment",
+      "The settlement offer doesn't cover your damages"
+    ],
+
+    commonCaseTypes: [
+      "I-5 and I-805 high-speed freeway accidents",
+      "Cross-border traffic incidents",
+      "Hit-and-run accidents near the border",
+      "Pedestrian accidents in Eastlake and Otay Ranch",
+      "Commercial truck accidents near distribution centers",
+      "Rear-end collisions in border traffic congestion",
+      "SR-125 toll road accidents"
+    ],
+
+    whatToExpect: [
+      "Free case evaluation with no obligation",
+      "No fees unless you win—contingency only",
+      "Investigation of all liable parties",
+      "Expert handling of cross-border insurance issues",
+      "Negotiation with insurance companies on your behalf",
+      "Litigation if fair settlement cannot be reached"
+    ],
+
+    metaTitle: "Chula Vista Car Accident Lawyer | South San Diego County",
+    metaDescription: "Chula Vista car accident attorney handling I-5, I-805, and border area accidents. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "fontana",
+    cityName: "Fontana",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["I-10", "I-15", "SR-210", "Sierra Avenue"],
+    localCourthouse: "San Bernardino County Superior Court - Fontana",
+
+    introHook: "Fontana is a major logistics and distribution hub in the Inland Empire, with massive warehouse operations generating constant commercial truck traffic. Home to the Auto Club Speedway, the city also sees race event traffic. The I-10/I-15 interchange is one of the busiest in the region. If you've been injured in a Fontana accident, the insurance companies have strategies to minimize your payout.",
+
+    whyYouNeedLawyer: [
+      "The accident involved a commercial truck or logistics vehicle",
+      "You were injured at the I-10/I-15 interchange",
+      "A warehouse or distribution company vehicle was involved",
+      "The accident happened during Speedway event traffic",
+      "The trucking company is denying responsibility",
+      "Your injuries are serious and affecting your work",
+      "The insurance company is offering a quick, low settlement"
+    ],
+
+    commonCaseTypes: [
+      "I-10 commercial truck accidents",
+      "Logistics and delivery vehicle collisions",
+      "I-10/I-15 interchange accidents",
+      "Auto Club Speedway event traffic incidents",
+      "Warehouse district pedestrian accidents",
+      "High-speed freeway rear-end collisions",
+      "Exhausted trucker accidents"
+    ],
+
+    whatToExpect: [
+      "Free consultation to review your case",
+      "No fees unless we recover for you",
+      "Expert investigation of trucking regulations and violations",
+      "Analysis of electronic logging and driver fatigue issues",
+      "Aggressive negotiation with corporate insurers",
+      "Trial-ready representation"
+    ],
+
+    metaTitle: "Fontana Car Accident Lawyer | Inland Empire Truck Accidents",
+    metaDescription: "Fontana car accident attorney. I-10 truck accidents, logistics vehicle collisions, and Inland Empire claims. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "moreno-valley",
+    cityName: "Moreno Valley",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["SR-60", "I-215", "Perris Boulevard", "Alessandro Boulevard"],
+    localCourthouse: "Riverside County Superior Court",
+
+    introHook: "Moreno Valley has become one of the largest logistics hubs on the West Coast, with Amazon, UPS, and numerous distribution centers generating massive truck traffic. The SR-60/I-215 corridor carries heavy commercial vehicles day and night. Rapid population growth means roads often haven't kept pace. If you've been injured in a Moreno Valley accident, understanding your rights is critical.",
+
+    whyYouNeedLawyer: [
+      "The accident involved a delivery truck or logistics vehicle",
+      "You were injured on SR-60 or I-215",
+      "An Amazon, UPS, or FedEx vehicle was involved",
+      "The trucking company is denying responsibility",
+      "Your injuries require ongoing medical treatment",
+      "The insurance company is disputing fault",
+      "A large warehouse complex contributed to the accident"
+    ],
+
+    commonCaseTypes: [
+      "SR-60 high-speed truck accidents",
+      "Amazon and delivery vehicle collisions",
+      "I-215 freeway accidents",
+      "Warehouse district truck traffic incidents",
+      "Rear-end collisions in distribution area congestion",
+      "Pedestrian accidents near shopping centers",
+      "Commercial vehicle fatigue-related crashes"
+    ],
+
+    whatToExpect: [
+      "Free case evaluation",
+      "No fees unless you win",
+      "Investigation of trucking company liability",
+      "Expert analysis of driver logs and safety violations",
+      "Negotiation with corporate legal teams",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Moreno Valley Car Accident Lawyer | Riverside County",
+    metaDescription: "Moreno Valley car accident attorney. SR-60 truck accidents, logistics vehicle collisions, and distribution hub claims. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "oxnard",
+    cityName: "Oxnard",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["US-101", "SR-1 (PCH)", "Rice Avenue", "Oxnard Boulevard"],
+    localCourthouse: "Ventura County Superior Court",
+
+    introHook: "Oxnard is Ventura County's largest city and a major agricultural center, with heavy farm truck traffic on local roads. The Port of Hueneme generates commercial vehicle traffic, while beach communities see tourist congestion. US-101 carries significant commuter traffic to Los Angeles. If you've been injured in an Oxnard collision, understanding California law is essential.",
+
+    whyYouNeedLawyer: [
+      "The accident involved an agricultural truck or farm equipment",
+      "You were injured on US-101 during commute hours",
+      "A port or commercial vehicle was involved",
+      "Fog conditions contributed to the crash",
+      "You were injured as a pedestrian in beach areas",
+      "The insurance company is disputing liability",
+      "Your injuries are affecting your ability to work"
+    ],
+
+    commonCaseTypes: [
+      "US-101 high-speed freeway accidents",
+      "Agricultural truck and farm equipment collisions",
+      "Port of Hueneme commercial vehicle accidents",
+      "Beach area pedestrian and cyclist accidents",
+      "Fog-related multi-vehicle accidents",
+      "Strawberry field farm worker transportation incidents",
+      "Rear-end collisions in commuter traffic"
+    ],
+
+    whatToExpect: [
+      "Free initial consultation",
+      "No fees unless we win",
+      "Investigation of commercial and agricultural liability",
+      "Expert handling of port and trucking claims",
+      "Negotiation with insurance companies",
+      "Trial representation when fair settlement isn't offered"
+    ],
+
+    metaTitle: "Oxnard Car Accident Lawyer | Ventura County",
+    metaDescription: "Oxnard car accident attorney. US-101 accidents, agricultural truck collisions, and Port of Hueneme claims. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "glendale",
+    cityName: "Glendale",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["SR-134", "SR-2", "I-5", "Glendale Freeway (SR-2)"],
+    localCourthouse: "Los Angeles County Superior Court - Glendale Courthouse",
+
+    introHook: "Glendale is one of Los Angeles County's largest cities, home to the Americana at Brand and Glendale Galleria shopping destinations that draw regional traffic. SR-134 and SR-2 carry heavy commuter traffic, while the city's hilly terrain creates unique driving challenges. If you've been injured in a Glendale accident, insurance companies already have tactics to minimize what they pay.",
+
+    whyYouNeedLawyer: [
+      "The accident happened on SR-134 or SR-2",
+      "You were injured near major shopping destinations",
+      "The accident occurred on steep hillside roads",
+      "A rideshare vehicle was involved",
+      "You were injured as a pedestrian in downtown Glendale",
+      "The insurance company is disputing fault",
+      "Your injuries require ongoing treatment"
+    ],
+
+    commonCaseTypes: [
+      "SR-134 and SR-2 freeway accidents",
+      "Americana and Galleria shopping traffic accidents",
+      "Hillside road accidents in residential areas",
+      "Downtown Glendale pedestrian accidents",
+      "Rear-end collisions in commuter traffic",
+      "Rideshare accidents near entertainment venues",
+      "Brand Boulevard commercial area accidents"
+    ],
+
+    whatToExpect: [
+      "Free case evaluation",
+      "No fees unless you win",
+      "Full investigation of the accident",
+      "Expert handling of hillside road accident factors",
+      "Negotiation with insurance companies",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Glendale Car Accident Lawyer | LA County",
+    metaDescription: "Glendale car accident attorney. SR-134, SR-2, Americana, and Galleria area accidents. Free consultation. No fee unless you win."
   }
 ]
 

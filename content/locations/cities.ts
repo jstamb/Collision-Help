@@ -3994,6 +3994,511 @@ export const californiaCities: CityData[] = [
       "San Bernardino County accident attorney",
       "Victorville traffic accident"
     ]
+  },
+
+  {
+    slug: "chula-vista",
+    name: "Chula Vista",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 275487,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 5",
+        description: "Primary north-south freeway connecting to San Diego and Mexico border",
+        accidentHotspots: ["E Street interchange", "H Street", "Olympic Parkway"]
+      },
+      {
+        name: "Interstate 805",
+        description: "North-south route through eastern Chula Vista",
+        accidentHotspots: ["Telegraph Canyon Road", "Olympic Parkway", "E Street"]
+      },
+      {
+        name: "State Route 54",
+        description: "East-west route through central Chula Vista",
+        accidentHotspots: ["I-805 interchange", "Broadway", "Third Avenue"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Eastlake", characteristics: "Master-planned community, newer development, family-oriented" },
+      { name: "Otay Ranch", characteristics: "Large master-planned area, shopping centers, growing population" },
+      { name: "Third Avenue Village", characteristics: "Downtown area, historic district, pedestrian activity" },
+      { name: "Bonita", characteristics: "Unincorporated adjacent area, residential, golf courses" },
+      { name: "San Miguel Ranch", characteristics: "Eastern hillside development, newer homes" }
+    ],
+
+    trafficPatterns: [
+      { type: "Border Traffic", description: "Proximity to Mexico border creates international traffic patterns" },
+      { type: "San Diego Commute", description: "Heavy morning and evening traffic on I-5 and I-805" },
+      { type: "Shopping Traffic", description: "Otay Ranch Town Center creates weekend congestion" },
+      { type: "Growth Traffic", description: "Rapid eastern development increases traffic annually" }
+    ],
+
+    annualAccidents: 3100,
+    accidentYear: 2023,
+    fatalAccidents: 22,
+
+    commonAccidentTypes: [
+      "I-5 high-speed collisions",
+      "I-805 commuter rear-end accidents",
+      "Border-related traffic congestion accidents",
+      "Pedestrian accidents in Third Avenue Village",
+      "Shopping center parking lot accidents",
+      "Teen driver accidents in residential areas"
+    ],
+
+    dangerousIntersections: [
+      "I-5 & E Street interchange",
+      "I-805 & Telegraph Canyon Road",
+      "Broadway & E Street",
+      "Third Avenue & H Street",
+      "Olympic Parkway & I-805"
+    ],
+
+    policeNonEmergency: "(619) 691-5151",
+
+    introText: "Chula Vista is the second-largest city in the San Diego metropolitan area, located between San Diego and the Mexico border. Rapid growth in eastern master-planned communities creates ongoing traffic challenges. The city's proximity to the border adds international traffic patterns. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "San Diego County Superior Court (South County) handles cases",
+      "Border proximity creates unique traffic patterns",
+      "Rapid growth in Eastlake and Otay Ranch areas",
+      "Heavy commuter traffic to San Diego",
+      "International insurance considerations near border"
+    ],
+
+    weatherFactors: [
+      "Mild coastal climate minimizes weather hazards",
+      "Santa Ana winds can affect vehicle control",
+      "Marine layer fog in western areas during mornings",
+      "Rain is rare but creates slippery conditions"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Border crossing traffic rules apply near POE",
+      "Right turn on red permitted unless posted"
+    ],
+
+    metaTitle: "Chula Vista Car Accident Help | South San Diego County Guide",
+    metaDescription: "Chula Vista car accident assistance. Navigate I-5 and I-805 accidents, South Bay collisions, and border area incidents. Understand California insurance laws. Free guidance for Chula Vista accident victims.",
+    keywords: [
+      "Chula Vista car accident",
+      "Chula Vista accident lawyer",
+      "I-5 Chula Vista collision",
+      "South Bay San Diego car crash",
+      "San Diego County accident attorney",
+      "Chula Vista traffic accident"
+    ]
+  },
+
+  {
+    slug: "fontana",
+    name: "Fontana",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 214547,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 10",
+        description: "Major east-west freeway through Fontana",
+        accidentHotspots: ["I-15 interchange", "Sierra Avenue", "Citrus Avenue"]
+      },
+      {
+        name: "Interstate 15",
+        description: "North-south route connecting to Las Vegas and San Diego",
+        accidentHotspots: ["I-10 interchange", "Sierra Avenue", "Baseline Road"]
+      },
+      {
+        name: "State Route 210",
+        description: "Northern foothill freeway",
+        accidentHotspots: ["I-15 interchange", "Cherry Avenue", "Day Creek Boulevard"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "North Fontana", characteristics: "Newer development, SR-210 access, hillside communities" },
+      { name: "South Fontana", characteristics: "Industrial areas, logistics centers, warehouse districts" },
+      { name: "Downtown Fontana", characteristics: "Historic area, Auto Club Speedway nearby" },
+      { name: "Sierra Lakes", characteristics: "Master-planned community, golf course, residential" },
+      { name: "Heritage", characteristics: "Eastern development, newer homes, growing area" }
+    ],
+
+    trafficPatterns: [
+      { type: "Logistics Hub", description: "Major distribution centers create heavy truck traffic" },
+      { type: "Speedway Events", description: "Auto Club Speedway events create periodic massive traffic" },
+      { type: "Commuter Traffic", description: "Residents commute to LA basin and Orange County" },
+      { type: "Las Vegas Corridor", description: "I-15 weekend traffic to and from Las Vegas" }
+    ],
+
+    annualAccidents: 2800,
+    accidentYear: 2023,
+    fatalAccidents: 26,
+
+    commonAccidentTypes: [
+      "I-10 and I-15 interchange collisions",
+      "Commercial truck accidents from logistics centers",
+      "Speedway event traffic accidents",
+      "High-speed freeway accidents",
+      "Rear-end collisions in commuter traffic",
+      "Industrial area truck accidents"
+    ],
+
+    dangerousIntersections: [
+      "I-10 & I-15 interchange",
+      "Sierra Avenue & I-10",
+      "Baseline Road & I-15",
+      "Foothill Boulevard & Sierra Avenue",
+      "Cherry Avenue & SR-210"
+    ],
+
+    policeNonEmergency: "(909) 350-7700",
+
+    introText: "Fontana is a rapidly growing Inland Empire city known for the Auto Club Speedway and as a major logistics hub. The convergence of I-10, I-15, and SR-210 creates heavy truck and commuter traffic. Distribution centers generate significant commercial vehicle traffic. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "San Bernardino County Superior Court handles cases",
+      "Heavy logistics and truck traffic creates accident risks",
+      "Auto Club Speedway events require traffic planning",
+      "Multiple freeway interchanges create complex accident scenes",
+      "Warehouse district accidents may involve employer liability"
+    ],
+
+    weatherFactors: [
+      "Santa Ana winds create hazardous driving conditions",
+      "Inland Empire summer heat can cause vehicle issues",
+      "Morning fog occasionally affects visibility",
+      "Rain is rare but creates slippery conditions"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Commercial truck restrictions on certain routes",
+      "Right turn on red permitted unless posted"
+    ],
+
+    metaTitle: "Fontana Car Accident Help | Inland Empire Collision Guide",
+    metaDescription: "Fontana car accident assistance. Navigate I-10, I-15, and logistics truck accidents. Understand California insurance laws. Free guidance for Fontana and Inland Empire accident victims.",
+    keywords: [
+      "Fontana car accident",
+      "Fontana accident lawyer",
+      "I-10 Fontana collision",
+      "Inland Empire truck accident",
+      "San Bernardino County car crash",
+      "Fontana traffic accident attorney"
+    ]
+  },
+
+  {
+    slug: "moreno-valley",
+    name: "Moreno Valley",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 212046,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "State Route 60 (Moreno Valley Freeway)",
+        description: "Primary east-west freeway through the city",
+        accidentHotspots: ["I-215 interchange", "Perris Boulevard", "Moreno Beach Drive"]
+      },
+      {
+        name: "Interstate 215",
+        description: "North-south route connecting to Riverside and San Bernardino",
+        accidentHotspots: ["SR-60 interchange", "Alessandro Boulevard", "Eucalyptus Avenue"]
+      },
+      {
+        name: "Alessandro Boulevard",
+        description: "Major east-west arterial through central Moreno Valley",
+        accidentHotspots: ["Perris Boulevard", "Frederick Street", "Lasselle Street"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Sunnymead", characteristics: "Northern area, older development, commercial corridors" },
+      { name: "Moreno", characteristics: "Central area, mixed residential and commercial" },
+      { name: "Edgemont", characteristics: "Southern area, rural transition, equestrian" },
+      { name: "March Air Reserve Base", characteristics: "Military installation, aerospace, logistics" },
+      { name: "Towngate", characteristics: "Shopping center area, retail hub" }
+    ],
+
+    trafficPatterns: [
+      { type: "Logistics Traffic", description: "Major distribution hub creates heavy truck traffic" },
+      { type: "March ARB", description: "Military and logistics traffic near air reserve base" },
+      { type: "Commuter Traffic", description: "Heavy SR-60 traffic to LA basin during rush hours" },
+      { type: "Shopping Traffic", description: "Towngate and Moreno Valley Mall create weekend congestion" }
+    ],
+
+    annualAccidents: 2600,
+    accidentYear: 2023,
+    fatalAccidents: 24,
+
+    commonAccidentTypes: [
+      "SR-60 high-speed collisions",
+      "I-215 interchange accidents",
+      "Commercial truck accidents from logistics centers",
+      "Rear-end collisions in commuter traffic",
+      "Pedestrian accidents near shopping centers",
+      "Rural road accidents in southern areas"
+    ],
+
+    dangerousIntersections: [
+      "SR-60 & I-215 interchange",
+      "Alessandro Boulevard & Perris Boulevard",
+      "Sunnymead Boulevard & Perris Boulevard",
+      "Frederick Street & Alessandro Boulevard",
+      "Day Street & SR-60"
+    ],
+
+    policeNonEmergency: "(951) 486-6700",
+
+    introText: "Moreno Valley is a major Inland Empire city and one of California's fastest-growing communities. The city is a significant logistics hub with massive distribution centers. SR-60 commuter traffic and commercial truck traffic create daily accident risks. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Riverside County Superior Court handles cases",
+      "Major logistics hub creates heavy truck traffic",
+      "March Air Reserve Base generates military traffic",
+      "SR-60 corridor is notoriously congested",
+      "Distribution center accidents may involve commercial liability"
+    ],
+
+    weatherFactors: [
+      "Inland Empire heat can affect driver alertness",
+      "Santa Ana winds create hazardous conditions",
+      "Morning fog occasionally affects visibility",
+      "Rain creates slippery conditions on freeways"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Military installation traffic rules near March ARB",
+      "Commercial truck restrictions on certain routes"
+    ],
+
+    metaTitle: "Moreno Valley Car Accident Help | Riverside County Collision Guide",
+    metaDescription: "Moreno Valley car accident assistance. Navigate SR-60 and I-215 accidents, logistics truck collisions. Understand California insurance laws. Free guidance for Moreno Valley accident victims.",
+    keywords: [
+      "Moreno Valley car accident",
+      "Moreno Valley accident lawyer",
+      "SR-60 Moreno Valley collision",
+      "Riverside County truck accident",
+      "Inland Empire car crash",
+      "Moreno Valley traffic accident attorney"
+    ]
+  },
+
+  {
+    slug: "oxnard",
+    name: "Oxnard",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 202063,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "US-101 (Ventura Freeway)",
+        description: "Primary north-south freeway along the coast",
+        accidentHotspots: ["Vineyard Avenue", "Rice Avenue", "Rose Avenue"]
+      },
+      {
+        name: "State Route 1 (Pacific Coast Highway)",
+        description: "Coastal route through western Oxnard",
+        accidentHotspots: ["Channel Islands Boulevard", "Wooley Road", "Hueneme Road"]
+      },
+      {
+        name: "Rice Avenue",
+        description: "Major north-south arterial through central Oxnard",
+        accidentHotspots: ["Gonzales Road", "Channel Islands Boulevard", "Fifth Street"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Oxnard", characteristics: "Historic core, revitalization, cultural district" },
+      { name: "Channel Islands Harbor", characteristics: "Waterfront area, marina, restaurants" },
+      { name: "Oxnard Shores", characteristics: "Beach community, residential, coastal access" },
+      { name: "Seabridge", characteristics: "Master-planned waterfront community" },
+      { name: "North Oxnard", characteristics: "Agricultural transition, strawberry fields" }
+    ],
+
+    trafficPatterns: [
+      { type: "Agricultural Traffic", description: "Farm equipment and produce trucks on rural roads" },
+      { type: "US-101 Commute", description: "Heavy traffic to Ventura and Los Angeles" },
+      { type: "Port Traffic", description: "Port Hueneme generates commercial vehicle traffic" },
+      { type: "Beach Traffic", description: "Summer weekends bring coastal congestion" }
+    ],
+
+    annualAccidents: 2400,
+    accidentYear: 2023,
+    fatalAccidents: 19,
+
+    commonAccidentTypes: [
+      "US-101 high-speed collisions",
+      "Agricultural truck and equipment accidents",
+      "Pedestrian accidents in downtown",
+      "Harbor area traffic accidents",
+      "Farm worker transportation accidents",
+      "Beach traffic congestion accidents"
+    ],
+
+    dangerousIntersections: [
+      "US-101 & Vineyard Avenue interchange",
+      "Rice Avenue & Gonzales Road",
+      "Oxnard Boulevard & Fifth Street",
+      "Channel Islands Boulevard & Victoria Avenue",
+      "Saviers Road & Pleasant Valley Road"
+    ],
+
+    policeNonEmergency: "(805) 385-7600",
+
+    introText: "Oxnard is the largest city in Ventura County, known for its agricultural industry, particularly strawberries. The city has significant port activity at Port Hueneme and beach communities along the coast. Farm equipment and produce trucks share roads with commuters. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Ventura County Superior Court handles cases",
+      "Agricultural truck accidents are common",
+      "Port Hueneme generates commercial traffic",
+      "Farm worker accidents may involve employer liability",
+      "Coastal fog can affect visibility"
+    ],
+
+    weatherFactors: [
+      "Coastal fog common in morning hours",
+      "Mild coastal climate generally favorable",
+      "Santa Ana winds occasionally affect the area",
+      "Rain creates slippery conditions on rural roads"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Agricultural vehicle right-of-way rules",
+      "Port area commercial vehicle regulations"
+    ],
+
+    metaTitle: "Oxnard Car Accident Help | Ventura County Collision Guide",
+    metaDescription: "Oxnard car accident assistance. Navigate US-101 accidents, agricultural truck collisions, and coastal incidents. Understand California insurance laws. Free guidance for Oxnard accident victims.",
+    keywords: [
+      "Oxnard car accident",
+      "Oxnard accident lawyer",
+      "Ventura County car crash",
+      "US-101 Oxnard collision",
+      "Agricultural truck accident",
+      "Oxnard traffic accident attorney"
+    ]
+  },
+
+  {
+    slug: "glendale",
+    name: "Glendale",
+    state: "california",
+    stateAbbreviation: "CA",
+    population: 196543,
+    populationYear: 2023,
+
+    highways: [
+      {
+        name: "Interstate 5 (Golden State Freeway)",
+        description: "Eastern border freeway connecting LA to the north",
+        accidentHotspots: ["Western Avenue", "Los Feliz Boulevard", "Colorado Street"]
+      },
+      {
+        name: "State Route 134 (Ventura Freeway)",
+        description: "Primary east-west freeway through Glendale",
+        accidentHotspots: ["Pacific Avenue", "Central Avenue", "Harvey Drive"]
+      },
+      {
+        name: "State Route 2 (Glendale Freeway)",
+        description: "North-south route connecting to I-5 and SR-134",
+        accidentHotspots: ["SR-134 interchange", "Mountain Street", "Verdugo Road"]
+      }
+    ],
+
+    neighborhoods: [
+      { name: "Downtown Glendale", characteristics: "Urban core, Americana at Brand, high pedestrian traffic" },
+      { name: "Verdugo Woodlands", characteristics: "Hillside residential, winding roads, upscale" },
+      { name: "Adams Hill", characteristics: "Central residential, older homes" },
+      { name: "Montrose", characteristics: "Unincorporated adjacent area, small-town feel" },
+      { name: "Tropico", characteristics: "Southern area, industrial, near Burbank" }
+    ],
+
+    trafficPatterns: [
+      { type: "Shopping Traffic", description: "Americana at Brand and Glendale Galleria create constant traffic" },
+      { type: "Freeway Commute", description: "SR-134 and I-5 carry heavy regional commuter traffic" },
+      { type: "Entertainment Industry", description: "Studios and production companies generate business traffic" },
+      { type: "Hillside Access", description: "Verdugo Mountains create limited route options" }
+    ],
+
+    annualAccidents: 2200,
+    accidentYear: 2023,
+    fatalAccidents: 16,
+
+    commonAccidentTypes: [
+      "SR-134 rear-end collisions in congestion",
+      "Pedestrian accidents at Americana and Galleria",
+      "Hillside road accidents on winding streets",
+      "I-5 high-speed collisions",
+      "Parking structure accidents in shopping areas",
+      "Entertainment industry vehicle accidents"
+    ],
+
+    dangerousIntersections: [
+      "SR-134 & Central Avenue interchange",
+      "Brand Boulevard & Colorado Street",
+      "Glendale Avenue & Broadway",
+      "Verdugo Road & Canada Boulevard",
+      "Pacific Avenue & SR-134"
+    ],
+
+    policeNonEmergency: "(818) 548-4911",
+
+    introText: "Glendale is one of the largest cities in Los Angeles County, known for the Americana at Brand and Glendale Galleria shopping destinations. The city sits at the convergence of I-5, SR-134, and SR-2, creating complex traffic patterns. Hillside neighborhoods add winding road hazards. California's pure comparative negligence applies.",
+
+    localConsiderations: [
+      "California's Pure Comparative Negligence applies",
+      "Los Angeles County Superior Court (Glendale Courthouse) handles cases",
+      "Major shopping destinations create constant traffic",
+      "Hillside areas have limited evacuation routes",
+      "Entertainment industry traffic common",
+      "Dense urban environment increases pedestrian risk"
+    ],
+
+    weatherFactors: [
+      "Santa Ana winds particularly affect hillside areas",
+      "Fire season creates evacuation concerns",
+      "Morning fog in valleys can reduce visibility",
+      "Mild climate generally minimizes weather hazards"
+    ],
+
+    uniqueTrafficLaws: [
+      "California's Pure Comparative Negligence applies",
+      "Lane splitting is legal for motorcycles",
+      "Hillside parking restrictions",
+      "Right turn on red permitted unless posted"
+    ],
+
+    metaTitle: "Glendale Car Accident Help | Los Angeles County Collision Guide",
+    metaDescription: "Glendale car accident assistance. Navigate SR-134 and I-5 accidents, shopping area incidents, and hillside collisions. Understand California insurance laws. Free guidance for Glendale accident victims.",
+    keywords: [
+      "Glendale car accident",
+      "Glendale accident lawyer",
+      "SR-134 Glendale collision",
+      "Los Angeles County car crash",
+      "Americana at Brand accident",
+      "Glendale traffic accident attorney"
+    ]
   }
 ];
 
