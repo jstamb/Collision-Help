@@ -1803,6 +1803,348 @@ export const californiaLawyerPages: LawyerPageData[] = [
 
     metaTitle: "Sunnyvale Car Accident Lawyer | Silicon Valley",
     metaDescription: "Sunnyvale car accident attorney. US-101 accidents, bicycle collisions, and Silicon Valley claims. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "torrance",
+    cityName: "Torrance",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["I-405", "I-110", "Pacific Coast Highway (SR-1)"],
+    localCourthouse: "Los Angeles County Superior Court - South District",
+
+    introHook: "Torrance is a major South Bay city known for the Del Amo Fashion Center and significant aerospace and refinery industries. The city sits at the intersection of I-405 and I-110, creating heavy commuter traffic. If you've been injured in a Torrance accident, the insurance company is already working to minimize your claim.",
+
+    whyYouNeedLawyer: [
+      "You were injured on I-405 or I-110",
+      "The accident happened near Del Amo Fashion Center",
+      "An industrial or refinery vehicle was involved",
+      "You were injured on PCH as a pedestrian or cyclist",
+      "The insurance company is offering too little",
+      "Your injuries require ongoing treatment",
+      "A company vehicle was involved"
+    ],
+
+    commonCaseTypes: [
+      "I-405 high-speed collisions",
+      "Del Amo shopping center parking accidents",
+      "PCH pedestrian and cyclist accidents",
+      "Industrial truck accidents in north Torrance",
+      "Rear-end collisions in commuter traffic",
+      "Aerospace company vehicle accidents",
+      "DUI accidents near entertainment areas"
+    ],
+
+    whatToExpect: [
+      "Free case evaluation",
+      "No fees unless you win",
+      "Full investigation of the accident",
+      "Expert handling of industrial accident claims",
+      "Negotiation with corporate insurers",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Torrance Car Accident Lawyer | South Bay LA",
+    metaDescription: "Torrance car accident attorney. I-405 accidents, Del Amo area collisions, and South Bay claims. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "pasadena",
+    cityName: "Pasadena",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["I-210", "SR-134", "SR-110 (Pasadena Freeway)"],
+    localCourthouse: "Los Angeles County Superior Court - Pasadena Courthouse",
+
+    introHook: "Pasadena is known for the Rose Bowl, Rose Parade, and its historic SR-110—America's first freeway with dangerous curves designed for 1940s speeds. Major events at the Rose Bowl create significant traffic challenges. If you've been injured on these unique roads, understanding your legal options matters.",
+
+    whyYouNeedLawyer: [
+      "The accident happened on the dangerous SR-110",
+      "You were injured during a Rose Bowl event",
+      "The accident occurred in Old Town Pasadena",
+      "You were injured as a pedestrian in the historic district",
+      "The insurance company is disputing fault",
+      "Your injuries are serious and ongoing",
+      "A rideshare was involved near entertainment areas"
+    ],
+
+    commonCaseTypes: [
+      "Rose Bowl event-related accidents",
+      "Historic SR-110 dangerous curve accidents",
+      "Old Town pedestrian accidents",
+      "I-210 high-speed collisions",
+      "Bicycle accidents on city streets",
+      "Parking lot accidents in commercial areas",
+      "Event traffic congestion accidents"
+    ],
+
+    whatToExpect: [
+      "Free initial consultation",
+      "No fees unless we win",
+      "Expert analysis of SR-110 unique hazards",
+      "Investigation of event-related accidents",
+      "Negotiation with insurance companies",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Pasadena Car Accident Lawyer | LA County",
+    metaDescription: "Pasadena car accident attorney. Dangerous Pasadena Freeway, Rose Bowl traffic, and Old Town accidents. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "orange",
+    cityName: "Orange",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["SR-55", "SR-22", "I-5"],
+    localCourthouse: "Orange County Superior Court",
+
+    introHook: "Orange is known for its preserved Old Towne historic district with the iconic traffic circle plaza. The city hosts Chapman University, major medical facilities, and The Block shopping center. Multiple freeways converge here creating complex traffic patterns. If you've been injured in Orange, understanding your options is important.",
+
+    whyYouNeedLawyer: [
+      "The accident happened at the SR-55/SR-22 interchange",
+      "You were injured in Old Towne's unique traffic circle",
+      "A student driver was involved near Chapman University",
+      "The accident occurred at The Block shopping center",
+      "The insurance company is offering too little",
+      "Your injuries require ongoing treatment",
+      "Multiple vehicles were involved"
+    ],
+
+    commonCaseTypes: [
+      "SR-55/SR-22 interchange accidents",
+      "Shopping center parking lot accidents",
+      "Old Towne pedestrian accidents",
+      "Student-related accidents near Chapman",
+      "Medical facility access accidents",
+      "Rear-end collisions on congested routes",
+      "Traffic circle accidents"
+    ],
+
+    whatToExpect: [
+      "Free case evaluation",
+      "No fees unless you win",
+      "Investigation of all liable parties",
+      "Expert handling of complex interchange accidents",
+      "Negotiation with insurance companies",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Orange Car Accident Lawyer | Orange County CA",
+    metaDescription: "Orange California car accident attorney. SR-55, SR-22, Old Towne, and Chapman area accidents. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "fullerton",
+    cityName: "Fullerton",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["SR-91", "SR-57", "I-5"],
+    localCourthouse: "Orange County Superior Court",
+
+    introHook: "Fullerton is home to Cal State Fullerton and a vibrant downtown entertainment district. The city sits at the junction of SR-91 and SR-57, two notoriously congested freeways. The entertainment district creates nightlife-related traffic and DUI risks. If you've been injured in a Fullerton accident, understanding your legal options is essential.",
+
+    whyYouNeedLawyer: [
+      "The accident happened on congested SR-91",
+      "DUI was involved in a downtown incident",
+      "You were injured near Cal State Fullerton",
+      "The SR-57/SR-91 interchange was involved",
+      "You were injured as a pedestrian in downtown",
+      "The insurance company is disputing fault",
+      "Your injuries are affecting your work"
+    ],
+
+    commonCaseTypes: [
+      "SR-91 rear-end collisions in congestion",
+      "DUI accidents in downtown entertainment district",
+      "Student-related accidents near university",
+      "SR-57/SR-91 interchange accidents",
+      "Pedestrian accidents in downtown",
+      "Industrial truck accidents",
+      "Nightlife-related accidents"
+    ],
+
+    whatToExpect: [
+      "Free initial consultation",
+      "No fees unless we win",
+      "Full investigation of the accident",
+      "Expert handling of DUI victim claims",
+      "Aggressive negotiation with insurance companies",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Fullerton Car Accident Lawyer | Orange County",
+    metaDescription: "Fullerton car accident attorney. SR-91 congestion, downtown entertainment district, and university area accidents. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "roseville",
+    cityName: "Roseville",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["I-80", "SR-65", "Douglas Boulevard"],
+    localCourthouse: "Placer County Superior Court",
+
+    introHook: "Roseville is one of California's fastest-growing cities, along the I-80 corridor between Sacramento and Lake Tahoe. The Galleria and Fountains shopping centers attract heavy traffic. Rapid growth creates construction zone hazards. If you've been injured in a Roseville accident, understanding your options matters.",
+
+    whyYouNeedLawyer: [
+      "The accident happened on I-80",
+      "You were injured near the Galleria or shopping areas",
+      "Construction zone conditions contributed to the crash",
+      "A senior driver was involved",
+      "The accident happened in Sierra recreation traffic",
+      "The insurance company is offering too little",
+      "Your injuries require ongoing treatment"
+    ],
+
+    commonCaseTypes: [
+      "I-80 high-speed collisions",
+      "Galleria Mall parking lot accidents",
+      "Construction zone accidents in growth areas",
+      "Sierra recreation traffic accidents",
+      "Rear-end collisions in commuter traffic",
+      "Shopping center pedestrian accidents",
+      "SR-65 accidents"
+    ],
+
+    whatToExpect: [
+      "Free case evaluation",
+      "No fees unless you win",
+      "Investigation of all factors including construction",
+      "Expert handling of highway accidents",
+      "Negotiation with insurance companies",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Roseville Car Accident Lawyer | Placer County",
+    metaDescription: "Roseville car accident attorney. I-80 accidents, Galleria area collisions, and Placer County claims. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "victorville",
+    cityName: "Victorville",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["I-15", "US-395", "Bear Valley Road"],
+    localCourthouse: "San Bernardino County Superior Court - Victorville",
+
+    introHook: "Victorville is the largest city in the High Desert, sitting on I-15 between Los Angeles and Las Vegas. Heavy weekend Vegas traffic, dust storms, and extreme desert conditions create significant accident risks. Higher fatality rates reflect challenging conditions. If you've been injured in a Victorville accident, understanding your rights is critical.",
+
+    whyYouNeedLawyer: [
+      "The accident happened on I-15",
+      "A dust storm contributed to the crash",
+      "You were injured in Las Vegas corridor traffic",
+      "A commercial truck was involved",
+      "The other driver was uninsured (high rates in High Desert)",
+      "Your injuries are serious and ongoing",
+      "Extreme weather affected the accident"
+    ],
+
+    commonCaseTypes: [
+      "I-15 high-speed collisions",
+      "Las Vegas corridor fatigue accidents",
+      "Dust storm visibility accidents",
+      "Commercial truck accidents",
+      "DUI accidents (higher rates in High Desert)",
+      "Wrong-way driver incidents",
+      "Uninsured motorist accidents"
+    ],
+
+    whatToExpect: [
+      "Free case evaluation",
+      "No fees unless you win",
+      "Investigation adapted to desert conditions",
+      "Expert handling of weather-related accidents",
+      "Pursuit of uninsured motorist claims",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Victorville Car Accident Lawyer | High Desert",
+    metaDescription: "Victorville car accident attorney. I-15 Las Vegas corridor, dust storms, and High Desert accidents. Free consultation. No fee unless you win."
   }
 ]
 
