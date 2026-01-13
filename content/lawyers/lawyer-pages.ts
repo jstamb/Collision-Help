@@ -1005,6 +1005,804 @@ export const californiaLawyerPages: LawyerPageData[] = [
 
     metaTitle: "San Bernardino Car Accident Lawyer | Cajon Pass & I-10",
     metaDescription: "San Bernardino car accident attorney. Cajon Pass truck accidents, I-10 warehouse traffic, and Inland Empire collisions. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "modesto",
+    cityName: "Modesto",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["Highway 99", "Highway 132", "Highway 108"],
+    localCourthouse: "Stanislaus County Superior Court",
+
+    introHook: "Modesto sits on Highway 99, a major truck corridor serving California's Central Valley agricultural industry. Tule fog and heavy agricultural truck traffic create serious accident risks. Higher uninsured driver rates in the area make proper coverage essential. If you've been injured in a Modesto accident, understanding your rights is critical.",
+
+    whyYouNeedLawyer: [
+      "The accident involved an agricultural truck or commercial vehicle",
+      "Tule fog contributed to the crash",
+      "The other driver was uninsured or underinsured",
+      "You have significant medical bills or lost wages",
+      "The insurance company is disputing fault",
+      "The accident happened on Highway 99",
+      "Multiple vehicles were involved in a pileup"
+    ],
+
+    commonCaseTypes: [
+      "Highway 99 high-speed collisions",
+      "Agricultural truck and equipment accidents",
+      "Tule fog multi-vehicle pileups",
+      "Uninsured motorist accidents",
+      "DUI-related crashes",
+      "Teen driver accidents",
+      "Farm equipment collisions"
+    ],
+
+    whatToExpect: [
+      "Free case evaluation with no obligation",
+      "No fees unless you win",
+      "Investigation of all liable parties",
+      "Expert analysis of trucking and agricultural vehicle regulations",
+      "Negotiation with insurance companies",
+      "Litigation when necessary"
+    ],
+
+    metaTitle: "Modesto Car Accident Lawyer | Stanislaus County",
+    metaDescription: "Modesto car accident attorney handling Highway 99 accidents, Tule fog pileups, and agricultural truck collisions. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "huntington-beach",
+    cityName: "Huntington Beach",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["I-405", "Pacific Coast Highway (SR-1)", "Beach Boulevard (SR-39)"],
+    localCourthouse: "Orange County Superior Court - Central Justice Center",
+
+    introHook: "Huntington Beach—Surf City USA—sees heavy tourist traffic year-round, especially during summer and surfing events. Pacific Coast Highway pedestrian and cyclist accidents are common, while I-405 carries heavy commuter traffic. If you've been injured in a Huntington Beach accident, the insurance company is already working to minimize your claim.",
+
+    whyYouNeedLawyer: [
+      "You were injured as a pedestrian or cyclist near the beach",
+      "The accident involved a tourist or out-of-state driver",
+      "The accident happened on PCH or I-405",
+      "A rental car or rideshare was involved",
+      "The insurance company is offering a quick settlement",
+      "Your injuries are more serious than initially thought",
+      "DUI was involved in a downtown area accident"
+    ],
+
+    commonCaseTypes: [
+      "PCH pedestrian and cyclist accidents",
+      "I-405 rear-end collisions during commute",
+      "Tourist-related distracted driving accidents",
+      "Beach parking lot accidents",
+      "DUI accidents in downtown area",
+      "Bicycle accidents on coastal paths",
+      "Surfing event traffic collisions"
+    ],
+
+    whatToExpect: [
+      "Free consultation to evaluate your case",
+      "No fees unless you win",
+      "Investigation of tourist and rental car claims",
+      "Expert handling of pedestrian and cyclist cases",
+      "Aggressive negotiation for maximum compensation",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Huntington Beach Car Accident Lawyer | Orange County",
+    metaDescription: "Huntington Beach car accident attorney. PCH accidents, I-405 collisions, and beach area incidents. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "santa-rosa",
+    cityName: "Santa Rosa",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["US-101", "Highway 12", "Highway 116"],
+    localCourthouse: "Sonoma County Superior Court",
+
+    introHook: "Santa Rosa is the largest city in Wine Country and the seat of Sonoma County. The city serves as a hub for wine tourism traffic, which unfortunately contributes to DUI accident rates. Winding roads, fog conditions, and commuter traffic on US-101 create additional risks. If you've been injured in a Santa Rosa collision, understanding California law matters.",
+
+    whyYouNeedLawyer: [
+      "The accident was caused by a drunk driver",
+      "You were injured on US-101 or Highway 12",
+      "The accident happened on winding Wine Country roads",
+      "Fog contributed to the crash",
+      "The other driver's insurance is insufficient",
+      "Your injuries require ongoing treatment",
+      "The insurance company is disputing liability"
+    ],
+
+    commonCaseTypes: [
+      "US-101 high-speed collisions",
+      "Wine tasting related DUI accidents",
+      "Winding road accidents in surrounding hills",
+      "Pedestrian accidents in downtown and Railroad Square",
+      "Bicycle accidents on recreational paths",
+      "Fog-related multi-vehicle accidents",
+      "Tourist driver accidents"
+    ],
+
+    whatToExpect: [
+      "Free case evaluation",
+      "No fees unless you win",
+      "Thorough investigation of DUI and negligence claims",
+      "Expert analysis of winding road accidents",
+      "Negotiation with insurance companies",
+      "Trial representation when fair settlement isn't offered"
+    ],
+
+    metaTitle: "Santa Rosa Car Accident Lawyer | Sonoma County",
+    metaDescription: "Santa Rosa car accident attorney. US-101 accidents, Wine Country DUI crashes, and fog-related collisions. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "rancho-cucamonga",
+    cityName: "Rancho Cucamonga",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["I-15", "I-10", "Foothill Boulevard (Route 66)"],
+    localCourthouse: "San Bernardino County Superior Court",
+
+    introHook: "Rancho Cucamonga sits at the junction of I-10 and I-15 in the Inland Empire, making it a critical transportation hub. Heavy commuter and logistics truck traffic, plus weekend Las Vegas travelers, create constant accident risks. If you've been injured at these busy interchanges, understanding your legal options is essential.",
+
+    whyYouNeedLawyer: [
+      "The accident happened at the I-10/I-15 interchange",
+      "A commercial truck was involved",
+      "You were injured in weekend Las Vegas traffic",
+      "The insurance company is disputing fault",
+      "Your injuries require ongoing treatment",
+      "The settlement offer doesn't cover your damages",
+      "Multiple vehicles were involved"
+    ],
+
+    commonCaseTypes: [
+      "I-10/I-15 interchange collisions",
+      "Commercial truck accidents",
+      "Shopping center parking lot accidents",
+      "Pedestrian accidents near Victoria Gardens",
+      "High-speed freeway accidents on I-15",
+      "Rear-end collisions in heavy commute traffic",
+      "Weekend Las Vegas traffic accidents"
+    ],
+
+    whatToExpect: [
+      "Free initial consultation",
+      "No fees unless we win",
+      "Full investigation of the accident",
+      "Expert handling of truck accident claims",
+      "Negotiation with all insurance companies",
+      "Litigation when necessary"
+    ],
+
+    metaTitle: "Rancho Cucamonga Car Accident Lawyer | Inland Empire",
+    metaDescription: "Rancho Cucamonga car accident attorney. I-10/I-15 interchange accidents, truck collisions, and Inland Empire claims. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "ontario",
+    cityName: "Ontario",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["I-10", "I-15", "SR-60"],
+    localCourthouse: "San Bernardino County Superior Court",
+
+    introHook: "Ontario is a major logistics and transportation hub, home to Ontario International Airport and numerous distribution centers. The convergence of I-10, I-15, and SR-60 creates heavy commercial truck traffic. Airport-related and shopping center accidents add complexity. If you've been injured in an Ontario accident, understanding your options matters.",
+
+    whyYouNeedLawyer: [
+      "The accident involved a commercial truck or delivery vehicle",
+      "You were in an accident near Ontario Airport",
+      "A rental car company is involved",
+      "The accident happened at Ontario Mills",
+      "The insurance company is disputing liability",
+      "Your injuries are serious and require ongoing care",
+      "Multiple parties may be at fault"
+    ],
+
+    commonCaseTypes: [
+      "Commercial truck accidents near logistics centers",
+      "I-10 high-speed collisions",
+      "Ontario Mills parking lot accidents",
+      "Airport-related rental car accidents",
+      "Pedestrian accidents in shopping areas",
+      "Rear-end collisions in commute traffic",
+      "Delivery vehicle accidents"
+    ],
+
+    whatToExpect: [
+      "Free case evaluation",
+      "No fees unless you win",
+      "Investigation of commercial and employer liability",
+      "Expert handling of rental car claims",
+      "Negotiation with corporate insurers",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Ontario Car Accident Lawyer | San Bernardino County",
+    metaDescription: "Ontario CA car accident attorney. Airport area, logistics truck, and I-10 accidents. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "elk-grove",
+    cityName: "Elk Grove",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["Highway 99", "I-5", "Elk Grove Boulevard"],
+    localCourthouse: "Sacramento County Superior Court",
+
+    introHook: "Elk Grove is one of California's fastest-growing cities, with heavy commuter traffic to Sacramento on Highway 99. Multiple school zones, suburban development, and Tule fog create diverse traffic challenges. If you've been injured in an Elk Grove accident, understanding your rights under California law is important.",
+
+    whyYouNeedLawyer: [
+      "You were injured on Highway 99",
+      "The accident happened in or near a school zone",
+      "Tule fog contributed to the crash",
+      "The other driver was uninsured",
+      "Your injuries require ongoing treatment",
+      "The insurance company is disputing fault",
+      "A teen driver was involved"
+    ],
+
+    commonCaseTypes: [
+      "Highway 99 high-speed collisions",
+      "Rear-end accidents in commuter traffic",
+      "School zone accidents",
+      "Teen driver accidents near high schools",
+      "Pedestrian accidents in Old Town",
+      "Tule fog multi-vehicle pileups",
+      "Uninsured motorist claims"
+    ],
+
+    whatToExpect: [
+      "Free consultation to evaluate your case",
+      "No fees unless you win",
+      "Full investigation of the accident",
+      "Expert handling of uninsured motorist claims",
+      "Negotiation with insurance companies",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Elk Grove Car Accident Lawyer | Sacramento County",
+    metaDescription: "Elk Grove car accident attorney. Highway 99 accidents, school zone incidents, and Sacramento area claims. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "corona",
+    cityName: "Corona",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["I-15", "SR-91", "SR-71"],
+    localCourthouse: "Riverside County Superior Court",
+
+    introHook: "Corona sits at the junction of I-15 and SR-91—the notorious 91 Corridor known as one of the most congested routes in America. Long commutes to Orange and Los Angeles counties lead to fatigue-related accidents. If you've been injured on these brutal freeways, understanding your legal options is essential.",
+
+    whyYouNeedLawyer: [
+      "The accident happened on the 91 Corridor",
+      "Fatigue from a long commute contributed to the crash",
+      "A commercial truck was involved on I-15",
+      "You were injured in stop-and-go traffic",
+      "The insurance company is offering a low settlement",
+      "Your injuries are affecting your ability to work",
+      "A toll lane dispute is complicating your claim"
+    ],
+
+    commonCaseTypes: [
+      "SR-91 stop-and-go rear-end collisions",
+      "I-15/SR-91 interchange accidents",
+      "Commercial truck accidents",
+      "Fatigue-related accidents from long commutes",
+      "Motorcyclists injured lane-splitting in congestion",
+      "School zone accidents",
+      "Express toll lane incidents"
+    ],
+
+    whatToExpect: [
+      "Free initial consultation",
+      "No fees unless we win",
+      "Full investigation of the accident",
+      "Expert handling of commercial vehicle claims",
+      "Aggressive negotiation with insurance companies",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Corona Car Accident Lawyer | 91 Corridor & Riverside County",
+    metaDescription: "Corona car accident attorney. 91 Freeway accidents, I-15 collisions, and commuter crash claims. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "lancaster",
+    cityName: "Lancaster",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["SR-14", "SR-138", "Avenue I"],
+    localCourthouse: "Los Angeles County Superior Court - North District",
+
+    introHook: "Lancaster is in the high desert of the Antelope Valley, where long commutes on SR-14, extreme weather, and high-speed desert roads create unique driving hazards. Dust storms can strike without warning, and fatigue from LA commutes contributes to serious accidents. If you've been injured, understanding your rights matters.",
+
+    whyYouNeedLawyer: [
+      "The accident happened on SR-14",
+      "A dust storm contributed to the crash",
+      "Fatigue from commuting was a factor",
+      "You were injured in a high-speed collision",
+      "The other driver was uninsured",
+      "Your injuries require ongoing medical care",
+      "An aerospace contractor vehicle was involved"
+    ],
+
+    commonCaseTypes: [
+      "High-speed SR-14 collisions",
+      "Fatigue accidents from long LA commutes",
+      "Dust storm-related visibility accidents",
+      "Wrong-way accidents on divided highways",
+      "Motorcycle accidents on desert roads",
+      "Pedestrian accidents on high-speed arterials",
+      "Commercial vehicle accidents"
+    ],
+
+    whatToExpect: [
+      "Free case evaluation",
+      "No fees unless you win",
+      "Investigation adapted to desert conditions",
+      "Expert handling of weather-related accidents",
+      "Negotiation with insurance companies",
+      "Trial representation when fair settlement isn't offered"
+    ],
+
+    metaTitle: "Lancaster Car Accident Lawyer | Antelope Valley",
+    metaDescription: "Lancaster car accident attorney. SR-14 accidents, dust storm collisions, and high desert claims. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "palmdale",
+    cityName: "Palmdale",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["SR-14", "SR-138", "Palmdale Boulevard"],
+    localCourthouse: "Los Angeles County Superior Court - North District",
+
+    introHook: "Palmdale is the southern gateway to the Antelope Valley, with SR-14 providing the crucial mountain pass link to Los Angeles. Desert weather extremes, mountain pass conditions, and long commuter fatigue create significant accident risks. If you've been injured on these challenging roads, understanding your options is important.",
+
+    whyYouNeedLawyer: [
+      "The accident happened on SR-14 or the mountain pass",
+      "Weather conditions contributed to the crash",
+      "You were injured in a high-speed collision",
+      "Commuter fatigue was a factor",
+      "The other driver was uninsured or underinsured",
+      "Your injuries are serious and ongoing",
+      "An aerospace or commercial vehicle was involved"
+    ],
+
+    commonCaseTypes: [
+      "SR-14 high-speed and mountain pass accidents",
+      "Commuter fatigue-related collisions",
+      "Dust storm visibility accidents",
+      "Pedestrian accidents on wide arterials",
+      "Commercial vehicle accidents in industrial areas",
+      "Wrong-way driver incidents",
+      "Weather-related accidents"
+    ],
+
+    whatToExpect: [
+      "Free consultation to evaluate your case",
+      "No fees unless you win",
+      "Investigation of all contributing factors",
+      "Expert analysis of weather and road conditions",
+      "Negotiation with insurance companies",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Palmdale Car Accident Lawyer | Antelope Valley",
+    metaDescription: "Palmdale car accident attorney. SR-14 mountain pass accidents, desert collisions, and commuter crash claims. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "salinas",
+    cityName: "Salinas",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["US-101", "Highway 68", "Highway 183"],
+    localCourthouse: "Monterey County Superior Court",
+
+    introHook: "Salinas is the agricultural heart of California's Salinas Valley—the 'Salad Bowl of the World.' Heavy farm truck traffic, fog conditions, and Highway 68's connection to Monterey create unique accident risks. If you've been injured in a Salinas accident, understanding your rights under California law matters.",
+
+    whyYouNeedLawyer: [
+      "The accident involved an agricultural truck",
+      "Fog contributed to the crash",
+      "You were injured on US-101 or Highway 68",
+      "A farm vehicle or equipment was involved",
+      "The other driver was uninsured",
+      "Your injuries require ongoing treatment",
+      "The insurance company is disputing fault"
+    ],
+
+    commonCaseTypes: [
+      "Agricultural truck accidents",
+      "US-101 high-speed collisions",
+      "Farm equipment on rural roads",
+      "Pedestrian accidents in urban core",
+      "Fog-related multi-vehicle accidents",
+      "Highway 68 mountain road accidents",
+      "Farm worker transportation accidents"
+    ],
+
+    whatToExpect: [
+      "Free case evaluation",
+      "No fees unless you win",
+      "Investigation of commercial and agricultural liability",
+      "Expert handling of farm vehicle accidents",
+      "Negotiation with insurance companies",
+      "Trial representation when necessary"
+    ],
+
+    metaTitle: "Salinas Car Accident Lawyer | Monterey County",
+    metaDescription: "Salinas car accident attorney. Agricultural truck accidents, US-101 collisions, and fog-related crashes. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "pomona",
+    cityName: "Pomona",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["I-10", "SR-71", "SR-60"],
+    localCourthouse: "Los Angeles County Superior Court - Pomona Courthouse",
+
+    introHook: "Pomona is home to the Fairplex, which hosts the LA County Fair and numerous events. The city sits at the intersection of I-10, SR-60, and SR-71, creating complex traffic patterns. Industrial truck traffic and Cal Poly Pomona add to the mix. If you've been injured in a Pomona accident, understanding your options is important.",
+
+    whyYouNeedLawyer: [
+      "The accident happened at a major freeway interchange",
+      "A commercial truck was involved",
+      "The accident occurred during a Fairplex event",
+      "You were injured as a pedestrian in the arts district",
+      "The insurance company is disputing liability",
+      "Your injuries are affecting your ability to work",
+      "Multiple parties may be at fault"
+    ],
+
+    commonCaseTypes: [
+      "I-10 and SR-60 high-speed collisions",
+      "Commercial truck accidents in industrial areas",
+      "Fairplex event-related congestion accidents",
+      "Pedestrian accidents in downtown arts district",
+      "Parking lot accidents at event venues",
+      "Rear-end collisions in commuter traffic",
+      "University area accidents"
+    ],
+
+    whatToExpect: [
+      "Free initial consultation",
+      "No fees unless we win",
+      "Investigation of all liable parties",
+      "Expert handling of commercial vehicle claims",
+      "Aggressive negotiation with insurance companies",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Pomona Car Accident Lawyer | Eastern LA County",
+    metaDescription: "Pomona car accident attorney. I-10, SR-60, and Fairplex area accidents. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "hayward",
+    cityName: "Hayward",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["I-880", "I-580", "SR-92"],
+    localCourthouse: "Alameda County Superior Court",
+
+    introHook: "Hayward is centrally located in the East Bay, serving as a major commuter hub with multiple BART stations and freeway access. I-880 carries heavy freight traffic while industrial areas generate significant truck traffic. If you've been injured on these busy corridors, understanding your legal options is essential.",
+
+    whyYouNeedLawyer: [
+      "You were injured on I-880 or I-580",
+      "An industrial or commercial truck was involved",
+      "The accident happened near a BART station",
+      "You have significant income loss from your injuries",
+      "The insurance company is disputing fault",
+      "Your injuries require ongoing treatment",
+      "A company vehicle was involved"
+    ],
+
+    commonCaseTypes: [
+      "I-880 high-speed collisions",
+      "Industrial truck accidents",
+      "BART station pedestrian accidents",
+      "Rear-end collisions in commute traffic",
+      "SR-92 interchange accidents",
+      "Commercial vehicle accidents",
+      "Bridge approach traffic accidents"
+    ],
+
+    whatToExpect: [
+      "Free case evaluation",
+      "No fees unless you win",
+      "Full investigation of the accident",
+      "Expert handling of commercial vehicle claims",
+      "Negotiation with corporate insurers",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Hayward Car Accident Lawyer | Alameda County",
+    metaDescription: "Hayward car accident attorney. I-880 accidents, industrial truck collisions, and East Bay claims. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "escondido",
+    cityName: "Escondido",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["I-15", "SR-78", "Centre City Parkway"],
+    localCourthouse: "San Diego County Superior Court - North County",
+
+    introHook: "Escondido is the largest city in North San Diego County's inland region, at the intersection of I-15 and SR-78. The San Diego Zoo Safari Park draws tourist traffic, while I-15 carries heavy north-south traffic to San Diego and Temecula. If you've been injured in an Escondido accident, understanding your options matters.",
+
+    whyYouNeedLawyer: [
+      "You were injured on I-15 or SR-78",
+      "The accident happened near the Safari Park",
+      "A tourist or out-of-area driver was involved",
+      "DUI was involved in a downtown incident",
+      "The insurance company is offering too little",
+      "Your injuries require ongoing treatment",
+      "Agricultural equipment was involved"
+    ],
+
+    commonCaseTypes: [
+      "I-15 high-speed collisions",
+      "SR-78 interchange accidents",
+      "Pedestrian accidents in downtown",
+      "Rural road accidents in valley areas",
+      "DUI-related crashes in entertainment district",
+      "Tourist traffic accidents",
+      "Commercial truck accidents"
+    ],
+
+    whatToExpect: [
+      "Free initial consultation",
+      "No fees unless we win",
+      "Full investigation of all factors",
+      "Expert handling of DUI victim claims",
+      "Negotiation with insurance companies",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Escondido Car Accident Lawyer | North San Diego County",
+    metaDescription: "Escondido car accident attorney. I-15, SR-78, and North County San Diego accidents. Free consultation. No fee unless you win."
+  },
+
+  {
+    slug: "sunnyvale",
+    cityName: "Sunnyvale",
+    state: "california",
+    stateAbbreviation: "CA",
+    stateFull: "California",
+
+    statuteOfLimitations: {
+      personalInjury: "2 years",
+      propertyDamage: "3 years"
+    },
+    faultSystem: "at-fault",
+    comparativeNegligence: "pure",
+    minimumCoverage: {
+      bodilyInjuryPerPerson: 15000,
+      bodilyInjuryPerAccident: 30000,
+      propertyDamage: 5000
+    },
+
+    majorHighways: ["US-101", "SR-237", "I-280"],
+    localCourthouse: "Santa Clara County Superior Court",
+
+    introHook: "Sunnyvale is at the heart of Silicon Valley, home to major tech companies and heavy commuter traffic on US-101. Bicycle commuting is popular, creating unique accident considerations. Tech worker schedules create non-traditional rush hours. If you've been injured in a Sunnyvale accident, understanding your legal options is important.",
+
+    whyYouNeedLawyer: [
+      "You were injured on US-101 or an expressway",
+      "A tech company shuttle or vehicle was involved",
+      "You were injured while cycling",
+      "A rideshare vehicle was involved",
+      "The insurance company is undervaluing your claim",
+      "Your tech job income loss is significant",
+      "The accident happened near a corporate campus"
+    ],
+
+    commonCaseTypes: [
+      "US-101 rear-end collisions in congestion",
+      "Bicycle accidents on city streets",
+      "Pedestrian accidents near tech campuses",
+      "Expressway high-speed accidents",
+      "Parking lot accidents in commercial areas",
+      "Rideshare-related accidents",
+      "Corporate shuttle accidents"
+    ],
+
+    whatToExpect: [
+      "Free case evaluation",
+      "No fees unless you win",
+      "Expert valuation of tech income loss claims",
+      "Specialized handling of bicycle accidents",
+      "Negotiation with corporate insurers",
+      "Trial representation when needed"
+    ],
+
+    metaTitle: "Sunnyvale Car Accident Lawyer | Silicon Valley",
+    metaDescription: "Sunnyvale car accident attorney. US-101 accidents, bicycle collisions, and Silicon Valley claims. Free consultation. No fee unless you win."
   }
 ]
 
