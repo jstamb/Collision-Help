@@ -25,22 +25,27 @@ jobs:
           PROJECT_1_NAME: "Collision Help"
           PROJECT_1_URL: ${{ secrets.SUPABASE_URL }}
           PROJECT_1_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-          
+
           # === PROJECT 2: Vaultkeeper ===
           PROJECT_2_NAME: "Vaultkeeper"
           PROJECT_2_URL: ${{ secrets.VAULTKEEPER_SUPABASE_URL }}
           PROJECT_2_KEY: ${{ secrets.VAULTKEEPER_SUPABASE_KEY }}
-          
+
           # === PROJECT 3: Stambaugh Designs ===
           PROJECT_3_NAME: "Stambaugh Designs"
           PROJECT_3_URL: ${{ secrets.STAMBAUGH_SUPABASE_URL }}
           PROJECT_3_KEY: ${{ secrets.STAMBAUGH_SUPABASE_KEY }}
-          
+
           # === PROJECT 4: Jordan Was Here ===
           PROJECT_4_NAME: "Jordan Was Here"
           PROJECT_4_URL: ${{ secrets.JORDAN_SUPABASE_URL }}
           PROJECT_4_KEY: ${{ secrets.JORDAN_SUPABASE_KEY }}
-          
+
+          # === PROJECT 5: Auction Haus ===
+          PROJECT_5_NAME: "Auction Haus"
+          PROJECT_5_URL: ${{ secrets.AUCTIONHAUS_SUPABASE_URL }}
+          PROJECT_5_KEY: ${{ secrets.AUCTIONHAUS_SUPABASE_KEY }}
+
         run: |
           node << 'SCRIPT'
           const { createClient } = require('@supabase/supabase-js');
@@ -107,13 +112,13 @@ jobs:
               const duration = Date.now() - startTime;
               console.error(`❌ ${project.name}: FAILED [${duration}ms]`);
               console.error(`   Error: ${err.message}`);
-              
+
               if (err.message.includes('Failed to fetch') || err.message.includes('ENOTFOUND')) {
                 console.error(`   → Project may be PAUSED. Unpause at https://app.supabase.com`);
               } else if (err.message.includes('relation') && err.message.includes('does not exist')) {
                 console.error(`   → Run the keep_alive SQL migration in this project`);
               }
-              
+
               return { name: project.name, success: false, error: err.message };
             }
           }
