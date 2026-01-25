@@ -1,10 +1,10 @@
-name: Supabase Keep Alive
+name: Supabase Keep Alive (All Projects)
 
 on:
   schedule:
-    # Runs Monday and Thursday at 9 AM UTC (twice weekly for safety margin)
+    # Runs Monday and Thursday at 9 AM UTC
     - cron: '0 9 * * 1,4'
-  workflow_dispatch: # Allow manual trigger for testing
+  workflow_dispatch: # Manual trigger
 
 jobs:
   ping:
@@ -21,10 +21,26 @@ jobs:
 
       - name: Ping All Supabase Projects
         env:
-          # Collision Help (uses existing secret names)
+          # === PROJECT 1: Collision Help ===
           PROJECT_1_NAME: "Collision Help"
           PROJECT_1_URL: ${{ secrets.SUPABASE_URL }}
           PROJECT_1_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          
+          # === PROJECT 2: Vaultkeeper ===
+          PROJECT_2_NAME: "Vaultkeeper"
+          PROJECT_2_URL: ${{ secrets.VAULTKEEPER_SUPABASE_URL }}
+          PROJECT_2_KEY: ${{ secrets.VAULTKEEPER_SUPABASE_KEY }}
+          
+          # === PROJECT 3: Stambaugh Designs ===
+          PROJECT_3_NAME: "Stambaugh Designs"
+          PROJECT_3_URL: ${{ secrets.STAMBAUGH_SUPABASE_URL }}
+          PROJECT_3_KEY: ${{ secrets.STAMBAUGH_SUPABASE_KEY }}
+          
+          # === ADD MORE PROJECTS AS NEEDED ===
+          # PROJECT_4_NAME: "Project Name"
+          # PROJECT_4_URL: ${{ secrets.PROJECT4_SUPABASE_URL }}
+          # PROJECT_4_KEY: ${{ secrets.PROJECT4_SUPABASE_KEY }}
+          
         run: |
           node << 'SCRIPT'
           const { createClient } = require('@supabase/supabase-js');
@@ -32,13 +48,15 @@ jobs:
           // Build projects array from environment variables
           const projects = [];
           let i = 1;
-          while (process.env[`PROJECT_${i}_URL`]) {
+          while (process.env[`PROJECT_${i}_NAME`]) {
             const url = process.env[`PROJECT_${i}_URL`];
             const key = process.env[`PROJECT_${i}_KEY`];
-            const name = process.env[`PROJECT_${i}_NAME`] || `Project ${i}`;
+            const name = process.env[`PROJECT_${i}_NAME`];
 
-            if (url && key) {
+            if (url && key && url !== '' && key !== '') {
               projects.push({ name, url, key });
+            } else {
+              console.log(`⚠️  ${name}: Skipped (missing URL or KEY secret)`);
             }
             i++;
           }
@@ -48,89 +66,104 @@ jobs:
             try {
               const supabase = createClient(project.url, project.key);
 
-              // First try UPDATE on keep_alive table
-              const { data, error } = await supabase
+              // Try 1: UPDATE keep_alive table (best - proves write access)
+              const { error: updateError } = await supabase
                 .from('keep_alive')
-                .update({
-                  pinged_at: new Date().toISOString(),
-                })
-                .eq('id', 1)
-                .select();
+                .update({ pinged_at: new Date().toISOString() })
+                .eq('id', 1);
 
-              if (error) {
-                // Fallback: try SELECT on any table
-                const { data: selectData, error: selectError } = await supabase
-                  .from('keep_alive')
-                  .select('*')
-                  .limit(1);
+              if (!updateError) {
+                console.log(`✅ ${project.name}: Ping successful (UPDATE) [${Date.now() - startTime}ms]`);
+                return { name: project.name, success: true, method: 'update' };
+              }
 
-                if (selectError) {
-                  // Last resort: query pg_stat_activity (always exists)
-                  const { error: rpcError } = await supabase.rpc('ping', {}).catch(() => {});
-                  
-                  // Try a raw select from information_schema
-                  const { data: schemaData, error: schemaError } = await supabase
-                    .from('_realtime')
-                    .select('*')
-                    .limit(1)
-                    .maybeSingle();
-                  
-                  if (schemaError && selectError) {
-                    throw new Error(`Table not found. Run SQL migration first. Original: ${selectError.message}`);
-                  }
-                }
-                
+              // Try 2: SELECT from keep_alive table
+              const { data, error: selectError } = await supabase
+                .from('keep_alive')
+                .select('*')
+                .limit(1);
+
+              if (!selectError) {
                 console.log(`✅ ${project.name}: Ping successful (SELECT) [${Date.now() - startTime}ms]`);
                 return { name: project.name, success: true, method: 'select' };
               }
 
-              console.log(`✅ ${project.name}: Ping successful (UPDATE) [${Date.now() - startTime}ms]`);
-              return { name: project.name, success: true, method: 'update' };
+              // Try 3: Query any system table to prove DB connectivity
+              const { error: healthError } = await supabase
+                .from('_realtime')
+                .select('*')
+                .limit(1)
+                .maybeSingle();
+
+              if (!healthError) {
+                console.log(`✅ ${project.name}: Ping successful (health check) [${Date.now() - startTime}ms]`);
+                console.log(`   ⚠️  Note: Create keep_alive table for better tracking`);
+                return { name: project.name, success: true, method: 'health', needsTable: true };
+              }
+
+              throw new Error(selectError?.message || updateError?.message || 'Unknown error');
 
             } catch (err) {
-              console.error(`❌ ${project.name}: FAILED - ${err.message}`);
+              const duration = Date.now() - startTime;
+              console.error(`❌ ${project.name}: FAILED [${duration}ms]`);
+              console.error(`   Error: ${err.message}`);
+              
+              if (err.message.includes('Failed to fetch') || err.message.includes('ENOTFOUND')) {
+                console.error(`   → Project may be PAUSED. Unpause at https://app.supabase.com`);
+              } else if (err.message.includes('relation') && err.message.includes('does not exist')) {
+                console.error(`   → Run the keep_alive SQL migration in this project`);
+              }
+              
               return { name: project.name, success: false, error: err.message };
             }
           }
 
           async function main() {
-            console.log('='.repeat(60));
-            console.log('Supabase Keep-Alive Ping');
-            console.log(`Timestamp: ${new Date().toISOString()}`);
-            console.log(`Projects to ping: ${projects.length}`);
-            console.log('='.repeat(60));
+            console.log('');
+            console.log('╔════════════════════════════════════════════════════════════╗');
+            console.log('║           SUPABASE KEEP-ALIVE PING                         ║');
+            console.log('╚════════════════════════════════════════════════════════════╝');
+            console.log(`  Timestamp: ${new Date().toISOString()}`);
+            console.log(`  Projects configured: ${projects.length}`);
             console.log('');
 
             if (projects.length === 0) {
-              console.error('ERROR: No projects configured!');
-              console.error('Check that SUPABASE_URL and SUPABASE_ANON_KEY secrets are set.');
+              console.error('❌ ERROR: No projects configured with valid credentials!');
+              console.error('   Add secrets: {PROJECT}_SUPABASE_URL and {PROJECT}_SUPABASE_KEY');
               process.exit(1);
             }
 
+            console.log('─'.repeat(62));
             const results = await Promise.all(projects.map(pingProject));
+            console.log('─'.repeat(62));
 
             const successful = results.filter(r => r.success);
             const failed = results.filter(r => !r.success);
+            const needsTable = results.filter(r => r.needsTable);
 
             console.log('');
-            console.log('='.repeat(60));
-            console.log(`SUMMARY: ${successful.length}/${results.length} projects pinged successfully`);
+            console.log(`📊 RESULTS: ${successful.length}/${results.length} successful`);
+
+            if (needsTable.length > 0) {
+              console.log('');
+              console.log('⚠️  PROJECTS NEEDING keep_alive TABLE:');
+              needsTable.forEach(p => console.log(`   - ${p.name}`));
+            }
 
             if (failed.length > 0) {
               console.log('');
-              console.log('FAILED PROJECTS:');
-              failed.forEach(f => {
-                console.log(`  - ${f.name}: ${f.error}`);
-              });
+              console.log('❌ FAILED PROJECTS:');
+              failed.forEach(f => console.log(`   - ${f.name}: ${f.error}`));
               console.log('');
-              console.log('TROUBLESHOOTING:');
-              console.log('  1. Check if the project is paused at https://app.supabase.com');
-              console.log('  2. Verify secrets are correct');
-              console.log('  3. Run the keep_alive SQL migration');
+              console.log('🔧 TROUBLESHOOTING:');
+              console.log('   1. Unpause projects at https://app.supabase.com');
+              console.log('   2. Verify GitHub secrets are correct');
+              console.log('   3. Run SQL migration to create keep_alive table');
               process.exit(1);
             }
 
-            console.log('='.repeat(60));
+            console.log('');
+            console.log('✅ All projects pinged successfully!');
           }
 
           main();
