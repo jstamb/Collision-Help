@@ -36,10 +36,10 @@ jobs:
           PROJECT_3_URL: ${{ secrets.STAMBAUGH_SUPABASE_URL }}
           PROJECT_3_KEY: ${{ secrets.STAMBAUGH_SUPABASE_KEY }}
           
-          # === ADD MORE PROJECTS AS NEEDED ===
-          # PROJECT_4_NAME: "Project Name"
-          # PROJECT_4_URL: ${{ secrets.PROJECT4_SUPABASE_URL }}
-          # PROJECT_4_KEY: ${{ secrets.PROJECT4_SUPABASE_KEY }}
+          # === PROJECT 4: Jordan Was Here ===
+          PROJECT_4_NAME: "Jordan Was Here"
+          PROJECT_4_URL: ${{ secrets.JORDAN_SUPABASE_URL }}
+          PROJECT_4_KEY: ${{ secrets.JORDAN_SUPABASE_KEY }}
           
         run: |
           node << 'SCRIPT'
