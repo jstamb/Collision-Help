@@ -1,0 +1,40 @@
+# Collision Help
+> Free guidance and resources for car accident victims navigating insurance claims, repairs, and legal options.
+
+## About
+Collision Help is a nationwide resource helping car accident victims understand their rights and options after a collision. We provide free educational content on insurance claims, total loss disputes, repair rights, and finding car accident lawyers. Our mission is to empower accident victims with the knowledge they need to get fair compensation.
+
+## Core Services & Content
+
+### Guides
+- [Total Loss Dispute Guide](https://collisionhelp.org/en/guides/total-loss-dispute): How insurance calculates total loss, disputing valuations, owner retained salvage
+- [Insurance Claims Guide](https://collisionhelp.org/en/guides/insurance-claims): Filing claims, timelines, dealing with adjusters, denied claims
+- [Repair Rights Guide](https://collisionhelp.org/en/guides/repair-rights): Choosing your own shop, OEM vs aftermarket parts, supplemental claims
+- [Fault Determination Guide](https://collisionhelp.org/en/guides/fault-determination): At-fault vs no-fault states, comparative negligence, disputing fault
+- [Rear-End Collision Guide](https://collisionhelp.org/en/guides/rear-end-collisions): Fault rules, whiplash claims, chain reaction accidents
+- [Commercial Vehicle Accidents](https://collisionhelp.org/en/guides/commercial-vehicle): Truck accidents, Uber/Lyft, delivery vehicles
+- [State Insurance Laws](https://collisionhelp.org/en/guides/state-insurance-laws): State-by-state coverage requirements and fault systems
+
+### Tools
+- [Total Loss Calculator](https://collisionhelp.org/en/tools/total-loss-calculator): Estimate if your car will be totaled
+- [Settlement Calculator](https://collisionhelp.org/en/tools/settlement-calculator): Estimate potential settlement value
+
+### Lawyer Directory
+- [Find a Car Accident Lawyer](https://collisionhelp.org/en/car-accident-lawyer): Free consultation matching for car accident attorneys in all 50 states
+
+## Service Area
+Nationwide coverage across all 50 United States. Content available in English and Spanish.
+
+## Key Topics We Cover
+- Car accident insurance claims and settlements
+- Total loss vehicle valuation and disputes
+- Auto body repair rights and OEM parts
+- No-fault vs at-fault insurance systems
+- Uninsured/underinsured motorist claims
+- Commercial truck and rideshare accidents
+- State-specific insurance laws and minimums
+- Finding qualified car accident attorneys
+
+## Contact
+- Website: https://collisionhelp.org
+- Languages: English, Spanish

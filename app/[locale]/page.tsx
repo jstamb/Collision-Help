@@ -4,6 +4,64 @@ import LeadForm from '@/components/LeadForm'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { getTranslations } from 'next-intl/server'
+import type { Metadata } from 'next'
+
+// Homepage metadata optimized for car accident help keywords
+export const metadata: Metadata = {
+  title: 'Car Accident Help | Free Insurance Claim Guidance | Collision Help',
+  description: 'Get free expert guidance after a car accident. Navigate insurance claims, total loss disputes, and find car accident lawyers. Nationwide help available 24/7.',
+  keywords: ['car accident help', 'insurance claim help', 'total loss dispute', 'car accident lawyer', 'collision help'],
+  openGraph: {
+    title: 'Car Accident Help | Free Insurance Claim Guidance',
+    description: 'Get free expert guidance after a car accident. Navigate insurance claims, total loss disputes, and find car accident lawyers nationwide.',
+    url: 'https://collisionhelp.org',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Car Accident Help | Free Insurance Claim Guidance',
+    description: 'Get free expert guidance after a car accident. Navigate insurance claims, total loss disputes, and find lawyers.',
+  },
+  alternates: {
+    canonical: 'https://collisionhelp.org/en',
+    languages: {
+      'en': 'https://collisionhelp.org/en',
+      'es': 'https://collisionhelp.org/es',
+    },
+  },
+}
+
+// Organization + WebSite schema for homepage
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Collision Help',
+  url: 'https://collisionhelp.org',
+  logo: 'https://collisionhelp.org/logo.png',
+  description: 'Free guidance and resources for car accident victims navigating insurance claims, repairs, and legal options.',
+  sameAs: [],
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer service',
+    availableLanguage: ['English', 'Spanish'],
+    areaServed: 'US',
+  },
+}
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Collision Help',
+  url: 'https://collisionhelp.org',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://collisionhelp.org/en/guides?q={search_term_string}',
+    },
+    'query-input': 'required name=search_term_string',
+  },
+}
 
 export default async function Home() {
   const t = await getTranslations()
@@ -28,6 +86,15 @@ export default async function Home() {
 
   return (
     <>
+      {/* Organization + WebSite Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
       <Header />
       <main className="min-h-screen bg-slate-50">
         {/* Hero Section */}
