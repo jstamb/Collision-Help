@@ -184,6 +184,30 @@ Document these factors if your accident occurred on a known dangerous highway:
 
 ---
 
+## Frequently Asked Questions
+
+### What is the deadliest highway in America?
+
+Interstate 4 (I-4) in Florida is the deadliest highway in America with a fatality rate of 1.41 deaths per mile—the highest in the nation. The 132-mile stretch from Tampa to Daytona Beach sees extreme congestion, high tourist traffic, frequent construction, and dangerous interchange designs that contribute to its deadly reputation.
+
+### Why are some highways more dangerous than others?
+
+Highways become dangerous due to a combination of factors: infrastructure issues (narrow lanes, poor drainage, outdated interchanges), traffic patterns (high volume, speed differentials, heavy truck traffic), and environmental conditions (frequent fog, ice, wildlife crossings). When multiple risk factors combine—like high speeds, heavy traffic, and aging infrastructure—the danger multiplies.
+
+### What should I do if I'm in an accident on a dangerous highway?
+
+If you're in an accident on a dangerous highway: pull completely off the roadway if possible, turn on hazard lights, stay in your vehicle on high-speed roads, call 911 and report your mile marker, and set up warning triangles if safe. Document the scene with photos, noting road conditions, signage, and any infrastructure issues that may have contributed to the accident.
+
+### Can I sue the government for a highway accident?
+
+Yes, you may be able to file a claim against state DOTs, local municipalities, or the Federal Highway Administration for inadequate maintenance, poor design, or road condition issues. However, claims against government entities have strict notice requirements—often 30-180 days—so consult with a professional quickly.
+
+### What are the most dangerous times to drive on highways?
+
+Statistically, highways are most dangerous between 6 PM and 9 PM, with Saturday being the deadliest day of the week. This correlates with rush hour traffic, decreased visibility as darkness falls, and higher rates of impaired driving during evening hours and weekends.
+
+---
+
 ## Key Takeaways
 
 - I-4 in Florida is statistically America's deadliest highway per mile

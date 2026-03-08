@@ -268,6 +268,30 @@ What happens:
 
 ---
 
+## Frequently Asked Questions
+
+### What is the minimum car insurance required by law?
+
+Minimum car insurance requirements vary by state and typically include liability coverage for bodily injury and property damage you cause to others. Most states require liability limits expressed as three numbers (like 25/50/25), meaning $25,000 per person for injuries, $50,000 per accident for all injuries, and $25,000 for property damage. Some no-fault states also require Personal Injury Protection (PIP).
+
+### Which state has the lowest minimum insurance requirements?
+
+California has among the lowest minimum requirements at 15/30/5—just $15,000 per person for bodily injury, $30,000 per accident for all injuries, and only $5,000 for property damage. New Jersey and Pennsylvania also have similarly low minimums. These amounts are generally considered dangerously inadequate given modern medical and vehicle costs.
+
+### What does state minimum insurance cover?
+
+State minimum liability insurance only covers OTHER people's expenses when you're at fault—their medical bills, lost wages, pain and suffering, and property damage. It does NOT cover your own injuries, your own vehicle damage, or situations where the other driver is at fault or uninsured. For your own protection, you need additional coverage types like collision, comprehensive, and uninsured motorist coverage.
+
+### Is state minimum insurance enough?
+
+No—state minimum insurance is almost never adequate for serious accidents. The average new car costs over $48,000 (far exceeding most states' property damage minimums), and a moderate injury can easily result in $50,000+ in medical bills. If damages exceed your coverage limits, you're personally liable for the difference, which can lead to lawsuits, wage garnishment, and even bankruptcy.
+
+### How much car insurance do I really need?
+
+Financial experts recommend at least 100/300/100 liability coverage ($100,000 per person, $300,000 per accident for injuries, $100,000 for property damage), plus matching uninsured/underinsured motorist coverage. The cost difference from minimum coverage is often only $25-$50 per month, but provides dramatically better protection for your assets and financial future.
+
+---
+
 ## Key Takeaways
 
 - State minimums range from 15/30/5 (California) to 50/100/25 (Maine)

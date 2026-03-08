@@ -1,0 +1,29 @@
+# Collision Help
+> Free car accident guidance and insurance claim help for drivers across America
+
+## About
+Collision Help is a free educational resource helping drivers navigate the aftermath of car accidents. We provide expert guidance on insurance claims, fault determination, repair rights, and understanding your state's insurance laws. No lawyers, no fees — just clear, actionable information to help you get fair treatment from insurance companies.
+
+## Key Topics
+- [Insurance Claims Guide](https://collisionhelp.org/guides/insurance-claims): Step-by-step help filing and managing your claim
+- [Total Loss Disputes](https://collisionhelp.org/guides/total-loss-dispute): How to fight unfair total loss valuations
+- [Fault Determination](https://collisionhelp.org/guides/fault-determination): Understanding who's at fault and how it affects your claim
+- [Repair Rights](https://collisionhelp.org/guides/repair-rights): Know your rights when getting your car repaired
+- [State Insurance Laws](https://collisionhelp.org/guides/state-insurance-laws): No-fault vs at-fault states, coverage requirements
+
+## Tools
+- [Total Loss Calculator](https://collisionhelp.org/tools/total-loss-calculator): Estimate your car's actual cash value
+- [Settlement Calculator](https://collisionhelp.org/tools/settlement-calculator): Estimate potential settlement amounts
+- [AI Damage Analyzer](https://collisionhelp.org/ai-damage-analyzer): Upload photos for damage assessment
+
+## Locations
+We provide state-specific guidance for all 50 states. Each state page covers local insurance laws, minimum coverage requirements, and accident procedures.
+- [State Pages](https://collisionhelp.org/locations): Find guidance for your state
+- [Car Accident Lawyers](https://collisionhelp.org/car-accident-lawyer): Find local attorneys by city
+
+## Languages
+Available in English and Spanish (Español)
+
+## Contact
+- Website: https://collisionhelp.org
+- Mission: Help accident victims understand their rights and get fair treatment
