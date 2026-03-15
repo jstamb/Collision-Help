@@ -4,7 +4,7 @@ import { citiesByState } from '@/content/locations/cities'
 import { lawyerPagesByState } from '@/content/lawyers/lawyer-pages'
 import { locales } from '@/i18n/config'
 
-const BASE_URL = 'https://collisionhelp.org'
+const BASE_URL = 'https://www.collisionhelp.org'
 
 interface SitemapUrl {
   loc: string

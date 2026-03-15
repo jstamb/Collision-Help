@@ -47,14 +47,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: article.headline,
       description: article.metaDescription,
-      url: `https://collisionhelp.org/blog/${slug}`,
+      url: `https://www.collisionhelp.org/en/blog/${slug}`,
       type: 'article',
       publishedTime: article.publishedAt,
       modifiedTime: article.updatedAt,
       images: article.image ? [{ url: article.image }] : [],
     },
     alternates: {
-      canonical: `https://collisionhelp.org/blog/${slug}`,
+      canonical: `https://www.collisionhelp.org/en/blog/${slug}`,
     },
   }
 }
@@ -79,21 +79,24 @@ export default async function ArticlePage({ params }: PageProps) {
     author: {
       '@type': 'Organization',
       name: 'Collision Help',
-      url: 'https://collisionhelp.org'
+      url: 'https://www.collisionhelp.org'
     },
     publisher: {
       '@type': 'Organization',
       name: 'Collision Help',
-      url: 'https://collisionhelp.org',
+      url: 'https://www.collisionhelp.org',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://collisionhelp.org/logo.png'
+        url: 'https://www.collisionhelp.org/logo.png',
+        width: 600,
+        height: 60
       }
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://collisionhelp.org/blog/${slug}`
-    }
+      '@id': `https://www.collisionhelp.org/en/blog/${slug}`
+    },
+    inLanguage: 'en-US'
   }
 
   const breadcrumbSchema = {
@@ -104,19 +107,19 @@ export default async function ArticlePage({ params }: PageProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://collisionhelp.org'
+        item: 'https://www.collisionhelp.org'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Blog',
-        item: 'https://collisionhelp.org/blog'
+        item: 'https://www.collisionhelp.org/en/blog'
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: article.headline,
-        item: `https://collisionhelp.org/blog/${slug}`
+        item: `https://www.collisionhelp.org/en/blog/${slug}`
       }
     ]
   }

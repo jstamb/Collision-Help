@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Privacy Policy | Collision Help',
   description: 'Privacy Policy for Collision Help. Learn how we collect, use, and protect your personal information when using our car accident assistance services.',
   alternates: {
-    canonical: 'https://collisionhelp.org/privacy',
+    canonical: 'https://www.collisionhelp.org/privacy',
   },
   robots: {
     index: true,
@@ -260,7 +260,7 @@ export default async function PrivacyPolicyPage() {
                   </p>
                   <p className="text-slate-700">
                     <strong>Website:</strong>{' '}
-                    <a href="https://collisionhelp.org" className="text-brand-600 hover:underline">
+                    <a href="https://www.collisionhelp.org" className="text-brand-600 hover:underline">
                       collisionhelp.org
                     </a>
                   </p>

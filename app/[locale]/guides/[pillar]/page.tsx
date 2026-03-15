@@ -131,7 +131,7 @@ export default async function PillarHubPage({ params }: { params: Promise<{ pill
     "@type": "WebPage",
     "name": `${pillar.title} | Collision Help`,
     "description": pillar.description,
-    "url": `https://collisionhelp.org/guides/${pillar.slug}`
+    "url": `https://www.collisionhelp.org/guides/${pillar.slug}`
   }
 
   return (

@@ -22,11 +22,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Find a Car Accident Lawyer | Free Consultation by City',
     description: 'Find an experienced car accident lawyer in your city. Free consultations, no fee unless you win.',
-    url: 'https://collisionhelp.org/car-accident-lawyer',
+    url: 'https://www.collisionhelp.org/car-accident-lawyer',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://collisionhelp.org/car-accident-lawyer',
+    canonical: 'https://www.collisionhelp.org/car-accident-lawyer',
   },
 }
 
@@ -40,13 +40,13 @@ function generateSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://collisionhelp.org'
+        item: 'https://www.collisionhelp.org'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Car Accident Lawyer',
-        item: 'https://collisionhelp.org/car-accident-lawyer'
+        item: 'https://www.collisionhelp.org/car-accident-lawyer'
       }
     ]
   }
@@ -56,11 +56,11 @@ function generateSchema() {
     '@type': 'WebPage',
     name: 'Find a Car Accident Lawyer',
     description: 'Find an experienced car accident lawyer in your city. Free consultations, no fee unless you win.',
-    url: 'https://collisionhelp.org/car-accident-lawyer',
+    url: 'https://www.collisionhelp.org/car-accident-lawyer',
     isPartOf: {
       '@type': 'WebSite',
       name: 'Collision Help',
-      url: 'https://collisionhelp.org'
+      url: 'https://www.collisionhelp.org'
     }
   }
 

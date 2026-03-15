@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `${tagTitle} Articles | Collision Help Blog`,
     description: `Browse all articles tagged with "${tagTitle}". Expert guidance on car accidents, insurance claims, and vehicle damage.`,
     alternates: {
-      canonical: `https://collisionhelp.org/blog/tag/${slug}`,
+      canonical: `https://www.collisionhelp.org/blog/tag/${slug}`,
     },
   }
 }
