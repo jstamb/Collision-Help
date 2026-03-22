@@ -79,15 +79,32 @@ export async function generateStaticParams() {
   }))
 }
 
-// Generate metadata
+// Generate metadata with canonical URL and Open Graph
 export async function generateMetadata({ params }: { params: Promise<{ pillar: string }> }): Promise<Metadata> {
   const { pillar: pillarSlug } = await params
   const pillar = getPillar(pillarSlug)
   if (!pillar) return {}
 
+  const canonicalUrl = `https://collisionhelp.org/guides/${pillar.slug}`
+
   return {
     title: `${pillar.title} | Collision Help`,
     description: pillar.description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: `${pillar.title} | Collision Help`,
+      description: pillar.description,
+      url: canonicalUrl,
+      type: 'website',
+      siteName: 'Collision Help',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${pillar.title} | Collision Help`,
+      description: pillar.description,
+    },
   }
 }
 
@@ -111,6 +128,32 @@ export default async function PillarHubPage({ params }: { params: Promise<{ pill
   const otherPillars = translatedPillars.filter(p => p.slug !== pillar.slug).slice(0, 3)
   const featuredCities = getFeaturedCities(pillar.slug, pillar.articles)
 
+  // BreadcrumbList JSON-LD schema for search snippets
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://collisionhelp.org"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Guides",
+        "item": "https://collisionhelp.org/guides"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": pillar.title,
+        "item": `https://collisionhelp.org/guides/${pillar.slug}`
+      }
+    ]
+  }
+
   // FAQPage JSON-LD schema for rich snippets
   const faqJsonLd = pillar.faqs.length > 0 ? {
     "@context": "https://schema.org",
@@ -131,11 +174,20 @@ export default async function PillarHubPage({ params }: { params: Promise<{ pill
     "@type": "WebPage",
     "name": `${pillar.title} | Collision Help`,
     "description": pillar.description,
-    "url": `https://collisionhelp.org/guides/${pillar.slug}`
+    "url": `https://collisionhelp.org/guides/${pillar.slug}`,
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Collision Help",
+      "url": "https://collisionhelp.org"
+    }
   }
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       {faqJsonLd && (
         <script
           type="application/ld+json"
