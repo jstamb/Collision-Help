@@ -51,6 +51,11 @@ jobs:
           PROJECT_6_URL: ${{ secrets.RANKANDBANK_SUPABASE_URL }}
           PROJECT_6_KEY: ${{ secrets.RANKANDBANK_SUPABASE_KEY }}
 
+          # === PROJECT 7: ContractorBear Proposals ===
+          PROJECT_7_NAME: "ContractorBear Proposals"
+          PROJECT_7_URL: ${{ secrets.CONTRACTORBEAR_SUPABASE_URL }}
+          PROJECT_7_KEY: ${{ secrets.CONTRACTORBEAR_SUPABASE_KEY }}
+
         run: |
           node << 'SCRIPT'
           const { createClient } = require('@supabase/supabase-js');
