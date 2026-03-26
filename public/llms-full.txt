@@ -1,0 +1,703 @@
+# Collision Help
+
+> Collision Help is a free educational resource platform for motor vehicle accident victims in the United States. It provides AI-powered damage analysis, insurance claim guidance, settlement and total loss calculators, and 60+ expert guides. The site connects accident victims with vetted attorneys through optional referral partnerships, at no cost to the user.
+
+Available in English and Spanish. Covers all 50 US states. Sustained through attorney referral partnerships.
+
+---
+
+## Home
+
+**Dealing with Insurance After an Accident?**
+
+We help you navigate claims, repairs, and total loss disputes. Upload your photos and get expert guidance within 24 hours. No obligation.
+
+- Free Evaluation
+- Data Encrypted
+- Available Nationwide
+
+### How It Works
+
+1. **Tell Us What Happened** -- Answer a few simple questions about the accident and vehicle involved.
+2. **Upload Photos** -- Securely upload photos of damage. Our system analyzes severity instantly.
+3. **Get Expert Guidance** -- Receive a personalized roadmap for your insurance claim or repair process.
+
+---
+
+## About Collision Help
+
+Collision Help is a 100% free resource hub for car accident victims. Guides, tools, and AI analysis help users understand their rights. Optional attorney connections are always free.
+
+### Our Mission
+
+Every year, millions of drivers find themselves in the frustrating position of dealing with insurance claims after a car accident. They face adjusters who speak in jargon, processes designed to minimize payouts, and a system that often feels stacked against them.
+
+Collision Help was built to level the playing field. We provide free educational resources, AI-powered tools, and expert guides to help drivers document damage properly, understand their rights, and navigate insurance claims with confidence.
+
+Whether you're dealing with a fender bender or a total loss, disputing fault or fighting for fair repair value, our resources are here to help you understand your options and make informed decisions -- completely free of charge.
+
+### How We Operate
+
+**100% Free Resource Hub**
+
+All educational content is completely free to access:
+- 60+ comprehensive guides on accident claims, repairs, and rights
+- AI-powered damage analyzer to document your vehicle
+- Settlement and total loss calculators
+- State-specific insurance information for all 50 states
+
+No registration required. No credit card. No catches.
+
+**Optional Attorney Connection**
+
+If you choose to submit your information for a case review:
+- Your case is reviewed by licensed attorneys in your state
+- All attorneys are vetted for experience in motor vehicle accident cases
+- Initial case consultations are always free
+- Attorneys work on contingency -- you pay nothing unless you win
+
+This step is completely optional. You are never pressured to submit your information.
+
+### Our Business Model
+
+Complete transparency: Collision Help sustains itself through referral partnerships with qualified attorneys. When you choose to submit your case for review and an attorney takes your case, we may receive a referral fee from that attorney. This fee comes from the attorney's share -- it never affects your settlement or costs you anything.
+
+This model allows us to keep all educational resources, tools, and guides completely free while connecting accident victims with qualified legal help when they need it. You can use the entire resource library without ever submitting your information -- that choice is always yours.
+
+### Why Trust Collision Help?
+
+- **Vetted Attorney Network** -- Every attorney in our network is licensed in their respective state and vetted for experience handling motor vehicle accident cases.
+- **Your Data Is Protected** -- SSL encryption, secure cloud storage (Google Cloud), and strict access controls. We never sell your data to third parties.
+- **No Unsolicited Contact** -- We only reach out if you explicitly request help. You will never receive spam calls or texts.
+- **No Obligation, Ever** -- Use guides, tools, and resources freely. Submitting your case for review is always optional.
+
+### What We Offer
+
+- **AI Damage Analysis** -- Upload photos of vehicle damage and get an instant AI-powered assessment of repair costs and severity.
+- **Expert Guides** -- Comprehensive, state-specific guides covering insurance claims, total loss disputes, fault determination, and more.
+- **Free Calculators** -- Estimate your settlement value or determine if your car might be considered a total loss.
+
+### Our Values
+
+- **Accuracy First** -- We prioritize accurate, fact-checked information over sensationalism. Guides are researched thoroughly and updated regularly.
+- **Plain Language** -- Insurance and legal jargon can be confusing. We break down complex topics into clear, actionable guidance.
+- **Driver Advocacy** -- We believe in empowering drivers with knowledge. Insurance companies have teams of experts -- you deserve access to information too.
+- **Privacy Protected** -- Your accident photos and information stay private. Industry-standard encryption and no sharing without consent.
+
+### Stats
+
+- 60+ Expert Guides
+- 50 States Covered
+- 7 Topic Areas
+- Free To Use
+
+### Contact
+
+- **General Inquiries:** help@collisionhelp.org
+- **Privacy Questions:** privacy@collisionhelp.org
+- **Legal Matters:** legal@collisionhelp.org
+
+We typically respond within 1-2 business days.
+
+---
+
+## AI Damage Analyzer
+
+**Free AI Auto Accident Damage Analyzer -- Instant Case Evaluation**
+
+Upload photos of your car accident damage and get an instant AI-powered analysis. Understand your case strength, estimated damages, and legal options in minutes.
+
+- 100% Free
+- No Obligation
+- Confidential
+
+### Features
+
+- **Photo Analysis** -- Upload multiple angles of your vehicle damage for comprehensive AI assessment.
+- **Liability Assessment** -- Get an initial evaluation of fault factors based on damage patterns.
+- **Detailed Report** -- Receive a structured report with damage severity, estimated repair costs, and next steps.
+- **Instant Results** -- AI-powered analysis provides results in minutes, not days.
+
+### How It Works
+
+1. **Upload Photos** -- Take clear photos of your vehicle damage from multiple angles and upload them.
+2. **AI Analysis** -- GPT-4o Vision analyzes your photos for damage severity, repair estimates, and case indicators.
+3. **Get Your Report** -- Receive a detailed assessment with recommended next steps for your situation.
+
+### Benefits
+
+- Understand the severity of your damage before talking to insurance
+- Get an objective, AI-generated estimate to compare with adjuster offers
+- Document your damage with professional-grade analysis
+- Identify hidden damage indicators that may not be immediately visible
+- Receive guidance on whether to repair or consider total loss options
+- Free and confidential with no obligation to take further action
+
+### FAQ
+
+**Q: How accurate is the AI damage analysis?**
+A: The AI provides preliminary estimates based on visible damage in your photos. It uses GPT-4o Vision trained on vehicle damage patterns. While not a replacement for a professional appraisal, it gives you a solid starting point for understanding your situation.
+
+**Q: Is my information kept private?**
+A: Yes. Photos are processed through OpenAI for analysis but are not retained by OpenAI. Your personal information is encrypted and stored securely on Google Cloud.
+
+**Q: Do I need to provide personal information?**
+A: You can get a basic analysis with just photos. Providing contact information is optional and only needed if you want a personalized follow-up or attorney connection.
+
+**Q: How is this different from an insurance adjuster's estimate?**
+A: Our AI provides an independent assessment not influenced by any insurance company's interests. Use it as a reference point when evaluating your adjuster's offer.
+
+**Q: Can I use this analysis in my insurance claim?**
+A: The analysis is for informational purposes. While it can help you understand your damage, insurance companies will conduct their own assessment. It serves as a useful comparison tool.
+
+---
+
+## Settlement Calculator
+
+**Free Car Accident Settlement Calculator**
+
+Estimate the potential value of your personal injury settlement. Input your medical bills, lost wages, property damage, and injury severity to get a range estimate.
+
+### What It Calculates
+
+- Medical expenses (past and estimated future)
+- Lost wages and earning capacity
+- Property damage
+- Pain and suffering (using multiplier method)
+- Total estimated settlement range
+
+### Important Notes
+
+This calculator provides estimates only. Actual settlement values depend on many factors including state laws, insurance policy limits, fault percentage, and attorney negotiation. Results are not guarantees.
+
+---
+
+## Total Loss Calculator
+
+**Free Total Loss Calculator -- Estimate Your Settlement**
+
+Determine if your car will be declared a total loss and calculate your expected insurance settlement. Includes state-specific thresholds for all 50 states.
+
+### What It Calculates
+
+- Whether your vehicle meets your state's total loss threshold
+- Expected insurance payout after deductible
+- GAP insurance analysis (if you owe more than the car is worth)
+- Comparison of repair cost vs. vehicle value
+
+### How Total Loss Works
+
+A vehicle is declared a total loss when repair costs exceed a certain percentage of the car's actual cash value (ACV). This percentage varies by state:
+
+- **Percentage Threshold States** -- If repair costs exceed a set percentage of your car's value (ranging from 50% in Iowa to 100% in Colorado and Texas), it is totaled.
+- **Total Loss Formula (TLF) States** -- If repair cost plus salvage value exceeds the vehicle's ACV, it is totaled. Used in California, New Jersey, New York, and others.
+
+### The Total Loss Process
+
+1. **Damage Assessment** -- Insurance adjuster inspects your vehicle and estimates repair costs.
+2. **Vehicle Valuation** -- Insurance determines your car's ACV using comparable sales data.
+3. **Threshold Comparison** -- Repair costs are compared against your state's threshold.
+4. **Settlement Offer** -- If totaled, insurance offers ACV minus your deductible.
+5. **Negotiation** -- You can dispute the valuation with comparable vehicle listings and independent appraisals.
+
+### Disputing a Total Loss Valuation
+
+- Research comparable vehicles in your area using Kelley Blue Book, NADA, and local listings
+- Document any upgrades, recent maintenance, or low mileage
+- Get an independent appraisal
+- File a formal dispute with your insurance company
+- Request the appraisal clause in your policy if negotiation fails
+- Consider consulting an attorney if the difference is substantial
+
+### GAP Insurance
+
+If you owe more on your car loan than the vehicle's ACV, you may face a "gap" after a total loss. GAP insurance covers this difference:
+- Pays the difference between ACV and loan balance
+- Available through dealerships, lenders, and insurance companies
+- Usually costs $20-40 per year
+- Essential if you made a low down payment or have a long loan term
+
+### Keeping Your Totaled Vehicle
+
+In most states, you can keep your totaled vehicle through owner-retained salvage:
+- Insurance deducts salvage value from your settlement
+- Your vehicle receives a salvage title
+- You are responsible for all repairs
+- Future insurance and resale value will be affected
+- Some states require inspection before the vehicle can be driven again
+
+### FAQ
+
+**Q: What percentage of damage totals a car?**
+A: It varies by state, typically between 50-100% of the car's ACV. Some states use a Total Loss Formula that adds repair cost plus salvage value.
+
+**Q: Can I dispute my car being totaled?**
+A: Yes. Provide comparable vehicle listings, get independent appraisals, and document unique features or recent upgrades to challenge the valuation.
+
+**Q: Can I keep my car if insurance totals it?**
+A: In most states, yes. This is called owner-retained salvage. Insurance deducts the salvage value from your settlement, and your car receives a salvage or rebuilt title.
+
+**Q: How does insurance determine my car's value?**
+A: Insurance uses comparable sales data from your area -- similar year, make, model, mileage, and condition. They may use services like CCC, Mitchell, or Audatex.
+
+**Q: What if I owe more than my car is worth?**
+A: This is called being "upside down" or "underwater." GAP insurance covers the difference. Without it, you are responsible for the remaining loan balance.
+
+**Q: Do I still pay my deductible on a total loss?**
+A: Yes. Your deductible is subtracted from the ACV payout. If the other driver was at fault, you may recover your deductible through their insurance.
+
+**Q: How long does the total loss process take?**
+A: Typically 2-4 weeks from the date of the accident, though it can take longer if there are disputes about the valuation.
+
+**Q: What if I disagree with the insurance company's valuation?**
+A: You can negotiate by providing comparable vehicle listings, getting an independent appraisal, and invoking the appraisal clause in your policy.
+
+---
+
+## Guides
+
+**Car Accident Guides & Resources**
+
+Expert guidance to help you navigate insurance claims, understand your rights, and get back on the road. Written for real people dealing with real accidents.
+
+### Total Loss Dispute Guide
+
+Learn how insurance companies determine total loss, how to dispute their valuation, and your options for keeping or surrendering your totaled vehicle.
+
+**Articles:**
+- How Insurance Calculates Total Loss -- Understanding the formula insurance companies use to decide if your car is totaled
+- How to Dispute Total Loss Valuation -- Step-by-step guide to challenging an unfair total loss settlement offer
+- Can You Keep Your Totaled Car? -- Your options for owner-retained salvage and what it means for your title
+- Total Loss Threshold by State -- State-by-state breakdown of when insurance must declare your car totaled
+- How to Negotiate Total Loss Settlement -- Tactics for getting a higher payout when your car is totaled
+- GAP Insurance Explained -- What GAP insurance covers and when you need it
+- Owner Retained Salvage Explained -- Keeping your totaled car and what happens to the title
+- ACV vs Replacement Cost -- Understanding the difference between actual cash value and replacement cost
+
+**FAQ:**
+- *What percentage of damage totals a car?* -- It varies by state, typically between 50-100% of the car's actual cash value. Some states use a Total Loss Formula (TLF) that adds repair cost plus salvage value.
+- *Can I dispute my car being totaled?* -- Yes, you can dispute the valuation by providing comparable vehicle listings, getting independent appraisals, and documenting any unique features or recent upgrades.
+- *Can I keep my car if insurance totals it?* -- In most states, yes. This is called owner-retained salvage. Insurance deducts the salvage value from your settlement, and your car receives a salvage or rebuilt title.
+
+### Insurance Claims Guide
+
+Everything you need to know about filing and managing your auto insurance claim, from the accident scene to final settlement.
+
+**Articles:**
+- What to Do After a Car Accident -- Essential steps to take immediately after an accident to protect your claim
+- How to File an Insurance Claim -- Complete walkthrough of the insurance claim filing process
+- How Long Does an Insurance Claim Take? -- Typical timelines and what can speed up or delay your claim
+- Dealing With Other Driver's Insurance -- How to navigate a third-party insurance claim
+- Rental Car Coverage After Accident -- Understanding your rental car benefits and how to maximize coverage
+- What to Do If Claim is Denied -- Steps to appeal a denied insurance claim
+- How to Document Accident Damage -- Best practices for photos, videos, and written documentation
+- What is Diminished Value? -- Claiming compensation for your car's reduced resale value
+
+**FAQ:**
+- *How long does insurance have to pay a claim?* -- Most states require insurers to acknowledge claims within 15 days and pay within 30-45 days of reaching a settlement.
+- *Should I accept the first settlement offer?* -- Usually not. First offers are often lower than what you're entitled to. Review carefully and negotiate if necessary.
+- *Can I file a claim without a police report?* -- Yes, but a police report strengthens your claim. You may be able to file one later at the station.
+
+### Your Repair Rights Guide
+
+Know your rights when it comes to car repairs after an accident. Learn about shop choice, parts quality, and what to do if repairs go wrong.
+
+**Articles:**
+- Can I Choose My Own Repair Shop? -- Your rights to select where your car gets repaired
+- OEM vs Aftermarket Parts -- Understanding the difference and your rights to quality parts
+- Repair Estimate Too Low? -- What to do when insurance won't cover full repair costs
+- What If Repairs Aren't Done Right? -- Your options when a body shop does substandard work
+- Insurance Preferred Shops Explained -- Pros and cons of using insurance-recommended repair facilities
+- Getting Supplemental Damage Covered -- How to claim for additional damage found during repairs
+- Frame Damage - Repair or Total? -- Understanding frame damage severity and repair options
+
+**FAQ:**
+- *Can insurance force me to use their shop?* -- No. In all 50 states, you have the right to choose your own repair shop.
+- *Do I have to accept aftermarket parts?* -- It depends on your state and policy. Some states require OEM parts; others allow aftermarket with disclosure.
+- *What if the shop finds more damage?* -- The shop should file a supplement claim with your insurance for the additional damage.
+
+### Fault Determination Guide
+
+Understand how fault is determined after an accident, how it affects your claim, and what to do if you disagree with the fault assessment.
+
+**Articles:**
+- At-Fault vs No-Fault States -- How your state's system affects your accident claim
+- How Fault Percentage Works -- Understanding comparative and contributory negligence
+- How to Dispute Fault -- Steps to challenge an unfair fault assessment
+- Parking Lot Accident Fault Rules -- Special rules for determining fault in parking lots
+- Multi-Vehicle Accident Fault -- How fault is divided when multiple cars are involved
+- Comparative Negligence Explained -- How shared fault affects your compensation
+- Does Police Report Determine Fault? -- The role of police reports in insurance fault decisions
+
+**FAQ:**
+- *Who determines fault in a car accident?* -- Insurance adjusters determine fault based on police reports, witness statements, photos, and applicable traffic laws.
+- *Can I recover damages if I'm partially at fault?* -- In most states, yes. Pure comparative negligence states allow recovery minus your fault percentage.
+- *What if the other driver lies about the accident?* -- Document everything: photos, witness contacts, dashcam footage. Get a police report. Investigators can identify inconsistencies.
+
+### Rear-End Collision Guide
+
+Everything about rear-end accidents: fault rules, common injuries, settlement expectations, and protecting your rights after being rear-ended.
+
+**Articles:**
+- Who Is at Fault in a Rear-End Collision? -- Understanding the presumption of fault and exceptions
+- Rear-Ended While Stopped at Red Light -- Your rights when hit while lawfully stopped
+- Chain Reaction Rear-End Accidents -- How fault is determined in multi-vehicle pile-ups
+- Whiplash Claims After Rear-End Accident -- Documenting and claiming for whiplash injuries
+- Low-Speed Rear-End Accidents -- Why minor impacts can still cause injuries
+- Rear-Ended While Making a Turn -- Fault rules when hit during turns
+- Brake Checking Accidents -- When the lead driver can be at fault
+- Highway Rear-End Collisions -- High-speed rear-end accident considerations
+- Rear-Ended in a Rental Car -- Insurance and liability when driving a rental
+- Rear-Ended by Uninsured Driver -- Your options when the at-fault driver has no insurance
+
+**FAQ:**
+- *Is the rear driver always at fault?* -- Almost always, but not 100%. Exceptions exist if the front driver reverses, has broken brake lights, or brake-checks intentionally.
+- *What is the average settlement for a rear-end collision?* -- Property damage only: $3,000-$10,000. With minor injuries: $10,000-$25,000. Serious injuries: $25,000-$100,000+.
+- *Should I see a doctor after being rear-ended?* -- Yes, even if you feel fine. Whiplash often doesn't appear for 24-72 hours. Early documentation is crucial.
+
+### Commercial Vehicle Accident Guide
+
+Accidents involving commercial vehicles, trucks, and rideshare are more complex. Learn about different insurance, regulations, and how to protect your claim.
+
+**Articles:**
+- Hit by a Commercial Truck -- Key differences when a commercial truck is involved
+- Delivery Truck Accidents -- Claims involving Amazon, FedEx, UPS, and other delivery services
+- Uber and Lyft Accidents -- Understanding rideshare insurance coverage periods
+- Accident in a Company Vehicle -- Liability when driving or hit by a company vehicle
+- Bus Accident Claims -- Special rules for public transit and school bus accidents
+- Taxi Accident Claims -- Insurance and liability for traditional taxi accidents
+- Trucking Regulations and Your Claim -- Federal regulations that can strengthen your case
+- Commercial Vehicle Insurance Claims -- Understanding higher coverage limits and multiple policies
+- Fleet Vehicle Accidents -- Claims against company fleets and corporate liability
+
+**FAQ:**
+- *Why are truck accident claims different?* -- Commercial trucks have higher insurance minimums ($750K-$1M+), more parties can be liable, and federal regulations may apply.
+- *What if an Amazon driver hit me?* -- Amazon uses various driver arrangements. Coverage depends on the driver's status. Amazon's insurance typically provides $1M in coverage.
+- *Who pays in an Uber/Lyft accident?* -- It depends on the driver's status: app off = personal insurance, app on waiting = limited coverage, actively driving = $1M policy from Uber/Lyft.
+
+### Car Accident Injuries Guide
+
+Understanding common accident injuries, when to seek medical care, and how injuries affect your insurance claim and compensation.
+
+**Articles:**
+- Common Car Accident Injuries -- Overview of typical injuries from vehicle collisions
+- Delayed Injury Symptoms -- Injuries that may not appear for days after impact
+- Seeking Medical Treatment After Accident -- When and how to get proper medical care
+- Whiplash Treatment and Recovery -- Understanding whiplash treatment options
+- Back Injury Claims -- Documenting and claiming for back injuries
+- Traumatic Brain Injury (TBI) -- Recognizing and claiming for brain injuries
+- Broken Bone Claims -- Fracture injuries and compensation
+- Soft Tissue Injury Claims -- Why soft tissue claims are often disputed
+- PTSD After a Car Accident -- Psychological injuries and compensation
+- Pain and Suffering Compensation -- How pain and suffering damages are calculated
+- Pre-Existing Conditions and Claims -- How prior injuries affect your accident claim
+
+**FAQ:**
+- *Should I see a doctor even if I feel fine?* -- Yes. Adrenaline masks pain, and injuries like whiplash often don't appear for 24-72 hours.
+- *What is PIP insurance?* -- Personal Injury Protection covers your medical expenses regardless of fault. Required in no-fault states. Coverage typically ranges from $10,000 to $50,000.
+- *Will a pre-existing condition hurt my claim?* -- Not necessarily. The "eggshell plaintiff" doctrine means you can claim for aggravation of existing conditions.
+
+---
+
+## Glossary
+
+Complete glossary of car accident and insurance terms. Definitions of key terminology used in auto insurance claims.
+
+### A
+
+**Actual Cash Value (ACV):** The fair market value of your vehicle immediately before the accident, considering its age, mileage, condition, and comparable sales in your area. This is what insurance pays for a totaled car.
+
+**Adjuster:** An insurance company employee or contractor who investigates claims, assesses damage, determines fault, and negotiates settlements.
+
+**Aftermarket Parts:** Replacement parts made by companies other than the original vehicle manufacturer. Often less expensive than OEM parts but may vary in quality.
+
+**At-Fault State:** A state where the driver who caused the accident is financially responsible for damages. The at-fault driver's liability insurance pays for the other party's injuries and property damage.
+
+### B
+
+**Bodily Injury Liability:** Insurance coverage that pays for injuries you cause to others in an accident. Covers medical bills, lost wages, pain and suffering, and legal defense.
+
+**Brake Checking:** When a driver suddenly brakes to intimidate or cause a rear-end collision with the following vehicle. Can shift fault from the rear driver to the lead driver.
+
+### C
+
+**Claim:** A formal request to an insurance company for payment of losses covered under a policy. First-party claims are against your own insurer; third-party claims are against another driver's insurer.
+
+**Collision Coverage:** Optional insurance that pays to repair or replace your vehicle after an accident, regardless of fault. You pay your deductible first.
+
+**Comparative Negligence:** A legal doctrine where fault is divided among parties based on their percentage of responsibility. Your compensation is reduced by your percentage of fault.
+
+**Comprehensive Coverage:** Insurance that covers non-collision damage: theft, vandalism, weather damage, animal strikes, falling objects, and fire.
+
+**Contributory Negligence:** A strict rule in a few states where any fault on your part (even 1%) bars you from recovering any damages. Only used in Alabama, DC, Maryland, North Carolina, and Virginia.
+
+### D
+
+**Deductible:** The amount you pay out-of-pocket before insurance coverage kicks in. Common amounts are $250, $500, and $1,000.
+
+**Demand Letter:** A formal written request for compensation sent to an insurance company or at-fault party, outlining your damages and the amount sought.
+
+**Diminished Value:** The loss in resale value of your vehicle after it has been in an accident and repaired. Some states allow you to claim this from the at-fault driver's insurance.
+
+### E
+
+**Excess Policy:** Additional insurance coverage that kicks in after your primary policy limits are exhausted. Umbrella policies are a type of excess coverage.
+
+### F
+
+**First-Party Claim:** A claim you file with your own insurance company. Examples include collision, comprehensive, or uninsured motorist claims.
+
+**Frame Damage:** Structural damage to a vehicle's frame or unibody. Severe frame damage often leads to a total loss determination.
+
+### G
+
+**GAP Insurance:** Guaranteed Asset Protection insurance that pays the difference between what you owe on your car loan and the vehicle's ACV if it is totaled.
+
+### H
+
+**Hit-and-Run:** An accident where one driver leaves the scene without stopping to exchange information or render aid. A criminal offense in all states.
+
+### I
+
+**Independent Appraiser:** A professional hired to provide an unbiased valuation of your vehicle or damages, separate from the insurance company's assessment.
+
+### L
+
+**Liability Coverage:** Insurance that pays for injuries and property damage you cause to others. Required in almost all states.
+
+**Lien:** A legal claim on property (your car) as security for a debt. If you have an auto loan, the lender has a lien until it is paid off.
+
+**Loss of Use:** Compensation for not being able to use your vehicle while it is being repaired. May cover rental car costs.
+
+### M
+
+**MedPay (Medical Payments Coverage):** Optional coverage that pays medical expenses for you and your passengers after an accident, regardless of fault.
+
+**Modified Comparative Negligence:** A fault system where you can recover damages only if you are less than 50% or 51% at fault (depending on state).
+
+### N
+
+**No-Fault Insurance:** A system where each driver's own insurance pays their medical bills and lost wages regardless of who caused the accident. Limits lawsuits except for serious injuries.
+
+### O
+
+**OEM Parts:** Original Equipment Manufacturer parts -- replacement parts made by the same company that made the original parts for your vehicle.
+
+**Owner-Retained Salvage:** When you keep your totaled vehicle instead of surrendering it to the insurance company. Your settlement is reduced by the salvage value.
+
+### P
+
+**Pain and Suffering:** Non-economic damages for physical pain, emotional distress, and reduced quality of life caused by an accident.
+
+**PIP (Personal Injury Protection):** Insurance coverage in no-fault states that pays your medical expenses, lost wages, and essential services regardless of fault.
+
+**Policy Limits:** The maximum amount an insurance policy will pay for a covered loss.
+
+**Property Damage Liability:** Insurance that pays for damage you cause to others' property in an accident.
+
+**Pure Comparative Negligence:** A fault system where you can recover damages even if you are 99% at fault, though your award is reduced by your fault percentage.
+
+### R
+
+**Rear-End Collision:** When one vehicle strikes the back of another. The rear driver is usually presumed at fault.
+
+**Replacement Cost:** The cost to replace your vehicle with a similar one without deducting for depreciation.
+
+### S
+
+**Salvage Title:** A title designation for a vehicle that has been declared a total loss. Significantly reduces resale value.
+
+**Salvage Value:** What your totaled vehicle is worth in its damaged state. Deducted from your settlement if you keep the car.
+
+**Statute of Limitations:** The legal deadline for filing a lawsuit after an accident. Varies by state (typically 2-4 years).
+
+**Subrogation:** The process where your insurance company recovers money from the at-fault party's insurer after paying your claim.
+
+**Supplement:** Additional repair costs discovered after the initial estimate, often when hidden damage is found during repairs.
+
+### T
+
+**T-Bone Accident:** A side-impact collision where one vehicle strikes another at a roughly perpendicular angle. Among the most dangerous crash types.
+
+**Third-Party Claim:** A claim you file against another driver's insurance company.
+
+**Threshold (No-Fault):** The legal requirement that must be met to sue for pain and suffering in a no-fault state.
+
+**Total Loss:** When the cost to repair your vehicle exceeds a certain percentage of its value. Insurance pays ACV instead of repairs.
+
+**Total Loss Threshold:** The percentage of a vehicle's value at which insurance declares it totaled. Varies by state (50-100%) or uses the Total Loss Formula.
+
+### U
+
+**UM/UIM (Uninsured/Underinsured Motorist):** Coverage that protects you when hit by a driver with no insurance or insufficient coverage.
+
+### W
+
+**Whiplash:** A neck injury caused by rapid back-and-forth movement of the head, common in rear-end collisions. Symptoms may be delayed 24-72 hours.
+
+---
+
+## Blog
+
+Expert articles on car accidents, insurance claims, vehicle damage assessment, and legal guidance. Content is published regularly and covers current topics in auto insurance and accident recovery. Articles are organized by categories and tags for easy navigation.
+
+---
+
+## Locations
+
+### Car Accident Help by State
+
+Every state has different insurance laws, fault systems, and deadlines. The locations section provides state-specific information for all 50 states, organized by region.
+
+**Coverage includes:**
+- Insurance requirements and minimum coverage amounts
+- Fault system type (at-fault, no-fault, or choice)
+- Statute of limitations for filing lawsuits
+- Comparative negligence rules
+- State-specific resources and guidance
+
+**State Insurance Systems:**
+
+- **At-Fault States** -- The driver who caused the accident is responsible for paying damages. You can file a claim against their insurance or sue them directly.
+- **No-Fault States** -- Your own insurance (PIP) pays for your medical bills and lost wages regardless of who caused the accident. Lawsuits are limited to cases meeting injury thresholds.
+- **Choice States** -- Kentucky, New Jersey, and Pennsylvania let you select between no-fault coverage or traditional at-fault coverage when purchasing your policy.
+- **Contributory Negligence States** -- Alabama, Maryland, North Carolina, Virginia, and Washington D.C. follow pure contributory negligence, where even 1% fault can bar you from recovering compensation.
+
+### Find a Car Accident Lawyer
+
+Directory of car accident attorneys organized by state and city, covering 770+ cities nationwide. All attorneys in the network are licensed in their respective states and experienced in motor vehicle accident cases.
+
+**Features:**
+- Browse attorneys by state and city
+- Free initial consultations
+- Contingency fee basis (no fee unless you win)
+- Vetted for experience in motor vehicle accident cases
+
+---
+
+## Resources
+
+Free downloadable checklists, templates, and tools to help navigate your car accident claim.
+
+**Available Resources:**
+- Post-Accident Checklist -- Essential steps to take immediately after an accident
+- Documentation Checklist -- How to properly document damage and gather evidence
+- Insurance Claim Filing Guide -- Step-by-step process for filing your claim
+- Settlement Negotiation Tips -- Strategies for negotiating with insurance adjusters
+- Links to AI Damage Analyzer, Settlement Calculator, and Total Loss Calculator
+
+---
+
+## Privacy Policy
+
+### Our Privacy Promise
+
+- Your data is encrypted and stored securely
+- We never sell your personal information
+- You control how your information is used
+- We only share data when you ask us to
+
+### What We Will Never Do
+
+- Never sell personal information to data brokers, marketers, or anyone else
+- Never share photos with anyone except for AI analysis (OpenAI)
+- Never contact you unsolicited with calls or texts
+- Never share information with lawyers unless you explicitly request a case review
+
+### Information We Collect
+
+**Information You Provide (optional):**
+- Contact Information: Name, email, phone number, and state (only if you submit a form)
+- Accident Details: Information about your accident that you choose to share
+- Vehicle Information: Make, model, year, and damage descriptions
+- Photos: Images uploaded to the AI Damage Analyzer
+
+**Information Collected Automatically:**
+- IP address (for approximate location and security)
+- Browser type and device information
+- Pages visited and time spent
+- How you found the site (search engine, link, etc.)
+
+### How We Use Your Information
+
+- Provide services: Analyze photos, generate reports, give personalized guidance
+- Respond to you: Answer questions and follow up on requests
+- Connect you with help: If requested, share information with vetted attorneys
+- Improve tools: Make guides and AI better using anonymized, aggregated data
+
+### How We Share Your Information
+
+**Service Providers:**
+- Google Cloud: Secure hosting and data storage
+- OpenAI: Powers AI damage analysis (photos processed but not retained)
+- Resend: Sends emails
+- Google Analytics: Anonymized site usage data
+
+**Attorney Network (only with your permission):**
+We only share information with attorneys if you explicitly submit a case review request. All attorneys are licensed and vetted.
+
+### Data Security
+
+- SSL/TLS encryption for all data in transit
+- Google Cloud enterprise-grade storage security
+- Strict access controls for personal data
+- Regular security reviews
+
+### Your Rights
+
+- Access: Request a copy of your personal information
+- Correction: Ask to correct inaccurate information
+- Deletion: Request deletion of your personal information
+- Opt-Out: Unsubscribe from marketing emails
+- Data Portability: Request your data in a portable format
+
+Contact: privacy@collisionhelp.org (responses within 30 days)
+
+---
+
+## Terms of Service
+
+### Plain Language Summary
+
+- Free to use -- All guides, tools, and resources cost nothing
+- Educational only -- We provide information, not legal or insurance advice
+- AI estimates -- The damage analyzer gives estimates, not guarantees
+- Optional connections -- Attorney referrals only happen if you ask
+
+### What We Provide
+
+Collision Help is a free educational resource for people who have been in car accidents:
+- Educational Guides: 60+ guides on insurance claims, repairs, and rights
+- AI Damage Analyzer: Upload photos for instant damage assessment
+- Calculators: Estimate settlement values and total loss determinations
+- State-Specific Information: Insurance laws and resources for all 50 states
+- Attorney Connections: Optional referrals to vetted legal professionals
+
+### Important Disclaimers
+
+- **Not Legal Advice** -- Information is for general educational purposes only. Consult a qualified attorney for advice specific to your situation.
+- **Not Insurance Advice** -- We are not licensed insurance agents. Contact your insurance company for specific policy guidance.
+- **AI Analysis Limitations** -- Preliminary estimates only, based on visible damage in photos, not a substitute for professional appraisals, not binding on insurance companies.
+
+### How Attorney Connections Work
+
+- Attorney connections only happen if you explicitly request a case review
+- All attorneys are licensed and experienced in motor vehicle accidents
+- Initial case reviews are always free
+- Attorneys work on contingency (no fee unless you win)
+- When an attorney takes your case, they may pay a referral fee from their share -- this never affects your settlement
+
+### Contact
+
+Questions about these terms: legal@collisionhelp.org (responses within 1-2 business days)
+
+---
+
+## Contact
+
+- **General Inquiries:** help@collisionhelp.org
+- **Privacy Questions:** privacy@collisionhelp.org
+- **Legal Matters:** legal@collisionhelp.org
+- **Response Time:** 1-2 business days
+
+For urgent legal matters related to your accident, consult with a licensed attorney in your state.

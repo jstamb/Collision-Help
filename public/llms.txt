@@ -1,0 +1,44 @@
+# Collision Help
+
+> Collision Help is a free educational resource platform for motor vehicle accident victims in the United States. It provides AI-powered damage analysis, insurance claim guidance, settlement and total loss calculators, and 60+ expert guides covering insurance claims, repairs, fault determination, and legal rights. The site also offers optional connections to vetted car accident attorneys nationwide.
+
+Available in English and Spanish. Covers all 50 US states with state-specific insurance laws, fault systems, and statute of limitations information. Sustained through attorney referral partnerships at no cost to users.
+
+## Tools
+
+- [AI Damage Analyzer](https://collisionhelp.org/ai-damage-analyzer): Upload photos of vehicle damage for instant GPT-4o Vision analysis of repair costs, severity, and case strength
+- [Settlement Calculator](https://collisionhelp.org/tools/settlement-calculator): Estimate personal injury settlement value based on medical bills, lost wages, pain and suffering, and other factors
+- [Total Loss Calculator](https://collisionhelp.org/tools/total-loss-calculator): Determine if your vehicle will be declared a total loss using state-specific thresholds and calculate expected insurance payout
+
+## Guides
+
+- [Car Accident Guides Hub](https://collisionhelp.org/guides): Index of all 60+ expert guides organized by topic
+- [Total Loss Dispute Guide](https://collisionhelp.org/guides/total-loss-dispute): How insurance calculates total loss, disputing valuations, salvage options, GAP insurance, and state thresholds
+- [Insurance Claims Guide](https://collisionhelp.org/guides/insurance-claims): Filing claims step by step, timelines, dealing with adjusters, denied claims, diminished value, and documentation
+- [Repair Rights Guide](https://collisionhelp.org/guides/repair-rights): Choosing your own shop, OEM vs aftermarket parts, supplemental claims, and frame damage
+- [Fault Determination Guide](https://collisionhelp.org/guides/fault-determination): At-fault vs no-fault states, comparative negligence, disputing fault, and police reports
+- [Rear-End Collision Guide](https://collisionhelp.org/guides/rear-end-collisions): Fault rules, whiplash claims, chain reactions, and settlement expectations
+- [Commercial Vehicle Guide](https://collisionhelp.org/guides/commercial-vehicle): Truck accidents, Uber/Lyft claims, delivery truck collisions, and fleet vehicle liability
+- [Accident Injuries Guide](https://collisionhelp.org/guides/accident-injuries): Common injuries, delayed symptoms, whiplash treatment, TBI, back injuries, and pain and suffering
+
+## Reference
+
+- [Glossary](https://collisionhelp.org/glossary): 40+ defined terms used in car accident and insurance claims, from ACV and comparative negligence to total loss thresholds and subrogation
+- [Resources](https://collisionhelp.org/resources): Free downloadable checklists, templates, and tools for managing accident claims
+- [Blog](https://collisionhelp.org/blog): Articles on car accidents, insurance claims, vehicle damage assessment, and legal guidance
+
+## Locations
+
+- [Car Accident Help by State](https://collisionhelp.org/locations): State-specific insurance requirements, fault systems, and local resources for all 50 states
+- [Find a Car Accident Lawyer](https://collisionhelp.org/car-accident-lawyer): Directory of car accident attorneys organized by state and city, covering 770+ cities nationwide
+
+## About
+
+- [About Collision Help](https://collisionhelp.org/about): Mission, business model transparency, what the platform offers, values, and trust information
+- [Contact](https://collisionhelp.org/about): General inquiries at help@collisionhelp.org, privacy questions at privacy@collisionhelp.org, legal matters at legal@collisionhelp.org
+
+## Optional
+
+- [Privacy Policy](https://collisionhelp.org/privacy): Data collection, usage, sharing practices, security measures, and user rights
+- [Terms of Service](https://collisionhelp.org/terms): Service terms, disclaimers, attorney connection details, and liability limitations
+- [Sitemap](https://collisionhelp.org/sitemap.xml): Full site structure in XML format
