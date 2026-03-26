@@ -72,6 +72,12 @@ export default async function RootLayout({
             cronitor('config', { clientKey: '${CRONITOR_CLIENT_KEY}' });
           `}
         </Script>
+        {/* Rybbit Analytics */}
+        <Script
+          src="https://app.rybbit.io/api/script.js"
+          data-site-id="7abb31f4732b"
+          strategy="lazyOnload"
+        />
       </head>
       <body className={cn("min-h-screen bg-white font-sans text-slate-900 antialiased", inter.variable)}>
         {children}
