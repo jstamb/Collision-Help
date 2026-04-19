@@ -254,9 +254,21 @@ export async function generateMetadata({ params }: { params: { pillar: string; a
   const article = getArticle(params.pillar, params.article)
   if (!pillar || !article) return {}
 
+  const canonicalUrl = `https://collisionhelp.org/guides/${pillar.slug}/${article.slug}`
+
   return {
     title: `${article.title} | ${pillar.shortTitle} | Collision Help`,
     description: article.description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: article.title,
+      description: article.description,
+      url: canonicalUrl,
+      siteName: 'Collision Help',
+      type: 'article',
+    },
   }
 }
 
@@ -342,9 +354,12 @@ Consider seeking additional assistance if:
     "@type": "Article",
     "headline": article.title,
     "description": article.description,
+    "datePublished": "2025-06-01",
+    "dateModified": "2026-04-19",
     "author": {
       "@type": "Organization",
-      "name": "Collision Help"
+      "name": "Collision Help",
+      "url": "https://collisionhelp.org"
     },
     "publisher": {
       "@type": "Organization",

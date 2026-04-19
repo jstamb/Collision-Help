@@ -126,15 +126,15 @@ export const pillars: Pillar[] = [
     articles: [
       {
         slug: 'what-to-do-after-accident',
-        title: 'What to Do After a Car Accident',
-        description: 'Essential steps to take immediately after an accident to protect your claim.',
+        title: 'What to Do After a Car Accident: 8 Steps That Protect Your Claim',
+        description: 'Don\'t make costly mistakes after a crash. Follow these 8 critical steps to stay safe, protect your legal rights, and maximize your insurance payout.',
         readingTime: '7 min read',
         priority: 'P1'
       },
       {
         slug: 'filing-claim-step-by-step',
-        title: 'How to File an Insurance Claim',
-        description: 'Complete walkthrough of the insurance claim filing process.',
+        title: 'How to File a Car Insurance Claim in 2026 (Step-by-Step)',
+        description: 'File your auto insurance claim the right way. Our step-by-step guide covers first-party vs. third-party claims, required documents, deadlines, and common mistakes to avoid.',
         readingTime: '8 min read',
         priority: 'P1'
       },

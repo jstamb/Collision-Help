@@ -131,10 +131,16 @@ export async function GET() {
       lastmod: now,
       changefreq: pathConfig.changefreq,
       priority: pathConfig.priority,
-      alternates: locales.map((loc) => ({
-        lang: loc,
-        href: `${BASE_URL}/${loc}${pathConfig.path}`,
-      })),
+      alternates: [
+        ...locales.map((loc) => ({
+          lang: loc,
+          href: `${BASE_URL}/${loc}${pathConfig.path}`,
+        })),
+        {
+          lang: 'x-default',
+          href: `${BASE_URL}/en${pathConfig.path}`,
+        },
+      ],
     }))
   )
 
