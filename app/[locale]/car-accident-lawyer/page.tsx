@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 }
 
 // Generate schema for the hub page
-function generateSchema() {
+function generateSchema(statesWithLawyers: { slug: string; name: string; cityCount: number }[]) {
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -64,11 +64,25 @@ function generateSchema() {
     }
   }
 
-  return { breadcrumbSchema, webPageSchema }
+  // ItemList schema helps Google understand the state directory structure
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Car Accident Lawyers by State',
+    description: 'Directory of car accident lawyers organized by state and city',
+    numberOfItems: statesWithLawyers.length,
+    itemListElement: statesWithLawyers.slice(0, 20).map((state, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: `${state.name} Car Accident Lawyers`,
+      url: `https://collisionhelp.org/car-accident-lawyer/${state.slug}`
+    }))
+  }
+
+  return { breadcrumbSchema, webPageSchema, itemListSchema }
 }
 
 export default async function CarAccidentLawyerHub() {
-  const { breadcrumbSchema, webPageSchema } = generateSchema()
   const t = await getTranslations()
 
   // Get state information for each state with lawyer pages
@@ -85,6 +99,9 @@ export default async function CarAccidentLawyerHub() {
 
   const totalCities = Object.values(lawyerPagesByState).reduce((sum, pages) => sum + pages.length, 0)
 
+  // Generate schemas after we have statesWithLawyers data
+  const { breadcrumbSchema, webPageSchema, itemListSchema } = generateSchema(statesWithLawyers)
+
   return (
     <>
       <script
@@ -94,6 +111,10 @@ export default async function CarAccidentLawyerHub() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
 
       <Header />

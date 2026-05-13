@@ -124,17 +124,21 @@ export async function GET() {
     ...lawyerCityPaths,
   ]
 
-  // Generate URLs for all locales
+  // Generate URLs for all locales with x-default hreflang for international SEO
   const urls: SitemapUrl[] = locales.flatMap((locale) =>
     allPaths.map((pathConfig) => ({
       loc: `${BASE_URL}/${locale}${pathConfig.path}`,
       lastmod: now,
       changefreq: pathConfig.changefreq,
       priority: pathConfig.priority,
-      alternates: locales.map((loc) => ({
-        lang: loc,
-        href: `${BASE_URL}/${loc}${pathConfig.path}`,
-      })),
+      alternates: [
+        // x-default points to English version for unmatched language/region
+        { lang: 'x-default', href: `${BASE_URL}/en${pathConfig.path}` },
+        ...locales.map((loc) => ({
+          lang: loc,
+          href: `${BASE_URL}/${loc}${pathConfig.path}`,
+        })),
+      ],
     }))
   )
 
