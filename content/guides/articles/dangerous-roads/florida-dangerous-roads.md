@@ -236,3 +236,25 @@ Florida requires:
 - Florida's minimal insurance requirements leave many drivers underprotected
 
 For local accident guidance, see our city-specific pages for [Miami](/locations/florida/miami), [Orlando](/locations/florida/orlando), and [Tampa](/locations/florida/tampa).
+
+## Frequently Asked Questions
+
+### What is the most dangerous road in Florida?
+
+Interstate 4 (I-4) between Tampa and Daytona Beach is Florida's most dangerous road and the deadliest highway in America per mile, with a fatality rate of 1.41 deaths per mile and over 180 deaths annually.
+
+### Why is I-4 so dangerous?
+
+I-4 combines extreme tourist congestion through Orlando, more than 20 years of continuous construction, confusing interchange designs, a high percentage of unfamiliar drivers, and an aggressive driving culture — risk factors that compound to produce the nation's highest per-mile fatality rate.
+
+### Is Florida a no-fault state for car accidents?
+
+Yes. Florida is a no-fault state, meaning drivers turn first to their own Personal Injury Protection (PIP) coverage for medical bills regardless of who caused the crash. Lawsuits against the at-fault driver are limited to cases involving serious or permanent injuries.
+
+### What insurance is required to drive in Florida?
+
+Florida requires $10,000 in PIP and $10,000 in Property Damage Liability (PDL). Bodily Injury Liability is not required, which leaves many Florida drivers underinsured if they cause serious injuries to others.
+
+### What should I do after a car accident on a Florida highway?
+
+Move to safety if possible, call 911 and report your mile marker, document the scene with photos, exchange information, seek medical evaluation within 14 days to preserve PIP benefits, and contact your insurance carrier promptly. For serious crashes, consult a Florida car accident attorney before giving recorded statements.
