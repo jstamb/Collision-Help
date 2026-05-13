@@ -132,12 +132,14 @@ export async function GET() {
       changefreq: pathConfig.changefreq,
       priority: pathConfig.priority,
       alternates: [
-        // x-default points to English version for unmatched language/region
-        { lang: 'x-default', href: `${BASE_URL}/en${pathConfig.path}` },
         ...locales.map((loc) => ({
           lang: loc,
           href: `${BASE_URL}/${loc}${pathConfig.path}`,
         })),
+        {
+          lang: 'x-default',
+          href: `${BASE_URL}/en${pathConfig.path}`,
+        },
       ],
     }))
   )
