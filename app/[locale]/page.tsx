@@ -6,31 +6,6 @@ import Footer from '@/components/layout/Footer'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 
-// Homepage metadata optimized for car accident help keywords
-export const metadata: Metadata = {
-  title: 'Car Accident Help | Free Insurance Claim Guidance | Collision Help',
-  description: 'Get free expert guidance after a car accident. Navigate insurance claims, total loss disputes, and find car accident lawyers. Nationwide help available 24/7.',
-  keywords: ['car accident help', 'insurance claim help', 'total loss dispute', 'car accident lawyer', 'collision help'],
-  openGraph: {
-    title: 'Car Accident Help | Free Insurance Claim Guidance',
-    description: 'Get free expert guidance after a car accident. Navigate insurance claims, total loss disputes, and find car accident lawyers nationwide.',
-    url: 'https://collisionhelp.org',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Car Accident Help | Free Insurance Claim Guidance',
-    description: 'Get free expert guidance after a car accident. Navigate insurance claims, total loss disputes, and find lawyers.',
-  },
-  alternates: {
-    canonical: 'https://collisionhelp.org/en',
-    languages: {
-      'en': 'https://collisionhelp.org/en',
-      'es': 'https://collisionhelp.org/es',
-    },
-  },
-}
-
 // Organization + WebSite schema for homepage
 const organizationSchema = {
   '@context': 'https://schema.org',
@@ -63,6 +38,27 @@ const websiteSchema = {
   },
 }
 
+export const metadata: Metadata = {
+  title: 'Car Accident Help | Free Insurance Claim Guidance | Collision Help',
+  description: 'Got in a car accident? Get free guidance on insurance claims, repair rights, and settlement negotiation. Understand your rights and maximize your claim — no lawyers, no fees.',
+  keywords: ['car accident help', 'insurance claim help', 'accident claim guidance', 'collision help', 'car accident insurance'],
+  alternates: {
+    canonical: 'https://collisionhelp.org/',
+  },
+  openGraph: {
+    title: 'Car Accident Help | Free Insurance Claim Guidance',
+    description: 'Got in a car accident? Get free guidance on insurance claims, repair rights, and settlement negotiation.',
+    url: 'https://collisionhelp.org/',
+    siteName: 'Collision Help',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Car Accident Help | Free Guidance',
+    description: 'Free guidance on insurance claims, repair rights, and settlements after a car accident.',
+  },
+}
+
 export default async function Home() {
   const t = await getTranslations()
 
@@ -84,9 +80,40 @@ export default async function Home() {
     }
   ]
 
+  // Organization and WebSite schema
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Collision Help",
+    "url": "https://collisionhelp.org",
+    "logo": "https://collisionhelp.org/logo.png",
+    "description": "Free car accident guidance and insurance claim help for drivers across America",
+    "sameAs": [],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Spanish"]
+    }
+  }
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Collision Help",
+    "url": "https://collisionhelp.org",
+    "description": "Free car accident guidance and insurance claim help",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://collisionhelp.org/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+
   return (
     <>
-      {/* Organization + WebSite Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

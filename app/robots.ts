@@ -12,7 +12,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: ['/api/', '/private/'],
       },
-      // AI Search Crawlers - Allow for LLMO optimization
+      // AI Search Crawlers - Allow for LLMO visibility
       {
         userAgent: 'GPTBot',
         allow: '/',
@@ -49,7 +49,7 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: 'cohere-ai',
         allow: '/',
       },
-      // Block known bad bots
+      // Block known bad actors
       {
         userAgent: 'CCBot',
         disallow: '/',

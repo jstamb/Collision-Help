@@ -1,40 +1,29 @@
 # Collision Help
-> Free guidance and resources for car accident victims navigating insurance claims, repairs, and legal options.
+> Free car accident guidance and insurance claim help for drivers across America
 
 ## About
-Collision Help is a nationwide resource helping car accident victims understand their rights and options after a collision. We provide free educational content on insurance claims, total loss disputes, repair rights, and finding car accident lawyers. Our mission is to empower accident victims with the knowledge they need to get fair compensation.
+Collision Help is a free educational resource helping drivers navigate the aftermath of car accidents. We provide expert guidance on insurance claims, fault determination, repair rights, and understanding your state's insurance laws. No lawyers, no fees — just clear, actionable information to help you get fair treatment from insurance companies.
 
-## Core Services & Content
+## Key Topics
+- [Insurance Claims Guide](https://collisionhelp.org/guides/insurance-claims): Step-by-step help filing and managing your claim
+- [Total Loss Disputes](https://collisionhelp.org/guides/total-loss-dispute): How to fight unfair total loss valuations
+- [Fault Determination](https://collisionhelp.org/guides/fault-determination): Understanding who's at fault and how it affects your claim
+- [Repair Rights](https://collisionhelp.org/guides/repair-rights): Know your rights when getting your car repaired
+- [State Insurance Laws](https://collisionhelp.org/guides/state-insurance-laws): No-fault vs at-fault states, coverage requirements
 
-### Guides
-- [Total Loss Dispute Guide](https://collisionhelp.org/en/guides/total-loss-dispute): How insurance calculates total loss, disputing valuations, owner retained salvage
-- [Insurance Claims Guide](https://collisionhelp.org/en/guides/insurance-claims): Filing claims, timelines, dealing with adjusters, denied claims
-- [Repair Rights Guide](https://collisionhelp.org/en/guides/repair-rights): Choosing your own shop, OEM vs aftermarket parts, supplemental claims
-- [Fault Determination Guide](https://collisionhelp.org/en/guides/fault-determination): At-fault vs no-fault states, comparative negligence, disputing fault
-- [Rear-End Collision Guide](https://collisionhelp.org/en/guides/rear-end-collisions): Fault rules, whiplash claims, chain reaction accidents
-- [Commercial Vehicle Accidents](https://collisionhelp.org/en/guides/commercial-vehicle): Truck accidents, Uber/Lyft, delivery vehicles
-- [State Insurance Laws](https://collisionhelp.org/en/guides/state-insurance-laws): State-by-state coverage requirements and fault systems
+## Tools
+- [Total Loss Calculator](https://collisionhelp.org/tools/total-loss-calculator): Estimate your car's actual cash value
+- [Settlement Calculator](https://collisionhelp.org/tools/settlement-calculator): Estimate potential settlement amounts
+- [AI Damage Analyzer](https://collisionhelp.org/ai-damage-analyzer): Upload photos for damage assessment
 
-### Tools
-- [Total Loss Calculator](https://collisionhelp.org/en/tools/total-loss-calculator): Estimate if your car will be totaled
-- [Settlement Calculator](https://collisionhelp.org/en/tools/settlement-calculator): Estimate potential settlement value
+## Locations
+We provide state-specific guidance for all 50 states. Each state page covers local insurance laws, minimum coverage requirements, and accident procedures.
+- [State Pages](https://collisionhelp.org/locations): Find guidance for your state
+- [Car Accident Lawyers](https://collisionhelp.org/car-accident-lawyer): Find local attorneys by city
 
-### Lawyer Directory
-- [Find a Car Accident Lawyer](https://collisionhelp.org/en/car-accident-lawyer): Free consultation matching for car accident attorneys in all 50 states
-
-## Service Area
-Nationwide coverage across all 50 United States. Content available in English and Spanish.
-
-## Key Topics We Cover
-- Car accident insurance claims and settlements
-- Total loss vehicle valuation and disputes
-- Auto body repair rights and OEM parts
-- No-fault vs at-fault insurance systems
-- Uninsured/underinsured motorist claims
-- Commercial truck and rideshare accidents
-- State-specific insurance laws and minimums
-- Finding qualified car accident attorneys
+## Languages
+Available in English and Spanish (Español)
 
 ## Contact
 - Website: https://collisionhelp.org
-- Languages: English, Spanish
+- Mission: Help accident victims understand their rights and get fair treatment
