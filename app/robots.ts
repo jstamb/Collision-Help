@@ -55,6 +55,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: '/',
       },
     ],
-    sitemap: 'https://collisionhelp.org/sitemap.xml',
+    sitemap: 'https://www.collisionhelp.org/sitemap.xml',
   }
 }

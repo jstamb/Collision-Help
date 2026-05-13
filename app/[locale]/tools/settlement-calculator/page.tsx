@@ -222,7 +222,7 @@ export default function SettlementCalculatorPage() {
     "@type": "WebPage",
     "name": "Car Accident Settlement Calculator - Estimate Your Claim Value",
     "description": "Free car accident settlement calculator. Estimate your potential settlement based on medical bills, lost wages, and injury severity. Get personalized results.",
-    "url": "https://collisionhelp.org/tools/settlement-calculator"
+    "url": "https://www.collisionhelp.org/tools/settlement-calculator"
   }
 
   return (

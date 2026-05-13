@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free AI Auto Accident Damage Analyzer | Instant Case Evaluation',
     description: 'Upload photos of your car accident damage and get an instant AI-powered analysis. Understand your case strength and legal options in minutes.',
-    url: 'https://collisionhelp.org/ai-damage-analyzer',
+    url: 'https://www.collisionhelp.org/ai-damage-analyzer',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://collisionhelp.org/ai-damage-analyzer',
+    canonical: 'https://www.collisionhelp.org/ai-damage-analyzer',
   },
 }
 

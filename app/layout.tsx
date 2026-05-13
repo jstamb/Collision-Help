@@ -11,29 +11,58 @@ const CRONITOR_CLIENT_KEY = 'bee8bc73945613102aa5723071fcc965';
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://collisionhelp.org'),
+  metadataBase: new URL('https://www.collisionhelp.org'),
   title: {
     default: 'Collision Help | Nationwide Accident Help',
     template: '%s | Collision Help',
   },
-  description: 'Guidance for motor vehicle accident victims. Navigate insurance claims, repairs, and total loss disputes.',
+  description: 'Free expert guidance for car accident victims. Navigate insurance claims, total loss disputes, repair rights, and settlement negotiations. Get help 24/7.',
+  keywords: ['car accident help', 'insurance claim help', 'total loss dispute', 'car accident lawyer', 'accident settlement', 'insurance claim denied'],
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://collisionhelp.org',
+    url: 'https://www.collisionhelp.org',
     siteName: 'Collision Help',
     title: 'Collision Help | Nationwide Accident Help',
-    description: 'AI-powered damage analysis and expert guidance to help you navigate insurance claims after a car accident.',
+    description: 'Free expert guidance for car accident victims. Navigate insurance claims, total loss disputes, and settlement negotiations.',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Collision Help - Nationwide Accident Assistance',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Collision Help | Nationwide Accident Help',
-    description: 'AI-powered damage analysis and expert guidance to help you navigate insurance claims after a car accident.',
+    description: 'Free expert guidance for car accident victims. Navigate insurance claims and get the settlement you deserve.',
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
+  alternates: {
+    canonical: 'https://www.collisionhelp.org',
+    languages: {
+      'en': 'https://www.collisionhelp.org/en',
+      'es': 'https://www.collisionhelp.org/es',
+    },
+  },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
 };
 
 export default async function RootLayout({

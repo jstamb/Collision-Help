@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: 'Car Accident Blog | Collision Help',
   description: 'Expert articles on car accidents, insurance claims, vehicle damage assessment, and legal guidance. Stay informed with the latest tips and advice.',
   alternates: {
-    canonical: 'https://collisionhelp.org/blog',
+    canonical: 'https://www.collisionhelp.org/blog',
   },
 }
 

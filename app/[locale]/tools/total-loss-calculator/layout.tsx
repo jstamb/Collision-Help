@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Total Loss Calculator | Free Car Insurance Settlement Estimator',
     description: 'Free total loss calculator to estimate if your car will be declared a total loss after an accident. Calculate your expected insurance settlement using state-specific thresholds.',
-    url: 'https://collisionhelp.org/tools/total-loss-calculator',
+    url: 'https://www.collisionhelp.org/tools/total-loss-calculator',
     type: 'website',
     siteName: 'Collision Help',
   },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: 'Find out if your car will be declared a total loss and estimate your insurance settlement.',
   },
   alternates: {
-    canonical: 'https://collisionhelp.org/tools/total-loss-calculator',
+    canonical: 'https://www.collisionhelp.org/tools/total-loss-calculator',
   },
   robots: {
     index: true,

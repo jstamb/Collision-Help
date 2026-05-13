@@ -420,7 +420,7 @@ export async function sendLeadNotificationEmail(
                     <span style="color: #94a3b8; font-size: 12px;">Zip Code: ${lead.zipCode}</span>
                   </td>
                   <td align="right">
-                    <a href="https://collisionhelp.org" style="color: #0ea5e9; font-size: 12px; text-decoration: none;">Collision Help</a>
+                    <a href="https://www.collisionhelp.org" style="color: #0ea5e9; font-size: 12px; text-decoration: none;">Collision Help</a>
                   </td>
                 </tr>
               </table>
@@ -737,7 +737,7 @@ export async function sendUserAnalysisEmail(
 
           <tr>
             <td style="background-color: #1e293b; padding: 20px 40px; text-align: center;">
-              <a href="https://collisionhelp.org" style="color: #0ea5e9; font-size: 14px; text-decoration: none; font-weight: 600;">Collision Help</a>
+              <a href="https://www.collisionhelp.org" style="color: #0ea5e9; font-size: 14px; text-decoration: none; font-weight: 600;">Collision Help</a>
               <p style="margin: 8px 0 0 0; color: #64748b; font-size: 12px;">
                 Helping accident victims navigate the claims process
               </p>
@@ -965,7 +965,7 @@ export async function sendCallbackNotificationEmail(data: CallbackData): Promise
                     <span style="color: #94a3b8; font-size: 12px;">Source: ${data.source}</span>
                   </td>
                   <td align="right">
-                    <a href="https://collisionhelp.org" style="color: #0ea5e9; font-size: 12px; text-decoration: none;">Collision Help</a>
+                    <a href="https://www.collisionhelp.org" style="color: #0ea5e9; font-size: 12px; text-decoration: none;">Collision Help</a>
                   </td>
                 </tr>
               </table>
@@ -1042,7 +1042,7 @@ export async function sendCallbackConfirmationEmail(data: {
           <tr>
             <td style="background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); padding: 40px; text-align: center;">
               <div style="width: 64px; height: 64px; background-color: rgba(255,255,255,0.2); border-radius: 50%; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center;">
-                <img src="https://collisionhelp.org/check-circle.png" alt="Success" width="32" height="32" style="display: block;" onerror="this.style.display='none'">
+                <img src="https://www.collisionhelp.org/check-circle.png" alt="Success" width="32" height="32" style="display: block;" onerror="this.style.display='none'">
               </div>
               <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: 700;">
                 Request Received!
@@ -1143,7 +1143,7 @@ export async function sendCallbackConfirmationEmail(data: {
 
               <!-- Contact Info -->
               <p style="margin: 0; color: #64748b; font-size: 13px; text-align: center;">
-                Questions? Visit <a href="https://collisionhelp.org" style="color: #0ea5e9; text-decoration: none;">collisionhelp.org</a>
+                Questions? Visit <a href="https://www.collisionhelp.org" style="color: #0ea5e9; text-decoration: none;">collisionhelp.org</a>
               </p>
             </td>
           </tr>
@@ -1151,7 +1151,7 @@ export async function sendCallbackConfirmationEmail(data: {
           <!-- Footer -->
           <tr>
             <td style="background-color: #1e293b; padding: 24px 40px; text-align: center;">
-              <a href="https://collisionhelp.org" style="color: #ffffff; font-size: 16px; text-decoration: none; font-weight: 600;">Collision Help</a>
+              <a href="https://www.collisionhelp.org" style="color: #ffffff; font-size: 16px; text-decoration: none; font-weight: 600;">Collision Help</a>
               <p style="margin: 8px 0 0 0; color: #94a3b8; font-size: 12px;">
                 Helping accident victims navigate the claims process
               </p>
@@ -1459,7 +1459,7 @@ export async function sendSettlementCalculatorAdminEmail(
                     <span style="color: #94a3b8; font-size: 12px;">Source: Settlement Calculator</span>
                   </td>
                   <td align="right">
-                    <a href="https://collisionhelp.org" style="color: #0ea5e9; font-size: 12px; text-decoration: none;">Collision Help</a>
+                    <a href="https://www.collisionhelp.org" style="color: #0ea5e9; font-size: 12px; text-decoration: none;">Collision Help</a>
                   </td>
                 </tr>
               </table>
@@ -1721,7 +1721,7 @@ export async function sendSettlementCalculatorUserEmail(
                 <p style="margin: 0 0 16px 0; color: #94a3b8; font-size: 14px;">
                   Based on your estimated settlement range, speaking with a personal injury attorney could help ensure you receive fair compensation.
                 </p>
-                <a href="https://collisionhelp.org/guides/claims-process/when-to-hire-attorney" style="display: inline-block; background-color: #0ea5e9; color: #ffffff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px;">
+                <a href="https://www.collisionhelp.org/guides/claims-process/when-to-hire-attorney" style="display: inline-block; background-color: #0ea5e9; color: #ffffff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px;">
                   Learn About Your Options
                 </a>
               </div>
@@ -1743,7 +1743,7 @@ export async function sendSettlementCalculatorUserEmail(
           <!-- Footer -->
           <tr>
             <td style="background-color: #1e293b; padding: 24px 40px; text-align: center;">
-              <a href="https://collisionhelp.org" style="color: #ffffff; font-size: 16px; text-decoration: none; font-weight: 600;">Collision Help</a>
+              <a href="https://www.collisionhelp.org" style="color: #ffffff; font-size: 16px; text-decoration: none; font-weight: 600;">Collision Help</a>
               <p style="margin: 8px 0 0 0; color: #94a3b8; font-size: 12px;">
                 Helping accident victims navigate the claims process
               </p>

@@ -64,11 +64,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: page.metaTitle,
       description: page.metaDescription,
-      url: `https://collisionhelp.org/car-accident-lawyer/${stateSlug}/${citySlug}`,
+      url: `https://www.collisionhelp.org/car-accident-lawyer/${stateSlug}/${citySlug}`,
       type: 'website',
     },
     alternates: {
-      canonical: `https://collisionhelp.org/car-accident-lawyer/${stateSlug}/${citySlug}`,
+      canonical: `https://www.collisionhelp.org/car-accident-lawyer/${stateSlug}/${citySlug}`,
     },
   }
 }
@@ -81,7 +81,7 @@ function generateSchema(page: LawyerPageData) {
     '@type': 'Attorney',
     name: `${page.cityName} Car Accident Lawyer`,
     description: page.metaDescription,
-    url: `https://collisionhelp.org/car-accident-lawyer/${page.state}/${page.slug}`,
+    url: `https://www.collisionhelp.org/car-accident-lawyer/${page.state}/${page.slug}`,
     areaServed: {
       '@type': 'City',
       name: page.cityName,
@@ -128,7 +128,7 @@ function generateSchema(page: LawyerPageData) {
     '@type': 'LegalService',
     name: `Car Accident Legal Help - ${page.cityName}`,
     description: `Car accident lawyer services in ${page.cityName}, ${page.stateFull}. Free consultation and contingency fee representation.`,
-    url: `https://collisionhelp.org/car-accident-lawyer/${page.state}/${page.slug}`,
+    url: `https://www.collisionhelp.org/car-accident-lawyer/${page.state}/${page.slug}`,
     serviceType: 'Car Accident Attorney',
     areaServed: {
       '@type': 'City',
@@ -186,25 +186,25 @@ function generateSchema(page: LawyerPageData) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://collisionhelp.org'
+        item: 'https://www.collisionhelp.org'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Car Accident Lawyer',
-        item: 'https://collisionhelp.org/car-accident-lawyer'
+        item: 'https://www.collisionhelp.org/car-accident-lawyer'
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: page.stateFull,
-        item: `https://collisionhelp.org/car-accident-lawyer/${page.state}`
+        item: `https://www.collisionhelp.org/car-accident-lawyer/${page.state}`
       },
       {
         '@type': 'ListItem',
         position: 4,
         name: page.cityName,
-        item: `https://collisionhelp.org/car-accident-lawyer/${page.state}/${page.slug}`
+        item: `https://www.collisionhelp.org/car-accident-lawyer/${page.state}/${page.slug}`
       }
     ]
   }

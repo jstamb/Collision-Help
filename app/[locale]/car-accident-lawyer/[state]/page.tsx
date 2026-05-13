@@ -49,11 +49,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: `${stateName} Car Accident Lawyers | Find an Attorney by City`,
       description: `Find a car accident lawyer in ${stateName}. Free consultations in ${pages.length} cities. No fee unless you win.`,
-      url: `https://collisionhelp.org/car-accident-lawyer/${stateSlug}`,
+      url: `https://www.collisionhelp.org/car-accident-lawyer/${stateSlug}`,
       type: 'website',
     },
     alternates: {
-      canonical: `https://collisionhelp.org/car-accident-lawyer/${stateSlug}`,
+      canonical: `https://www.collisionhelp.org/car-accident-lawyer/${stateSlug}`,
     },
   }
 }
@@ -68,19 +68,19 @@ function generateSchema(stateSlug: string, stateName: string, pages: { cityName:
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://collisionhelp.org'
+        item: 'https://www.collisionhelp.org'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Car Accident Lawyer',
-        item: 'https://collisionhelp.org/car-accident-lawyer'
+        item: 'https://www.collisionhelp.org/car-accident-lawyer'
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: stateName,
-        item: `https://collisionhelp.org/car-accident-lawyer/${stateSlug}`
+        item: `https://www.collisionhelp.org/car-accident-lawyer/${stateSlug}`
       }
     ]
   }
@@ -90,11 +90,11 @@ function generateSchema(stateSlug: string, stateName: string, pages: { cityName:
     '@type': 'WebPage',
     name: `${stateName} Car Accident Lawyers`,
     description: `Find a car accident lawyer in ${stateName}. Free consultations in ${pages.length} cities.`,
-    url: `https://collisionhelp.org/car-accident-lawyer/${stateSlug}`,
+    url: `https://www.collisionhelp.org/car-accident-lawyer/${stateSlug}`,
     isPartOf: {
       '@type': 'WebSite',
       name: 'Collision Help',
-      url: 'https://collisionhelp.org'
+      url: 'https://www.collisionhelp.org'
     }
   }
 

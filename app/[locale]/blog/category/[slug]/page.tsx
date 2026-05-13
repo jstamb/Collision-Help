@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `${categoryTitle} Articles | Collision Help Blog`,
     description: `Browse all articles about ${categoryTitle.toLowerCase()}. Expert guidance on car accidents, insurance claims, and vehicle damage.`,
     alternates: {
-      canonical: `https://collisionhelp.org/blog/category/${slug}`,
+      canonical: `https://www.collisionhelp.org/blog/category/${slug}`,
     },
   }
 }

@@ -336,28 +336,45 @@ Consider seeking additional assistance if:
   const relatedArticles = pillar.articles.filter(a => a.slug !== article.slug).slice(0, 3)
   const crossPillarArticles = getCrossPillarArticles(pillarSlug, articleSlug, pillar, translatedPillars)
 
-  // JSON-LD for Article
+  // JSON-LD for Article with enhanced SEO properties
+  const currentDate = new Date().toISOString().split('T')[0]
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": article.title,
     "description": article.description,
+    "datePublished": "2024-01-15",
+    "dateModified": currentDate,
     "author": {
       "@type": "Organization",
-      "name": "Collision Help"
+      "name": "Collision Help",
+      "url": "https://www.collisionhelp.org"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Collision Help",
+      "url": "https://www.collisionhelp.org",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://collisionhelp.org/logo.png"
+        "url": "https://www.collisionhelp.org/logo.png",
+        "width": 600,
+        "height": 60
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://collisionhelp.org/guides/${pillar.slug}/${article.slug}`
-    }
+      "@id": `https://www.collisionhelp.org/en/guides/${pillar.slug}/${article.slug}`
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Collision Help",
+      "url": "https://www.collisionhelp.org"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": pillar.shortTitle
+    },
+    "inLanguage": "en-US"
   }
 
   return (

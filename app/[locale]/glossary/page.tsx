@@ -371,7 +371,7 @@ export default async function GlossaryPage() {
     "@type": "DefinedTermSet",
     "name": "Car Accident & Insurance Glossary",
     "description": "Complete glossary of car accident and insurance terms used in auto insurance claims",
-    "url": "https://collisionhelp.org/glossary",
+    "url": "https://www.collisionhelp.org/glossary",
     "hasDefinedTerm": Object.values(glossaryTerms).flat().map(term => ({
       "@type": "DefinedTerm",
       "name": term.term,

@@ -30,11 +30,11 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
     openGraph: {
       title: `Car Accident Help in ${state.name} | Collision Help`,
       description: state.metaDescription,
-      url: `https://collisionhelp.org/locations/${state.slug}`,
+      url: `https://www.collisionhelp.org/locations/${state.slug}`,
       type: 'website',
     },
     alternates: {
-      canonical: `https://collisionhelp.org/locations/${state.slug}`,
+      canonical: `https://www.collisionhelp.org/locations/${state.slug}`,
     },
   }
 }
@@ -155,7 +155,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
     "@type": "WebPage",
     "name": `Car Accident Help in ${stateData.name}`,
     "description": stateData.metaDescription,
-    "url": `https://collisionhelp.org/locations/${stateData.slug}`,
+    "url": `https://www.collisionhelp.org/locations/${stateData.slug}`,
     "mainEntity": {
       "@type": "LocalBusiness",
       "name": `Collision Help - ${stateData.name}`,

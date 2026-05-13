@@ -70,11 +70,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: city.metaTitle,
       description: city.metaDescription,
-      url: `https://collisionhelp.org/locations/${stateSlug}/${citySlug}`,
+      url: `https://www.collisionhelp.org/locations/${stateSlug}/${citySlug}`,
       type: 'website',
     },
     alternates: {
-      canonical: `https://collisionhelp.org/locations/${stateSlug}/${citySlug}`,
+      canonical: `https://www.collisionhelp.org/locations/${stateSlug}/${citySlug}`,
     },
   }
 }
@@ -88,11 +88,11 @@ function generateSchema(city: CityData, stateData: ReturnType<typeof getStateByS
     '@type': 'WebPage',
     name: city.metaTitle,
     description: city.metaDescription,
-    url: `https://collisionhelp.org/locations/${city.state}/${city.slug}`,
+    url: `https://www.collisionhelp.org/locations/${city.state}/${city.slug}`,
     isPartOf: {
       '@type': 'WebSite',
       name: 'Collision Help',
-      url: 'https://collisionhelp.org'
+      url: 'https://www.collisionhelp.org'
     },
     about: {
       '@type': 'Place',
@@ -120,25 +120,25 @@ function generateSchema(city: CityData, stateData: ReturnType<typeof getStateByS
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://collisionhelp.org'
+          item: 'https://www.collisionhelp.org'
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Locations',
-          item: 'https://collisionhelp.org/locations'
+          item: 'https://www.collisionhelp.org/locations'
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: stateData.name,
-          item: `https://collisionhelp.org/locations/${city.state}`
+          item: `https://www.collisionhelp.org/locations/${city.state}`
         },
         {
           '@type': 'ListItem',
           position: 4,
           name: city.name,
-          item: `https://collisionhelp.org/locations/${city.state}/${city.slug}`
+          item: `https://www.collisionhelp.org/locations/${city.state}/${city.slug}`
         }
       ]
     }
@@ -150,7 +150,7 @@ function generateSchema(city: CityData, stateData: ReturnType<typeof getStateByS
     '@type': 'LegalService',
     name: `Car Accident Help - ${city.name}`,
     description: `Free car accident guidance and attorney connections for ${city.name}, ${stateData.name} residents`,
-    url: `https://collisionhelp.org/locations/${city.state}/${city.slug}`,
+    url: `https://www.collisionhelp.org/locations/${city.state}/${city.slug}`,
     areaServed: {
       '@type': 'City',
       name: city.name,
@@ -162,7 +162,7 @@ function generateSchema(city: CityData, stateData: ReturnType<typeof getStateByS
     serviceType: ['Car Accident Assistance', 'Insurance Claim Guidance', 'Attorney Referral'],
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: `https://collisionhelp.org/locations/${city.state}/${city.slug}`,
+      serviceUrl: `https://www.collisionhelp.org/locations/${city.state}/${city.slug}`,
       serviceType: 'Online'
     }
   }
