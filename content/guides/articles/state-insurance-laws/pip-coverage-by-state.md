@@ -323,3 +323,27 @@ Benefits of optional PIP:
 - Florida eliminated mandatory PIP in 2023—major system change
 
 For more on insurance systems, see our guides on [At-Fault vs No-Fault States](/guides/state-insurance-laws/at-fault-vs-no-fault-explained) and [Minimum Coverage by State](/guides/state-insurance-laws/minimum-coverage-by-state).
+
+## Frequently Asked Questions
+
+### Which states require PIP coverage?
+
+PIP is mandatory in the no-fault states: Florida, Hawaii, Kansas, Kentucky, Massachusetts, Michigan, Minnesota, New Jersey, New York, North Dakota, Pennsylvania, and Utah. Several add-on states (such as Delaware, Maryland, Oregon, and Texas) require insurers to offer PIP, where it is optional but often included.
+
+### How much PIP coverage do I need?
+
+Minimum PIP requirements range from $3,000 in Utah to unlimited lifetime medical benefits in Michigan (with selectable tiers). If you have strong health insurance you may choose lower limits in states that allow it, but higher PIP is valuable because it pays your medical bills and lost wages quickly, regardless of fault, without waiting for a liability determination.
+
+### Does PIP cover lost wages?
+
+Yes. In addition to medical expenses, PIP typically covers a portion of lost wages while you recover, essential services you cannot perform (such as childcare or housework), and in some states funeral expenses. Wage-replacement percentages and caps vary by state and policy.
+
+### Is PIP the same as health insurance?
+
+No. PIP is auto coverage that pays accident-related medical costs and lost income regardless of fault, often with no deductible and faster payment than health insurance. Health insurance may still apply for costs beyond PIP limits, and some states coordinate the two to reduce premiums.
+
+### What is the deadline to use PIP benefits after an accident?
+
+Deadlines are strict and state-specific. Many no-fault states require you to seek initial medical treatment within 14 days of the crash (Florida is a notable example) and to submit claims within set timeframes. Missing these deadlines can forfeit benefits, so seek care and notify your insurer promptly.
+
+This guide is general information, not legal advice. Laws vary by state—consult a licensed attorney about your specific situation.

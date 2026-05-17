@@ -468,7 +468,7 @@ export const pillars: Pillar[] = [
       {
         slug: 'company-vehicle-accident',
         title: 'Accident in a Company Vehicle',
-        description: 'Liability when driving or hit by a company vehicle.',
+        description: 'Accident in a company vehicle: who pays, employer liability, insurance coverage, and what to do if a company vehicle hit your car.',
         readingTime: '7 min read',
         priority: 'P1'
       },
