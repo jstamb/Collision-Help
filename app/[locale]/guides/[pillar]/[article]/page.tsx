@@ -350,13 +350,14 @@ Consider seeking additional assistance if:
 
   // JSON-LD for Article with enhanced SEO properties
   const currentDate = new Date().toISOString().split('T')[0]
-  const jsonLd = {
+  const articleUrl = `https://collisionhelp.org/guides/${pillar.slug}/${article.slug}`
+  const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": article.title,
     "description": article.description,
     "datePublished": "2025-06-01",
-    "dateModified": "2026-04-19",
+    "dateModified": currentDate,
     "author": {
       "@type": "Organization",
       "name": "Collision Help",
@@ -389,11 +390,44 @@ Consider seeking additional assistance if:
     "inLanguage": "en-US"
   }
 
+  // BreadcrumbList JSON-LD for richer SERP breadcrumbs
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Guides",
+        "item": "https://collisionhelp.org/guides"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": pillar.shortTitle,
+        "item": `https://collisionhelp.org/guides/${pillar.slug}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": article.title,
+        "item": articleUrl
+      }
+    ]
+  }
+
+  const jsonLd = articleJsonLd
+
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <Header />
       <main className="min-h-screen bg-white">

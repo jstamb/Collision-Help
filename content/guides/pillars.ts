@@ -67,8 +67,8 @@ export const pillars: Pillar[] = [
       },
       {
         slug: 'total-loss-threshold-by-state',
-        title: 'Total Loss Threshold by State',
-        description: 'State-by-state breakdown of when insurance must declare your car totaled.',
+        title: 'Total Loss Threshold by State (2026 Guide)',
+        description: 'See the 2026 total loss threshold for all 50 states and learn exactly when your insurer must declare your car a total loss after a crash.',
         readingTime: '6 min read',
         priority: 'P1'
       },
@@ -89,7 +89,7 @@ export const pillars: Pillar[] = [
       {
         slug: 'owner-retained-salvage',
         title: 'Owner Retained Salvage Explained',
-        description: 'Keeping your totaled car and what happens to the title.',
+        description: 'Keeping your totaled car? Learn how owner retained salvage affects your settlement, your title brand, and whether buying back your vehicle is worth it.',
         readingTime: '6 min read',
         priority: 'P2'
       },
@@ -1145,15 +1145,15 @@ export const pillars: Pillar[] = [
       },
       {
         slug: 'uninsured-motorist-laws',
-        title: 'Uninsured Motorist Coverage by State',
-        description: 'Which states require UM coverage and what it means for you.',
+        title: 'Uninsured Motorist Coverage Requirements by State',
+        description: 'Find out which states require uninsured and underinsured motorist (UM/UIM) coverage, the minimum limits, and how to use it after a crash.',
         readingTime: '8 min read',
         priority: 'P2'
       },
       {
         slug: 'pip-coverage-by-state',
-        title: 'PIP Coverage Requirements by State',
-        description: 'Personal Injury Protection rules in no-fault states.',
+        title: 'PIP Coverage by State: No-Fault Rules Explained',
+        description: 'Compare Personal Injury Protection (PIP) requirements across no-fault states, including minimum limits and what PIP pays for after an accident.',
         readingTime: '8 min read',
         priority: 'P2'
       }
