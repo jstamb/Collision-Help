@@ -81,8 +81,8 @@ export const pillars: Pillar[] = [
       },
       {
         slug: 'gap-insurance-explained',
-        title: 'GAP Insurance Explained',
-        description: 'What GAP insurance covers and when you need it.',
+        title: 'Does GAP Insurance Cover a Total Loss? (2026 Guide)',
+        description: 'How GAP insurance covers the gap between your loan balance and your car\'s actual cash value after a total loss. What it pays, when you need it, and how to avoid overpaying.',
         readingTime: '5 min read',
         priority: 'P2'
       },
@@ -213,8 +213,8 @@ export const pillars: Pillar[] = [
       },
       {
         slug: 'oem-vs-aftermarket-parts',
-        title: 'OEM vs Aftermarket Parts',
-        description: 'Understanding the difference and your rights to quality parts.',
+        title: 'OEM vs Aftermarket Parts: Your Rights After a Collision',
+        description: 'Can insurers require aftermarket parts on your repair? Learn the difference between OEM and aftermarket parts, "like kind and quality" rules, and how to demand OEM parts.',
         readingTime: '7 min read',
         priority: 'P1'
       },
@@ -241,8 +241,8 @@ export const pillars: Pillar[] = [
       },
       {
         slug: 'supplemental-claims',
-        title: 'Getting Supplemental Damage Covered',
-        description: 'How to claim for additional damage found during repairs.',
+        title: 'Supplemental Insurance Claims for Car Repairs (2026 Guide)',
+        description: 'How supplemental claims work when repair costs exceed the original estimate. Learn the process, typical approval times, and what to do if your supplement is denied.',
         readingTime: '5 min read',
         priority: 'P2'
       },

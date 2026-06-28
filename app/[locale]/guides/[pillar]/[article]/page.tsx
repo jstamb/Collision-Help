@@ -10,7 +10,7 @@ import Breadcrumbs from '@/components/layout/Breadcrumbs'
 import SummaryBox from '@/components/shared/SummaryBox'
 import CTABanner from '@/components/shared/CTABanner'
 import ArticleContent from '@/components/guides/ArticleContent'
-import { getArticleContent, extractHeadings, TOCItem } from '@/lib/content'
+import { getArticleContent, extractHeadings, extractFAQs, TOCItem } from '@/lib/content'
 import { ArrowRight, ArrowLeft, Clock, Calendar, BookOpen, ExternalLink } from 'lucide-react'
 
 // Cross-pillar article relationships based on topic overlap
@@ -418,6 +418,22 @@ Consider seeking additional assistance if:
 
   const jsonLd = articleJsonLd
 
+  // FAQPage JSON-LD — emitted only when the markdown contains an FAQ section.
+  // Improves eligibility for FAQ rich results and AI-answer extraction (LLMO).
+  const faqItems = extractFAQs(contentToRender)
+  const faqJsonLd = faqItems.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  } : null
+
 
   return (
     <>
@@ -429,6 +445,12 @@ Consider seeking additional assistance if:
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <Header />
       <main className="min-h-screen bg-white">
         {/* Article Header */}
