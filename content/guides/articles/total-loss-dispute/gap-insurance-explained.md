@@ -229,6 +229,24 @@ Less time underwater:
 
 ---
 
+## Frequently Asked Questions
+
+### Does GAP insurance cover a total loss?
+
+Yes. GAP insurance is designed specifically for total-loss situations. When your car is declared a total loss, your standard collision or comprehensive coverage pays the vehicle's actual cash value (ACV). GAP insurance then covers the remaining difference between that ACV payout and the amount you still owe on your loan or lease, so you are not left paying for a car you can no longer drive.
+
+### Does GAP insurance cover my deductible?
+
+It depends on the policy. Some GAP policies include deductible coverage and will pay your collision or comprehensive deductible as part of the claim, while others do not. Check your specific GAP contract or ask your insurer before assuming the deductible is covered.
+
+### How do I file a GAP insurance claim?
+
+After your primary insurer settles the total loss and issues the ACV payment, contact your GAP provider (your auto insurer, lender, or dealership policy). You will typically need the total-loss settlement letter, your loan payoff statement, and the primary insurance payment details. The GAP provider then pays the remaining loan balance, minus any excluded items.
+
+### When is GAP insurance not worth it?
+
+GAP insurance offers little value if you owe less than your car is worth—for example, if you made a large down payment, have a short loan term, or are near the end of your loan. Once you have positive equity, you can usually cancel GAP coverage and request a refund for the unused portion.
+
 ## Key Takeaways
 
 - GAP insurance covers the difference between your loan balance and car value
