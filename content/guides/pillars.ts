@@ -67,8 +67,8 @@ export const pillars: Pillar[] = [
       },
       {
         slug: 'total-loss-threshold-by-state',
-        title: 'Total Loss Threshold by State (2026 Guide)',
-        description: 'See the 2026 total loss threshold for all 50 states and learn exactly when your insurer must declare your car a total loss after a crash.',
+        title: 'Total Loss Threshold by State: All 50 States (2026)',
+        description: 'See the 2026 total loss threshold for all 50 states, learn exactly when your insurer must declare your car a total loss, and how to check your state\'s TLT percentage or TMV rule.',
         readingTime: '6 min read',
         priority: 'P1'
       },
@@ -1145,15 +1145,15 @@ export const pillars: Pillar[] = [
       },
       {
         slug: 'uninsured-motorist-laws',
-        title: 'Uninsured Motorist Coverage Requirements by State',
-        description: 'Find out which states require uninsured and underinsured motorist (UM/UIM) coverage, the minimum limits, and how to use it after a crash.',
+        title: 'Uninsured Motorist Coverage by State (2026)',
+        description: 'See which states require uninsured/underinsured motorist (UM/UIM) coverage, 2026 minimum limits by state, and how to file a UM claim after a hit-and-run or uninsured-driver crash.',
         readingTime: '8 min read',
         priority: 'P2'
       },
       {
         slug: 'pip-coverage-by-state',
-        title: 'PIP Coverage by State: No-Fault Rules Explained',
-        description: 'Compare Personal Injury Protection (PIP) requirements across no-fault states, including minimum limits and what PIP pays for after an accident.',
+        title: 'PIP Coverage by State: 2026 No-Fault Rules & Limits',
+        description: 'Compare Personal Injury Protection (PIP) rules across no-fault states in 2026 — minimum limits, what PIP covers, and how to file a PIP claim after a crash.',
         readingTime: '8 min read',
         priority: 'P2'
       }
