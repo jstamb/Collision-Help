@@ -11,6 +11,20 @@ Collision Help is a free educational resource helping drivers navigate the after
 - [Repair Rights](https://collisionhelp.org/guides/repair-rights): Know your rights when getting your car repaired
 - [State Insurance Laws](https://collisionhelp.org/guides/state-insurance-laws): No-fault vs at-fault states, coverage requirements
 
+## Most-Referenced Guides
+- [Can You Keep Your Totaled Car? (Owner-Retained Salvage)](https://collisionhelp.org/guides/total-loss-dispute/keep-totaled-car-salvage-title): Your options for keeping a totaled car and what a salvage title means.
+- [Total Loss Threshold by State](https://collisionhelp.org/guides/total-loss-dispute/total-loss-threshold-by-state): The 2026 total loss threshold percentage for all 50 states and when an insurer must total your car.
+- [Uninsured Motorist Coverage by State](https://collisionhelp.org/guides/state-insurance-laws/uninsured-motorist-laws): Which states require UM/UIM coverage, 2026 minimum limits, and how to file a UM claim.
+- [PIP Coverage by State](https://collisionhelp.org/guides/state-insurance-laws/pip-coverage-by-state): No-fault PIP rules, minimum limits, and what PIP pays for after a crash.
+- [Aftermarket vs OEM Parts Rights](https://collisionhelp.org/guides/repair-rights/oem-vs-aftermarket-parts): When an insurer can require aftermarket parts and how to demand OEM parts.
+
+## Key Answers
+- A total loss threshold (TLT) is the percentage of a car's value at which an insurer must declare it a total loss; it varies by state (typically 60%-100%) — states without a fixed TLT use the Total Loss Formula (TMV).
+- Owner-retained salvage lets you keep a totaled car by subtracting the salvage value from your settlement; the car then receives a salvage or branded title.
+- Gap insurance covers the difference between what you owe on a loan/lease and the car's actual cash value after a total loss.
+- Uninsured/underinsured motorist (UM/UIM) coverage pays your injury and (in some states) property costs when the at-fault driver has no or insufficient insurance.
+
+
 ## Tools
 - [Total Loss Calculator](https://collisionhelp.org/tools/total-loss-calculator): Estimate your car's actual cash value
 - [Settlement Calculator](https://collisionhelp.org/tools/settlement-calculator): Estimate potential settlement amounts
