@@ -1,6 +1,6 @@
 ## What is a Total Loss Threshold?
 
-A total loss threshold is the percentage of your car's value at which insurance companies must declare it a total loss. Once repair costs hit this threshold, your car is "totaled" regardless of whether it could technically be fixed.
+A total loss threshold is the percentage of your car's value at which insurance companies must declare it a total loss. Once repair costs hit this threshold, your car is "totaled" regardless of whether it could technically be fixed. This guide covers **every state's total loss threshold for 2026**, including percentage-based and formula-based states.
 
 > [!INFO] Understanding your state's threshold helps you predict whether your damaged car will be totaled and prepare accordingly.
 
@@ -216,3 +216,21 @@ Agreed-value policies may use different total loss calculations. Review your spe
 - Three states let insurers set their own thresholds
 - Your state's threshold directly affects whether you get a settlement or repairs
 - Understanding the threshold helps you anticipate and negotiate your claim outcome
+
+## Frequently Asked Questions
+
+### What state has the lowest total loss threshold?
+
+Iowa has the lowest total loss threshold at 50%. This means if repair costs reach just half of your car's actual cash value, the insurer must declare it a total loss.
+
+### What state has the highest total loss threshold?
+
+Colorado has the highest threshold at 100%. Repair costs must exceed the full actual cash value before the car is considered totaled.
+
+### What is the total loss formula (TLF)?
+
+The Total Loss Formula adds repair costs plus salvage value. If the sum exceeds the car's actual cash value, it's a total loss—even if repairs alone are well below 100% of ACV. States like Texas, New York, and Ohio use this method.
+
+### Can I negotiate a total loss threshold with my insurer?
+
+No. The threshold is set by state law (or by the insurer in the three states that allow it). However, you can negotiate the **actual cash value** used in the calculation, which directly affects whether the threshold is met.

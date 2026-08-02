@@ -26,9 +26,9 @@ Collision Help is a free educational resource helping drivers navigate the after
 
 
 ## Tools
-- [Total Loss Calculator](https://collisionhelp.org/tools/total-loss-calculator): Estimate your car's actual cash value
-- [Settlement Calculator](https://collisionhelp.org/tools/settlement-calculator): Estimate potential settlement amounts
-- [AI Damage Analyzer](https://collisionhelp.org/ai-damage-analyzer): Upload photos for damage assessment
+- [Total Loss Calculator](https://collisionhelp.org/tools/total-loss-calculator): Check if your car is totaled using your state's total loss threshold percentage. Calculates actual cash value (ACV), salvage value, and estimated insurance payout.
+- [Settlement Calculator](https://collisionhelp.org/tools/settlement-calculator): Estimate your car accident insurance claim settlement based on medical bills, lost wages, pain and suffering, and injury severity.
+- [AI Damage Analyzer](https://collisionhelp.org/ai-damage-analyzer): Upload photos of your damaged vehicle for instant AI-powered damage assessment, repair cost estimates, and guidance on whether to file an insurance claim.
 
 ## Locations
 We provide state-specific guidance for all 50 states. Each state page covers local insurance laws, minimum coverage requirements, and accident procedures.

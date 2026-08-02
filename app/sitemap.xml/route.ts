@@ -56,6 +56,7 @@ export async function GET() {
   const toolPaths = [
     { path: '/tools/total-loss-calculator', changefreq: 'monthly', priority: 0.8 },
     { path: '/tools/settlement-calculator', changefreq: 'monthly', priority: 0.8 },
+    { path: '/ai-damage-analyzer', changefreq: 'monthly', priority: 0.85 },
   ]
 
   // Pillar hub pages
