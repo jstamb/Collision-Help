@@ -1,8 +1,8 @@
 ## What is a Total Loss Threshold?
 
-A total loss threshold is the percentage of your car's value at which insurance companies must declare it a total loss. Once repair costs hit this threshold, your car is "totaled" regardless of whether it could technically be fixed.
+A total loss threshold is the percentage of your car's actual cash value at which insurance companies must declare it a total loss. Once repair costs hit this threshold, your car is "totaled" regardless of whether it could technically be fixed. Knowing your state's total loss threshold percentage helps you anticipate whether your insurer will total your vehicle — and prepare to negotiate a fair insurance settlement.
 
-> [!INFO] Understanding your state's threshold helps you predict whether your damaged car will be totaled and prepare accordingly.
+> [!INFO] Every state sets its own total loss threshold. Use our [total loss calculator](/tools/total-loss-calculator) to check whether your car qualifies as a total loss in your state.
 
 ## How States Determine Total Loss
 

@@ -95,8 +95,8 @@ export const pillars: Pillar[] = [
       },
       {
         slug: 'actual-cash-value-vs-replacement',
-        title: 'ACV vs Replacement Cost',
-        description: 'Understanding the difference between actual cash value and replacement cost.',
+        title: 'Actual Cash Value vs Replacement Cost: What Insurance Owes You (2026)',
+        description: 'Actual cash value (ACV) vs replacement cost — understand how insurers calculate your car\'s worth after an accident and which valuation method gets you a higher payout.',
         readingTime: '5 min read',
         priority: 'P2'
       }

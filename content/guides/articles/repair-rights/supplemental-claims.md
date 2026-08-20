@@ -1,8 +1,8 @@
 ## What Are Supplemental Claims?
 
-A supplemental claim - or "supplement" - is a request for additional payment when repair costs exceed the original estimate. This happens frequently because hidden damage can only be discovered once technicians start disassembly.
+A supplemental claim — also called a "supplement" — is a request for additional insurance payment when car repair costs exceed the original estimate. This happens frequently because hidden collision damage can only be discovered once technicians start disassembly. If your body shop finds extra damage, the insurance company must approve a supplemental estimate before repairs continue.
 
-> [!INFO] Supplements are normal and expected. Most collision repairs involve at least one supplement. A good shop will handle this process smoothly for you.
+> [!INFO] Supplements are normal and expected in collision repair. Most insurance claims involve at least one supplement. A reputable body shop will manage the supplement process and negotiate directly with your insurer on your behalf.
 
 ## Why Supplements Are Necessary
 
