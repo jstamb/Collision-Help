@@ -88,8 +88,8 @@ export const pillars: Pillar[] = [
       },
       {
         slug: 'owner-retained-salvage',
-        title: 'Owner Retained Salvage Explained',
-        description: 'Keeping your totaled car? Learn how owner retained salvage affects your settlement, your title brand, and whether buying back your vehicle is worth it.',
+        title: 'Owner Retained Salvage: Keep Your Totaled Car',
+        description: 'What does owner retained salvage mean? Learn how keeping your totaled car changes your settlement, salvage deduction, and title branding.',
         readingTime: '6 min read',
         priority: 'P2'
       },
@@ -213,8 +213,8 @@ export const pillars: Pillar[] = [
       },
       {
         slug: 'oem-vs-aftermarket-parts',
-        title: 'OEM vs Aftermarket Parts: Your Rights After a Collision',
-        description: 'Can insurers require aftermarket parts on your repair? Learn the difference between OEM and aftermarket parts, "like kind and quality" rules, and how to demand OEM parts.',
+        title: 'Can Insurance Make You Use Aftermarket Parts?',
+        description: 'Can an insurance company make you use used or aftermarket parts? Your rights on OEM vs aftermarket, like-kind-and-quality rules, and how to request OEM.',
         readingTime: '7 min read',
         priority: 'P1'
       },
