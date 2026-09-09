@@ -247,6 +247,14 @@ After your primary insurer settles the total loss and issues the ACV payment, co
 
 GAP insurance offers little value if you owe less than your car is worth—for example, if you made a large down payment, have a short loan term, or are near the end of your loan. Once you have positive equity, you can usually cancel GAP coverage and request a refund for the unused portion.
 
+### How much does GAP insurance cost?
+
+GAP insurance typically costs $200–$500 as a one-time payment through your auto insurer, or $3–$6 per month added to your premium. Dealership GAP policies are significantly more expensive, often $500–$1,000. You can save 50% or more by purchasing through your car insurance company instead of the dealership.
+
+### Can I buy GAP insurance after I buy a car?
+
+Yes. Most auto insurance companies let you add GAP coverage at any time, not just when purchasing the vehicle. However, some lender-provided GAP policies must be purchased at the time of financing. Adding it through your existing insurer is usually the most flexible and affordable option.
+
 ## Key Takeaways
 
 - GAP insurance covers the difference between your loan balance and car value
