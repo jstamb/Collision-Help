@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Terms of Service | Collision Help',
   description: 'Terms of Service for Collision Help. Review the terms and conditions for using our free car accident assistance website and AI damage analysis services.',
   alternates: {
-    canonical: 'https://collisionhelp.org/terms',
+    canonical: 'https://www.collisionhelp.org/terms',
   },
   robots: {
     index: true,
@@ -267,7 +267,7 @@ export default async function TermsOfServicePage() {
                   </p>
                   <p className="text-slate-700">
                     <strong>Website:</strong>{' '}
-                    <a href="https://collisionhelp.org" className="text-brand-600 hover:underline">
+                    <a href="https://www.collisionhelp.org" className="text-brand-600 hover:underline">
                       collisionhelp.org
                     </a>
                   </p>

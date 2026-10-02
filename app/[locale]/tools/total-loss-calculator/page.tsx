@@ -205,7 +205,7 @@ export default function TotalLossCalculatorPage() {
     "@type": "WebPage",
     "name": "Total Loss Calculator - Estimate Your Car's Total Loss Settlement",
     "description": "Free total loss calculator to estimate if your car will be declared a total loss and calculate your expected insurance settlement. Includes state-specific thresholds.",
-    "url": "https://collisionhelp.org/tools/total-loss-calculator"
+    "url": "https://www.collisionhelp.org/tools/total-loss-calculator"
   }
 
   return (

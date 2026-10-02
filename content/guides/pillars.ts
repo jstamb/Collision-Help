@@ -67,8 +67,8 @@ export const pillars: Pillar[] = [
       },
       {
         slug: 'total-loss-threshold-by-state',
-        title: 'Total Loss Threshold by State',
-        description: 'State-by-state breakdown of when insurance must declare your car totaled.',
+        title: 'Total Loss Threshold by State: All 50 States (2026)',
+        description: 'See the 2026 total loss threshold for all 50 states, learn exactly when your insurer must declare your car a total loss, and how to check your state\'s TLT percentage or TMV rule.',
         readingTime: '6 min read',
         priority: 'P1'
       },
@@ -81,22 +81,22 @@ export const pillars: Pillar[] = [
       },
       {
         slug: 'gap-insurance-explained',
-        title: 'GAP Insurance Explained',
-        description: 'What GAP insurance covers and when you need it.',
+        title: 'Does GAP Insurance Cover a Total Loss? (2026 Guide)',
+        description: 'How GAP insurance covers the gap between your loan balance and your car\'s actual cash value after a total loss. What it pays, when you need it, and how to avoid overpaying.',
         readingTime: '5 min read',
         priority: 'P2'
       },
       {
         slug: 'owner-retained-salvage',
-        title: 'Owner Retained Salvage Explained',
-        description: 'Keeping your totaled car and what happens to the title.',
+        title: 'Owner Retained Salvage: Keep Your Totaled Car',
+        description: 'What does owner retained salvage mean? Learn how keeping your totaled car changes your settlement, salvage deduction, and title branding.',
         readingTime: '6 min read',
         priority: 'P2'
       },
       {
         slug: 'actual-cash-value-vs-replacement',
-        title: 'ACV vs Replacement Cost',
-        description: 'Understanding the difference between actual cash value and replacement cost.',
+        title: 'Actual Cash Value vs Replacement Cost: What Insurance Owes You (2026)',
+        description: 'Actual cash value (ACV) vs replacement cost — understand how insurers calculate your car\'s worth after an accident and which valuation method gets you a higher payout.',
         readingTime: '5 min read',
         priority: 'P2'
       }
@@ -126,15 +126,15 @@ export const pillars: Pillar[] = [
     articles: [
       {
         slug: 'what-to-do-after-accident',
-        title: 'What to Do After a Car Accident',
-        description: 'Essential steps to take immediately after an accident to protect your claim.',
+        title: 'What to Do After a Car Accident: 8 Steps That Protect Your Claim',
+        description: 'Don\'t make costly mistakes after a crash. Follow these 8 critical steps to stay safe, protect your legal rights, and maximize your insurance payout.',
         readingTime: '7 min read',
         priority: 'P1'
       },
       {
         slug: 'filing-claim-step-by-step',
-        title: 'How to File an Insurance Claim',
-        description: 'Complete walkthrough of the insurance claim filing process.',
+        title: 'How to File a Car Insurance Claim in 2026 (Step-by-Step)',
+        description: 'File your auto insurance claim the right way. Our step-by-step guide covers first-party vs. third-party claims, required documents, deadlines, and common mistakes to avoid.',
         readingTime: '8 min read',
         priority: 'P1'
       },
@@ -213,8 +213,8 @@ export const pillars: Pillar[] = [
       },
       {
         slug: 'oem-vs-aftermarket-parts',
-        title: 'OEM vs Aftermarket Parts',
-        description: 'Understanding the difference and your rights to quality parts.',
+        title: 'Can Insurance Make You Use Aftermarket Parts?',
+        description: 'Can an insurance company make you use used or aftermarket parts? Your rights on OEM vs aftermarket, like-kind-and-quality rules, and how to request OEM.',
         readingTime: '7 min read',
         priority: 'P1'
       },
@@ -241,8 +241,8 @@ export const pillars: Pillar[] = [
       },
       {
         slug: 'supplemental-claims',
-        title: 'Getting Supplemental Damage Covered',
-        description: 'How to claim for additional damage found during repairs.',
+        title: 'Supplemental Insurance Claims for Car Repairs (2026 Guide)',
+        description: 'How supplemental claims work when repair costs exceed the original estimate. Learn the process, typical approval times, and what to do if your supplement is denied.',
         readingTime: '5 min read',
         priority: 'P2'
       },
@@ -468,7 +468,7 @@ export const pillars: Pillar[] = [
       {
         slug: 'company-vehicle-accident',
         title: 'Accident in a Company Vehicle',
-        description: 'Liability when driving or hit by a company vehicle.',
+        description: 'Accident in a company vehicle: who pays, employer liability, insurance coverage, and what to do if a company vehicle hit your car.',
         readingTime: '7 min read',
         priority: 'P1'
       },
@@ -1145,15 +1145,15 @@ export const pillars: Pillar[] = [
       },
       {
         slug: 'uninsured-motorist-laws',
-        title: 'Uninsured Motorist Coverage by State',
-        description: 'Which states require UM coverage and what it means for you.',
+        title: 'Uninsured Motorist Coverage by State (2026)',
+        description: 'See which states require uninsured/underinsured motorist (UM/UIM) coverage, 2026 minimum limits by state, and how to file a UM claim after a hit-and-run or uninsured-driver crash.',
         readingTime: '8 min read',
         priority: 'P2'
       },
       {
         slug: 'pip-coverage-by-state',
-        title: 'PIP Coverage Requirements by State',
-        description: 'Personal Injury Protection rules in no-fault states.',
+        title: 'PIP Coverage by State: 2026 No-Fault Rules & Limits',
+        description: 'Compare Personal Injury Protection (PIP) rules across no-fault states in 2026 — minimum limits, what PIP covers, and how to file a PIP claim after a crash.',
         readingTime: '8 min read',
         priority: 'P2'
       }

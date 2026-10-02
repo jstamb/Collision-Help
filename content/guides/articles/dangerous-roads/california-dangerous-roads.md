@@ -207,3 +207,25 @@ Before traveling California's dangerous roads:
 - Minimum insurance limits are inadequate for serious accidents
 
 For local accident guidance, see our city-specific pages for [Los Angeles](/locations/california/los-angeles), [San Francisco](/locations/california/san-francisco), and [San Diego](/locations/california/san-diego).
+
+## Frequently Asked Questions
+
+### What is the most dangerous highway in California?
+
+Interstate 5 is consistently ranked as California's deadliest highway, with more than 150 fatalities annually. The Grapevine pass through the Tejon Mountains and the tule-fog corridor through the Central Valley are its most lethal stretches.
+
+### How many people die in California car accidents each year?
+
+California reports more than 4,000 traffic fatalities annually — the highest total of any state. Per-capita the rate is closer to the national average, but raw volume makes California's highways among the most active for serious crashes.
+
+### Is California an at-fault or no-fault state?
+
+California is an at-fault (tort) state. The driver who caused the crash and their liability insurance are responsible for the other party's medical bills, lost wages, vehicle damage, and pain and suffering. California also follows pure comparative negligence, so you can recover damages even if you were 99% at fault.
+
+### What is the minimum car insurance required in California?
+
+California's minimum liability limits are 15/30/5 — $15,000 bodily injury per person, $30,000 per accident, and $5,000 property damage. These limits are widely considered inadequate for serious crashes and most experts recommend higher coverage plus uninsured motorist protection.
+
+### How long do I have to file a car accident lawsuit in California?
+
+California's statute of limitations is two years from the date of the accident for personal injury claims and three years for property damage. Claims against a government entity (such as for a road defect) require a written claim within six months.

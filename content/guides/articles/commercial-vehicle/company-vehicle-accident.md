@@ -296,3 +296,27 @@ If you rented for business trip:
 - Employers must usually indemnify employees for work accidents
 - Employment consequences are separate from insurance coverage
 - Commercial vehicle claims often yield better recovery
+
+## Frequently Asked Questions
+
+### What happens if you get in an accident with a company vehicle?
+
+If you are hit by someone driving a company vehicle, the employer's commercial auto policy is usually the primary source of recovery, because employers are typically vicariously liable for accidents employees cause within the scope of employment. Commercial policies generally carry higher liability limits than personal auto policies, which often means better compensation for your injuries and property damage.
+
+### Does company insurance cover an accident in a company vehicle?
+
+Yes, in most cases. A business's commercial auto insurance covers employees driving company vehicles for work-related purposes. Coverage can be denied if the driver was using the vehicle for unauthorized personal use, was outside the scope of employment, or was committing a crime at the time of the crash.
+
+### What should I do if a company vehicle hit my car?
+
+Document the company name, vehicle markings, and DOT number; get the driver's name, employer, and insurance information; photograph the scene and damage; obtain a police report; and identify witnesses. Notify your own insurer, then file a claim against the employer's commercial policy. Avoid giving a recorded statement to the company's insurer before understanding your rights.
+
+### Am I personally liable if I crash a company car?
+
+Usually the employer's insurance responds first under vicarious liability, and many states require employers to indemnify employees for work-related accidents. However, you can face personal exposure for gross negligence, intoxication, unauthorized use, or driving outside the scope of your job. Workers' compensation typically covers your own injuries instead of a standard auto claim.
+
+### Is a company vehicle accident claim worth more than a regular claim?
+
+Often, yes. Commercial auto policies carry substantially higher coverage limits than personal policies, and a solvent employer is more likely to fully satisfy a judgment. This frequently results in better recovery for medical bills, lost wages, and pain and suffering compared with a claim against an individual driver with minimum coverage.
+
+This guide is general information, not legal advice. Laws vary by state—consult a licensed attorney about your specific situation.

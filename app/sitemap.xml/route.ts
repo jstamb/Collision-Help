@@ -4,7 +4,7 @@ import { citiesByState } from '@/content/locations/cities'
 import { lawyerPagesByState } from '@/content/lawyers/lawyer-pages'
 import { locales } from '@/i18n/config'
 
-const BASE_URL = 'https://collisionhelp.org'
+const BASE_URL = 'https://www.collisionhelp.org'
 
 interface SitemapUrl {
   loc: string
@@ -56,6 +56,7 @@ export async function GET() {
   const toolPaths = [
     { path: '/tools/total-loss-calculator', changefreq: 'monthly', priority: 0.8 },
     { path: '/tools/settlement-calculator', changefreq: 'monthly', priority: 0.8 },
+    { path: '/ai-damage-analyzer', changefreq: 'monthly', priority: 0.85 },
   ]
 
   // Pillar hub pages
@@ -124,17 +125,23 @@ export async function GET() {
     ...lawyerCityPaths,
   ]
 
-  // Generate URLs for all locales
+  // Generate URLs for all locales with x-default hreflang for international SEO
   const urls: SitemapUrl[] = locales.flatMap((locale) =>
     allPaths.map((pathConfig) => ({
       loc: `${BASE_URL}/${locale}${pathConfig.path}`,
       lastmod: now,
       changefreq: pathConfig.changefreq,
       priority: pathConfig.priority,
-      alternates: locales.map((loc) => ({
-        lang: loc,
-        href: `${BASE_URL}/${loc}${pathConfig.path}`,
-      })),
+      alternates: [
+        ...locales.map((loc) => ({
+          lang: loc,
+          href: `${BASE_URL}/${loc}${pathConfig.path}`,
+        })),
+        {
+          lang: 'x-default',
+          href: `${BASE_URL}/en${pathConfig.path}`,
+        },
+      ],
     }))
   )
 

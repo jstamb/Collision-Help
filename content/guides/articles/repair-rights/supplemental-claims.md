@@ -1,8 +1,8 @@
 ## What Are Supplemental Claims?
 
-A supplemental claim - or "supplement" - is a request for additional payment when repair costs exceed the original estimate. This happens frequently because hidden damage can only be discovered once technicians start disassembly.
+A supplemental claim — also called a "supplement" — is a request for additional insurance payment when car repair costs exceed the original estimate. This happens frequently because hidden collision damage can only be discovered once technicians start disassembly. If your body shop finds extra damage, the insurance company must approve a supplemental estimate before repairs continue.
 
-> [!INFO] Supplements are normal and expected. Most collision repairs involve at least one supplement. A good shop will handle this process smoothly for you.
+> [!INFO] Supplements are normal and expected in collision repair. Most insurance claims involve at least one supplement. A reputable body shop will manage the supplement process and negotiate directly with your insurer on your behalf.
 
 ## Why Supplements Are Necessary
 
@@ -273,3 +273,27 @@ Sometimes collision damage affects:
 - Escalate if insurance unreasonably denies legitimate supplements
 - Multiple small supplements or visible-damage supplements are red flags
 - Good communication between you, shop, and insurance prevents problems
+
+## Frequently Asked Questions
+
+### What is a supplemental insurance claim for car repair?
+
+A supplemental claim is a request for additional payment when the actual repair cost exceeds the insurer's original estimate. It is filed after a shop disassembles the vehicle and finds hidden damage that was not visible during the initial visual inspection.
+
+### Are supplements normal in collision repair?
+
+Yes. Most collision repairs involve at least one supplement because initial estimates rely on external inspection only. Damage to reinforcements, sensors, and internal components is commonly discovered once parts are removed, making supplements a routine and expected part of the process.
+
+### Will my insurance pay a supplemental claim?
+
+Insurers generally pay legitimate, documented supplements. The shop submits photos and a detailed breakdown, and the insurer reviews it—typically within one to five business days. Payment may be delayed or disputed if documentation is weak, so a reputable shop will photograph and justify each additional item.
+
+### How long does a supplemental claim take?
+
+Most insurers review a properly documented supplement within one to five business days. Complex supplements or those requiring a re-inspection can take longer. Responding quickly to insurer communications and using a shop that documents thoroughly speeds up approval.
+
+### What should I do if my supplemental claim is denied?
+
+Request the denial reason in writing, have your shop provide additional photos and documentation, and ask for a re-inspection. If the insurer unreasonably refuses a legitimate, documented supplement, you can escalate to a supervisor, file a complaint with your state insurance department, or consult an attorney about your repair rights.
+
+This guide is general information, not legal advice. Laws vary by state—consult a licensed attorney about your specific situation.

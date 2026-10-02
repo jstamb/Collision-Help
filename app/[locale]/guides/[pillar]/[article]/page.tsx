@@ -10,7 +10,7 @@ import Breadcrumbs from '@/components/layout/Breadcrumbs'
 import SummaryBox from '@/components/shared/SummaryBox'
 import CTABanner from '@/components/shared/CTABanner'
 import ArticleContent from '@/components/guides/ArticleContent'
-import { getArticleContent, extractHeadings, TOCItem } from '@/lib/content'
+import { getArticleContent, extractHeadings, extractFAQs, TOCItem } from '@/lib/content'
 import { ArrowRight, ArrowLeft, Clock, Calendar, BookOpen, ExternalLink } from 'lucide-react'
 
 // Cross-pillar article relationships based on topic overlap
@@ -254,9 +254,21 @@ export async function generateMetadata({ params }: { params: { pillar: string; a
   const article = getArticle(params.pillar, params.article)
   if (!pillar || !article) return {}
 
+  const canonicalUrl = `https://collisionhelp.org/guides/${pillar.slug}/${article.slug}`
+
   return {
     title: `${article.title} | ${pillar.shortTitle} | Collision Help`,
     description: article.description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: article.title,
+      description: article.description,
+      url: canonicalUrl,
+      siteName: 'Collision Help',
+      type: 'article',
+    },
   }
 }
 
@@ -336,29 +348,92 @@ Consider seeking additional assistance if:
   const relatedArticles = pillar.articles.filter(a => a.slug !== article.slug).slice(0, 3)
   const crossPillarArticles = getCrossPillarArticles(pillarSlug, articleSlug, pillar, translatedPillars)
 
-  // JSON-LD for Article
-  const jsonLd = {
+  // JSON-LD for Article with enhanced SEO properties
+  const currentDate = new Date().toISOString().split('T')[0]
+  const articleUrl = `https://collisionhelp.org/guides/${pillar.slug}/${article.slug}`
+  const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": article.title,
     "description": article.description,
+    "datePublished": "2025-06-01",
+    "dateModified": currentDate,
     "author": {
       "@type": "Organization",
-      "name": "Collision Help"
+      "name": "Collision Help",
+      "url": "https://collisionhelp.org"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Collision Help",
+      "url": "https://www.collisionhelp.org",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://collisionhelp.org/logo.png"
+        "url": "https://www.collisionhelp.org/logo.png",
+        "width": 600,
+        "height": 60
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://collisionhelp.org/guides/${pillar.slug}/${article.slug}`
-    }
+      "@id": `https://www.collisionhelp.org/en/guides/${pillar.slug}/${article.slug}`
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Collision Help",
+      "url": "https://www.collisionhelp.org"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": pillar.shortTitle
+    },
+    "inLanguage": "en-US"
   }
+
+  // BreadcrumbList JSON-LD for richer SERP breadcrumbs
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Guides",
+        "item": "https://collisionhelp.org/guides"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": pillar.shortTitle,
+        "item": `https://collisionhelp.org/guides/${pillar.slug}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": article.title,
+        "item": articleUrl
+      }
+    ]
+  }
+
+  const jsonLd = articleJsonLd
+
+  // FAQPage JSON-LD — emitted only when the markdown contains an FAQ section.
+  // Improves eligibility for FAQ rich results and AI-answer extraction (LLMO).
+  const faqItems = extractFAQs(contentToRender)
+  const faqJsonLd = faqItems.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  } : null
+
 
   return (
     <>
@@ -366,6 +441,16 @@ Consider seeking additional assistance if:
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <Header />
       <main className="min-h-screen bg-white">
         {/* Article Header */}

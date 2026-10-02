@@ -32,7 +32,7 @@ export default async function ResourcesPage() {
     "@type": "WebPage",
     "name": "Free Car Accident Resources & Downloads",
     "description": "Free downloadable checklists, templates, and tools to help you navigate your car accident claim.",
-    "url": "https://collisionhelp.org/resources"
+    "url": "https://www.collisionhelp.org/resources"
   }
 
   // Resources data with translations

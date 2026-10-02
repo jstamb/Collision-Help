@@ -274,3 +274,25 @@ Both systems struggle with uninsured drivers:
 - Understanding your state's system is essential for proper coverage
 
 For state-specific details, see our guides on [California Car Accident Laws](/guides/state-insurance-laws/california-car-accident-laws), [Florida Car Accident Laws](/guides/state-insurance-laws/florida-car-accident-laws), and [Texas Car Accident Laws](/guides/state-insurance-laws/texas-car-accident-laws).
+
+## Frequently Asked Questions
+
+### What is a no-fault state?
+
+A no-fault state is a state where each driver's own auto insurance pays for their medical bills and lost wages after a crash, regardless of who caused the accident. Personal Injury Protection (PIP) coverage is required, and lawsuits against the at-fault driver are restricted unless injuries cross a serious-injury threshold.
+
+### Which states are no-fault states?
+
+Twelve states use no-fault auto insurance: Florida, Michigan, New York, New Jersey, Pennsylvania, Massachusetts, Minnesota, Kentucky, Hawaii, Kansas, North Dakota, and Utah. Pennsylvania, New Jersey, and Kentucky offer drivers a "choice" between no-fault and traditional tort coverage.
+
+### What is the difference between at-fault and no-fault insurance?
+
+In at-fault states the driver who caused the crash (and their insurer) pays for the other party's injuries and damages. In no-fault states each driver's own PIP coverage pays for their own injuries first, and lawsuits are only allowed for serious injuries. Property damage still follows fault in every state.
+
+### Can you sue in a no-fault state?
+
+Yes, but only when injuries meet the state's serious-injury threshold — typically permanent injury, significant disfigurement, fractures, or death. Below the threshold, claims are limited to PIP benefits.
+
+### What happens if you're partly at fault for a car accident?
+
+In comparative negligence states your settlement is reduced by your percentage of fault (a 20% at-fault driver recovers 80% of damages). In the few contributory negligence jurisdictions — Alabama, Maryland, North Carolina, Virginia, and Washington, D.C. — being even 1% at fault can completely bar recovery.

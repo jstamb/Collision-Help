@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Car Accident Help by State | Collision Help',
     description: 'Find state-specific car accident help, insurance laws, fault systems, and statute of limitations for all 50 states.',
-    url: 'https://collisionhelp.org/locations',
+    url: 'https://www.collisionhelp.org/locations',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://collisionhelp.org/locations',
+    canonical: 'https://www.collisionhelp.org/locations',
   },
 }
 

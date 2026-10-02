@@ -54,6 +54,38 @@ export function hasArticleContent(pillarSlug: string, articleSlug: string): bool
 }
 
 /**
+ * Extract FAQ question/answer pairs from an article's "Frequently Asked Questions"
+ * section. Questions are H3 (###) headings within that section; the answer is the
+ * paragraph text that follows. Used to emit FAQPage JSON-LD for rich results.
+ */
+export function extractFAQs(content: string): { question: string; answer: string }[] {
+  const faqs: { question: string; answer: string }[] = []
+  if (!content) return faqs
+
+  // Isolate the FAQ section (from the FAQ H2 heading to the next H2 or end of doc)
+  const sectionMatch = content.match(/##\s+Frequently Asked Questions([\s\S]*?)(?:\n##\s+|$)/i)
+  if (!sectionMatch) return faqs
+
+  const section = sectionMatch[1]
+  const qaRegex = /###\s+(.+?)\n([\s\S]*?)(?=\n###\s+|$)/g
+  let match
+  while ((match = qaRegex.exec(section)) !== null) {
+    const question = match[1].trim()
+    // Collapse the answer to plain text: strip markdown emphasis/links, join lines.
+    const answer = match[2]
+      .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+      .replace(/[*_>#`]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim()
+    if (question && answer) {
+      faqs.push({ question, answer })
+    }
+  }
+
+  return faqs
+}
+
+/**
  * Get all articles that have content files
  */
 export function getArticlesWithContent(): { pillar: string; article: string }[] {

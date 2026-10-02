@@ -32,7 +32,7 @@ export async function GET() {
     }
 
     // Build sitemap XML
-    const baseUrl = 'https://collisionhelp.org'
+    const baseUrl = 'https://www.collisionhelp.org'
 
     const urls = allArticles
       .filter((article) => article.slug && article.publishedAt)
