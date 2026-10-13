@@ -50,13 +50,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  alternates: {
-    canonical: 'https://www.collisionhelp.org',
-    languages: {
-      'en': 'https://www.collisionhelp.org/en',
-      'es': 'https://www.collisionhelp.org/es',
-    },
-  },
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',

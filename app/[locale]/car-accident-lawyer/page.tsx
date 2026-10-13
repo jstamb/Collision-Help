@@ -15,8 +15,9 @@ import {
   DollarSign,
   CheckCircle
 } from 'lucide-react'
+import { localeAlternates } from '@/lib/seo'
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: 'Find a Car Accident Lawyer | Free Consultation by City',
   description: 'Find an experienced car accident lawyer in your city. Free consultations, no fee unless you win. Browse attorneys by state and city.',
   openGraph: {
@@ -25,9 +26,11 @@ export const metadata: Metadata = {
     url: 'https://www.collisionhelp.org/car-accident-lawyer',
     type: 'website',
   },
-  alternates: {
-    canonical: 'https://www.collisionhelp.org/car-accident-lawyer',
-  },
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return { ...baseMetadata, alternates: localeAlternates(locale, '/car-accident-lawyer') }
 }
 
 // Generate schema for the hub page

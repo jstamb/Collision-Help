@@ -13,14 +13,20 @@ import {
   Shield
 } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
+import { localeAlternates } from '@/lib/seo'
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: 'Free Car Accident Resources & Downloads | Collision Help',
   description: 'Free downloadable checklists, templates, and tools to help you navigate your car accident claim. Get organized and maximize your settlement.',
   openGraph: {
     title: 'Free Car Accident Resources & Downloads | Collision Help',
     description: 'Free downloadable checklists, templates, and tools to help you navigate your car accident claim.',
   }
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return { ...baseMetadata, alternates: localeAlternates(locale, '/resources') }
 }
 
 export default async function ResourcesPage() {

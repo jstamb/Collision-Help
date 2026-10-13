@@ -29,11 +29,13 @@ import {
   MapPinned,
   BookOpen
 } from 'lucide-react'
+import { localeAlternates } from '@/lib/seo'
 
 interface PageProps {
   params: Promise<{
     state: string
     city: string
+    locale: string
   }>
 }
 
@@ -55,7 +57,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { state: stateSlug, city: citySlug } = await params
+  const { state: stateSlug, city: citySlug, locale } = await params
   const city = getCityBySlug(stateSlug, citySlug)
   const state = getStateBySlug(stateSlug)
 
@@ -73,9 +75,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `https://www.collisionhelp.org/locations/${stateSlug}/${citySlug}`,
       type: 'website',
     },
-    alternates: {
-      canonical: `https://www.collisionhelp.org/locations/${stateSlug}/${citySlug}`,
-    },
+    alternates: localeAlternates(locale, `/locations/${stateSlug}/${citySlug}`),
   }
 }
 

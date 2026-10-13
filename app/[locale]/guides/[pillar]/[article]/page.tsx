@@ -12,6 +12,7 @@ import CTABanner from '@/components/shared/CTABanner'
 import ArticleContent from '@/components/guides/ArticleContent'
 import { getArticleContent, extractHeadings, extractFAQs, TOCItem } from '@/lib/content'
 import { ArrowRight, ArrowLeft, Clock, Calendar, BookOpen, ExternalLink } from 'lucide-react'
+import { localeAlternates } from '@/lib/seo'
 
 // Cross-pillar article relationships based on topic overlap
 const crossPillarLinks: Record<string, { pillar: string; articles: string[] }[]> = {
@@ -249,19 +250,19 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata
-export async function generateMetadata({ params }: { params: { pillar: string; article: string } }): Promise<Metadata> {
-  const pillar = getPillar(params.pillar)
-  const article = getArticle(params.pillar, params.article)
+export async function generateMetadata({ params }: { params: Promise<{ pillar: string; article: string; locale: string }> }): Promise<Metadata> {
+  const { pillar: pillarSlug, article: articleSlug, locale } = await params
+  const pillar = getPillar(pillarSlug)
+  const article = getArticle(pillarSlug, articleSlug)
   if (!pillar || !article) return {}
 
-  const canonicalUrl = `https://collisionhelp.org/guides/${pillar.slug}/${article.slug}`
+  const alternates = localeAlternates(locale, `/guides/${pillar.slug}/${article.slug}`)
+  const canonicalUrl = alternates.canonical as string
 
   return {
     title: `${article.title} | ${pillar.shortTitle} | Collision Help`,
     description: article.description,
-    alternates: {
-      canonical: canonicalUrl,
-    },
+    alternates,
     openGraph: {
       title: article.title,
       description: article.description,

@@ -5,14 +5,20 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { BookOpen, ArrowRight, ChevronRight } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
+import { localeAlternates } from '@/lib/seo'
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: 'Car Accident & Insurance Glossary | Collision Help',
   description: 'Complete glossary of car accident and insurance terms. Understand ACV, total loss, liability, PIP, and more terms used in auto insurance claims.',
   openGraph: {
     title: 'Car Accident & Insurance Glossary | Collision Help',
     description: 'Complete glossary of car accident and insurance terms. Understand ACV, total loss, liability, PIP, and more terms used in auto insurance claims.',
   }
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return { ...baseMetadata, alternates: localeAlternates(locale, '/glossary') }
 }
 
 interface GlossaryTerm {

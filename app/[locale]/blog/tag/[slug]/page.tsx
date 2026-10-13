@@ -6,6 +6,7 @@ import { BlogClient } from 'seobot'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { Calendar, Clock, ChevronRight, ChevronLeft, Tag, BookOpen, Hash } from 'lucide-react'
+import { englishCanonical } from '@/lib/seo'
 
 // Revalidate this page every 60 seconds to fetch fresh content
 export const revalidate = 60
@@ -45,9 +46,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${tagTitle} Articles | Collision Help Blog`,
     description: `Browse all articles tagged with "${tagTitle}". Expert guidance on car accidents, insurance claims, and vehicle damage.`,
-    alternates: {
-      canonical: `https://www.collisionhelp.org/blog/tag/${slug}`,
-    },
+    alternates: englishCanonical(`/blog/tag/${slug}`),
   }
 }
 

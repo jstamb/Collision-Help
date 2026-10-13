@@ -19,10 +19,12 @@ import {
   AlertTriangle,
   Car
 } from 'lucide-react'
+import { localeAlternates } from '@/lib/seo'
 
 interface PageProps {
   params: Promise<{
     state: string
+    locale: string
   }>
 }
 
@@ -33,7 +35,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { state: stateSlug } = await params
+  const { state: stateSlug, locale } = await params
   const stateInfo = getStateBySlug(stateSlug)
   const pages = getLawyerPagesForState(stateSlug)
 
@@ -52,9 +54,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `https://www.collisionhelp.org/car-accident-lawyer/${stateSlug}`,
       type: 'website',
     },
-    alternates: {
-      canonical: `https://www.collisionhelp.org/car-accident-lawyer/${stateSlug}`,
-    },
+    alternates: localeAlternates(locale, `/car-accident-lawyer/${stateSlug}`),
   }
 }
 

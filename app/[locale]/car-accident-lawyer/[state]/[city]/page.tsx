@@ -27,11 +27,13 @@ import {
   BadgeCheck,
   ChevronRight
 } from 'lucide-react'
+import { localeAlternates } from '@/lib/seo'
 
 interface PageProps {
   params: Promise<{
     state: string
     city: string
+    locale: string
   }>
 }
 
@@ -51,7 +53,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { state: stateSlug, city: citySlug } = await params
+  const { state: stateSlug, city: citySlug, locale } = await params
   const page = getLawyerPageBySlug(stateSlug, citySlug)
 
   if (!page) {
@@ -67,9 +69,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `https://www.collisionhelp.org/car-accident-lawyer/${stateSlug}/${citySlug}`,
       type: 'website',
     },
-    alternates: {
-      canonical: `https://www.collisionhelp.org/car-accident-lawyer/${stateSlug}/${citySlug}`,
-    },
+    alternates: localeAlternates(locale, `/car-accident-lawyer/${stateSlug}/${citySlug}`),
   }
 }
 

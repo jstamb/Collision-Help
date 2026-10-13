@@ -5,17 +5,20 @@ import Footer from '@/components/layout/Footer'
 import { FileText, CheckCircle, AlertTriangle, Scale, Shield, Handshake, Heart, Info, Mail } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 import { Link } from '@/i18n/navigation'
+import { localeAlternates } from '@/lib/seo'
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: 'Terms of Service | Collision Help',
   description: 'Terms of Service for Collision Help. Review the terms and conditions for using our free car accident assistance website and AI damage analysis services.',
-  alternates: {
-    canonical: 'https://www.collisionhelp.org/terms',
-  },
   robots: {
     index: true,
     follow: true,
   },
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return { ...baseMetadata, alternates: localeAlternates(locale, '/terms') }
 }
 
 export default async function TermsOfServicePage() {

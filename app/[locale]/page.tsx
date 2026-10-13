@@ -5,6 +5,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
+import { localeAlternates } from '@/lib/seo'
 
 // Organization + WebSite schema for homepage
 const organizationSchema = {
@@ -38,13 +39,10 @@ const websiteSchema = {
   },
 }
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: 'Car Accident Help | Free Insurance Claim Guidance | Collision Help',
   description: 'Got in a car accident? Get free guidance on insurance claims, repair rights, and settlement negotiation. Understand your rights and maximize your claim — no lawyers, no fees.',
   keywords: ['car accident help', 'insurance claim help', 'accident claim guidance', 'collision help', 'car accident insurance'],
-  alternates: {
-    canonical: 'https://collisionhelp.org/',
-  },
   openGraph: {
     title: 'Car Accident Help | Free Insurance Claim Guidance',
     description: 'Got in a car accident? Get free guidance on insurance claims, repair rights, and settlement negotiation.',
@@ -57,6 +55,11 @@ export const metadata: Metadata = {
     title: 'Car Accident Help | Free Guidance',
     description: 'Free guidance on insurance claims, repair rights, and settlements after a car accident.',
   },
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return { ...baseMetadata, alternates: localeAlternates(locale, '') }
 }
 
 export default async function Home() {

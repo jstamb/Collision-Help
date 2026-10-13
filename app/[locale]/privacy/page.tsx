@@ -4,17 +4,20 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { Shield, Lock, Eye, EyeOff, Database, UserCheck, Bell, Mail, CheckCircle, XCircle, Heart } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
+import { localeAlternates } from '@/lib/seo'
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: 'Privacy Policy | Collision Help',
   description: 'Privacy Policy for Collision Help. Learn how we collect, use, and protect your personal information when using our car accident assistance services.',
-  alternates: {
-    canonical: 'https://www.collisionhelp.org/privacy',
-  },
   robots: {
     index: true,
     follow: true,
   },
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return { ...baseMetadata, alternates: localeAlternates(locale, '/privacy') }
 }
 
 export default async function PrivacyPolicyPage() {

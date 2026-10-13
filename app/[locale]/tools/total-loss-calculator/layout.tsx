@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
+import { localeAlternates } from '@/lib/seo'
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: 'Is My Car Totaled? | Free Total Loss Calculator by State (2026)',
   description: 'Free total loss calculator — instantly check if your car is totaled using your state\'s threshold. Calculates actual cash value, salvage value, and estimated insurance payout for 2026.',
   keywords: 'is my car totaled calculator, total loss calculator, totaled car value calculator, car total loss value calculator, total loss threshold, total loss formula calculator, stolen car insurance payout calculator, actual cash value calculator',
@@ -16,13 +17,15 @@ export const metadata: Metadata = {
     title: 'Total Loss Calculator | Is My Car Totaled? (2026)',
     description: 'Find out if your car is totaled and estimate your insurance payout with our free calculator.',
   },
-  alternates: {
-    canonical: 'https://www.collisionhelp.org/tools/total-loss-calculator',
-  },
   robots: {
     index: true,
     follow: true,
   },
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return { ...baseMetadata, alternates: localeAlternates(locale, '/tools/total-loss-calculator') }
 }
 
 export default function TotalLossCalculatorLayout({

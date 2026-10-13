@@ -10,6 +10,7 @@ import LeadForm from '@/components/LeadForm'
 import CallbackButton from '@/components/CallbackButton'
 import { Shield, MapPin, Info, Clock, Car, FileText, AlertTriangle, Scale, DollarSign, Phone, CheckCircle, ChevronRight, Building2 } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
+import { localeAlternates } from '@/lib/seo'
 
 // Static Generation Params
 export async function generateStaticParams() {
@@ -19,8 +20,8 @@ export async function generateStaticParams() {
 }
 
 // Metadata
-export async function generateMetadata({ params }: { params: Promise<{ state: string }> }): Promise<Metadata> {
-  const { state: stateSlug } = await params
+export async function generateMetadata({ params }: { params: Promise<{ state: string; locale: string }> }): Promise<Metadata> {
+  const { state: stateSlug, locale } = await params
   const state = states.find((s) => s.slug === stateSlug)
   if (!state) return {}
 
@@ -33,9 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
       url: `https://www.collisionhelp.org/locations/${state.slug}`,
       type: 'website',
     },
-    alternates: {
-      canonical: `https://www.collisionhelp.org/locations/${state.slug}`,
-    },
+    alternates: localeAlternates(locale, `/locations/${state.slug}`),
   }
 }
 

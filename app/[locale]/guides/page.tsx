@@ -9,10 +9,16 @@ import Breadcrumbs from '@/components/layout/Breadcrumbs'
 import GuideCard from '@/components/guides/GuideCard'
 import CTABanner from '@/components/shared/CTABanner'
 import { getTranslations } from 'next-intl/server'
+import { localeAlternates } from '@/lib/seo'
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: 'Car Accident Guides & Resources | Collision Help',
   description: 'Comprehensive guides on insurance claims, total loss disputes, repair rights, fault determination, and more. Expert information to help you after a car accident.',
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return { ...baseMetadata, alternates: localeAlternates(locale, '/guides') }
 }
 
 export default async function GuidesIndexPage() {

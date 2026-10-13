@@ -6,16 +6,18 @@ import { BlogClient } from 'seobot'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { Calendar, Clock, ChevronRight, ChevronLeft, Tag, BookOpen } from 'lucide-react'
+import { englishCanonical } from '@/lib/seo'
 
 // Revalidate this page every 60 seconds to fetch fresh articles
 export const revalidate = 60
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: 'Car Accident Blog | Collision Help',
   description: 'Expert articles on car accidents, insurance claims, vehicle damage assessment, and legal guidance. Stay informed with the latest tips and advice.',
-  alternates: {
-    canonical: 'https://www.collisionhelp.org/blog',
-  },
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  return { ...baseMetadata, alternates: englishCanonical('/blog') }
 }
 
 const POSTS_PER_PAGE = 12

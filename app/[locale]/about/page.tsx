@@ -7,10 +7,16 @@ import Footer from '@/components/layout/Footer'
 import Breadcrumbs from '@/components/layout/Breadcrumbs'
 import { Button } from '@/components/ui/Button'
 import { getTranslations } from 'next-intl/server'
+import { localeAlternates } from '@/lib/seo'
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: 'About Collision Help | Free Car Accident Resource Hub',
   description: 'Collision Help is a 100% free resource hub for car accident victims. Our guides, tools, and AI analysis help you understand your rights. Optional attorney connections are always free.',
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return { ...baseMetadata, alternates: localeAlternates(locale, '/about') }
 }
 
 export default async function AboutPage() {

@@ -12,6 +12,7 @@ import FAQAccordion from '@/components/shared/FAQAccordion'
 import CTABanner from '@/components/shared/CTABanner'
 import { ArrowRight, BookOpen, MapPin } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
+import { localeAlternates } from '@/lib/seo'
 
 // Get featured cities for internal linking - prioritize states with pillar-specific articles
 const getFeaturedCities = (pillarSlug: string, articles: { slug: string }[]) => {
@@ -80,19 +81,18 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata with canonical URL and Open Graph
-export async function generateMetadata({ params }: { params: Promise<{ pillar: string }> }): Promise<Metadata> {
-  const { pillar: pillarSlug } = await params
+export async function generateMetadata({ params }: { params: Promise<{ pillar: string; locale: string }> }): Promise<Metadata> {
+  const { pillar: pillarSlug, locale } = await params
   const pillar = getPillar(pillarSlug)
   if (!pillar) return {}
 
-  const canonicalUrl = `https://collisionhelp.org/guides/${pillar.slug}`
+  const alternates = localeAlternates(locale, `/guides/${pillar.slug}`)
+  const canonicalUrl = alternates.canonical as string
 
   return {
     title: `${pillar.title} | Collision Help`,
     description: pillar.description,
-    alternates: {
-      canonical: canonicalUrl,
-    },
+    alternates,
     openGraph: {
       title: `${pillar.title} | Collision Help`,
       description: pillar.description,

@@ -6,8 +6,9 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { MapPin, Scale, Shield, Clock, ChevronRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
+import { localeAlternates } from '@/lib/seo'
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: 'Car Accident Help by State | State-Specific Insurance Laws & Guides',
   description: 'Find state-specific car accident help, insurance laws, fault systems, and statute of limitations. Get guidance for your state whether at-fault, no-fault, or choice system.',
   keywords: 'car accident by state, state insurance laws, at-fault states, no-fault states, car accident lawyer, insurance claim help',
@@ -17,9 +18,11 @@ export const metadata: Metadata = {
     url: 'https://www.collisionhelp.org/locations',
     type: 'website',
   },
-  alternates: {
-    canonical: 'https://www.collisionhelp.org/locations',
-  },
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return { ...baseMetadata, alternates: localeAlternates(locale, '/locations') }
 }
 
 // Group states by region
