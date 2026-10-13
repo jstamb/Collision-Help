@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${article.headline} | Collision Help`,
+    title: `${article.headline}`,
     description: article.metaDescription,
     keywords: article.metaKeywords,
     openGraph: {

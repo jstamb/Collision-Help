@@ -12,7 +12,7 @@ import { englishCanonical } from '@/lib/seo'
 export const revalidate = 60
 
 const baseMetadata: Metadata = {
-  title: 'Car Accident Blog | Collision Help',
+  title: 'Car Accident Blog',
   description: 'Expert articles on car accidents, insurance claims, vehicle damage assessment, and legal guidance. Stay informed with the latest tips and advice.',
 }
 

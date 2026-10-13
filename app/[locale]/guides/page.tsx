@@ -12,7 +12,7 @@ import { getTranslations } from 'next-intl/server'
 import { localeAlternates } from '@/lib/seo'
 
 const baseMetadata: Metadata = {
-  title: 'Car Accident Guides & Resources | Collision Help',
+  title: 'Car Accident Guides & Resources',
   description: 'Comprehensive guides on insurance claims, total loss disputes, repair rights, fault determination, and more. Expert information to help you after a car accident.',
 }
 

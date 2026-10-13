@@ -8,7 +8,7 @@ import { getTranslations } from 'next-intl/server'
 import { localeAlternates } from '@/lib/seo'
 
 const baseMetadata: Metadata = {
-  title: 'Car Accident & Insurance Glossary | Collision Help',
+  title: 'Car Accident & Insurance Glossary',
   description: 'Complete glossary of car accident and insurance terms. Understand ACV, total loss, liability, PIP, and more terms used in auto insurance claims.',
   openGraph: {
     title: 'Car Accident & Insurance Glossary | Collision Help',

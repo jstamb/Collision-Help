@@ -16,7 +16,7 @@ import { getTranslations } from 'next-intl/server'
 import { localeAlternates } from '@/lib/seo'
 
 const baseMetadata: Metadata = {
-  title: 'Free Car Accident Resources & Downloads | Collision Help',
+  title: 'Free Car Accident Resources & Downloads',
   description: 'Free downloadable checklists, templates, and tools to help you navigate your car accident claim. Get organized and maximize your settlement.',
   openGraph: {
     title: 'Free Car Accident Resources & Downloads | Collision Help',

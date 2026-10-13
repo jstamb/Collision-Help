@@ -8,7 +8,7 @@ import { Link } from '@/i18n/navigation'
 import { localeAlternates } from '@/lib/seo'
 
 const baseMetadata: Metadata = {
-  title: 'Terms of Service | Collision Help',
+  title: 'Terms of Service',
   description: 'Terms of Service for Collision Help. Review the terms and conditions for using our free car accident assistance website and AI damage analysis services.',
   robots: {
     index: true,

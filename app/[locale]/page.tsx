@@ -40,7 +40,7 @@ const websiteSchema = {
 }
 
 const baseMetadata: Metadata = {
-  title: 'Car Accident Help | Free Insurance Claim Guidance | Collision Help',
+  title: 'Car Accident Help | Free Insurance Claim Guidance',
   description: 'Got in a car accident? Get free guidance on insurance claims, repair rights, and settlement negotiation. Understand your rights and maximize your claim — no lawyers, no fees.',
   keywords: ['car accident help', 'insurance claim help', 'accident claim guidance', 'collision help', 'car accident insurance'],
   openGraph: {

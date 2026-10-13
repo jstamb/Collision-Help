@@ -7,7 +7,7 @@ import { getTranslations } from 'next-intl/server'
 import { localeAlternates } from '@/lib/seo'
 
 const baseMetadata: Metadata = {
-  title: 'Privacy Policy | Collision Help',
+  title: 'Privacy Policy',
   description: 'Privacy Policy for Collision Help. Learn how we collect, use, and protect your personal information when using our car accident assistance services.',
   robots: {
     index: true,

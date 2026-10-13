@@ -260,7 +260,7 @@ export async function generateMetadata({ params }: { params: Promise<{ pillar: s
   const canonicalUrl = alternates.canonical as string
 
   return {
-    title: `${article.title} | ${pillar.shortTitle} | Collision Help`,
+    title: `${article.title} | ${pillar.shortTitle}`,
     description: article.description,
     alternates,
     openGraph: {
