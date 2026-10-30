@@ -11,8 +11,8 @@ import GuideCard from '@/components/guides/GuideCard'
 import FAQAccordion from '@/components/shared/FAQAccordion'
 import CTABanner from '@/components/shared/CTABanner'
 import { ArrowRight, BookOpen, MapPin } from 'lucide-react'
-import { getTranslations } from 'next-intl/server'
-import { localeAlternates } from '@/lib/seo'
+import { getLocale, getTranslations } from 'next-intl/server'
+import { localeAlternates, localeUrl } from '@/lib/seo'
 
 // Get featured cities for internal linking - prioritize states with pillar-specific articles
 const getFeaturedCities = (pillarSlug: string, articles: { slug: string }[]) => {
@@ -112,6 +112,7 @@ export default async function PillarHubPage({ params }: { params: Promise<{ pill
   const { pillar: pillarSlug } = await params
   const basePillar = getPillar(pillarSlug)
   const t = await getTranslations('guidesPage')
+  const locale = await getLocale()
   const tContent = await getTranslations('guidesContent')
 
   if (!basePillar) {
@@ -137,19 +138,19 @@ export default async function PillarHubPage({ params }: { params: Promise<{ pill
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://collisionhelp.org"
+        "item": localeUrl(locale)
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Guides",
-        "item": "https://collisionhelp.org/guides"
+        "item": localeUrl(locale, '/guides')
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": pillar.title,
-        "item": `https://collisionhelp.org/guides/${pillar.slug}`
+        "item": localeUrl(locale, `/guides/${pillar.slug}`)
       }
     ]
   }
@@ -174,11 +175,11 @@ export default async function PillarHubPage({ params }: { params: Promise<{ pill
     "@type": "WebPage",
     "name": `${pillar.title} | Collision Help`,
     "description": pillar.description,
-    "url": `https://collisionhelp.org/guides/${pillar.slug}`,
+    "url": localeUrl(locale, `/guides/${pillar.slug}`),
     "isPartOf": {
       "@type": "WebSite",
       "name": "Collision Help",
-      "url": "https://collisionhelp.org"
+      "url": "https://www.collisionhelp.org"
     }
   }
 

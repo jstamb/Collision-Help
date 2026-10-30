@@ -40,7 +40,7 @@ export async function GET() {
         const lastmod = article.updatedAt || article.publishedAt
         return `
     <url>
-      <loc>${baseUrl}/blog/${article.slug}</loc>
+      <loc>${baseUrl}/en/blog/${article.slug}</loc>
       <lastmod>${new Date(lastmod).toISOString()}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.7</priority>
@@ -51,7 +51,7 @@ export async function GET() {
     // Add the main blog page
     const blogPageUrl = `
     <url>
-      <loc>${baseUrl}/blog</loc>
+      <loc>${baseUrl}/en/blog</loc>
       <lastmod>${new Date().toISOString()}</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.8</priority>

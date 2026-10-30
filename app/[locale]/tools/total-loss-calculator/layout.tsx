@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { localeAlternates } from '@/lib/seo'
+import { localeAlternates, localeUrl } from '@/lib/seo'
 
 const baseMetadata: Metadata = {
   title: 'Is My Car Totaled? | Free Total Loss Calculator by State (2026)',
@@ -8,7 +8,6 @@ const baseMetadata: Metadata = {
   openGraph: {
     title: 'Total Loss Calculator | Is My Car Totaled? Free Estimator (2026)',
     description: 'Free total loss calculator — find out if your car is totaled and estimate your insurance payout. Uses state-specific thresholds.',
-    url: 'https://www.collisionhelp.org/tools/total-loss-calculator',
     type: 'website',
     siteName: 'Collision Help',
   },
@@ -25,7 +24,7 @@ const baseMetadata: Metadata = {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
-  return { ...baseMetadata, alternates: localeAlternates(locale, '/tools/total-loss-calculator') }
+  return { ...baseMetadata, openGraph: { ...baseMetadata.openGraph, url: localeUrl(locale, '/tools/total-loss-calculator') }, alternates: localeAlternates(locale, '/tools/total-loss-calculator') }
 }
 
 export default function TotalLossCalculatorLayout({

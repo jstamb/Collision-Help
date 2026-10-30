@@ -1,5 +1,7 @@
 import React from 'react'
+import { useLocale } from 'next-intl'
 import { Link } from '@/i18n/navigation'
+import { localeUrl } from '@/lib/seo'
 import { ChevronRight, Home } from 'lucide-react'
 
 export interface BreadcrumbItem {
@@ -12,6 +14,7 @@ interface BreadcrumbsProps {
 }
 
 export default function Breadcrumbs({ items }: BreadcrumbsProps) {
+  const locale = useLocale()
   // Generate JSON-LD for SEO
   const jsonLd = {
     "@context": "https://schema.org",
@@ -21,13 +24,13 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.collisionhelp.org"
+        "item": localeUrl(locale)
       },
       ...items.map((item, index) => ({
         "@type": "ListItem",
         "position": index + 2,
         "name": item.label,
-        ...(item.href && { "item": `https://www.collisionhelp.org${item.href}` })
+        ...(item.href && { "item": localeUrl(locale, item.href) })
       }))
     ]
   }

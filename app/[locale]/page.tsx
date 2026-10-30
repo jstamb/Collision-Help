@@ -5,15 +5,15 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
-import { localeAlternates } from '@/lib/seo'
+import { localeAlternates, localeUrl } from '@/lib/seo'
 
 // Organization + WebSite schema for homepage
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Collision Help',
-  url: 'https://collisionhelp.org',
-  logo: 'https://collisionhelp.org/logo.png',
+  url: 'https://www.collisionhelp.org',
+  logo: 'https://www.collisionhelp.org/logo.png',
   description: 'Free guidance and resources for car accident victims navigating insurance claims, repairs, and legal options.',
   sameAs: [],
   contactPoint: {
@@ -28,12 +28,12 @@ const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Collision Help',
-  url: 'https://collisionhelp.org',
+  url: 'https://www.collisionhelp.org',
   potentialAction: {
     '@type': 'SearchAction',
     target: {
       '@type': 'EntryPoint',
-      urlTemplate: 'https://collisionhelp.org/en/guides?q={search_term_string}',
+      urlTemplate: 'https://www.collisionhelp.org/en/guides?q={search_term_string}',
     },
     'query-input': 'required name=search_term_string',
   },
@@ -46,7 +46,6 @@ const baseMetadata: Metadata = {
   openGraph: {
     title: 'Car Accident Help | Free Insurance Claim Guidance',
     description: 'Got in a car accident? Get free guidance on insurance claims, repair rights, and settlement negotiation.',
-    url: 'https://collisionhelp.org/',
     siteName: 'Collision Help',
     type: 'website',
   },
@@ -59,7 +58,7 @@ const baseMetadata: Metadata = {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
-  return { ...baseMetadata, alternates: localeAlternates(locale, '') }
+  return { ...baseMetadata, openGraph: { ...baseMetadata.openGraph, url: localeUrl(locale) }, alternates: localeAlternates(locale, '') }
 }
 
 export default async function Home() {
@@ -88,8 +87,8 @@ export default async function Home() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Collision Help",
-    "url": "https://collisionhelp.org",
-    "logo": "https://collisionhelp.org/logo.png",
+    "url": "https://www.collisionhelp.org",
+    "logo": "https://www.collisionhelp.org/logo.png",
     "description": "Free car accident guidance and insurance claim help for drivers across America",
     "sameAs": [],
     "contactPoint": {
@@ -103,13 +102,13 @@ export default async function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Collision Help",
-    "url": "https://collisionhelp.org",
+    "url": "https://www.collisionhelp.org",
     "description": "Free car accident guidance and insurance claim help",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://collisionhelp.org/search?q={search_term_string}"
+        "urlTemplate": "https://www.collisionhelp.org/search?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }

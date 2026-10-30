@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { localeAlternates } from '@/lib/seo'
+import { localeAlternates, localeUrl } from '@/lib/seo'
 
 const baseMetadata: Metadata = {
   title: 'Car Accident Claim Calculator | Free Insurance Settlement Estimator (2026)',
@@ -8,7 +8,6 @@ const baseMetadata: Metadata = {
   openGraph: {
     title: 'Insurance Claim Calculator | Free Car Accident Settlement Estimator (2026)',
     description: 'Free insurance claim calculator to estimate your car accident settlement. Calculate your potential payout based on medical bills, lost wages, and injury severity.',
-    url: 'https://www.collisionhelp.org/tools/settlement-calculator',
     type: 'website',
     siteName: 'Collision Help',
   },
@@ -25,7 +24,7 @@ const baseMetadata: Metadata = {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
-  return { ...baseMetadata, alternates: localeAlternates(locale, '/tools/settlement-calculator') }
+  return { ...baseMetadata, openGraph: { ...baseMetadata.openGraph, url: localeUrl(locale, '/tools/settlement-calculator') }, alternates: localeAlternates(locale, '/tools/settlement-calculator') }
 }
 
 export default function SettlementCalculatorLayout({

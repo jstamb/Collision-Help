@@ -8,7 +8,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import CallbackButton from '@/components/CallbackButton'
 import LeadForm from '@/components/LeadForm'
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import {
   Scale,
   Clock,
@@ -27,7 +27,7 @@ import {
   BadgeCheck,
   ChevronRight
 } from 'lucide-react'
-import { localeAlternates } from '@/lib/seo'
+import { localeAlternates, localeUrl } from '@/lib/seo'
 
 interface PageProps {
   params: Promise<{
@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: page.metaTitle,
       description: page.metaDescription,
-      url: `https://www.collisionhelp.org/car-accident-lawyer/${stateSlug}/${citySlug}`,
+      url: localeUrl(locale, `/car-accident-lawyer/${stateSlug}/${citySlug}`),
       type: 'website',
     },
     alternates: localeAlternates(locale, `/car-accident-lawyer/${stateSlug}/${citySlug}`),
@@ -74,14 +74,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 // Generate comprehensive schema markup
-function generateSchema(page: LawyerPageData) {
+function generateSchema(page: LawyerPageData, locale: string) {
   // Attorney/Legal Service Schema
   const attorneySchema = {
     '@context': 'https://schema.org',
     '@type': 'Attorney',
     name: `${page.cityName} Car Accident Lawyer`,
     description: page.metaDescription,
-    url: `https://www.collisionhelp.org/car-accident-lawyer/${page.state}/${page.slug}`,
+    url: localeUrl(locale, `/car-accident-lawyer/${page.state}/${page.slug}`),
     areaServed: {
       '@type': 'City',
       name: page.cityName,
@@ -128,7 +128,7 @@ function generateSchema(page: LawyerPageData) {
     '@type': 'LegalService',
     name: `Car Accident Legal Help - ${page.cityName}`,
     description: `Car accident lawyer services in ${page.cityName}, ${page.stateFull}. Free consultation and contingency fee representation.`,
-    url: `https://www.collisionhelp.org/car-accident-lawyer/${page.state}/${page.slug}`,
+    url: localeUrl(locale, `/car-accident-lawyer/${page.state}/${page.slug}`),
     serviceType: 'Car Accident Attorney',
     areaServed: {
       '@type': 'City',
@@ -186,25 +186,25 @@ function generateSchema(page: LawyerPageData) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://www.collisionhelp.org'
+        item: localeUrl(locale)
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Car Accident Lawyer',
-        item: 'https://www.collisionhelp.org/car-accident-lawyer'
+        item: localeUrl(locale, '/car-accident-lawyer')
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: page.stateFull,
-        item: `https://www.collisionhelp.org/car-accident-lawyer/${page.state}`
+        item: localeUrl(locale, `/car-accident-lawyer/${page.state}`)
       },
       {
         '@type': 'ListItem',
         position: 4,
         name: page.cityName,
-        item: `https://www.collisionhelp.org/car-accident-lawyer/${page.state}/${page.slug}`
+        item: localeUrl(locale, `/car-accident-lawyer/${page.state}/${page.slug}`)
       }
     ]
   }
@@ -223,7 +223,7 @@ export default async function LawyerCityPage({ params }: PageProps) {
   // Get linked city info page if it exists
   const cityInfoPage = getCityBySlug(stateSlug, citySlug)
 
-  const { attorneySchema, legalServiceSchema, faqSchema, breadcrumbSchema, faqItems } = generateSchema(page)
+  const { attorneySchema, legalServiceSchema, faqSchema, breadcrumbSchema, faqItems } = generateSchema(page, await getLocale())
   const t = await getTranslations()
 
   return (

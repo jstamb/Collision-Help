@@ -22,7 +22,8 @@ import {
   Clock,
   Banknote
 } from 'lucide-react'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
+import { localeUrl } from '@/lib/seo'
 import { Link } from '@/i18n/navigation'
 
 // State thresholds data
@@ -108,6 +109,7 @@ function FAQItem({ question, answer, isOpen, onClick }: { question: string; answ
 
 export default function TotalLossCalculatorPage() {
   const t = useTranslations('totalLossCalcPage')
+  const locale = useLocale()
 
   // FAQ data for SEO
   const faqs = [
@@ -205,7 +207,7 @@ export default function TotalLossCalculatorPage() {
     "@type": "WebPage",
     "name": "Total Loss Calculator - Estimate Your Car's Total Loss Settlement",
     "description": "Free total loss calculator to estimate if your car will be declared a total loss and calculate your expected insurance settlement. Includes state-specific thresholds.",
-    "url": "https://www.collisionhelp.org/tools/total-loss-calculator"
+    "url": localeUrl(locale, '/tools/total-loss-calculator')
   }
 
   return (

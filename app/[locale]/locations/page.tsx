@@ -6,7 +6,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { MapPin, Scale, Shield, Clock, ChevronRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
-import { localeAlternates } from '@/lib/seo'
+import { localeAlternates, localeUrl } from '@/lib/seo'
 
 const baseMetadata: Metadata = {
   title: 'Car Accident Help by State | State-Specific Insurance Laws & Guides',
@@ -15,14 +15,13 @@ const baseMetadata: Metadata = {
   openGraph: {
     title: 'Car Accident Help by State | Collision Help',
     description: 'Find state-specific car accident help, insurance laws, fault systems, and statute of limitations for all 50 states.',
-    url: 'https://www.collisionhelp.org/locations',
     type: 'website',
   },
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
-  return { ...baseMetadata, alternates: localeAlternates(locale, '/locations') }
+  return { ...baseMetadata, openGraph: { ...baseMetadata.openGraph, url: localeUrl(locale, '/locations') }, alternates: localeAlternates(locale, '/locations') }
 }
 
 // Group states by region

@@ -27,7 +27,8 @@ import {
   Send,
   Loader2
 } from 'lucide-react'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
+import { localeUrl } from '@/lib/seo'
 import { Link } from '@/i18n/navigation'
 
 const usStates = [
@@ -63,6 +64,7 @@ function FAQItem({ question, answer, isOpen, onClick }: { question: string; answ
 
 export default function SettlementCalculatorPage() {
   const t = useTranslations('settlementCalcPage')
+  const locale = useLocale()
 
   // Injury severity multipliers and descriptions
   const injurySeverityOptions = [
@@ -222,7 +224,7 @@ export default function SettlementCalculatorPage() {
     "@type": "WebPage",
     "name": "Car Accident Settlement Calculator - Estimate Your Claim Value",
     "description": "Free car accident settlement calculator. Estimate your potential settlement based on medical bills, lost wages, and injury severity. Get personalized results.",
-    "url": "https://www.collisionhelp.org/tools/settlement-calculator"
+    "url": localeUrl(locale, '/tools/settlement-calculator')
   }
 
   return (
