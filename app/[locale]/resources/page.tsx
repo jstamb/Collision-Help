@@ -12,8 +12,8 @@ import {
   ArrowRight,
   Shield
 } from 'lucide-react'
-import { getTranslations } from 'next-intl/server'
-import { localeAlternates } from '@/lib/seo'
+import { getLocale, getTranslations } from 'next-intl/server'
+import { localeAlternates, localeUrl } from '@/lib/seo'
 
 const baseMetadata: Metadata = {
   title: 'Free Car Accident Resources & Downloads',
@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function ResourcesPage() {
   const t = await getTranslations('resourcesPage')
+  const locale = await getLocale()
 
   // JSON-LD schema
   const jsonLd = {
@@ -38,7 +39,7 @@ export default async function ResourcesPage() {
     "@type": "WebPage",
     "name": "Free Car Accident Resources & Downloads",
     "description": "Free downloadable checklists, templates, and tools to help you navigate your car accident claim.",
-    "url": "https://www.collisionhelp.org/resources"
+    "url": localeUrl(locale, '/resources')
   }
 
   // Resources data with translations

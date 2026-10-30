@@ -5,7 +5,7 @@ import { lawyerPagesByState } from '@/content/lawyers/lawyer-pages'
 import { getStateBySlug } from '@/content/locations/states'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import {
   Scale,
   MapPin,
@@ -15,7 +15,7 @@ import {
   DollarSign,
   CheckCircle
 } from 'lucide-react'
-import { localeAlternates } from '@/lib/seo'
+import { localeAlternates, localeUrl } from '@/lib/seo'
 
 const baseMetadata: Metadata = {
   title: 'Find a Car Accident Lawyer | Free Consultation by City',
@@ -23,18 +23,17 @@ const baseMetadata: Metadata = {
   openGraph: {
     title: 'Find a Car Accident Lawyer | Free Consultation by City',
     description: 'Find an experienced car accident lawyer in your city. Free consultations, no fee unless you win.',
-    url: 'https://www.collisionhelp.org/car-accident-lawyer',
     type: 'website',
   },
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
-  return { ...baseMetadata, alternates: localeAlternates(locale, '/car-accident-lawyer') }
+  return { ...baseMetadata, openGraph: { ...baseMetadata.openGraph, url: localeUrl(locale, '/car-accident-lawyer') }, alternates: localeAlternates(locale, '/car-accident-lawyer') }
 }
 
 // Generate schema for the hub page
-function generateSchema(statesWithLawyers: { slug: string; name: string; cityCount: number }[]) {
+function generateSchema(statesWithLawyers: { slug: string; name: string; cityCount: number }[], locale: string) {
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -43,13 +42,13 @@ function generateSchema(statesWithLawyers: { slug: string; name: string; cityCou
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://www.collisionhelp.org'
+        item: localeUrl(locale)
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Car Accident Lawyer',
-        item: 'https://www.collisionhelp.org/car-accident-lawyer'
+        item: localeUrl(locale, '/car-accident-lawyer')
       }
     ]
   }
@@ -59,7 +58,7 @@ function generateSchema(statesWithLawyers: { slug: string; name: string; cityCou
     '@type': 'WebPage',
     name: 'Find a Car Accident Lawyer',
     description: 'Find an experienced car accident lawyer in your city. Free consultations, no fee unless you win.',
-    url: 'https://www.collisionhelp.org/car-accident-lawyer',
+    url: localeUrl(locale, '/car-accident-lawyer'),
     isPartOf: {
       '@type': 'WebSite',
       name: 'Collision Help',
@@ -78,7 +77,7 @@ function generateSchema(statesWithLawyers: { slug: string; name: string; cityCou
       '@type': 'ListItem',
       position: index + 1,
       name: `${state.name} Car Accident Lawyers`,
-      url: `https://collisionhelp.org/car-accident-lawyer/${state.slug}`
+      url: localeUrl(locale, `/car-accident-lawyer/${state.slug}`)
     }))
   }
 
@@ -87,6 +86,7 @@ function generateSchema(statesWithLawyers: { slug: string; name: string; cityCou
 
 export default async function CarAccidentLawyerHub() {
   const t = await getTranslations()
+  const locale = await getLocale()
 
   // Get state information for each state with lawyer pages
   const statesWithLawyers = Object.entries(lawyerPagesByState).map(([stateSlug, pages]) => {
@@ -103,7 +103,7 @@ export default async function CarAccidentLawyerHub() {
   const totalCities = Object.values(lawyerPagesByState).reduce((sum, pages) => sum + pages.length, 0)
 
   // Generate schemas after we have statesWithLawyers data
-  const { breadcrumbSchema, webPageSchema, itemListSchema } = generateSchema(statesWithLawyers)
+  const { breadcrumbSchema, webPageSchema, itemListSchema } = generateSchema(statesWithLawyers, locale)
 
   return (
     <>

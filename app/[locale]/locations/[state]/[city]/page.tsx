@@ -9,7 +9,7 @@ import { pillars } from '@/content/guides/pillars'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import CallbackButton from '@/components/CallbackButton'
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import {
   MapPin,
   AlertTriangle,
@@ -29,7 +29,7 @@ import {
   MapPinned,
   BookOpen
 } from 'lucide-react'
-import { localeAlternates } from '@/lib/seo'
+import { localeAlternates, localeUrl } from '@/lib/seo'
 
 interface PageProps {
   params: Promise<{
@@ -72,7 +72,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: city.metaTitle,
       description: city.metaDescription,
-      url: `https://www.collisionhelp.org/locations/${stateSlug}/${citySlug}`,
+      url: localeUrl(locale, `/locations/${stateSlug}/${citySlug}`),
       type: 'website',
     },
     alternates: localeAlternates(locale, `/locations/${stateSlug}/${citySlug}`),
@@ -80,7 +80,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 // Generate JSON-LD Schema
-function generateSchema(city: CityData, stateData: ReturnType<typeof getStateBySlug>) {
+function generateSchema(city: CityData, stateData: ReturnType<typeof getStateBySlug>, locale: string) {
   if (!stateData) return null
 
   const webPageSchema = {
@@ -88,7 +88,7 @@ function generateSchema(city: CityData, stateData: ReturnType<typeof getStateByS
     '@type': 'WebPage',
     name: city.metaTitle,
     description: city.metaDescription,
-    url: `https://www.collisionhelp.org/locations/${city.state}/${city.slug}`,
+    url: localeUrl(locale, `/locations/${city.state}/${city.slug}`),
     isPartOf: {
       '@type': 'WebSite',
       name: 'Collision Help',
@@ -120,25 +120,25 @@ function generateSchema(city: CityData, stateData: ReturnType<typeof getStateByS
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://www.collisionhelp.org'
+          item: localeUrl(locale)
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Locations',
-          item: 'https://www.collisionhelp.org/locations'
+          item: localeUrl(locale, '/locations')
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: stateData.name,
-          item: `https://www.collisionhelp.org/locations/${city.state}`
+          item: localeUrl(locale, `/locations/${city.state}`)
         },
         {
           '@type': 'ListItem',
           position: 4,
           name: city.name,
-          item: `https://www.collisionhelp.org/locations/${city.state}/${city.slug}`
+          item: localeUrl(locale, `/locations/${city.state}/${city.slug}`)
         }
       ]
     }
@@ -150,7 +150,7 @@ function generateSchema(city: CityData, stateData: ReturnType<typeof getStateByS
     '@type': 'LegalService',
     name: `Car Accident Help - ${city.name}`,
     description: `Free car accident guidance and attorney connections for ${city.name}, ${stateData.name} residents`,
-    url: `https://www.collisionhelp.org/locations/${city.state}/${city.slug}`,
+    url: localeUrl(locale, `/locations/${city.state}/${city.slug}`),
     areaServed: {
       '@type': 'City',
       name: city.name,
@@ -162,7 +162,7 @@ function generateSchema(city: CityData, stateData: ReturnType<typeof getStateByS
     serviceType: ['Car Accident Assistance', 'Insurance Claim Guidance', 'Attorney Referral'],
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: `https://www.collisionhelp.org/locations/${city.state}/${city.slug}`,
+      serviceUrl: localeUrl(locale, `/locations/${city.state}/${city.slug}`),
       serviceType: 'Online'
     }
   }
@@ -217,7 +217,7 @@ export default async function CityPage({ params }: PageProps) {
     notFound()
   }
 
-  const schema = generateSchema(city, state)
+  const schema = generateSchema(city, state, await getLocale())
   const otherCities = getCitiesForState(stateSlug).filter(c => c.slug !== citySlug)
   const lawyerPage = getLawyerPageBySlug(stateSlug, citySlug)
 

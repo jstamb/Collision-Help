@@ -7,7 +7,7 @@ import { getStateBySlug } from '@/content/locations/states'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import CallbackButton from '@/components/CallbackButton'
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import {
   Scale,
   MapPin,
@@ -19,7 +19,7 @@ import {
   AlertTriangle,
   Car
 } from 'lucide-react'
-import { localeAlternates } from '@/lib/seo'
+import { localeAlternates, localeUrl } from '@/lib/seo'
 
 interface PageProps {
   params: Promise<{
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: `${stateName} Car Accident Lawyers | Find an Attorney by City`,
       description: `Find a car accident lawyer in ${stateName}. Free consultations in ${pages.length} cities. No fee unless you win.`,
-      url: `https://www.collisionhelp.org/car-accident-lawyer/${stateSlug}`,
+      url: localeUrl(locale, `/car-accident-lawyer/${stateSlug}`),
       type: 'website',
     },
     alternates: localeAlternates(locale, `/car-accident-lawyer/${stateSlug}`),
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 // Generate schema for the state hub page
-function generateSchema(stateSlug: string, stateName: string, pages: { cityName: string; slug: string }[]) {
+function generateSchema(stateSlug: string, stateName: string, pages: { cityName: string; slug: string }[], locale: string) {
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -68,19 +68,19 @@ function generateSchema(stateSlug: string, stateName: string, pages: { cityName:
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://www.collisionhelp.org'
+        item: localeUrl(locale)
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Car Accident Lawyer',
-        item: 'https://www.collisionhelp.org/car-accident-lawyer'
+        item: localeUrl(locale, '/car-accident-lawyer')
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: stateName,
-        item: `https://www.collisionhelp.org/car-accident-lawyer/${stateSlug}`
+        item: localeUrl(locale, `/car-accident-lawyer/${stateSlug}`)
       }
     ]
   }
@@ -90,7 +90,7 @@ function generateSchema(stateSlug: string, stateName: string, pages: { cityName:
     '@type': 'WebPage',
     name: `${stateName} Car Accident Lawyers`,
     description: `Find a car accident lawyer in ${stateName}. Free consultations in ${pages.length} cities.`,
-    url: `https://www.collisionhelp.org/car-accident-lawyer/${stateSlug}`,
+    url: localeUrl(locale, `/car-accident-lawyer/${stateSlug}`),
     isPartOf: {
       '@type': 'WebSite',
       name: 'Collision Help',
@@ -110,7 +110,7 @@ export default async function StateLawyerHub({ params }: PageProps) {
     notFound()
   }
 
-  const { breadcrumbSchema, webPageSchema } = generateSchema(stateSlug, stateInfo.name, pages)
+  const { breadcrumbSchema, webPageSchema } = generateSchema(stateSlug, stateInfo.name, pages, await getLocale())
   const t = await getTranslations()
 
   // Get state-specific legal info from the first page (all same state)

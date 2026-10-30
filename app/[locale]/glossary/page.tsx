@@ -4,8 +4,8 @@ import { Link } from '@/i18n/navigation'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { BookOpen, ArrowRight, ChevronRight } from 'lucide-react'
-import { getTranslations } from 'next-intl/server'
-import { localeAlternates } from '@/lib/seo'
+import { getLocale, getTranslations } from 'next-intl/server'
+import { localeAlternates, localeUrl } from '@/lib/seo'
 
 const baseMetadata: Metadata = {
   title: 'Car Accident & Insurance Glossary',
@@ -370,6 +370,7 @@ const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 
 export default async function GlossaryPage() {
   const t = await getTranslations('glossaryPage')
+  const locale = await getLocale()
 
   // JSON-LD schema
   const jsonLd = {
@@ -377,7 +378,7 @@ export default async function GlossaryPage() {
     "@type": "DefinedTermSet",
     "name": "Car Accident & Insurance Glossary",
     "description": "Complete glossary of car accident and insurance terms used in auto insurance claims",
-    "url": "https://www.collisionhelp.org/glossary",
+    "url": localeUrl(locale, '/glossary'),
     "hasDefinedTerm": Object.values(glossaryTerms).flat().map(term => ({
       "@type": "DefinedTerm",
       "name": term.term,

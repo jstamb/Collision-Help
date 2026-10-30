@@ -9,8 +9,8 @@ import Footer from '@/components/layout/Footer'
 import LeadForm from '@/components/LeadForm'
 import CallbackButton from '@/components/CallbackButton'
 import { Shield, MapPin, Info, Clock, Car, FileText, AlertTriangle, Scale, DollarSign, Phone, CheckCircle, ChevronRight, Building2 } from 'lucide-react'
-import { getTranslations } from 'next-intl/server'
-import { localeAlternates } from '@/lib/seo'
+import { getLocale, getTranslations } from 'next-intl/server'
+import { localeAlternates, localeUrl } from '@/lib/seo'
 
 // Static Generation Params
 export async function generateStaticParams() {
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
     openGraph: {
       title: `Car Accident Help in ${state.name} | Collision Help`,
       description: state.metaDescription,
-      url: `https://www.collisionhelp.org/locations/${state.slug}`,
+      url: localeUrl(locale, `/locations/${state.slug}`),
       type: 'website',
     },
     alternates: localeAlternates(locale, `/locations/${state.slug}`),
@@ -138,6 +138,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
   const { state: stateSlug } = await params
   const stateData = states.find((s) => s.slug === stateSlug)
   const t = await getTranslations('statePage')
+  const locale = await getLocale()
 
   if (!stateData) {
     notFound()
@@ -154,7 +155,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
     "@type": "WebPage",
     "name": `Car Accident Help in ${stateData.name}`,
     "description": stateData.metaDescription,
-    "url": `https://www.collisionhelp.org/locations/${stateData.slug}`,
+    "url": localeUrl(locale, `/locations/${stateData.slug}`),
     "mainEntity": {
       "@type": "LocalBusiness",
       "name": `Collision Help - ${stateData.name}`,

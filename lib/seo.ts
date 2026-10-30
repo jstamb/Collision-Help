@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { locales, defaultLocale } from '@/i18n/config'
 
 // Every page is served under a locale prefix (next-intl localePrefix: 'always'),
-// and the unprefixed URLs 307 to /en. Canonicals and hreflang must therefore
+// and the unprefixed URLs 308 to /en. Canonicals and hreflang must therefore
 // point at the prefixed www URL that actually returns 200, matching the sitemap.
 export const SITE_URL = 'https://www.collisionhelp.org'
 

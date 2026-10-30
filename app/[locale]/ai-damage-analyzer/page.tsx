@@ -5,7 +5,7 @@ import Footer from '@/components/layout/Footer'
 import AnalyzerForm from '@/components/AnalyzerForm'
 import { Camera, Shield, Clock, FileText, CheckCircle, Zap } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
-import { localeAlternates } from '@/lib/seo'
+import { localeAlternates, localeUrl } from '@/lib/seo'
 
 const baseMetadata: Metadata = {
   title: 'Free AI Auto Accident Damage Analyzer | Instant Case Evaluation',
@@ -14,14 +14,13 @@ const baseMetadata: Metadata = {
   openGraph: {
     title: 'Free AI Auto Accident Damage Analyzer | Instant Case Evaluation',
     description: 'Upload photos of your car accident damage and get an instant AI-powered analysis. Understand your case strength and legal options in minutes.',
-    url: 'https://www.collisionhelp.org/ai-damage-analyzer',
     type: 'website',
   },
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
-  return { ...baseMetadata, alternates: localeAlternates(locale, '/ai-damage-analyzer') }
+  return { ...baseMetadata, openGraph: { ...baseMetadata.openGraph, url: localeUrl(locale, '/ai-damage-analyzer') }, alternates: localeAlternates(locale, '/ai-damage-analyzer') }
 }
 
 export default async function AIDamageAnalyzerPage() {

@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { Link } from '@/i18n/navigation'
 import { pillars, getPillar, getArticle, getTranslatedPillar, getTranslatedPillars, Pillar } from '@/content/guides/pillars'
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import Breadcrumbs from '@/components/layout/Breadcrumbs'
@@ -12,7 +12,7 @@ import CTABanner from '@/components/shared/CTABanner'
 import ArticleContent from '@/components/guides/ArticleContent'
 import { getArticleContent, extractHeadings, extractFAQs, TOCItem } from '@/lib/content'
 import { ArrowRight, ArrowLeft, Clock, Calendar, BookOpen, ExternalLink } from 'lucide-react'
-import { localeAlternates } from '@/lib/seo'
+import { localeAlternates, localeUrl } from '@/lib/seo'
 
 // Cross-pillar article relationships based on topic overlap
 const crossPillarLinks: Record<string, { pillar: string; articles: string[] }[]> = {
@@ -279,6 +279,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ pillar
   const baseArticle = getArticle(pillarSlug, articleSlug)
   const tContent = await getTranslations('guidesContent')
   const t = await getTranslations('articlePage')
+  const locale = await getLocale()
 
   if (!basePillar || !baseArticle) {
     notFound()
@@ -351,7 +352,7 @@ Consider seeking additional assistance if:
 
   // JSON-LD for Article with enhanced SEO properties
   const currentDate = new Date().toISOString().split('T')[0]
-  const articleUrl = `https://collisionhelp.org/guides/${pillar.slug}/${article.slug}`
+  const articleUrl = localeUrl(locale, `/guides/${pillar.slug}/${article.slug}`)
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -362,7 +363,7 @@ Consider seeking additional assistance if:
     "author": {
       "@type": "Organization",
       "name": "Collision Help",
-      "url": "https://collisionhelp.org"
+      "url": "https://www.collisionhelp.org"
     },
     "publisher": {
       "@type": "Organization",
@@ -400,13 +401,13 @@ Consider seeking additional assistance if:
         "@type": "ListItem",
         "position": 1,
         "name": "Guides",
-        "item": "https://collisionhelp.org/guides"
+        "item": localeUrl(locale, '/guides')
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": pillar.shortTitle,
-        "item": `https://collisionhelp.org/guides/${pillar.slug}`
+        "item": localeUrl(locale, `/guides/${pillar.slug}`)
       },
       {
         "@type": "ListItem",
