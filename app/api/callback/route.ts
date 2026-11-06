@@ -11,11 +11,20 @@ interface CallbackRequest {
   stateName?: string
   source: string
   timestamp: string
+  hp_verify?: string
 }
 
 export async function POST(request: NextRequest) {
   try {
     const body: CallbackRequest = await request.json()
+
+    // Filled honeypot is a bot. An empty or missing field is a normal submit.
+    if (typeof body.hp_verify === 'string' && body.hp_verify.trim() !== '') {
+      return NextResponse.json(
+        { success: false, error: 'Unable to submit' },
+        { status: 400 }
+      )
+    }
 
     // Validate required fields
     if (!body.name || !body.phone || !body.accidentDetails) {
