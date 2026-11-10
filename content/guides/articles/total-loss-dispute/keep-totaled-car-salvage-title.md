@@ -25,7 +25,7 @@ You keep the car AND receive $11,500.
 
 ## When Keeping Your Totaled Car Makes Sense
 
-Owner-retained salvage is a good choice when:
+[Owner-retained salvage](/en/guides/total-loss-dispute/owner-retained-salvage) is a good choice when:
 
 - **Damage is mostly cosmetic** - Dents, scratches, but mechanically sound
 - **Repair costs are manageable** - You can fix it cheaper than salvage deduction

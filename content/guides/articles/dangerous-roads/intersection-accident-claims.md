@@ -257,7 +257,7 @@ When more than two vehicles are involved:
 
 - Intersection accidents often involve disputed fault and require strong evidence
 - Traffic camera footage is crucial—act immediately to preserve it
-- Dangerous intersections may support claims against government entities
+- [Dangerous intersections](/en/guides/dangerous-roads) may support claims against government entities
 - Witness statements can make or break right-of-way disputes
 - Government claims have strict and short notice deadlines
 - Don't accept early settlements before knowing your full damages

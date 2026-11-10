@@ -81,7 +81,7 @@ I-10 California risks:
 
 ### Dangerous LA Intersections
 
-Based on collision data, the most dangerous intersections include:
+Based on collision data, the most [dangerous intersections](/en/guides/dangerous-roads) include:
 
 1. **Florence & Normandie** (South LA)
 2. **Sepulveda & Victory** (Van Nuys)
