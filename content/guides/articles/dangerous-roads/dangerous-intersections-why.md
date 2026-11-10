@@ -8,7 +8,7 @@ Intersections are where most urban accidents occur. Understanding what makes cer
 
 ### Common Risk Factors
 
-Dangerous intersections typically share several characteristics:
+[Dangerous intersections](/en/guides/dangerous-roads) typically share several characteristics:
 
 | Factor | Why It's Dangerous |
 |--------|-------------------|

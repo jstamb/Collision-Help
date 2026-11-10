@@ -106,7 +106,7 @@ Immediately upon total loss:
 
 ### Stage 2: Repairs
 
-While holding salvage title:
+While holding [salvage title](/en/guides/total-loss-dispute/keep-totaled-car-salvage-title):
 - Complete all necessary repairs
 - Keep receipts for all parts purchased
 - Document work with photos

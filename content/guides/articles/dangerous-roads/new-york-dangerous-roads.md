@@ -175,7 +175,7 @@ NYC's initiative has reduced deaths through:
 - Protected bike lanes
 - Leading pedestrian intervals
 - Speed cameras near schools
-- Redesigned dangerous intersections
+- Redesigned [dangerous intersections](/en/guides/dangerous-roads)
 
 ## Your Rights After a New York Accident
 

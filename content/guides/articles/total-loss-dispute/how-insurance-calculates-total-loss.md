@@ -83,7 +83,7 @@ For a complete guide on challenging the valuation, see our article on [How to Di
 
 ## Key Takeaways
 
-- Total loss thresholds vary significantly by state (50-100%)
+- [Total loss thresholds](/en/guides/total-loss-dispute/total-loss-threshold-by-state) vary significantly by state (50-100%)
 - Your car's ACV is the baseline for all calculations
 - Insurance valuations can be negotiated with proper evidence
 - Understanding the formula helps you identify unfair assessments
