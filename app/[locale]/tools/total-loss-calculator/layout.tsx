@@ -24,7 +24,14 @@ const baseMetadata: Metadata = {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
-  return { ...baseMetadata, openGraph: { ...baseMetadata.openGraph, url: localeUrl(locale, '/tools/total-loss-calculator') }, alternates: localeAlternates(locale, '/tools/total-loss-calculator') }
+  // SEO Utils test #6: English-only title/description override. /es keeps baseMetadata.
+  const enOverrides: Metadata = locale === 'en'
+    ? {
+        title: { absolute: 'Totaled Car Value & Payout Calculator: Is My Car Totaled?' },
+        description: "Check if your car is totaled under your state's total loss threshold, then estimate your payout from its actual cash value (ACV) minus your deductible.",
+      }
+    : {}
+  return { ...baseMetadata, ...enOverrides, openGraph: { ...baseMetadata.openGraph, url: localeUrl(locale, '/tools/total-loss-calculator') }, alternates: localeAlternates(locale, '/tools/total-loss-calculator') }
 }
 
 export default function TotalLossCalculatorLayout({

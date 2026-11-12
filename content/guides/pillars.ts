@@ -22,6 +22,10 @@ export interface Article {
   readingTime: string
   priority: 'P1' | 'P2' | 'P3'
   content?: string // Markdown content - loaded dynamically or embedded
+  // Optional English-only <title>/meta overrides (SEO Utils test #7 variants).
+  // seoTitle replaces "<title> | <pillar shortTitle>"; the root template still appends "| Collision Help".
+  seoTitle?: string
+  metaDescription?: string
 }
 
 export interface Pillar {
@@ -56,7 +60,8 @@ export const pillars: Pillar[] = [
         title: 'How to Dispute Total Loss Valuation',
         description: 'Step-by-step guide to challenging an unfair total loss settlement offer.',
         readingTime: '10 min read',
-        priority: 'P1'
+        priority: 'P1',
+        seoTitle: 'How to Dispute Total Loss Valuation'
       },
       {
         slug: 'keep-totaled-car-salvage-title',
@@ -91,7 +96,9 @@ export const pillars: Pillar[] = [
         title: 'Owner Retained Salvage: Keep Your Totaled Car',
         description: 'What does owner retained salvage mean? Learn how keeping your totaled car changes your settlement, salvage deduction, and title branding.',
         readingTime: '6 min read',
-        priority: 'P2'
+        priority: 'P2',
+        seoTitle: 'Owner Retained Salvage: Keep Your Totaled Car',
+        metaDescription: 'Owner retained salvage means keeping your totaled car after a total loss. Your payout is ACV minus salvage value and deductible, and the title is branded.'
       },
       {
         slug: 'actual-cash-value-vs-replacement',
@@ -411,7 +418,8 @@ export const pillars: Pillar[] = [
         title: 'Rear-Ended in a Rental Car',
         description: 'Insurance and liability when driving a rental.',
         readingTime: '6 min read',
-        priority: 'P2'
+        priority: 'P2',
+        seoTitle: 'Rear-Ended in a Rental Car'
       },
       {
         slug: 'rear-end-uninsured-driver',
@@ -1148,7 +1156,8 @@ export const pillars: Pillar[] = [
         title: 'Uninsured Motorist Coverage by State (2026)',
         description: 'See which states require uninsured/underinsured motorist (UM/UIM) coverage, 2026 minimum limits by state, and how to file a UM claim after a hit-and-run or uninsured-driver crash.',
         readingTime: '8 min read',
-        priority: 'P2'
+        priority: 'P2',
+        seoTitle: 'Uninsured Motorist Coverage by State (2026)'
       },
       {
         slug: 'pip-coverage-by-state',

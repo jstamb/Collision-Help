@@ -260,8 +260,9 @@ export async function generateMetadata({ params }: { params: Promise<{ pillar: s
   const canonicalUrl = alternates.canonical as string
 
   return {
-    title: `${article.title} | ${pillar.shortTitle}`,
-    description: article.description,
+    // Per-article English-only overrides (seoTitle / metaDescription); every other page keeps the default.
+    title: (locale === 'en' && article.seoTitle) || `${article.title} | ${pillar.shortTitle}`,
+    description: (locale === 'en' && article.metaDescription) || article.description,
     alternates,
     openGraph: {
       title: article.title,
