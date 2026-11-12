@@ -379,7 +379,7 @@ Consider seeking additional assistance if:
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://www.collisionhelp.org/en/guides/${pillar.slug}/${article.slug}`
+      "@id": articleUrl
     },
     "isPartOf": {
       "@type": "WebSite",
@@ -390,7 +390,7 @@ Consider seeking additional assistance if:
       "@type": "Thing",
       "name": pillar.shortTitle
     },
-    "inLanguage": "en-US"
+    "inLanguage": locale === 'es' ? 'es-US' : 'en-US'
   }
 
   // BreadcrumbList JSON-LD for richer SERP breadcrumbs
