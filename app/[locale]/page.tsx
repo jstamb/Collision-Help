@@ -7,38 +7,6 @@ import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { localeAlternates, localeUrl } from '@/lib/seo'
 
-// Organization + WebSite schema for homepage
-const organizationSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'Collision Help',
-  url: 'https://www.collisionhelp.org',
-  logo: 'https://www.collisionhelp.org/logo.png',
-  description: 'Free guidance and resources for car accident victims navigating insurance claims, repairs, and legal options.',
-  sameAs: [],
-  contactPoint: {
-    '@type': 'ContactPoint',
-    contactType: 'customer service',
-    availableLanguage: ['English', 'Spanish'],
-    areaServed: 'US',
-  },
-}
-
-const websiteSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: 'Collision Help',
-  url: 'https://www.collisionhelp.org',
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: {
-      '@type': 'EntryPoint',
-      urlTemplate: 'https://www.collisionhelp.org/en/guides?q={search_term_string}',
-    },
-    'query-input': 'required name=search_term_string',
-  },
-}
-
 const baseMetadata: Metadata = {
   title: 'Car Accident Help | Free Insurance Claim Guidance',
   description: 'Got in a car accident? Get free guidance on insurance claims, repair rights, and settlement negotiation. Understand your rights and maximize your claim — no lawyers, no fees.',
@@ -88,9 +56,7 @@ export default async function Home() {
     "@type": "Organization",
     "name": "Collision Help",
     "url": "https://www.collisionhelp.org",
-    "logo": "https://www.collisionhelp.org/logo.png",
     "description": "Free car accident guidance and insurance claim help for drivers across America",
-    "sameAs": [],
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
@@ -103,15 +69,7 @@ export default async function Home() {
     "@type": "WebSite",
     "name": "Collision Help",
     "url": "https://www.collisionhelp.org",
-    "description": "Free car accident guidance and insurance claim help",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://www.collisionhelp.org/search?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
-    }
+    "description": "Free car accident guidance and insurance claim help"
   }
 
   return (
