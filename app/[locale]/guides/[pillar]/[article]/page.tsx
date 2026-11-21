@@ -352,7 +352,6 @@ Consider seeking additional assistance if:
   const crossPillarArticles = getCrossPillarArticles(pillarSlug, articleSlug, pillar, translatedPillars)
 
   // JSON-LD for Article with enhanced SEO properties
-  const currentDate = new Date().toISOString().split('T')[0]
   const articleUrl = localeUrl(locale, `/guides/${pillar.slug}/${article.slug}`)
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -360,7 +359,6 @@ Consider seeking additional assistance if:
     "headline": article.title,
     "description": article.description,
     "datePublished": "2025-06-01",
-    "dateModified": currentDate,
     "author": {
       "@type": "Organization",
       "name": "Collision Help",
@@ -369,17 +367,11 @@ Consider seeking additional assistance if:
     "publisher": {
       "@type": "Organization",
       "name": "Collision Help",
-      "url": "https://www.collisionhelp.org",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.collisionhelp.org/logo.png",
-        "width": 600,
-        "height": 60
-      }
+      "url": "https://www.collisionhelp.org"
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://www.collisionhelp.org/en/guides/${pillar.slug}/${article.slug}`
+      "@id": articleUrl
     },
     "isPartOf": {
       "@type": "WebSite",
@@ -390,7 +382,7 @@ Consider seeking additional assistance if:
       "@type": "Thing",
       "name": pillar.shortTitle
     },
-    "inLanguage": "en-US"
+    "inLanguage": locale === 'es' ? 'es' : 'en-US'
   }
 
   // BreadcrumbList JSON-LD for richer SERP breadcrumbs

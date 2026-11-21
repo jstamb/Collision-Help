@@ -25,14 +25,6 @@ export const metadata: Metadata = {
     siteName: 'Collision Help',
     title: 'Collision Help | Nationwide Accident Help',
     description: 'Free expert guidance for car accident victims. Navigate insurance claims, total loss disputes, and settlement negotiations.',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Collision Help - Nationwide Accident Assistance',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -51,9 +43,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: '/icon.svg',
+    apple: '/apple-icon.svg',
   },
   manifest: '/site.webmanifest',
 };

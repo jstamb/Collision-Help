@@ -84,13 +84,7 @@ export default async function ArticlePage({ params }: PageProps) {
     publisher: {
       '@type': 'Organization',
       name: 'Collision Help',
-      url: 'https://www.collisionhelp.org',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://www.collisionhelp.org/logo.png',
-        width: 600,
-        height: 60
-      }
+      url: 'https://www.collisionhelp.org'
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
